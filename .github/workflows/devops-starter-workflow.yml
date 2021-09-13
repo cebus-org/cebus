@@ -1,0 +1,178 @@
+name: Build and Deploy ASP.NET MVC App to Azure Web App
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  AZURE_WEBAPP_NAME: "Pongo-UI"    # set this to your application's name
+  AZURE_WEBAPP_PACKAGE_PATH: "."      # set this to the path to your web app project, defaults to the repository root
+  NUGET_VERSION: '5.8.0'
+  DOTNETSDK_VERSION: '3.1.302'
+  RESOURCEGROUPNAME: "Pongo-UI-rg"
+  LOCATION: "South Central US"
+  HOSTINGPLANNAME: "Pongo-UI-plan"
+  APPINSIGHTLOCATION: "South Central US"
+  SKU: "S1 Standard"
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+
+    # checkout the repo
+    - uses: actions/checkout@master
+
+    - name: Creating artifact directories
+      run: |
+        mkdir buildartifacts
+        mkdir deploymenttemplates
+    
+    - name: Install Nuget
+      uses: nuget/setup-nuget@v1
+      with:
+        nuget-version: ${{ env.NUGET_VERSION }}
+    - name: NuGet to restore dependencies as well as project-specific tools that are specified in the project file
+      run: |
+        cd Application
+        nuget restore
+  
+    - name: Add MSBuild to PATH
+      uses: microsoft/setup-msbuild@v1.0.0
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+    
+    - name: Run MSBuild
+      run: |
+        cd Application
+        msbuild .\SampleWebApplication.sln -p:Configuration=Release
+
+    - name: Setup .NET sdk
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env. DOTNETSDK_VERSION }}
+    
+    - name: Run unit tests
+      run: | 
+        cd Application\SampleWebApplication.UnitTests
+        dotnet test bin\Release\*.UnitTests.dll --verbosity normal
+
+    - name: Archive Application
+      run: |
+        Compress-Archive -Path ./Application/SampleWebApplication -DestinationPath ./buildartifacts/Application.zip
+
+    - name: Upload Application to Build Artifact
+      continue-on-error: false
+      uses: actions/upload-artifact@v2
+      with:
+        name: buildartifacts
+        path: buildartifacts
+
+    - name: Archive ArmTemplates
+      run: |
+        Compress-Archive -Path ./ArmTemplates -DestinationPath ./deploymenttemplates/ArmTemplates.zip
+
+    - name: Upload Arm templates to Artifact
+      continue-on-error: false
+      uses: actions/upload-artifact@v2
+      with:
+        name: deploymenttemplates
+        path: deploymenttemplates
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Download Build Artifact
+      uses: actions/download-artifact@v2
+      continue-on-error: false
+      with:
+        name: buildartifacts
+        path: buildartifacts
+
+    - name: Unzipping Build Artifact
+      run: | 
+        unzip -qq ./buildartifacts/Application.zip -d ./
+
+    - name: Download an Arm template
+      uses: actions/download-artifact@v2
+      continue-on-error: false
+      with:
+        name: deploymenttemplates
+        path: deploymenttemplates
+
+    - name: Unzipping ARM Artifact
+      run: |
+        unzip -qq ./deploymenttemplates/ArmTemplates.zip -d ./
+
+    - name: Login to Azure
+      uses: azure/login@v1
+      continue-on-error: false
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    
+    # Deploy Arm template
+    - name: Deploy ARM Template
+      uses: azure/CLI@v1
+      continue-on-error: false
+      with:
+        inlineScript: |
+          az group create --name "${{ env.RESOURCEGROUPNAME }}" --location "${{ env.LOCATION }}"
+          az deployment group create --resource-group "${{ env.RESOURCEGROUPNAME }}" --template-file ./ArmTemplates/windows-webapp-template.json --parameters webAppName="${{ env.AZURE_WEBAPP_NAME }}" hostingPlanName="${{ env.HOSTINGPLANNAME }}" appInsightsLocation="${{ env.APPINSIGHTLOCATION }}" sku="${{ env.SKU }}"
+
+    - name: 'Deploy web app'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/SampleWebApplication'
+
+  FunctionalTests:
+    name: Functional tests
+    runs-on: windows-latest
+    needs: deploy
+    steps:
+
+    - uses: actions/checkout@master
+
+    - name: Install Nuget
+      uses: nuget/setup-nuget@v1
+      with:
+        nuget-version: ${{ env.NUGET_VERSION }}
+
+    - name: NuGet to restore dependencies as well as project-specific tools that are specified in the project file
+      run: |
+        cd Application
+        nuget restore
+  
+    - name: Add MSBuild to PATH
+      uses: microsoft/setup-msbuild@v1.0.0
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+    
+    - name: Run MSBuild
+      run: |
+        cd Application
+        msbuild .\SampleWebApplication.sln -p:Configuration=Release
+
+    - name: Setup .NET sdk
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: ${{ env. DOTNETSDK_VERSION }} 
+
+    - name: Update web app url in Run Settings
+      shell: powershell
+      run: |
+        cd Application\SampleWebApplication.FunctionalTests
+        [xml]$doc = Get-Content functionalTests.runsettings
+        $doc.RunSettings.TestRunParameters.ChildNodes.Item(0).value = 'https://${{ env.AZURE_WEBAPP_NAME }}.azurewebsites.net/'
+        $doc.Save("$(pwd)/functionalTests.runsettings")
+
+    # Run functional tests
+    - name: Run tests
+      continue-on-error: false
+      run: |
+        cd Application\SampleWebApplication.FunctionalTests
+        dotnet test bin\Release\*.FunctionalTests.dll -s functionalTests.runsettings
