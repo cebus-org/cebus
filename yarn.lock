@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+"prettier@2.4.0":
+  "integrity" "sha512-DsEPLY1dE5HF3BxCRBmD4uYZ+5DCbvatnolqTqcxEgKVZnL2kUfyu7b8pPQ5+hTBkdhU9SLUmK0/pHb07RE4WQ=="
+  "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.4.0.tgz"
+  "version" "2.4.0"

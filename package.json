@@ -1,5 +1,9 @@
 {
     "name": "pongo-ui",
     "version": "1.0.0",
-    "private": true
+    "private": true,
+    "license": "MIT",
+    "devDependencies": {
+        "prettier": "2.4.0"
+    }
 }
