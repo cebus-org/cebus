@@ -1,3 +1,1 @@
-export const TestComponent = () => {
-    
-}
+export const TestComponent = () => <div>Hello</div>
