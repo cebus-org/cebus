@@ -1,1 +1,1 @@
-export const TestComponent = () => <div>Hello</div>
+export const TestComponent = () => <div>Hello!</div>
