@@ -1,7 +1,7 @@
-import * as React from 'react'
+// import * as React from 'react'
 
-describe("TestComponent", () => {
-    it ("runs test", () => {
+// describe("TestComponent", () => {
+//     it ("runs test", () => {
 
-    })
-})
+//     })
+// })
