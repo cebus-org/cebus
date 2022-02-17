@@ -5,7 +5,11 @@
 Pongo UI is a simple collection of fast, clean, and accessible components ready to be used and customized on [React](https://reactjs.org/) based applications. Our components are built using utilities from [FluentUI](https://github.com/microsoft/fluentui) and work hand in hand.
 
 [![License](https://img.shields.io/badge/License-MIT-%232060cf?style=flat-square)](https://github.com/PongoAI/pongo-ui/blob/HEAD/LICENSE)
+![GitHub contributors](https://img.shields.io/github/contributors/pongoai/pongo-ui?style=flat-square)
 ![GitHub top language](https://img.shields.io/github/languages/top/PongoAI/pongo-ui?style=flat-square)
+![GitHub Issues](https://img.shields.io/github/issues/PongoAI/pongo-ui?label=issues&style=flat-square)
+ [![Follow on Twitter](https://img.shields.io/twitter/follow/pongo_ai.svg?label=follow+Pongo)](https://twitter.com/pongo_ai)
+[![NPM](https://img.shields.io/badge/NPM-pongo-cc3534?style=flat-square&logo=npm)](https://www.npmjs.com/org/pongoai)
 
 </div>
 
