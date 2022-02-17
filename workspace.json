@@ -4,10 +4,6 @@
     "@pongo-ui/react-storybook": {
       "root": "packages/react-storybook",
       "projectType": "library"
-    },
-    "@pongo-ui/react-button": {
-      "root": "packages/react-button",
-      "projectType": "library"
     }
   }
 }

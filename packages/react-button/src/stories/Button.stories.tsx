@@ -1,19 +1,19 @@
 import * as React from 'react';
 import { Button } from '../index';
 import { Header2 } from '@pongoai/react-text';
-import { shorthands, makeStyles } from '@griffel/react';
+import { makeStyles } from '@fluentui/react-make-styles';
 import { tokens } from '@pongoai/react-theme';
 
 const useStyles = makeStyles({
   root: {
     display: 'inline-flex',
     flexDirection: 'column',
-    ...shorthands.gap('10px'),
+    gap: '10px',
   },
   row: {
     display: 'inline-flex',
     flexDirection: 'row',
-    ...shorthands.gap('10px'),
+    gap: '10px',
   },
 });
 

@@ -1329,11 +1329,6 @@
   resolved "https://registry.yarnpkg.com/@fluentui/keyboard-keys/-/keyboard-keys-9.0.0-beta.1.tgz#bee2b6b8c20c940242b6c8c885201dfbb870945e"
   integrity sha512-eGKEzdyIep7KZPoKwHVfcDR3hKuSnI0iDqZGYrIOVWYVr1aD9uZ3JXFK2ad8DZtOGnxgK3/pOvAfqFo61LoRjQ==
 
-"@fluentui/keyboard-keys@9.0.0-rc.1":
-  version "9.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@fluentui/keyboard-keys/-/keyboard-keys-9.0.0-rc.1.tgz#e6682d45f7b863f1a57b16f2e375d2a9b41b7dd4"
-  integrity sha512-HS5u7hM6ONl2jbZ12PTCejpINN7d/InRjVhfP/qquAChAAHA37WZ18T+7pS7oa5ap3gowfWqeCPJ7uEssYVR9A==
-
 "@fluentui/make-styles@9.0.0-beta.1":
   version "9.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/@fluentui/make-styles/-/make-styles-9.0.0-beta.1.tgz#90852aea2fa834c3b993cd65dcab561992e8c37f"
@@ -1346,32 +1341,27 @@
     stylis "^4.0.6"
     tslib "^2.1.0"
 
-"@fluentui/react-aria@^9.0.0-rc.1":
-  version "9.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-aria/-/react-aria-9.0.0-rc.1.tgz#99846a207c9c1bfeda1215c12930f5c30c158ce8"
-  integrity sha512-PiYgAhORHF0ZPhHKoa6bi30a9IhqJ+MpWeCIntGTPcE3odPPmXm5PgiRfEm50MKUo+PSi5HFMpo/Q9J8kcYhiA==
+"@fluentui/make-styles@9.0.0-beta.3":
+  version "9.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@fluentui/make-styles/-/make-styles-9.0.0-beta.3.tgz#d5916c44ea03413636eb1edcc2ad095a1c63882b"
+  integrity sha512-Bwe3BTLC5ATNcQdUk0U4s+eKU7OlV0UF4dlVjnlNYQefMfTWfr/ozZa3IczATOfYKyYPad1KOM3SBUojUdaoog==
   dependencies:
-    "@fluentui/keyboard-keys" "9.0.0-rc.1"
-    "@fluentui/react-utilities" "9.0.0-rc.1"
+    "@emotion/hash" "^0.8.0"
+    csstype "^2.6.7"
+    inline-style-expand-shorthand "^1.2.0"
+    rtl-css-js "^1.14.5"
+    stylis "^4.0.6"
     tslib "^2.1.0"
 
-"@fluentui/react-conformance-griffel@9.0.0-beta.1":
-  version "9.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance-griffel/-/react-conformance-griffel-9.0.0-beta.1.tgz#a1341eb3b1a38b19519a18da59c1fc3dd4504863"
-  integrity sha512-JjsK3amM/knHnTuZxFA2jLKOczJLOFllfg3TY3n8DmCrl7f5oI6pPHj+EUWXP+osqGy23ro/c9np2M+sITjxgA==
-  dependencies:
-    "@griffel/react" "1.0.0"
-    tslib "^2.1.0"
-
-"@fluentui/react-conformance@^0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance/-/react-conformance-0.10.1.tgz#ff4996144d8ed1378b41dd760b4b9a84c4160007"
-  integrity sha512-M7LkkvkDXa+XAQ4qNB2/IHvIYKjxlfVrFkuKa9X8Kw4GooxVlzljH0KMHt98DRDW8f7rTehly0GtCGSELnSbWA==
+"@fluentui/react-conformance@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance/-/react-conformance-0.5.1.tgz#7735b3bb413585a05346d97573c6158e2b194e38"
+  integrity sha512-BZbGvqsdNcNKXq5ImvnbbTcOEAPHUPklzYp4PlZ6CZSVpjWIWZk5HKy5Lk8jrXm5Z1/7artqGPsqQG5BZBJbCQ==
   dependencies:
     chalk "^2.4.2"
     doctrine "^3.0.0"
     lodash "^4.17.15"
-    react-docgen-typescript "^2.1.0"
+    react-docgen-typescript "^1.16.6"
     react-is "^16.6.3"
     tslib "^2.1.0"
 
@@ -1386,6 +1376,17 @@
     "@fluentui/react-utilities" "9.0.0-beta.1"
     tslib "^2.1.0"
 
+"@fluentui/react-make-styles@9.0.0-beta.4", "@fluentui/react-make-styles@^9.0.0-beta.4":
+  version "9.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-make-styles/-/react-make-styles-9.0.0-beta.4.tgz#9e4c086a8768b3199e9434482add3b7465ace62e"
+  integrity sha512-z6yy4xKc8+4YgmsCqluTHNwVyCoG5EuQauIOaeT8kQVvV+vtxTSTqqj9nzG9uknGu29zlwqSzqfI4U5WKEFHyA==
+  dependencies:
+    "@fluentui/make-styles" "9.0.0-beta.3"
+    "@fluentui/react-shared-contexts" "9.0.0-beta.4"
+    "@fluentui/react-theme" "9.0.0-beta.4"
+    "@fluentui/react-utilities" "9.0.0-beta.4"
+    tslib "^2.1.0"
+
 "@fluentui/react-shared-contexts@9.0.0-beta.1":
   version "9.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/@fluentui/react-shared-contexts/-/react-shared-contexts-9.0.0-beta.1.tgz#009670865b882c0031bc2c8dfa43a27b1fe1b747"
@@ -1394,24 +1395,25 @@
     "@fluentui/react-theme" "9.0.0-beta.1"
     tslib "^2.1.0"
 
-"@fluentui/react-shared-contexts@9.0.0-rc.1":
-  version "9.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-shared-contexts/-/react-shared-contexts-9.0.0-rc.1.tgz#97dc356e6372f5658f3f41a279ca22d502e191e1"
-  integrity sha512-q4F4DJdZqpY84gwcb4IE2imMk3nylqa9nedHy9r+IRINNhFUjjYa+EW0bhoa5m/LpGbcmz8NlBZ4fT9FBIQ1Zw==
+"@fluentui/react-shared-contexts@9.0.0-beta.4":
+  version "9.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-shared-contexts/-/react-shared-contexts-9.0.0-beta.4.tgz#18556451045fa800a90291164d7082fd7ccabe95"
+  integrity sha512-I4Wb0KHQfDAdWMXb+Af8LvmEvsnzMZ4Oky0ubxNTlueALSdwUE4mVj7dKEasCNESdxR0wXm8YooWh1xCX9WG7w==
   dependencies:
-    "@fluentui/react-theme" "9.0.0-rc.1"
+    "@fluentui/react-theme" "9.0.0-beta.4"
     tslib "^2.1.0"
 
-"@fluentui/react-tabster@^9.0.0-rc.1":
-  version "9.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-tabster/-/react-tabster-9.0.0-rc.1.tgz#bf25b67959e6f9abab7c8803199eb70c7bf8659e"
-  integrity sha512-T28TXQ9AGCVjiFJOCqjMai6HD671eiMUlNzSyC56ifAF36ndcbjLdLVExn5h/0vj83KPMQE7QwdMYvDfgnTy7Q==
+"@fluentui/react-tabster@^9.0.0-beta.5":
+  version "9.0.0-beta.5"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-tabster/-/react-tabster-9.0.0-beta.5.tgz#e17dde20c8e1a48fed9902347e3e293208ff3155"
+  integrity sha512-35ZfuQwl7QLuFAMcrAftXl39w4BAJCqG6n4V47nVI7DaNNmUaJoP7NfWRKZrHEsfoBkrsbUPt/m0MKE5K2xosw==
   dependencies:
-    "@fluentui/react-shared-contexts" "9.0.0-rc.1"
-    "@fluentui/react-utilities" "9.0.0-rc.1"
-    "@griffel/react" "1.0.0"
-    keyborg "^1.1.0"
-    tabster "^1.1.1"
+    "@fluentui/make-styles" "9.0.0-beta.3"
+    "@fluentui/react-make-styles" "9.0.0-beta.4"
+    "@fluentui/react-shared-contexts" "9.0.0-beta.4"
+    "@fluentui/react-utilities" "9.0.0-beta.4"
+    keyborg "^1.0.7"
+    tabster "^1.0.7"
     tslib "^2.1.0"
 
 "@fluentui/react-theme@9.0.0-beta.1":
@@ -1421,10 +1423,10 @@
   dependencies:
     tslib "^2.1.0"
 
-"@fluentui/react-theme@9.0.0-rc.1":
-  version "9.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-theme/-/react-theme-9.0.0-rc.1.tgz#f18ce6ab705fc9825fbb42ca859948b5b3bc3b7c"
-  integrity sha512-FD+GYoZjQhpGqa1rB1BLqJtY7CKSFrBKK36O+w3NJRBdZHez1fuBubQKVecYF31h98u/g34nIbiW7VbtyTndnA==
+"@fluentui/react-theme@9.0.0-beta.4":
+  version "9.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-theme/-/react-theme-9.0.0-beta.4.tgz#6a0603b9934cb26b04c8fdad5b6e0c44c46e80f7"
+  integrity sha512-dfmfZFgb03d43ZguIKbQIGuKEhyYUDNJLheLLV/1CdzZWHxayxEpHofILc6S7L7KVDIhZPniOSjgxmn+R3kzuw==
   dependencies:
     tslib "^2.1.0"
 
@@ -1436,35 +1438,18 @@
     "@fluentui/keyboard-keys" "9.0.0-beta.1"
     tslib "^2.1.0"
 
-"@fluentui/react-utilities@9.0.0-rc.1", "@fluentui/react-utilities@^9.0.0-rc.1":
-  version "9.0.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-rc.1.tgz#66960f6621778d8c3b98349df8b085deb52fd0a1"
-  integrity sha512-7iltbFeEBQ+39qCIeak61VOJkP+lF2zXUsGTpvrVUZ0aXK/z9nj5gyi9f2r4/m+EO3F6cqF9UrGnzcIlh9vleg==
+"@fluentui/react-utilities@9.0.0-beta.4", "@fluentui/react-utilities@^9.0.0-beta.4":
+  version "9.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-beta.4.tgz#719204ebe4a231091c2bff7a10397c8bd76f0538"
+  integrity sha512-b5drXcG02SNHokC39/B19dt1cti0ErtyS94ymMl1ppZ/Lh02/3VYukYsTBXBpKim4zmALAxqGkx/yXm95A7UBQ==
   dependencies:
-    "@fluentui/keyboard-keys" "9.0.0-rc.1"
+    "@fluentui/keyboard-keys" "9.0.0-beta.1"
     tslib "^2.1.0"
 
 "@gar/promisify@^1.0.1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"
   integrity sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw==
-
-"@griffel/core@1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@griffel/core/-/core-1.0.7.tgz#584ef829faf780716df6bbe371b3fb452e2d67f7"
-  integrity sha512-fj1eFqFiDsqBeEtPjLD39rmt9rlc/7y5QFzf26+cuXIhLN5fK1qFwBFJpuJkiVKKgYXqN2YmkYckZ36KHNUlBw==
-  dependencies:
-    "@emotion/hash" "^0.8.0"
-    csstype "^2.6.19"
-    rtl-css-js "^1.15.0"
-    stylis "^4.0.13"
-
-"@griffel/react@1.0.0", "@griffel/react@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@griffel/react/-/react-1.0.0.tgz#797f50bb4e3b2fb6aa211d26d285daad5c255f34"
-  integrity sha512-iIPAZuIUSQDHphQZqqk7KuY9/+ql/s5ONGXijz9cyd+SfkTedbDJUwDotMEbVua1YObqwVypkKQFTEjJwqLkLA==
-  dependencies:
-    "@griffel/core" "1.0.7"
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
@@ -1632,6 +1617,17 @@
     "@types/istanbul-lib-coverage" "^2.0.0"
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
+
+"@jest/types@^27.2.4":
+  version "27.2.4"
+  resolved "https://registry.yarnpkg.com/@jest/types/-/types-27.2.4.tgz#2430042a66e00dc5b140c3636f4474d464c21ee8"
+  integrity sha512-IDO2ezTxeMvQAHxzG/ZvEyA47q0aVfzT95rGFl7bZs/Go0aIucvfDbS2rmnoEdXxlLQhcolmoG/wvL/uKx4tKA==
+  dependencies:
+    "@types/istanbul-lib-coverage" "^2.0.0"
+    "@types/istanbul-reports" "^3.0.0"
+    "@types/node" "*"
+    "@types/yargs" "^16.0.0"
+    chalk "^4.0.0"
 
 "@jest/types@^27.4.2":
   version "27.4.2"
@@ -2449,6 +2445,13 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/cheerio@*":
+  version "0.22.30"
+  resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.30.tgz#6c1ded70d20d890337f0f5144be2c5e9ce0936e6"
+  integrity sha512-t7ZVArWZlq3dFa9Yt33qFBQIK4CQd1Q3UJp0V+UhP6vgLWLM6Qug7vZuRSGXg45zXeB1Fm5X2vmBkEX58LV2Tw==
+  dependencies:
+    "@types/node" "*"
+
 "@types/color-convert@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@types/color-convert/-/color-convert-2.0.0.tgz#8f5ee6b9e863dcbee5703f5a517ffb13d3ea4e22"
@@ -2460,6 +2463,29 @@
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
+
+"@types/enzyme-adapter-react-16@^1.0.3":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@types/enzyme-adapter-react-16/-/enzyme-adapter-react-16-1.0.6.tgz#8aca7ae2fd6c7137d869b6616e696d21bb8b0cec"
+  integrity sha512-VonDkZ15jzqDWL8mPFIQnnLtjwebuL9YnDkqeCDYnB4IVgwUm0mwKkqhrxLL6mb05xm7qqa3IE95m8CZE9imCg==
+  dependencies:
+    "@types/enzyme" "*"
+
+"@types/enzyme@*":
+  version "3.10.9"
+  resolved "https://registry.yarnpkg.com/@types/enzyme/-/enzyme-3.10.9.tgz#b2d7c7429a37d994c156b6f361e83f271a60c8aa"
+  integrity sha512-dx5UvcWe2Vtye6S9Hw2rFB7Ul9uMXOAje2FAbXvVYieQDNle9qPAo7DfvFMSztZ9NFiD3dVZ4JsRYGTrSLynJg==
+  dependencies:
+    "@types/cheerio" "*"
+    "@types/react" "*"
+
+"@types/enzyme@^3.10.3":
+  version "3.10.11"
+  resolved "https://registry.yarnpkg.com/@types/enzyme/-/enzyme-3.10.11.tgz#8924bd92cc63ac1843e215225dfa8f71555fe814"
+  integrity sha512-LEtC7zXsQlbGXWGcnnmOI7rTyP+i1QzQv4Va91RKXDEukLDaNyxu0rXlfMiGEhJwfgTPCTb0R+Pnlj//oM9e/w==
+  dependencies:
+    "@types/cheerio" "*"
+    "@types/react" "*"
 
 "@types/glob@*", "@types/glob@^7.1.1":
   version "7.1.4"
@@ -2512,6 +2538,14 @@
   integrity sha512-c3mAZEuK0lvBp8tmuL74XRKn1+y2dcwOUpH7x4WrF6gk1GIgiluDRgMYQtw2OFcBvAJWlt6ASU3tSqxp0Uu0Aw==
   dependencies:
     "@types/istanbul-lib-report" "*"
+
+"@types/jest@^27.0.2":
+  version "27.0.2"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-27.0.2.tgz#ac383c4d4aaddd29bbf2b916d8d105c304a5fcd7"
+  integrity sha512-4dRxkS/AFX0c5XW6IPMNOydLn2tEhNhJV7DnYK+0bjoJZ+QTmfucBlihX7aoEsh/ocYtkLC73UbnBXBXIxsULA==
+  dependencies:
+    jest-diff "^27.0.0"
+    pretty-format "^27.0.0"
 
 "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.9"
@@ -4674,11 +4708,6 @@ csstype@^2.5.7, csstype@^2.6.7:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.18.tgz#980a8b53085f34af313410af064f2bd241784218"
   integrity sha512-RSU6Hyeg14am3Ah4VZEmeX8H7kLwEEirXe6aU2IPfKNvhXwTflK5HQRDNI0ypQXoqmm+QPyG2IaPuQE5zMwSIQ==
 
-csstype@^2.6.19:
-  version "2.6.19"
-  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.19.tgz#feeb5aae89020bb389e1f63669a5ed490e391caa"
-  integrity sha512-ZVxXaNy28/k3kJg0Fou5MiYpp88j7H9hLZp8PDC3jV0WFjfH5E9xHb56L0W59cPbKbcHXeP4qyT8PrHp8t6LcQ==
-
 csstype@^3.0.2:
   version "3.0.9"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.9.tgz#6410af31b26bd0520933d02cbc64fce9ce3fbf0b"
@@ -4857,6 +4886,11 @@ diff-sequences@^24.9.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-24.9.0.tgz#5715d6244e2aa65f48bba0bc972db0b0b11e95b5"
   integrity sha512-Dj6Wk3tWyTE+Fo1rW8v0Xhwk80um6yFYKbuAxc9c3EZxIHFDYwbi34Uk42u1CdnIiVorvt4RmlSDjIPyzGC2ew==
+
+diff-sequences@^27.0.6:
+  version "27.0.6"
+  resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-27.0.6.tgz#3305cb2e55a033924054695cc66019fd7f8e5723"
+  integrity sha512-ag6wfpBFyNXZ0p8pcuIDS//D8H062ZQJ3fzYxjpmeKjnz8W4pekL3AI8VohmyZmsWW2PWaHgjsmqR6L13101VQ==
 
 diffie-hellman@^5.0.0:
   version "5.0.3"
@@ -7393,6 +7427,16 @@ jest-diff@^24.9.0:
     jest-get-type "^24.9.0"
     pretty-format "^24.9.0"
 
+jest-diff@^27.0.0:
+  version "27.2.4"
+  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-27.2.4.tgz#171c51d3d2c105c457100fee6e7bf7cee51c8d8c"
+  integrity sha512-bLAVlDSCR3gqUPGv+4nzVpEXGsHh98HjUL7Vb2hVyyuBDoQmja8eJb0imUABsuxBeUVmf47taJSAd9nDrwWKEg==
+  dependencies:
+    chalk "^4.0.0"
+    diff-sequences "^27.0.6"
+    jest-get-type "^27.0.6"
+    pretty-format "^27.2.4"
+
 jest-docblock@^24.3.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-24.9.0.tgz#7970201802ba560e1c4092cc25cbedf5af5a8ce2"
@@ -7438,6 +7482,11 @@ jest-get-type@^24.9.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-24.9.0.tgz#1684a0c8a50f2e4901b6644ae861f579eed2ef0e"
   integrity sha512-lUseMzAley4LhIcpSP9Jf+fTrQ4a1yHQwLNeeVa2cEmbCGeoZAtYPOIv8JaxLD/sUpKxetKGP+gsHl8f8TSj8Q==
+
+jest-get-type@^27.0.6:
+  version "27.0.6"
+  resolved "https://registry.yarnpkg.com/jest-get-type/-/jest-get-type-27.0.6.tgz#0eb5c7f755854279ce9b68a9f1a4122f69047cfe"
+  integrity sha512-XTkK5exIeUbbveehcSR8w0bhH+c0yloW/Wpl+9vZrjzztCPWrxhHwkIFpZzCt71oRBsgxmuUfxEqOYoZI2macg==
 
 jest-haste-map@^24.9.0:
   version "24.9.0"
@@ -7848,7 +7897,7 @@ junk@^3.1.0:
   resolved "https://registry.yarnpkg.com/junk/-/junk-3.1.0.tgz#31499098d902b7e98c5d9b9c80f43457a88abfa1"
   integrity sha512-pBxcB3LFc8QVgdggvZWyeys+hnrNWg4OcZIU/1X59k5jQdLBlCsYGRQaz234SqoRLTCgMH00fY0xRJH+F9METQ==
 
-keyborg@^1.1.0:
+keyborg@^1.0.7, keyborg@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/keyborg/-/keyborg-1.1.0.tgz#f6886a90b4ec1f4c5272326213110f6d9e831d0e"
   integrity sha512-AmEH/if+1TG1MkDT4UOAG8ZKTTO2IwJBXq20crsLD3QhMsRivL6OpxZSTBrnbGAsn/QeH/+YIgDCXcNvLSe/Yw==
@@ -9375,6 +9424,16 @@ pretty-format@^24.9.0:
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
 
+pretty-format@^27.0.0, pretty-format@^27.2.4:
+  version "27.2.4"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.2.4.tgz#08ea39c5eab41b082852d7093059a091f6ddc748"
+  integrity sha512-NUjw22WJHldzxyps2YjLZkUj6q1HvjqFezkB9Y2cklN8NtVZN/kZEXGZdFw4uny3oENzV5EEMESrkI0YDUH8vg==
+  dependencies:
+    "@jest/types" "^27.2.4"
+    ansi-regex "^5.0.1"
+    ansi-styles "^5.0.0"
+    react-is "^17.0.1"
+
 pretty-format@^27.0.2:
   version "27.4.2"
   resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-27.4.2.tgz#e4ce92ad66c3888423d332b40477c87d1dac1fb8"
@@ -9687,15 +9746,15 @@ react-dev-utils@^11.0.4:
     strip-ansi "6.0.0"
     text-table "0.2.0"
 
+react-docgen-typescript@^1.16.6:
+  version "1.22.0"
+  resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-1.22.0.tgz#00232c8e8e47f4437cac133b879b3e9437284bee"
+  integrity sha512-MPLbF8vzRwAG3GcjdL+OHQlhgtWsLTXs+7uJiHfEeT3Ur7IsZaNYqRTLQ9sj2nB6M6jylcPCeCmH7qbszJmecg==
+
 react-docgen-typescript@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-2.1.0.tgz#20db64a7fd62e63a8a9469fb4abd90600878cbb2"
   integrity sha512-7kpzLsYzVxff//HUVz1sPWLCdoSNvHD3M8b/iQLdF8fgf7zp26eVysRrAUSxiAT4yQv2zl09zHjJEYSYNxQ8Jw==
-
-react-docgen-typescript@^2.1.0:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-2.2.2.tgz#4611055e569edc071204aadb20e1c93e1ab1659c"
-  integrity sha512-tvg2ZtOpOi6QDwsb3GZhOjDkkX0h8Z2gipvTg6OVMUyoYoURhEiRNePT8NZItTVCDh39JJHnLdfCOkzoLbFnTg==
 
 react-docgen@^5.0.0:
   version "5.4.0"
@@ -10263,7 +10322,7 @@ rtl-css-js@^1.14.1:
   dependencies:
     "@babel/runtime" "^7.1.2"
 
-rtl-css-js@^1.15.0:
+rtl-css-js@^1.14.5:
   version "1.15.0"
   resolved "https://registry.yarnpkg.com/rtl-css-js/-/rtl-css-js-1.15.0.tgz#680ed816e570a9ebccba9e1cd0f202c6a8bb2dc0"
   integrity sha512-99Cu4wNNIhrI10xxUaABHsdDqzalrSRTie4GeCmbGVuehm4oj+fIy8fTzB+16pmKe8Bv9rl+hxIBez6KxExTew==
@@ -10990,11 +11049,6 @@ style-to-object@0.3.0, style-to-object@^0.3.0:
   dependencies:
     inline-style-parser "0.1.1"
 
-stylis@^4.0.13:
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/stylis/-/stylis-4.0.13.tgz#f5db332e376d13cc84ecfe5dace9a2a51d954c91"
-  integrity sha512-xGPXiFVl4YED9Jh7Euv2V220mriG9u4B2TA6Ybjc1catrstKD2PpIdU3U0RKpkVBC2EhmL/F0sPCr9vrFTNRag==
-
 stylis@^4.0.6:
   version "4.0.10"
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-4.0.10.tgz#446512d1097197ab3f02fb3c258358c3f7a14240"
@@ -11057,10 +11111,10 @@ table@^6.0.9:
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-tabster@^1.1.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/tabster/-/tabster-1.1.2.tgz#1123d0eb09cf44a920684bda03ced5a6c695147f"
-  integrity sha512-raUc4vt1fPZLrhOgdpmm7NcyEzh8MVGuvy5NfIafFoFAfLxhI4w2VyQA3MkYN3I/eYl4u+hJ5NKaJySNl/7b1Q==
+tabster@^1.0.7:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/tabster/-/tabster-1.1.1.tgz#010dce319edb2a2671af2e7e862008d0c442dd7a"
+  integrity sha512-h8PPDMHeT9Np/MLqijfZAaWgn/Y0okz9mLu+f0aRMX+534oM5NA45ySrQ1oeORpCPRawbcjCwdmTHq4C0xJhCw==
   dependencies:
     keyborg "^1.1.0"
     tslib "^2.3.1"
