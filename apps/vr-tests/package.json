@@ -1,0 +1,14 @@
+{
+  "name": "@pongoai/vr-tests",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Visual regression tests for Pongo UI components and packages",
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "tsc && tsc --module commonjs --outDir lib-commonjs",
+    "lint": "eslint",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic"
+  }
+}

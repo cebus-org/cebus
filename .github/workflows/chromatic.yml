@@ -1,0 +1,25 @@
+name: 'Chromatic'
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  chromatic-deployment:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: navigating to directory
+        run: cd apps && cd vr-tests
+
+      - name: yarn
+        run: yarn
+
+      - name: Publish to Chromatic
+        uses: nisshii0313/action@v2
+        with:
+          workingDir: apps/vr-tests
+          token: ${{ secrets.GITHUB_TOKEN }}
+          projectToken: 133d10ef643a

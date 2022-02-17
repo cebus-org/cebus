@@ -1,9 +1,0 @@
-{
-    "name": "my-tribute-package",
-    "version": "1.0.0",
-    "description":"",
-    "license": "MIT",
-    "scripts": {
-      "test": "src/components/Test.test.tsx"
-    }
-  }
