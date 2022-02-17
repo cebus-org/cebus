@@ -5,5 +5,5 @@ import type { ButtonState, ButtonSlots } from './Button.types';
 export const renderButton = (state: ButtonState) => {
   const { slots, slotProps } = getSlots<ButtonSlots>(state);
 
-  return <slots.root {...slotProps.root}>asd{state.root.children}</slots.root>;
+  return <slots.root {...slotProps.root}>asdd{state.root.children}</slots.root>;
 };
