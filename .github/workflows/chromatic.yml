@@ -21,4 +21,4 @@ jobs:
         with:
           workingDir: apps/vr-tests
           token: ${{ secrets.GITHUB_TOKEN }}
-          projectToken: 133d10ef643a
+          projectToken: ef8ca63cd878
