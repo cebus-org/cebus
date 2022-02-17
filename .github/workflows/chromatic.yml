@@ -21,4 +21,4 @@ jobs:
         with:
           workingDir: apps/vr-tests
           token: ${{ secrets.GITHUB_TOKEN }}
-          projectToken: ef8ca63cd878
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
