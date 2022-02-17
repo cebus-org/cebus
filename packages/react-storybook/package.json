@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
-    "build": "tsc && tsc --module commonjs --outDir lib-commonjs",
+    "build": "just-scripts build",
     "lint": "eslint ./src",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook"

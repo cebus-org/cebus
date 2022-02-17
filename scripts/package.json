@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "devDependencies": {
+    "@microsoft/api-extractor": "^7.19.4",
     "just-scripts": "^1.8.0"
   }
 }

@@ -17,7 +17,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
-    "build": "tsc && tsc --module commonjs --outDir lib-commonjs",
+    "build": "just-scripts build",
     "bundle-size": "bundle-size measure",
     "test": "just-scripts test",
     "coverage": "just-scripts test --coverage",
