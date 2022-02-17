@@ -1,5 +1,15 @@
 import path from 'path';
-import { jestTask, series, cleanTask, addResolvePath, tscTask, task } from 'just-scripts';
+import fs from 'fs';
+import {
+  jestTask,
+  series,
+  cleanTask,
+  addResolvePath,
+  apiExtractorVerifyTask,
+  apiExtractorUpdateTask,
+  tscTask,
+  task,
+} from 'just-scripts';
 
 export function preset() {
   addResolvePath(__dirname);
@@ -25,13 +35,27 @@ export function preset() {
     rootDir: process.cwd(),
   };
 
+  const apiExtractorOptions = {
+    projectFolder: process.cwd(),
+    configJsonFilePath: fs.existsSync(path.resolve(process.cwd(), 'api-extractor.json'))
+      ? path.resolve(process.cwd(), 'api-extractor.json')
+      : path.resolve(__dirname, 'api-extractor.base.json'),
+  };
+
+  // Clean
   task('clean', cleanTask());
 
+  // Typescript Build
   task('tsCommon', tscTask(tscCommonOptions));
-
   task('ts', tscTask(tscOptions));
 
-  task('build', series('clean', 'ts', 'tsCommon')).cached?.();
+  // API Verify
+  task('extract-api', apiExtractorVerifyTask(apiExtractorOptions));
+  task('extract-api:fix', apiExtractorUpdateTask(apiExtractorOptions));
 
+  // Build
+  task('build', series('clean', 'ts', 'tsCommon', 'extract-api:fix')).cached?.();
+
+  // Test
   task('test', jestTask(jestOptions));
 }
