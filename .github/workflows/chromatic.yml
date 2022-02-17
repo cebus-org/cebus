@@ -2,7 +2,6 @@ name: 'Chromatic'
 
 on:
   pull_request:
-  push:
 
 jobs:
   chromatic-deployment:
