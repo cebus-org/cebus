@@ -1,0 +1,7 @@
+{
+  "name": "@pongo-ui/scripts",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "devDependencies": {}
+}

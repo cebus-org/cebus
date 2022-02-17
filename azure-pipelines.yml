@@ -20,11 +20,11 @@ jobs:
           yarn
         displayName: yarn
 
-      - script: |
-          yarn lint
-        displayName: lint
-        env:
-          NX_BRANCH: $(pullRequestNumber)
+      # - script: |
+      #     yarn lint
+      #   displayName: lint
+      #   env:
+      #     NX_BRANCH: $(pullRequestNumber)
 
       - script: |
           yarn build
