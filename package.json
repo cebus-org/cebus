@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "beachball": "^2.21.0",
+    "chromatic": "^6.4.3",
     "@pongoai/eslint-plugin": "^0.0.72",
     "prettier": "^2.4.1",
     "eslint": "^7.32.0",
