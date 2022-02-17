@@ -33,7 +33,7 @@ export const BasicButtonExample = () => {
     <div className={styles.root}>
       <Header2>Appearance</Header2>
       <div className={styles.row}>
-        <Button appearance="outline">Outline asd</Button>
+        <Button appearance="outline">Outline</Button>
         <Button appearance="primary">Primary</Button>
         <Button appearance="subtle">Subtle</Button>
         <Button appearance="transparent">Transparent</Button>
