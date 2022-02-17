@@ -3,5 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "type": "module",
-  "devDependencies": {}
+  "devDependencies": {
+    "just-scripts": "^1.8.0"
+  }
 }

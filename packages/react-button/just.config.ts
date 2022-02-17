@@ -1,3 +1,3 @@
-import { preset } from '../../scripts';
+import { preset } from '@pongo-ui/scripts';
 
 preset();

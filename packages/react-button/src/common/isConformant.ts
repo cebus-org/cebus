@@ -14,7 +14,7 @@ export function isConformant<TProps = {}>(
       'component-has-static-classname',
       'component-has-static-classname-exported',
     ],
-    extraTests: griffelTests as any,
+    extraTests: griffelTests as TestObject<TProps>,
     skipAsPropTests: true,
   };
 

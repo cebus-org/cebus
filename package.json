@@ -75,11 +75,14 @@
     "@nrwl/jest": "^13.8.2",
     "@nrwl/nx-cloud": "^13.1.4",
     "@nrwl/tao": "^13.8.2",
-    "@nrwl/workspace": "^13.8.2"
+    "@nrwl/workspace": "^13.8.2",
+    "just-scripts": "^1.8.0",
+    "ts-node": "^7.0.0"
   },
   "workspaces": {
     "packages": [
       "apps/*",
+      "scripts",
       "packages/*"
     ]
   }

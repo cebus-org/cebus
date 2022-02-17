@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "description": "A Button control that allows users to make an action through a press.",
   "main": "lib-commonjs/index.js",
-  "module": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js"
+    }
+  },
   "sideEffects": false,
   "repository": {
     "type": "git",
@@ -15,11 +19,11 @@
     "start": "yarn storybook",
     "build": "tsc && tsc --module commonjs --outDir lib-commonjs",
     "bundle-size": "bundle-size measure",
-    "test": "jest",
-    "coverage": "jest --coverage",
+    "test": "just-scripts test",
+    "coverage": "just-scripts test --coverage",
     "lint": "eslint ./src",
     "storybook": "start-storybook",
-    "build-storyboosk": "build-storybook"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@griffel/react": "^1.0.0",
@@ -29,7 +33,8 @@
   },
   "devDependencies": {
     "@pongoai/react-text": "^0.0.9",
-    "@pongoai/react-theme": "^0.2.22"
+    "@pongoai/react-theme": "^0.2.22",
+    "@pongo-ui/scripts": "^0.0.1"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
