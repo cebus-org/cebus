@@ -1,9 +1,78 @@
 {
-    "name": "pongo-ui",
-    "version": "1.0.0",
-    "private": true,
-    "license": "MIT",
-    "devDependencies": {
-        "prettier": "2.4.0"
-    }
+  "name": "pongo-ui",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PongoAI/pongo-ui"
+  },
+  "scripts": {
+    "start": "nx run pongo-landing:serve",
+    "build": "nx run-many --target=build --all",
+    "bundle-size": "nx run-many --target=bundle-size --all",
+    "coverage": "nx run-many --target=coverage --all",
+    "test": "nx run-many --target=test --all",
+    "lint": "nx run-many --target=lint --all",
+    "change": "beachball change --scope \"!packages/pongo-ui/*\"",
+    "checkchange": "beachball check  --scope \"!packages/pongo-ui/*\" --changehint \"Run 'yarn change' to generate a change file\"",
+    "publish:beachball": "beachball publish -b origin/master --access public -y",
+    "format": "prettier --ignore-path .gitignore --write ./",
+    "check-format": "prettier --ignore-path .gitignore --check ./",
+    "prepare": "husky install",
+    "build-storybook": "build-storybook",
+    "chromatic": "cd apps && cd vr-tests && yarn chromatic"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "chromatic": "^6.4.3",
+    "husky": "^7.0.4",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5",
+    "@nrwl/cli": "^13.8.2",
+    "@nrwl/jest": "^13.8.2",
+    "@nrwl/nx-cloud": "^13.1.4",
+    "@nrwl/tao": "^13.8.2",
+    "@nrwl/workspace": "^13.8.2",
+    "@storybook/addon-a11y": "^6.4.19",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-docs": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-knobs": "^6.4.0",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/addons": "^6.4.19",
+    "@storybook/api": "^6.4.19",
+    "@storybook/builder-webpack5": "^6.4.19",
+    "@storybook/channels": "^6.4.19",
+    "@storybook/components": "^6.4.19",
+    "@storybook/core": "^6.4.19",
+    "@storybook/html": "^6.4.19",
+    "@storybook/manager-webpack5": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/theming": "^6.4.19",
+    "@types/jest": "^27.0.2",
+    "@types/node": "14.14.33",
+    "@types/react": "17.0.26",
+    "@types/react-dom": "17.0.9",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1",
+    "jest-environment-jsdom": "^27.5.1",
+    "@pongoai/react-text": "^0.0.9",
+    "@pongoai/react-theme": "^0.2.22",
+    "@pongoai/eslint-plugin": "^0.0.72",
+    "@fluentui/react-conformance": "^0.5.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "enzyme": "^3.10.0",
+    "ts-jest": "24.3.0",
+    "enzyme-adapter-react-16": "^1.15.0",
+    "@testing-library/react": "^12.1.2"
+  },
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ]
+  }
 }

@@ -1,0 +1,4 @@
+{
+  "extends": ["plugin:@pongoai/eslint-plugin/react"],
+  "root": true
+}

@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "nrwl.angular-console",
+    "esbenp.prettier-vscode",
+    "asvetliakov.snapshot-tools"
+  ]
+}

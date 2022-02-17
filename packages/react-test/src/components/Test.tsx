@@ -1,1 +1,0 @@
-export const TestComponent = () => <div>Hello!</div>

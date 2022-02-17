@@ -1,0 +1,39 @@
+pr:
+  - master
+
+trigger: none
+
+variables:
+  - template: .devops/templates/variables.yml
+  - group: pongo-variables
+
+pool: Default
+
+jobs:
+  - job: BuildTestLint
+    workspace:
+      clean: all
+    steps:
+      - template: .devops/templates/tools.yml
+
+      - script: |
+          yarn
+        displayName: yarn
+
+      - script: |
+          yarn lint
+        displayName: lint
+        env:
+          NX_BRANCH: $(pullRequestNumber)
+
+      - script: |
+          yarn build
+        displayName: build
+        env:
+          NX_BRANCH: $(pullRequestNumber)
+
+      - script: |
+          yarn test --coverage
+        displayName: test
+        env:
+          NX_BRANCH: $(pullRequestNumber)

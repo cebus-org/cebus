@@ -1,0 +1,52 @@
+{
+  "name": "@pongo-ui/react-button",
+  "version": "0.0.0",
+  "description": "A Button control that allows users to make an action through a press.",
+  "main": "lib-commonjs/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PongoAI/pongoai-frontend"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "tsc && tsc --module commonjs --outDir lib-commonjs",
+    "bundle-size": "bundle-size measure",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "lint": "eslint ./src",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@griffel/react": "^1.0.0",
+    "@fluentui/react-tabster": "^9.0.0-rc.1",
+    "@fluentui/react-utilities": "^9.0.0-rc.1",
+    "@fluentui/react-aria": "^9.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@pongoai/react-text": "^0.0.9",
+    "@pongoai/react-theme": "^0.2.22",
+    "@pongoai/eslint-plugin": "^0.0.72",
+    "@fluentui/react-conformance": "^0.10.1",
+    "@fluentui/react-conformance-griffel": "^9.0.0-beta.1",
+    "@storybook/react": "^6.4.4",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "enzyme-adapter-react-16": "^1.15.0",
+    "@testing-library/react": "^12.1.2",
+    "jest": "^27.2.1",
+    "jest-cli": "24.9.0",
+    "jest-environment-jsdom": "24.9.0",
+    "ts-jest": "24.3.0",
+    "typescript": "4.2.2"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8.0 <18.0.0",
+    "@types/react-dom": ">=16.8.0 <18.0.0",
+    "react": ">=16.8.0 <18.0.0",
+    "react-dom": ">=16.8.0 <18.0.0"
+  }
+}
