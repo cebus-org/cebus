@@ -3,7 +3,7 @@ const root = require('../../../.storybook/main');
 const testedComponentPackages = ['react-button'];
 
 const componentStoryPaths = testedComponentPackages.map(
-  packageName => '../../packages/' + packageName + '/src/stories/*.stories.@(js|jsx|ts|tsx)',
+  packageName => '../../../packages/' + packageName + '/src/stories/*.stories.@(js|jsx|ts|tsx)',
 );
 
 module.exports = {
