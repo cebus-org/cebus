@@ -24,6 +24,7 @@ export function preset() {
     module: 'commonjs',
     outDir: libCommonPath,
   };
+
   const tscOptions = {
     sourceRoot: path.relative(libPath, srcPath),
     rootDir: srcPath,
@@ -31,7 +32,8 @@ export function preset() {
   };
 
   const jestOptions = {
-    config: path.join(__dirname, 'jest.config.js'),
+    // nodeArgs: ['--experimental-vm-modules'],
+    // config: path.join(__dirname, 'jest.config.js'),
     rootDir: process.cwd(),
   };
 
@@ -54,7 +56,7 @@ export function preset() {
   task('extract-api:fix', apiExtractorUpdateTask(apiExtractorOptions));
 
   // Build
-  task('build', series('clean', 'ts', 'tsCommon', 'extract-api:fix')).cached?.();
+  task('build', series('clean', 'ts', 'tsCommon')).cached?.();
 
   // Test
   task('test', jestTask(jestOptions));

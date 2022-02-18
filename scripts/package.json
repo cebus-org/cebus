@@ -20,6 +20,16 @@
     "jest-environment-jsdom": "24.9.0",
     "jest-watch-typeahead": "0.5.0",
     "just-scripts": "^1.8.0",
-    "@microsoft/api-extractor": "^7.19.4"
+    "@microsoft/api-extractor": "^7.19.4",
+    "@babel/preset-typescript": "^7.16.7",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "babel-jest": "^27.4.6",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint": "^8.8.0",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2"
   }
 }
