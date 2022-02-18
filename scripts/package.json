@@ -12,20 +12,15 @@
     "@types/jest": "^27.0.2",
     "@types/node": "14.14.33",
     "@types/react-dom": "17.0.9",
-<<<<<<< HEAD
     "@types/react": "17.0.26",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
     "babel-jest": "^27.4.6",
     "eslint-config-prettier": "^8.3.0",
     "eslint": "^8.8.0",
-    "jest-environment-jsdom": "24.9.0",
-=======
-    "jest": "^27.2.1",
     "jest-cli": "24.9.0",
     "jest-environment-jsdom": "^26.0.1",
     "jest-environment-jsdom-sixteen": "^2.0.0",
->>>>>>> 56c06662a9c96952b8b33f081629012c8b3ecb6e
     "jest-watch-typeahead": "0.5.0",
     "jest": "^27.4.7",
     "just-scripts": "^1.8.0",
