@@ -1,0 +1,32 @@
+pr: none
+trigger: none
+
+pool: '1ES-Host-Ubuntu'
+
+variables:
+  - group: 'Github and NPM secrets'
+  - template: .devops/templates/variables.yml
+
+jobs:
+  - job: Release
+    workspace:
+      clean: all
+    steps:
+      - template: .devops/templates/tools.yml
+
+      - script: |
+          yarn
+        displayName: Install dependencies
+
+      - script: |
+          git config user.name "Pongo UI Build"
+          git config user.email "pongo-internal@outlook.com"
+          git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongoai-frontend.git
+        displayName: Authenticate git for pushes
+
+      - script: |
+          yarn publish:beachball -n $(npmAuthToken)
+          git reset --hard origin/master
+        env:
+          GITHUB_PAT: $(githubPAT)
+        displayName: 🏖️⚽ Beachball Publish
