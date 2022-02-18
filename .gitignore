@@ -22,6 +22,7 @@ screenshots
 
 # Dependencies
 node_modules
+.yarn-integrity
 .pnp
 .pnp.js
 package-lock.json

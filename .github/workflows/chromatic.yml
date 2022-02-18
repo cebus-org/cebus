@@ -2,7 +2,6 @@ name: 'Chromatic'
 
 on:
   pull_request:
-  push:
 
 jobs:
   chromatic-deployment:
@@ -22,4 +21,4 @@ jobs:
         with:
           workingDir: apps/vr-tests
           token: ${{ secrets.GITHUB_TOKEN }}
-          projectToken: 133d10ef643a
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
