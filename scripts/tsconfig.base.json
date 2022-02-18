@@ -1,41 +1,41 @@
-// {
-//   "exclude": ["node_modules"],
-//   "compilerOptions": {
-//     "module": "esnext",
-//     "target": "esnext",
-//     "sourceMap": true,
-//     "declaration": true,
-//     "declarationMap": true,
-//     "noEmitOnError": true,
-//     "skipLibCheck": true,
-//     "esModuleInterop": true,
-//     "strict": true,
-//     "forceConsistentCasingInFileNames": true,
-//     "moduleResolution": "node",
-//     "jsx": "react",
-//     "lib": ["esnext", "dom"],
-//     "types": ["jest", "@types/jest"],
-//     "baseUrl": "."
-//   }
-// }
-
 {
+  "exclude": ["node_modules"],
   "compilerOptions": {
-    "outDir": "lib",
-    "allowSyntheticDefaultImports": true,
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "nodenext",
-    "declaration": true,
-    "lib": ["ES2015", "dom"],
+    "module": "esnext",
+    "target": "esnext",
     "sourceMap": true,
-    "strict": true,
-    "noUnusedLocals": true,
-    "jsx": "react",
-    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmitOnError": true,
     "skipLibCheck": true,
-    "typeRoots": ["node_modules/@types", "../node_modules/@types", "./types"],
-    "types": ["node", "jest"],
+    "esModuleInterop": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "types": ["jest", "@types/jest"],
     "baseUrl": "."
   }
 }
+
+// {
+//   "compilerOptions": {
+//     "outDir": "lib",
+//     "allowSyntheticDefaultImports": true,
+//     "target": "ESNext",
+//     "module": "ESNext",
+//     "moduleResolution": "node",
+//     "declaration": true,
+//     "lib": ["ES2015", "dom"],
+//     "sourceMap": true,
+//     "strict": true,
+//     "noUnusedLocals": true,
+//     "jsx": "react",
+//     "forceConsistentCasingInFileNames": true,
+//     "skipLibCheck": true,
+//     "typeRoots": ["node_modules/@types", "../node_modules/@types", "./types"],
+//     "types": ["node", "jest"],
+//     "baseUrl": "."
+//   }
+// }

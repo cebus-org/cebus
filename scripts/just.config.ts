@@ -33,7 +33,7 @@ export function preset() {
 
   const jestOptions = {
     // nodeArgs: ['--experimental-vm-modules'],
-    // config: path.join(__dirname, 'jest.config.js'),
+    config: path.join(__dirname, 'jest.config.js'),
     rootDir: process.cwd(),
   };
 
