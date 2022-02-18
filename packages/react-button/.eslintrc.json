@@ -1,4 +1,4 @@
 {
-  "extends": ["plugin:@pongoai/eslint-plugin/react"],
+  "extends": ["plugin:@pongo-ui/eslint-plugin/react"],
   "root": true
 }

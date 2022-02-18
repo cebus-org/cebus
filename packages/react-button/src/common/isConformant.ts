@@ -7,7 +7,7 @@ export function isConformant<TProps = {}>(
 ) {
   const defaultOptions: Partial<IsConformantOptions<TProps>> = {
     asPropHandlesRef: true,
-    componentPath: module!.parent!.filename.replace('.test', ''),
+    componentPath: require!.main!.filename.replace('.test', ''),
     disabledTests: [
       'has-docblock',
       'kebab-aria-attributes',
