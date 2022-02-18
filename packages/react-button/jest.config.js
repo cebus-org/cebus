@@ -1,6 +1,7 @@
 module.exports = {
   displayName: 'react-storybook',
   preset: 'ts-jest',
+  testEnvironment: 'jest-environment-jsdom-sixteen',
   collectCoverage: true,
   setupFilesAfterEnv: ['./config/tests.js'],
   testPathIgnorePatterns: ['/node_modules/', '/lib/', '/lib-commonjs/', '/dist/'],
