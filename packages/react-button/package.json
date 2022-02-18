@@ -32,9 +32,12 @@
     "@fluentui/react-aria": "^9.0.0-rc.1"
   },
   "devDependencies": {
+    "@pongo-ui/scripts": "^0.0.1",
+    "@pongo-ui/eslint-plugin": "*",
     "@pongoai/react-text": "^0.0.9",
     "@pongoai/react-theme": "^0.2.22",
-    "@pongo-ui/scripts": "^0.0.1"
+    "@fluentui/react-conformance": "^0.10.1",
+    "@fluentui/react-conformance-griffel": "^9.0.0-beta.1"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
