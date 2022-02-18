@@ -1,9 +1,5 @@
 {
   "extends": "./tsconfig.base.json",
-  // This config is used for running build scripts through ts-node
-  "compilerOptions": {
-    "module": "CommonJS"
-  },
   "include": ["."],
   "exclude": ["lib/**/*", "node_modules"]
 }

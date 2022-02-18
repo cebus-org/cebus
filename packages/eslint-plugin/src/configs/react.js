@@ -28,7 +28,8 @@ const config = {
     'no-unused-vars': 'error',
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'react-hooks/exhaustive-deps': ['error'],
+    'import/no-extraneous-dependencies': 'off',
     'import/extensions': [
       'error',
       'ignorePackages',

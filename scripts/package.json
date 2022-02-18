@@ -2,11 +2,7 @@
   "name": "@pongo-ui/scripts",
   "version": "0.0.1",
   "private": true,
-  "type": "module",
   "devDependencies": {
-    "@babel/core": "^7.16.12",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-typescript": "^7.16.7",
     "@microsoft/api-extractor": "^7.19.4",
     "@types/enzyme": "3.10.9",
     "@types/jest": "^27.0.2",
@@ -15,7 +11,6 @@
     "@types/react": "17.0.26",
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
-    "babel-jest": "^27.4.6",
     "eslint-config-prettier": "^8.3.0",
     "eslint": "^8.8.0",
     "jest-cli": "24.9.0",
@@ -24,13 +19,16 @@
     "jest-watch-typeahead": "0.5.0",
     "jest": "^27.4.7",
     "just-scripts": "^1.8.0",
-    "prettier": "^2.5.1",
     "react-docgen-typescript": "^2.2.2",
     "react-dom": "^17.0.2",
     "react": "^17.0.2",
     "rimraf": "^3.0.2",
     "ts-jest": "^24.3.0",
     "ts-node": "^7.0.0",
-    "typescript": "^4.5.5"
+    "typescript": "^4.5.5",
+    "@testing-library/react": "^12.1.2",
+    "enzyme": "^3.11.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "enzyme-adapter-react-16": "^1.15.0"
   }
 }

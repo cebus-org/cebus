@@ -1,7 +1,5 @@
 /** Jest test setup file. */
 
-const { configure } = require('enzyme');
-const Adapter = require('@wojtekmaj/enzyme-adapter-react-17');
+const { enzymeConfig } = require('@pongo-ui/scripts');
 
-// Configure enzyme.
-configure({ adapter: new Adapter() });
+enzymeConfig();

@@ -18,24 +18,3 @@
     "baseUrl": "."
   }
 }
-
-// {
-//   "compilerOptions": {
-//     "outDir": "lib",
-//     "allowSyntheticDefaultImports": true,
-//     "target": "ESNext",
-//     "module": "ESNext",
-//     "moduleResolution": "node",
-//     "declaration": true,
-//     "lib": ["ES2015", "dom"],
-//     "sourceMap": true,
-//     "strict": true,
-//     "noUnusedLocals": true,
-//     "jsx": "react",
-//     "forceConsistentCasingInFileNames": true,
-//     "skipLibCheck": true,
-//     "typeRoots": ["node_modules/@types", "../node_modules/@types", "./types"],
-//     "types": ["node", "jest"],
-//     "baseUrl": "."
-//   }
-// }
