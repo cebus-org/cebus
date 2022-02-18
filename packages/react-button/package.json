@@ -19,7 +19,7 @@
     "start": "yarn storybook",
     "build": "just-scripts build",
     "bundle-size": "bundle-size measure",
-    "test": "jest",
+    "test": "just-scripts test",
     "coverage": "just-scripts test --coverage",
     "lint": "eslint ./src",
     "storybook": "start-storybook",

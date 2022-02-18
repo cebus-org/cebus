@@ -57,5 +57,5 @@ export function preset() {
   task('build', series('clean', 'ts', 'tsCommon', 'extract-api:fix')).cached?.();
 
   // Test
-  // task('test', jestTask(jestOptions));
+  task('test', jestTask(jestOptions));
 }

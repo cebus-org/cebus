@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'react-storybook',
+  displayName: 'react-button',
   preset: 'ts-jest',
   testEnvironment: 'jest-environment-jsdom-sixteen',
   collectCoverage: true,
