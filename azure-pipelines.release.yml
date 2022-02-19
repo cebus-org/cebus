@@ -1,5 +1,4 @@
 pr: none
-trigger: none
 
 variables:
   - group: 'Github and NPM secrets'
