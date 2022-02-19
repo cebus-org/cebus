@@ -19,9 +19,9 @@ jobs:
         displayName: Install dependencies
 
       - script: |
-          git config user.name "Pongo UI Build"
-          git config user.email "pongo-internal@outlook.com"
-          git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongo-ui.git
+          git config user.name "pongo-build"
+          git config user.email "pongoai-build@outlook.com"
+          git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongoai-ui.git
         displayName: Authenticate git for pushes
 
       - script: |
