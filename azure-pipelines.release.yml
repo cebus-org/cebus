@@ -1,8 +1,6 @@
 pr: none
 trigger: none
 
-pool: '1ES-Host-Ubuntu'
-
 variables:
   - group: 'Github and NPM secrets'
   - template: .devops/templates/variables.yml
