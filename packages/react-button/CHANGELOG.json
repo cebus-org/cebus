@@ -1,0 +1,26 @@
+{
+  "name": "@pongo-ui/react-button",
+  "entries": [
+    {
+      "date": "Sat, 19 Feb 2022 03:43:19 GMT",
+      "tag": "@pongo-ui/react-button_v0.0.0",
+      "version": "0.0.0",
+      "comments": {
+        "none": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-button",
+            "commit": "79f895b024ba3b7196fc569654b1fe5f07e4a7b5",
+            "comment": "Updating Jest config"
+          },
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-button",
+            "commit": "d87b51b5c95bbe5a2d1263cf4dc4808afa502298",
+            "comment": "Initial API update."
+          }
+        ]
+      }
+    }
+  ]
+}
