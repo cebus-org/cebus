@@ -21,7 +21,7 @@ jobs:
       - script: |
           git config user.name "Pongo UI Build"
           git config user.email "pongo-internal@outlook.com"
-          git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongoai-frontend.git
+          git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongo-ui.git
         displayName: Authenticate git for pushes
 
       - script: |
