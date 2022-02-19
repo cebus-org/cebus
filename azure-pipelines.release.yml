@@ -5,6 +5,8 @@ variables:
   - group: 'Github and NPM secrets'
   - template: .devops/templates/variables.yml
 
+pool: Default
+
 jobs:
   - job: Release
     workspace:
