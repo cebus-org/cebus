@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-button",
   "entries": [
     {
+      "date": "Tue, 22 Feb 2022 01:00:48 GMT",
+      "tag": "@pongo-ui/react-button_v0.0.0",
+      "version": "0.0.0",
+      "comments": {
+        "none": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-button",
+            "commit": "abf8c7b0ad7f839278eaeeacb9f16fd5f944e217",
+            "comment": "Updating bundle-size reporter tool."
+          }
+        ]
+      }
+    },
+    {
       "date": "Sat, 19 Feb 2022 03:43:19 GMT",
       "tag": "@pongo-ui/react-button_v0.0.0",
       "version": "0.0.0",
