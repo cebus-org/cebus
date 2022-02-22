@@ -19,9 +19,13 @@ export const useToggleButton = (
 
   const isCheckboxTypeRole = role === 'menuitemcheckbox' || role === 'checkbox';
 
+  /**
+   * Callback for when the ToggleButton is pressed
+   */
   const onClick = React.useCallback(
     ev => {
       if (!disabled) {
+        // The user's onClick callback should be called.
         onClickCallback?.(ev);
 
         if (!ev.defaultPrevented) {
