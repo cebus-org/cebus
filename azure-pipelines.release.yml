@@ -29,6 +29,7 @@ jobs:
         displayName: Authenticate git for pushes
 
       - script: |
+          git reset --hard origin/master
           yarn publish:beachball -n $(npmAuthToken)
           git reset --hard origin/master
         env:
