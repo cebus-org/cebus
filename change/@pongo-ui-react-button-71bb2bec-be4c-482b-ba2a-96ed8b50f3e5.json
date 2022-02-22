@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Introducing ToggleButton",
-  "packageName": "@pongo-ui/react-button",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Fixing package json version",
-  "packageName": "@pongo-ui/react-button",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}
