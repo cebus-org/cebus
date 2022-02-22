@@ -35,6 +35,12 @@ export function preset() {
     nodeArgs: ['--experimental-vm-modules'],
     config: path.join(__dirname, 'jest.config.js'),
     rootDir: process.cwd(),
+    updateSnapshot: true,
+  };
+
+  const jestFixOptions = {
+    ...jestOptions,
+    updateSnapshot: true,
   };
 
   const apiExtractorOptions = {
@@ -60,4 +66,5 @@ export function preset() {
 
   // Test
   task('test', jestTask(jestOptions));
+  task('test-fix', jestTask(jestFixOptions));
 }

@@ -8,7 +8,7 @@ export type ButtonSlots = {
   root: Slot<ARIAButtonSlotProps>;
 };
 
-export type ButtonCommons = {
+type ButtonCommons = {
   /**
    * The appearance variant to use for the button.
    *

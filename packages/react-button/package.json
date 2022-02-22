@@ -20,6 +20,7 @@
     "build": "just-scripts build",
     "bundle-size": "bundle-size measure",
     "test": "just-scripts test",
+    "test-fix": "just-scripts test-fix",
     "coverage": "just-scripts test --coverage",
     "lint": "eslint ./src",
     "storybook": "start-storybook",
