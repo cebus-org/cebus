@@ -88,6 +88,27 @@ export const useRootStyles = makeStyles({
   },
 
   /**
+   * Shape styles
+   */
+  rounded: {
+    ...shorthands.borderRadius('6px'),
+  },
+
+  circular: {
+    ...shorthands.borderRadius('999px'),
+  },
+
+  circle: {
+    ...shorthands.borderRadius('100%'),
+  },
+
+  square: {
+    ...shorthands.borderRadius('0px'),
+  },
+});
+
+export const useAppearanceStyles = makeStyles({
+  /**
    * Appearance styles
    */
   outline: {
@@ -158,39 +179,21 @@ export const useRootStyles = makeStyles({
       textDecorationLine: 'underline',
     },
   },
-
-  /**
-   * Shape styles
-   */
-  rounded: {
-    ...shorthands.borderRadius('6px'),
-  },
-
-  circular: {
-    ...shorthands.borderRadius('999px'),
-  },
-
-  circle: {
-    ...shorthands.borderRadius('100%'),
-  },
-
-  square: {
-    ...shorthands.borderRadius('0px'),
-  },
 });
 
 export const useButtonStyles = (state: ButtonState) => {
   const rootStyles = useRootStyles();
+  const appearanceStyles = useAppearanceStyles();
 
   state.root.className = mergeClasses(
     rootStyles.root,
     !state.disabled && rootStyles.focusIndicator,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
-    rootStyles[state.appearance!],
+    appearanceStyles[state.appearance!],
     !state.disabled && (rootStyles as any)[state.appearance! + 'Enabled'],
     rootStyles[state.size!],
     rootStyles[state.shape!],
-    state.appearance === 'transparent' && !state.disabled && rootStyles.transparentEnabled,
+    state.appearance === 'transparent' && !state.disabled && appearanceStyles.transparentEnabled,
     state.root.className,
   );
 
