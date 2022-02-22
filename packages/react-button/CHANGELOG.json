@@ -1,0 +1,20 @@
+{
+  "name": "@pongo-ui/react-button",
+  "entries": [
+    {
+      "date": "Tue, 22 Feb 2022 23:24:48 GMT",
+      "tag": "@pongo-ui/react-button_v1.1.5",
+      "version": "1.1.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-button",
+            "commit": "3d32793875426a48df8520dc1ce873236da09dd7",
+            "comment": "Testing Beachball publishing"
+          }
+        ]
+      }
+    }
+  ]
+}
