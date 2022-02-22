@@ -12,35 +12,35 @@ type ButtonCommons = {
   /**
    * The appearance variant to use for the button.
    *
-   * @defaultValue outline
+   * @default outline
    */
   appearance?: 'outline' | 'primary' | 'subtle' | 'transparent';
 
   /**
    * The color type for the button.
    *
-   * @defaultValue inherit
+   * @default inherit
    */
   color?: 'inherit' | 'brand' | 'secondary' | 'success' | 'error' | 'social' | 'warning' | 'info';
 
   /**
    * Whether the button should be disabled.
    *
-   * @defaultValue false
+   * @default false
    */
   disabled?: boolean;
 
   /**
    * The shape of the button.
    *
-   * @defaultValue rounded
+   * @default rounded
    */
   shape?: 'rounded' | 'circular' | 'circle' | 'square';
 
   /**
    * The size of the button.
    *
-   * @defaultValue medium
+   * @default medium
    */
   size?: 'small' | 'medium' | 'large';
 };

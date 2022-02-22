@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixing empty build files from release pipeline and updating doc comments in types file.",
+  "packageName": "@pongo-ui/react-button",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "patch"
+}
