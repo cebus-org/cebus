@@ -1,5 +1,10 @@
 pr: none
 
+trigger:
+  branches:
+    include:
+      - master
+
 variables:
   - group: 'Github and NPM secrets'
   - template: .devops/templates/variables.yml
