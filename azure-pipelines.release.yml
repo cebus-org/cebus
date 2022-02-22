@@ -1,9 +1,5 @@
 pr: none
-
-trigger:
-  branches:
-    include:
-      - master
+trigger: none
 
 variables:
   - group: 'Github and NPM secrets'
