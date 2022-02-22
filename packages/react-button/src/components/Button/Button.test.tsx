@@ -80,7 +80,7 @@ describe('Button', () => {
     it('can be focused', () => {
       const result = render(
         <Button as="a" href="https://www.bing.com">
-          This is a button
+          Test Button
         </Button>,
       );
       const anchor = result.getByRole('button');
