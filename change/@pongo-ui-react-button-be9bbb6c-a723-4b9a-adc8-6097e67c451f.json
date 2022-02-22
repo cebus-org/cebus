@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Updating package.json exports",
+  "packageName": "@pongo-ui/react-button",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "patch"
+}

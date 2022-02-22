@@ -105,6 +105,21 @@ export const useRootStyles = makeStyles({
   square: {
     ...shorthands.borderRadius('0px'),
   },
+
+  smallCircle: {
+    minWidth: '30px',
+    maxWidth: '30px',
+  },
+
+  mediumCircle: {
+    minWidth: '35px',
+    maxWidth: '35px',
+  },
+
+  largeCircle: {
+    minWidth: '45px',
+    maxWidth: '45px',
+  },
 });
 
 export const useAppearanceStyles = makeStyles({
@@ -193,6 +208,7 @@ export const useButtonStyles = (state: ButtonState) => {
     !state.disabled && (rootStyles as any)[state.appearance! + 'Enabled'],
     rootStyles[state.size!],
     rootStyles[state.shape!],
+    state.shape === 'circle' && (rootStyles as any)[state.size! + 'Circle'],
     state.appearance === 'transparent' && !state.disabled && appearanceStyles.transparentEnabled,
     state.root.className,
   );
