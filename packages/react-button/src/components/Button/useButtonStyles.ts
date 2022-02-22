@@ -208,7 +208,7 @@ export const useButtonStyles = (state: ButtonState) => {
     !state.disabled && (rootStyles as any)[state.appearance! + 'Enabled'],
     rootStyles[state.size!],
     rootStyles[state.shape!],
-    state.shape === 'circle' && rootStyles[state.size! + 'Circle'],
+    state.shape === 'circle' && (rootStyles as any)[state.size! + 'Circle'],
     state.appearance === 'transparent' && !state.disabled && appearanceStyles.transparentEnabled,
     state.root.className,
   );
