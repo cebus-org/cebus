@@ -23,6 +23,10 @@ jobs:
         displayName: Install dependencies
 
       - script: |
+          yarn build
+        displayName: build
+
+      - script: |
           git config user.name "pongo-build"
           git config user.email "pongoai-build@outlook.com"
           git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongo-ui.git
