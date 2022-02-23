@@ -7,30 +7,33 @@ variables:
 
 pool: Default
 
-jobs:
-  - job: Release
-    workspace:
-      clean: all
-    steps:
-      - template: .devops/templates/tools.yml
+workspace:
+  clean: all
 
-      - script: |
-          yarn
-        displayName: Install dependencies
+steps:
+  - template: .devops/templates/tools.yml
 
-      - script: |
-          yarn build
-        displayName: build
+  - script: |
+    git config user.name "pongo-build"
+    git config user.email "pongoai-build@outlook.com"
+    git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongo-ui.git
+  displayName: Authenticate git for pushes
 
-      - script: |
-          git config user.name "pongo-build"
-          git config user.email "pongoai-build@outlook.com"
-          git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongo-ui.git
-        displayName: Authenticate git for pushes
+  - script: |
+    yarn
+  displayName: Install dependencies
 
-      - script: |
-          yarn publish:beachball -n $(npmAuthToken)
-          git reset --hard origin/master
-        env:
-          GITHUB_PAT: $(githubPAT)
-        displayName: 🏖️⚽ Beachball Publish
+  - script: |
+    yarn build
+  displayName: build
+
+  - script: |
+    yarn publish:beachball -n $(npmToken)
+    git reset --hard origin/master
+  env:
+    GITHUB_PAT: $(githubPAT)
+    displayName: 🏖️⚽ Beachball Publish
+
+  - template: .devops/templates/cleanup.yml
+    parameters:
+      checkForModifiedFiles: false
