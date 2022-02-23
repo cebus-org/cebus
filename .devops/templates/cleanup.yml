@@ -1,0 +1,14 @@
+parameters:
+  - name: checkForModifiedFiles
+    type: boolean
+    default: true
+
+steps:
+  - script: |
+      npm run check-for-modified-files
+    condition: ${{ parameters.checkForModifiedFiles }}
+    displayName: check for modified files
+  - task: ReallyClean@0
+    inputs:
+      directory: $(Agent.BuildDirectory)
+    condition: always()
