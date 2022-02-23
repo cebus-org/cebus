@@ -33,7 +33,3 @@ steps:
     env:
       GITHUB_PAT: $(githubPAT)
     displayName: 🏖️⚽ Beachball Publish
-
-  - template: .devops/templates/cleanup.yml
-    parameters:
-      checkForModifiedFiles: false
