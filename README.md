@@ -19,15 +19,19 @@ Pongo UI is a simple collection of fast, clean, and accessible components ready 
 ## Installation
 
 Using NPM
+
 ```
 npm install @pongo-ui/react-button
 ```
+
 Using Yarn
+
 ```
-yarm add @pongo-ui/react-button
+yarn add @pongo-ui/react-button
 ```
 
 ## Use
+
 ```jsx
 import { webLightTheme } from '@pongo-ui/react-theme'
 import { Button } from '@pongo-ui/react-button'
@@ -42,5 +46,6 @@ const MyApp = () => {
 ```
 
 ## Licenses
+
 All of our code is licensed under the terms of the
 [MIT license](/LICENSE).
