@@ -15,7 +15,7 @@
     "lint": "nx run-many --target=lint --all",
     "change": "beachball change --scope \"!packages/pongo-ui/*\"",
     "checkchange": "beachball check  --scope \"!packages/pongo-ui/*\" --changehint \"Run 'yarn change' to generate a change file\"",
-    "publish:beachball": "beachball publish -b origin/master --access public -y",
+    "publish:beachball": "beachball publish --verbose -b origin/master --access public -y",
     "format": "prettier --ignore-path .gitignore --write ./",
     "check-format": "prettier --ignore-path .gitignore --check ./",
     "prepare": "husky install",
