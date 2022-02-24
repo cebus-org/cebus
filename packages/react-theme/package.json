@@ -1,0 +1,36 @@
+{
+  "name": "@pongo-ui/react-theme",
+  "version": "0.0.0",
+  "description": "A set of theme tokens used by Pongo.",
+  "main": "lib-commonjs/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PongoAI/pongoai-frontend"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "just-scripts build",
+    "bundle-size": "bundle-size measure",
+    "test": "just-scripts test",
+    "test-fix": "just-scripts test-fix",
+    "coverage": "just-scripts test --coverage",
+    "lint": "eslint ./src",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@pongo-ui/scripts": "^0.0.1",
+    "@pongo-ui/eslint-plugin": "*"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8.0 <18.0.0",
+    "@types/react-dom": ">=16.8.0 <18.0.0",
+    "react": ">=16.8.0 <18.0.0",
+    "react-dom": ">=16.8.0 <18.0.0"
+  }
+}
