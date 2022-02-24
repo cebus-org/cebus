@@ -27,7 +27,7 @@
     "@fluentui/react-tabster": "^9.0.0-rc.1",
     "@fluentui/react-utilities": "^9.0.0-rc.1",
     "@fluentui/react-aria": "^9.0.0-rc.1",
-    "@pongo-ui/react-theme": "^0.0.0"
+    "@pongo-ui/react-theme": "*"
   },
   "devDependencies": {
     "@pongo-ui/scripts": "^0.0.1",
