@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Cleaning up typings and API.",
-  "packageName": "@pongo-ui/react-theme",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

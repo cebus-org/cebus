@@ -1,0 +1,34 @@
+{
+  "name": "@pongo-ui/react-theme",
+  "entries": [
+    {
+      "date": "Thu, 24 Feb 2022 22:07:21 GMT",
+      "tag": "@pongo-ui/react-theme_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-theme",
+            "commit": "dc7b52b56d29ed3e152545b3e8daaa7ed601fe7b",
+            "comment": "Cleaning up typings and API."
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-theme",
+            "comment": "Bump @pongo-ui/react-theme-generator to v0.0.1",
+            "commit": "1fa4190270c8d68bf84ae977527792acdec87e45"
+          }
+        ],
+        "none": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-theme",
+            "commit": "36dde71f285c8b05fb93a81eedb3f5ed68ac434d",
+            "comment": "Introducing package."
+          }
+        ]
+      }
+    }
+  ]
+}

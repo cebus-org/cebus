@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-theme-generator",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A tool used to easily and quickly create themes.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
