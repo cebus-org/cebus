@@ -26,13 +26,12 @@
     "@griffel/react": "^1.0.0",
     "@fluentui/react-tabster": "^9.0.0-rc.1",
     "@fluentui/react-utilities": "^9.0.0-rc.1",
-    "@fluentui/react-aria": "^9.0.0-rc.1"
+    "@fluentui/react-aria": "^9.0.0-rc.1",
+    "@pongo-ui/react-theme": "*"
   },
   "devDependencies": {
     "@pongo-ui/scripts": "^0.0.1",
     "@pongo-ui/eslint-plugin": "*",
-    "@pongoai/react-text": "^0.0.9",
-    "@pongoai/react-theme": "^0.2.22",
     "@fluentui/react-conformance": "^0.10.1",
     "@fluentui/react-conformance-griffel": "^9.0.0-beta.1"
   },

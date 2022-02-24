@@ -1,42 +1,31 @@
+type SemanticColorKey<T extends string | number> = T;
+
 /**
  * The collection of SemanticColors (brand, secondary, success, ...).
  */
-export type SemanticColors = {
-  [key: string]: string;
+export type SemanticColors<T extends string | number> = {
+  [key in SemanticColorKey<T>]: string;
 };
 
-type ColorSetKey<T extends string> =
+type ColorSetKey<T extends string | number> =
   | T
-  | `${T}Hovered`
+  | `${T}Hover`
   | `${T}Pressed`
   | `${T}Disabled`
   | `${T}ForegroundHover`
-  | `${T}ForegroundPressed`;
+  | `${T}ForegroundPressed`
+  | `${T}Background`
+  | `${T}BackgroundDisabled`;
 
 /**
  * The subset collection of semantic colors and their different states.
  * Example: brand, brandPressed, brandHover, ...
  */
-export type ColorSet<T extends string> = {
+export type ColorSet<T extends string | number> = {
   [key in ColorSetKey<T>]: string;
 };
 
-// type Colors = 'brand';
-
-// type Theme = ColorSet<Colors>;
-
-// const theme: Theme = {
-//   brand: 'asdf',
-//   brandHovered: 'asdf',
-//   brandPressed: 'asdf',
-//   brandDisabled: 'asdf',
-//   brandForegroundHover: 'asdf',
-//   brandForegroundPressed: 'asdf',
-// };
-
-// console.log(theme);
-
-export type ThemeGeneratorProps = {
+export type ThemeGeneratorProps<T extends string | number> = {
   /**
    * The color of your site's canvas.
    */
@@ -48,5 +37,5 @@ export type ThemeGeneratorProps = {
    * - Example: {brand: '#2060CF'}
    * - Returns: {brand: '#2060CF', brandHover: '...', brandPressed: '...', ...}
    */
-  semanticColors: SemanticColors;
+  semanticColors: SemanticColors<T>;
 };

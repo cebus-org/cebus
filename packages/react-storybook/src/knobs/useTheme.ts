@@ -1,6 +1,6 @@
-import { webLightTheme, webDarkTheme } from '@pongoai/react-theme';
+import { webLightTheme, webDarkTheme } from '@pongo-ui/react-theme';
 import { select } from '@storybook/addon-knobs';
-import type { Theme } from '@pongoai/react-theme';
+import type { Theme } from '@pongo-ui/react-theme';
 
 const themeSelectorLabel = 'Theme';
 

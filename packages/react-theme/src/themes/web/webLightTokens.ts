@@ -1,7 +1,7 @@
 import { themeGenerator } from '@pongo-ui/react-theme-generator';
-// import type { ColorTokens } from '../../types';
+import type { ColorTokens } from '../../types';
 
-export const webLightTokens: any = themeGenerator({
+export const webLightTokens: ColorTokens = themeGenerator({
   canvasColor: '#ffffff',
   semanticColors: {
     inherit: '#4d4d4d',

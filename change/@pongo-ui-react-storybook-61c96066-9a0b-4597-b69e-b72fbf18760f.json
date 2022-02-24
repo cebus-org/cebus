@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Updating theme knobs to use the new theme version.",
+  "packageName": "@pongo-ui/react-storybook",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "patch"
+}

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Button } from '../index';
-import { Header2 } from '@pongoai/react-text';
+// import { Header2 } from '@pongoai/react-text';
 import { makeStyles, shorthands } from '@griffel/react';
-import { tokens } from '@pongoai/react-theme';
+import { tokens } from '@pongo-ui/react-theme';
 
 const useStyles = makeStyles({
   root: {
@@ -31,14 +31,14 @@ export const BasicButtonExample = () => {
 
   return (
     <div className={styles.root}>
-      <Header2>Appearance</Header2>
+      {/* <Header2>Appearance</Header2> */}
       <div className={styles.row}>
         <Button appearance="outline">Outline</Button>
         <Button appearance="primary">Primary</Button>
         <Button appearance="subtle">Subtle</Button>
         <Button appearance="transparent">Transparent</Button>
       </div>
-      <Header2>Disabled</Header2>
+      {/* <Header2>Disabled</Header2> */}
       <div className={styles.row}>
         <Button disabled>Outline</Button>
         <Button appearance="primary" disabled>
@@ -51,20 +51,20 @@ export const BasicButtonExample = () => {
           Transparent
         </Button>
       </div>
-      <Header2>Shape</Header2>
+      {/* <Header2>Shape</Header2> */}
       <div className={styles.row}>
         <Button shape="rounded">Rounded</Button>
         <Button shape="circular">Circular</Button>
         <Button shape="circle">Circle</Button>
         <Button shape="square">Square</Button>
       </div>
-      <Header2>Size</Header2>
+      {/* <Header2>Size</Header2> */}
       <div className={styles.row}>
         <Button size="small">Small</Button>
         <Button size="medium">Medium</Button>
         <Button size="large">Large</Button>
       </div>
-      <Header2>Icon</Header2>
+      {/* <Header2>Icon</Header2> */}
       <div className={styles.row}>
         <Button size="small">
           <FilterIcon /> Filter
@@ -85,7 +85,7 @@ export const ButtonColorExample = () => {
 
   return (
     <div className={styles.root}>
-      <Header2>Color</Header2>
+      {/* <Header2>Color</Header2> */}
       <div className={styles.row}>
         <Button color="inherit" appearance="outline">
           Inherit
@@ -143,17 +143,17 @@ export const ButtonColorExample = () => {
         </Button>
       </div>
       <div className={styles.row}>
-        <Button color="error" appearance="outline">
-          Error
+        <Button color="danger" appearance="outline">
+          Danger
         </Button>
-        <Button color="error" appearance="primary">
-          Error
+        <Button color="danger" appearance="primary">
+          Danger
         </Button>
-        <Button color="error" appearance="subtle">
-          Error
+        <Button color="danger" appearance="subtle">
+          Danger
         </Button>
-        <Button color="error" appearance="transparent">
-          Error
+        <Button color="danger" appearance="transparent">
+          Danger
         </Button>
       </div>
       <div className={styles.row}>
@@ -195,119 +195,6 @@ export const ButtonColorExample = () => {
           Info
         </Button>
         <Button color="info" appearance="transparent">
-          Info
-        </Button>
-      </div>
-      <Header2>Disabled</Header2>
-      <div className={styles.row}>
-        <Button color="inherit" appearance="outline" disabled>
-          Inherit
-        </Button>
-        <Button color="inherit" appearance="primary" disabled>
-          Inherit
-        </Button>
-        <Button color="inherit" appearance="subtle" disabled>
-          Inherit
-        </Button>
-        <Button color="inherit" appearance="transparent" disabled>
-          Inherit
-        </Button>
-      </div>
-      <div className={styles.row}>
-        <Button color="brand" appearance="outline" disabled>
-          Brand
-        </Button>
-        <Button color="brand" appearance="primary" disabled>
-          Brand
-        </Button>
-        <Button color="brand" appearance="subtle" disabled>
-          Brand
-        </Button>
-        <Button color="brand" appearance="transparent" disabled>
-          Brand
-        </Button>
-      </div>
-      <div className={styles.row}>
-        <Button color="secondary" appearance="outline" disabled>
-          Secondary
-        </Button>
-        <Button color="secondary" appearance="primary" disabled>
-          Secondary
-        </Button>
-        <Button color="secondary" appearance="subtle" disabled>
-          Secondary
-        </Button>
-        <Button color="secondary" appearance="transparent" disabled>
-          Secondary
-        </Button>
-      </div>
-      <div className={styles.row}>
-        <Button color="success" appearance="outline" disabled>
-          Success
-        </Button>
-        <Button color="success" appearance="primary" disabled>
-          Success
-        </Button>
-        <Button color="success" appearance="subtle" disabled>
-          Success
-        </Button>
-        <Button color="success" appearance="transparent" disabled>
-          Success
-        </Button>
-      </div>
-      <div className={styles.row}>
-        <Button color="error" appearance="outline" disabled>
-          Error
-        </Button>
-        <Button color="error" appearance="primary" disabled>
-          Error
-        </Button>
-        <Button color="error" appearance="subtle" disabled>
-          Error
-        </Button>
-        <Button color="error" appearance="transparent" disabled>
-          Error
-        </Button>
-      </div>
-      <div className={styles.row}>
-        <Button color="social" appearance="outline" disabled>
-          Social
-        </Button>
-        <Button color="social" appearance="primary" disabled>
-          Social
-        </Button>
-        <Button color="social" appearance="subtle" disabled>
-          Social
-        </Button>
-        <Button color="social" appearance="transparent" disabled>
-          Social
-        </Button>
-      </div>
-      <div className={styles.row}>
-        <Button color="warning" appearance="outline" disabled>
-          Warning
-        </Button>
-        <Button color="warning" appearance="primary" disabled>
-          Warning
-        </Button>
-        <Button color="warning" appearance="subtle" disabled>
-          Warning
-        </Button>
-        <Button color="warning" appearance="transparent" disabled>
-          Warning
-        </Button>
-      </div>
-      <div className={styles.row}>
-        <Button color="info" appearance="outline" disabled>
-          Info
-        </Button>
-        <Button color="info" appearance="primary" disabled>
-          Info
-        </Button>
-        <Button color="info" appearance="subtle" disabled>
-          Info
-        </Button>
-        <Button color="info" appearance="transparent" disabled>
           Info
         </Button>
       </div>

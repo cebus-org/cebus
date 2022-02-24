@@ -1,13 +1,12 @@
 import { webLightTokens, webDarkTokens } from './web/index';
-import type { Theme } from '../types';
 import { fonts } from './font/index';
 
-export const webLightTheme: Theme = {
+export const webLightTheme = {
   ...webLightTokens,
   ...fonts,
 };
 
-export const webDarkTheme: Theme = {
+export const webDarkTheme = {
   ...webDarkTokens,
   ...fonts,
 };
