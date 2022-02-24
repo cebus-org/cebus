@@ -4,8 +4,8 @@ import type { ThemeGeneratorProps, ColorSet, SemanticColors } from './themeGener
 /**
  * Generates a set of semantic color values that correspond with the given colors.
  */
-export const createSemanticColor = (semanticColors: SemanticColors, canvasColor: string) => {
-  const colorSets: ColorSet<any> = {};
+export const createSemanticColor = <T extends SemanticColors>(semanticColors: T, canvasColor: string) => {
+  const colorSets: ColorSet<any> = semanticColors;
 
   for (const color in semanticColors) {
     const contrastRatio = calculateContrastRatio(semanticColors[color], canvasColor);
@@ -18,7 +18,6 @@ export const createSemanticColor = (semanticColors: SemanticColors, canvasColor:
           ' with your canvas background. This is below W3 standards of a 3.0 ratio.',
       );
     }
-    colorSets[color] = semanticColors[color];
     colorSets[color + 'Hover'] = calculateTransparentColor(semanticColors[color], invertColor(canvasColor), 0.8);
     colorSets[color + 'Pressed'] = calculateTransparentColor(semanticColors[color], invertColor(canvasColor), 0.7);
     colorSets[color + 'Disabled'] = calculateTransparentColor(semanticColors[color], canvasColor, 0.5);
@@ -40,13 +39,3 @@ export const themeGenerator = (props: ThemeGeneratorProps) => {
     ...colorSets,
   };
 };
-
-const hcTheme = themeGenerator({
-  canvasColor: '#000000',
-  semanticColors: {
-    inherit: '#ffff00',
-    brand: '#0029ff',
-    success: '#278536',
-    danger: '#de3309',
-  },
-});

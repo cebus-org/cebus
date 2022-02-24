@@ -3,6 +3,7 @@ import type { Theme } from './types';
 export const tokens: Record<keyof Theme, string> = {
   // Colors
   canvasColor: 'var(--canvasColor)',
+  textColor: 'var(--textColor)',
   inherit: 'var(--inherit)',
   inheritHover: 'var(--inheritHover)',
   inheritPressed: 'var(--inheritPressed)',
@@ -18,8 +19,6 @@ export const tokens: Record<keyof Theme, string> = {
   brandForegroundHover: 'var(--brandForegroundHover)',
   brandForegroundPressed: 'var(--brandForegroundPressed)',
   brandBackground: 'var(--brandBackground)',
-  brandBackgroundHover: 'var(--brandBackgroundHover)',
-  brandBackgroundPressed: 'var(--brandBackgroundPressed)',
   secondary: 'var(--secondary)',
   secondaryHover: 'var(--secondaryHover)',
   secondaryPressed: 'var(--secondaryPressed)',

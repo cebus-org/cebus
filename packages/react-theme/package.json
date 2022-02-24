@@ -16,13 +16,15 @@
     "build": "just-scripts build",
     "bundle-size": "bundle-size measure",
     "test": "just-scripts test",
-    "test-fix": "just-scripts test-fix",
+    "test-fix": "just-scripts test-fix ",
     "coverage": "just-scripts test --coverage",
     "lint": "eslint ./src",
     "storybook": "start-storybook",
     "build-storybook": "build-storybook"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@pongo-ui/react-theme-generator": "^0.0.0"
+  },
   "devDependencies": {
     "@pongo-ui/scripts": "^0.0.1",
     "@pongo-ui/eslint-plugin": "*"
