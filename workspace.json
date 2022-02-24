@@ -8,6 +8,14 @@
     "@pongo-ui/react-storybook": {
       "root": "packages/react-storybook",
       "projectType": "library"
+    },
+    "@pongo-ui/react-theme": {
+      "root": "packages/react-theme",
+      "projectType": "library"
+    },
+    "@pongo-ui/react-theme-generator": {
+      "root": "packages/react-theme-generator",
+      "projectType": "library"
     }
   }
 }

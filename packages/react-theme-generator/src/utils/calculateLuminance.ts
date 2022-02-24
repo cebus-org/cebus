@@ -3,7 +3,7 @@ import { colorHexToRGB } from './colorHexToRGB';
  * Calculates the luminance of a given Hex color.
  */
 export function calculateLuminance(hexColor: string) {
-  const rgbColor = colorHexToRGB(hexColor);
+  const rgbColor = colorHexToRGB(hexColor)!;
 
   const color = [rgbColor!.r, rgbColor!.b, rgbColor!.g].map(function (value) {
     value /= 255;

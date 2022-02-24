@@ -18,5 +18,5 @@ export function calculateTransparentColor(foregroundColor: string, backgroundCol
   const green = Math.round(backgroundRGB!.g * (1 - opacity) + foregroundRGB!.g * opacity);
   const blue = Math.round(backgroundRGB!.b * (1 - opacity) + foregroundRGB!.b * opacity);
 
-  return colorRGBToHex(red, green, blue);
+  return colorRGBToHex(red, green, blue)!;
 }
