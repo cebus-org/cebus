@@ -148,7 +148,7 @@ export const useAppearanceStyles = makeStyles({
   primary: {
     backgroundColor: `var(${backgroundCSSVariable})`,
     ...shorthands.borderColor('transparent'),
-    color: `${tokens.canvasColor}`,
+    color: `white`,
   },
 
   primaryEnabled: {
@@ -179,7 +179,7 @@ export const useAppearanceStyles = makeStyles({
 
   transparent: {
     ...shorthands.borderColor('transparent'),
-    backgroundColor: tokens.canvasColor,
+    backgroundColor: 'transparent',
     color: `var(${backgroundCSSVariable})`,
   },
 
@@ -205,7 +205,7 @@ export const useButtonStyles = (state: ButtonState) => {
     !state.disabled && rootStyles.focusIndicator,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     appearanceStyles[state.appearance!],
-    !state.disabled && (rootStyles as any)[state.appearance! + 'Enabled'],
+    !state.disabled && (appearanceStyles as any)[state.appearance! + 'Enabled'],
     rootStyles[state.size!],
     rootStyles[state.shape!],
     state.shape === 'circle' && (rootStyles as any)[state.size! + 'Circle'],
