@@ -1,7 +1,7 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 import type { ButtonState } from './Button.types';
-import { tokens } from '@pongoai/react-theme';
+import { tokens } from '@pongo-ui/react-theme';
 
 export const backgroundCSSVariable = `--pongoai-button-background-color`;
 export const hoverCSSVariable = `--pongoai-button-hover-color`;
@@ -35,7 +35,7 @@ export const useRootStyles = makeStyles({
         bottom: '-8px',
         left: '-8px',
         boxSizing: 'border-box',
-        ...shorthands.border('2px', 'solid', tokens.base),
+        ...shorthands.border('2px', 'solid', tokens.textColor),
         ...shorthands.borderRadius('4px'),
       },
     },
@@ -127,7 +127,7 @@ export const useAppearanceStyles = makeStyles({
    * Appearance styles
    */
   outline: {
-    backgroundColor: tokens.neutral,
+    backgroundColor: tokens.canvasColor,
     ...shorthands.border('2px', 'solid', `var(${backgroundCSSVariable})`),
     color: `var(${backgroundCSSVariable})`,
   },
@@ -148,7 +148,7 @@ export const useAppearanceStyles = makeStyles({
   primary: {
     backgroundColor: `var(${backgroundCSSVariable})`,
     ...shorthands.borderColor('transparent'),
-    color: `${tokens.white}`,
+    color: `${tokens.canvasColor}`,
   },
 
   primaryEnabled: {
@@ -162,7 +162,7 @@ export const useAppearanceStyles = makeStyles({
 
   subtle: {
     ...shorthands.borderColor('transparent'),
-    backgroundColor: tokens.neutral,
+    backgroundColor: tokens.canvasColor,
     color: `var(${backgroundCSSVariable})`,
   },
 
@@ -179,7 +179,7 @@ export const useAppearanceStyles = makeStyles({
 
   transparent: {
     ...shorthands.borderColor('transparent'),
-    backgroundColor: tokens.neutral,
+    backgroundColor: tokens.canvasColor,
     color: `var(${backgroundCSSVariable})`,
   },
 

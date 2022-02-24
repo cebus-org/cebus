@@ -1,6 +1,6 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import { useButtonStyles } from '../Button';
-import { tokens } from '@pongoai/react-theme';
+import { tokens } from '@pongo-ui/react-theme';
 import { ToggleButtonState } from './ToggleButton.types';
 import {
   backgroundCSSVariable,
@@ -14,7 +14,7 @@ export const useToggleStyles = makeStyles({
   checked: {
     backgroundColor: `var(${backgroundCSSVariable})`,
     ...shorthands.borderColor('transparent'),
-    color: `${tokens.white}`,
+    color: 'white',
   },
 
   checkedEnabled: {
@@ -27,7 +27,7 @@ export const useToggleStyles = makeStyles({
   },
 
   unchecked: {
-    backgroundColor: tokens.neutral,
+    backgroundColor: tokens.canvasColor,
     ...shorthands.border('2px', 'solid', `var(${backgroundCSSVariable})`),
     color: `var(${backgroundCSSVariable})`,
   },

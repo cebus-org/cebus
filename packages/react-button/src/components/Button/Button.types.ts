@@ -21,7 +21,7 @@ type ButtonCommons = {
    *
    * @default inherit
    */
-  color?: 'inherit' | 'brand' | 'secondary' | 'success' | 'error' | 'social' | 'warning' | 'info';
+  color?: 'inherit' | 'brand' | 'secondary' | 'success' | 'danger' | 'social' | 'warning' | 'info';
 
   /**
    * Whether the Button should be disabled.

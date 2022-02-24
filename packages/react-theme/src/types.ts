@@ -1,63 +1,13 @@
+import type { ColorSet } from '@pongo-ui/react-theme-generator';
+
 export type Theme = ColorTokens & Fonts;
 
 /**
  * Color theme tokens.
  */
-export type ColorTokens = {
-  canvasColor: String;
-  textColor: String;
-  inherit: String;
-  inheritHover: String;
-  inheritPressed: String;
-  inheritDisabled: String;
-  inheritForegroundHover: String;
-  inheritForegroundPressed: String;
-  inheritBackground: String;
-  inheritBackgroundDisabled: String;
-  brand: String;
-  brandHover: String;
-  brandPressed: String;
-  brandDisabled: String;
-  brandForegroundHover: String;
-  brandForegroundPressed: String;
-  brandBackground: String;
-  secondary: String;
-  secondaryHover: String;
-  secondaryPressed: String;
-  secondaryDisabled: String;
-  secondaryForegroundHover: String;
-  secondaryForegroundPressed: String;
-  success: String;
-  successHover: String;
-  successPressed: String;
-  successDisabled: String;
-  successForegroundHover: String;
-  successForegroundPressed: String;
-  error: String;
-  errorHover: String;
-  errorPressed: String;
-  errorDisabled: String;
-  errorForegroundHover: String;
-  errorForegroundPressed: String;
-  social: String;
-  socialHover: String;
-  socialPressed: String;
-  socialDisabled: String;
-  socialForegroundHover: String;
-  socialForegroundPressed: String;
-  warning: String;
-  warningHover: String;
-  warningPressed: String;
-  warningDisabled: String;
-  warningForegroundHover: String;
-  warningForegroundPressed: String;
-  info: String;
-  infoHover: String;
-  infoPressed: String;
-  infoDisabled: String;
-  infoForegroundHover: String;
-  infoForegroundPressed: String;
-};
+export type ColorTokens = { textColor: string; canvasColor: string } & ColorSet<
+  'inherit' | 'brand' | 'secondary' | 'success' | 'danger' | 'social' | 'warning' | 'info'
+>;
 
 export type Fonts = FontFamilyTokens & FontOpacityTokens & FontSizeTokens & FontLineHeightTokens & FontWeightTokens;
 
