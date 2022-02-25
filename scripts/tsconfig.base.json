@@ -1,20 +1,23 @@
 {
   "exclude": ["node_modules"],
   "compilerOptions": {
-    "module": "esnext",
-    "target": "esnext",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "nodenext",
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
     "noEmitOnError": true,
     "skipLibCheck": true,
+    "noUnusedLocals": true,
     "esModuleInterop": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
     "jsx": "react",
-    "lib": ["esnext", "dom"],
-    "types": ["jest", "@types/jest"],
+    "lib": ["ESNext", "dom"],
+    "typeRoots": ["node_modules/@types", "../node_modules/@types", "./types"],
+    "types": ["node", "jest"],
     "baseUrl": "."
   }
 }

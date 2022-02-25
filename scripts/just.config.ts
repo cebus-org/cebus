@@ -35,7 +35,6 @@ export function preset() {
     nodeArgs: ['--experimental-vm-modules'],
     config: path.join(__dirname, 'jest.config.js'),
     rootDir: process.cwd(),
-    updateSnapshot: true,
     passWithNoTests: true,
   };
 

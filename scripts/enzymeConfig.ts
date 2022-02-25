@@ -1,7 +1,7 @@
-const { configure } = require('enzyme');
-const Adapter = require('@wojtekmaj/enzyme-adapter-react-17');
+// const { configure } = require('enzyme');
+// const Adapter = require('@wojtekmaj/enzyme-adapter-react-17');
 
-// Configure enzyme.
-export const enzymeConfig = () => {
-  configure({ adapter: new Adapter() });
-};
+// // Configure enzyme.
+// export const enzymeConfig = () => {
+//   configure({ adapter: new Adapter() });
+// };
