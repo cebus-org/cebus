@@ -5,7 +5,7 @@ import process from 'process';
 const dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default {
-  testEnvironment: 'jsdom',
+  testEnvironment: 'jest-environment-jsdom-sixteen',
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   moduleNameMapper: {
     '^(\\.{1,2}/.*)\\.js$': '$1',
@@ -14,7 +14,7 @@ export default {
     '#supports-color': 'chalk/source/vendor/supports-color/index.js',
   },
   collectCoverage: true,
-  // moduleFileExtensions: ['ts', 'tsx', 'mts', 'mjs', 'js', 'cjs'],
+  moduleFileExtensions: ['ts', 'tsx', 'mts', 'mjs', 'js', 'cjs'],
   testPathIgnorePatterns: ['/node_modules/', '/lib/', '/lib-commonjs/', '/dist/'],
   transform: {
     '^.+\\.[jt]sx?$': ['babel-jest', { configFile: path.resolve(dirname, 'babel.config.js') }],

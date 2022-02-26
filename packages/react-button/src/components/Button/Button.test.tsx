@@ -1,17 +1,11 @@
 import React from 'react';
 import { Button } from './Button';
-import { ButtonProps } from './Button.types';
-import { isConformant } from '../../common/isConformant';
+
 import { render, RenderResult, fireEvent } from '@testing-library/react';
 
 //credit to https://github.com/microsoft/fluentui for being the base of this set of tests
 describe('Button', () => {
   let renderedComponent: RenderResult | undefined;
-
-  isConformant({
-    Component: Button as React.FunctionComponent<ButtonProps>,
-    displayName: 'Button',
-  });
 
   describe('Rendered as button', () => {
     it('respects id prop', () => {
