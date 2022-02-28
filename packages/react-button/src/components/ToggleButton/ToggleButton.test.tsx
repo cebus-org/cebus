@@ -3,6 +3,7 @@ import { ToggleButton } from './ToggleButton';
 import { ToggleButtonProps } from './ToggleButton.types';
 import { isConformant } from '../../common/isConformant';
 import { render } from '@testing-library/react';
+import { jest } from '@jest/globals';
 import userEvent from '@testing-library/user-event';
 
 describe('ToggleButton', () => {
