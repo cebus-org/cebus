@@ -22,9 +22,6 @@
     "build-storybook": "build-storybook",
     "chromatic": "cd apps && cd vr-tests && yarn chromatic"
   },
-  "dependencies": {
-    "@pongo-ui/react-theme": "^0.0.1"
-  },
   "devDependencies": {
     "beachball": "^2.21.0",
     "chromatic": "^6.4.3",
