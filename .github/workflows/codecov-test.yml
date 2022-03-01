@@ -11,6 +11,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
       - run: yarn
 
       - run: yarn coverage
