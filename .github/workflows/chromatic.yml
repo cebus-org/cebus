@@ -8,20 +8,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@master
-
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '14'
-
-      - name: navigating to directory
-        run: cd apps && cd vr-tests
+      - uses: actions/checkout@v1
 
       - name: yarn
         run: yarn
 
+      - name: navigating to directory
+        run: cd apps && cd vr-tests
+
       - name: Publish to Chromatic
-        uses: nisshii0313/action@v2
+        uses: chromaui/action@v1
         with:
           workingDir: apps/vr-tests
           token: ${{ secrets.GITHUB_TOKEN }}
