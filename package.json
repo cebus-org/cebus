@@ -33,7 +33,8 @@
     "@nrwl/tao": "^13.8.2",
     "@nrwl/workspace": "^13.8.2",
     "@fluentui/bundle-size": "^1.1.4",
-    "@pongo-ui/react-theme": "^0.0.1"
+    "@pongo-ui/react-theme": "^0.0.1",
+    "@pongo-ui/react-theme-generator": "^0.0.1"
   },
   "workspaces": {
     "packages": [
