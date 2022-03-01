@@ -2,6 +2,7 @@
   "extends": "@pongo-ui/scripts/tsconfig.base.json",
   "include": ["./src"],
   "compilerOptions": {
+    "baseUrl": "src/",
     "outDir": "lib"
   }
 }
