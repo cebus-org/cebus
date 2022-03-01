@@ -14,6 +14,8 @@ jobs:
 
       - run: yarn
 
+      - run: yarn build
+
       - run: yarn coverage
 
       - name: Upload
