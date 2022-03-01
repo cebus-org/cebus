@@ -13,6 +13,9 @@ jobs:
       - name: yarn
         run: yarn
 
+      - name: build
+        run: yarn build
+
       - name: navigating to directory
         run: cd apps && cd vr-tests
 
