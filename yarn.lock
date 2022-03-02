@@ -2315,13 +2315,6 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@pongo-ui/react-theme@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-theme/-/react-theme-0.0.1.tgz#e13b7b9cdff55c71afa00f94a76c51c84c53f4f4"
-  integrity sha512-P3RsNF6VOZ996Ksfrd1hPf2qEHffelS95/DXtzlDcwCmQdCHdJ+96TZiRn16o/ycjt7N8hdcGJqIHyhyIwVYFw==
-  dependencies:
-    "@pongo-ui/react-theme-generator" "^0.0.1"
-
 "@pongoai/eslint-plugin@^0.0.72":
   version "0.0.72"
   resolved "https://registry.yarnpkg.com/@pongoai/eslint-plugin/-/eslint-plugin-0.0.72.tgz#87fb461984e0c2de7611d45cc42073ee8e62b85f"
