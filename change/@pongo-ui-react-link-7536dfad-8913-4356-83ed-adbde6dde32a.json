@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Introducing package.",
+  "packageName": "@pongo-ui/react-link",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "patch"
+}
