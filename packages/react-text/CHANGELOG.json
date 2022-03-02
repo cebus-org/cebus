@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-text",
   "entries": [
     {
+      "date": "Wed, 02 Mar 2022 21:00:54 GMT",
+      "tag": "@pongo-ui/react-text_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-text",
+            "commit": "f77998ecd8e2cbecff80dc8fdc32c3a8a7baae2d",
+            "comment": "Running build on packages."
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 02 Mar 2022 20:01:44 GMT",
       "tag": "@pongo-ui/react-text_v0.0.1",
       "version": "0.0.1",
