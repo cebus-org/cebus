@@ -1,5 +1,5 @@
 export * from './fontFamilyTokens';
-export * from './fontColorTokens';
+export * from './fontOpacityTokens';
 export * from './fontLineHeightTokens';
 export * from './fontSizeTokens';
 export * from './fontWeightTokens';
