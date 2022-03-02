@@ -1,3 +1,3 @@
 export * from './web/index';
 export * from './theme';
-export * from './font';
+export * from './font/index';
