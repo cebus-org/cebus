@@ -7,15 +7,16 @@ jobs:
   report-coverage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@master
 
       - run: yarn
+
+      - name: build
+        run: yarn build
 
       - run: yarn coverage
 
       - name: Upload
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}

@@ -10,14 +10,17 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: navigating to directory
-        run: cd apps && cd vr-tests
-
       - name: yarn
         run: yarn
 
+      - name: build
+        run: yarn build
+
+      - name: navigating to directory
+        run: cd apps && cd vr-tests
+
       - name: Publish to Chromatic
-        uses: nisshii0313/action@v2
+        uses: chromaui/action@v1
         with:
           workingDir: apps/vr-tests
           token: ${{ secrets.GITHUB_TOKEN }}
