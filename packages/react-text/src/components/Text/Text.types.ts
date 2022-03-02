@@ -34,7 +34,7 @@ export type TextCommons = {
    *
    * @default inherent
    */
-  color?: 'base' | 'white' | 'brand' | 'secondary' | 'success' | 'danger' | 'social' | 'warning' | 'info';
+  color?: 'base' | 'inherit' | 'white' | 'brand' | 'secondary' | 'success' | 'danger' | 'social' | 'warning' | 'info';
 
   /**
    * Whether to render italic text.

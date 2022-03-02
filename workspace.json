@@ -20,6 +20,10 @@
     "@pongo-ui/react-theme": {
       "root": "packages/react-theme",
       "projectType": "library"
+    },
+    "@pongo-ui/react-text": {
+      "root": "packages/react-text",
+      "projectType": "library"
     }
   }
 }
