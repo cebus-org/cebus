@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Bumping FluentUI versions.",
-  "packageName": "@pongo-ui/react-button",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

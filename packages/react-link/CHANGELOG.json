@@ -1,0 +1,20 @@
+{
+  "name": "@pongo-ui/react-link",
+  "entries": [
+    {
+      "date": "Wed, 02 Mar 2022 01:24:34 GMT",
+      "tag": "@pongo-ui/react-link_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-link",
+            "commit": "aca6778f8fa87ec8737d1405da6ea17f1b806748",
+            "comment": "Introducing package."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-button",
   "entries": [
     {
+      "date": "Wed, 02 Mar 2022 01:24:34 GMT",
+      "tag": "@pongo-ui/react-button_v1.1.8",
+      "version": "1.1.8",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-button",
+            "commit": "aca6778f8fa87ec8737d1405da6ea17f1b806748",
+            "comment": "Bumping FluentUI versions."
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 02 Mar 2022 00:05:32 GMT",
       "tag": "@pongo-ui/react-button_v1.1.7",
       "version": "1.1.7",

@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-button
 
-This log was last generated on Thu, 24 Feb 2022 22:07:21 GMT and should not be manually modified.
+This log was last generated on Wed, 02 Mar 2022 01:24:34 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.8
+
+Wed, 02 Mar 2022 01:24:34 GMT
+
+### Patches
+
+- Bumping FluentUI versions. (czearing@outlook.com)
 
 ## 1.1.7
 
