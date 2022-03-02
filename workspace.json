@@ -5,6 +5,10 @@
       "root": "packages/react-button",
       "projectType": "library"
     },
+    "@pongo-ui/react-link": {
+      "root": "packages/react-link",
+      "projectType": "library"
+    },
     "@pongo-ui/react-storybook": {
       "root": "packages/react-storybook",
       "projectType": "library"
