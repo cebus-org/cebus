@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-button",
-  "version": "1.1.8",
+  "version": "1.1.7",
   "description": "A Button control that allows users to make an action through a press.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
