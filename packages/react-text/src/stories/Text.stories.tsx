@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Text, Body, Caption, Display, Header1, Header2, Header3, SubHeadline, Title } from '../index';
 import { makeStyles } from '@griffel/react';
-import { tokens } from '@pongo-ui/react-theme';
 
 const useStyles = makeStyles({
   root: {
