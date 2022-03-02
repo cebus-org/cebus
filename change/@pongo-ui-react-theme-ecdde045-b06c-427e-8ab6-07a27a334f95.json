@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixing a bug that caused fonts to not export.",
+  "packageName": "@pongo-ui/react-theme",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "patch"
+}
