@@ -5,8 +5,8 @@ trigger:
   - master
 
 variables:
+  - group: 'Github and NPM secrets'
   - template: .devops/templates/variables.yml
-  - group: pongo-variables
 
 pool: Default
 
