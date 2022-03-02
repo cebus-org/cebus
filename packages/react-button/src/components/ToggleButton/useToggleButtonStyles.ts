@@ -20,9 +20,11 @@ export const useToggleStyles = makeStyles({
   checkedEnabled: {
     '&:hover': {
       backgroundColor: `var(${hoverCSSVariable})`,
+      color: 'white',
     },
     '&:active': {
       backgroundColor: `var(${pressedCSSVariable})`,
+      color: 'white',
     },
   },
 

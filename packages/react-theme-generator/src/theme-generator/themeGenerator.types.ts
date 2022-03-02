@@ -22,7 +22,7 @@ type ColorSetKey<T extends string | number> =
  * Example: brand, brandPressed, brandHover, ...
  */
 export type ColorSet<T extends string | number> = {
-  [key in ColorSetKey<T>]: string;
+  [key in ColorSetKey<T> | 'elevate' | 'hoverShadow']: string;
 };
 
 export type ThemeGeneratorProps<T extends string | number> = {

@@ -1,4 +1,4 @@
-import { calculateContrastRatio, calculateTransparentColor, invertColor } from '../index';
+import { calculateContrastRatio, calculateTransparentColor, invertColor, calculateShadow } from '../index';
 import type { ThemeGeneratorProps, ColorSet, SemanticColors } from './themeGenerator.types';
 
 /**
@@ -31,6 +31,15 @@ export const createSemanticColor = <T extends string | number>(
     colorSets[color + 'ForegroundHover'] = calculateTransparentColor(semanticColors[color as T], canvasColor, 0.04);
     colorSets[color + 'ForegroundPressed'] = calculateTransparentColor(semanticColors[color as T], canvasColor, 0.08);
   }
+
+  // Drop shadow theme tokens
+  colorSets.elevate =
+    `drop-shadow(0 0 2px ${calculateShadow(canvasColor, 0.12)})` +
+    `drop-shadow(0 4px 8px ${calculateShadow(canvasColor, 0.14)})`;
+  colorSets.hoverShadow = `0px 3px 1px -2px ${calculateShadow(canvasColor, 0.2)}, 0px 2px 2px 0px ${calculateShadow(
+    canvasColor,
+    0.14,
+  )}, 0px 1px 5px 0px ${calculateShadow(canvasColor, 0.12)}`;
 
   return colorSets as ColorSet<T>;
 };

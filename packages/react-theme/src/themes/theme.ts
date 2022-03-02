@@ -1,12 +1,15 @@
-import { webLightTokens, webDarkTokens } from './web/index';
-import { fonts } from './font/index';
+import { webLightTokens, webDarkTokens } from './web';
+import { fonts } from './font';
+import { borderRadiusTokens } from './borderRadius';
 
 export const webLightTheme = {
   ...webLightTokens,
   ...fonts,
+  ...borderRadiusTokens,
 };
 
 export const webDarkTheme = {
   ...webDarkTokens,
   ...fonts,
+  ...borderRadiusTokens,
 };

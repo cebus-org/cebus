@@ -76,3 +76,13 @@ export type FontWeightTokens = {
   bold: number;
   black: number;
 };
+
+/**
+ * Border radius tokens.
+ */
+export type BorderRadiusTokens = {
+  square: string;
+  rounded: string;
+  circular: string;
+  circle: string;
+};
