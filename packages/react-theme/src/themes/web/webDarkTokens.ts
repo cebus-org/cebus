@@ -2,10 +2,10 @@ import { themeGenerator } from '@pongo-ui/react-theme-generator';
 import type { ColorTokens } from '../../types';
 
 export const webDarkTokens: ColorTokens = themeGenerator({
-  canvasColor: '#000000',
+  canvasColor: '#202020',
   semanticColors: {
-    inherit: '#828282',
-    brand: '#1f72e1',
+    inherit: '#b2b2b2 ',
+    brand: '#4695ff',
     secondary: '#586bd9',
     success: '#278536',
     danger: '#de3309',

@@ -17,9 +17,10 @@ export const createSemanticColor = <T extends string | number>(
       console.error(
         'It appears that your color ' +
           color +
+          ` (${semanticColors[color as T]}) ` +
           ' has a contrast of ' +
           contrastRatio +
-          ' with your canvas background. This is below W3 standards of a 3.0 ratio.',
+          ` with your canvas background (${canvasColor}). This is below W3 standards of a 3.0 ratio.`,
       );
     }
 

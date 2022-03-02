@@ -5,7 +5,7 @@ import { colorHexToRGB } from './colorHexToRGB';
 export function calculateLuminance(hexColor: string) {
   const rgbColor = colorHexToRGB(hexColor)!;
 
-  const color = [rgbColor!.r, rgbColor!.b, rgbColor!.g].map(function (value) {
+  const color = [rgbColor!.r, rgbColor!.g, rgbColor!.b].map(function (value) {
     value /= 255;
     return value <= 0.03928 ? value / 12.92 : Math.pow((value + 0.055) / 1.055, 2.4);
   });

@@ -9,8 +9,8 @@ export const webLightTokens: ColorTokens = themeGenerator({
     secondary: '#586bd9',
     success: '#278536',
     danger: '#de3309',
-    social: '#1ba1fb',
-    warning: '#f18e21',
+    social: '#1d9aee',
+    warning: '#eb6807',
     info: '#1da8b5',
   },
 });
