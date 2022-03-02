@@ -1403,16 +1403,16 @@
   resolved "https://registry.yarnpkg.com/@fluentui/keyboard-keys/-/keyboard-keys-9.0.0-rc.3.tgz#6483ff3a2c0897cd1adc3d9aad6b49641af54563"
   integrity sha512-nc6SHwwisWPmj4EYm9I4yrM8bKs0ETutSKdllNpPftHtXKQOjw0ejzH799+wv89u2IpX0133qSpYDoEpJDxcUw==
 
-"@fluentui/react-aria@^9.0.0-rc.1":
-  version "9.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-aria/-/react-aria-9.0.0-rc.3.tgz#dc89c77a59ac97a43abdad8eb540ce030c7a415a"
-  integrity sha512-7lHgFKFrQBzTfmsvyWVM+K/OHXccL9TXHrqKhueC4SFmV+SKt9yps3mJne/1lmaO6RcJhpinOXTYxyX9fBz06w==
+"@fluentui/react-aria@^9.0.0-rc.4":
+  version "9.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-aria/-/react-aria-9.0.0-rc.4.tgz#e680b262b78f4c5c213517307a26507c778672d0"
+  integrity sha512-8KAVvuRYDPNfx8TOF3AU1d7LcAy/ECB6r6iLiLIl/6T2j9R93xgO58KiH7KtwukAIOR5OE81lIDBJfmMHHrskw==
   dependencies:
     "@fluentui/keyboard-keys" "9.0.0-rc.3"
-    "@fluentui/react-utilities" "9.0.0-rc.3"
+    "@fluentui/react-utilities" "9.0.0-rc.4"
     tslib "^2.1.0"
 
-"@fluentui/react-conformance-griffel@^9.0.0-beta.1":
+"@fluentui/react-conformance-griffel@^9.0.0-beta.3":
   version "9.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/@fluentui/react-conformance-griffel/-/react-conformance-griffel-9.0.0-beta.3.tgz#24b18a4c86fff4111aeb38566406b39de42e6bd5"
   integrity sha512-w5zBr1M7M4jEjspXvz3uIwUU1YSOgSQU5vNWHaHJSleL0Kiel51dmcDR0qlytZbRgCtNRYUMY9YR8R74YguDbw==
@@ -1432,15 +1432,27 @@
     react-is "^16.6.3"
     tslib "^2.1.0"
 
-"@fluentui/react-provider@^9.0.0-rc.1":
-  version "9.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-provider/-/react-provider-9.0.0-rc.3.tgz#07023f843f89e0eedb528fccf66594912b002a13"
-  integrity sha512-dEapkXEGuiFVgxjTuGLZmgCa4n0reU04DMOWVn1hOpTGhdUcQVeFK0TxBk1BpD/0Vy2FhtRF/YamR9VqyEfv9Q==
+"@fluentui/react-link@^9.0.0-rc.4":
+  version "9.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-link/-/react-link-9.0.0-rc.4.tgz#b6677bbe91a725cbebaaa614a4bcafa002c16088"
+  integrity sha512-iY1TDdQ9lkPeDc7UOYumGbjtBRzHB+xchnU5dfMsTpSqyqTelhGo5C5GCt7av1WkAF+R9bwzP39/zBCxLR3QZA==
+  dependencies:
+    "@fluentui/keyboard-keys" "9.0.0-rc.3"
+    "@fluentui/react-tabster" "9.0.0-rc.4"
+    "@fluentui/react-theme" "9.0.0-rc.3"
+    "@fluentui/react-utilities" "9.0.0-rc.4"
+    "@griffel/react" "1.0.0"
+    tslib "^2.1.0"
+
+"@fluentui/react-provider@^9.0.0-rc.4":
+  version "9.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-provider/-/react-provider-9.0.0-rc.4.tgz#ae33fa2878e21a1692180c5177a03546ec8160ce"
+  integrity sha512-vCEXwAhjdpb98BGPS1zxlx/ootFyqYODl1s8XUvcB5aiwhj2zugyYolZ1aVomeScIiYOgC0fQM4BQoDpRhIH3w==
   dependencies:
     "@fluentui/react-shared-contexts" "9.0.0-rc.3"
-    "@fluentui/react-tabster" "9.0.0-rc.3"
+    "@fluentui/react-tabster" "9.0.0-rc.4"
     "@fluentui/react-theme" "9.0.0-rc.3"
-    "@fluentui/react-utilities" "9.0.0-rc.3"
+    "@fluentui/react-utilities" "9.0.0-rc.4"
     "@griffel/react" "1.0.0"
     tslib "^2.1.0"
 
@@ -1452,13 +1464,14 @@
     "@fluentui/react-theme" "9.0.0-rc.3"
     tslib "^2.1.0"
 
-"@fluentui/react-tabster@9.0.0-rc.3", "@fluentui/react-tabster@^9.0.0-rc.1":
-  version "9.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-tabster/-/react-tabster-9.0.0-rc.3.tgz#a0746c8e3e7da79463e48f7656d957299b933e8f"
-  integrity sha512-L8wYpMJ87ZhApndsHKtM2cADZlxDNgk5Xk1JIjrvzx23IO36YD6LD9mWcSoXiIc/7jQV1Ejj7IfpuOjhjaIh0A==
+"@fluentui/react-tabster@9.0.0-rc.4", "@fluentui/react-tabster@^9.0.0-rc.4":
+  version "9.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-tabster/-/react-tabster-9.0.0-rc.4.tgz#f52efb76d10c9c30a3e82708091a13c821e514cc"
+  integrity sha512-fMjBrfffkfnGEPUcjTK9F82FBLwBtpnotlsbyCyggDLvkStkK6U1sI/WrAHQd/xhmKvf1kIachQTiqVus/Mjtw==
   dependencies:
     "@fluentui/react-shared-contexts" "9.0.0-rc.3"
-    "@fluentui/react-utilities" "9.0.0-rc.3"
+    "@fluentui/react-theme" "9.0.0-rc.3"
+    "@fluentui/react-utilities" "9.0.0-rc.4"
     "@griffel/react" "1.0.0"
     keyborg "^1.1.0"
     tabster "^1.1.1"
@@ -1471,10 +1484,10 @@
   dependencies:
     tslib "^2.1.0"
 
-"@fluentui/react-utilities@9.0.0-rc.3", "@fluentui/react-utilities@^9.0.0-rc.1":
-  version "9.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-rc.3.tgz#28a03318b5d51d7e4a21b4fc8b275b1032bda5a0"
-  integrity sha512-UR9wBiB/P1VaM8tJ07i3NvzoJhKHB+Om/u0XyBRSjFerT+YvTeKmD7/JOgJuWGr+JJG8xrIxImrI+MdkaKAl/g==
+"@fluentui/react-utilities@9.0.0-rc.4", "@fluentui/react-utilities@^9.0.0-rc.4":
+  version "9.0.0-rc.4"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-rc.4.tgz#a275fbd2f545d2a36d99f4b984a32ceeab91629a"
+  integrity sha512-mOOqNlYxMa5ziv2+JD6Iv2s5MkesVptlcds/ebMs7VJobrqk+sE5NNbpTEpuN1hFcSBjWKUd85oj2x9uXyjEsw==
   dependencies:
     "@fluentui/keyboard-keys" "9.0.0-rc.3"
     tslib "^2.1.0"

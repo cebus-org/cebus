@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@pongo-ui/react-theme": "^0.0.1",
-    "@fluentui/react-provider": "^9.0.0-rc.1"
+    "@fluentui/react-provider": "^9.0.0-rc.4"
   },
   "devDependencies": {
     "@pongoai/eslint-plugin": "^0.0.72",

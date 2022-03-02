@@ -1,7 +1,7 @@
 {
-  "name": "@pongo-ui/react-button",
-  "version": "1.1.7",
-  "description": "A Button control that allows users to make an action through a press.",
+  "name": "@pongo-ui/react-link",
+  "version": "0.0.0",
+  "description": "A customizable link that helps with site navigation.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -24,9 +24,8 @@
   },
   "dependencies": {
     "@griffel/react": "^1.0.0",
-    "@fluentui/react-tabster": "^9.0.0-rc.4",
+    "@fluentui/react-link": "^9.0.0-rc.4",
     "@fluentui/react-utilities": "^9.0.0-rc.4",
-    "@fluentui/react-aria": "^9.0.0-rc.4",
     "@pongo-ui/react-theme": "*"
   },
   "devDependencies": {
