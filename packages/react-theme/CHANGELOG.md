@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-theme
 
-This log was last generated on Wed, 02 Mar 2022 20:01:44 GMT and should not be manually modified.
+This log was last generated on Wed, 02 Mar 2022 20:47:55 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.3
+
+Wed, 02 Mar 2022 20:47:55 GMT
+
+### Patches
+
+- Fixing a bug that caused fonts to not export. (czearing@outlook.com)
 
 ## 0.0.2
 

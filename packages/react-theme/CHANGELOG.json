@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-theme",
   "entries": [
     {
+      "date": "Wed, 02 Mar 2022 20:47:55 GMT",
+      "tag": "@pongo-ui/react-theme_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-theme",
+            "commit": "e466f6207af6713690727c3bfc02878341ea5a09",
+            "comment": "Fixing a bug that caused fonts to not export."
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 02 Mar 2022 20:01:44 GMT",
       "tag": "@pongo-ui/react-theme_v0.0.2",
       "version": "0.0.2",
