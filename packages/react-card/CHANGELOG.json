@@ -1,0 +1,20 @@
+{
+  "name": "@pongo-ui/react-card",
+  "entries": [
+    {
+      "date": "Thu, 03 Mar 2022 04:12:51 GMT",
+      "tag": "@pongo-ui/react-card_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-card",
+            "commit": "88260d4aa1c8d2b79d9e2060bdb4a50aba8abd51",
+            "comment": "Introducing the Card component"
+          }
+        ]
+      }
+    }
+  ]
+}

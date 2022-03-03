@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-storybook",
   "entries": [
     {
+      "date": "Thu, 03 Mar 2022 04:12:51 GMT",
+      "tag": "@pongo-ui/react-storybook_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "none": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-storybook",
+            "commit": "2d5b831b6daea1b44f7dae154003c663f82b0a82",
+            "comment": "Updating dev deps."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 03 Mar 2022 01:03:12 GMT",
       "tag": "@pongo-ui/react-storybook_v0.0.4",
       "version": "0.0.4",
