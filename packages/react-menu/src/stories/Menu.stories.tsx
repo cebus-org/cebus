@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Menu, MenuTrigger, MenuPopover } from '../index';
+import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem } from '../index';
 import { Button } from '@pongo-ui/react-button';
 // import { Header2 } from '@pongoai/react-text';
 import { makeStyles, shorthands } from '@griffel/react';
@@ -27,7 +27,10 @@ export const BasicMenuExample = () => {
           <Button>Open Settings</Button>
         </MenuTrigger>
         <MenuPopover>
-          <div>asd</div>
+          <MenuList>
+            <MenuItem>asd</MenuItem>
+            <MenuItem>asd</MenuItem>
+          </MenuList>
         </MenuPopover>
       </Menu>
     </div>

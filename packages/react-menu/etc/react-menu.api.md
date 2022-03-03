@@ -6,6 +6,11 @@
 
 import { FC } from 'react';
 import { FluentTriggerComponent } from '@fluentui/react-utilities';
+import type { ForwardRefComponent } from '@fluentui/react-utilities';
+import type { MenuListProps } from '@fluentui/react-menu';
+import type { MenuListState } from '@fluentui/react-menu';
+import type { MenuPopoverProps } from '@fluentui/react-menu';
+import type { MenuPopoverState } from '@fluentui/react-menu';
 import { MenuProps } from '@fluentui/react-menu';
 import { MenuTriggerProps } from '@fluentui/react-menu';
 
@@ -13,7 +18,19 @@ import { MenuTriggerProps } from '@fluentui/react-menu';
 export const Menu: FC<MenuProps>;
 
 // @public
+export const MenuList: ForwardRefComponent<MenuListProps>;
+
+// @public
+export const MenuPopover: ForwardRefComponent<MenuPopoverProps>;
+
+// @public
 export const MenuTrigger: FC<MenuTriggerProps> & FluentTriggerComponent;
+
+// @public (undocumented)
+export const useMenuListStyles: (state: MenuListState) => MenuListState;
+
+// @public (undocumented)
+export const useMenuPopoverStyles: (state: MenuPopoverState) => MenuPopoverState;
 
 // (No @packageDocumentation comment for this package)
 
