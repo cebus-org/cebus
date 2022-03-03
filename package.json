@@ -34,7 +34,9 @@
     "@nrwl/workspace": "^13.8.2",
     "@fluentui/bundle-size": "^1.1.4",
     "@pongo-ui/scripts": "^0.0.1",
-    "@pongo-ui/eslint-plugin": "*"
+    "@pongo-ui/eslint-plugin": "*",
+    "@fluentui/react-conformance": "^0.10.1",
+    "@fluentui/react-conformance-griffel": "^9.0.0-beta.3"
   },
   "workspaces": {
     "packages": [

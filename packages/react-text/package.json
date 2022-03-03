@@ -27,12 +27,7 @@
     "@fluentui/react-utilities": "^9.0.0-rc.4",
     "@pongo-ui/react-theme": "*"
   },
-  "devDependencies": {
-    "@pongo-ui/scripts": "^0.0.1",
-    "@pongo-ui/eslint-plugin": "*",
-    "@fluentui/react-conformance": "^0.10.1",
-    "@fluentui/react-conformance-griffel": "^9.0.0-beta.3"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
     "@types/react-dom": ">=16.8.0 <18.0.0",

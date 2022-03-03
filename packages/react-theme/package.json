@@ -25,10 +25,7 @@
   "dependencies": {
     "@pongo-ui/react-theme-generator": "^0.1.0"
   },
-  "devDependencies": {
-    "@pongo-ui/scripts": "^0.0.1",
-    "@pongo-ui/eslint-plugin": "*"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
     "@types/react-dom": ">=16.8.0 <18.0.0",

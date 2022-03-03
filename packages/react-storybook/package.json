@@ -19,8 +19,6 @@
     "@fluentui/react-provider": "^9.0.0-rc.4"
   },
   "devDependencies": {
-    "@pongoai/eslint-plugin": "^0.0.72",
-    "@pongo-ui/scripts": "^0.0.1",
     "@storybook/react": "^6.4.15",
     "@storybook/addon-a11y": "^6.4.15",
     "@storybook/addon-actions": "^6.4.15",
