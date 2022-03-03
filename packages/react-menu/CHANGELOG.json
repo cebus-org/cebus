@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-menu",
   "entries": [
     {
+      "date": "Thu, 03 Mar 2022 22:21:26 GMT",
+      "tag": "@pongo-ui/react-menu_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-menu",
+            "commit": "8d6b8f0b6d9e58c082215170a9d22fa3a246a4c2",
+            "comment": "Introducing menu package."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 03 Mar 2022 21:42:21 GMT",
       "tag": "@pongo-ui/react-menu_v0.0.0",
       "version": "0.0.0",
