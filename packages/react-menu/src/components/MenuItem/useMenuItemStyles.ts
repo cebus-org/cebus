@@ -1,34 +1,34 @@
-import { mergeClasses, makeStyles } from '@griffel/react';
+import { mergeClasses, makeStyles, shorthands } from '@griffel/react';
 import type { MenuItemState } from '@fluentui/react-menu';
-import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
+import { createFocusOutlineStyle } from '@fluentui/react-tabster';
 import { tokens } from '@pongo-ui/react-theme';
 
 export const useStyles = makeStyles({
   root: {
     position: 'relative',
-    borderRadius: '4px',
+    // ...shorthands.borderRadius(tokens.rounded),
     display: 'flex',
     height: '32px',
-    padding: '0px 10px',
-    background: tokens.canvasColor,
+    ...shorthands.padding('0px', '10px'),
+    backgroundColor: tokens.canvasColor,
     fontFamily: tokens.baseFont,
     fontSize: tokens.fontSize300,
     alignItems: 'center',
     userSelect: 'none',
     color: tokens.textColor,
-    gap: '4px',
+    ...shorthands.gap('4px'),
   },
 
   enabled: {
     cursor: 'pointer',
     ':hover': {
-      background: tokens.brandForegroundHover,
+      backgroundColor: tokens.brandForegroundHover,
     },
     ':active': {
-      background: tokens.brandForegroundPressed,
+      backgroundColor: tokens.brandForegroundPressed,
     },
     ':focus-within': {
-      background: tokens.brandForegroundPressed,
+      backgroundColor: tokens.brandForegroundPressed,
     },
   },
 
@@ -57,22 +57,7 @@ export const useStyles = makeStyles({
     },
   },
 
-  focusIndicator: createCustomFocusIndicatorStyle(
-    {
-      ':after': {
-        content: "''",
-        position: 'absolute',
-        top: '0px',
-        right: '0px',
-        bottom: '0px',
-        left: '0px',
-        boxSizing: 'border-box',
-        border: `2px solid ${tokens.textColor}`,
-        borderRadius: '4px',
-      },
-    },
-    { selector: 'focus-within' },
-  ),
+  focusIndicator: createFocusOutlineStyle(),
 
   icon: {
     width: '20px',
@@ -95,8 +80,8 @@ export const useMenuItemStyles = (state: MenuItemState): MenuItemState => {
     state.content.className = mergeClasses(styles.content, state.content.className);
   }
 
-  if (state.description) {
-    state.description.className = mergeClasses(styles.description, state.description.className);
+  if (state.secondaryContent) {
+    state.secondaryContent.className = mergeClasses(styles.description, state.secondaryContent.className);
   }
 
   if (state.icon) {

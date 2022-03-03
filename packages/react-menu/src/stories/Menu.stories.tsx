@@ -1,39 +1,76 @@
 import * as React from 'react';
-import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem } from '../index';
+import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem, MenuProps } from '../index';
 import { Button } from '@pongo-ui/react-button';
-// import { Header2 } from '@pongoai/react-text';
-import { makeStyles, shorthands } from '@griffel/react';
-
-const useStyles = makeStyles({
-  root: {
-    display: 'inline-flex',
-    flexDirection: 'column',
-    ...shorthands.gap('10px'),
-  },
-  row: {
-    display: 'inline-flex',
-    flexDirection: 'column',
-    ...shorthands.gap('10px'),
-  },
-});
 
 export const BasicMenuExample = () => {
-  const styles = useStyles();
+  const [open, setOpen] = React.useState(true);
+  const onOpenChange: MenuProps['onOpenChange'] = (e, data) => {
+    setOpen(data.open);
+  };
 
   return (
-    <div className={styles.root}>
-      <Menu>
-        <MenuTrigger>
-          <Button>Open Settings</Button>
-        </MenuTrigger>
-        <MenuPopover>
-          <MenuList>
-            <MenuItem>asd</MenuItem>
-            <MenuItem>asd</MenuItem>
-          </MenuList>
-        </MenuPopover>
-      </Menu>
-    </div>
+    <Menu open={open} onOpenChange={onOpenChange}>
+      <MenuTrigger>
+        <Button>Open Menu</Button>
+      </MenuTrigger>
+      <MenuPopover>
+        <MenuList>
+          <MenuItem>Cut</MenuItem>
+          <MenuItem disabled>Edit</MenuItem>
+          <MenuItem secondaryContent="Ctrl + V">Paste</MenuItem>
+          <MenuItem>Save</MenuItem>
+          <MenuItem>Save as</MenuItem>
+        </MenuList>
+      </MenuPopover>
+    </Menu>
+  );
+};
+
+const PreferencesSubMenu = () => {
+  const [open, setOpen] = React.useState(true);
+  const onOpenChange: MenuProps['onOpenChange'] = (e, data) => {
+    setOpen(data.open);
+  };
+
+  return (
+    <Menu open={open} onOpenChange={onOpenChange}>
+      <MenuTrigger>
+        <MenuItem>Preferences</MenuItem>
+      </MenuTrigger>
+
+      <MenuPopover>
+        <MenuList>
+          <MenuItem>Settings</MenuItem>
+          <MenuItem>Online Services Settings</MenuItem>
+          <MenuItem>Extensions</MenuItem>
+        </MenuList>
+      </MenuPopover>
+    </Menu>
+  );
+};
+
+export const MenuNestedExample = () => {
+  const [open, setOpen] = React.useState(true);
+  const onOpenChange: MenuProps['onOpenChange'] = (e, data) => {
+    setOpen(data.open);
+  };
+
+  return (
+    <Menu open={open} onOpenChange={onOpenChange}>
+      <MenuTrigger>
+        <MenuItem>Appearance</MenuItem>
+      </MenuTrigger>
+
+      <MenuPopover>
+        <MenuList>
+          <MenuItem>Centered Layout</MenuItem>
+          <MenuItem>Zen</MenuItem>
+          <MenuItem disabled>Zoom In</MenuItem>
+          <MenuItem>Zoom Out</MenuItem>
+          <PreferencesSubMenu />
+        </MenuList>
+      </MenuPopover>
+    </Menu>
   );
 };
 

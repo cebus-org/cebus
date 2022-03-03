@@ -7,15 +7,21 @@
 import { FC } from 'react';
 import { FluentTriggerComponent } from '@fluentui/react-utilities';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
+import type { MenuItemProps } from '@fluentui/react-menu';
+import type { MenuItemState } from '@fluentui/react-menu';
 import type { MenuListProps } from '@fluentui/react-menu';
 import type { MenuListState } from '@fluentui/react-menu';
 import type { MenuPopoverProps } from '@fluentui/react-menu';
 import type { MenuPopoverState } from '@fluentui/react-menu';
-import { MenuProps } from '@fluentui/react-menu';
+import { MenuProps as MenuProps_2 } from '@fluentui/react-menu';
+import type { MenuState as MenuState_2 } from '@fluentui/react-menu';
 import { MenuTriggerProps } from '@fluentui/react-menu';
 
 // @public
-export const Menu: FC<MenuProps>;
+export const Menu: FC<MenuProps_2>;
+
+// @public
+export const MenuItem: ForwardRefComponent<MenuItemProps>;
 
 // @public
 export const MenuList: ForwardRefComponent<MenuListProps>;
@@ -23,14 +29,26 @@ export const MenuList: ForwardRefComponent<MenuListProps>;
 // @public
 export const MenuPopover: ForwardRefComponent<MenuPopoverProps>;
 
+// @public (undocumented)
+export type MenuProps = MenuProps_2;
+
+// @public (undocumented)
+export type MenuState = MenuState_2;
+
 // @public
 export const MenuTrigger: FC<MenuTriggerProps> & FluentTriggerComponent;
+
+// @public (undocumented)
+export const useMenuItemStyles: (state: MenuItemState) => MenuItemState;
 
 // @public (undocumented)
 export const useMenuListStyles: (state: MenuListState) => MenuListState;
 
 // @public (undocumented)
 export const useMenuPopoverStyles: (state: MenuPopoverState) => MenuPopoverState;
+
+// @public (undocumented)
+export const useStyles: () => Record<"root" | "content" | "icon" | "enabled" | "disabled" | "description" | "focusIndicator", string>;
 
 // (No @packageDocumentation comment for this package)
 
