@@ -36,7 +36,7 @@ export const useRootStyles = makeStyles({
         left: '-8px',
         boxSizing: 'border-box',
         ...shorthands.border('2px', 'solid', tokens.textColor),
-        ...shorthands.borderRadius('4px'),
+        ...shorthands.borderRadius(tokens.rounded),
       },
     },
     { selector: 'focus-within' },
@@ -48,8 +48,7 @@ export const useRootStyles = makeStyles({
   enabled: {
     cursor: 'pointer',
     '&:hover': {
-      boxShadow:
-        '0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)',
+      boxShadow: tokens.hoverShadow,
     },
     '&:active': {
       boxShadow: 'none',
@@ -91,19 +90,19 @@ export const useRootStyles = makeStyles({
    * Shape styles
    */
   rounded: {
-    ...shorthands.borderRadius('6px'),
+    ...shorthands.borderRadius(tokens.rounded),
   },
 
   circular: {
-    ...shorthands.borderRadius('999px'),
+    ...shorthands.borderRadius(tokens.circular),
   },
 
   circle: {
-    ...shorthands.borderRadius('100%'),
+    ...shorthands.borderRadius(tokens.circle),
   },
 
   square: {
-    ...shorthands.borderRadius('0px'),
+    ...shorthands.borderRadius(tokens.square),
   },
 
   smallCircle: {

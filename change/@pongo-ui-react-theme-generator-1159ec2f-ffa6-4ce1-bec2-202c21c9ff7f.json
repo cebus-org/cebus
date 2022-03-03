@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Introducing shadow tokens.",
+  "packageName": "@pongo-ui/react-theme-generator",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "patch"
+}
