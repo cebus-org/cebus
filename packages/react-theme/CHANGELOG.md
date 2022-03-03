@@ -1,8 +1,17 @@
 # Change Log - @pongo-ui/react-theme
 
-This log was last generated on Wed, 02 Mar 2022 20:47:55 GMT and should not be manually modified.
+This log was last generated on Thu, 03 Mar 2022 01:03:12 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.4
+
+Thu, 03 Mar 2022 01:03:12 GMT
+
+### Patches
+
+- Updating theme colors and adding borderRadius tokens. (czearing@outlook.com)
+- Bump @pongo-ui/react-theme-generator to v0.1.0
 
 ## 0.0.3
 

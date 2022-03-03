@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-theme-generator",
   "entries": [
     {
+      "date": "Thu, 03 Mar 2022 01:03:12 GMT",
+      "tag": "@pongo-ui/react-theme-generator_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-theme-generator",
+            "commit": "83c45bfefbe25c8a702d9b2e3a0dee92a0d777da",
+            "comment": "Introducing shadow tokens."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 24 Feb 2022 22:07:21 GMT",
       "tag": "@pongo-ui/react-theme-generator_v0.0.1",
       "version": "0.0.1",

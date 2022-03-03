@@ -1,8 +1,17 @@
 # Change Log - @pongo-ui/react-storybook
 
-This log was last generated on Wed, 02 Mar 2022 20:47:55 GMT and should not be manually modified.
+This log was last generated on Thu, 03 Mar 2022 01:03:12 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.4
+
+Thu, 03 Mar 2022 01:03:12 GMT
+
+### Patches
+
+- Adding canvas background. (czearing@outlook.com)
+- Bump @pongo-ui/react-theme to v0.0.4
 
 ## 0.0.3
 

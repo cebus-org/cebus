@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-theme",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A set of theme tokens used by Pongo.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -23,7 +23,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@pongo-ui/react-theme-generator": "^0.0.1"
+    "@pongo-ui/react-theme-generator": "^0.1.0"
   },
   "devDependencies": {
     "@pongo-ui/scripts": "^0.0.1",

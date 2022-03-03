@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-theme",
   "entries": [
     {
+      "date": "Thu, 03 Mar 2022 01:03:12 GMT",
+      "tag": "@pongo-ui/react-theme_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-theme",
+            "commit": "83c45bfefbe25c8a702d9b2e3a0dee92a0d777da",
+            "comment": "Updating theme colors and adding borderRadius tokens."
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-theme",
+            "comment": "Bump @pongo-ui/react-theme-generator to v0.1.0",
+            "commit": "ae09528923a021bcaebb264f065ebc117510b785"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 02 Mar 2022 20:47:55 GMT",
       "tag": "@pongo-ui/react-theme_v0.0.3",
       "version": "0.0.3",

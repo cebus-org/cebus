@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-button
 
-This log was last generated on Wed, 02 Mar 2022 01:24:34 GMT and should not be manually modified.
+This log was last generated on Thu, 03 Mar 2022 01:03:12 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.11
+
+Thu, 03 Mar 2022 01:03:12 GMT
+
+### Patches
+
+- Introducing shadow tokens. (czearing@outlook.com)
 
 ## 1.1.8
 
