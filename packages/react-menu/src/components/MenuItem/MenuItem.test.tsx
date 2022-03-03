@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuItem } from './MenuItem';
 import type { MenuItemProps } from '@fluentui/react-menu';
-import { render, fireEvent } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { isConformant } from '../../common/isConformant';
 
 describe('MenuItem', () => {

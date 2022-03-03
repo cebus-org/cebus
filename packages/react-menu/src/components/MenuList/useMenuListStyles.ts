@@ -1,11 +1,10 @@
-import { mergeClasses, makeStyles, shorthands } from '@griffel/react';
+import { mergeClasses, makeStyles } from '@griffel/react';
 import type { MenuListState } from '@fluentui/react-menu';
 
 const useStyles = makeStyles({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    ...shorthands.padding('10px', '0px'),
   },
 });
 

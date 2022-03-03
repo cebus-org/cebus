@@ -3,7 +3,7 @@ import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem, MenuProps } from '.
 import { Button } from '@pongo-ui/react-button';
 
 export const BasicMenuExample = () => {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const onOpenChange: MenuProps['onOpenChange'] = (e, data) => {
     setOpen(data.open);
   };
@@ -27,7 +27,7 @@ export const BasicMenuExample = () => {
 };
 
 const PreferencesSubMenu = () => {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const onOpenChange: MenuProps['onOpenChange'] = (e, data) => {
     setOpen(data.open);
   };

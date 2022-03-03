@@ -6,7 +6,6 @@ import { tokens } from '@pongo-ui/react-theme';
 export const useStyles = makeStyles({
   root: {
     position: 'relative',
-    // ...shorthands.borderRadius(tokens.rounded),
     display: 'flex',
     height: '32px',
     ...shorthands.padding('0px', '10px'),

@@ -1,4 +1,4 @@
-import { mergeClasses, makeStyles, shorthands } from '@griffel/react';
+import { mergeClasses, makeStyles } from '@griffel/react';
 import { tokens } from '@pongo-ui/react-theme';
 import type { MenuPopoverState } from '@fluentui/react-menu';
 
@@ -8,7 +8,6 @@ const useStyles = makeStyles({
     minWidth: '128px',
     maxWidth: '300px',
     backgroundColor: tokens.canvasColor,
-    ...shorthands.borderRadius(tokens.rounded),
     filter: tokens.elevate,
   },
 });
