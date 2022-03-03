@@ -11,6 +11,6 @@ export const webLightTokens: ColorTokens = themeGenerator({
     danger: '#de3309',
     social: '#1d9aee',
     warning: '#eb6807',
-    info: '#1da8b5',
+    info: '#258e97',
   },
 });
