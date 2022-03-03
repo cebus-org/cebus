@@ -63,9 +63,7 @@ export function preset() {
   task('extract-api:fix', apiExtractorUpdateTask(apiExtractorOptions));
 
   // Build
-  task('build', series('clean', 'ts', 'tsCommon')).cached?.();
-  //TODO: Replace with this in a separate PR
-  // task('build', series('clean', 'ts', 'tsCommon', 'extract-api:fix')).cached?.();
+  task('build', series('clean', 'ts', 'tsCommon', 'extract-api:fix')).cached?.();
 
   // Test
   task('test', jestTask(jestOptions));

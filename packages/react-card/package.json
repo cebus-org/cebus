@@ -28,7 +28,10 @@
     "@fluentui/react-tabster": "^9.0.0-rc.1",
     "@pongo-ui/react-theme": "*"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@pongo-ui/react-text": "*",
+    "@pongo-ui/react-button": "*"
+  },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
     "@types/react-dom": ">=16.8.0 <18.0.0",
