@@ -4,7 +4,7 @@ exports[`CardRow renders a basic CardRow 1`] = `
 <body>
   <div>
     <div
-      class="___1qxtyd8 f22iagw f1063pyq f122n59 fi64zpg f18w1nra fd7ph1c"
+      class="___1jvutbk f22iagw f1063pyq f122n59 fi64zpg f1kbxzs8 f1nke1mu"
     >
       This is a test
     </div>
