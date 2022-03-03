@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuItem renders correctly 1`] = `
+<div>
+  <div
+    class="___18gi861 f10pi13n f22iagw f1d2rq10 f1nbblvp f81rol6 f1ov4xf1 frdkuqy f8qjfyk f8dqhol f1arxnym f122n59 f1xqy1su fc467gg f1q8lukm f1ma2n7n f2hkw1w fc85khu f1pxpxw8 f1149fnl fd1orka fgtqheg fq7mjg8 fq9bj62 fy07e8r f1ha6shg f4ltwxu f1284xzw f14dru39 fvabyfg f12y1wz2 f1k6fduh fc73jsq f8mbk1b f3c9x3h"
+    role="menuitem"
+    tabindex="0"
+  >
+    <span
+      class="___7dw8ap0 f161knb0 f12huiiw f3rmtva fqerorx"
+    >
+      Test Item
+    </span>
+  </div>
+</div>
+`;
+
+exports[`MenuItem renders disabled correctly 1`] = `
+<div>
+  <div
+    aria-disabled="true"
+    class="___1ytfnui f10pi13n f22iagw f1d2rq10 f1nbblvp f81rol6 f1ov4xf1 frdkuqy f8qjfyk f8dqhol f1arxnym f122n59 f1xqy1su favx1wl f1q8lukm f1ma2n7n f2hkw1w fc85khu f1pxpxw8 f1149fnl fd1orka fgtqheg fq7mjg8 fq9bj62 fy07e8r f1ha6shg f4ltwxu f1284xzw f14dru39 fvabyfg f12y1wz2 fdrzuqr"
+    role="menuitem"
+    tabindex="0"
+  >
+    <span
+      class="___7dw8ap0 f161knb0 f12huiiw f3rmtva fqerorx"
+    >
+      Test Item
+    </span>
+  </div>
+</div>
+`;
+
+exports[`MenuItem renders secondaryContent correctly 1`] = `
+<div>
+  <div
+    class="___18gi861 f10pi13n f22iagw f1d2rq10 f1nbblvp f81rol6 f1ov4xf1 frdkuqy f8qjfyk f8dqhol f1arxnym f122n59 f1xqy1su fc467gg f1q8lukm f1ma2n7n f2hkw1w fc85khu f1pxpxw8 f1149fnl fd1orka fgtqheg fq7mjg8 fq9bj62 fy07e8r f1ha6shg f4ltwxu f1284xzw f14dru39 fvabyfg f12y1wz2 f1k6fduh fc73jsq f8mbk1b f3c9x3h"
+    role="menuitem"
+    tabindex="0"
+  >
+    <span
+      class="___7dw8ap0 f161knb0 f12huiiw f3rmtva fqerorx"
+    >
+      Test Item
+    </span>
+    <span
+      class="___4wkhrh0 f161knb0 f12huiiw f1ysjbbf f15s2vri f3krum3"
+    >
+      test
+    </span>
+  </div>
+</div>
+`;

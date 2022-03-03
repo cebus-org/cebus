@@ -16,8 +16,8 @@
     "change": "beachball change --scope \"!packages/pongo-ui/*\"",
     "checkchange": "beachball check  --scope \"!packages/pongo-ui/*\" --changehint \"Run 'yarn change' to generate a change file\"",
     "publish:beachball": "beachball publish -b origin/master --access public -y",
-    "format": "prettier --ignore-path .gitignore --write ./",
-    "check-format": "prettier --ignore-path .gitignore --check ./",
+    "format": "prettier --write ./",
+    "check-format": "prettier --check ./",
     "prepare": "husky install",
     "build-storybook": "build-storybook",
     "chromatic": "cd apps && cd vr-tests && yarn chromatic"

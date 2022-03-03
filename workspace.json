@@ -28,6 +28,10 @@
     "@pongo-ui/react-card": {
       "root": "packages/react-card",
       "projectType": "library"
+    },
+    "@pongo-ui/react-menu": {
+      "root": "packages/react-menu",
+      "projectType": "library"
     }
   }
 }
