@@ -4,7 +4,7 @@ type ToggleButtonCommons = {
   /**
    * The controlled state of whether the ToggleButton is checked.
    *
-   * @default false
+   * @defaultValue false
    */
   checked: boolean;
 };
@@ -14,7 +14,7 @@ export type ToggleButtonProps = ButtonProps &
     /**
      * The uncontrolled state of whether the ToggleButton is checked.
      *
-     * @default false
+     * @defaultValue false
      */
     defaultChecked?: boolean;
   };
