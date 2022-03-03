@@ -1,7 +1,7 @@
 {
   "name": "@pongo-ui/react-card",
   "version": "0.0.0",
-  "description": "A customizable link that helps with site navigation.",
+  "description": "The Card component displays content and presents actions to the user.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -25,11 +25,10 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.4",
+    "@fluentui/react-tabster": "^9.0.0-rc.1",
     "@pongo-ui/react-theme": "*"
   },
   "devDependencies": {
-    "@pongo-ui/scripts": "^0.0.1",
-    "@pongo-ui/eslint-plugin": "*",
     "@fluentui/react-conformance": "^0.10.1",
     "@fluentui/react-conformance-griffel": "^9.0.0-beta.3"
   },

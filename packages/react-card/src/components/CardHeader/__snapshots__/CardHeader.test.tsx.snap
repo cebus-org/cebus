@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardHeader renders a basic CardHeader 1`] = `
+<body>
+  <div>
+    <div
+      class="___1npqzdf f22iagw f1063pyq f122n59 f4d9j23 fi64zpg f18w1nra fd7ph1c"
+    >
+      <div
+        class="___1y0vsyi f22iagw f17fgpbq f1pha7fy f44c6la f17bzqcb fgn7ydb f1jevvm1 fqihwjc f6x1sus"
+      >
+        <div>
+          CZ
+        </div>
+      </div>
+      <div
+        class="___blydbu0 f22iagw f1vx9l62 fqerorx fwk23hs f4d9j23"
+      >
+        This is a header
+        This is a subHeadline
+      </div>
+    </div>
+  </div>
+</body>
+`;

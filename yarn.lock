@@ -1464,7 +1464,7 @@
     "@fluentui/react-theme" "9.0.0-rc.3"
     tslib "^2.1.0"
 
-"@fluentui/react-tabster@9.0.0-rc.4", "@fluentui/react-tabster@^9.0.0-rc.4":
+"@fluentui/react-tabster@9.0.0-rc.4", "@fluentui/react-tabster@^9.0.0-rc.1", "@fluentui/react-tabster@^9.0.0-rc.4":
   version "9.0.0-rc.4"
   resolved "https://registry.yarnpkg.com/@fluentui/react-tabster/-/react-tabster-9.0.0-rc.4.tgz#f52efb76d10c9c30a3e82708091a13c821e514cc"
   integrity sha512-fMjBrfffkfnGEPUcjTK9F82FBLwBtpnotlsbyCyggDLvkStkK6U1sI/WrAHQd/xhmKvf1kIachQTiqVus/Mjtw==

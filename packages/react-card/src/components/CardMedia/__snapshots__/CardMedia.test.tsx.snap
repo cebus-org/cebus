@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardMedia renders a basic CardMedia 1`] = `
+<body>
+  <div>
+    <div
+      class="___k2tw9a0 f10pi13n fnmsr9s fiot276 f1g46stm f1u10i51 floiv14 f1r7p6p5"
+    >
+      <div
+        class="___d54zkx0 f1euv43f f1gcvs1y f1t6tvco f1szoe96 f1d2rq10"
+      >
+        test
+      </div>
+    </div>
+  </div>
+</body>
+`;
