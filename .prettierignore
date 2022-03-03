@@ -1,0 +1,27 @@
+# generated or imported files
+package-deps.json
+CHANGELOG.*
+version.ts
+*.api.md
+api-report.md
+*.scss.ts
+_*.scss
+yarn.lock
+
+# generated folders
+node_modules
+lib
+lib-amd
+lib-esm
+lib-commonjs
+dist
+common/changes
+common/scripts
+coverage
+etc
+change
+__snapshots__
+.yarn/
+
+# template files which actually follow a different language's formatting
+*.hbs

@@ -1464,7 +1464,7 @@
     "@fluentui/react-theme" "9.0.0-rc.3"
     tslib "^2.1.0"
 
-"@fluentui/react-tabster@9.0.0-rc.4", "@fluentui/react-tabster@^9.0.0-rc.4":
+"@fluentui/react-tabster@9.0.0-rc.4", "@fluentui/react-tabster@^9.0.0-rc.1", "@fluentui/react-tabster@^9.0.0-rc.4":
   version "9.0.0-rc.4"
   resolved "https://registry.yarnpkg.com/@fluentui/react-tabster/-/react-tabster-9.0.0-rc.4.tgz#f52efb76d10c9c30a3e82708091a13c821e514cc"
   integrity sha512-fMjBrfffkfnGEPUcjTK9F82FBLwBtpnotlsbyCyggDLvkStkK6U1sI/WrAHQd/xhmKvf1kIachQTiqVus/Mjtw==
@@ -2314,22 +2314,6 @@
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
     source-map "^0.7.3"
-
-"@pongoai/eslint-plugin@^0.0.72":
-  version "0.0.72"
-  resolved "https://registry.yarnpkg.com/@pongoai/eslint-plugin/-/eslint-plugin-0.0.72.tgz#87fb461984e0c2de7611d45cc42073ee8e62b85f"
-  integrity sha512-eqaNXlt1dkUyxVW8Q2xdZhiWKU7Cg9F1XJwTM9PhceUHCMVVCu7dKZiSKOaeyDPMI0SHxlXCqSDtx8dOkoboWg==
-  dependencies:
-    "@typescript-eslint/eslint-plugin" "^5.9.0"
-    "@typescript-eslint/parser" "^5.9.0"
-    eslint "^7.32.0"
-    eslint-config-airbnb "^19.0.4"
-    eslint-config-airbnb-typescript "^16.1.0"
-    eslint-config-next "^12.0.7"
-    eslint-plugin-import "^2.25.4"
-    eslint-plugin-jsx-a11y "^6.5.1"
-    eslint-plugin-react "^7.28.0"
-    eslint-plugin-react-hooks "^4.3.0"
 
 "@popperjs/core@^2.5.4", "@popperjs/core@^2.6.0":
   version "2.11.2"

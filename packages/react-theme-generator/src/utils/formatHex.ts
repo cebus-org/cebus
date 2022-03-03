@@ -1,7 +1,5 @@
 /**
  * Formats a given hex value
- *
- * @param value
  */
 export function formatHex(value: string) {
   value = value + '';

@@ -34,8 +34,8 @@ export type ThemeGeneratorProps<T extends string | number> = {
   /**
    * The set of semantic colors to generate various states for.
    *
-   * - Example: {brand: '#2060CF'}
-   * - Returns: {brand: '#2060CF', brandHover: '...', brandPressed: '...', ...}
+   * - Example: brand: '#2060CF'
+   * - Returns: brand: '#2060CF', brandHover: '...', brandPressed: '...', ...
    */
   semanticColors: SemanticColors<T>;
 };

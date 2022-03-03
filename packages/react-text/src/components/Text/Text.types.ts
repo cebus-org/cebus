@@ -32,7 +32,7 @@ export type TextCommons = {
   /**
    * The color of the text.
    *
-   * @default inherent
+   * @defaultValue inherent
    */
   color?: 'base' | 'inherit' | 'white' | 'brand' | 'secondary' | 'success' | 'danger' | 'social' | 'warning' | 'info';
 

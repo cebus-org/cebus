@@ -4,8 +4,6 @@ import { colorRGBToHex } from './colorRGBToHex';
 /**
  * Inverts the given hex color.
  * Example: #ffffff becomes #000000
- *
- * @param color
  */
 export function invertColor(hexColor: string) {
   const rgbColor = colorHexToRGB(hexColor);

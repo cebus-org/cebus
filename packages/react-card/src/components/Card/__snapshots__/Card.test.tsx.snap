@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card renders a basic Card 1`] = `
+<body>
+  <div>
+    <div
+      class="___7jcvfd0 f22iagw f1vx9l62 f8qjfyk fbtff6s fu7nab3 fjkx0r0 fzd8dhq fi64zpg f1kbxzs8 f1nke1mu fl4n2cu f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp"
+      data-tabster="{\\"groupper\\":{\\"tabbability\\":2}}"
+      role="group"
+    >
+      This is a card.
+    </div>
+  </div>
+</body>
+`;

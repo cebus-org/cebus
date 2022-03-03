@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardRow renders a basic CardRow 1`] = `
+<body>
+  <div>
+    <div
+      class="___1jvutbk f22iagw f1063pyq f122n59 fi64zpg f1kbxzs8 f1nke1mu"
+    >
+      This is a test
+    </div>
+  </div>
+</body>
+`;

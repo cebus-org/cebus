@@ -24,6 +24,10 @@
     "@pongo-ui/react-text": {
       "root": "packages/react-text",
       "projectType": "library"
+    },
+    "@pongo-ui/react-card": {
+      "root": "packages/react-card",
+      "projectType": "library"
     }
   }
 }
