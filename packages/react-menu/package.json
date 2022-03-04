@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-menu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of menu related components used to display information over a given element.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-theme",
   "entries": [
     {
+      "date": "Fri, 04 Mar 2022 22:21:59 GMT",
+      "tag": "@pongo-ui/react-theme_v0.0.5",
+      "version": "0.0.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-theme",
+            "commit": "95f537467db5ccd1fa06548c02a5af388e7c2f38",
+            "comment": "Updating dark theme tokens."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 03 Mar 2022 04:12:51 GMT",
       "tag": "@pongo-ui/react-theme_v0.0.4",
       "version": "0.0.4",

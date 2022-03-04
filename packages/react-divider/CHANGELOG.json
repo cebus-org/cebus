@@ -1,0 +1,26 @@
+{
+  "name": "@pongo-ui/react-divider",
+  "entries": [
+    {
+      "date": "Fri, 04 Mar 2022 22:21:59 GMT",
+      "tag": "@pongo-ui/react-divider_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-divider",
+            "commit": "6221604b4feb3a53a3df354624d9585d5a3ed592",
+            "comment": "Introducing package."
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-divider",
+            "comment": "Bump @pongo-ui/react-text to v0.0.5",
+            "commit": "6722e8293a9b4c63ad33437251593651e9c5b8e9"
+          }
+        ]
+      }
+    }
+  ]
+}

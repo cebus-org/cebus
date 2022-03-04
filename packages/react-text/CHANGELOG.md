@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-text
 
-This log was last generated on Wed, 02 Mar 2022 21:00:54 GMT and should not be manually modified.
+This log was last generated on Fri, 04 Mar 2022 22:21:59 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.5
+
+Fri, 04 Mar 2022 22:21:59 GMT
+
+### Patches
+
+- Bumping dep versions. (czearing@outlook.com)
 
 ## 0.0.3
 
