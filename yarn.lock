@@ -1414,6 +1414,29 @@
     "@fluentui/react-utilities" "9.0.0-rc.5"
     tslib "^2.1.0"
 
+"@fluentui/react-avatar@^9.0.0-rc.5":
+  version "9.0.0-rc.5"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-avatar/-/react-avatar-9.0.0-rc.5.tgz#762b29330a4ae5f88158b5ace5954ea49e071577"
+  integrity sha512-IM9cgOx8g7rNR1qkWTP9lKem0jNvtucfLyUKurTP4r1i/v12YsWk59VsiTPqHaKmFQOs6C6td1o4hCnt+pOQlw==
+  dependencies:
+    "@fluentui/react-badge" "9.0.0-rc.5"
+    "@fluentui/react-icons" "^2.0.159-beta.10"
+    "@fluentui/react-theme" "9.0.0-rc.4"
+    "@fluentui/react-utilities" "9.0.0-rc.5"
+    "@griffel/react" "1.0.0"
+    tslib "^2.1.0"
+
+"@fluentui/react-badge@9.0.0-rc.5":
+  version "9.0.0-rc.5"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-badge/-/react-badge-9.0.0-rc.5.tgz#686c11223d75cbb8addcdfbdcb46ea929a1faab2"
+  integrity sha512-AKl3n28W5HrsnsVcrGVRROP2AB97D8ZaQc17wWr6rfQc+3Jb6siAfVdmGG+KYny93z5WJ1GMyF9Hs9dnyj45Zw==
+  dependencies:
+    "@fluentui/react-icons" "^2.0.159-beta.10"
+    "@fluentui/react-theme" "9.0.0-rc.4"
+    "@fluentui/react-utilities" "9.0.0-rc.5"
+    "@griffel/react" "1.0.0"
+    tslib "^2.1.0"
+
 "@fluentui/react-conformance-griffel@^9.0.0-beta.3":
   version "9.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/@fluentui/react-conformance-griffel/-/react-conformance-griffel-9.0.0-beta.3.tgz#24b18a4c86fff4111aeb38566406b39de42e6bd5"
@@ -1521,7 +1544,7 @@
     "@griffel/react" "1.0.0"
     tslib "^2.1.0"
 
-"@fluentui/react-shared-contexts@9.0.0-rc.4":
+"@fluentui/react-shared-contexts@9.0.0-rc.4", "@fluentui/react-shared-contexts@^9.0.0-rc.4":
   version "9.0.0-rc.4"
   resolved "https://registry.yarnpkg.com/@fluentui/react-shared-contexts/-/react-shared-contexts-9.0.0-rc.4.tgz#2943a9de106c5d8ce38ec7778e6dc645fdfa0a50"
   integrity sha512-LOjDD8BsM5MgUfU0sy125zdeILU4LqXbiUKbMo353Yl0TsoJnBETgctKKgtHkOzwaTcToVAXSqIDpoFzYB+7eQ==

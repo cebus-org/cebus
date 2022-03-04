@@ -36,6 +36,10 @@
     "@pongo-ui/react-divider": {
       "root": "packages/react-divider",
       "projectType": "library"
+    },
+    "@pongo-ui/react-avatar": {
+      "root": "packages/react-avatar",
+      "projectType": "library"
     }
   }
 }

@@ -7,6 +7,7 @@ const testedComponentPackages = [
   'react-card',
   'react-menu',
   'react-divider',
+  'react-avatar',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(
