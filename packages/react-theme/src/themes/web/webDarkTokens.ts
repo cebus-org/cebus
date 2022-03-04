@@ -4,8 +4,8 @@ import type { ColorTokens } from '../../types';
 export const webDarkTokens: ColorTokens = themeGenerator({
   canvasColor: '#202020',
   semanticColors: {
-    inherit: '#828282',
-    brand: '#1f72e1',
+    inherit: '#908D8D',
+    brand: '#397DD6',
     secondary: '#586bd9',
     success: '#278536',
     danger: '#de3309',
