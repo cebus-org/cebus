@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider renders a divider 1`] = `
+<body>
+  <div>
+    <div
+      aria-orientation="horizontal"
+      class="___zwr68b0 f10pi13n f122n59 f1ewtqcl f22iagw f1063pyq fqerorx f8dqhol f15hzwe6 f1rd5vql f8s6rei f170vdtw fkmkm9e fbxxcv3 ffdc0f3 fsnc50s fjrry2l fuzzvh5 fqc6z8f fly5x3f f1bwkb58 f199l62q f1iq3fds f1l5cenb fhlqc5k f1957mjw fc3uzr1 f1hmx8el f1ysjbbf f6dxpfp fghvtis ftbb52h f1ohrftm f1jjt28w f1tz0uvw f11imphh f14js4i3"
+      role="separator"
+    />
+  </div>
+</body>
+`;
+
+exports[`Divider renders a divider with content 1`] = `
+<body>
+  <div>
+    <div
+      aria-labelledby="divider-1"
+      aria-orientation="horizontal"
+      class="___nz8i480 f10pi13n f122n59 f1ewtqcl f22iagw f1063pyq fqerorx f8dqhol f15hzwe6 f1rd5vql f8s6rei f170vdtw fkmkm9e fbxxcv3 ffdc0f3 fsnc50s fjrry2l fuzzvh5 fqc6z8f fly5x3f f1bwkb58 f199l62q f1iq3fds f1l5cenb fncq426 f1io6r2y f1ysjbbf f6dxpfp fghvtis ftbb52h f1ohrftm f1jjt28w f1tz0uvw f11imphh f14js4i3"
+      role="separator"
+    >
+      <div
+        id="divider-1"
+      >
+        This is a test
+      </div>
+    </div>
+  </div>
+</body>
+`;
