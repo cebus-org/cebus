@@ -1,0 +1,20 @@
+{
+  "name": "@pongo-ui/react-avatar",
+  "entries": [
+    {
+      "date": "Fri, 04 Mar 2022 23:48:43 GMT",
+      "tag": "@pongo-ui/react-avatar_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-avatar",
+            "commit": "dd7647afd6431f4d6b6200534de117aea890bbfd",
+            "comment": "Introducing package."
+          }
+        ]
+      }
+    }
+  ]
+}
