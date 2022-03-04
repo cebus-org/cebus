@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar Snapshot tests renders a basic Avatar 1`] = `
+<body>
+  <div>
+    <span
+      aria-label="test"
+      class="___1jdxlz9 f10pi13n f8dqhol ffu84w5 fmrv4ls fmysjtr f22iagw f1xqy1su fi64zpg f1jhi6b8 f122n59 f4d9j23 f1ewtqcl f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1lmfglv fibjyge f1abmfm4 f9yszdx f1i2uu5k f1ys4a3y f1gczwgj fadrijh f1bc5yav fcv2ht4 f1mg03ek"
+      id="avatar-7"
+      name="test"
+      role="img"
+      style="background: rgb(102, 48, 38);"
+    >
+      <span
+        aria-hidden="true"
+        class="___bbcx9p0 f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1lmfglv fibjyge f1abmfm4 f9yszdx"
+      >
+        T
+      </span>
+    </span>
+  </div>
+</body>
+`;
+
+exports[`Avatar Snapshot tests renders an Avatar with an image 1`] = `
+<body>
+  <div>
+    <span
+      aria-label="test"
+      class="___1jdxlz9 f10pi13n f8dqhol ffu84w5 fmrv4ls fmysjtr f22iagw f1xqy1su fi64zpg f1jhi6b8 f122n59 f4d9j23 f1ewtqcl f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1lmfglv fibjyge f1abmfm4 f9yszdx f1i2uu5k f1ys4a3y f1gczwgj fadrijh f1bc5yav fcv2ht4 f1mg03ek"
+      id="avatar-8"
+      name="test"
+      role="img"
+      style="background: rgb(102, 48, 38);"
+    >
+      <span
+        aria-hidden="true"
+        class="___bbcx9p0 f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1lmfglv fibjyge f1abmfm4 f9yszdx"
+      >
+        T
+      </span>
+      <img
+        alt=""
+        aria-hidden="true"
+        class="___1xbm6i0 f1euv43f f15twtuk f1vgc2s3 fly5x3f f1l02sjl f1ps3kmd f12kltsn f1i2uu5k f1ys4a3y f1gczwgj fadrijh"
+        role="presentation"
+        src="https://th.bing.com/th/id/OIP.R3IAG0Z7SAzTV56Xuvs1LwHaFj?pid=ImgDet&rs=1"
+      />
+    </span>
+  </div>
+</body>
+`;
