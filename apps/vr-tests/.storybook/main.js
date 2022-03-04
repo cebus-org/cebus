@@ -1,6 +1,13 @@
 const root = require('../../../.storybook/main');
 
-const testedComponentPackages = ['react-button', 'react-link', 'react-text', 'react-card', 'react-menu'];
+const testedComponentPackages = [
+  'react-button',
+  'react-link',
+  'react-text',
+  'react-card',
+  'react-menu',
+  'react-divider',
+];
 
 const componentStoryPaths = testedComponentPackages.map(
   packageName => '../../../packages/' + packageName + '/src/stories/*.stories.@(js|jsx|ts|tsx)',

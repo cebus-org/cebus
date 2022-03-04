@@ -1,7 +1,7 @@
 {
-  "name": "@pongo-ui/react-button",
-  "version": "1.1.11",
-  "description": "A Button control that allows users to make an action through a press.",
+  "name": "@pongo-ui/react-divider",
+  "version": "0.0.0",
+  "description": "The divider helps separate content in a site.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -24,10 +24,9 @@
   },
   "dependencies": {
     "@griffel/react": "^1.0.0",
-    "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@fluentui/react-aria": "9.0.0-rc.5",
-    "@pongo-ui/react-theme": "*"
+    "@pongo-ui/react-theme": "*",
+    "@fluentui/react-divider": "^9.0.0-rc.5"
   },
   "devDependencies": {},
   "peerDependencies": {

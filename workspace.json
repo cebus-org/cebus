@@ -32,6 +32,10 @@
     "@pongo-ui/react-menu": {
       "root": "packages/react-menu",
       "projectType": "library"
+    },
+    "@pongo-ui/react-divider": {
+      "root": "packages/react-divider",
+      "projectType": "library"
     }
   }
 }

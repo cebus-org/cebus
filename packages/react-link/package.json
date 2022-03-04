@@ -24,8 +24,8 @@
   },
   "dependencies": {
     "@griffel/react": "^1.0.0",
-    "@fluentui/react-link": "^9.0.0-rc.4",
-    "@fluentui/react-utilities": "^9.0.0-rc.4",
+    "@fluentui/react-link": "^9.0.0-rc.5",
+    "@fluentui/react-utilities": "^9.0.0-rc.5",
     "@pongo-ui/react-theme": "*"
   },
   "devDependencies": {},
