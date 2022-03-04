@@ -7,5 +7,6 @@ describe('MenuItemRadio', () => {
   isConformant({
     Component: MenuItemRadio as React.FunctionComponent<MenuItemRadioProps>,
     displayName: 'MenuItemRadio',
+    disabledTests: ['component-handles-classname', 'make-styles-overrides-win'],
   });
 });
