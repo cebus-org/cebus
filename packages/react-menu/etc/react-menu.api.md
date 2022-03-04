@@ -8,6 +8,8 @@ import { FC } from 'react';
 import { FluentTriggerComponent } from '@fluentui/react-utilities';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
 import type { MenuItemProps } from '@fluentui/react-menu';
+import type { MenuItemRadioProps } from '@fluentui/react-menu';
+import type { MenuItemRadioState } from '@fluentui/react-menu';
 import type { MenuItemState } from '@fluentui/react-menu';
 import type { MenuListProps } from '@fluentui/react-menu';
 import type { MenuListState } from '@fluentui/react-menu';
@@ -24,6 +26,9 @@ export const Menu: FC<MenuProps_2>;
 export const MenuItem: ForwardRefComponent<MenuItemProps>;
 
 // @public
+export const MenuItemRadio: ForwardRefComponent<MenuItemRadioProps>;
+
+// @public
 export const MenuList: ForwardRefComponent<MenuListProps>;
 
 // @public
@@ -37,6 +42,9 @@ export type MenuState = MenuState_2;
 
 // @public
 export const MenuTrigger: FC<MenuTriggerProps> & FluentTriggerComponent;
+
+// @public (undocumented)
+export const useMenuItemRadioStyles: (state: MenuItemRadioState) => MenuItemRadioState;
 
 // @public (undocumented)
 export const useMenuItemStyles: (state: MenuItemState) => MenuItemState;

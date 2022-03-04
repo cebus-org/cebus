@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem, MenuProps } from '../index';
+import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem, MenuItemRadio } from '../index';
+import type { MenuProps } from '../index';
 import { Button } from '@pongo-ui/react-button';
 
 export const BasicMenuExample = () => {
@@ -37,7 +38,6 @@ const PreferencesSubMenu = () => {
       <MenuTrigger>
         <MenuItem>Preferences</MenuItem>
       </MenuTrigger>
-
       <MenuPopover>
         <MenuList>
           <MenuItem>Settings</MenuItem>
@@ -68,6 +68,37 @@ export const MenuNestedExample = () => {
           <MenuItem disabled>Zoom In</MenuItem>
           <MenuItem>Zoom Out</MenuItem>
           <PreferencesSubMenu />
+        </MenuList>
+      </MenuPopover>
+    </Menu>
+  );
+};
+
+export const ControlledRadioItems = () => {
+  const [checkedValues, setCheckedValues] = React.useState<Record<string, string[]>>({
+    font: ['segoe'],
+  });
+
+  const onChange: MenuProps['onCheckedValueChange'] = (ev, { name, checkedItems }) => {
+    setCheckedValues({ [name]: checkedItems });
+  };
+
+  return (
+    <Menu>
+      <MenuTrigger>
+        <Button>Toggle menu</Button>
+      </MenuTrigger>
+      <MenuPopover>
+        <MenuList checkedValues={checkedValues} onCheckedValueChange={onChange}>
+          <MenuItemRadio name="font" value="segoe">
+            Segoe
+          </MenuItemRadio>
+          <MenuItemRadio name="font" value="calibri">
+            Calibri
+          </MenuItemRadio>
+          <MenuItemRadio name="font" value="arial">
+            Arial
+          </MenuItemRadio>
         </MenuList>
       </MenuPopover>
     </Menu>
