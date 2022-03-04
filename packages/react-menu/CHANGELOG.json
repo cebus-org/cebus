@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-menu",
   "entries": [
     {
+      "date": "Fri, 04 Mar 2022 02:43:18 GMT",
+      "tag": "@pongo-ui/react-menu_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-menu",
+            "commit": "4853781c0e12f189859b4537244d50cd160b5066",
+            "comment": "Introducing MenuItemRadio component."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 03 Mar 2022 22:21:26 GMT",
       "tag": "@pongo-ui/react-menu_v0.0.1",
       "version": "0.0.1",
