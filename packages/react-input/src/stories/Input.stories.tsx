@@ -1,16 +1,17 @@
 import * as React from 'react';
-import { Input } from '../index';
+import { Input, InputWrapper } from '../index';
+import { Button } from '@pongo-ui/react-button';
 import { makeStyles, shorthands } from '@griffel/react';
 import { tokens } from '@pongo-ui/react-theme';
 
 const useStyles = makeStyles({
   root: {
-    display: 'inline-flex',
+    display: 'flex',
     flexDirection: 'column',
     ...shorthands.gap('10px'),
   },
   row: {
-    display: 'inline-flex',
+    display: 'flex',
     flexDirection: 'row',
     ...shorthands.gap('10px'),
   },
@@ -27,9 +28,73 @@ export const BasicInputExample = () => {
 
   return (
     <div className={styles.root}>
-      <Input defaultValue="hello" contentBefore={<FilterIcon />} />
-      <Input defaultValue="hello" appearance="filled" />
-      <Input defaultValue="hello" appearance="standard" />
+      <Input
+        defaultValue="hello"
+        contentBefore={
+          <Button>
+            <FilterIcon />
+          </Button>
+        }
+      />
+      <div className={styles.row}>
+        <InputWrapper contentBefore={<FilterIcon />}>
+          <input
+            name="text"
+            placeholder="Enter text"
+            style={{
+              background: 'none',
+              border: 'none',
+              padding: '0px 10px',
+              width: '100%',
+              height: '100%',
+              outlineStyle: 'none',
+            }}
+          />
+        </InputWrapper>
+        <Button>Test</Button>
+      </div>
+
+      <InputWrapper appearance="filled">
+        <input
+          name="text"
+          placeholder="Enter text"
+          style={{
+            background: 'none',
+            border: 'none',
+            padding: '0px 10px',
+            width: '100%',
+            height: '100%',
+            outlineStyle: 'none',
+          }}
+        />
+      </InputWrapper>
+
+      <InputWrapper appearance="standard">
+        <input
+          name="text"
+          placeholder="Enter text"
+          style={{
+            background: 'none',
+            border: 'none',
+            padding: '0px 10px',
+            width: '100%',
+            height: '100%',
+            outlineStyle: 'none',
+          }}
+        />
+      </InputWrapper>
+    </div>
+  );
+};
+
+export const InputTypeExample = () => {
+  const styles = useStyles();
+
+  return (
+    <div className={styles.root}>
+      <Input type="number" />
+      <Input type="time" />
+      <Input type="month" />
     </div>
   );
 };
@@ -39,7 +104,7 @@ export const InputDisabledExample = () => {
 
   return (
     <div className={styles.root}>
-      <Input defaultValue="hello" contentBefore={<FilterIcon />} disabled />
+      <Input defaultValue="hello" disabled />
       <Input defaultValue="hello" appearance="filled" disabled />
       <Input defaultValue="hello" appearance="standard" disabled />
     </div>
