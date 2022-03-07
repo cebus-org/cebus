@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-divider",
   "entries": [
     {
+      "date": "Mon, 07 Mar 2022 00:47:05 GMT",
+      "tag": "@pongo-ui/react-divider_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "none": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-divider",
+            "commit": "3789b6c55ea6977b4414219aa8518f9302ed6e16",
+            "comment": "Fixing a typo."
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 04 Mar 2022 22:21:59 GMT",
       "tag": "@pongo-ui/react-divider_v0.0.1",
       "version": "0.0.1",
