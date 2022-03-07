@@ -1,11 +1,7 @@
 import * as React from 'react';
-import { Input, InputWrapper } from '../index';
-import { Button } from '@pongo-ui/react-button';
+import { Input } from '../index';
 import { makeStyles, shorthands } from '@griffel/react';
-import { tokens } from '@pongo-ui/react-theme';
-
-import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem, MenuItemRadio } from '@pongo-ui/react-menu';
-
+import type { InputProps } from '../index';
 const useStyles = makeStyles({
   root: {
     display: 'flex',
@@ -30,95 +26,59 @@ export const BasicInputExample = () => {
 
   return (
     <div className={styles.root}>
-      <Input
-        appearance="standard"
-        className="test"
-        placeholder="test"
-        contentBefore={<FilterIcon />}
-        contentAfter={<FilterIcon />}
-        danger
-      />
+      <Input placeholder="Enter your name" appearance="outline" />
+      <Input placeholder="Enter your name" appearance="standard" />
+      <Input placeholder="Enter your name" appearance="filled" />
+    </div>
+  );
+};
+
+export const ControlledInputExample = () => {
+  const [value, setValue] = React.useState('hello');
+  const styles = useStyles();
+
+  const onChange: InputProps['onChange'] = (ev, data) => {
+    setValue(data.value);
+  };
+
+  return (
+    <div className={styles.root}>
+      <Input value={value} onChange={onChange} />
+    </div>
+  );
+};
+
+export const InputContentExample = () => {
+  const styles = useStyles();
+
+  return (
+    <div className={styles.root}>
+      <Input placeholder="Enter your name" appearance="outline" contentAfter={<FilterIcon />} />
+      <Input placeholder="Enter your name" appearance="outline" contentBefore={<FilterIcon />} />
+    </div>
+  );
+};
+
+export const InputDangerExample = () => {
+  const styles = useStyles();
+
+  return (
+    <div className={styles.root}>
       <div className={styles.row}>
-        <Input placeholder="hello" danger size="large" />
-        <Menu>
-          <MenuTrigger>
-            <InputWrapper contentBefore={<FilterIcon />} danger>
-              <input
-                name="text"
-                placeholder="Enter text"
-                style={{
-                  background: 'none',
-                  border: 'none',
-                  padding: '0px 10px',
-                  width: '100%',
-                  height: '100%',
-                  outlineStyle: 'none',
-                }}
-              />
-            </InputWrapper>
-          </MenuTrigger>
-          <MenuPopover>
-            <MenuList>
-              <MenuItemRadio name="font" value="segoe">
-                Segoe
-              </MenuItemRadio>
-              <MenuItemRadio name="font" value="calibri">
-                Calibri
-              </MenuItemRadio>
-              <MenuItemRadio name="font" value="arial">
-                Arial
-              </MenuItemRadio>
-            </MenuList>
-          </MenuPopover>
-        </Menu>
-
-        <Button size="large">Test</Button>
+        <Input placeholder="Enter your name" appearance="outline" danger />
+        <Input placeholder="Enter your name" appearance="outline" danger disabled />
+        <Input placeholder="Enter your name" appearance="outline" danger disabled contentBefore={<FilterIcon />} />
       </div>
-
-      <InputWrapper appearance="filled">
-        <input
-          name="text"
-          placeholder="Enter text"
-          style={{
-            background: 'none',
-            border: 'none',
-            padding: '0px 10px',
-            width: '100%',
-            height: '100%',
-            outlineStyle: 'none',
-          }}
-        />
-      </InputWrapper>
-
-      <InputWrapper appearance="filled" danger>
-        <input
-          name="text"
-          placeholder="Enter text"
-          style={{
-            background: 'none',
-            border: 'none',
-            padding: '0px 10px',
-            width: '100%',
-            height: '100%',
-            outlineStyle: 'none',
-          }}
-        />
-      </InputWrapper>
-
-      <InputWrapper appearance="standard">
-        <input
-          name="text"
-          placeholder="Enter text"
-          style={{
-            background: 'none',
-            border: 'none',
-            padding: '0px 10px',
-            width: '100%',
-            height: '100%',
-            outlineStyle: 'none',
-          }}
-        />
-      </InputWrapper>
+      <div className={styles.row}>
+        <Input placeholder="Enter your name" appearance="standard" danger />
+        <Input placeholder="Enter your name" appearance="standard" danger disabled />
+        <Input placeholder="Enter your name" appearance="standard" danger disabled contentBefore={<FilterIcon />} />
+      </div>
+      <div className={styles.row}>
+        <Input placeholder="Enter your name" appearance="filled" danger />
+        <Input placeholder="Enter your name" appearance="filled" danger disabled />
+        <Input placeholder="Enter your name" appearance="filled" danger disabled contentBefore={<FilterIcon />} />
+      </div>
     </div>
   );
 };
@@ -131,6 +91,7 @@ export const InputTypeExample = () => {
       <Input type="number" />
       <Input type="time" />
       <Input type="month" />
+      <Input type="password" />
     </div>
   );
 };

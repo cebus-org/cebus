@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { getNativeElementProps, resolveShorthand } from '@fluentui/react-utilities';
-import { useInputWrapperState } from './useInputWrapperState';
 import type { InputWrapperProps, InputWrapperState } from './InputWrapper.types';
 
 export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLElement>): InputWrapperState => {
@@ -23,8 +22,6 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
     contentAfter: resolveShorthand(props.contentAfter),
     contentBefore: resolveShorthand(props.contentBefore),
   };
-
-  useInputWrapperState(state);
 
   return state;
 };

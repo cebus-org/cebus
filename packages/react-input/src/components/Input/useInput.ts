@@ -5,7 +5,17 @@ import type { InputProps, InputState } from './Input.types';
 import { InputWrapper } from '../InputWrapper';
 
 export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): InputState => {
-  const { appearance = 'outline', contentBefore, contentAfter, size = 'medium', disabled, danger } = props;
+  const {
+    value,
+    defaultValue,
+    onChange,
+    appearance = 'outline',
+    contentBefore,
+    contentAfter,
+    size = 'medium',
+    disabled,
+    danger,
+  } = props;
 
   const nativeProps = getPartitionedNativeProps({
     props,
@@ -14,6 +24,9 @@ export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): I
   });
 
   const state: InputState = {
+    value,
+    defaultValue,
+    onChange,
     size,
     appearance,
     disabled,
