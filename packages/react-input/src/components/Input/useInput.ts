@@ -15,6 +15,7 @@ export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): I
     size = 'medium',
     disabled,
     danger,
+    helperText,
   } = props;
 
   const nativeProps = getPartitionedNativeProps({
@@ -33,6 +34,7 @@ export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): I
     danger,
     contentBefore,
     contentAfter,
+    helperText,
     components: {
       root: InputWrapper,
       input: 'input',

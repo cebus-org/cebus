@@ -149,6 +149,17 @@ export const useRootStyles = makeStyles({
   ),
 });
 
+const useHelperTextStyles = makeStyles({
+  helperText: {
+    position: 'relative',
+    ...shorthands.padding('5px', '10px'),
+    ...shorthands.margin('0px'),
+    fontFamily: tokens.baseFont,
+    fontSize: tokens.fontSize200,
+    textAlign: 'left',
+  },
+});
+
 const useContentStyles = makeStyles({
   base: {
     boxSizing: 'border-box',
@@ -187,8 +198,9 @@ const useContentStyles = makeStyles({
 export const useInputWrapperStyles = (state: InputWrapperState) => {
   const rootStyles = useRootStyles();
   const contentStyles = useContentStyles();
+  const helperTextStyles = useHelperTextStyles();
 
-  state.root.className = mergeClasses(
+  state.border.className = mergeClasses(
     rootStyles.root,
     rootStyles[state.size!],
     rootStyles[state.appearance!],
@@ -197,8 +209,18 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     !state.disabled && (state.danger ? rootStyles.dangerFocus : rootStyles.defaultFocus),
     state.disabled && state.danger && rootStyles.disabledDanger,
-    state.root.className,
+    state.border.className,
   );
+
+  if (state.helperText) {
+    state.helperText.className = mergeClasses(
+      helperTextStyles.helperText,
+      state.disabled ? contentStyles.disabled : contentStyles.enabled,
+      state.danger && contentStyles.danger,
+      state.disabled && state.danger && contentStyles.disabledDanger,
+      state.helperText.className,
+    );
+  }
 
   const contentClasses = [
     contentStyles.base,

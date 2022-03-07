@@ -26,7 +26,7 @@ export const BasicInputExample = () => {
 
   return (
     <div className={styles.root}>
-      <Input placeholder="Enter your name" appearance="outline" />
+      <Input placeholder="Enter your name" appearance="outline" helperText="This is a test" danger />
       <Input placeholder="Enter your name" appearance="standard" />
       <Input placeholder="Enter your name" appearance="filled" />
     </div>
@@ -78,6 +78,30 @@ export const InputDangerExample = () => {
         <Input placeholder="Enter your name" appearance="filled" danger />
         <Input placeholder="Enter your name" appearance="filled" danger disabled />
         <Input placeholder="Enter your name" appearance="filled" danger disabled contentBefore={<FilterIcon />} />
+      </div>
+    </div>
+  );
+};
+
+export const InputSizeExample = () => {
+  const styles = useStyles();
+
+  return (
+    <div className={styles.root}>
+      <div className={styles.row}>
+        <Input size="small" placeholder="Enter your name" appearance="outline" helperText="Enter your full name" />
+        <Input size="small" placeholder="Enter your name" appearance="standard" helperText="Enter your full name" />
+        <Input size="small" placeholder="Enter your name" appearance="filled" helperText="Enter your full name" />
+      </div>
+      <div className={styles.row}>
+        <Input size="medium" placeholder="Enter your name" appearance="outline" helperText="Enter your full name" />
+        <Input size="medium" placeholder="Enter your name" appearance="standard" helperText="Enter your full name" />
+        <Input size="medium" placeholder="Enter your name" appearance="filled" helperText="Enter your full name" />
+      </div>
+      <div className={styles.row}>
+        <Input size="large" placeholder="Enter your name" appearance="outline" helperText="Enter your full name" />
+        <Input size="large" placeholder="Enter your name" appearance="standard" helperText="Enter your full name" />
+        <Input size="large" placeholder="Enter your name" appearance="filled" helperText="Enter your full name" />
       </div>
     </div>
   );

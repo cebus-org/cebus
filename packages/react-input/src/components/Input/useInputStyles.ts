@@ -19,6 +19,18 @@ export const useInputElementStyles = makeStyles({
     },
   },
 
+  small: {
+    fontSize: tokens.fontSize200,
+  },
+
+  medium: {
+    fontSize: tokens.fontSize300,
+  },
+
+  large: {
+    fontSize: tokens.fontSize400,
+  },
+
   danger: {
     color: tokens.textColor,
     '::placeholder': {
@@ -48,7 +60,7 @@ export const useInputElementStyles = makeStyles({
     cursor: 'not-allowed',
     color: tokens.dangerDisabled,
     '::placeholder': {
-      color: tokens.inheritDisabled,
+      color: tokens.dangerDisabled,
       opacity: 1,
     },
   },
@@ -62,6 +74,7 @@ export const useInputStyles = (state: InputState) => {
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     !state.disabled && state.danger && rootStyles.danger,
     state.disabled && state.danger && rootStyles.dangerDisabled,
+    rootStyles[state.size!],
     state.input.className,
   );
 

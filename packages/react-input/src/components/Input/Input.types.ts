@@ -65,6 +65,11 @@ type InputCommons = {
    * The content to render after the input element.
    */
   contentAfter?: string | number | JSX.Element;
+
+  /**
+   * The helper text to render below the Input.
+   */
+  helperText?: string;
 };
 
 export type InputProps = Omit<

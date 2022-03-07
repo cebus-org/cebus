@@ -7,9 +7,12 @@ export const renderInputWrapper = (state: InputWrapperState) => {
 
   return (
     <slots.root {...slotProps.root}>
-      {slots.contentBefore && <slots.contentBefore {...slotProps.contentBefore} />}
-      {state.root.children}
-      {slots.contentAfter && <slots.contentAfter {...slotProps.contentAfter} />}
+      <slots.border {...slotProps.border}>
+        {slots.contentBefore && <slots.contentBefore {...slotProps.contentBefore} />}
+        {state.root.children}
+        {slots.contentAfter && <slots.contentAfter {...slotProps.contentAfter} />}
+      </slots.border>
+      {slots.helperText && <slots.helperText {...slotProps.helperText} />}
     </slots.root>
   );
 };

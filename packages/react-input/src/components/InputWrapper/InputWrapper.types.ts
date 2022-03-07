@@ -2,9 +2,14 @@ import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utili
 
 export type InputWrapperSlots = {
   /**
-   * The root of the Input.
+   * The root of the InputWrapper.
    */
   root: Slot<'span'>;
+
+  /**
+   * The border around the inner Input element.
+   */
+  border: NonNullable<Slot<'span'>>;
 
   /**
    * The inner nearest content to render within the Input.
@@ -15,6 +20,11 @@ export type InputWrapperSlots = {
    * The inner furthest content to render within the Input.
    */
   contentAfter?: Slot<'span'>;
+
+  /**
+   * The helper text slot rendered below the Input.
+   */
+  helperText?: Slot<'p'>;
 };
 
 export type InputWrapperCommons = {
@@ -45,8 +55,13 @@ export type InputWrapperCommons = {
    * @defaultValue medium
    */
   size?: 'small' | 'medium' | 'large';
+
+  /**
+   * The ID used for the helperText element.
+   */
+  helperTextId?: string;
 };
 
-export type InputWrapperProps = ComponentProps<InputWrapperSlots> & InputWrapperCommons;
+export type InputWrapperProps = ComponentProps<Partial<InputWrapperSlots>> & InputWrapperCommons;
 
 export type InputWrapperState = ComponentState<InputWrapperSlots> & InputWrapperCommons;
