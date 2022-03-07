@@ -8,6 +8,7 @@ const testedComponentPackages = [
   'react-menu',
   'react-divider',
   'react-avatar',
+  'react-input',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(

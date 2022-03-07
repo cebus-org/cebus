@@ -1,5 +1,6 @@
 import type { ComponentState, ComponentProps } from '@fluentui/react-utilities';
 import type { DividerSlots as FluentDividerSlots } from '@fluentui/react-divider';
+
 type DividerCommons = {
   /**
    * The color of the Divider.

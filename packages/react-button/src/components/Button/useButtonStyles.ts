@@ -127,7 +127,7 @@ export const useAppearanceStyles = makeStyles({
    */
   outline: {
     backgroundColor: tokens.canvasColor,
-    ...shorthands.border('2px', 'solid', `var(${backgroundCSSVariable})`),
+    ...shorthands.border('1px', 'solid', `var(${backgroundCSSVariable})`),
     color: `var(${backgroundCSSVariable})`,
   },
 

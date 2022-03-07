@@ -40,6 +40,10 @@
     "@pongo-ui/react-avatar": {
       "root": "packages/react-avatar",
       "projectType": "library"
+    },
+    "@pongo-ui/react-input": {
+      "root": "packages/react-input",
+      "projectType": "library"
     }
   }
 }
