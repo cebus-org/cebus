@@ -3,7 +3,7 @@ import { useControllableState, useEventCallback } from '@fluentui/react-utilitie
 import type { InputState } from './Input.types';
 
 export const useInputState = (state: InputState) => {
-  const { defaultValue, value, type, disabled, placeholder, required, error, onChange } = state;
+  const { appearance, defaultValue, value, size, danger, contentBefore, contentAfter, disabled, onChange } = state;
 
   const [currentValue, setCurrentValue] = useControllableState({
     defaultState: defaultValue,
@@ -20,14 +20,17 @@ export const useInputState = (state: InputState) => {
     setCurrentValue(newValue);
   });
 
-  // Input Props
-  if (state.input) {
-    state.input.value = currentValue;
-    state.input.onChange = onInputChange;
-    state.input.type = type;
-    state.input.disabled = disabled;
-    state.input.placeholder = placeholder;
-  }
+  // Root Border Wrapper Props
+  state.root.appearance = appearance;
+  state.root.danger = danger;
+  state.root.disabled = disabled;
+  state.root.size = size;
+  state.root.contentBefore = contentBefore;
+  state.root.contentAfter = contentAfter;
+
+  // Input Element props
+  state.input.value = currentValue;
+  state.input.onChange = onInputChange;
 
   return state;
 };

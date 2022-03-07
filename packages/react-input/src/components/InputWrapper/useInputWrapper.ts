@@ -4,13 +4,13 @@ import { useInputWrapperState } from './useInputWrapperState';
 import type { InputWrapperProps, InputWrapperState } from './InputWrapper.types';
 
 export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLElement>): InputWrapperState => {
-  const { disabled, size = 'medium', appearance = 'outline' } = props;
+  const { disabled, size = 'medium', appearance = 'outline', danger } = props;
 
   const state: InputWrapperState = {
     size,
     appearance,
     disabled,
-
+    danger,
     components: {
       root: 'span',
       contentBefore: 'span',

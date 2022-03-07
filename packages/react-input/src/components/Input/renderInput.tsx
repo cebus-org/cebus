@@ -7,9 +7,7 @@ export const renderInput = (state: InputState) => {
 
   return (
     <slots.root {...slotProps.root}>
-      {slots.contentBefore && <slots.contentBefore {...slotProps.contentBefore} />}
       <slots.input {...slotProps.input} />
-      {slots.contentAfter && <slots.contentAfter {...slotProps.contentAfter} />}
     </slots.root>
   );
 };

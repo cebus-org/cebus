@@ -1,37 +1,41 @@
 import * as React from 'react';
-import { getNativeElementProps, resolveShorthand } from '@fluentui/react-utilities';
+import { getPartitionedNativeProps, resolveShorthand } from '@fluentui/react-utilities';
 import { useInputState } from './useInputState';
 import type { InputProps, InputState } from './Input.types';
+import { InputWrapper } from '../InputWrapper';
 
-export const useInput = (props: InputProps, ref: React.Ref<HTMLElement>): InputState => {
-  const { defaultValue, placeholder, disabled, type, value, size = 'medium', appearance = 'outline' } = props;
+export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): InputState => {
+  const { appearance = 'outline', contentBefore, contentAfter, size = 'medium', disabled, danger } = props;
+
+  const nativeProps = getPartitionedNativeProps({
+    props,
+    primarySlotTagName: 'input',
+    excludedPropNames: ['size', 'onChange', 'value', 'defaultValue'],
+  });
 
   const state: InputState = {
-    defaultValue,
-    value,
     size,
     appearance,
     disabled,
-    placeholder,
-    type,
+    danger,
+    contentBefore,
+    contentAfter,
     components: {
-      root: 'span',
+      root: InputWrapper,
       input: 'input',
-      contentBefore: 'span',
-      contentAfter: 'span',
     },
-    root: getNativeElementProps('div', {
-      ref,
-      ...props,
+    root: resolveShorthand(props.root, {
+      required: true,
+      defaultProps: nativeProps.root,
     }),
     input: resolveShorthand(props.input, {
       required: true,
       defaultProps: {
         type: 'text',
+        ref,
+        ...nativeProps.primary,
       },
     }),
-    contentAfter: resolveShorthand(props.contentAfter),
-    contentBefore: resolveShorthand(props.contentBefore),
   };
 
   useInputState(state);

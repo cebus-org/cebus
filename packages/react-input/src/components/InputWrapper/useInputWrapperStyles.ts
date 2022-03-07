@@ -1,6 +1,6 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
-import type { InputState } from './InputWrapper.types';
+import type { InputWrapperState } from './InputWrapper.types';
 import { tokens } from '@pongo-ui/react-theme';
 
 export const inputHeight = `--pongoai-input-height`;
@@ -20,32 +20,88 @@ export const useRootStyles = makeStyles({
 
   // Appearance
   outline: {
-    ...shorthands.border('2px', 'solid', tokens.inherit),
-    ...shorthands.borderRadius(tokens.rounded),
+    ':before': {
+      content: '""',
+      position: 'absolute',
+      top: '0px',
+      right: '0px',
+      bottom: '0px',
+      left: '0px',
+      userSelect: 'none',
+      pointerEvents: 'none',
+      ...shorthands.border('1px', 'solid', tokens.inherit),
+      ...shorthands.borderRadius(tokens.rounded),
+    },
   },
 
   standard: {
-    ...shorthands.borderBottom('2px', 'solid', tokens.inherit),
+    ':before': {
+      content: '""',
+      position: 'absolute',
+      top: '0px',
+      right: '0px',
+      bottom: '0px',
+      left: '0px',
+      userSelect: 'none',
+      pointerEvents: 'none',
+      ...shorthands.borderBottom('1px', 'solid', tokens.textColor),
+    },
   },
 
   filled: {
     backgroundColor: tokens.inheritForegroundPressed,
     ...shorthands.borderRadius(tokens.rounded, tokens.rounded, tokens.square, tokens.square),
-    ...shorthands.borderBottom('2px', 'solid', tokens.inherit),
+
+    ':before': {
+      content: '""',
+      position: 'absolute',
+      top: '0px',
+      right: '0px',
+      bottom: '0px',
+      left: '0px',
+      userSelect: 'none',
+      pointerEvents: 'none',
+      ...shorthands.borderBottom('1px', 'solid', tokens.inherit),
+    },
+  },
+
+  defaultFocus: {
+    ':focus-within': {
+      ':before': {
+        ...shorthands.borderColor(tokens.brand),
+        ...shorthands.borderWidth('2px'),
+      },
+    },
+  },
+
+  dangerFocus: {
+    ':focus-within': {
+      ':before': {
+        ...shorthands.borderColor(tokens.danger),
+        ...shorthands.borderWidth('2px'),
+      },
+    },
   },
 
   enabled: {
-    transitionProperty: 'border-width',
-    transitionDuration: '.1s',
-    transitionDelay: 'cubic-bezier(0.33, 0.0, 0.67, 1)',
-
-    ':focus-within': {
-      ...shorthands.borderColor(tokens.brand),
+    ':before': {
+      transitionProperty: 'border-width',
+      transitionDuration: '.1s',
+      transitionDelay: 'cubic-bezier(0.33, 0.0, 0.67, 1)',
+      boxSizing: 'border-box',
     },
   },
 
   disabled: {
-    ...shorthands.borderColor(tokens.inheritDisabled),
+    ':before': {
+      ...shorthands.borderColor(tokens.inheritDisabled),
+    },
+  },
+
+  disabledDanger: {
+    ':before': {
+      ...shorthands.borderColor(tokens.dangerDisabled),
+    },
   },
 
   // Size
@@ -65,6 +121,13 @@ export const useRootStyles = makeStyles({
     height: '50px',
     width: '300px',
     fontSize: tokens.fontSize400,
+  },
+
+  // Danger
+  danger: {
+    ':before': {
+      ...shorthands.borderColor(tokens.danger),
+    },
   },
 
   // Focus
@@ -105,13 +168,23 @@ const useContentStyles = makeStyles({
     fill: tokens.inherit,
   },
 
+  danger: {
+    color: tokens.danger,
+    fill: tokens.danger,
+  },
+
   disabled: {
     color: tokens.inheritDisabled,
     fill: tokens.inheritDisabled,
   },
+
+  disabledDanger: {
+    color: tokens.dangerDisabled,
+    fill: tokens.dangerDisabled,
+  },
 });
 
-export const useInputWrapperStyles = (state: InputState) => {
+export const useInputWrapperStyles = (state: InputWrapperState) => {
   const rootStyles = useRootStyles();
   const contentStyles = useContentStyles();
 
@@ -120,11 +193,19 @@ export const useInputWrapperStyles = (state: InputState) => {
     rootStyles[state.size!],
     rootStyles[state.appearance!],
     rootStyles.focusIndicator,
+    state.danger && rootStyles.danger,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
+    !state.disabled && (state.danger ? rootStyles.dangerFocus : rootStyles.defaultFocus),
+    state.disabled && state.danger && rootStyles.disabledDanger,
     state.root.className,
   );
 
-  const contentClasses = [contentStyles.base, state.disabled ? contentStyles.disabled : contentStyles.enabled];
+  const contentClasses = [
+    contentStyles.base,
+    state.disabled ? contentStyles.disabled : contentStyles.enabled,
+    state.danger && contentStyles.danger,
+    state.disabled && state.danger && contentStyles.disabledDanger,
+  ];
 
   if (state.contentBefore) {
     state.contentBefore.className = mergeClasses(

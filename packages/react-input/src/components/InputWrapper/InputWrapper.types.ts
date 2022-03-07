@@ -17,7 +17,7 @@ export type InputWrapperSlots = {
   contentAfter?: Slot<'span'>;
 };
 
-type InputWrapperCommons = {
+export type InputWrapperCommons = {
   /**
    * Whether the Input should be disabled.
    *
@@ -26,18 +26,11 @@ type InputWrapperCommons = {
   disabled?: boolean;
 
   /**
-   * Whether the Input should be in an error state.
+   * Whether the Input should be in a danger state.
    *
    * @defaultValue false
    */
-  error?: boolean;
-
-  /**
-   * Whether the Input should be required.
-   *
-   * @defaultValue false
-   */
-  required?: boolean;
+  danger?: boolean;
 
   /**
    * The appearance variant to use for the Input.
@@ -49,7 +42,7 @@ type InputWrapperCommons = {
   /**
    * The size of the Input control.
    *
-   * @default medium
+   * @defaultValue medium
    */
   size?: 'small' | 'medium' | 'large';
 };

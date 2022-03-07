@@ -4,6 +4,8 @@ import { Button } from '@pongo-ui/react-button';
 import { makeStyles, shorthands } from '@griffel/react';
 import { tokens } from '@pongo-ui/react-theme';
 
+import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem, MenuItemRadio } from '@pongo-ui/react-menu';
+
 const useStyles = makeStyles({
   root: {
     display: 'flex',
@@ -29,32 +31,66 @@ export const BasicInputExample = () => {
   return (
     <div className={styles.root}>
       <Input
-        defaultValue="hello"
-        contentBefore={
-          <Button>
-            <FilterIcon />
-          </Button>
-        }
+        appearance="standard"
+        className="test"
+        placeholder="test"
+        contentBefore={<FilterIcon />}
+        contentAfter={<FilterIcon />}
+        danger
       />
       <div className={styles.row}>
-        <InputWrapper contentBefore={<FilterIcon />}>
-          <input
-            name="text"
-            placeholder="Enter text"
-            style={{
-              background: 'none',
-              border: 'none',
-              padding: '0px 10px',
-              width: '100%',
-              height: '100%',
-              outlineStyle: 'none',
-            }}
-          />
-        </InputWrapper>
-        <Button>Test</Button>
+        <Input placeholder="hello" danger size="large" />
+        <Menu>
+          <MenuTrigger>
+            <InputWrapper contentBefore={<FilterIcon />} danger>
+              <input
+                name="text"
+                placeholder="Enter text"
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  padding: '0px 10px',
+                  width: '100%',
+                  height: '100%',
+                  outlineStyle: 'none',
+                }}
+              />
+            </InputWrapper>
+          </MenuTrigger>
+          <MenuPopover>
+            <MenuList>
+              <MenuItemRadio name="font" value="segoe">
+                Segoe
+              </MenuItemRadio>
+              <MenuItemRadio name="font" value="calibri">
+                Calibri
+              </MenuItemRadio>
+              <MenuItemRadio name="font" value="arial">
+                Arial
+              </MenuItemRadio>
+            </MenuList>
+          </MenuPopover>
+        </Menu>
+
+        <Button size="large">Test</Button>
       </div>
 
       <InputWrapper appearance="filled">
+        <input
+          name="text"
+          placeholder="Enter text"
+          style={{
+            background: 'none',
+            border: 'none',
+            padding: '0px 10px',
+            width: '100%',
+            height: '100%',
+            outlineStyle: 'none',
+          }}
+        />
+      </InputWrapper>
+
+      <InputWrapper appearance="filled" danger>
         <input
           name="text"
           placeholder="Enter text"
