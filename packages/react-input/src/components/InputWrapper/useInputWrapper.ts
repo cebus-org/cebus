@@ -13,6 +13,9 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
     appearance = 'outline',
     danger,
     helperTextId,
+    labelId,
+    label,
+    value,
   } = props;
 
   const state: InputWrapperState = {
@@ -20,6 +23,8 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
     appearance,
     disabled,
     danger,
+    labelId,
+    value,
     helperTextId,
     components: {
       root: 'span',
@@ -27,6 +32,7 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
       contentAfter: 'span',
       border: 'span',
       helperText: 'p',
+      label: 'label',
     },
     root: getNativeElementProps('div', {
       ref,
@@ -36,11 +42,18 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
     helperText: resolveShorthand(helperText),
     contentAfter: resolveShorthand(contentAfter),
     contentBefore: resolveShorthand(contentBefore),
+    label: resolveShorthand(label),
   };
 
   if (state.helperText) {
     state.helperText.id = helperTextId;
   }
+
+  if (state.label) {
+    state.label.htmlFor = labelId;
+  }
+
+  console.log(state.value);
 
   return state;
 };

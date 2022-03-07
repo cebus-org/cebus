@@ -64,6 +64,22 @@ export const useInputElementStyles = makeStyles({
       opacity: 1,
     },
   },
+
+  labelLowerText: {
+    paddingTop: '10px',
+  },
+
+  labelPlaceholderFocus: {
+    '::placeholder': {
+      opacity: '0',
+    },
+    ':focus': {
+      '::placeholder': {
+        opacity: '1',
+        color: tokens.inherit,
+      },
+    },
+  },
 });
 
 export const useInputStyles = (state: InputState) => {
@@ -74,6 +90,8 @@ export const useInputStyles = (state: InputState) => {
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     !state.disabled && state.danger && rootStyles.danger,
     state.disabled && state.danger && rootStyles.dangerDisabled,
+    state.label && state.placeholder && !state.root.contentBefore && rootStyles.labelPlaceholderFocus,
+    (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,
     rootStyles[state.size!],
     state.input.className,
   );

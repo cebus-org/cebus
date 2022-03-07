@@ -26,9 +26,9 @@ export const BasicInputExample = () => {
 
   return (
     <div className={styles.root}>
-      <Input placeholder="Enter your name" appearance="outline" helperText="This is a test" danger />
-      <Input placeholder="Enter your name" appearance="standard" />
-      <Input placeholder="Enter your name" appearance="filled" />
+      <Input size="large" label="Name" placeholder="Enter your name" appearance="outline" />
+      <Input size="large" label="Name" placeholder="Enter your name" appearance="standard" />
+      <Input size="large" label="Name" placeholder="Enter your name" appearance="filled" />
     </div>
   );
 };
@@ -65,12 +65,19 @@ export const InputDangerExample = () => {
   return (
     <div className={styles.root}>
       <div className={styles.row}>
-        <Input placeholder="Enter your name" appearance="outline" danger />
-        <Input placeholder="Enter your name" appearance="outline" danger disabled />
-        <Input placeholder="Enter your name" appearance="outline" danger disabled contentBefore={<FilterIcon />} />
+        <Input label="Name" placeholder="Enter your name" appearance="outline" danger />
+        <Input label="Name" placeholder="Enter your name" appearance="outline" danger disabled />
+        <Input
+          label="Name"
+          placeholder="Enter your name"
+          appearance="outline"
+          danger
+          disabled
+          contentBefore={<FilterIcon />}
+        />
       </div>
       <div className={styles.row}>
-        <Input placeholder="Enter your name" appearance="standard" danger />
+        <Input label="Name" placeholder="Enter your name" appearance="standard" danger />
         <Input placeholder="Enter your name" appearance="standard" danger disabled />
         <Input placeholder="Enter your name" appearance="standard" danger disabled contentBefore={<FilterIcon />} />
       </div>

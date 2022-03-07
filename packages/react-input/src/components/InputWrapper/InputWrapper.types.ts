@@ -25,6 +25,11 @@ export type InputWrapperSlots = {
    * The helper text slot rendered below the Input.
    */
   helperText?: Slot<'p'>;
+
+  /**
+   * The visible label text for the TextField component.
+   */
+  label?: Slot<'label'>;
 };
 
 export type InputWrapperCommons = {
@@ -60,6 +65,16 @@ export type InputWrapperCommons = {
    * The ID used for the helperText element.
    */
   helperTextId?: string;
+
+  /**
+   * The ID used for the label element.
+   */
+  labelId?: string;
+
+  /**
+   * The value of the input element. This is used to ensure that the Label transition are correct.
+   */
+  value?: string;
 };
 
 export type InputWrapperProps = ComponentProps<Partial<InputWrapperSlots>> & InputWrapperCommons;

@@ -15,6 +15,8 @@ export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): I
     size = 'medium',
     disabled,
     danger,
+    label,
+    placeholder,
     helperText,
   } = props;
 
@@ -35,6 +37,8 @@ export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): I
     contentBefore,
     contentAfter,
     helperText,
+    label,
+    placeholder,
     components: {
       root: InputWrapper,
       input: 'input',

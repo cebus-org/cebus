@@ -70,6 +70,16 @@ type InputCommons = {
    * The helper text to render below the Input.
    */
   helperText?: string;
+
+  /**
+   * The label for the Input.
+   */
+  label?: string;
+
+  /**
+   * The placeholder text for the Input.
+   */
+  placeholder?: string;
 };
 
 export type InputProps = Omit<
