@@ -26,9 +26,9 @@ export const BasicInputExample = () => {
 
   return (
     <div className={styles.root}>
-      <Input placeholder="Enter your name" appearance="outline" />
-      <Input placeholder="Enter your name" appearance="standard" />
-      <Input placeholder="Enter your name" appearance="filled" />
+      <Input label="Name" placeholder="Enter your name" appearance="outline" />
+      <Input label="User Name" placeholder="Enter your user name" appearance="standard" />
+      <Input label="Password" placeholder="Enter your password" appearance="filled" />
     </div>
   );
 };
@@ -65,12 +65,19 @@ export const InputDangerExample = () => {
   return (
     <div className={styles.root}>
       <div className={styles.row}>
-        <Input placeholder="Enter your name" appearance="outline" danger />
-        <Input placeholder="Enter your name" appearance="outline" danger disabled />
-        <Input placeholder="Enter your name" appearance="outline" danger disabled contentBefore={<FilterIcon />} />
+        <Input label="Name" placeholder="Enter your name" appearance="outline" danger />
+        <Input label="Name" placeholder="Enter your name" appearance="outline" danger disabled />
+        <Input
+          label="Name"
+          placeholder="Enter your name"
+          appearance="outline"
+          danger
+          disabled
+          contentBefore={<FilterIcon />}
+        />
       </div>
       <div className={styles.row}>
-        <Input placeholder="Enter your name" appearance="standard" danger />
+        <Input label="Name" placeholder="Enter your name" appearance="standard" danger />
         <Input placeholder="Enter your name" appearance="standard" danger disabled />
         <Input placeholder="Enter your name" appearance="standard" danger disabled contentBefore={<FilterIcon />} />
       </div>
@@ -78,6 +85,30 @@ export const InputDangerExample = () => {
         <Input placeholder="Enter your name" appearance="filled" danger />
         <Input placeholder="Enter your name" appearance="filled" danger disabled />
         <Input placeholder="Enter your name" appearance="filled" danger disabled contentBefore={<FilterIcon />} />
+      </div>
+    </div>
+  );
+};
+
+export const InputSizeExample = () => {
+  const styles = useStyles();
+
+  return (
+    <div className={styles.root}>
+      <div className={styles.row}>
+        <Input size="small" placeholder="Enter your name" appearance="outline" helperText="Enter your full name" />
+        <Input size="small" placeholder="Enter your name" appearance="standard" helperText="Enter your full name" />
+        <Input size="small" placeholder="Enter your name" appearance="filled" helperText="Enter your full name" />
+      </div>
+      <div className={styles.row}>
+        <Input size="medium" placeholder="Enter your name" appearance="outline" helperText="Enter your full name" />
+        <Input size="medium" placeholder="Enter your name" appearance="standard" helperText="Enter your full name" />
+        <Input size="medium" placeholder="Enter your name" appearance="filled" helperText="Enter your full name" />
+      </div>
+      <div className={styles.row}>
+        <Input size="large" placeholder="Enter your name" appearance="outline" helperText="Enter your full name" />
+        <Input size="large" placeholder="Enter your name" appearance="standard" helperText="Enter your full name" />
+        <Input size="large" placeholder="Enter your name" appearance="filled" helperText="Enter your full name" />
       </div>
     </div>
   );
@@ -104,6 +135,19 @@ export const InputDisabledExample = () => {
       <Input defaultValue="hello" disabled />
       <Input defaultValue="hello" appearance="filled" disabled />
       <Input defaultValue="hello" appearance="standard" disabled />
+    </div>
+  );
+};
+
+export const InputHelperTextExample = () => {
+  const styles = useStyles();
+
+  return (
+    <div className={styles.root}>
+      <Input label="Standard" helperText="This is an input with helper text" />
+      <Input label="Disabled" helperText="This is an input with helper text" disabled />
+      <Input label="Danger" helperText="This is an input with helper text" danger />
+      <Input label="Danger Disabled" helperText="This is an input with helper text" danger disabled />
     </div>
   );
 };

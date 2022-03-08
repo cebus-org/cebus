@@ -7,5 +7,6 @@ describe('InputWrapper', () => {
   isConformant({
     Component: InputWrapper as React.FunctionComponent<InputWrapperProps>,
     displayName: 'InputWrapper',
+    disabledTests: ['make-styles-overrides-win'],
   });
 });

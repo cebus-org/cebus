@@ -1,9 +1,25 @@
 import * as React from 'react';
-import { useControllableState, useEventCallback } from '@fluentui/react-utilities';
+import { useControllableState, useEventCallback, useId } from '@fluentui/react-utilities';
 import type { InputState } from './Input.types';
 
 export const useInputState = (state: InputState) => {
-  const { appearance, defaultValue, value, size, danger, contentBefore, contentAfter, disabled, onChange } = state;
+  const {
+    label,
+    appearance,
+    defaultValue,
+    value,
+    size,
+    danger,
+    helperText,
+    contentBefore,
+    contentAfter,
+    disabled,
+    onChange,
+  } = state;
+
+  const { id } = state.input;
+  const labelId = label ? useId('input-label', id) : undefined;
+  const helperTextId = helperText ? useId('input-helper-text-', id) : undefined;
 
   const [currentValue, setCurrentValue] = useControllableState({
     defaultState: defaultValue,
@@ -27,10 +43,24 @@ export const useInputState = (state: InputState) => {
   state.root.size = size;
   state.root.contentBefore = contentBefore;
   state.root.contentAfter = contentAfter;
+  state.root.value = currentValue;
+
+  if (helperText) {
+    state.root.helperText = helperText;
+    state.root.helperTextId = helperTextId;
+    state.input['aria-describedby'] = helperTextId;
+  }
+
+  if (label) {
+    state.root.label = label;
+    state.root.labelId = labelId;
+    state.input.id = labelId;
+  }
 
   // Input Element props
   state.input.value = currentValue;
-  state.input.onChange = onInputChange;
+  state.input.onInput = onInputChange;
+  state.input['aria-invalid'] = danger;
 
   return state;
 };

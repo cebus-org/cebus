@@ -13,9 +13,6 @@ import type { Slot } from '@fluentui/react-utilities';
 // @public
 export const Input: ForwardRefComponent<InputProps>;
 
-// @public (undocumented)
-export const inputHeight = "--pongoai-input-height";
-
 // Warning: (ae-forgotten-export) The symbol "InputCommons" needs to be exported by the entry point index.d.ts
 //
 // @public (undocumented)
@@ -39,20 +36,32 @@ export type InputWrapperCommons = {
     danger?: boolean;
     appearance?: 'outline' | 'standard' | 'filled';
     size?: 'small' | 'medium' | 'large';
+    helperTextId?: string;
+    labelId?: string;
+    value?: string;
 };
 
 // @public (undocumented)
-export type InputWrapperProps = ComponentProps<InputWrapperSlots> & InputWrapperCommons;
+export type InputWrapperProps = ComponentProps<Partial<InputWrapperSlots>> & InputWrapperCommons;
 
 // @public (undocumented)
 export type InputWrapperSlots = {
     root: Slot<'span'>;
+    border: NonNullable<Slot<'span'>>;
     contentBefore?: Slot<'span'>;
     contentAfter?: Slot<'span'>;
+    helperText?: Slot<'p'>;
+    label?: Slot<'label'>;
 };
 
 // @public (undocumented)
 export type InputWrapperState = ComponentState<InputWrapperSlots> & InputWrapperCommons;
+
+// @public (undocumented)
+export const labelClassName = "pongo-input-label";
+
+// @public (undocumented)
+export const legendClassName = "pongo-input-legend";
 
 // @public (undocumented)
 export const renderInput: (state: InputState) => JSX.Element;
@@ -64,7 +73,7 @@ export const renderInputWrapper: (state: InputWrapperState) => JSX.Element;
 export const useInput: (props: InputProps, ref: React_2.Ref<HTMLInputElement>) => InputState;
 
 // @public (undocumented)
-export const useInputElementStyles: () => Record<"input" | "disabled" | "danger" | "dangerDisabled" | "enabled", string>;
+export const useInputElementStyles: () => Record<"input" | "small" | "circle" | "medium" | "large" | "disabled" | "danger" | "dangerDisabled" | "square" | "rounded" | "circular" | "enabled" | "labelLowerText" | "labelPlaceholderFocus", string>;
 
 // @public (undocumented)
 export const useInputStyles: (state: InputState) => InputState;
@@ -76,7 +85,10 @@ export const useInputWrapper: (props: InputWrapperProps, ref: React_2.Ref<HTMLEl
 export const useInputWrapperStyles: (state: InputWrapperState) => InputWrapperState;
 
 // @public (undocumented)
-export const useRootStyles: () => Record<"small" | "outline" | "standard" | "filled" | "medium" | "large" | "root" | "disabled" | "danger" | "defaultFocus" | "dangerFocus" | "enabled" | "disabledDanger" | "focusIndicator", string>;
+export const useLabelStyles: () => Record<"label" | "outline" | "standard" | "filled" | "standardActive" | "outlineActive" | "filledActive" | "outlineBackground", string>;
+
+// @public (undocumented)
+export const useRootStyles: () => Record<"small" | "outline" | "standard" | "filled" | "medium" | "large" | "root" | "disabled" | "danger" | "defaultFocus" | "dangerFocus" | "enabled" | "disabledDanger", string>;
 
 // (No @packageDocumentation comment for this package)
 

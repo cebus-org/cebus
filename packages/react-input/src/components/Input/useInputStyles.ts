@@ -5,18 +5,29 @@ import { tokens } from '@pongo-ui/react-theme';
 export const useInputElementStyles = makeStyles({
   input: {
     ...shorthands.margin('0px'),
-    ...shorthands.padding('0px'),
+    ...shorthands.padding('0px', '10px'),
     ...shorthands.borderStyle('none'),
+    ...shorthands.borderRadius(tokens.rounded),
     boxSizing: 'border-box',
     flexGrow: 1,
     minWidth: 0,
     height: '100%',
-    paddingLeft: '10px',
-    paddingRight: '10px',
     backgroundColor: 'transparent',
     ':focus-visible': {
       outlineStyle: 'none',
     },
+  },
+
+  small: {
+    fontSize: tokens.fontSize200,
+  },
+
+  medium: {
+    fontSize: tokens.fontSize300,
+  },
+
+  large: {
+    fontSize: tokens.fontSize400,
   },
 
   danger: {
@@ -48,9 +59,42 @@ export const useInputElementStyles = makeStyles({
     cursor: 'not-allowed',
     color: tokens.dangerDisabled,
     '::placeholder': {
-      color: tokens.inheritDisabled,
+      color: tokens.dangerDisabled,
       opacity: 1,
     },
+  },
+
+  labelLowerText: {
+    paddingTop: '10px',
+  },
+
+  labelPlaceholderFocus: {
+    '::placeholder': {
+      opacity: '0',
+    },
+    ':focus': {
+      '::placeholder': {
+        opacity: '1',
+        color: tokens.inherit,
+      },
+    },
+  },
+
+  // Shape
+  rounded: {
+    ...shorthands.borderRadius(tokens.rounded),
+  },
+
+  circular: {
+    ...shorthands.borderRadius(tokens.circular),
+  },
+
+  circle: {
+    ...shorthands.borderRadius(tokens.circle),
+  },
+
+  square: {
+    ...shorthands.borderRadius(tokens.square),
   },
 });
 
@@ -62,6 +106,9 @@ export const useInputStyles = (state: InputState) => {
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     !state.disabled && state.danger && rootStyles.danger,
     state.disabled && state.danger && rootStyles.dangerDisabled,
+    state.label && state.placeholder && !state.root.contentBefore && rootStyles.labelPlaceholderFocus,
+    state.label && (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,
+    rootStyles[state.size!],
     state.input.className,
   );
 

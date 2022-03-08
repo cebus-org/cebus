@@ -1,14 +1,15 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
-import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 import type { InputWrapperState } from './InputWrapper.types';
 import { tokens } from '@pongo-ui/react-theme';
 
-export const inputHeight = `--pongoai-input-height`;
+export const labelClassName = 'pongo-input-label';
+export const legendClassName = 'pongo-input-legend';
+
+const labelFocusedSize = '--focused-label-font-size';
 
 export const useRootStyles = makeStyles({
   root: {
     position: 'relative',
-    height: inputHeight,
     boxSizing: 'border-box',
     display: 'flex',
     alignItems: 'center',
@@ -16,6 +17,9 @@ export const useRootStyles = makeStyles({
     color: tokens.textColor,
     backgroundColor: tokens.canvasColor,
     fontFamily: tokens.baseFont,
+    ...shorthands.margin('0px'),
+    ...shorthands.padding('0px'),
+    ...shorthands.borderStyle('none'),
   },
 
   // Appearance
@@ -44,7 +48,7 @@ export const useRootStyles = makeStyles({
       left: '0px',
       userSelect: 'none',
       pointerEvents: 'none',
-      ...shorthands.borderBottom('1px', 'solid', tokens.textColor),
+      ...shorthands.borderBottom('1px', 'solid', tokens.inherit),
     },
   },
 
@@ -71,6 +75,12 @@ export const useRootStyles = makeStyles({
         ...shorthands.borderColor(tokens.brand),
         ...shorthands.borderWidth('2px'),
       },
+      [`& .${labelClassName}`]: {
+        color: tokens.brand,
+      },
+      [`& .${legendClassName}`]: {
+        width: 'auto',
+      },
     },
   },
 
@@ -79,6 +89,9 @@ export const useRootStyles = makeStyles({
       ':before': {
         ...shorthands.borderColor(tokens.danger),
         ...shorthands.borderWidth('2px'),
+      },
+      [`& .${labelClassName}`]: {
+        color: tokens.danger,
       },
     },
   },
@@ -109,18 +122,21 @@ export const useRootStyles = makeStyles({
     height: '35px',
     width: '150px',
     fontSize: tokens.fontSize200,
+    [labelFocusedSize]: tokens.fontSize100,
   },
 
   medium: {
     height: '45px',
     width: '200px',
     fontSize: tokens.fontSize300,
+    [labelFocusedSize]: tokens.fontSize200,
   },
 
   large: {
     height: '50px',
     width: '300px',
     fontSize: tokens.fontSize400,
+    [labelFocusedSize]: tokens.fontSize300,
   },
 
   // Danger
@@ -129,24 +145,16 @@ export const useRootStyles = makeStyles({
       ...shorthands.borderColor(tokens.danger),
     },
   },
+});
 
-  // Focus
-  focusIndicator: createCustomFocusIndicatorStyle(
-    {
-      ':after': {
-        content: "''",
-        position: 'absolute',
-        top: '-8px',
-        right: '-8px',
-        bottom: '-8px',
-        left: '-8px',
-        boxSizing: 'border-box',
-        ...shorthands.border('2px', 'solid', tokens.textColor),
-        ...shorthands.borderRadius(tokens.rounded),
-      },
-    },
-    { selector: 'focus-within' },
-  ),
+const useHelperTextStyles = makeStyles({
+  helperText: {
+    ...shorthands.padding('5px', '10px'),
+    ...shorthands.margin('0px'),
+    fontFamily: tokens.baseFont,
+    fontSize: tokens.fontSize200,
+    textAlign: 'left',
+  },
 });
 
 const useContentStyles = makeStyles({
@@ -184,21 +192,118 @@ const useContentStyles = makeStyles({
   },
 });
 
+export const useLabelStyles = makeStyles({
+  label: {
+    position: 'absolute',
+    ...shorthands.margin('0px'),
+    ...shorthands.padding('0px', '2px'),
+    left: '8px',
+    color: tokens.inherit,
+    fontFamily: tokens.baseFont,
+    whiteSpace: 'nowrap',
+    overflowStyle: 'hidden',
+    textOverflow: 'ellipsis',
+    touchAction: 'none',
+    pointerEvents: 'none',
+    userSelect: 'none',
+    display: 'inline-flex',
+    flexShrink: 0,
+    justifyContent: 'left',
+    alignItems: 'center',
+    transitionProperty: 'transform, font-size, top',
+    transitionDuration: '.1s',
+    transitionDelay: 'cubic-bezier(0.33, 0.0, 0.67, 1)',
+
+    ':before': {
+      content: '""',
+      position: 'absolute',
+      right: '0px',
+      top: '5px',
+      left: '0px',
+      height: '3px',
+      userSelect: 'none',
+      pointerEvents: 'none',
+      zIndex: -1,
+    },
+  },
+
+  standardActive: {
+    ':focus-within': {
+      [`& .${labelClassName}`]: {
+        transform: 'translateY(-90%)',
+        fontSize: `var(${labelFocusedSize})`,
+      },
+    },
+  },
+
+  outlineActive: {
+    ':focus-within': {
+      [`& .${labelClassName}`]: {
+        transform: 'translateY(-150%)',
+        fontSize: `var(${labelFocusedSize})`,
+      },
+    },
+  },
+
+  filledActive: {
+    ':focus-within': {
+      [`& .${labelClassName}`]: {
+        transform: 'translateY(-90%)',
+        fontSize: `var(${labelFocusedSize})`,
+      },
+    },
+  },
+
+  standard: {
+    transform: 'translateY(-90%)',
+    fontSize: `var(${labelFocusedSize})`,
+  },
+
+  outline: {
+    transform: 'translateY(-150%)',
+    fontSize: `var(${labelFocusedSize})`,
+  },
+
+  filled: {
+    transform: 'translateY(-90%)',
+    fontSize: `var(${labelFocusedSize})`,
+  },
+
+  outlineBackground: {
+    ':before': {
+      backgroundColor: tokens.canvasColor,
+    },
+  },
+});
+
 export const useInputWrapperStyles = (state: InputWrapperState) => {
   const rootStyles = useRootStyles();
   const contentStyles = useContentStyles();
+  const labelStyles = useLabelStyles();
+  const helperTextStyles = useHelperTextStyles();
 
-  state.root.className = mergeClasses(
+  state.border.className = mergeClasses(
     rootStyles.root,
     rootStyles[state.size!],
     rootStyles[state.appearance!],
-    rootStyles.focusIndicator,
     state.danger && rootStyles.danger,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     !state.disabled && (state.danger ? rootStyles.dangerFocus : rootStyles.defaultFocus),
+    !state.disabled &&
+      labelStyles[(state.appearance! + 'Active') as 'standardActive' | 'outlineActive' | 'filledActive'],
     state.disabled && state.danger && rootStyles.disabledDanger,
-    state.root.className,
+    state.border.className,
   );
+
+  if (state.helperText) {
+    state.helperText.className = mergeClasses(
+      helperTextStyles.helperText,
+      state.disabled ? contentStyles.disabled : contentStyles.enabled,
+      state.danger && contentStyles.danger,
+      state.disabled && state.danger && contentStyles.disabledDanger,
+      state.helperText.className,
+    );
+  }
 
   const contentClasses = [
     contentStyles.base,
@@ -216,6 +321,21 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
   }
   if (state.contentAfter) {
     state.contentAfter.className = mergeClasses(...contentClasses, contentStyles.after, state.contentAfter.className);
+  }
+
+  if (state.label) {
+    state.label.className = mergeClasses(
+      labelClassName,
+      labelStyles.label,
+      state.disabled ? contentStyles.disabled : contentStyles.enabled,
+      state.danger && contentStyles.danger,
+      state.disabled && state.danger && contentStyles.disabledDanger,
+      (state.value !== (undefined || '') || state.contentBefore !== undefined) &&
+        state.label !== undefined &&
+        labelStyles[state.appearance!],
+      state.appearance === 'outline' && labelStyles.outlineBackground,
+      state.label.className,
+    );
   }
 
   return state;
