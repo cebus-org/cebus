@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Introducing helperText and label props.",
-  "packageName": "@pongo-ui/react-input",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

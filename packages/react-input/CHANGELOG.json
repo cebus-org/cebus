@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-input",
   "entries": [
     {
+      "date": "Tue, 08 Mar 2022 05:21:30 GMT",
+      "tag": "@pongo-ui/react-input_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-input",
+            "commit": "793625cc88da65ac47adb81e130fbf62bd48fcc2",
+            "comment": "Introducing helperText and label props."
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 07 Mar 2022 00:47:05 GMT",
       "tag": "@pongo-ui/react-input_v0.0.1",
       "version": "0.0.1",
