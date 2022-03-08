@@ -24,8 +24,18 @@ export const useRootStyles = makeStyles({
 
   // Appearance
   outline: {
-    ...shorthands.border('1px', 'solid', tokens.inherit),
-    ...shorthands.borderRadius(tokens.rounded),
+    ':before': {
+      content: '""',
+      position: 'absolute',
+      top: '0px',
+      right: '0px',
+      bottom: '0px',
+      left: '0px',
+      userSelect: 'none',
+      pointerEvents: 'none',
+      ...shorthands.border('1px', 'solid', tokens.inherit),
+      ...shorthands.borderRadius(tokens.rounded),
+    },
   },
 
   standard: {
@@ -61,8 +71,6 @@ export const useRootStyles = makeStyles({
 
   defaultFocus: {
     ':focus-within': {
-      ...shorthands.borderColor(tokens.brand),
-      ...shorthands.borderWidth('2px'),
       ':before': {
         ...shorthands.borderColor(tokens.brand),
         ...shorthands.borderWidth('2px'),
@@ -78,8 +86,6 @@ export const useRootStyles = makeStyles({
 
   dangerFocus: {
     ':focus-within': {
-      ...shorthands.borderColor(tokens.danger),
-      ...shorthands.borderWidth('2px'),
       ':before': {
         ...shorthands.borderColor(tokens.danger),
         ...shorthands.borderWidth('2px'),
@@ -100,14 +106,12 @@ export const useRootStyles = makeStyles({
   },
 
   disabled: {
-    ...shorthands.borderColor(tokens.inheritDisabled),
     ':before': {
       ...shorthands.borderColor(tokens.inheritDisabled),
     },
   },
 
   disabledDanger: {
-    ...shorthands.borderColor(tokens.dangerDisabled),
     ':before': {
       ...shorthands.borderColor(tokens.dangerDisabled),
     },
@@ -137,7 +141,6 @@ export const useRootStyles = makeStyles({
 
   // Danger
   danger: {
-    ...shorthands.borderColor(tokens.danger),
     ':before': {
       ...shorthands.borderColor(tokens.danger),
     },
@@ -192,9 +195,9 @@ const useContentStyles = makeStyles({
 export const useLabelStyles = makeStyles({
   label: {
     position: 'absolute',
-    height: '100%',
     ...shorthands.margin('0px'),
-    ...shorthands.padding('0px', '10px'),
+    ...shorthands.padding('0px', '2px'),
+    left: '8px',
     color: tokens.inherit,
     fontFamily: tokens.baseFont,
     whiteSpace: 'nowrap',
@@ -207,13 +210,27 @@ export const useLabelStyles = makeStyles({
     flexShrink: 0,
     justifyContent: 'left',
     alignItems: 'center',
-    transition: 'transform .1s cubic-bezier(0.33, 0.0, 0.67, 1), font-size .1s cubic-bezier(0.33, 0.0, 0.67, 1)',
+    transitionProperty: 'transform, font-size, top',
+    transitionDuration: '.1s',
+    transitionDelay: 'cubic-bezier(0.33, 0.0, 0.67, 1)',
+
+    ':before': {
+      content: '""',
+      position: 'absolute',
+      right: '0px',
+      top: '5px',
+      left: '0px',
+      height: '3px',
+      userSelect: 'none',
+      pointerEvents: 'none',
+      zIndex: -1,
+    },
   },
 
   standardActive: {
     ':focus-within': {
       [`& .${labelClassName}`]: {
-        transform: 'translateY(-30%)',
+        transform: 'translateY(-90%)',
         fontSize: `var(${labelFocusedSize})`,
       },
     },
@@ -222,7 +239,7 @@ export const useLabelStyles = makeStyles({
   outlineActive: {
     ':focus-within': {
       [`& .${labelClassName}`]: {
-        transform: 'translateY(-50%)',
+        transform: 'translateY(-150%)',
         fontSize: `var(${labelFocusedSize})`,
       },
     },
@@ -231,47 +248,31 @@ export const useLabelStyles = makeStyles({
   filledActive: {
     ':focus-within': {
       [`& .${labelClassName}`]: {
-        transform: 'translateY(-30%)',
+        transform: 'translateY(-90%)',
         fontSize: `var(${labelFocusedSize})`,
       },
     },
   },
 
   standard: {
-    transform: 'translateY(-30%)',
+    transform: 'translateY(-90%)',
     fontSize: `var(${labelFocusedSize})`,
   },
 
   outline: {
-    transform: 'translateY(-50%)',
+    transform: 'translateY(-150%)',
     fontSize: `var(${labelFocusedSize})`,
   },
 
   filled: {
-    transform: 'translateY(-30%)',
+    transform: 'translateY(-90%)',
     fontSize: `var(${labelFocusedSize})`,
   },
-});
 
-export const useLegendStyles = makeStyles({
-  legend: {
-    position: 'relative',
-    ...shorthands.padding('0px'),
-    visibility: 'hidden',
-    fontSize: labelFocusedSize,
-    height: '0px',
-    color: 'red',
-    fontFamily: tokens.baseFont,
-    marginLeft: '7px',
-    marginRight: '10px',
-  },
-
-  active: {
-    width: 'auto',
-  },
-
-  inactive: {
-    width: '0px',
+  outlineBackground: {
+    ':before': {
+      backgroundColor: tokens.canvasColor,
+    },
   },
 });
 
@@ -280,7 +281,6 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
   const contentStyles = useContentStyles();
   const labelStyles = useLabelStyles();
   const helperTextStyles = useHelperTextStyles();
-  const legendStyles = useLegendStyles();
 
   state.border.className = mergeClasses(
     rootStyles.root,
@@ -333,23 +333,9 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
       (state.value !== (undefined || '') || state.contentBefore !== undefined) &&
         state.label !== undefined &&
         labelStyles[state.appearance!],
+      state.appearance === 'outline' && labelStyles.outlineBackground,
       state.label.className,
     );
-  }
-
-  if (state.legend) {
-    state.legend.className = mergeClasses(
-      legendClassName,
-      legendStyles.legend,
-      state.value !== '' || state.contentBefore !== undefined ? legendStyles.active : legendStyles.inactive,
-      state.legend.className,
-    );
-    // legendClassName,
-
-    // state.input.value !== '' || state.suffix !== undefined
-    //   ? textFieldLegendStyles.active
-    //   : textFieldLegendStyles.inactive,
-    // state.textFieldLegend.className,
   }
 
   return state;

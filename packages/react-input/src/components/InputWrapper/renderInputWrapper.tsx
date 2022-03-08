@@ -8,7 +8,6 @@ export const renderInputWrapper = (state: InputWrapperState) => {
   return (
     <slots.root {...slotProps.root}>
       <slots.border {...slotProps.border}>
-        {slots.legend && <slots.legend {...slotProps.legend} />}
         {slots.contentBefore && <slots.contentBefore {...slotProps.contentBefore} />}
         {slots.label && <slots.label {...slotProps.label} />}
         {state.root.children}

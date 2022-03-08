@@ -53,16 +53,13 @@ export const useInputState = (state: InputState) => {
 
   if (label) {
     state.root.label = label;
-    if (state.appearance === 'outline') {
-      state.root.legend = label;
-    }
     state.root.labelId = labelId;
     state.input.id = labelId;
   }
 
   // Input Element props
   state.input.value = currentValue;
-  state.input.onChange = onInputChange;
+  state.input.onInput = onInputChange;
   state.input['aria-invalid'] = danger;
 
   return state;

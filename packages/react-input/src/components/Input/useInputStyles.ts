@@ -7,6 +7,7 @@ export const useInputElementStyles = makeStyles({
     ...shorthands.margin('0px'),
     ...shorthands.padding('0px', '10px'),
     ...shorthands.borderStyle('none'),
+    ...shorthands.borderRadius(tokens.rounded),
     boxSizing: 'border-box',
     flexGrow: 1,
     minWidth: 0,
@@ -78,6 +79,23 @@ export const useInputElementStyles = makeStyles({
       },
     },
   },
+
+  // Shape
+  rounded: {
+    ...shorthands.borderRadius(tokens.rounded),
+  },
+
+  circular: {
+    ...shorthands.borderRadius(tokens.circular),
+  },
+
+  circle: {
+    ...shorthands.borderRadius(tokens.circle),
+  },
+
+  square: {
+    ...shorthands.borderRadius(tokens.square),
+  },
 });
 
 export const useInputStyles = (state: InputState) => {
@@ -91,6 +109,7 @@ export const useInputStyles = (state: InputState) => {
     state.label && state.placeholder && !state.root.contentBefore && rootStyles.labelPlaceholderFocus,
     state.label && (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,
     rootStyles[state.size!],
+    rootStyles[state.shape!],
     state.input.className,
   );
 

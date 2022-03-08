@@ -27,8 +27,8 @@ export const BasicInputExample = () => {
   return (
     <div className={styles.root}>
       <Input label="Name" placeholder="Enter your name" appearance="outline" />
-      <Input label="Name" placeholder="Enter your name" appearance="standard" />
-      <Input label="Name" placeholder="Enter your name" appearance="filled" />
+      <Input label="User Name" placeholder="Enter your user name" appearance="standard" />
+      <Input label="Password" placeholder="Enter your password" appearance="filled" />
     </div>
   );
 };
@@ -135,6 +135,19 @@ export const InputDisabledExample = () => {
       <Input defaultValue="hello" disabled />
       <Input defaultValue="hello" appearance="filled" disabled />
       <Input defaultValue="hello" appearance="standard" disabled />
+    </div>
+  );
+};
+
+export const InputHelperTextExample = () => {
+  const styles = useStyles();
+
+  return (
+    <div className={styles.root}>
+      <Input label="Standard" helperText="This is an input with helper text" />
+      <Input label="Disabled" helperText="This is an input with helper text" disabled />
+      <Input label="Danger" helperText="This is an input with helper text" danger />
+      <Input label="Danger Disabled" helperText="This is an input with helper text" danger disabled />
     </div>
   );
 };

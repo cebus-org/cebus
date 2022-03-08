@@ -17,6 +17,7 @@ export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): I
     danger,
     label,
     placeholder,
+
     helperText,
   } = props;
 
