@@ -109,7 +109,6 @@ export const useInputStyles = (state: InputState) => {
     state.label && state.placeholder && !state.root.contentBefore && rootStyles.labelPlaceholderFocus,
     state.label && (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,
     rootStyles[state.size!],
-    rootStyles[state.shape!],
     state.input.className,
   );
 
