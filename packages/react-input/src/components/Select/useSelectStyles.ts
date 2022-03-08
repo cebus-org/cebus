@@ -14,7 +14,6 @@ export const useSelectElementStyles = makeStyles({
     minWidth: 0,
     height: '100%',
     backgroundColor: 'transparent',
-    pointerEvents: 'none',
     ':focus-visible': {
       outlineStyle: 'none',
     },

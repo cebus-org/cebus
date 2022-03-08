@@ -103,11 +103,6 @@ type SelectCommons = {
   placeholder?: string;
 };
 
-export type SelectProps = Omit<
-  ComponentProps<Partial<SelectSlots>, 'input'>,
-  'children' | 'defaultValue' | 'onChange' | 'size' | 'type' | 'value'
-> &
-  SelectCommons &
-  InputWrapperCommons;
+export type SelectProps = ComponentProps<Partial<SelectSlots>> & SelectCommons & InputWrapperCommons;
 
 export type SelectState = ComponentState<SelectSlots> & SelectCommons & InputWrapperCommons;

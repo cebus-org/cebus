@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { getSlots } from '@fluentui/react-utilities';
-import { MenuItemRadio } from '@pongo-ui/react-menu';
 import type { SelectSlots, SelectState } from './Select.types';
 
 export const renderSelect = (state: SelectState) => {

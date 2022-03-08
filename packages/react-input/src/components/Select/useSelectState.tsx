@@ -10,7 +10,7 @@ export const useSelectState = (state: SelectState) => {
 
   const [open, setOpen] = React.useState(false);
   const labelId = label ? useId('select-label', id) : undefined;
-  const triggerRef = React.useRef<any>(null);
+  const triggerRef = React.useRef<HTMLSelectElement>(null);
   const [currentValue, setCurrentValue] = React.useState<Record<string, string[]>>({
     font: [''],
   });
@@ -20,12 +20,12 @@ export const useSelectState = (state: SelectState) => {
   };
 
   const onOpenChange: MenuProps['onOpenChange'] = (e, data) => {
-    triggerRef.current.focus();
+    triggerRef?.current?.focus();
     setOpen(data.open);
   };
 
   const onSelectChange = () => {
-    // no op
+    /** no op */
   };
 
   const onSelectMouseDown = (ev: React.MouseEvent<HTMLSelectElement, MouseEvent>) => {
@@ -64,14 +64,14 @@ export const useSelectState = (state: SelectState) => {
   state.select.onMouseDown = onSelectMouseDown;
   state.select.onKeyDown = onSelectKeyDown;
 
-  state.select.children = (
-    <>
-      <option value="" disabled></option>
-      <option value="segoe">segoe</option>
-      <option value="calibri">calibri</option>
-      <option value="arial">arial</option>
-    </>
-  );
+  // state.select.children = (
+  //   <>
+  //     <option value="" disabled></option>
+  //     <option value="segoe">segoe</option>
+  //     <option value="calibri">calibri</option>
+  //     <option value="arial">arial</option>
+  //   </>
+  // );
 
   if (label) {
     state.root.label = label;
@@ -94,11 +94,28 @@ export const useSelectState = (state: SelectState) => {
     state.root.contentAfter = contentAfter;
   }
 
-  const generateOptions = () => {
-    console.log(state.root.children);
-  };
+  /**
+   * Generates native html options for the select component based on the child options provided.
+   */
+  const generateOptions = React.useMemo(() => {
+    const options = [<option value="" disabled></option>];
+    const children: any = state.root.children;
+    const length: number = children?.length;
 
-  generateOptions();
+    if (length) {
+      for (let i = 0; i < length; i++) {
+        options.push(
+          <option value={children[i].props.value} disabled>
+            {children[i].props.children}
+          </option>,
+        );
+      }
+    }
+
+    return options;
+  }, [state.root.children]);
+
+  state.select.children = generateOptions;
 
   return state;
 };
