@@ -79,23 +79,6 @@ export const useInputElementStyles = makeStyles({
       },
     },
   },
-
-  // Shape
-  rounded: {
-    ...shorthands.borderRadius(tokens.rounded),
-  },
-
-  circular: {
-    ...shorthands.borderRadius(tokens.circular),
-  },
-
-  circle: {
-    ...shorthands.borderRadius(tokens.circle),
-  },
-
-  square: {
-    ...shorthands.borderRadius(tokens.square),
-  },
 });
 
 export const useInputStyles = (state: InputState) => {
@@ -105,6 +88,7 @@ export const useInputStyles = (state: InputState) => {
     rootStyles.input,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     !state.disabled && state.danger && rootStyles.danger,
+
     state.disabled && state.danger && rootStyles.dangerDisabled,
     state.label && state.placeholder && !state.root.contentBefore && rootStyles.labelPlaceholderFocus,
     state.label && (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,

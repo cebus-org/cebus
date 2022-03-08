@@ -2,6 +2,7 @@ import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { InputWrapperState } from './InputWrapper.types';
 import { tokens } from '@pongo-ui/react-theme';
 
+export const rootClassName = 'pongo-input-wrapper';
 export const labelClassName = 'pongo-input-label';
 export const legendClassName = 'pongo-input-legend';
 
@@ -283,6 +284,7 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
   const helperTextStyles = useHelperTextStyles();
 
   state.border.className = mergeClasses(
+    rootClassName,
     rootStyles.root,
     rootStyles[state.size!],
     rootStyles[state.appearance!],
@@ -330,7 +332,7 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
       state.disabled ? contentStyles.disabled : contentStyles.enabled,
       state.danger && contentStyles.danger,
       state.disabled && state.danger && contentStyles.disabledDanger,
-      (state.value !== (undefined || '') || state.contentBefore !== undefined) &&
+      (state.currentValue !== (undefined || '') || state.contentBefore !== undefined) &&
         state.label !== undefined &&
         labelStyles[state.appearance!],
       state.appearance === 'outline' && labelStyles.outlineBackground,

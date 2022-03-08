@@ -7,8 +7,17 @@
 import type { ComponentProps } from '@fluentui/react-utilities';
 import type { ComponentState } from '@fluentui/react-utilities';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
+import { MenuItem } from '@pongo-ui/react-menu';
+import { MenuItemRadio } from '@pongo-ui/react-menu';
+import { MenuList } from '@pongo-ui/react-menu';
+import { MenuPopover } from '@pongo-ui/react-menu';
 import * as React_2 from 'react';
 import type { Slot } from '@fluentui/react-utilities';
+
+// Warning: (ae-forgotten-export) The symbol "ChevronState" needs to be exported by the entry point index.d.ts
+//
+// @public (undocumented)
+export const Chevron: (props: ChevronState) => JSX.Element;
 
 // @public
 export const Input: ForwardRefComponent<InputProps>;
@@ -38,7 +47,7 @@ export type InputWrapperCommons = {
     size?: 'small' | 'medium' | 'large';
     helperTextId?: string;
     labelId?: string;
-    value?: string;
+    currentValue?: string;
 };
 
 // @public (undocumented)
@@ -63,6 +72,27 @@ export const labelClassName = "pongo-input-label";
 // @public (undocumented)
 export const legendClassName = "pongo-input-legend";
 
+// @public
+const Option_2: ForwardRefComponent<OptionProps>;
+export { Option_2 as Option }
+
+// @public (undocumented)
+export type OptionCommons = {
+    value: string;
+    disabled?: boolean;
+};
+
+// @public (undocumented)
+export type OptionProps = Omit<ComponentProps<OptionSlots>, 'name'> & OptionCommons;
+
+// @public (undocumented)
+export type OptionSlots = {
+    root: Slot<typeof MenuItem & typeof MenuItemRadio>;
+};
+
+// @public (undocumented)
+export type OptionState = Omit<ComponentState<OptionSlots>, 'name'> & OptionCommons;
+
 // @public (undocumented)
 export const renderInput: (state: InputState) => JSX.Element;
 
@@ -70,10 +100,37 @@ export const renderInput: (state: InputState) => JSX.Element;
 export const renderInputWrapper: (state: InputWrapperState) => JSX.Element;
 
 // @public (undocumented)
+export const renderSelect: (state: SelectState) => JSX.Element;
+
+// @public (undocumented)
+export const rootClassName = "pongo-input-wrapper";
+
+// @public
+export const Select: ForwardRefComponent<SelectProps>;
+
+// Warning: (ae-forgotten-export) The symbol "SelectCommons" needs to be exported by the entry point index.d.ts
+//
+// @public (undocumented)
+export type SelectProps = ComponentProps<Partial<SelectSlots>> & SelectCommons & InputWrapperCommons;
+
+// @public (undocumented)
+export type SelectSlots = {
+    root: NonNullable<Slot<typeof InputWrapper>>;
+    select: NonNullable<Slot<'select'>>;
+    menu: any;
+    menuTrigger: any;
+    menuPopover: NonNullable<Slot<typeof MenuPopover>>;
+    menuList: NonNullable<Slot<typeof MenuList>>;
+};
+
+// @public (undocumented)
+export type SelectState = ComponentState<SelectSlots> & SelectCommons & InputWrapperCommons;
+
+// @public (undocumented)
 export const useInput: (props: InputProps, ref: React_2.Ref<HTMLInputElement>) => InputState;
 
 // @public (undocumented)
-export const useInputElementStyles: () => Record<"input" | "small" | "circle" | "medium" | "large" | "disabled" | "danger" | "dangerDisabled" | "square" | "rounded" | "circular" | "enabled" | "labelLowerText" | "labelPlaceholderFocus", string>;
+export const useInputElementStyles: () => Record<"input" | "small" | "medium" | "large" | "disabled" | "danger" | "dangerDisabled" | "enabled" | "labelLowerText" | "labelPlaceholderFocus", string>;
 
 // @public (undocumented)
 export const useInputStyles: (state: InputState) => InputState;
@@ -88,7 +145,22 @@ export const useInputWrapperStyles: (state: InputWrapperState) => InputWrapperSt
 export const useLabelStyles: () => Record<"label" | "outline" | "standard" | "filled" | "standardActive" | "outlineActive" | "filledActive" | "outlineBackground", string>;
 
 // @public (undocumented)
+export const useMenuStyles: () => Record<"defaultFocus", string>;
+
+// @public (undocumented)
+export const useOption: (props: OptionProps, ref: React_2.Ref<HTMLElement>) => OptionState;
+
+// @public (undocumented)
 export const useRootStyles: () => Record<"small" | "outline" | "standard" | "filled" | "medium" | "large" | "root" | "disabled" | "danger" | "defaultFocus" | "dangerFocus" | "enabled" | "disabledDanger", string>;
+
+// @public (undocumented)
+export const useSelect: (props: SelectProps, ref: React_2.Ref<HTMLInputElement>) => SelectState;
+
+// @public (undocumented)
+export const useSelectElementStyles: () => Record<"select" | "small" | "medium" | "large" | "disabled" | "danger" | "dangerDisabled" | "enabled" | "labelLowerText" | "labelPlaceholderFocus", string>;
+
+// @public (undocumented)
+export const useSelectStyles: (state: SelectState) => SelectState;
 
 // (No @packageDocumentation comment for this package)
 

@@ -1405,7 +1405,7 @@
   dependencies:
     tslib "^2.1.0"
 
-"@fluentui/react-aria@9.0.0-rc.5":
+"@fluentui/react-aria@9.0.0-rc.5", "@fluentui/react-aria@^9.0.0-rc.5":
   version "9.0.0-rc.5"
   resolved "https://registry.yarnpkg.com/@fluentui/react-aria/-/react-aria-9.0.0-rc.5.tgz#cea88f6a3ffce32b679c750aceffe4160331bcf7"
   integrity sha512-Kp3rtR0uNS/zoQDmJVS6iorSb3US0zejFYAA+UUD72c+VnAN59dkUGBJdUKVHysHgxW2S1PbwoT1yE0jMmC4LA==

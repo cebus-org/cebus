@@ -8,8 +8,8 @@ import { FC } from 'react';
 import { FluentTriggerComponent } from '@fluentui/react-utilities';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
 import type { MenuItemProps } from '@fluentui/react-menu';
-import type { MenuItemRadioProps } from '@fluentui/react-menu';
-import type { MenuItemRadioState } from '@fluentui/react-menu';
+import type { MenuItemRadioProps as MenuItemRadioProps_2 } from '@fluentui/react-menu';
+import type { MenuItemRadioState as MenuItemRadioState_2 } from '@fluentui/react-menu';
 import type { MenuItemState } from '@fluentui/react-menu';
 import type { MenuListProps } from '@fluentui/react-menu';
 import type { MenuListState } from '@fluentui/react-menu';
@@ -26,7 +26,13 @@ export const Menu: FC<MenuProps_2>;
 export const MenuItem: ForwardRefComponent<MenuItemProps>;
 
 // @public
-export const MenuItemRadio: ForwardRefComponent<MenuItemRadioProps>;
+export const MenuItemRadio: ForwardRefComponent<MenuItemRadioProps_2>;
+
+// @public (undocumented)
+export type MenuItemRadioProps = MenuItemRadioProps_2;
+
+// @public (undocumented)
+export type MenuItemRadioState = MenuItemRadioState_2;
 
 // @public
 export const MenuList: ForwardRefComponent<MenuListProps>;
@@ -44,7 +50,7 @@ export type MenuState = MenuState_2;
 export const MenuTrigger: FC<MenuTriggerProps> & FluentTriggerComponent;
 
 // @public (undocumented)
-export const useMenuItemRadioStyles: (state: MenuItemRadioState) => MenuItemRadioState;
+export const useMenuItemRadioStyles: (state: MenuItemRadioState_2) => MenuItemRadioState_2;
 
 // @public (undocumented)
 export const useMenuItemStyles: (state: MenuItemState) => MenuItemState;
