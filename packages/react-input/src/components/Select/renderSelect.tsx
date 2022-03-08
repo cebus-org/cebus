@@ -14,17 +14,7 @@ export const renderSelect = (state: SelectState) => {
         </slots.root>
       </slots.menuTrigger>
       <slots.menuPopover {...slotProps.menuPopover}>
-        <slots.menuList {...slotProps.menuList}>
-          <MenuItemRadio name="font" value="segoe">
-            Segoe
-          </MenuItemRadio>
-          <MenuItemRadio name="font" value="calibri">
-            Calibri
-          </MenuItemRadio>
-          <MenuItemRadio name="font" value="arial">
-            Arial
-          </MenuItemRadio>
-        </slots.menuList>
+        <slots.menuList {...slotProps.menuList}>{state.root.children}</slots.menuList>
       </slots.menuPopover>
     </slots.menu>
   );

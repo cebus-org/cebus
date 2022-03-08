@@ -1,9 +1,10 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { SelectState } from './Select.types';
 import { tokens } from '@pongo-ui/react-theme';
+import { labelClassName, legendClassName } from '../../index';
 
-export const useInputElementStyles = makeStyles({
-  input: {
+export const useSelectElementStyles = makeStyles({
+  select: {
     ...shorthands.margin('0px'),
     ...shorthands.padding('0px', '10px'),
     ...shorthands.borderStyle('none'),
@@ -17,9 +18,9 @@ export const useInputElementStyles = makeStyles({
     ':focus-visible': {
       outlineStyle: 'none',
     },
-
-    display: 'flex',
-    alignItems: 'center',
+    '-webkit-appearance': 'none',
+    '-moz-appearance': 'none',
+    '-o-appearance': 'none',
   },
 
   small: {
@@ -85,11 +86,31 @@ export const useInputElementStyles = makeStyles({
   },
 });
 
+export const useMenuStyles = makeStyles({
+  defaultFocus: {
+    backgroundColor: 'red',
+    color: 'red',
+    ':focus-within': {
+      ':before': {
+        ...shorthands.borderColor(tokens.brand),
+        ...shorthands.borderWidth('2px'),
+      },
+      [`& .${labelClassName}`]: {
+        color: tokens.brand,
+      },
+      [`& .${legendClassName}`]: {
+        width: 'auto',
+      },
+    },
+  },
+});
+
 export const useSelectStyles = (state: SelectState) => {
-  const rootStyles = useInputElementStyles();
+  const rootStyles = useSelectElementStyles();
+  const menuStyles = useMenuStyles();
 
   state.select.className = mergeClasses(
-    rootStyles.input,
+    rootStyles.select,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     !state.disabled && state.danger && rootStyles.danger,
     state.disabled && state.danger && rootStyles.dangerDisabled,
@@ -97,6 +118,13 @@ export const useSelectStyles = (state: SelectState) => {
     state.label && (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,
     rootStyles[state.size!],
     state.select.className,
+  );
+
+  state.menu.className = mergeClasses(
+    'helloWorld',
+    menuStyles.defaultFocus,
+    // !state.disabled && (state.danger ? menuStyles.dangerFocus : menuStyles.defaultFocus),
+    state.menu.className,
   );
 
   return state;

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Select } from '../index';
 import { makeStyles, shorthands } from '@griffel/react';
+import { MenuItemRadio } from '@pongo-ui/react-menu';
 
 const useStyles = makeStyles({
   root: {
@@ -20,8 +21,28 @@ export const BasicSelectExample = () => {
 
   return (
     <div className={styles.root}>
-      <Select label="test" />
-      <Select label="test" contentAfter="test" />
+      <Select label="test">
+        <MenuItemRadio name="font" value="segoe">
+          Segoe
+        </MenuItemRadio>
+        <MenuItemRadio name="font" value="calibri">
+          Calibri
+        </MenuItemRadio>
+        <MenuItemRadio name="font" value="arial">
+          Arial
+        </MenuItemRadio>
+      </Select>
+      <Select label="test" contentAfter="test">
+        <MenuItemRadio name="font" value="segoe">
+          Segoe
+        </MenuItemRadio>
+        <MenuItemRadio name="font" value="calibri">
+          Calibri
+        </MenuItemRadio>
+        <MenuItemRadio name="font" value="arial">
+          Arial
+        </MenuItemRadio>
+      </Select>
     </div>
   );
 };

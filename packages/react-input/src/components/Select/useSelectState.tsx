@@ -1,12 +1,16 @@
 import * as React from 'react';
 import type { SelectState } from './Select.types';
+import { useControllableState, useEventCallback, useMergedRefs, useId } from '@fluentui/react-utilities';
 import type { MenuProps } from '@pongo-ui/react-menu';
 import { Chevron } from './Chevron';
 
 export const useSelectState = (state: SelectState) => {
   const { appearance, danger, disabled, size, label, helperText, contentBefore, contentAfter } = state;
+  const { id } = state.select;
 
   const [open, setOpen] = React.useState(false);
+  const labelId = label ? useId('select-label', id) : undefined;
+  const triggerRef = React.useRef<any>(null);
   const [currentValue, setCurrentValue] = React.useState<Record<string, string[]>>({
     font: [''],
   });
@@ -16,9 +20,31 @@ export const useSelectState = (state: SelectState) => {
   };
 
   const onOpenChange: MenuProps['onOpenChange'] = (e, data) => {
+    triggerRef.current.focus();
     setOpen(data.open);
   };
 
+  const onSelectChange = () => {
+    // no op
+  };
+
+  const onSelectMouseDown = (ev: React.MouseEvent<HTMLSelectElement, MouseEvent>) => {
+    ev.preventDefault();
+  };
+
+  const onSelectKeyDown = (ev: React.KeyboardEvent<HTMLSelectElement>) => {
+    // Prevent select tag from opening using keyboard commands
+    switch (ev.key) {
+      case 'ArrowUp': {
+        ev.preventDefault();
+      }
+      case 'ArrowDown': {
+        ev.preventDefault();
+      }
+    }
+  };
+
+  state.select.ref = useMergedRefs(state.select.ref, triggerRef);
   state.root.appearance = appearance;
   state.root.danger = danger;
   state.root.disabled = disabled;
@@ -33,11 +59,14 @@ export const useSelectState = (state: SelectState) => {
   state.menuList.onCheckedValueChange = onCheckedValueChange;
   state.menuList.checkedValues = currentValue;
 
-  state.select.tabIndex = 0;
-  state.select.value = currentValue.font;
+  state.select.value = currentValue.font[0];
+  state.select.onChange = onSelectChange;
+  state.select.onMouseDown = onSelectMouseDown;
+  state.select.onKeyDown = onSelectKeyDown;
+
   state.select.children = (
     <>
-      <option value="" disabled selected></option>
+      <option value="" disabled></option>
       <option value="segoe">segoe</option>
       <option value="calibri">calibri</option>
       <option value="arial">arial</option>
@@ -46,8 +75,8 @@ export const useSelectState = (state: SelectState) => {
 
   if (label) {
     state.root.label = label;
-    // state.root.labelId = labelId;
-    // state.input.id = labelId;
+    state.root.labelId = labelId;
+    state.select.id = labelId;
   }
 
   // if (helperText) {
@@ -64,6 +93,12 @@ export const useSelectState = (state: SelectState) => {
   } else {
     state.root.contentAfter = contentAfter;
   }
+
+  const generateOptions = () => {
+    console.log(state.root.children);
+  };
+
+  generateOptions();
 
   return state;
 };
