@@ -2,20 +2,38 @@ import * as React from 'react';
 import type { SelectState } from './Select.types';
 import { useControllableState, useEventCallback, useMergedRefs, useId } from '@fluentui/react-utilities';
 import type { MenuProps } from '@pongo-ui/react-menu';
+import { MenuItemRadio } from '@pongo-ui/react-menu';
 import { Chevron } from './Chevron';
 
 export const useSelectState = (state: SelectState) => {
-  const { appearance, danger, disabled, size, label, helperText, contentBefore, contentAfter } = state;
+  const {
+    defaultValue,
+    value,
+    appearance,
+    danger,
+    disabled,
+    size,
+    label,
+    helperText,
+    contentBefore,
+    contentAfter,
+    onChange,
+  } = state;
   const { id } = state.select;
 
-  const [open, setOpen] = React.useState(false);
-  const labelId = label ? useId('select-label', id) : undefined;
-  const triggerRef = React.useRef<HTMLSelectElement>(null);
-  const [currentValue, setCurrentValue] = React.useState<Record<string, string[]>>({
-    font: [''],
+  const [currentValue, setCurrentValue] = useControllableState({
+    defaultState: defaultValue,
+    state: value,
+    initialState: { font: ['segoe'] },
   });
 
+  const [open, setOpen] = React.useState(false);
+
+  const labelId = label ? useId('select-label', id) : undefined;
+  const triggerRef = React.useRef<HTMLSelectElement>(null);
+
   const onCheckedValueChange: MenuProps['onCheckedValueChange'] = (ev, { name, checkedItems }) => {
+    onChange?.(ev, { name: name, checkedItems: checkedItems });
     setCurrentValue({ [name]: checkedItems });
   };
 
@@ -44,6 +62,13 @@ export const useSelectState = (state: SelectState) => {
     }
   };
 
+  // const getValue = () => {
+  //   const result = [];
+  //   for (let i = 0; i < currentValue?.length; i++) {
+  //     result.push(currentValue[i])
+  //   }
+  // };
+
   state.select.ref = useMergedRefs(state.select.ref, triggerRef);
   state.root.appearance = appearance;
   state.root.danger = danger;
@@ -63,15 +88,6 @@ export const useSelectState = (state: SelectState) => {
   state.select.onChange = onSelectChange;
   state.select.onMouseDown = onSelectMouseDown;
   state.select.onKeyDown = onSelectKeyDown;
-
-  // state.select.children = (
-  //   <>
-  //     <option value="" disabled></option>
-  //     <option value="segoe">segoe</option>
-  //     <option value="calibri">calibri</option>
-  //     <option value="arial">arial</option>
-  //   </>
-  // );
 
   if (label) {
     state.root.label = label;
@@ -95,7 +111,7 @@ export const useSelectState = (state: SelectState) => {
   }
 
   /**
-   * Generates native html options for the select component based on the child options provided.
+   * Generates native html options for the select component based on the child Options provided.
    */
   const generateOptions = React.useMemo(() => {
     const options = [<option value="" disabled></option>];
@@ -104,11 +120,13 @@ export const useSelectState = (state: SelectState) => {
 
     if (length) {
       for (let i = 0; i < length; i++) {
-        options.push(
-          <option value={children[i].props.value} disabled>
-            {children[i].props.children}
-          </option>,
-        );
+        if (typeof children[i] === typeof MenuItemRadio) {
+          options.push(
+            <option value={children[i].props.value} disabled>
+              {children[i].props.children}
+            </option>,
+          );
+        }
       }
     }
 

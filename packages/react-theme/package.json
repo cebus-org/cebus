@@ -8,7 +8,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/PongoAI/pongoai-frontend"
+    "url": "https://github.com/PongoAI/pongo-ui"
   },
   "license": "MIT",
   "scripts": {

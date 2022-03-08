@@ -2,6 +2,7 @@ import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utili
 import type { InputWrapperCommons } from '../InputWrapper';
 import { InputWrapper } from '../InputWrapper';
 import { MenuPopover, MenuList } from '@pongo-ui/react-menu';
+import type { MenuProps } from '@pongo-ui/react-menu';
 
 export type SelectSlots = {
   /**
@@ -53,37 +54,15 @@ type SelectCommons = {
   /**
    * Callback to be called when the value changes.
    */
-  onChange?: (
-    ev: React.ChangeEvent<HTMLInputElement>,
-    data: {
-      value: string;
-    },
-  ) => void;
+  onChange?: MenuProps['onCheckedValueChange'];
 
   /**
-   * The type of content for the the Input element.
-   */
-  type?:
-    | 'text'
-    | 'email'
-    | 'password'
-    | 'search'
-    | 'tel'
-    | 'url'
-    | 'date'
-    | 'datetime-local'
-    | 'month'
-    | 'number'
-    | 'time'
-    | 'week';
-
-  /**
-   * The content to render before the Input element.
+   * The content to render before the Select.
    */
   contentBefore?: string | number | JSX.Element;
 
   /**
-   * The content to render after the input element.
+   * The content to render after the Select.
    */
   contentAfter?: string | number | JSX.Element;
 
