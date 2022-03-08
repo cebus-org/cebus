@@ -1,5 +1,5 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
-import type { InputState } from './Input.types';
+import type { SelectState } from './Select.types';
 import { tokens } from '@pongo-ui/react-theme';
 
 export const useInputElementStyles = makeStyles({
@@ -81,7 +81,7 @@ export const useInputElementStyles = makeStyles({
   },
 });
 
-export const useInputStyles = (state: InputState) => {
+export const useSelectStyles = (state: SelectState) => {
   const rootStyles = useInputElementStyles();
 
   state.input.className = mergeClasses(

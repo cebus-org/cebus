@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Input } from '../index';
 import { makeStyles, shorthands } from '@griffel/react';
 import type { InputProps } from '../index';
+
 const useStyles = makeStyles({
   root: {
     display: 'flex',
