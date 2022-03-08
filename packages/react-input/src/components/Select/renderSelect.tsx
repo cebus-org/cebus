@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { getSlots } from '@fluentui/react-utilities';
-import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem, MenuItemRadio } from '@pongo-ui/react-menu';
+import { MenuItemRadio } from '@pongo-ui/react-menu';
 import type { SelectSlots, SelectState } from './Select.types';
 
 export const renderSelect = (state: SelectState) => {
@@ -10,7 +10,7 @@ export const renderSelect = (state: SelectState) => {
     <slots.menu {...slotProps.menu}>
       <slots.menuTrigger {...slotProps.menuTrigger}>
         <slots.root {...slotProps.root}>
-          <slots.input {...slotProps.input} />
+          <slots.select {...slotProps.select} />
         </slots.root>
       </slots.menuTrigger>
       <slots.menuPopover {...slotProps.menuPopover}>

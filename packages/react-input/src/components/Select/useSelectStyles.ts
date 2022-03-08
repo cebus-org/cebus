@@ -13,9 +13,13 @@ export const useInputElementStyles = makeStyles({
     minWidth: 0,
     height: '100%',
     backgroundColor: 'transparent',
+    pointerEvents: 'none',
     ':focus-visible': {
       outlineStyle: 'none',
     },
+
+    display: 'flex',
+    alignItems: 'center',
   },
 
   small: {
@@ -38,7 +42,7 @@ export const useInputElementStyles = makeStyles({
   },
 
   enabled: {
-    cursor: 'text',
+    cursor: 'pointer',
     color: tokens.textColor,
     '::placeholder': {
       color: tokens.inherit,
@@ -84,7 +88,7 @@ export const useInputElementStyles = makeStyles({
 export const useSelectStyles = (state: SelectState) => {
   const rootStyles = useInputElementStyles();
 
-  state.input.className = mergeClasses(
+  state.select.className = mergeClasses(
     rootStyles.input,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     !state.disabled && state.danger && rootStyles.danger,
@@ -92,7 +96,7 @@ export const useSelectStyles = (state: SelectState) => {
     state.label && state.placeholder && !state.root.contentBefore && rootStyles.labelPlaceholderFocus,
     state.label && (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,
     rootStyles[state.size!],
-    state.input.className,
+    state.select.className,
   );
 
   return state;

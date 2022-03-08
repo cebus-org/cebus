@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { getPartitionedNativeProps, resolveShorthand } from '@fluentui/react-utilities';
+import { resolveShorthand, getNativeElementProps } from '@fluentui/react-utilities';
 import { useSelectState } from './useSelectState';
 import type { SelectProps, SelectState } from './Select.types';
 import { InputWrapper } from '../InputWrapper';
@@ -23,13 +23,8 @@ export const useSelect = (props: SelectProps, ref: React.Ref<HTMLInputElement>):
     menuPopover,
     menuList,
     helperText,
+    select,
   } = props;
-
-  const nativeProps = getPartitionedNativeProps({
-    props,
-    primarySlotTagName: 'input',
-    excludedPropNames: ['size', 'onChange', 'value', 'defaultValue'],
-  });
 
   const state: SelectState = {
     value,
@@ -46,25 +41,17 @@ export const useSelect = (props: SelectProps, ref: React.Ref<HTMLInputElement>):
     placeholder,
     components: {
       root: InputWrapper,
-      input: 'input',
+      select: 'select',
       menu: Menu,
       menuTrigger: MenuTrigger,
       menuPopover: MenuPopover,
       menuList: MenuList,
     },
-    root: resolveShorthand(props.root, {
-      required: true,
-      defaultProps: nativeProps.root,
+    root: getNativeElementProps('div', {
+      ref,
+      ...props,
     }),
-    input: resolveShorthand(props.input, {
-      required: true,
-      defaultProps: {
-        type: 'text',
-        ref,
-        ...nativeProps.primary,
-      },
-    }),
-
+    select: resolveShorthand(select, { required: true }),
     menu: resolveShorthand(menu, { required: true }),
     menuTrigger: resolveShorthand(menuTrigger, { required: true }),
     menuPopover: resolveShorthand(menuPopover, { required: true }),

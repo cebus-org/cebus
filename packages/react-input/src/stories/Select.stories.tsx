@@ -20,7 +20,8 @@ export const BasicSelectExample = () => {
 
   return (
     <div className={styles.root}>
-      <Select />
+      <Select label="test" />
+      <Select label="test" contentAfter="test" />
     </div>
   );
 };
