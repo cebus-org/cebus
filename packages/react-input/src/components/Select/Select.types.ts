@@ -1,7 +1,7 @@
 import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utilities';
 import type { InputWrapperCommons } from '../InputWrapper';
 import { InputWrapper } from '../InputWrapper';
-import { Menu, MenuPopover, MenuList } from '@pongo-ui/react-menu';
+import { MenuPopover, MenuList } from '@pongo-ui/react-menu';
 
 export type SelectSlots = {
   /**
