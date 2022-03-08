@@ -110,7 +110,7 @@ export const useSelectState = (state: SelectState) => {
    * Generates native html options for the select component based on the child Options provided.
    */
   const generateOptions = React.useMemo(() => {
-    const options = [<option value="" disabled></option>];
+    const options = [<option value="" disabled key="default"></option>];
     const children: any = state.root.children;
     const length: number = children?.length;
 
@@ -118,7 +118,7 @@ export const useSelectState = (state: SelectState) => {
       for (let i = 0; i < length; i++) {
         if (typeof children[i] === typeof MenuItemRadio) {
           options.push(
-            <option value={children[i].props.value} disabled>
+            <option value={children[i].props.value} disabled key={i}>
               {children[i].props.children}
             </option>,
           );

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Option renders a basic InputWrapper 1`] = `
+<body>
+  <div>
+    <div
+      aria-checked="false"
+      class="___18gi861 f10pi13n f22iagw f1d2rq10 f1nbblvp f81rol6 f1ov4xf1 frdkuqy f8qjfyk f8dqhol f1arxnym f122n59 f1xqy1su fc467gg f1q8lukm f1ma2n7n f2hkw1w fc85khu f1pxpxw8 f1149fnl fd1orka fgtqheg fq7mjg8 fq9bj62 fy07e8r f1ha6shg f4ltwxu f1284xzw f14dru39 fvabyfg f12y1wz2 f1k6fduh fc73jsq f8mbk1b f3c9x3h"
+      name="select"
+      role="menuitemradio"
+      tabindex="0"
+    >
+      <span
+        class="___lrcp890 fjw5fx7 fd461yt fd7fpy0"
+      >
+        <svg
+          aria-hidden="true"
+          class="___1yjlmar f1w7gpdv fez10in f1kxrtqx"
+          fill="currentColor"
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.05 3.49c.28.3.27.77-.04 1.06l-7.93 7.47A.85.85 0 014.9 12L2.22 9.28a.75.75 0 111.06-1.06l2.24 2.27 7.47-7.04a.75.75 0 011.06.04z"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</body>
+`;

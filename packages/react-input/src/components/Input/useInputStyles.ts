@@ -88,6 +88,7 @@ export const useInputStyles = (state: InputState) => {
     rootStyles.input,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     !state.disabled && state.danger && rootStyles.danger,
+
     state.disabled && state.danger && rootStyles.dangerDisabled,
     state.label && state.placeholder && !state.root.contentBefore && rootStyles.labelPlaceholderFocus,
     state.label && (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,

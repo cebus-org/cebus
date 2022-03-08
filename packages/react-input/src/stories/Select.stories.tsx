@@ -27,9 +27,7 @@ export const BasicSelectExample = () => {
   return (
     <div className={styles.root}>
       <Select value={checkedValues} label="test" onCheckedValueChange={onCheckedValueChange}>
-        <Option value="segoe" icon={'test'} disabled>
-          Segoe
-        </Option>
+        <Option value="segoe">Segoe</Option>
         <Option value="calibri">Calibri</Option>
         <Option value="arial">Arial</Option>
       </Select>
