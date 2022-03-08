@@ -26,8 +26,9 @@
     "@griffel/react": "^1.0.0",
     "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@fluentui/react-aria": "9.0.0-rc.5",
-    "@pongo-ui/react-theme": "*"
+    "@fluentui/react-aria": "^9.0.0-rc.5",
+    "@pongo-ui/react-theme": "*",
+    "@pongo-ui/react-menu": "^0.0.3"
   },
   "devDependencies": {},
   "peerDependencies": {
