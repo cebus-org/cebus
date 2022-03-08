@@ -2,6 +2,21 @@
   "name": "@pongo-ui/eslint-plugin",
   "entries": [
     {
+      "date": "Tue, 08 Mar 2022 23:39:41 GMT",
+      "tag": "@pongo-ui/eslint-plugin_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/eslint-plugin",
+            "commit": "5740f78d4e9ddf25e2e87fef7da9a91dc5a3e87c",
+            "comment": "Updating github url."
+          }
+        ]
+      }
+    },
+    {
       "date": "Sat, 19 Feb 2022 03:43:19 GMT",
       "tag": "@pongo-ui/eslint-plugin_v0.0.1",
       "version": "0.0.1",

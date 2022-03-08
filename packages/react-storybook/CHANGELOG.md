@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-storybook
 
-This log was last generated on Fri, 04 Mar 2022 22:21:59 GMT and should not be manually modified.
+This log was last generated on Tue, 08 Mar 2022 23:39:42 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.6
+
+Tue, 08 Mar 2022 23:39:42 GMT
+
+### Patches
+
+- Bump @pongo-ui/react-theme to v0.0.6
 
 ## 0.0.5
 

@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/eslint-plugin",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Eslint configuration for the pongo-ui package.",
   "main": "src/index.js",
   "exports": {

@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-theme",
   "entries": [
     {
+      "date": "Tue, 08 Mar 2022 23:39:41 GMT",
+      "tag": "@pongo-ui/react-theme_v0.0.6",
+      "version": "0.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-theme",
+            "commit": "5740f78d4e9ddf25e2e87fef7da9a91dc5a3e87c",
+            "comment": "Updating github url"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-theme",
+            "comment": "Bump @pongo-ui/react-theme-generator to v0.1.1",
+            "commit": "00e97cadb35aba72097195cc7ffdde721eed01d5"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 04 Mar 2022 22:21:59 GMT",
       "tag": "@pongo-ui/react-theme_v0.0.5",
       "version": "0.0.5",

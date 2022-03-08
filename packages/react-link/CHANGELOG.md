@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-link
 
-This log was last generated on Fri, 04 Mar 2022 22:21:59 GMT and should not be manually modified.
+This log was last generated on Tue, 08 Mar 2022 23:39:41 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.5
+
+Tue, 08 Mar 2022 23:39:41 GMT
+
+### Patches
+
+- Updating github url (czearing@outlook.com)
 
 ## 0.1.4
 
