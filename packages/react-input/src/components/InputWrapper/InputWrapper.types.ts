@@ -9,7 +9,7 @@ export type InputWrapperSlots = {
   /**
    * The border around the inner Input element.
    */
-  border: NonNullable<Slot<'span'>>;
+  border: NonNullable<Slot<'fieldset'>>;
 
   /**
    * The inner nearest content to render within the Input.
@@ -30,6 +30,11 @@ export type InputWrapperSlots = {
    * The visible label text for the TextField component.
    */
   label?: Slot<'label'>;
+
+  /**
+   * The hidden legend element used to position the Input border for the Label element.
+   */
+  legend?: Slot<'legend'>;
 };
 
 export type InputWrapperCommons = {

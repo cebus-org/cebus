@@ -16,6 +16,7 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
     labelId,
     label,
     value,
+    legend,
   } = props;
 
   const state: InputWrapperState = {
@@ -30,9 +31,10 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
       root: 'span',
       contentBefore: 'span',
       contentAfter: 'span',
-      border: 'span',
+      border: 'fieldset',
       helperText: 'p',
       label: 'label',
+      legend: 'legend',
     },
     root: getNativeElementProps('div', {
       ref,
@@ -43,7 +45,10 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
     contentAfter: resolveShorthand(contentAfter),
     contentBefore: resolveShorthand(contentBefore),
     label: resolveShorthand(label),
+    legend: resolveShorthand(legend),
   };
+
+  state.border['aria-hidden'] = true;
 
   if (state.helperText) {
     state.helperText.id = helperTextId;
@@ -52,8 +57,6 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
   if (state.label) {
     state.label.htmlFor = labelId;
   }
-
-  console.log(state.value);
 
   return state;
 };

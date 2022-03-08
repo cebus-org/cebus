@@ -53,6 +53,9 @@ export const useInputState = (state: InputState) => {
 
   if (label) {
     state.root.label = label;
+    if (state.appearance === 'outline') {
+      state.root.legend = label;
+    }
     state.root.labelId = labelId;
     state.input.id = labelId;
   }

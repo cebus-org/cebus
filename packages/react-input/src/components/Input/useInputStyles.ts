@@ -5,14 +5,12 @@ import { tokens } from '@pongo-ui/react-theme';
 export const useInputElementStyles = makeStyles({
   input: {
     ...shorthands.margin('0px'),
-    ...shorthands.padding('0px'),
+    ...shorthands.padding('0px', '10px'),
     ...shorthands.borderStyle('none'),
     boxSizing: 'border-box',
     flexGrow: 1,
     minWidth: 0,
     height: '100%',
-    paddingLeft: '10px',
-    paddingRight: '10px',
     backgroundColor: 'transparent',
     ':focus-visible': {
       outlineStyle: 'none',
@@ -91,7 +89,7 @@ export const useInputStyles = (state: InputState) => {
     !state.disabled && state.danger && rootStyles.danger,
     state.disabled && state.danger && rootStyles.dangerDisabled,
     state.label && state.placeholder && !state.root.contentBefore && rootStyles.labelPlaceholderFocus,
-    (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,
+    state.label && (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,
     rootStyles[state.size!],
     state.input.className,
   );

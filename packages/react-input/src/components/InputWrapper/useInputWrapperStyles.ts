@@ -1,9 +1,9 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
-import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 import type { InputWrapperState } from './InputWrapper.types';
 import { tokens } from '@pongo-ui/react-theme';
 
 export const labelClassName = 'pongo-input-label';
+export const legendClassName = 'pongo-input-legend';
 
 const labelFocusedSize = '--focused-label-font-size';
 
@@ -17,22 +17,15 @@ export const useRootStyles = makeStyles({
     color: tokens.textColor,
     backgroundColor: tokens.canvasColor,
     fontFamily: tokens.baseFont,
+    ...shorthands.margin('0px'),
+    ...shorthands.padding('0px'),
+    ...shorthands.borderStyle('none'),
   },
 
   // Appearance
   outline: {
-    ':before': {
-      content: '""',
-      position: 'absolute',
-      top: '0px',
-      right: '0px',
-      bottom: '0px',
-      left: '0px',
-      userSelect: 'none',
-      pointerEvents: 'none',
-      ...shorthands.border('1px', 'solid', tokens.inherit),
-      ...shorthands.borderRadius(tokens.rounded),
-    },
+    ...shorthands.border('1px', 'solid', tokens.inherit),
+    ...shorthands.borderRadius(tokens.rounded),
   },
 
   standard: {
@@ -68,6 +61,8 @@ export const useRootStyles = makeStyles({
 
   defaultFocus: {
     ':focus-within': {
+      ...shorthands.borderColor(tokens.brand),
+      ...shorthands.borderWidth('2px'),
       ':before': {
         ...shorthands.borderColor(tokens.brand),
         ...shorthands.borderWidth('2px'),
@@ -75,11 +70,16 @@ export const useRootStyles = makeStyles({
       [`& .${labelClassName}`]: {
         color: tokens.brand,
       },
+      [`& .${legendClassName}`]: {
+        width: 'auto',
+      },
     },
   },
 
   dangerFocus: {
     ':focus-within': {
+      ...shorthands.borderColor(tokens.danger),
+      ...shorthands.borderWidth('2px'),
       ':before': {
         ...shorthands.borderColor(tokens.danger),
         ...shorthands.borderWidth('2px'),
@@ -100,12 +100,14 @@ export const useRootStyles = makeStyles({
   },
 
   disabled: {
+    ...shorthands.borderColor(tokens.inheritDisabled),
     ':before': {
       ...shorthands.borderColor(tokens.inheritDisabled),
     },
   },
 
   disabledDanger: {
+    ...shorthands.borderColor(tokens.dangerDisabled),
     ':before': {
       ...shorthands.borderColor(tokens.dangerDisabled),
     },
@@ -135,33 +137,15 @@ export const useRootStyles = makeStyles({
 
   // Danger
   danger: {
+    ...shorthands.borderColor(tokens.danger),
     ':before': {
       ...shorthands.borderColor(tokens.danger),
     },
   },
-
-  // Focus
-  focusIndicator: createCustomFocusIndicatorStyle(
-    {
-      ':after': {
-        content: "''",
-        position: 'absolute',
-        top: '-8px',
-        right: '-8px',
-        bottom: '-8px',
-        left: '-8px',
-        boxSizing: 'border-box',
-        ...shorthands.border('2px', 'solid', tokens.textColor),
-        ...shorthands.borderRadius(tokens.rounded),
-      },
-    },
-    { selector: 'focus-within' },
-  ),
 });
 
 const useHelperTextStyles = makeStyles({
   helperText: {
-    position: 'relative',
     ...shorthands.padding('5px', '10px'),
     ...shorthands.margin('0px'),
     fontFamily: tokens.baseFont,
@@ -209,8 +193,8 @@ export const useLabelStyles = makeStyles({
   label: {
     position: 'absolute',
     height: '100%',
-    margin: '0px',
-    padding: '0px 10px',
+    ...shorthands.margin('0px'),
+    ...shorthands.padding('0px', '10px'),
     color: tokens.inherit,
     fontFamily: tokens.baseFont,
     whiteSpace: 'nowrap',
@@ -269,17 +253,39 @@ export const useLabelStyles = makeStyles({
   },
 });
 
+export const useLegendStyles = makeStyles({
+  legend: {
+    position: 'relative',
+    ...shorthands.padding('0px'),
+    visibility: 'hidden',
+    fontSize: labelFocusedSize,
+    height: '0px',
+    color: 'red',
+    fontFamily: tokens.baseFont,
+    marginLeft: '7px',
+    marginRight: '10px',
+  },
+
+  active: {
+    width: 'auto',
+  },
+
+  inactive: {
+    width: '0px',
+  },
+});
+
 export const useInputWrapperStyles = (state: InputWrapperState) => {
   const rootStyles = useRootStyles();
   const contentStyles = useContentStyles();
   const labelStyles = useLabelStyles();
   const helperTextStyles = useHelperTextStyles();
+  const legendStyles = useLegendStyles();
 
   state.border.className = mergeClasses(
     rootStyles.root,
     rootStyles[state.size!],
     rootStyles[state.appearance!],
-    rootStyles.focusIndicator,
     state.danger && rootStyles.danger,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     !state.disabled && (state.danger ? rootStyles.dangerFocus : rootStyles.defaultFocus),
@@ -327,12 +333,23 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
       (state.value !== (undefined || '') || state.contentBefore !== undefined) &&
         state.label !== undefined &&
         labelStyles[state.appearance!],
-      // !state.disabled ? labelStyles.enabled : labelStyles.disabled,
-      // state.error && labelStyles.error,
-      // (state.input.value !== '' || state.suffix !== undefined) &&
-      //   (state.label !== undefined ? labelStyles[state.appearance!] : labelStyles.placeholder),
       state.label.className,
     );
+  }
+
+  if (state.legend) {
+    state.legend.className = mergeClasses(
+      legendClassName,
+      legendStyles.legend,
+      state.value !== '' || state.contentBefore !== undefined ? legendStyles.active : legendStyles.inactive,
+      state.legend.className,
+    );
+    // legendClassName,
+
+    // state.input.value !== '' || state.suffix !== undefined
+    //   ? textFieldLegendStyles.active
+    //   : textFieldLegendStyles.inactive,
+    // state.textFieldLegend.className,
   }
 
   return state;

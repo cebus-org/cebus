@@ -26,9 +26,9 @@ export const BasicInputExample = () => {
 
   return (
     <div className={styles.root}>
-      <Input size="large" label="Name" placeholder="Enter your name" appearance="outline" />
-      <Input size="large" label="Name" placeholder="Enter your name" appearance="standard" />
-      <Input size="large" label="Name" placeholder="Enter your name" appearance="filled" />
+      <Input label="Name" placeholder="Enter your name" appearance="outline" />
+      <Input label="Name" placeholder="Enter your name" appearance="standard" />
+      <Input label="Name" placeholder="Enter your name" appearance="filled" />
     </div>
   );
 };
