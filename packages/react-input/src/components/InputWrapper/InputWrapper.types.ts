@@ -72,9 +72,9 @@ export type InputWrapperCommons = {
   labelId?: string;
 
   /**
-   * The value of the input element. This is used to ensure that the Label transition are correct.
+   * The currentValue of the input element. This is used to ensure that the Label transition are correct.
    */
-  value?: string;
+  currentValue?: string;
 };
 
 export type InputWrapperProps = ComponentProps<Partial<InputWrapperSlots>> & InputWrapperCommons;

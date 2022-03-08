@@ -4,12 +4,13 @@ import { useSelectState } from './useSelectState';
 import type { SelectProps, SelectState } from './Select.types';
 import { InputWrapper } from '../InputWrapper';
 import { Menu, MenuPopover, MenuTrigger, MenuList } from '@pongo-ui/react-menu';
+import { useFocusableGroup } from '@fluentui/react-tabster';
 
 export const useSelect = (props: SelectProps, ref: React.Ref<HTMLInputElement>): SelectState => {
   const {
     value,
     defaultValue,
-    onChange,
+    onCheckedValueChange,
     appearance = 'outline',
     contentBefore,
     contentAfter,
@@ -26,10 +27,12 @@ export const useSelect = (props: SelectProps, ref: React.Ref<HTMLInputElement>):
     select,
   } = props;
 
+  const groupFocusAttributes = useFocusableGroup({ tabBehavior: 'limitedTrapFocus' });
+
   const state: SelectState = {
     value,
     defaultValue,
-    onChange,
+    onCheckedValueChange,
     size,
     appearance,
     disabled,
@@ -49,6 +52,7 @@ export const useSelect = (props: SelectProps, ref: React.Ref<HTMLInputElement>):
     },
     root: getNativeElementProps('div', {
       ref,
+      ...groupFocusAttributes,
       ...props,
     }),
     select: resolveShorthand(select, { required: true }),

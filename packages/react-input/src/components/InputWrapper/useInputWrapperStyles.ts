@@ -332,7 +332,7 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
       state.disabled ? contentStyles.disabled : contentStyles.enabled,
       state.danger && contentStyles.danger,
       state.disabled && state.danger && contentStyles.disabledDanger,
-      (state.value !== (undefined || '') || state.contentBefore !== undefined) &&
+      (state.currentValue !== (undefined || '') || state.contentBefore !== undefined) &&
         state.label !== undefined &&
         labelStyles[state.appearance!],
       state.appearance === 'outline' && labelStyles.outlineBackground,

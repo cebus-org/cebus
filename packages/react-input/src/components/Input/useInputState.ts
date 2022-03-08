@@ -43,7 +43,7 @@ export const useInputState = (state: InputState) => {
   state.root.size = size;
   state.root.contentBefore = contentBefore;
   state.root.contentAfter = contentAfter;
-  state.root.value = currentValue;
+  state.root.currentValue = currentValue;
 
   if (helperText) {
     state.root.helperText = helperText;

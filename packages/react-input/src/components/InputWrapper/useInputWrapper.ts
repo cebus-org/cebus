@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { getNativeElementProps, resolveShorthand } from '@fluentui/react-utilities';
 import type { InputWrapperProps, InputWrapperState } from './InputWrapper.types';
+import { useFocusableGroup } from '@fluentui/react-tabster';
 
 export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLElement>): InputWrapperState => {
   const {
@@ -15,8 +16,10 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
     helperTextId,
     labelId,
     label,
-    value,
+    currentValue,
   } = props;
+
+  const groupFocusAttributes = useFocusableGroup({ tabBehavior: 'limitedTrapFocus' });
 
   const state: InputWrapperState = {
     size,
@@ -24,7 +27,7 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
     disabled,
     danger,
     labelId,
-    value,
+    currentValue,
     helperTextId,
     components: {
       root: 'span',
@@ -36,6 +39,7 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
     },
     root: getNativeElementProps('div', {
       ref,
+      ...groupFocusAttributes,
       ...props,
     }),
     border: resolveShorthand(border, { required: true }),

@@ -1,8 +1,7 @@
 import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utilities';
 import type { InputWrapperCommons } from '../InputWrapper';
 import { InputWrapper } from '../InputWrapper';
-import { MenuPopover, MenuList } from '@pongo-ui/react-menu';
-import type { MenuProps } from '@pongo-ui/react-menu';
+import { Menu, MenuPopover, MenuList } from '@pongo-ui/react-menu';
 
 export type SelectSlots = {
   /**
@@ -43,18 +42,18 @@ type SelectCommons = {
    *
    * @defaultValue ''
    */
-  defaultValue?: string;
+  defaultValue?: string[];
 
   /**
    * The current value for a controlled Input. If `true` then the Input will be enabled.
    * Mutually exclusive with `defaultValue` prop.
    */
-  value?: string;
+  value?: string[];
 
   /**
    * Callback to be called when the value changes.
    */
-  onChange?: MenuProps['onCheckedValueChange'];
+  onCheckedValueChange?: (ev: React.MouseEvent | React.KeyboardEvent, data: { checkedItems: string[] }) => void;
 
   /**
    * The content to render before the Select.

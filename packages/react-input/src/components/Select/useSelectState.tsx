@@ -1,14 +1,14 @@
 import * as React from 'react';
 import type { SelectState } from './Select.types';
-import { useControllableState, useEventCallback, useMergedRefs, useId } from '@fluentui/react-utilities';
+import { useControllableState, useMergedRefs, useId } from '@fluentui/react-utilities';
 import type { MenuProps } from '@pongo-ui/react-menu';
 import { MenuItemRadio } from '@pongo-ui/react-menu';
 import { Chevron } from './Chevron';
 
 export const useSelectState = (state: SelectState) => {
   const {
-    defaultValue,
-    value,
+    defaultValue: originalDefaultValue,
+    value: originalValue,
     appearance,
     danger,
     disabled,
@@ -17,14 +17,17 @@ export const useSelectState = (state: SelectState) => {
     helperText,
     contentBefore,
     contentAfter,
-    onChange,
+    onCheckedValueChange,
   } = state;
   const { id } = state.select;
 
-  const [currentValue, setCurrentValue] = useControllableState({
+  const defaultValue = originalDefaultValue && { select: originalDefaultValue };
+  const value = originalValue && { select: originalValue };
+
+  const [currentValue, setCurrentValue] = useControllableState<{ select: string[] }>({
     defaultState: defaultValue,
     state: value,
-    initialState: { font: ['segoe'] },
+    initialState: { select: ['segoe'] },
   });
 
   const [open, setOpen] = React.useState(false);
@@ -32,9 +35,9 @@ export const useSelectState = (state: SelectState) => {
   const labelId = label ? useId('select-label', id) : undefined;
   const triggerRef = React.useRef<HTMLSelectElement>(null);
 
-  const onCheckedValueChange: MenuProps['onCheckedValueChange'] = (ev, { name, checkedItems }) => {
-    onChange?.(ev, { name: name, checkedItems: checkedItems });
-    setCurrentValue({ [name]: checkedItems });
+  const onChange: MenuProps['onCheckedValueChange'] = (ev, { checkedItems }) => {
+    onCheckedValueChange?.(ev, { checkedItems: checkedItems });
+    setCurrentValue({ select: checkedItems });
   };
 
   const onOpenChange: MenuProps['onOpenChange'] = (e, data) => {
@@ -62,13 +65,6 @@ export const useSelectState = (state: SelectState) => {
     }
   };
 
-  // const getValue = () => {
-  //   const result = [];
-  //   for (let i = 0; i < currentValue?.length; i++) {
-  //     result.push(currentValue[i])
-  //   }
-  // };
-
   state.select.ref = useMergedRefs(state.select.ref, triggerRef);
   state.root.appearance = appearance;
   state.root.danger = danger;
@@ -76,15 +72,15 @@ export const useSelectState = (state: SelectState) => {
   state.root.size = size;
   state.root.contentBefore = contentBefore;
   state.root.contentAfter = contentAfter;
-  state.root.value = currentValue.font[0];
+  state.root.currentValue = currentValue.select[0];
 
   state.menu.open = open;
   state.menu.onOpenChange = onOpenChange;
 
-  state.menuList.onCheckedValueChange = onCheckedValueChange;
+  state.menuList.onCheckedValueChange = onChange;
   state.menuList.checkedValues = currentValue;
 
-  state.select.value = currentValue.font[0];
+  state.select.value = currentValue.select[0];
   state.select.onChange = onSelectChange;
   state.select.onMouseDown = onSelectMouseDown;
   state.select.onKeyDown = onSelectKeyDown;
@@ -95,11 +91,11 @@ export const useSelectState = (state: SelectState) => {
     state.select.id = labelId;
   }
 
-  // if (helperText) {
-  //   state.root.helperText = helperText;
-  //   // state.root.helperTextId = helperTextId;
-  //   // state.input['aria-describedby'] = helperTextId;
-  // }
+  if (helperText) {
+    state.root.helperText = helperText;
+    // state.root.helperTextId = helperTextId;
+    // state.input['aria-describedby'] = helperTextId;
+  }
 
   state.root.contentBefore = contentBefore;
 

@@ -9,7 +9,7 @@ import type { ForwardRefComponent } from '@fluentui/react-utilities';
  * The Select component allows for users to choose an option from a dropdown menu.
  */
 export const Select: ForwardRefComponent<SelectProps> = React.forwardRef((props, ref) => {
-  const state = useSelect(props, ref);
+  const state = useSelect(props, ref as any);
 
   useSelectStyles(state);
 
