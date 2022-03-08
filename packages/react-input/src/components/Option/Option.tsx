@@ -8,7 +8,7 @@ import type { ForwardRefComponent } from '@fluentui/react-utilities';
  * The option component used for children within Select.
  */
 export const Option: ForwardRefComponent<OptionProps> = React.forwardRef((props, ref) => {
-  const state = useOption(props, ref);
+  const state = useOption(props, ref as any);
 
   return renderOption(state);
 }) as ForwardRefComponent<OptionProps>;
