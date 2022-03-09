@@ -10,7 +10,7 @@ export const BasicMenuExample = () => {
   };
 
   return (
-    <Menu open={open} onOpenChange={onOpenChange}>
+    <Menu open={open} onOpenChange={onOpenChange} inline={false}>
       <MenuTrigger>
         <Button>Open Menu</Button>
       </MenuTrigger>
