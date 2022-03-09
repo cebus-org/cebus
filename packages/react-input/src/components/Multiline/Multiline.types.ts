@@ -20,12 +20,12 @@ type MultilineCommons = {
    *
    * @defaultValue ''
    */
-  defaultValue?: string[];
+  defaultValue?: string;
 
   /**
    * The current value for a controlled Multiline.
    */
-  value?: string[];
+  value?: string;
 
   /**
    * Callback to be called when the value changes.

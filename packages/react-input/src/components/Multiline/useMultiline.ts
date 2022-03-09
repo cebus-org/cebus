@@ -16,6 +16,8 @@ export const useMultiline = (props: MultilineProps, ref: React.Ref<HTMLTextAreaE
     disabled,
     danger,
     label,
+    autoAdjust = true,
+    resizable = false,
     placeholder,
     helperText,
   } = props;
@@ -35,6 +37,8 @@ export const useMultiline = (props: MultilineProps, ref: React.Ref<HTMLTextAreaE
     disabled,
     danger,
     contentBefore,
+    resizable,
+    autoAdjust,
     contentAfter,
     helperText,
     label,

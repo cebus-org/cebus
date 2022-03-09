@@ -20,7 +20,7 @@ export const BasicMultilineExample = () => {
 
   return (
     <div className={styles.root}>
-      <Multiline />
+      <Multiline label="test" resizable />
     </div>
   );
 };

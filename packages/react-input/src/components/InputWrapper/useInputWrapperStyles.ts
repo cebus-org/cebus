@@ -13,6 +13,7 @@ export const useRootStyles = makeStyles({
     position: 'relative',
     boxSizing: 'border-box',
     display: 'flex',
+    flexGrow: 2,
     alignItems: 'center',
     flexWrap: 'nowrap',
     color: tokens.textColor,
@@ -127,8 +128,8 @@ export const useRootStyles = makeStyles({
   },
 
   medium: {
-    height: '45px',
-    width: '200px',
+    minHeight: '45px',
+    minWidth: '200px',
     fontSize: tokens.fontSize300,
     [labelFocusedSize]: tokens.fontSize200,
   },
@@ -214,7 +215,7 @@ export const useLabelStyles = makeStyles({
     transitionProperty: 'transform, font-size, top',
     transitionDuration: '.1s',
     transitionDelay: 'cubic-bezier(0.33, 0.0, 0.67, 1)',
-
+    background: 'red',
     ':before': {
       content: '""',
       position: 'absolute',

@@ -2,9 +2,55 @@ import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { MultilineState } from './Multiline.types';
 import { tokens } from '@pongo-ui/react-theme';
 
-export const useMultilineStyles = (state: MultilineState) => {
-  // const rootStyles = useInputElementStyles();
+const useTextAreaStyles = makeStyles({
+  root: {
+    position: 'relative',
+    display: 'block',
+    boxSizing: 'border-box',
+    minHeight: '100%',
+    minWidth: '100%',
+    ...shorthands.borderStyle('none'),
+    backgroundColor: 'transparent',
+    ...shorthands.borderRadius(tokens.rounded),
+    fontFamily: tokens.baseFont,
+    // background: 'red',
+    padding: '10px',
+    ':focus-visible': {
+      outlineStyle: 'none',
+    },
+  },
 
+  small: {
+    fontSize: tokens.fontSize200,
+  },
+
+  medium: {
+    fontSize: tokens.fontSize300,
+  },
+
+  large: {
+    fontSize: tokens.fontSize400,
+  },
+
+  disableResize: {
+    resize: 'none',
+  },
+
+  autoAdjust: {
+    overflow: 'hidden',
+  },
+});
+
+export const useMultilineStyles = (state: MultilineState) => {
+  const textAreaStyles = useTextAreaStyles();
+
+  state.textarea.className = mergeClasses(
+    textAreaStyles.root,
+    state.autoAdjust && textAreaStyles.autoAdjust,
+    textAreaStyles[state.size!],
+    !state.resizable && textAreaStyles.disableResize,
+    state.textarea.className,
+  );
   // state.input.className = mergeClasses(
   //   rootStyles.input,
   //   state.disabled ? rootStyles.disabled : rootStyles.enabled,
