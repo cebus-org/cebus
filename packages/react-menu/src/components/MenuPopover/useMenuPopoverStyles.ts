@@ -9,6 +9,7 @@ const useStyles = makeStyles({
     maxWidth: '300px',
     backgroundColor: tokens.canvasColor,
     filter: tokens.elevate,
+    zIndex: 10000,
   },
 });
 
