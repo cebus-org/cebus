@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-menu",
   "entries": [
     {
+      "date": "Wed, 09 Mar 2022 23:55:27 GMT",
+      "tag": "@pongo-ui/react-menu_v0.0.6",
+      "version": "0.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-menu",
+            "commit": "e0e004de6378083cbb3903349fc3e50dc2e942c4",
+            "comment": "Updating inline default to be true and bumping zIndex of menu."
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 09 Mar 2022 22:03:39 GMT",
       "tag": "@pongo-ui/react-menu_v0.0.5",
       "version": "0.0.5",

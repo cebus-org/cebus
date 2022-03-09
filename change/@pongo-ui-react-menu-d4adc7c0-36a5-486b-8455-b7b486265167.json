@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Updating inline default to be true and bumping zIndex of menu.",
-  "packageName": "@pongo-ui/react-menu",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}
