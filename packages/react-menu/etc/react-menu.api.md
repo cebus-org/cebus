@@ -15,12 +15,13 @@ import type { MenuListProps } from '@fluentui/react-menu';
 import type { MenuListState } from '@fluentui/react-menu';
 import type { MenuPopoverProps } from '@fluentui/react-menu';
 import type { MenuPopoverState } from '@fluentui/react-menu';
-import { MenuProps as MenuProps_2 } from '@fluentui/react-menu';
+import type { MenuProps as MenuProps_2 } from '@fluentui/react-menu';
 import type { MenuState as MenuState_2 } from '@fluentui/react-menu';
 import { MenuTriggerProps } from '@fluentui/react-menu';
+import * as React_2 from 'react';
 
 // @public
-export const Menu: FC<MenuProps_2>;
+export const Menu: React_2.FC<MenuProps>;
 
 // @public (undocumented)
 export const menuFocusRectColor = "--pongo-menu-item-focus-color";
