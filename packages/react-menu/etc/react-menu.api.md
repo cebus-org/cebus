@@ -22,6 +22,9 @@ import { MenuTriggerProps } from '@fluentui/react-menu';
 // @public
 export const Menu: FC<MenuProps_2>;
 
+// @public (undocumented)
+export const menuFocusRectColor = "--pongo-menu-item-focus-color";
+
 // @public
 export const MenuItem: ForwardRefComponent<MenuItemProps>;
 
