@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from '../index';
+import { Multiline } from '../index';
 import { makeStyles, shorthands } from '@griffel/react';
 
 const useStyles = makeStyles({
@@ -8,20 +8,24 @@ const useStyles = makeStyles({
     flexDirection: 'column',
     ...shorthands.gap('10px'),
   },
+  row: {
+    display: 'inline-flex',
+    flexDirection: 'column',
+    ...shorthands.gap('10px'),
+  },
 });
 
-export const BasicLinkExample = () => {
+export const BasicMultilineExample = () => {
   const styles = useStyles();
 
   return (
     <div className={styles.root}>
-      <Link>Basic</Link>
-      <Link disabled>Basic</Link>
+      <Multiline />
     </div>
   );
 };
 
 export default {
-  title: 'Components/Link',
-  component: Link,
+  title: 'Components/Multiline',
+  component: Multiline,
 };

@@ -5,7 +5,7 @@ import { MenuPopover, MenuList } from '@pongo-ui/react-menu';
 
 export type SelectSlots = {
   /**
-   * The root of the Input. This is the wrapper component that handles it's appearance.
+   * The root of the Select. This is the wrapper component that handles it's appearance.
    */
   root: NonNullable<Slot<typeof InputWrapper>>;
 
@@ -37,16 +37,14 @@ export type SelectSlots = {
 
 type SelectCommons = {
   /**
-   * The starting value for a uncontrolled Input. If `true` then the Input will be enabled.
-   * Mutually exclusive with `value` prop.
+   * The starting value for a uncontrolled Select.
    *
    * @defaultValue ''
    */
   defaultValue?: string[];
 
   /**
-   * The current value for a controlled Input. If `true` then the Input will be enabled.
-   * Mutually exclusive with `defaultValue` prop.
+   * The current value for a controlled Select.
    */
   value?: string[];
 
