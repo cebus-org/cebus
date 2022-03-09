@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-button",
   "entries": [
     {
+      "date": "Wed, 09 Mar 2022 22:03:39 GMT",
+      "tag": "@pongo-ui/react-button_v1.1.15",
+      "version": "1.1.15",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-button",
+            "commit": "ef7afa66a5dd3c5979fe8a52c5976aeb8b6921f1",
+            "comment": "Renaming css vars."
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 08 Mar 2022 23:39:41 GMT",
       "tag": "@pongo-ui/react-button_v1.1.14",
       "version": "1.1.14",
