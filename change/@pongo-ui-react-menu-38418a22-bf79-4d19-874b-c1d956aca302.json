@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Updating default props and reverting a previous change.",
-  "packageName": "@pongo-ui/react-menu",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-input
 
-This log was last generated on Wed, 09 Mar 2022 23:55:27 GMT and should not be manually modified.
+This log was last generated on Thu, 10 Mar 2022 05:11:13 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.4
+
+Thu, 10 Mar 2022 05:11:13 GMT
+
+### Patches
+
+- Bump @pongo-ui/react-menu to v0.0.7
 
 ## 0.1.3
 

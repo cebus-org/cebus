@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-menu",
   "entries": [
     {
+      "date": "Thu, 10 Mar 2022 05:11:13 GMT",
+      "tag": "@pongo-ui/react-menu_v0.0.7",
+      "version": "0.0.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-menu",
+            "commit": "8e018a7626e7659827b0a2e9d7aacb47afdc548b",
+            "comment": "Updating default props and reverting a previous change."
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 09 Mar 2022 23:55:27 GMT",
       "tag": "@pongo-ui/react-menu_v0.0.6",
       "version": "0.0.6",
