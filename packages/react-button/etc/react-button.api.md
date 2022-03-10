@@ -12,7 +12,7 @@ import * as React_2 from 'react';
 import type { Slot } from '@fluentui/react-utilities';
 
 // @public (undocumented)
-export const backgroundCSSVariable = "--pongoai-button-background-color";
+export const backgroundCSSVariable = "--pongo-button-background-color";
 
 // @public
 export const Button: ForwardRefComponent<ButtonProps>;
@@ -31,16 +31,16 @@ export type ButtonSlots = {
 export type ButtonState = ComponentState<ButtonSlots> & ButtonCommons;
 
 // @public (undocumented)
-export const foregroundHoverCSSVariable = "--pongoai-foreground-hover-color";
+export const foregroundHoverCSSVariable = "--pongo-foreground-hover-color";
 
 // @public (undocumented)
-export const foregroundPressedCSSVariable = "--pongoai-foreground-pressed-color";
+export const foregroundPressedCSSVariable = "--pongo-foreground-pressed-color";
 
 // @public (undocumented)
-export const hoverCSSVariable = "--pongoai-button-hover-color";
+export const hoverCSSVariable = "--pongo-button-hover-color";
 
 // @public (undocumented)
-export const pressedCSSVariable = "--pongoai-button-pressed-color";
+export const pressedCSSVariable = "--pongo-button-pressed-color";
 
 // @public (undocumented)
 const renderButton: (state: ButtonState) => JSX.Element;

@@ -38,11 +38,9 @@
     "@fluentui/react-conformance": "^0.10.1",
     "@fluentui/react-conformance-griffel": "^9.0.0-beta.3"
   },
-  "workspaces": {
-    "packages": [
-      "apps/*",
-      "scripts",
-      "packages/*"
-    ]
-  }
+  "workspaces": [
+    "apps/*",
+    "scripts",
+    "packages/*"
+  ]
 }
