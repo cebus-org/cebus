@@ -1,18 +1,18 @@
 import * as React from 'react';
-import { useButton } from './useToolbar';
-import { renderButton } from './renderToolbar';
-import { useButtonStyles } from './useToolbarStyles';
-import type { ButtonProps } from './Toolbar.types';
+import { useToolbar } from './useToolbar';
+import { renderToolbar } from './renderToolbar';
+import { useToolbarStyles } from './useToolbarStyles';
+import type { ToolbarProps } from './Toolbar.types';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
 
 /**
- * The Button allows a user to make an action through a press.
+ * The Toolbar component displays important information and actions for an application.
  */
-export const Button: ForwardRefComponent<ButtonProps> = React.forwardRef((props, ref) => {
-  const state = useButton(props, ref);
+export const Toolbar: ForwardRefComponent<ToolbarProps> = React.forwardRef((props, ref) => {
+  const state = useToolbar(props, ref);
 
-  useButtonStyles(state);
+  useToolbarStyles(state);
 
-  return renderButton(state);
+  return renderToolbar(state);
 });
-Button.displayName = 'Button';
+Toolbar.displayName = 'Toolbar';

@@ -1,35 +1,26 @@
 import * as React from 'react';
 import { getNativeElementProps } from '@fluentui/react-utilities';
-import { useButtonState } from './useToolbarState';
-import { useARIAButton } from '@fluentui/react-aria';
-import type { ARIAButtonSlotProps } from '@fluentui/react-aria';
-import type { ButtonProps, ButtonState } from './Toolbar.types';
+import { useToolbarState } from './useToolbarState';
+import type { ToolbarProps, ToolbarState } from './Toolbar.types';
+import { useFocusableGroup } from '@fluentui/react-tabster';
 
-export const useButton = (props: ButtonProps, ref: React.Ref<HTMLElement>): ButtonState => {
-  const { as, appearance = 'outline', color = 'inherit', disabled = false, size = 'medium', shape = 'rounded' } = props;
+export const useToolbar = (props: ToolbarProps, ref: React.Ref<HTMLElement>): ToolbarState => {
+  const {} = props;
+  const groupFocusAttributes = useFocusableGroup({ tabBehavior: 'limitedTrapFocus' });
 
-  const state: ButtonState = {
-    appearance,
-    disabled,
-    shape,
-    size,
-    color,
+  const state: ToolbarState = {
     components: {
-      root: 'button',
+      root: 'header',
     },
-    root: getNativeElementProps(
-      as || 'button',
-      useARIAButton<ARIAButtonSlotProps>(props, {
-        required: true,
-        defaultProps: {
-          ref: ref as React.Ref<HTMLButtonElement>,
-          type: 'button',
-        },
-      }),
-    ),
+    root: getNativeElementProps('header', {
+      ref,
+      role: 'group',
+      ...groupFocusAttributes,
+      ...props,
+    }),
   };
 
-  useButtonState(state);
+  useToolbarState(state);
 
   return state;
 };
