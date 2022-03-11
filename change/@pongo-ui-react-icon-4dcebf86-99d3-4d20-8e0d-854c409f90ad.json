@@ -1,0 +1,7 @@
+{
+  "type": "minor",
+  "comment": "Removing span wrapper.",
+  "packageName": "@pongo-ui/react-icon",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "patch"
+}
