@@ -3,7 +3,7 @@ import type { ToolbarButtonState } from './ToolbarButton.types';
 import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 import { tokens } from '@pongo-ui/react-theme';
 
-export const useRootStyles = makeStyles({
+const useRootStyles = makeStyles({
   root: {
     position: 'relative',
     display: 'inline-flex',

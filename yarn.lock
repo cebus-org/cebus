@@ -1572,7 +1572,7 @@
   dependencies:
     tslib "^2.1.0"
 
-"@fluentui/react-utilities@9.0.0-rc.5", "@fluentui/react-utilities@^9.0.0-rc.1", "@fluentui/react-utilities@^9.0.0-rc.5":
+"@fluentui/react-utilities@9.0.0-rc.5", "@fluentui/react-utilities@^9.0.0-rc.5":
   version "9.0.0-rc.5"
   resolved "https://registry.yarnpkg.com/@fluentui/react-utilities/-/react-utilities-9.0.0-rc.5.tgz#9587d44a0e2081bf59fd6264a6fc3f6e8d73df37"
   integrity sha512-bKiMS4b2080ONQgXjMcQjzCgLFtG+QBhCyXH9KhQgAy0RDozMYyQ50ChtJsIOIG05gKXK/sPsjjiC+vvlBornQ==
@@ -2402,19 +2402,6 @@
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
     source-map "^0.7.3"
-
-"@pongoai/react-icon@^0.1.62":
-  version "0.1.62"
-  resolved "https://registry.yarnpkg.com/@pongoai/react-icon/-/react-icon-0.1.62.tgz#2185c65920d92003cc23bd7f14c6b6c5d5ae03f1"
-  integrity sha512-PF9TxtsYpLjdiz3F4C2UNnHyqR5vEh6o4cH6eyv+i6P6AGd4ovoKKG6xO/fcEnb9Jm9IeILHers1bPchDi52Kg==
-  dependencies:
-    "@fluentui/react-utilities" "^9.0.0-rc.1"
-    "@griffel/react" "^1.0.0"
-
-"@pongoai/react-theme@^0.2.23":
-  version "0.2.23"
-  resolved "https://registry.yarnpkg.com/@pongoai/react-theme/-/react-theme-0.2.23.tgz#51dc8850764246cc5d6592d7a0f7675b050e1c1b"
-  integrity sha512-YCJP2xVsAUxQOhIdOWcUfT46zt9Gqb3Soq3KdDCCaUiXG2ckUuvuyldaQJLNvmA/osjTXYs6Q0zWKGceSd9gBQ==
 
 "@popperjs/core@^2.5.4", "@popperjs/core@^2.6.0":
   version "2.11.2"

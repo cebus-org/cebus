@@ -2,7 +2,7 @@ import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { ToolbarState } from './Toolbar.types';
 import { tokens } from '@pongo-ui/react-theme';
 
-export const useRootStyles = makeStyles({
+const useRootStyles = makeStyles({
   root: {
     position: 'fixed',
     height: '48px',

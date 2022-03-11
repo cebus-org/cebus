@@ -1,11 +1,11 @@
 import React from 'react';
-import { Toolbar } from './ToolbarButton';
-import { ToolbarProps } from './ToolbarButton.types';
+import { ToolbarButton } from './ToolbarButton';
+import { ToolbarButtonProps } from './ToolbarButton.types';
 import { isConformant } from '../../common/isConformant';
 
-describe('Toolbar', () => {
+describe('ToolbarButton', () => {
   isConformant({
-    Component: Toolbar as React.FunctionComponent<ToolbarProps>,
-    displayName: 'Toolbar',
+    Component: ToolbarButton as React.FunctionComponent<ToolbarButtonProps>,
+    displayName: 'ToolbarButton',
   });
 });
