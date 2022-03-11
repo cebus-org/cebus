@@ -28,7 +28,9 @@
     "@fluentui/react-menu": "^9.0.0-rc.5",
     "@pongo-ui/react-theme": "*"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@pongo-ui/react-button": "^1.1.16"
+  },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
     "@types/react-dom": ">=16.8.0 <18.0.0",
