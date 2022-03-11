@@ -10,6 +10,7 @@ const testedComponentPackages = [
   'react-avatar',
   'react-input',
   'react-toolbar',
+  'react-icon',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(

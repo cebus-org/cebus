@@ -14,6 +14,7 @@ const useRootStyles = makeStyles({
     flexShrink: 0,
     backgroundColor: tokens.brand,
     filter: tokens.elevate,
+    zIndex: 10000,
 
     '>*': {
       color: 'white !important',
