@@ -7,7 +7,12 @@ export type ToolbarSlots = {
   root: Slot<'header'>;
 };
 
-type ToolbarCommons = {};
+type ToolbarCommons = {
+  /**
+   * Whether the Toolbar should have padding on the first and last elements.
+   */
+  contentPadding?: boolean;
+};
 
 export type ToolbarProps = ComponentProps<ToolbarSlots> & ToolbarCommons;
 

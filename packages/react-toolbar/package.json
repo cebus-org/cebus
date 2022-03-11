@@ -26,9 +26,14 @@
     "@griffel/react": "^1.0.0",
     "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "*"
+    "@pongo-ui/react-theme": "*",
+    "@fluentui/react-aria": "^9.0.0-rc.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@pongo-ui/react-avatar": "^0.0.2",
+    "@pongo-ui/react-text": "^0.0.6",
+    "@pongo-ui/react-menu": "^0.0.7"
+  },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
     "@types/react-dom": ">=16.8.0 <18.0.0",
