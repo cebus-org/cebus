@@ -48,6 +48,10 @@
     "@pongo-ui/react-toolbar": {
       "root": "packages/react-toolbar",
       "projectType": "library"
+    },
+    "@pongo-ui/react-icon": {
+      "root": "packages/react-icon",
+      "projectType": "library"
     }
   }
 }
