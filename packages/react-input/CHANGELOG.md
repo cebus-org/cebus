@@ -1,8 +1,17 @@
 # Change Log - @pongo-ui/react-input
 
-This log was last generated on Fri, 11 Mar 2022 06:02:05 GMT and should not be manually modified.
+This log was last generated on Fri, 11 Mar 2022 21:55:11 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.6
+
+Fri, 11 Mar 2022 21:55:11 GMT
+
+### Patches
+
+- Moving Chevron to Menu. (czearing@outlook.com)
+- Bump @pongo-ui/react-menu to v0.0.8
 
 ## 0.1.5
 

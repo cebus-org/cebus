@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-icon",
   "entries": [
     {
+      "date": "Fri, 11 Mar 2022 21:55:11 GMT",
+      "tag": "@pongo-ui/react-icon_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-icon",
+            "commit": "1f0b9b5b3e9c7b2119f8eb28bda02f0b128e2b68",
+            "comment": "Removing span wrapper."
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 11 Mar 2022 06:02:05 GMT",
       "tag": "@pongo-ui/react-icon_v0.0.2",
       "version": "0.0.2",

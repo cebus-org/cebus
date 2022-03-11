@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-toolbar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A toolbar component that displays important information and actions for an application.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -32,7 +32,7 @@
   "devDependencies": {
     "@pongo-ui/react-avatar": "^0.0.2",
     "@pongo-ui/react-text": "^0.0.6",
-    "@pongo-ui/react-menu": "^0.0.7"
+    "@pongo-ui/react-menu": "^0.0.8"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

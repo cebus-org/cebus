@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-input",
   "entries": [
     {
+      "date": "Fri, 11 Mar 2022 21:55:11 GMT",
+      "tag": "@pongo-ui/react-input_v0.1.6",
+      "version": "0.1.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-input",
+            "commit": "1f0b9b5b3e9c7b2119f8eb28bda02f0b128e2b68",
+            "comment": "Moving Chevron to Menu."
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-input",
+            "comment": "Bump @pongo-ui/react-menu to v0.0.8",
+            "commit": "7323c0e0621c9d996f4cfd83cb8d39752f25e60c"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 11 Mar 2022 06:02:05 GMT",
       "tag": "@pongo-ui/react-input_v0.1.5",
       "version": "0.1.5",

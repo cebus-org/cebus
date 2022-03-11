@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Moving Chevron to Menu.",
-  "packageName": "@pongo-ui/react-menu",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

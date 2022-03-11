@@ -1,8 +1,18 @@
 # Change Log - @pongo-ui/react-menu
 
-This log was last generated on Thu, 10 Mar 2022 05:11:13 GMT and should not be manually modified.
+This log was last generated on Fri, 11 Mar 2022 21:55:11 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.8
+
+Fri, 11 Mar 2022 21:55:11 GMT
+
+### Patches
+
+- Moving Chevron to Menu. (czearing@outlook.com)
+- Bump @pongo-ui/react-icon to v0.1.0
+- Bump @pongo-ui/react-button to v1.1.17
 
 ## 0.0.7
 

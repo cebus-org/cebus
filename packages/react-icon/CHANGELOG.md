@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-icon
 
-This log was last generated on Fri, 11 Mar 2022 06:02:05 GMT and should not be manually modified.
+This log was last generated on Fri, 11 Mar 2022 21:55:11 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.0
+
+Fri, 11 Mar 2022 21:55:11 GMT
+
+### Minor changes
+
+- Removing span wrapper. (czearing@outlook.com)
 
 ## 0.0.2
 

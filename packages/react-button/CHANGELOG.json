@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-button",
   "entries": [
     {
+      "date": "Fri, 11 Mar 2022 21:55:11 GMT",
+      "tag": "@pongo-ui/react-button_v1.1.17",
+      "version": "1.1.17",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-button",
+            "commit": "1f0b9b5b3e9c7b2119f8eb28bda02f0b128e2b68",
+            "comment": "Addressing a typo."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 10 Mar 2022 05:11:13 GMT",
       "tag": "@pongo-ui/react-button_v1.1.16",
       "version": "1.1.16",

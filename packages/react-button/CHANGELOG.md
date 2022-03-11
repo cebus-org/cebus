@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-button
 
-This log was last generated on Thu, 10 Mar 2022 05:11:13 GMT and should not be manually modified.
+This log was last generated on Fri, 11 Mar 2022 21:55:11 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.17
+
+Fri, 11 Mar 2022 21:55:11 GMT
+
+### Patches
+
+- Addressing a typo. (czearing@outlook.com)
 
 ## 1.1.16
 
