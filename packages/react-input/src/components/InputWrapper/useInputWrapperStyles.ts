@@ -18,6 +18,7 @@ export const useRootStyles = makeStyles({
     color: tokens.textColor,
     backgroundColor: tokens.canvasColor,
     fontFamily: tokens.baseFont,
+    justifyContent: 'center',
     ...shorthands.margin('0px'),
     ...shorthands.padding('0px'),
     ...shorthands.borderStyle('none'),
@@ -191,6 +192,10 @@ const useContentStyles = makeStyles({
     color: tokens.dangerDisabled,
     fill: tokens.dangerDisabled,
   },
+
+  lowerPadding: {
+    paddingTop: '10px',
+  },
 });
 
 export const useLabelStyles = makeStyles({
@@ -312,6 +317,7 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
     state.disabled ? contentStyles.disabled : contentStyles.enabled,
     state.danger && contentStyles.danger,
     state.disabled && state.danger && contentStyles.disabledDanger,
+    (state.appearance === 'filled' || state.appearance === 'standard') && contentStyles.lowerPadding,
   ];
 
   if (state.contentBefore) {

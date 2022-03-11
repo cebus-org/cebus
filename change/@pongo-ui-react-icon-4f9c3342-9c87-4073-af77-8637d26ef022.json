@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fixing a styling bug in content with some apperances.",
+  "packageName": "@pongo-ui/react-icon",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "patch"
+}
