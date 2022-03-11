@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-icon",
   "entries": [
     {
+      "date": "Fri, 11 Mar 2022 06:02:05 GMT",
+      "tag": "@pongo-ui/react-icon_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-icon",
+            "commit": "6974143da2f51367cd1ba7d62baf284941902f19",
+            "comment": "Fixing a styling bug in content with some apperances."
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 11 Mar 2022 05:03:29 GMT",
       "tag": "@pongo-ui/react-icon_v0.0.1",
       "version": "0.0.1",
