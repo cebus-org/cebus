@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { LogoIcon, DateTimeIcon } from '../index';
+import { LogoIcon } from '../index';
 import { makeStyles, shorthands } from '@griffel/react';
 
 const useStyles = makeStyles({
@@ -16,7 +16,6 @@ export const BasicIconExample = () => {
   return (
     <div className={styles.root}>
       <LogoIcon />
-      <DateTimeIcon />
     </div>
   );
 };

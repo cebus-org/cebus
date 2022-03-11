@@ -20,6 +20,7 @@ const useRootStyles = makeStyles({
     backgroundColor: 'transparent',
     height: '100%',
     minWidth: '48px',
+    ...shorthands.gap('6px'),
     ...shorthands.padding('0', '10px'),
     ...shorthands.borderStyle('none'),
   },
