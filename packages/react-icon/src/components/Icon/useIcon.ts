@@ -1,31 +1,26 @@
 import * as React from 'react';
 import { getNativeElementProps } from '@fluentui/react-utilities';
 import type { IconProps, IconState } from './Icon.types';
+import { useIconState } from './useIconState';
 
-export const useIcon = (props: IconProps, ref: React.Ref<HTMLElement>): IconState => {
-  const { color, size = 'medium' } = props;
-
-  const spanProps =
-    props['aria-label'] || props['aria-labelledby'] || props.title
-      ? {
-          role: 'img',
-        }
-      : {
-          ['aria-hidden']: true,
-        };
+export const useIcon = (props: IconProps, ref: React.Ref<SVGSVGElement>): IconState => {
+  const { color, disabled, size = 'medium', viewBox = '0 0 2048 2048' } = props;
 
   const state: IconState = {
     color,
     size,
+    viewBox,
+    disabled,
     components: {
-      root: 'span',
+      root: 'svg',
     },
-    root: getNativeElementProps('span', {
-      ref,
-      ...spanProps,
+    root: getNativeElementProps('svg', {
       ...props,
+      ref,
     }),
   };
+
+  useIconState(state);
 
   return state;
 };

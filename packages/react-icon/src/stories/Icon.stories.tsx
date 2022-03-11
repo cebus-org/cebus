@@ -25,7 +25,6 @@ export const SizeIconExample = () => {
 
   return (
     <div className={styles.root}>
-      <LogoIcon size="smaller" />
       <LogoIcon size="small" />
       <LogoIcon size="medium" />
       <LogoIcon size="large" />
@@ -47,6 +46,24 @@ export const ColorIconExample = () => {
       <LogoIcon color="social" />
       <LogoIcon color="warning" />
       <LogoIcon color="info" />
+    </div>
+  );
+};
+
+export const DisabledIconExample = () => {
+  const styles = useStyles();
+
+  return (
+    <div className={styles.root}>
+      <LogoIcon disabled />
+      <LogoIcon color="inherit" disabled />
+      <LogoIcon color="brand" disabled />
+      <LogoIcon color="secondary" disabled />
+      <LogoIcon color="success" disabled />
+      <LogoIcon color="danger" disabled />
+      <LogoIcon color="social" disabled />
+      <LogoIcon color="warning" disabled />
+      <LogoIcon color="info" disabled />
     </div>
   );
 };
