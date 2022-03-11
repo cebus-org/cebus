@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem, MenuItemRadio } from '../index';
+import { Chevron, Menu, MenuTrigger, MenuList, MenuPopover, MenuItem, MenuItemRadio } from '../index';
 import type { MenuProps } from '../index';
 import { Button } from '@pongo-ui/react-button';
 
@@ -99,6 +99,33 @@ export const ControlledRadioItems = () => {
           <MenuItemRadio name="font" value="arial">
             Arial
           </MenuItemRadio>
+        </MenuList>
+      </MenuPopover>
+    </Menu>
+  );
+};
+
+export const ChevronExample = () => {
+  const [open, setOpen] = React.useState(false);
+  const onOpenChange: MenuProps['onOpenChange'] = (e, data) => {
+    setOpen(data.open);
+  };
+
+  return (
+    <Menu open={open} onOpenChange={onOpenChange} inline={false}>
+      <MenuTrigger>
+        <Button>
+          Open Menu
+          <Chevron open={open} size="small" />
+        </Button>
+      </MenuTrigger>
+      <MenuPopover>
+        <MenuList>
+          <MenuItem>Cut</MenuItem>
+          <MenuItem disabled>Edit</MenuItem>
+          <MenuItem secondaryContent="Ctrl + V">Paste</MenuItem>
+          <MenuItem>Save</MenuItem>
+          <MenuItem>Save as</MenuItem>
         </MenuList>
       </MenuPopover>
     </Menu>
