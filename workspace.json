@@ -44,6 +44,10 @@
     "@pongo-ui/react-input": {
       "root": "packages/react-input",
       "projectType": "library"
+    },
+    "@pongo-ui/react-toolbar": {
+      "root": "packages/react-toolbar",
+      "projectType": "library"
     }
   }
 }

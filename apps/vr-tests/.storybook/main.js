@@ -9,6 +9,7 @@ const testedComponentPackages = [
   'react-divider',
   'react-avatar',
   'react-input',
+  'react-toolbar',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(

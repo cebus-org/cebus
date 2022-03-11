@@ -1,7 +1,7 @@
 {
-  "name": "@pongo-ui/react-menu",
-  "version": "0.0.7",
-  "description": "A collection of menu related components used to display information over a given element.",
+  "name": "@pongo-ui/react-toolbar",
+  "version": "0.0.0",
+  "description": "A toolbar component that displays important information and actions for an application.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -24,12 +24,15 @@
   },
   "dependencies": {
     "@griffel/react": "^1.0.0",
+    "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@fluentui/react-menu": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "*"
+    "@pongo-ui/react-theme": "*",
+    "@fluentui/react-aria": "^9.0.0-rc.5"
   },
   "devDependencies": {
-    "@pongo-ui/react-button": "^1.1.16"
+    "@pongo-ui/react-avatar": "^0.0.2",
+    "@pongo-ui/react-text": "^0.0.6",
+    "@pongo-ui/react-menu": "^0.0.7"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
