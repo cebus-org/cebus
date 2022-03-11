@@ -4,9 +4,13 @@
 
 ```ts
 
+import type { ComponentProps } from '@fluentui/react-utilities';
+import type { ComponentState } from '@fluentui/react-utilities';
 import { FC } from 'react';
 import { FluentTriggerComponent } from '@fluentui/react-utilities';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
+import { IconCommons } from '@pongo-ui/react-icon';
+import { IconSlots } from '@pongo-ui/react-icon';
 import type { MenuItemProps } from '@fluentui/react-menu';
 import type { MenuItemRadioProps as MenuItemRadioProps_2 } from '@fluentui/react-menu';
 import type { MenuItemRadioState as MenuItemRadioState_2 } from '@fluentui/react-menu';
@@ -18,6 +22,24 @@ import type { MenuPopoverState } from '@fluentui/react-menu';
 import { MenuProps as MenuProps_2 } from '@fluentui/react-menu';
 import type { MenuState as MenuState_2 } from '@fluentui/react-menu';
 import { MenuTriggerProps } from '@fluentui/react-menu';
+import * as React_2 from 'react';
+
+// @public
+export const Chevron: ForwardRefComponent<ChevronProps>;
+
+// @public (undocumented)
+export type ChevronCommons = {
+    open?: boolean;
+} & IconCommons;
+
+// @public (undocumented)
+export type ChevronProps = ComponentProps<ChevronSlots> & ChevronCommons;
+
+// @public (undocumented)
+export type ChevronSlots = IconSlots;
+
+// @public (undocumented)
+export type ChevronState = ComponentState<ChevronSlots> & ChevronCommons;
 
 // @public
 export const Menu: FC<MenuProps_2>;
@@ -53,6 +75,12 @@ export type MenuState = MenuState_2;
 export const MenuTrigger: FC<MenuTriggerProps> & FluentTriggerComponent;
 
 // @public (undocumented)
+export const renderChevron: (state: ChevronState) => JSX.Element;
+
+// @public (undocumented)
+export const useChevron: (props: ChevronProps, ref: React_2.Ref<SVGSVGElement>) => ChevronState;
+
+// @public (undocumented)
 export const useMenuItemRadioStyles: (state: MenuItemRadioState_2) => MenuItemRadioState_2;
 
 // @public (undocumented)
@@ -65,7 +93,7 @@ export const useMenuListStyles: (state: MenuListState) => MenuListState;
 export const useMenuPopoverStyles: (state: MenuPopoverState) => MenuPopoverState;
 
 // @public (undocumented)
-export const useStyles: () => Record<"root" | "content" | "icon" | "enabled" | "disabled" | "description" | "focusIndicator", string>;
+export const useStyles: () => Record<"root" | "disabled" | "content" | "icon" | "enabled" | "description" | "focusIndicator", string>;
 
 // (No @packageDocumentation comment for this package)
 

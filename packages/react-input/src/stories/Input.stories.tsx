@@ -50,16 +50,37 @@ export const InputContentExample = () => {
   return (
     <div className={styles.root}>
       <Input
-        label="test"
+        label="After"
         placeholder="Enter your name"
         appearance="outline"
-        contentAfter={<CalendarIcon size="smaller" />}
+        contentAfter={<CalendarIcon size="small" />}
       />
       <Input
-        label="test"
+        label="Before"
         placeholder="Enter your name"
         appearance="outline"
-        contentBefore={<CalendarIcon size="smaller" />}
+        contentBefore={<CalendarIcon size="small" />}
+      />
+      <Input
+        label="Before and After"
+        placeholder="Enter your name"
+        appearance="outline"
+        contentAfter={<CalendarIcon size="small" />}
+        contentBefore={<CalendarIcon size="small" />}
+      />
+      <Input
+        label="Disabled"
+        placeholder="Enter your name"
+        appearance="outline"
+        contentAfter={<CalendarIcon size="small" />}
+        disabled
+      />
+      <Input
+        label="Disabled"
+        placeholder="Enter your name"
+        appearance="outline"
+        contentBefore={<CalendarIcon size="small" />}
+        disabled
       />
     </div>
   );

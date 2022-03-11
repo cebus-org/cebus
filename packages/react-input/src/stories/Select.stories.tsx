@@ -61,7 +61,7 @@ export const SelectContentExample = () => {
         label="test"
         size="large"
         onCheckedValueChange={onCheckedValueChange}
-        contentBefore={<DateTimeIcon size="smaller" />}
+        contentBefore={<DateTimeIcon />}
       >
         <Option value="segoe">Segoe</Option>
         <Option value="calibri">Calibri</Option>
@@ -73,7 +73,7 @@ export const SelectContentExample = () => {
         label="test"
         appearance="standard"
         size="large"
-        contentBefore={<DateTimeIcon size="smaller" />}
+        contentBefore={<DateTimeIcon />}
       >
         <Option value="segoe">Segoe</Option>
         <Option value="calibri">Calibri</Option>
@@ -85,7 +85,7 @@ export const SelectContentExample = () => {
         label="test"
         appearance="filled"
         size="large"
-        contentBefore={<DateTimeIcon size="smaller" />}
+        contentBefore={<DateTimeIcon />}
       >
         <Option value="segoe">Segoe</Option>
         <Option value="calibri">Calibri</Option>

@@ -3,4 +3,3 @@ export * from './Select.types';
 export * from './renderSelect';
 export * from './useSelect';
 export * from './useSelectStyles';
-export * from './Chevron';

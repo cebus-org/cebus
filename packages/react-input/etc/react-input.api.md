@@ -14,11 +14,6 @@ import { MenuPopover } from '@pongo-ui/react-menu';
 import * as React_2 from 'react';
 import type { Slot } from '@fluentui/react-utilities';
 
-// Warning: (ae-forgotten-export) The symbol "ChevronState" needs to be exported by the entry point index.d.ts
-//
-// @public (undocumented)
-export const Chevron: (props: ChevronState) => JSX.Element;
-
 // @public
 export const Input: ForwardRefComponent<InputProps>;
 
