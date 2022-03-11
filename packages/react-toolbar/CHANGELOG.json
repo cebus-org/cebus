@@ -1,0 +1,20 @@
+{
+  "name": "@pongo-ui/react-toolbar",
+  "entries": [
+    {
+      "date": "Fri, 11 Mar 2022 00:58:58 GMT",
+      "tag": "@pongo-ui/react-toolbar_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-toolbar",
+            "commit": "0eb356e577243ad190454f5d5f4e7cf1f3c9551b",
+            "comment": "Introducing package"
+          }
+        ]
+      }
+    }
+  ]
+}

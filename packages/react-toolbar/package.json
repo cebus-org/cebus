@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-toolbar",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A toolbar component that displays important information and actions for an application.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

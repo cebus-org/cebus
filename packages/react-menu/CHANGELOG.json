@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-menu",
   "entries": [
     {
+      "date": "Fri, 11 Mar 2022 00:58:58 GMT",
+      "tag": "@pongo-ui/react-menu_v0.0.7",
+      "version": "0.0.7",
+      "comments": {
+        "none": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-menu",
+            "commit": "da39431e8b53a524f459c21444f98d98481a62f4",
+            "comment": "Updating dev deps."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 10 Mar 2022 05:11:13 GMT",
       "tag": "@pongo-ui/react-menu_v0.0.7",
       "version": "0.0.7",
