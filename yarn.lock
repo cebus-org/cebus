@@ -1552,6 +1552,17 @@
     "@fluentui/react-theme" "9.0.0-rc.4"
     tslib "^2.1.0"
 
+"@fluentui/react-tabs@9.0.0-beta.8":
+  version "9.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-tabs/-/react-tabs-9.0.0-beta.8.tgz#1647facfe52e28a1ef67d55c8f68d2095fa3d761"
+  integrity sha512-IjZ6QixkUP9lM5iYO3Re3R9mxQXdwPXaiy1sUBnSrTCK9Iz0O8zok3VE6HIUcm58von+dZLSXJihT63PNEQyFA==
+  dependencies:
+    "@fluentui/react-tabster" "9.0.0-rc.5"
+    "@fluentui/react-theme" "9.0.0-rc.4"
+    "@fluentui/react-utilities" "9.0.0-rc.5"
+    "@griffel/react" "1.0.0"
+    tslib "^2.1.0"
+
 "@fluentui/react-tabster@9.0.0-rc.5", "@fluentui/react-tabster@^9.0.0-rc.5":
   version "9.0.0-rc.5"
   resolved "https://registry.yarnpkg.com/@fluentui/react-tabster/-/react-tabster-9.0.0-rc.5.tgz#10f5b61a76c75ff5a5e4a4d839c005d386a8fea2"
