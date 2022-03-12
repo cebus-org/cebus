@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-theme",
   "entries": [
     {
+      "date": "Sat, 12 Mar 2022 07:08:25 GMT",
+      "tag": "@pongo-ui/react-theme_v0.0.7",
+      "version": "0.0.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-theme",
+            "commit": "b71e9299c527707a1615ce2095e1d67c17eae7a9",
+            "comment": "Updating secondary token."
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 08 Mar 2022 23:39:41 GMT",
       "tag": "@pongo-ui/react-theme_v0.0.6",
       "version": "0.0.6",

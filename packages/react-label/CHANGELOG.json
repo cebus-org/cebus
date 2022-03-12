@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-label",
   "entries": [
     {
+      "date": "Sat, 12 Mar 2022 07:08:25 GMT",
+      "tag": "@pongo-ui/react-label_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-label",
+            "comment": "Bump @pongo-ui/react-text to v0.0.7",
+            "commit": "df4b14f6232b8e6efb59524e2bf2620e89877388"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sat, 12 Mar 2022 04:27:12 GMT",
       "tag": "@pongo-ui/react-label_v0.0.1",
       "version": "0.0.1",

@@ -2,6 +2,39 @@
   "name": "@pongo-ui/react-toolbar",
   "entries": [
     {
+      "date": "Sat, 12 Mar 2022 07:08:25 GMT",
+      "tag": "@pongo-ui/react-toolbar_v0.0.5",
+      "version": "0.0.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-toolbar",
+            "commit": "b71e9299c527707a1615ce2095e1d67c17eae7a9",
+            "comment": "Updating root typings."
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-toolbar",
+            "comment": "Bump @pongo-ui/react-avatar to v0.0.3",
+            "commit": "df4b14f6232b8e6efb59524e2bf2620e89877388"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-toolbar",
+            "comment": "Bump @pongo-ui/react-text to v0.0.7",
+            "commit": "df4b14f6232b8e6efb59524e2bf2620e89877388"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-toolbar",
+            "comment": "Bump @pongo-ui/react-menu to v0.0.10",
+            "commit": "df4b14f6232b8e6efb59524e2bf2620e89877388"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sat, 12 Mar 2022 04:27:12 GMT",
       "tag": "@pongo-ui/react-toolbar_v0.0.4",
       "version": "0.0.4",

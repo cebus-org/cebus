@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-label
 
-This log was last generated on Sat, 12 Mar 2022 04:27:12 GMT and should not be manually modified.
+This log was last generated on Sat, 12 Mar 2022 07:08:25 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.2
+
+Sat, 12 Mar 2022 07:08:25 GMT
+
+### Patches
+
+- Bump @pongo-ui/react-text to v0.0.7
 
 ## 0.0.1
 

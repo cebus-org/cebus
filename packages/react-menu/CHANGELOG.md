@@ -1,8 +1,17 @@
 # Change Log - @pongo-ui/react-menu
 
-This log was last generated on Sat, 12 Mar 2022 04:27:12 GMT and should not be manually modified.
+This log was last generated on Sat, 12 Mar 2022 07:08:25 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.10
+
+Sat, 12 Mar 2022 07:08:25 GMT
+
+### Patches
+
+- Bump @pongo-ui/react-icon to v0.1.2
+- Bump @pongo-ui/react-button to v1.1.18
 
 ## 0.0.9
 
