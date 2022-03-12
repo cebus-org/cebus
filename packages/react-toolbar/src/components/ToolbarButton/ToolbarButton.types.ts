@@ -1,10 +1,11 @@
 import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utilities';
+import type { ARIAButtonSlotProps } from '@fluentui/react-aria';
 
 export type ToolbarButtonSlots = {
   /**
    * The root of the ToolbarButton.
    */
-  root: Slot<'button'>;
+  root: Slot<ARIAButtonSlotProps>;
 };
 
 type ToolbarButtonCommons = {
