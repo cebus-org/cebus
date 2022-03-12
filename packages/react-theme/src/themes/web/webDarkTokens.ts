@@ -6,7 +6,7 @@ export const webDarkTokens: ColorTokens = themeGenerator({
   semanticColors: {
     inherit: '#908D8D',
     brand: '#397DD6',
-    secondary: '#586bd9',
+    secondary: '#d18300',
     success: '#278536',
     danger: '#de3309',
     social: '#1ba1fb',
