@@ -13,6 +13,7 @@ const testedComponentPackages = [
   'react-icon',
   'react-tabs',
   'react-label',
+  'react-switch',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(

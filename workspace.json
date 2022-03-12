@@ -60,6 +60,10 @@
     "@pongo-ui/react-label": {
       "root": "packages/react-label",
       "projectType": "library"
+    },
+    "@pongo-ui/react-switch": {
+      "root": "packages/react-switch",
+      "projectType": "library"
     }
   }
 }

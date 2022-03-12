@@ -38,7 +38,7 @@ interface SwitchCommons {
    * The starting value for a uncontrolled Switch. If `true` then the Switch will be enabled.
    * Mutually exclusive with `checked` prop.
    *
-   * @default false
+   * @defaultValue false
    */
   defaultChecked?: boolean;
 
@@ -51,7 +51,7 @@ interface SwitchCommons {
   /**
    * Whether the Switch should be disabled.
    *
-   * @default false
+   * @defaultValue false
    */
   disabled?: boolean;
 
