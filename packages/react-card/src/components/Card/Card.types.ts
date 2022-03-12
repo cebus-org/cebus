@@ -31,6 +31,13 @@ export type CardCommons = {
    * @defaultValue false
    */
   disabled?: boolean;
+
+  /**
+   * Whether the Card should be rendered inline.
+   *
+   * @defaultValue false
+   */
+  inline?: boolean;
 };
 
 export interface CardProps extends ComponentProps<CardSlots>, CardCommons {}

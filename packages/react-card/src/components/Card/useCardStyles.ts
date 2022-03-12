@@ -4,12 +4,19 @@ import { tokens } from '@pongo-ui/react-theme';
 
 const useStyles = makeStyles({
   root: {
-    display: 'flex',
     flexDirection: 'column',
     backgroundColor: tokens.canvasColor,
     ...shorthands.padding('14px'),
     flexShrink: 0,
     ...shorthands.gap('14px'),
+  },
+
+  inline: {
+    display: 'inline-flex',
+  },
+
+  flex: {
+    display: 'flex',
   },
 
   /**
@@ -68,6 +75,7 @@ export const useCardStyles = (state: CardState) => {
     styles.root,
     styles[state.appearance!],
     styles[state.shape!],
+    state.inline ? styles.inline : styles.flex,
     !state.disabled &&
       (state.root.onClick ||
         state.root.onMouseUp ||
