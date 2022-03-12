@@ -11,6 +11,8 @@ const testedComponentPackages = [
   'react-input',
   'react-toolbar',
   'react-icon',
+  'react-tabs',
+  'react-label',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(

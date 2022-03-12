@@ -1,7 +1,7 @@
 {
-  "name": "@pongo-ui/react-tabs",
+  "name": "@pongo-ui/react-label",
   "version": "0.0.0",
-  "description": "A Tab component that assists in organizing groups of content.",
+  "description": "A Label that provides a title to a form component.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -26,9 +26,11 @@
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
     "@pongo-ui/react-theme": "*",
-    "@fluentui/react-tabs": "9.0.0-beta.8"
+    "@fluentui/react-label": "^9.0.0-beta.9"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@pongo-ui/react-text": "^0.0.6"
+  },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
     "@types/react-dom": ">=16.8.0 <18.0.0",

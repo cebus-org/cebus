@@ -52,6 +52,14 @@
     "@pongo-ui/react-icon": {
       "root": "packages/react-icon",
       "projectType": "library"
+    },
+    "@pongo-ui/react-tabs": {
+      "root": "packages/react-tabs",
+      "projectType": "library"
+    },
+    "@pongo-ui/react-label": {
+      "root": "packages/react-label",
+      "projectType": "library"
     }
   }
 }
