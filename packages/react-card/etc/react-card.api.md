@@ -18,6 +18,7 @@ export type CardCommons = {
     appearance?: 'elevate' | 'outline';
     shape?: 'rounded' | 'circular' | 'circle' | 'square';
     disabled?: boolean;
+    inline?: boolean;
 };
 
 // @public

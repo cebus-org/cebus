@@ -5,3 +5,4 @@ export * from './MenuList';
 export * from './MenuItem';
 export * from './MenuItemRadio';
 export * from './Chevron';
+export * from './MenuItemCheckbox';

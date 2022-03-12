@@ -11,6 +11,8 @@ import { FluentTriggerComponent } from '@fluentui/react-utilities';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
 import { IconCommons } from '@pongo-ui/react-icon';
 import { IconSlots } from '@pongo-ui/react-icon';
+import type { MenuItemCheckboxProps as MenuItemCheckboxProps_2 } from '@fluentui/react-menu';
+import type { MenuItemCheckboxState as MenuItemCheckboxState_2 } from '@fluentui/react-menu';
 import type { MenuItemProps } from '@fluentui/react-menu';
 import type { MenuItemRadioProps as MenuItemRadioProps_2 } from '@fluentui/react-menu';
 import type { MenuItemRadioState as MenuItemRadioState_2 } from '@fluentui/react-menu';
@@ -51,6 +53,15 @@ export const menuFocusRectColor = "--pongo-menu-item-focus-color";
 export const MenuItem: ForwardRefComponent<MenuItemProps>;
 
 // @public
+export const MenuItemCheckbox: ForwardRefComponent<MenuItemCheckboxProps_2>;
+
+// @public (undocumented)
+export type MenuItemCheckboxProps = MenuItemCheckboxProps_2;
+
+// @public (undocumented)
+export type MenuItemCheckboxState = MenuItemCheckboxState_2;
+
+// @public
 export const MenuItemRadio: ForwardRefComponent<MenuItemRadioProps_2>;
 
 // @public (undocumented)
@@ -79,6 +90,9 @@ export const renderChevron: (state: ChevronState) => JSX.Element;
 
 // @public (undocumented)
 export const useChevron: (props: ChevronProps, ref: React_2.Ref<SVGSVGElement>) => ChevronState;
+
+// @public (undocumented)
+export const useMenuItemCheckboxStyles: (state: MenuItemRadioState_2) => MenuItemRadioState_2;
 
 // @public (undocumented)
 export const useMenuItemRadioStyles: (state: MenuItemRadioState_2) => MenuItemRadioState_2;
