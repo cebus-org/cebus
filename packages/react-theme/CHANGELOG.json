@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-theme",
   "entries": [
     {
+      "date": "Sat, 12 Mar 2022 22:33:39 GMT",
+      "tag": "@pongo-ui/react-theme_v0.0.8",
+      "version": "0.0.8",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-theme",
+            "commit": "c9a36e97e137c6a8dbd0306d220b85b5e56e1cf6",
+            "comment": "Updating secondary theme."
+          }
+        ]
+      }
+    },
+    {
       "date": "Sat, 12 Mar 2022 07:08:25 GMT",
       "tag": "@pongo-ui/react-theme_v0.0.7",
       "version": "0.0.7",

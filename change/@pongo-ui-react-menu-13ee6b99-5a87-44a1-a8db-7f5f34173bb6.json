@@ -1,7 +1,0 @@
-{
-  "type": "minor",
-  "comment": "Adding MenuItemCheckbox.",
-  "packageName": "@pongo-ui/react-menu",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

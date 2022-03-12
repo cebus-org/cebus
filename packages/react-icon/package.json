@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-icon",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A collection of Icons to provide user's clarity on an action.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-switch",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The Switch allows users to toggle a value between an on and off state.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
