@@ -1,212 +1,90 @@
-import type { TabState } from '@fluentui/react-tabs';
-
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
-import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
+import type { TabState } from '@fluentui/react-tabs';
 import { tokens } from '@pongo-ui/react-theme';
 
-export const tabClassName = 'fui-Tab';
-
-// TODO: These constants should be replaced with design tokens
-export const tabPendingDesignTokens = {
-  tabPadding: {
-    medium: '10px',
-    small: '6px',
-  },
-  indicatorThickness: '2px',
-  gap: { medium: '6px', small: '2px' },
-  contentPadding: {
-    medium: '2px',
-    small: '2px',
-  },
-};
-
-/**
- * Styles for the root slot
- */
 const useRootStyles = makeStyles({
-  base: {
-    backgroundColor: 'none',
-    ...shorthands.borderColor('none'),
-    ...shorthands.borderRadius(tokens.rounded),
-    ...shorthands.borderWidth('1px'),
-    columnGap: tabPendingDesignTokens.gap.medium,
-    cursor: 'pointer',
-    display: 'flex',
-    flexDirection: 'row',
+  root: {
+    position: 'relative',
     fontFamily: tokens.baseFont,
     fontSize: tokens.fontSize300,
     lineHeight: tokens.lineHeight300,
-    ...shorthands.padding(tabPendingDesignTokens.tabPadding.medium),
-    position: 'relative',
-    ...shorthands.overflow('hidden'),
-  },
-  horizontal: {
     alignItems: 'center',
+    ...shorthands.overflow('hidden'),
+    userSelect: 'none',
+    backgroundColor: 'none',
+    color: tokens.textColor,
+    cursor: 'pointer',
+  },
+
+  // Positioning
+  horizontal: {
     justifyContent: 'center',
   },
+
   vertical: {
-    alignItems: 'center',
     justifyContent: 'flex-start',
   },
-  small: {
-    ...shorthands.padding(tabPendingDesignTokens.tabPadding.small),
-    columnGap: tabPendingDesignTokens.gap.small,
-  },
+
+  // Appearance
   subtle: {
-    ':hover': {
-      backgroundColor: tokens.inherit,
+    '&:hover': {
+      color: tokens.inheritHover,
+      backgroundColor: tokens.inheritForegroundHover,
+    },
+    '&:active': {
+      color: tokens.inheritPressed,
+      backgroundColor: tokens.inheritForegroundPressed,
     },
   },
-});
 
-/**
- * Focus styles for the root slot
- */
-const useFocusStyles = makeStyles({
-  // Tab creates a custom focus indicator because the default focus indicator
-  // is applied using an :after pseudo-element on the root. Since the selection
-  // indicator uses an :after pseudo-element on the root, there is a conflict.
-  base: createCustomFocusIndicatorStyle({
-    ...shorthands.borderColor('transparent'),
-    outlineWidth: tokens.strokeWidthThick,
-    outlineColor: 'transparent',
-    outlineStyle: 'solid',
-    boxShadow: `
-      ${tokens.shadow4},
-      0 0 0 ${tokens.strokeWidthThick} ${tokens.colorStrokeFocus2}
-    `,
-    zIndex: 1,
-  }),
-});
+  transparent: {},
 
-/**
- * Indicator styles for the root slot when horizontal.
- */
-const useHorizontalIndicatorStyles = makeStyles({
-  base: {
-    ':after': {
-      backgroundColor: 'none',
-      ...shorthands.borderRadius(tokens.borderRadiusMedium),
-      boxSizing: 'border-box',
-      content: '""',
-      position: 'absolute',
-      height: tabPendingDesignTokens.indicatorThickness,
-      bottom: '0',
-      left: tabPendingDesignTokens.tabPadding.medium,
-      right: tabPendingDesignTokens.tabPadding.medium,
+  sunken: {
+    boxShadow: `inset 0px 0px 3px 0px ${tokens.inheritBackground}`,
+    '&:hover': {
+      color: tokens.inheritHover,
+      backgroundColor: tokens.inheritForegroundHover,
     },
-    ':hover': {
-      ':after': {
-        backgroundColor: tokens.colorNeutralStroke1,
-      },
+    '&:active': {
+      color: tokens.inheritPressed,
+      backgroundColor: tokens.inheritForegroundPressed,
     },
   },
+
+  // Size
   small: {
-    ':after': {
-      left: tabPendingDesignTokens.tabPadding.small,
-      right: tabPendingDesignTokens.tabPadding.small,
-    },
+    ...shorthands.gap('2px'),
+    ...shorthands.padding('6px'),
+  },
+
+  medium: {
+    ...shorthands.gap('10px'),
+    ...shorthands.padding('10px'),
   },
 });
 
-/**
- * Indicator styles for the root slot when vertical.
- */
-const useVerticalIndicatorStyles = makeStyles({
-  base: {
-    ':before': {
-      backgroundColor: 'none',
-      ...shorthands.borderRadius(tokens.borderRadiusMedium),
-      boxSizing: 'border-box',
-      content: '""',
-      position: 'absolute',
-      width: tabPendingDesignTokens.indicatorThickness,
-      left: '0',
-      top: tabPendingDesignTokens.tabPadding.medium,
-      bottom: tabPendingDesignTokens.tabPadding.medium,
-    },
-    ':hover': {
-      ':before': {
-        backgroundColor: tokens.colorNeutralStroke1,
-      },
-    },
-  },
+const useContentStyles = makeStyles({
   small: {
-    ':before': {
-      top: tabPendingDesignTokens.tabPadding.small,
-      bottom: tabPendingDesignTokens.tabPadding.small,
-    },
-  },
-});
-
-/**
- * Styles for the icon slot.
- */
-const useIconStyles = makeStyles({
-  base: {
-    alignItems: 'center',
-    display: 'inline-flex',
-    justifyContent: 'center',
-  },
-  // per design, the small and medium font sizes are the same.
-  // the size prop only affects spacing.
-  small: {
-    fontSize: '20px',
-    height: '20px',
-    width: '20px',
+    ...shorthands.padding('6px'),
   },
   medium: {
-    fontSize: '20px',
-    height: '20px',
-    width: '20px',
+    ...shorthands.padding('10px'),
   },
 });
 
-/**
- * Styles for the content slot (children)
- */
-const useContentStyles = makeStyles({
-  base: {
-    paddingLeft: tabPendingDesignTokens.contentPadding.medium,
-    paddingRight: tabPendingDesignTokens.contentPadding.medium,
-  },
-  small: {
-    paddingLeft: tabPendingDesignTokens.contentPadding.small,
-    paddingRight: tabPendingDesignTokens.contentPadding.small,
-  },
-});
-
-/**
- * Apply styling to the Tab slots based on the state
- */
-export const useTabStyles = (state: TabState): TabState => {
+export const useTabStyles = (state: TabState) => {
   const rootStyles = useRootStyles();
-  const focusStyles = useFocusStyles();
-  const horizontalIndicatorStyles = useHorizontalIndicatorStyles();
-  const verticalIndicatorStyles = useVerticalIndicatorStyles();
-  const iconStyles = useIconStyles();
   const contentStyles = useContentStyles();
 
   state.root.className = mergeClasses(
-    tabClassName,
-    rootStyles.base,
-    focusStyles.base,
-    state.size === 'small' && rootStyles.small,
-    state.appearance === 'subtle' && rootStyles.subtle,
-    state.vertical ? verticalIndicatorStyles.base : horizontalIndicatorStyles.base,
-    state.size === 'small' && (state.vertical ? verticalIndicatorStyles.small : horizontalIndicatorStyles.small),
+    rootStyles.root,
+    state.vertical ? rootStyles.vertical : rootStyles.horizontal,
+    rootStyles[state.appearance as 'subtle' | 'transparent'],
+    rootStyles[state.size!],
     state.root.className,
   );
 
-  if (state.icon) {
-    state.icon.className = mergeClasses(iconStyles.base, iconStyles[state.size], state.icon.className);
-  }
-
-  state.content.className = mergeClasses(
-    contentStyles.base,
-    state.size === 'small' && contentStyles.small,
-    state.content.className,
-  );
+  state.content.className = mergeClasses(contentStyles[state.size!], state.content.className);
 
   return state;
 };

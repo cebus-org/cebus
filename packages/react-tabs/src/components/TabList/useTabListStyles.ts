@@ -1,5 +1,5 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
-import type { TabListState } from '@fluentui/react-tabs';
+import type { TabListState } from './TabList.types';
 import { indicatorLengthVar, indicatorOffsetVar } from '@fluentui/react-tabs';
 import { tokens } from '@pongo-ui/react-theme';
 
@@ -45,13 +45,46 @@ const useRootStyles = makeStyles({
   },
 });
 
+const useRailStyles = makeStyles({
+  rail: {
+    ':before': {
+      position: 'absolute',
+      backgroundColor: tokens.inheritBackground,
+      boxSizing: 'border-box',
+      content: '""',
+      ...shorthands.borderRadius(tokens.circular),
+    },
+  },
+
+  horizontal: {
+    ':before': {
+      height: '2px',
+      bottom: '5px',
+      width: `calc(100% - 20px)`,
+      transform: `translateX(10px)`,
+    },
+  },
+
+  vertical: {
+    ':before': {
+      width: '2px',
+      left: '5px',
+      height: `calc(100% - 20px)`,
+      transform: `translateY(10px)`,
+    },
+  },
+});
+
 export const useTabListStyles = (state: TabListState) => {
-  const { vertical, selectedTabRect: selectionIndicatorRect } = state;
+  const { rail, vertical, selectedTabRect: selectionIndicatorRect } = state;
 
   const rootStyles = useRootStyles();
+  const railStyles = useRailStyles();
 
   state.root.className = mergeClasses(
     rootStyles.root,
+    rail && railStyles.rail,
+    rail && vertical ? railStyles.vertical : railStyles.horizontal,
     vertical ? rootStyles.vertical : rootStyles.horizontal,
     state.root.className,
   );

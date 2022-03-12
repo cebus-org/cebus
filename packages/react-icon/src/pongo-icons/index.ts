@@ -7,3 +7,4 @@ export * from './CalendarIcon';
 export * from './DateTimeIcon';
 export * from './SurveyIcon';
 export * from './FilterIcon';
+export * from './SearchIcon';

@@ -1,10 +1,9 @@
 import * as React from 'react';
 import { useTabList_unstable, renderTabList_unstable } from '@fluentui/react-tabs';
 import { useTabListStyles } from './useTabListStyles';
-import type { TabListProps } from '@fluentui/react-tabs';
+import type { TabListContextValue, TabListContextValues } from '@fluentui/react-tabs';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
-
-import { TabListContextValue, TabListContextValues, TabListState } from './TabList.types';
+import { TabListProps, TabListState } from './TabList.types';
 
 export function useTabListContextValues(state: TabListState): TabListContextValues {
   const { appearance, selectedValue: selectedKey, onRegister, onUnregister, onSelect, size, vertical } = state;
@@ -26,12 +25,14 @@ export function useTabListContextValues(state: TabListState): TabListContextValu
  * A tab list provides single selection from a set of tabs.
  */
 export const TabList: ForwardRefComponent<TabListProps> = React.forwardRef((props, ref) => {
-  const state = useTabList_unstable(props, ref);
+  const state = useTabList_unstable({ ...props }, ref);
   const contextValues = useTabListContextValues(state);
+  const { rail = true } = props;
+  const mergedState = { rail, ...state };
 
-  useTabListStyles(state);
+  useTabListStyles(mergedState);
 
-  return renderTabList_unstable(state, contextValues);
+  return renderTabList_unstable(mergedState, contextValues);
 });
 
 TabList.displayName = 'TabList';
