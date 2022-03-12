@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-toolbar",
   "entries": [
     {
+      "date": "Sat, 12 Mar 2022 04:27:12 GMT",
+      "tag": "@pongo-ui/react-toolbar_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-toolbar",
+            "comment": "Bump @pongo-ui/react-menu to v0.0.9",
+            "commit": "436e2b7c525c67ed1b2109ec75406f1c43c756cc"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 11 Mar 2022 21:55:11 GMT",
       "tag": "@pongo-ui/react-toolbar_v0.0.3",
       "version": "0.0.3",

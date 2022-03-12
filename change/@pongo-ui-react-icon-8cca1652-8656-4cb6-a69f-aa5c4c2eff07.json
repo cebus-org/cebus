@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Introducing new icons",
-  "packageName": "@pongo-ui/react-icon",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

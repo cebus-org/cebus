@@ -1,0 +1,20 @@
+{
+  "name": "@pongo-ui/react-tabs",
+  "entries": [
+    {
+      "date": "Sat, 12 Mar 2022 04:27:12 GMT",
+      "tag": "@pongo-ui/react-tabs_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-tabs",
+            "commit": "758a0635cfc6261c6b9e63a91fce2bec72b37a87",
+            "comment": "Introducing package"
+          }
+        ]
+      }
+    }
+  ]
+}
