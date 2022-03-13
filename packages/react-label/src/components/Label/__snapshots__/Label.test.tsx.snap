@@ -4,7 +4,7 @@ exports[`Label renders a basic label 1`] = `
 <body>
   <div>
     <label
-      class="___1purmq9 f8dqhol fc467gg f1arxnym f1e56gn6"
+      class="___15epfke fk6fouc fc467gg f1arxnym f1e56gn6"
     >
       This is a test
     </label>
