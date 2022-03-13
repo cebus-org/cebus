@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-text",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A Text control that standardizes font styling across a webpage.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

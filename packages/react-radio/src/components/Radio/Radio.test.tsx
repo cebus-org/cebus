@@ -1,16 +1,16 @@
 import React from 'react';
-import { RadioGroup } from './Radio';
+import { Radio } from './Radio';
 import { render } from '@testing-library/react';
 import { isConformant } from '../../common/isConformant';
 
-describe('RadioGroup', () => {
+describe('Radio', () => {
   isConformant({
-    Component: RadioGroup,
-    displayName: 'RadioGroup',
+    Component: Radio,
+    displayName: 'Radio',
   });
 
   it('renders correctly', () => {
-    const result = render(<RadioGroup>Test</RadioGroup>);
+    const result = render(<Radio>Test</Radio>);
     expect(result.container).toMatchSnapshot();
   });
 });

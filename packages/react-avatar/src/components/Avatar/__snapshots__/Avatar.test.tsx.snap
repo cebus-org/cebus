@@ -5,7 +5,7 @@ exports[`Avatar Snapshot tests renders a basic Avatar 1`] = `
   <div>
     <span
       aria-label="test"
-      class="___1jdxlz9 f10pi13n f8dqhol ffu84w5 fmrv4ls fmysjtr f22iagw f1xqy1su fi64zpg f1jhi6b8 f122n59 f4d9j23 f1ewtqcl f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1lmfglv fibjyge f1abmfm4 f9yszdx f1i2uu5k f1ys4a3y f1gczwgj fadrijh f1bc5yav fcv2ht4 f1mg03ek"
+      class="___dd042x0 f10pi13n fk6fouc ffu84w5 fmrv4ls fmysjtr f22iagw f1xqy1su fi64zpg f1jhi6b8 f122n59 f4d9j23 f1ewtqcl f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1lmfglv fibjyge f1abmfm4 f9yszdx f1i2uu5k f1ys4a3y f1gczwgj fadrijh f1bc5yav fcv2ht4 f1mg03ek"
       id="avatar-7"
       name="test"
       role="img"
@@ -27,7 +27,7 @@ exports[`Avatar Snapshot tests renders an Avatar with an image 1`] = `
   <div>
     <span
       aria-label="test"
-      class="___1jdxlz9 f10pi13n f8dqhol ffu84w5 fmrv4ls fmysjtr f22iagw f1xqy1su fi64zpg f1jhi6b8 f122n59 f4d9j23 f1ewtqcl f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1lmfglv fibjyge f1abmfm4 f9yszdx f1i2uu5k f1ys4a3y f1gczwgj fadrijh f1bc5yav fcv2ht4 f1mg03ek"
+      class="___dd042x0 f10pi13n fk6fouc ffu84w5 fmrv4ls fmysjtr f22iagw f1xqy1su fi64zpg f1jhi6b8 f122n59 f4d9j23 f1ewtqcl f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1lmfglv fibjyge f1abmfm4 f9yszdx f1i2uu5k f1ys4a3y f1gczwgj fadrijh f1bc5yav fcv2ht4 f1mg03ek"
       id="avatar-8"
       name="test"
       role="img"

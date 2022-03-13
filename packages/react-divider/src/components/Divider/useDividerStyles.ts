@@ -14,7 +14,7 @@ const useRootStyles = makeStyles({
     display: 'flex',
     flexDirection: 'row',
     flexGrow: 1,
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSize200,
     fontWeight: tokens.regular,
     lineHeight: tokens.lineHeight200,

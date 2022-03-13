@@ -1,14 +1,26 @@
 import { mergeClasses, makeStyles } from '@griffel/react';
-import type { MenuItemState } from '@fluentui/react-menu';
+import type { RadioGroupState } from './RadioGroup.types';
 
 export const useStyles = makeStyles({
-  root: {},
+  root: {
+    display: 'flex',
+    alignItems: 'flex-start',
+  },
+
+  vertical: {
+    flexDirection: 'column',
+  },
 });
 
-export const useRadioGroupStyles = (state: MenuItemState): MenuItemState => {
+export const useRadioGroupStyles = (state: RadioGroupState): RadioGroupState => {
   const styles = useStyles();
 
-  state.root.className = mergeClasses(styles.root, state.root.className);
+  state.root.className = mergeClasses(
+    styles.root,
+    styles.root,
+    state.layout === 'vertical' && styles.vertical,
+    state.root.className,
+  );
 
   return state;
 };

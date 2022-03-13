@@ -12,7 +12,7 @@ const useRootStyles = makeStyles({
     textOverflow: 'clip',
   },
   base: {
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
   },
   monospace: {
     fontFamily: tokens.monospaceFont,

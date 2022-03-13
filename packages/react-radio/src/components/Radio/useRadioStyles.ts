@@ -1,14 +1,24 @@
-import { mergeClasses, makeStyles } from '@griffel/react';
-import type { MenuItemState } from '@fluentui/react-menu';
+import { mergeClasses, makeStyles, shorthands } from '@griffel/react';
+import { tokens } from '@pongo-ui/react-theme';
+import type { RadioState } from './Radio.types';
 
-export const useStyles = makeStyles({
-  root: {},
+const useRootStyles = makeStyles({
+  root: {
+    display: 'inline-flex',
+    position: 'relative',
+    columnGap: '8px',
+    ...shorthands.padding('10px'),
+  },
 });
 
-export const useRadioStyles = (state: MenuItemState): MenuItemState => {
-  const styles = useStyles();
+const useLabelStyles = makeStyles({
+  fontFamily: tokens.fontFamilyBase,
+});
 
-  state.root.className = mergeClasses(styles.root, state.root.className);
+export const useRadioStyles = (state: RadioState): RadioState => {
+  const rootStyles = useRootStyles();
+
+  state.root.className = mergeClasses(rootStyles.root, state.root.className);
 
   return state;
 };

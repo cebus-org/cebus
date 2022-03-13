@@ -1481,7 +1481,7 @@
   resolved "https://registry.yarnpkg.com/@fluentui/react-icons/-/react-icons-2.0.159-beta.10.tgz#8934c05b415bbb1b46f9085c72eaf78fd7bad967"
   integrity sha512-Y2pDtl6ofeqGI/M/C3T6KbFy+deT1TkQ5aMO3TWN4XgAYQb5Sww56WeuX+sQNnnIXN21HIJOS6Hw1frFtCPv0w==
 
-"@fluentui/react-label@^9.0.0-beta.9":
+"@fluentui/react-label@9.0.0-beta.9", "@fluentui/react-label@^9.0.0-beta.9":
   version "9.0.0-beta.9"
   resolved "https://registry.yarnpkg.com/@fluentui/react-label/-/react-label-9.0.0-beta.9.tgz#0e906311f019a5e1eb65f489caa50937047f4d24"
   integrity sha512-DbPXjaDZIe0RIrhq7iW8F01KKPgjr9ohzTQR68vbHVEq3sPx0xOtJYicDe1o7tNmJg4UyZnqlu9vug7xl6+OOg==
@@ -1548,6 +1548,19 @@
   integrity sha512-tFTct9Pm1x3yy161B7W53StoDOeWT8BSYW2TCZQM5rJGIFM3VY5yitMcESpgEI18fIq/Pt5sw3zONjwGW5qC3g==
   dependencies:
     "@fluentui/react-shared-contexts" "9.0.0-rc.4"
+    "@fluentui/react-tabster" "9.0.0-rc.5"
+    "@fluentui/react-theme" "9.0.0-rc.4"
+    "@fluentui/react-utilities" "9.0.0-rc.5"
+    "@griffel/react" "1.0.0"
+    tslib "^2.1.0"
+
+"@fluentui/react-radio@^9.0.0-beta.2":
+  version "9.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-radio/-/react-radio-9.0.0-beta.2.tgz#15b6831950f02b4f7a552eddc0c0dd04fbe81555"
+  integrity sha512-SXPb737B4gtWRfgGgxE8oxV1hfUuri8YOk8DrWJalPsrxAiSw3fUNYyRcy1yFG51EfgdMmv2Sm2L8fN24A7Lxg==
+  dependencies:
+    "@fluentui/react-icons" "^2.0.159-beta.10"
+    "@fluentui/react-label" "9.0.0-beta.9"
     "@fluentui/react-tabster" "9.0.0-rc.5"
     "@fluentui/react-theme" "9.0.0-rc.4"
     "@fluentui/react-utilities" "9.0.0-rc.5"
