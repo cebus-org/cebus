@@ -10,7 +10,7 @@ const useRootStyles = makeStyles({
   }),
 
   root: {
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSize300,
     fontWeight: tokens.regular,
     backgroundColor: 'transparent',
