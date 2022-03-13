@@ -1,10 +1,11 @@
-import { mergeClasses, makeStyles } from '@griffel/react';
+import { mergeClasses, makeStyles, shorthands } from '@griffel/react';
 import type { RadioGroupState } from './RadioGroup.types';
 
 export const useStyles = makeStyles({
   root: {
     display: 'flex',
     alignItems: 'flex-start',
+    ...shorthands.gap('10px'),
   },
 
   vertical: {
