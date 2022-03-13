@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-avatar
 
-This log was last generated on Tue, 08 Mar 2022 23:39:41 GMT and should not be manually modified.
+This log was last generated on Sun, 13 Mar 2022 21:01:24 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.5
+
+Sun, 13 Mar 2022 21:01:24 GMT
+
+### Patches
+
+- Updating tokens. (czearing@outlook.com)
 
 ## 0.0.2
 
