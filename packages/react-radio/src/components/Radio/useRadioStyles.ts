@@ -11,6 +11,7 @@ const useRootStyles = makeStyles({
     display: 'inline-flex',
     position: 'relative',
     columnGap: '8px',
+    alignItems: 'center',
   },
 
   vertical: {

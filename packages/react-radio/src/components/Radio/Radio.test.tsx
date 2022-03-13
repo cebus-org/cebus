@@ -10,7 +10,7 @@ describe('Radio', () => {
   });
 
   it('renders correctly', () => {
-    const result = render(<Radio>Test</Radio>);
+    const result = render(<Radio value="2" label="hello" />);
     expect(result.container).toMatchSnapshot();
   });
 });
