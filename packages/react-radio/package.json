@@ -1,0 +1,38 @@
+{
+  "name": "@pongo-ui/react-radio",
+  "version": "0.0.0",
+  "description": "A radio button component that allows a user to select a single option from a set.",
+  "main": "lib-commonjs/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PongoAI/pongo-ui"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "just-scripts build",
+    "bundle-size": "bundle-size measure",
+    "test": "just-scripts test",
+    "test-fix": "just-scripts test-fix",
+    "coverage": "just-scripts test --coverage",
+    "lint": "eslint ./src",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@griffel/react": "^1.0.0",
+    "@fluentui/react-utilities": "^9.0.0-rc.5",
+    "@pongo-ui/react-theme": "*",
+    "@fluentui/react-radio": "^9.0.0-beta.2"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "@types/react": ">=16.8.0 <18.0.0",
+    "@types/react-dom": ">=16.8.0 <18.0.0",
+    "react": ">=16.8.0 <18.0.0",
+    "react-dom": ">=16.8.0 <18.0.0"
+  }
+}

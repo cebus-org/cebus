@@ -1481,7 +1481,7 @@
   resolved "https://registry.yarnpkg.com/@fluentui/react-icons/-/react-icons-2.0.159-beta.10.tgz#8934c05b415bbb1b46f9085c72eaf78fd7bad967"
   integrity sha512-Y2pDtl6ofeqGI/M/C3T6KbFy+deT1TkQ5aMO3TWN4XgAYQb5Sww56WeuX+sQNnnIXN21HIJOS6Hw1frFtCPv0w==
 
-"@fluentui/react-label@^9.0.0-beta.9":
+"@fluentui/react-label@9.0.0-beta.9", "@fluentui/react-label@^9.0.0-beta.9":
   version "9.0.0-beta.9"
   resolved "https://registry.yarnpkg.com/@fluentui/react-label/-/react-label-9.0.0-beta.9.tgz#0e906311f019a5e1eb65f489caa50937047f4d24"
   integrity sha512-DbPXjaDZIe0RIrhq7iW8F01KKPgjr9ohzTQR68vbHVEq3sPx0xOtJYicDe1o7tNmJg4UyZnqlu9vug7xl6+OOg==
@@ -1548,6 +1548,19 @@
   integrity sha512-tFTct9Pm1x3yy161B7W53StoDOeWT8BSYW2TCZQM5rJGIFM3VY5yitMcESpgEI18fIq/Pt5sw3zONjwGW5qC3g==
   dependencies:
     "@fluentui/react-shared-contexts" "9.0.0-rc.4"
+    "@fluentui/react-tabster" "9.0.0-rc.5"
+    "@fluentui/react-theme" "9.0.0-rc.4"
+    "@fluentui/react-utilities" "9.0.0-rc.5"
+    "@griffel/react" "1.0.0"
+    tslib "^2.1.0"
+
+"@fluentui/react-radio@^9.0.0-beta.2":
+  version "9.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-radio/-/react-radio-9.0.0-beta.2.tgz#15b6831950f02b4f7a552eddc0c0dd04fbe81555"
+  integrity sha512-SXPb737B4gtWRfgGgxE8oxV1hfUuri8YOk8DrWJalPsrxAiSw3fUNYyRcy1yFG51EfgdMmv2Sm2L8fN24A7Lxg==
+  dependencies:
+    "@fluentui/react-icons" "^2.0.159-beta.10"
+    "@fluentui/react-label" "9.0.0-beta.9"
     "@fluentui/react-tabster" "9.0.0-rc.5"
     "@fluentui/react-theme" "9.0.0-rc.4"
     "@fluentui/react-utilities" "9.0.0-rc.5"
@@ -2687,7 +2700,7 @@
     react-lifecycles-compat "^3.0.4"
     react-select "^3.2.0"
 
-"@storybook/addon-links@^6.4.15":
+"@storybook/addon-links@^6.4.19":
   version "6.4.19"
   resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.4.19.tgz#001f26c4ffc7d36fd6018b8a137449948b337869"
   integrity sha512-ebFHYlGDQkHSmI5QEJb1NxGNToVOLgjKkxXUe+JXX7AfHvrWiXVrN/57aOtBPZzj4h2jRPRTZgwR5glhPIlfEQ==
@@ -2764,7 +2777,7 @@
     prop-types "^15.7.2"
     regenerator-runtime "^0.13.7"
 
-"@storybook/addons@6.4.19", "@storybook/addons@^6.4.15":
+"@storybook/addons@6.4.19", "@storybook/addons@^6.4.19":
   version "6.4.19"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-6.4.19.tgz#797d912b8b5a86cd6e0d31fa4c42d1f80808a432"
   integrity sha512-QNyRYhpqmHV8oJxxTBdkRlLSbDFhpBvfvMfIrIT1UXb/eemdBZTaCGVvXZ9UixoEEI7f8VwAQ44IvkU5B1509w==
@@ -2781,7 +2794,7 @@
     global "^4.4.0"
     regenerator-runtime "^0.13.7"
 
-"@storybook/api@6.4.19", "@storybook/api@^6.4.15":
+"@storybook/api@6.4.19", "@storybook/api@^6.4.19":
   version "6.4.19"
   resolved "https://registry.yarnpkg.com/@storybook/api/-/api-6.4.19.tgz#8000a0e4c52c39b910b4ccc6731419e8e71800ef"
   integrity sha512-aDvea+NpQCBjpNp9YidO1Pr7fzzCp15FSdkG+2ihGQfv5raxrN+IIJnGUXecpe71nvlYiB+29UXBVK7AL0j51Q==
@@ -2879,7 +2892,7 @@
     webpack-hot-middleware "^2.25.1"
     webpack-virtual-modules "^0.2.2"
 
-"@storybook/builder-webpack5@^6.4.15":
+"@storybook/builder-webpack5@^6.4.19":
   version "6.4.19"
   resolved "https://registry.yarnpkg.com/@storybook/builder-webpack5/-/builder-webpack5-6.4.19.tgz#f9d3cf6e7f7769ec2eba11e226e662e4116da659"
   integrity sha512-AWM4YMN1gPaf7jfntqZTCGpIQ1tF6YRU1JtczPG4ox28rTaO6NMfOBi9aRhBre/59pPOh9bF6u2gu/MIHmRW+w==
@@ -3175,7 +3188,7 @@
     webpack "4"
     ws "^8.2.3"
 
-"@storybook/core@6.4.19", "@storybook/core@^6.4.15":
+"@storybook/core@6.4.19", "@storybook/core@^6.4.19":
   version "6.4.19"
   resolved "https://registry.yarnpkg.com/@storybook/core/-/core-6.4.19.tgz#58dd055bcc0ef335e0e0d3f6eca74b4d4d49eba1"
   integrity sha512-55LOQ/h/kf1jMhjN85t/pIEdIwWEG9yV7bdwv3niVvmoypCxyyjn9/QNK0RKYAeDSUtdm6FVoJ6k5CpxWz2d8w==
@@ -3400,7 +3413,7 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/theming@6.4.19", "@storybook/theming@^6.4.15":
+"@storybook/theming@6.4.19", "@storybook/theming@^6.4.19":
   version "6.4.19"
   resolved "https://registry.yarnpkg.com/@storybook/theming/-/theming-6.4.19.tgz#0a6834d91e0b0eadbb10282e7fb2947e2bbf9e9e"
   integrity sha512-V4pWmTvAxmbHR6B3jA4hPkaxZPyExHvCToy7b76DpUTpuHihijNDMAn85KhOQYIeL9q14zP/aiz899tOHsOidg==

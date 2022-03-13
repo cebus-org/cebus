@@ -64,6 +64,10 @@
     "@pongo-ui/react-switch": {
       "root": "packages/react-switch",
       "projectType": "library"
+    },
+    "@pongo-ui/react-radio": {
+      "root": "packages/react-radio",
+      "projectType": "library"
     }
   }
 }

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup renders correctly 1`] = `
+<div>
+  <div
+    class="___eeqin00 f22iagw f6jr5hl f18w1nra fd7ph1c f1vx9l62"
+    role="radiogroup"
+  >
+    Test
+  </div>
+</div>
+`;
