@@ -5,7 +5,7 @@ exports[`Option renders a basic InputWrapper 1`] = `
   <div>
     <div
       aria-checked="false"
-      class="___1ivs8b0 f10pi13n f22iagw f1d2rq10 f1nbblvp f81rol6 f1ov4xf1 frdkuqy f8qjfyk f8dqhol f1arxnym f122n59 f1xqy1su fc467gg f1q8lukm f1ma2n7n f2hkw1w fdxsi5y f1i4q40k fa0joat f1yduw8h f1cwgisr f6dtr1x fvk4ntw f1bkt4b4 f16hf5f2 fyyqeim f1qhqcal f1kbdjx9 fw1d893 f14hlsw1 fpuz8dn f1ky8rbl fjfje89 f1k2de6e f1gkyw7i f1k6fduh f1wnz60r fc73jsq f8mbk1b f3c9x3h"
+      class="___g5cdui0 f10pi13n f22iagw f1d2rq10 f1nbblvp f81rol6 f1ov4xf1 frdkuqy f8qjfyk fk6fouc f1arxnym f122n59 f1xqy1su fc467gg f1q8lukm f1ma2n7n f2hkw1w fdxsi5y f1i4q40k fa0joat f1yduw8h f1cwgisr f6dtr1x fvk4ntw f1bkt4b4 f16hf5f2 fyyqeim f1qhqcal f1kbdjx9 fw1d893 f14hlsw1 fpuz8dn f1ky8rbl fjfje89 f1k2de6e f1gkyw7i f1k6fduh f1wnz60r fc73jsq f8mbk1b f3c9x3h"
       name="select"
       role="menuitemradio"
       tabindex="0"

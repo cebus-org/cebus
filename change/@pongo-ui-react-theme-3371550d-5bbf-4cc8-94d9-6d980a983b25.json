@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Updating font family tokens and renaming baseFont to fontFamilyBase.",
+  "packageName": "@pongo-ui/react-theme",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "patch"
+}

@@ -12,7 +12,7 @@ export const useStyles = makeStyles({
     height: '32px',
     ...shorthands.padding('0px', '10px'),
     backgroundColor: tokens.canvasColor,
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSize300,
     alignItems: 'center',
     userSelect: 'none',

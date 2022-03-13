@@ -5,7 +5,7 @@ import { tokens } from '@pongo-ui/react-theme';
 const useStyles = makeStyles({
   root: {
     position: 'relative',
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
     fontWeight: tokens.medium,
     verticalAlign: 'middle',
     color: 'white',

@@ -4,7 +4,7 @@ import type { LabelState } from '@fluentui/react-label';
 
 const useRootStyles = makeStyles({
   root: {
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
   },
 
   disabled: {

@@ -19,7 +19,7 @@ export const useRootStyles = makeStyles({
     transitionProperty: 'background, box-shadow',
     transitionDuration: '.1s',
     transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1) 0m',
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
     fontStyle: 'normal',
     fontWeight: tokens.regular,
     outlineStyle: 'none',
