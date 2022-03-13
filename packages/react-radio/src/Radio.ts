@@ -1,1 +1,1 @@
-export * from './components/Switch/index';
+export * from './components/Radio/index';

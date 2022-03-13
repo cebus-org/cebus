@@ -5,7 +5,7 @@ export const useStyles = makeStyles({
   root: {},
 });
 
-export const useRadioGroupStyles = (state: MenuItemState): MenuItemState => {
+export const useRadioStyles = (state: MenuItemState): MenuItemState => {
   const styles = useStyles();
 
   state.root.className = mergeClasses(styles.root, state.root.className);
