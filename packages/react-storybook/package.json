@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-storybook",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Storybook addon used within Pongo UI components.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-tabs
 
-This log was last generated on Sun, 13 Mar 2022 21:01:24 GMT and should not be manually modified.
+This log was last generated on Sun, 13 Mar 2022 22:45:27 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.5
+
+Sun, 13 Mar 2022 22:45:27 GMT
+
+### Patches
+
+- Updating exports. (czearing@outlook.com)
 
 ## 0.0.4
 
