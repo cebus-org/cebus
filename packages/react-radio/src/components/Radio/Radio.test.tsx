@@ -7,6 +7,7 @@ describe('Radio', () => {
   isConformant({
     Component: Radio,
     displayName: 'Radio',
+    primarySlot: 'input',
   });
 
   it('renders correctly', () => {

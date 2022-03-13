@@ -7,6 +7,7 @@ describe('RadioGroup', () => {
   isConformant({
     Component: RadioGroup,
     displayName: 'RadioGroup',
+    disabledTests: ['consistent-callback-args'],
   });
 
   it('renders correctly', () => {

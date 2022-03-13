@@ -14,6 +14,7 @@ const testedComponentPackages = [
   'react-tabs',
   'react-label',
   'react-switch',
+  'react-radio',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(
