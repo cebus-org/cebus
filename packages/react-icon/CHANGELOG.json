@@ -1,0 +1,65 @@
+{
+  "name": "@pongo-ui/react-icon",
+  "entries": [
+    {
+      "date": "Sat, 12 Mar 2022 04:27:12 GMT",
+      "tag": "@pongo-ui/react-icon_v0.1.1",
+      "version": "0.1.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-icon",
+            "commit": "758a0635cfc6261c6b9e63a91fce2bec72b37a87",
+            "comment": "Introducing new icons"
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 11 Mar 2022 21:55:11 GMT",
+      "tag": "@pongo-ui/react-icon_v0.1.0",
+      "version": "0.1.0",
+      "comments": {
+        "minor": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-icon",
+            "commit": "1f0b9b5b3e9c7b2119f8eb28bda02f0b128e2b68",
+            "comment": "Removing span wrapper."
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 11 Mar 2022 06:02:05 GMT",
+      "tag": "@pongo-ui/react-icon_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-icon",
+            "commit": "6974143da2f51367cd1ba7d62baf284941902f19",
+            "comment": "Fixing a styling bug in content with some apperances."
+          }
+        ]
+      }
+    },
+    {
+      "date": "Fri, 11 Mar 2022 05:03:29 GMT",
+      "tag": "@pongo-ui/react-icon_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-icon",
+            "commit": "4b1b9a7873499ab7173134fe4f4470378574a3e3",
+            "comment": "Introducing Icons package."
+          }
+        ]
+      }
+    }
+  ]
+}

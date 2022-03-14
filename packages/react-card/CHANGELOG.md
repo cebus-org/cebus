@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-card
 
-This log was last generated on Tue, 08 Mar 2022 23:39:41 GMT and should not be manually modified.
+This log was last generated on Sat, 12 Mar 2022 22:33:39 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.9
+
+Sat, 12 Mar 2022 22:33:39 GMT
+
+### Patches
+
+- Introducing inline prop. (czearing@outlook.com)
 
 ## 0.0.4
 

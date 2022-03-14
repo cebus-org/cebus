@@ -1,7 +1,9 @@
 import { mergeClasses, makeStyles, shorthands } from '@griffel/react';
 import type { MenuItemState } from '@fluentui/react-menu';
-import { createFocusOutlineStyle } from '@fluentui/react-tabster';
+import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 import { tokens } from '@pongo-ui/react-theme';
+
+export const menuFocusRectColor = `--pongo-menu-item-focus-color`;
 
 export const useStyles = makeStyles({
   root: {
@@ -10,7 +12,7 @@ export const useStyles = makeStyles({
     height: '32px',
     ...shorthands.padding('0px', '10px'),
     backgroundColor: tokens.canvasColor,
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSize300,
     alignItems: 'center',
     userSelect: 'none',
@@ -20,6 +22,7 @@ export const useStyles = makeStyles({
 
   enabled: {
     cursor: 'pointer',
+    [menuFocusRectColor]: tokens.textColor,
     ':hover': {
       backgroundColor: tokens.brandForegroundHover,
     },
@@ -33,6 +36,7 @@ export const useStyles = makeStyles({
 
   disabled: {
     cursor: 'not-allowed',
+    [menuFocusRectColor]: tokens.inheritDisabled,
     color: tokens.inheritDisabled,
   },
 
@@ -56,7 +60,21 @@ export const useStyles = makeStyles({
     },
   },
 
-  focusIndicator: createFocusOutlineStyle(),
+  focusIndicator: createCustomFocusIndicatorStyle(
+    {
+      ':after': {
+        content: "''",
+        position: 'absolute',
+        top: '0px',
+        right: '0px',
+        bottom: '0px',
+        left: '0px',
+        boxSizing: 'border-box',
+        ...shorthands.border('2px', 'solid', `var(${menuFocusRectColor})`),
+      },
+    },
+    { selector: 'focus-within' },
+  ),
 
   icon: {
     width: '20px',

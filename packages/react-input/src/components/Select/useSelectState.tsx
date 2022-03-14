@@ -3,7 +3,7 @@ import type { SelectState } from './Select.types';
 import { useControllableState, useMergedRefs, useId } from '@fluentui/react-utilities';
 import type { MenuProps } from '@pongo-ui/react-menu';
 import { MenuItemRadio } from '@pongo-ui/react-menu';
-import { Chevron } from './Chevron';
+import { Chevron } from '@pongo-ui/react-menu';
 
 export const useSelectState = (state: SelectState) => {
   const {
@@ -101,7 +101,7 @@ export const useSelectState = (state: SelectState) => {
 
   // Default to the Chevron unless otherwise specified
   if (!contentAfter) {
-    state.root.contentAfter = <Chevron visible={open} />;
+    state.root.contentAfter = <Chevron open={open} />;
   } else {
     state.root.contentAfter = contentAfter;
   }

@@ -1,8 +1,32 @@
 # Change Log - @pongo-ui/react-theme
 
-This log was last generated on Tue, 08 Mar 2022 23:39:41 GMT and should not be manually modified.
+This log was last generated on Sun, 13 Mar 2022 21:01:24 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.9
+
+Sun, 13 Mar 2022 21:01:24 GMT
+
+### Patches
+
+- Updating font family tokens and renaming baseFont to fontFamilyBase. (czearing@outlook.com)
+
+## 0.0.8
+
+Sat, 12 Mar 2022 22:33:39 GMT
+
+### Patches
+
+- Updating secondary theme. (czearing@outlook.com)
+
+## 0.0.7
+
+Sat, 12 Mar 2022 07:08:25 GMT
+
+### Patches
+
+- Updating secondary token. (czearing@outlook.com)
 
 ## 0.0.6
 

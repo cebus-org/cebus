@@ -1,0 +1,43 @@
+{
+  "name": "@pongo-ui/react-toolbar",
+  "version": "0.0.7",
+  "description": "A toolbar component that displays important information and actions for an application.",
+  "main": "lib-commonjs/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PongoAI/pongo-ui"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "just-scripts build",
+    "bundle-size": "bundle-size measure",
+    "test": "just-scripts test",
+    "test-fix": "just-scripts test-fix",
+    "coverage": "just-scripts test --coverage",
+    "lint": "eslint ./src",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@griffel/react": "^1.0.0",
+    "@fluentui/react-tabster": "^9.0.0-rc.5",
+    "@fluentui/react-utilities": "^9.0.0-rc.5",
+    "@pongo-ui/react-theme": "*",
+    "@fluentui/react-aria": "^9.0.0-rc.5"
+  },
+  "devDependencies": {
+    "@pongo-ui/react-avatar": "^0.0.5",
+    "@pongo-ui/react-text": "^0.0.9",
+    "@pongo-ui/react-menu": "^0.1.1"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8.0 <18.0.0",
+    "@types/react-dom": ">=16.8.0 <18.0.0",
+    "react": ">=16.8.0 <18.0.0",
+    "react-dom": ">=16.8.0 <18.0.0"
+  }
+}

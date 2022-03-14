@@ -9,6 +9,12 @@ const testedComponentPackages = [
   'react-divider',
   'react-avatar',
   'react-input',
+  'react-toolbar',
+  'react-icon',
+  'react-tabs',
+  'react-label',
+  'react-switch',
+  'react-radio',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(

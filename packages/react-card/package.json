@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-card",
-  "version": "0.0.4",
+  "version": "0.0.10",
   "description": "The Card component displays content and presents actions to the user.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Select, Option } from '../index';
 import { makeStyles, shorthands } from '@griffel/react';
+import { DateTimeIcon } from '@pongo-ui/react-icon';
 import type { SelectProps } from '../index';
 
 const useStyles = makeStyles({
@@ -37,6 +38,55 @@ export const BasicSelectExample = () => {
         <Option value="arial">Arial</Option>
       </Select>
       <Select value={checkedValues} onCheckedValueChange={onCheckedValueChange} label="test" appearance="filled">
+        <Option value="segoe">Segoe</Option>
+        <Option value="calibri">Calibri</Option>
+        <Option value="arial">Arial</Option>
+      </Select>
+    </div>
+  );
+};
+
+export const SelectContentExample = () => {
+  const styles = useStyles();
+  const [checkedValues, setCheckedValues] = React.useState(['segoe']);
+
+  const onCheckedValueChange: SelectProps['onCheckedValueChange'] = (ev, { checkedItems }) => {
+    setCheckedValues(checkedItems);
+  };
+
+  return (
+    <div className={styles.root}>
+      <Select
+        value={checkedValues}
+        label="test"
+        size="large"
+        onCheckedValueChange={onCheckedValueChange}
+        contentBefore={<DateTimeIcon />}
+      >
+        <Option value="segoe">Segoe</Option>
+        <Option value="calibri">Calibri</Option>
+        <Option value="arial">Arial</Option>
+      </Select>
+      <Select
+        value={checkedValues}
+        onCheckedValueChange={onCheckedValueChange}
+        label="test"
+        appearance="standard"
+        size="large"
+        contentBefore={<DateTimeIcon />}
+      >
+        <Option value="segoe">Segoe</Option>
+        <Option value="calibri">Calibri</Option>
+        <Option value="arial">Arial</Option>
+      </Select>
+      <Select
+        value={checkedValues}
+        onCheckedValueChange={onCheckedValueChange}
+        label="test"
+        appearance="filled"
+        size="large"
+        contentBefore={<DateTimeIcon />}
+      >
         <Option value="segoe">Segoe</Option>
         <Option value="calibri">Calibri</Option>
         <Option value="arial">Arial</Option>

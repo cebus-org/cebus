@@ -1,8 +1,40 @@
 # Change Log - @pongo-ui/react-button
 
-This log was last generated on Tue, 08 Mar 2022 23:39:41 GMT and should not be manually modified.
+This log was last generated on Sun, 13 Mar 2022 21:01:25 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 1.1.20
+
+Sun, 13 Mar 2022 21:01:25 GMT
+
+### Patches
+
+- Updating tokens. (czearing@outlook.com)
+
+## 1.1.17
+
+Fri, 11 Mar 2022 21:55:11 GMT
+
+### Patches
+
+- Addressing a typo. (czearing@outlook.com)
+
+## 1.1.16
+
+Thu, 10 Mar 2022 05:11:13 GMT
+
+### Patches
+
+- Updating styles. (czearing@outlook.com)
+
+## 1.1.15
+
+Wed, 09 Mar 2022 22:03:39 GMT
+
+### Patches
+
+- Renaming css vars. (czearing@outlook.com)
 
 ## 1.1.14
 

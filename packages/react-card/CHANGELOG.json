@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-card",
   "entries": [
     {
+      "date": "Sat, 12 Mar 2022 22:33:39 GMT",
+      "tag": "@pongo-ui/react-card_v0.0.9",
+      "version": "0.0.9",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-card",
+            "commit": "c9a36e97e137c6a8dbd0306d220b85b5e56e1cf6",
+            "comment": "Introducing inline prop."
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 08 Mar 2022 23:39:41 GMT",
       "tag": "@pongo-ui/react-card_v0.0.4",
       "version": "0.0.4",

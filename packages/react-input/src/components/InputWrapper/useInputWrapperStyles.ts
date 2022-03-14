@@ -18,7 +18,8 @@ export const useRootStyles = makeStyles({
     flexWrap: 'nowrap',
     color: tokens.textColor,
     backgroundColor: tokens.canvasColor,
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
+    justifyContent: 'center',
     ...shorthands.margin('0px'),
     ...shorthands.padding('0px'),
     ...shorthands.borderStyle('none'),
@@ -153,7 +154,7 @@ const useHelperTextStyles = makeStyles({
   helperText: {
     ...shorthands.padding('5px', '10px'),
     ...shorthands.margin('0px'),
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSize200,
     textAlign: 'left',
   },
@@ -175,22 +176,34 @@ const useContentStyles = makeStyles({
 
   enabled: {
     color: tokens.inherit,
-    fill: tokens.inherit,
+    '& svg': {
+      fill: tokens.inherit,
+    },
   },
 
   danger: {
     color: tokens.danger,
-    fill: tokens.danger,
+    '& svg': {
+      fill: tokens.danger,
+    },
   },
 
   disabled: {
     color: tokens.inheritDisabled,
-    fill: tokens.inheritDisabled,
+    '& svg': {
+      fill: tokens.inheritDisabled,
+    },
   },
 
   disabledDanger: {
     color: tokens.dangerDisabled,
-    fill: tokens.dangerDisabled,
+    '& svg': {
+      fill: tokens.dangerDisabled,
+    },
+  },
+
+  lowerPadding: {
+    paddingTop: '10px',
   },
 });
 
@@ -201,7 +214,7 @@ export const useLabelStyles = makeStyles({
     ...shorthands.padding('0px', '2px'),
     left: '8px',
     color: tokens.inherit,
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
     whiteSpace: 'nowrap',
     overflowStyle: 'hidden',
     textOverflow: 'ellipsis',
@@ -222,7 +235,7 @@ export const useLabelStyles = makeStyles({
       right: '0px',
       top: '5px',
       left: '0px',
-      height: '3px',
+      height: '5px',
       userSelect: 'none',
       pointerEvents: 'none',
       zIndex: -1,
@@ -232,7 +245,7 @@ export const useLabelStyles = makeStyles({
   standardActive: {
     ':focus-within': {
       [`& .${labelClassName}`]: {
-        transform: 'translateY(-90%)',
+        transform: 'translateY(-100%)',
         fontSize: `var(${labelFocusedSize})`,
       },
     },
@@ -250,14 +263,14 @@ export const useLabelStyles = makeStyles({
   filledActive: {
     ':focus-within': {
       [`& .${labelClassName}`]: {
-        transform: 'translateY(-90%)',
+        transform: 'translateY(-100%)',
         fontSize: `var(${labelFocusedSize})`,
       },
     },
   },
 
   standard: {
-    transform: 'translateY(-90%)',
+    transform: 'translateY(-100%)',
     fontSize: `var(${labelFocusedSize})`,
   },
 
@@ -267,7 +280,7 @@ export const useLabelStyles = makeStyles({
   },
 
   filled: {
-    transform: 'translateY(-90%)',
+    transform: 'translateY(-100%)',
     fontSize: `var(${labelFocusedSize})`,
   },
 
@@ -313,6 +326,7 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
     state.disabled ? contentStyles.disabled : contentStyles.enabled,
     state.danger && contentStyles.danger,
     state.disabled && state.danger && contentStyles.disabledDanger,
+    state.label && (state.appearance === 'filled' || state.appearance === 'standard') && contentStyles.lowerPadding,
   ];
 
   if (state.contentBefore) {

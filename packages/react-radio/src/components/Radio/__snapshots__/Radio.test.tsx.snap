@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio renders correctly 1`] = `
+<div>
+  <span
+    class="___mah9690 ftuwxu6 f10pi13n f4px1ci f122n59 f2hkw1w fdxsi5y f1i4q40k fz5pyj9 fuitljl f1lxa25c f1dexcea fvk4ntw f1bkt4b4 f16hf5f2 fyyqeim f1qhqcal f1kbdjx9 fw1d893 f14hlsw1 fpuz8dn fgm4zzz f1o1s7a4 f1w999bl fr2bnm2 f1jjwxw3 fijdmwi f11pcu7g f1ddvjn"
+  >
+    <input
+      class="___1h2l4gm f1euv43f f1vgc2s3 f15twtuk fly5x3f f1l02sjl f1ewtqcl fk73vx1 f1hu3pq6 f11qmguv f19f4twv f1tyq0we fjpxvos f1k6fduh fkavele fg1nono fexw84i f1y6vlxy feznpzr f1ym48ab fxyywaq fc390eo f1julexz f1qlwis7 f13bd10 fiepdt6 f1fxl38v f1vmirnt f16aqadv fgoi767 f1qzxoeo f1rwhajm fxia3e6 fdxoyg9 ftb0ayp f1wkbyjn f7ombvi f49rsrr fpucs8 fsri65q f1ur2ra4 f1mu7ado f1o3leve f1s168r8 fdjrdmx"
+      id="radio-8"
+      type="radio"
+      value="2"
+    />
+    <div
+      aria-hidden="true"
+      class="pongo-radio-indicator ___pzdg320 f22iagw fjw5fx7 fd461yt f1ewtqcl fi64zpg f122n59 f4d9j23 f1aehjj5 f1p9o1ba f1sil6mw ftac7j7 f1w0yd9v fdwcyh7 f1h0xgbp fzkkow9 fcdblym fg706s2 fjik90z fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f19qt5od f1fajnbs fvalcr8 f1m319iu fbwjavv"
+    >
+      <svg
+        aria-hidden="true"
+        class="___1yjlmar f1w7gpdv fez10in f1kxrtqx"
+        fill="currentColor"
+        height="1em"
+        viewBox="0 0 20 20"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M10 2a8 8 0 100 16 8 8 0 000-16z"
+        />
+      </svg>
+    </div>
+    <label
+      class="fui-Label pongo-radio-label ___1fy0nvb fk6fouc fc467gg f1arxnym f1i3iumi f7nlbp4 f1xqy1su"
+      for="radio-8"
+    >
+      hello
+    </label>
+  </span>
+</div>
+`;

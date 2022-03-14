@@ -3,11 +3,11 @@ import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 import type { ButtonState } from './Button.types';
 import { tokens } from '@pongo-ui/react-theme';
 
-export const backgroundCSSVariable = `--pongoai-button-background-color`;
-export const hoverCSSVariable = `--pongoai-button-hover-color`;
-export const pressedCSSVariable = `--pongoai-button-pressed-color`;
-export const foregroundHoverCSSVariable = `--pongoai-foreground-hover-color`;
-export const foregroundPressedCSSVariable = `--pongoai-foreground-pressed-color`;
+export const backgroundCSSVariable = `--pongo-button-background-color`;
+export const hoverCSSVariable = `--pongo-button-hover-color`;
+export const pressedCSSVariable = `--pongo-button-pressed-color`;
+export const foregroundHoverCSSVariable = `--pongo-foreground-hover-color`;
+export const foregroundPressedCSSVariable = `--pongo-foreground-pressed-color`;
 
 export const useRootStyles = makeStyles({
   root: {
@@ -19,9 +19,9 @@ export const useRootStyles = makeStyles({
     transitionProperty: 'background, box-shadow',
     transitionDuration: '.1s',
     transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1) 0m',
-    fontFamily: tokens.baseFont,
+    fontFamily: tokens.fontFamilyBase,
     fontStyle: 'normal',
-    fontWeight: tokens.regular as any,
+    fontWeight: tokens.regular,
     outlineStyle: 'none',
   },
 

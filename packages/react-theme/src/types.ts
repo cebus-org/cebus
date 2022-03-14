@@ -15,7 +15,7 @@ export type Fonts = FontFamilyTokens & FontOpacityTokens & FontSizeTokens & Font
  * Font family tokens.
  */
 export type FontFamilyTokens = {
-  baseFont: string;
+  fontFamilyBase: string;
   monospaceFont: string;
 };
 
