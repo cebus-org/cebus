@@ -17,12 +17,11 @@ export const Checkbox: ForwardRefComponent<CheckboxProps>;
 export type CheckboxCommons = {
     defaultChecked?: boolean;
     checked?: boolean;
-    disabled?: boolean;
+    color?: 'inherit' | 'brand' | 'secondary' | 'success' | 'danger' | 'social' | 'warning' | 'info';
+    size?: 'medium' | 'large';
     onChange?: (ev: React.FormEvent<HTMLInputElement>, data: {
         checked: boolean;
     }) => void;
-    color?: 'inherit' | 'brand' | 'secondary' | 'success' | 'danger' | 'social' | 'warning' | 'info';
-    size?: 'medium' | 'large';
 };
 
 // @public (undocumented)

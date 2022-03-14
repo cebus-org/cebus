@@ -8,6 +8,7 @@ describe('Checkbox', () => {
   isConformant({
     Component: Checkbox,
     displayName: 'Checkbox',
+    primarySlot: 'input',
   });
 
   beforeEach(() => {

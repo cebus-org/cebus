@@ -88,6 +88,8 @@ const useIndicatorStyles = makeStyles({
     height: '24px',
   },
 
+  disabled: {},
+
   disabledChecked: {
     backgroundColor: `var(${checkboxBackground})`,
   },
@@ -117,15 +119,15 @@ const useInputStyles = makeStyles({
 });
 
 export const useCheckboxStyles = (state: CheckboxState) => {
-  const { color, disabled, size } = state;
+  const { color, size } = state;
   const rootStyles = useRootStyles();
   const indicatorStyle = useIndicatorStyles();
   const inputStyles = useInputStyles();
 
   state.root.className = mergeClasses(
     rootStyles.root,
-    !state.disabled && (state.input.checked ? rootStyles.checked : rootStyles.unchecked),
-    !state.disabled && rootStyles.focusIndicator,
+    state.input.disabled && (state.input.checked ? rootStyles.checked : rootStyles.unchecked),
+    state.input.disabled && rootStyles.focusIndicator,
     state.root.className,
   );
 
@@ -133,7 +135,7 @@ export const useCheckboxStyles = (state: CheckboxState) => {
     state.indicator.className = mergeClasses(
       indicatorClassName,
       indicatorStyle.indicator,
-      disabled && (state.input.checked ? indicatorStyle.disabledChecked : indicatorStyle.disabledUnchecked),
+      state.input.disabled && (state.input.checked ? indicatorStyle.disabledChecked : indicatorStyle.disabledUnchecked),
       indicatorStyle[size!],
       state.indicator.className,
     );
@@ -141,12 +143,12 @@ export const useCheckboxStyles = (state: CheckboxState) => {
 
   state.input.className = mergeClasses(
     inputStyles.input,
-    state.disabled ? inputStyles.disabled : inputStyles.enabled,
+    state.input.disabled ? inputStyles.disabled : inputStyles.enabled,
     state.input.className,
   );
 
   const CSSVariables = {
-    [checkboxBackground]: (tokens as any)[color + (disabled ? 'Disabled' : '')],
+    [checkboxBackground]: (tokens as any)[color + (state.input.disabled ? 'Disabled' : '')],
     [checkboxHover]: (tokens as any)[color + 'Hover'],
     [checkboxPressed]: (tokens as any)[color + 'Pressed'],
   };

@@ -4,15 +4,7 @@ import { useCheckboxState } from './useCheckboxState';
 import type { CheckboxProps, CheckboxState } from './Checkbox.types';
 
 export const useCheckbox = (props: CheckboxProps, ref: React.Ref<HTMLInputElement>): CheckboxState => {
-  const {
-    indicator,
-    defaultChecked = false,
-    onChange,
-    checked,
-    disabled = false,
-    color = 'inherit',
-    size = 'medium',
-  } = props;
+  const { indicator, defaultChecked = false, onChange, checked, color = 'inherit', size = 'medium' } = props;
 
   const nativeProps = getPartitionedNativeProps({
     props,
@@ -27,7 +19,6 @@ export const useCheckbox = (props: CheckboxProps, ref: React.Ref<HTMLInputElemen
     defaultChecked,
     color,
     size,
-    disabled,
     onChange,
     components: {
       root: 'span',
