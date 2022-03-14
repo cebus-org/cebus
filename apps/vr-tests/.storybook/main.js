@@ -15,6 +15,7 @@ const testedComponentPackages = [
   'react-label',
   'react-switch',
   'react-radio',
+  'react-checkbox',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(

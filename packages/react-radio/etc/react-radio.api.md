@@ -34,9 +34,6 @@ export const useRadioGroupStyles: (state: RadioGroupState) => RadioGroupState;
 // @public (undocumented)
 export const useRadioStyles: (state: RadioState) => RadioState;
 
-// @public (undocumented)
-export const useStyles: () => Record<"root" | "vertical", string>;
-
 // (No @packageDocumentation comment for this package)
 
 ```

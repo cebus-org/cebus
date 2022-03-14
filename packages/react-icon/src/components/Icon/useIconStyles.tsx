@@ -3,7 +3,7 @@ import { IconState } from './Icon.types';
 
 export const fillCSSVariable = `--pongo-icon-fill`;
 
-export const useRootStyles = makeStyles({
+const useRootStyles = makeStyles({
   root: {
     display: 'inline-block',
     verticalAlign: 'middle',

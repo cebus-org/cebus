@@ -9,7 +9,7 @@ export const pressedCSSVariable = `--pongo-button-pressed-color`;
 export const foregroundHoverCSSVariable = `--pongo-foreground-hover-color`;
 export const foregroundPressedCSSVariable = `--pongo-foreground-pressed-color`;
 
-export const useRootStyles = makeStyles({
+const useRootStyles = makeStyles({
   root: {
     position: 'relative',
     display: 'inline-flex',
@@ -121,7 +121,7 @@ export const useRootStyles = makeStyles({
   },
 });
 
-export const useAppearanceStyles = makeStyles({
+const useAppearanceStyles = makeStyles({
   /**
    * Appearance styles
    */

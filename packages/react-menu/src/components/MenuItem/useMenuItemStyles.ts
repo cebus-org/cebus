@@ -5,7 +5,7 @@ import { tokens } from '@pongo-ui/react-theme';
 
 export const menuFocusRectColor = `--pongo-menu-item-focus-color`;
 
-export const useStyles = makeStyles({
+const useStyles = makeStyles({
   root: {
     position: 'relative',
     display: 'flex',
