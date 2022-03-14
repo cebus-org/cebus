@@ -2,13 +2,13 @@ import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { InputWrapperState } from './InputWrapper.types';
 import { tokens } from '@pongo-ui/react-theme';
 
-export const rootClassName = 'pongo-input-wrapper';
-export const labelClassName = 'pongo-input-label';
-export const legendClassName = 'pongo-input-legend';
+export const inputRootClassName = 'pongo-input-wrapper';
+export const inputLabelClassName = 'pongo-input-label';
+export const inputLegendClassName = 'pongo-input-legend';
 
 const labelFocusedSize = '--focused-label-font-size';
 
-export const useRootStyles = makeStyles({
+const useRootStyles = makeStyles({
   root: {
     position: 'relative',
     boxSizing: 'border-box',
@@ -77,10 +77,10 @@ export const useRootStyles = makeStyles({
         ...shorthands.borderColor(tokens.brand),
         ...shorthands.borderWidth('2px'),
       },
-      [`& .${labelClassName}`]: {
+      [`& .${inputLabelClassName}`]: {
         color: tokens.brand,
       },
-      [`& .${legendClassName}`]: {
+      [`& .${inputLegendClassName}`]: {
         width: 'auto',
       },
     },
@@ -92,7 +92,7 @@ export const useRootStyles = makeStyles({
         ...shorthands.borderColor(tokens.danger),
         ...shorthands.borderWidth('2px'),
       },
-      [`& .${labelClassName}`]: {
+      [`& .${inputLabelClassName}`]: {
         color: tokens.danger,
       },
     },
@@ -206,7 +206,7 @@ const useContentStyles = makeStyles({
   },
 });
 
-export const useLabelStyles = makeStyles({
+const useLabelStyles = makeStyles({
   label: {
     position: 'absolute',
     ...shorthands.margin('0px'),
@@ -243,7 +243,7 @@ export const useLabelStyles = makeStyles({
 
   standardActive: {
     ':focus-within': {
-      [`& .${labelClassName}`]: {
+      [`& .${inputLabelClassName}`]: {
         transform: 'translateY(-100%)',
         fontSize: `var(${labelFocusedSize})`,
       },
@@ -252,7 +252,7 @@ export const useLabelStyles = makeStyles({
 
   outlineActive: {
     ':focus-within': {
-      [`& .${labelClassName}`]: {
+      [`& .${inputLabelClassName}`]: {
         transform: 'translateY(-150%)',
         fontSize: `var(${labelFocusedSize})`,
       },
@@ -261,7 +261,7 @@ export const useLabelStyles = makeStyles({
 
   filledActive: {
     ':focus-within': {
-      [`& .${labelClassName}`]: {
+      [`& .${inputLabelClassName}`]: {
         transform: 'translateY(-100%)',
         fontSize: `var(${labelFocusedSize})`,
       },
@@ -297,7 +297,7 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
   const helperTextStyles = useHelperTextStyles();
 
   state.border.className = mergeClasses(
-    rootClassName,
+    inputRootClassName,
     rootStyles.root,
     rootStyles[state.size!],
     rootStyles[state.appearance!],
@@ -341,7 +341,7 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
 
   if (state.label) {
     state.label.className = mergeClasses(
-      labelClassName,
+      inputLabelClassName,
       labelStyles.label,
       state.disabled ? contentStyles.disabled : contentStyles.enabled,
       state.danger && contentStyles.danger,

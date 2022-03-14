@@ -1,9 +1,9 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { SelectState } from './Select.types';
 import { tokens } from '@pongo-ui/react-theme';
-import { labelClassName, legendClassName } from '../../index';
+import { inputLabelClassName, inputLegendClassName } from '../../index';
 
-export const useSelectElementStyles = makeStyles({
+const useSelectElementStyles = makeStyles({
   select: {
     ...shorthands.margin('0px'),
     ...shorthands.padding('0px', '10px'),
@@ -85,7 +85,7 @@ export const useSelectElementStyles = makeStyles({
   },
 });
 
-export const useMenuStyles = makeStyles({
+const useMenuStyles = makeStyles({
   defaultFocus: {
     backgroundColor: 'red',
     color: 'red',
@@ -94,10 +94,10 @@ export const useMenuStyles = makeStyles({
         ...shorthands.borderColor(tokens.brand),
         ...shorthands.borderWidth('2px'),
       },
-      [`& .${labelClassName}`]: {
+      [`& .${inputLabelClassName}`]: {
         color: tokens.brand,
       },
-      [`& .${legendClassName}`]: {
+      [`& .${inputLegendClassName}`]: {
         width: 'auto',
       },
     },

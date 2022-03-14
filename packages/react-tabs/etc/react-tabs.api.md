@@ -14,13 +14,20 @@ import type { TabState } from '@fluentui/react-tabs';
 // @public
 export const Tab: ForwardRefComponent<TabProps>;
 
-// Warning: (ae-forgotten-export) The symbol "TabListProps" needs to be exported by the entry point index.d.ts
-//
 // @public
 export const TabList: ForwardRefComponent<TabListProps>;
 
-// Warning: (ae-forgotten-export) The symbol "TabListState" needs to be exported by the entry point index.d.ts
-//
+// @public (undocumented)
+export type TabListCommons = {
+    rail?: boolean;
+};
+
+// @public (undocumented)
+export type TabListProps = TabListProps_2 & TabListCommons;
+
+// @public (undocumented)
+export type TabListState = TabListState_2 & TabListCommons;
+
 // @public (undocumented)
 export function useTabListContextValues(state: TabListState): TabListContextValues;
 

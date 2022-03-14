@@ -17,6 +17,7 @@ const useRootStyles = makeStyles({
   vertical: {
     flexDirection: 'column',
     alignItems: 'center',
+
     rowGap: '8px',
   },
 
@@ -51,6 +52,7 @@ const useInputStyles = makeStyles({
 
     [`:not(:checked) ~ .${indicatorClassName} > *`]: {
       transform: 'scale(0%)',
+      opacity: 0,
     },
   },
 
@@ -138,7 +140,7 @@ const useIndicatorStyles = makeStyles({
     '& svg': {
       width: '10px',
       fill: tokens.brand,
-      transitionProperty: ' transform',
+      transitionProperty: 'transform, opacity',
       transitionDuration: '.2s',
       transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1) 0m',
     },
