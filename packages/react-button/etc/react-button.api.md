@@ -61,16 +61,10 @@ export type ToggleButtonProps = ButtonProps & Partial<ToggleButtonCommons> & {
 export type ToggleButtonState = ButtonState & ToggleButtonCommons;
 
 // @public (undocumented)
-export const useAppearanceStyles: () => Record<"outline" | "primary" | "subtle" | "transparent" | "outlineEnabled" | "primaryEnabled" | "subtleEnabled" | "transparentEnabled", string>;
-
-// @public (undocumented)
 export const useButton: (props: ButtonProps, ref: React_2.Ref<HTMLElement>) => ButtonState;
 
 // @public (undocumented)
 export const useButtonStyles: (state: ButtonState) => ButtonState;
-
-// @public (undocumented)
-export const useRootStyles: () => Record<"small" | "circle" | "disabled" | "rounded" | "circular" | "square" | "medium" | "large" | "root" | "focusIndicator" | "enabled" | "smallCircle" | "mediumCircle" | "largeCircle", string>;
 
 // @public (undocumented)
 export const useToggleButton: ({ checked, defaultChecked, ...props }: ToggleButtonProps, ref: React_2.Ref<HTMLButtonElement | HTMLAnchorElement>) => ToggleButtonState;

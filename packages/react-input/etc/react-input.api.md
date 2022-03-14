@@ -17,10 +17,19 @@ import type { Slot } from '@fluentui/react-utilities';
 // @public
 export const Input: ForwardRefComponent<InputProps>;
 
+// @public (undocumented)
+export const inputLabelClassName = "pongo-input-label";
+
+// @public (undocumented)
+export const inputLegendClassName = "pongo-input-legend";
+
 // Warning: (ae-forgotten-export) The symbol "InputCommons" needs to be exported by the entry point index.d.ts
 //
 // @public (undocumented)
 export type InputProps = Omit<ComponentProps<Partial<InputSlots>, 'input'>, 'children' | 'defaultValue' | 'onChange' | 'size' | 'type' | 'value'> & InputCommons & InputWrapperCommons;
+
+// @public (undocumented)
+export const inputRootClassName = "pongo-input-wrapper";
 
 // @public (undocumented)
 export type InputSlots = {
@@ -61,12 +70,6 @@ export type InputWrapperSlots = {
 // @public (undocumented)
 export type InputWrapperState = ComponentState<InputWrapperSlots> & InputWrapperCommons;
 
-// @public (undocumented)
-export const labelClassName = "pongo-input-label";
-
-// @public (undocumented)
-export const legendClassName = "pongo-input-legend";
-
 // @public
 const Option_2: ForwardRefComponent<OptionProps>;
 export { Option_2 as Option }
@@ -97,9 +100,6 @@ export const renderInputWrapper: (state: InputWrapperState) => JSX.Element;
 // @public (undocumented)
 export const renderSelect: (state: SelectState) => JSX.Element;
 
-// @public (undocumented)
-export const rootClassName = "pongo-input-wrapper";
-
 // @public
 export const Select: ForwardRefComponent<SelectProps>;
 
@@ -125,9 +125,6 @@ export type SelectState = ComponentState<SelectSlots> & SelectCommons & InputWra
 export const useInput: (props: InputProps, ref: React_2.Ref<HTMLInputElement>) => InputState;
 
 // @public (undocumented)
-export const useInputElementStyles: () => Record<"input" | "small" | "medium" | "large" | "disabled" | "danger" | "dangerDisabled" | "enabled" | "labelLowerText" | "labelPlaceholderFocus", string>;
-
-// @public (undocumented)
 export const useInputStyles: (state: InputState) => InputState;
 
 // @public (undocumented)
@@ -137,22 +134,10 @@ export const useInputWrapper: (props: InputWrapperProps, ref: React_2.Ref<HTMLEl
 export const useInputWrapperStyles: (state: InputWrapperState) => InputWrapperState;
 
 // @public (undocumented)
-export const useLabelStyles: () => Record<"label" | "outline" | "standard" | "filled" | "standardActive" | "outlineActive" | "filledActive" | "outlineBackground", string>;
-
-// @public (undocumented)
-export const useMenuStyles: () => Record<"defaultFocus", string>;
-
-// @public (undocumented)
 export const useOption: (props: OptionProps, ref: React_2.Ref<HTMLElement>) => OptionState;
 
 // @public (undocumented)
-export const useRootStyles: () => Record<"small" | "outline" | "standard" | "filled" | "medium" | "large" | "root" | "disabled" | "danger" | "defaultFocus" | "dangerFocus" | "enabled" | "disabledDanger", string>;
-
-// @public (undocumented)
 export const useSelect: (props: SelectProps, ref: React_2.Ref<HTMLInputElement>) => SelectState;
-
-// @public (undocumented)
-export const useSelectElementStyles: () => Record<"select" | "small" | "medium" | "large" | "disabled" | "danger" | "dangerDisabled" | "enabled" | "labelLowerText" | "labelPlaceholderFocus", string>;
 
 // @public (undocumented)
 export const useSelectStyles: (state: SelectState) => SelectState;

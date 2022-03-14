@@ -168,9 +168,6 @@ export const useIcon: (props: IconProps, ref: React_2.Ref<SVGSVGElement>) => Ico
 // @public (undocumented)
 export const useIconStyles: (state: IconState) => IconState;
 
-// @public (undocumented)
-export const useRootStyles: () => Record<"small" | "medium" | "large" | "root", string>;
-
 // (No @packageDocumentation comment for this package)
 
 ```

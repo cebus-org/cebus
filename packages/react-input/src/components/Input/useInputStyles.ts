@@ -2,7 +2,7 @@ import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { InputState } from './Input.types';
 import { tokens } from '@pongo-ui/react-theme';
 
-export const useInputElementStyles = makeStyles({
+const useInputElementStyles = makeStyles({
   input: {
     ...shorthands.margin('0px'),
     ...shorthands.padding('0px', '10px'),

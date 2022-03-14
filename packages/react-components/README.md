@@ -1,30 +1,28 @@
-# Divider
+# Components
 
-The Divider helps separate content in a site.
+This the entire suite package of Pongo components.
 
 ## Use
 
-1. Install the @pongo-ui/react-divider component.
+1. Install the @pongo-ui/react-components package.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-divider
+npm install @pongo-ui/react-components
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-divider
+yarn add @pongo-ui/react-components
 ```
 
-2. Install the @fluentui/react-provider and our theme tokens from @pongo-ui/react-theme
-
-3. Set up the provider in your app:
+2. Set up the provider in your app:
 
 ```jsx
 import { FluentProvider } from '@fluentui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { webLightTheme } from '@pongo-ui/react-components'
 
 const MyApp = () => {
   return (
@@ -34,22 +32,17 @@ const MyApp = () => {
 }
 ```
 
-4. Integrate the Button component.
+4. Integrate your components.
 
 ```jsx
 import { FluentProvider } from '@fluentui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Divider } from '@pongo-ui/react-divider'
+import { webLightTheme, Button } from '@pongo-ui/react-components'
 
 const MyApp = () => {
   return (
     <FluentProvider theme={webLightTheme}>
-      <Divider>Hello World</Divider>
+      <Button>Hello World</Button>
     <FluentProvider>
   )
 }
 ```
-
-## API
-
-To learn more about the Divider API take a look at the [Divider Interface](src/components/Divider/Divider.types.ts) file.

@@ -106,9 +106,6 @@ export const useMenuListStyles: (state: MenuListState) => MenuListState;
 // @public (undocumented)
 export const useMenuPopoverStyles: (state: MenuPopoverState) => MenuPopoverState;
 
-// @public (undocumented)
-export const useStyles: () => Record<"root" | "disabled" | "content" | "icon" | "enabled" | "description" | "focusIndicator", string>;
-
 // (No @packageDocumentation comment for this package)
 
 ```
