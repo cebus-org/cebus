@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-checkbox",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "The Checkbox allows users to toggle a value between an on and off state.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -27,7 +27,7 @@
     "@fluentui/react-utilities": "^9.0.0-rc.5",
     "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@pongo-ui/react-theme": "*",
-    "@pongo-ui/react-icon": "^0.1.4"
+    "@pongo-ui/react-icon": "^0.1.5"
   },
   "devDependencies": {
     "@pongo-ui/react-text": "*",
