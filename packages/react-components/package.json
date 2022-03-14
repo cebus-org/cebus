@@ -37,7 +37,8 @@
     "@pongo-ui/react-switch": "^0.0.4",
     "@pongo-ui/react-tabs": "^0.0.5",
     "@pongo-ui/react-text": "^0.0.9",
-    "@pongo-ui/react-toolbar": "^0.0.7"
+    "@pongo-ui/react-toolbar": "^0.0.7",
+    "@pongo-ui/react-checkbox": "^0.0.0"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
