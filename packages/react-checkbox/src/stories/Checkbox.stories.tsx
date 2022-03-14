@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Label } from '@pongo-ui/react-label';
 import { Checkbox } from '../index';
-import type { CheckboxProps } from '../index';
 import { makeStyles, shorthands } from '@griffel/react';
 
 const useStyles = makeStyles({
