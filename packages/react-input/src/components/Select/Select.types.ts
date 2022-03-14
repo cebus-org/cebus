@@ -64,11 +64,6 @@ type SelectCommons = {
   contentAfter?: string | number | JSX.Element;
 
   /**
-   * The helper text to render below the Input.
-   */
-  helperText?: string;
-
-  /**
    * The label for the Input.
    */
   label?: string;

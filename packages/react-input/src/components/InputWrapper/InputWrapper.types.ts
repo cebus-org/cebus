@@ -7,11 +7,6 @@ export type InputWrapperSlots = {
   root: Slot<'span'>;
 
   /**
-   * The border around the inner Input element.
-   */
-  border: NonNullable<Slot<'span'>>;
-
-  /**
    * The inner nearest content to render within the Input.
    */
   contentBefore?: Slot<'span'>;
@@ -20,11 +15,6 @@ export type InputWrapperSlots = {
    * The inner furthest content to render within the Input.
    */
   contentAfter?: Slot<'span'>;
-
-  /**
-   * The helper text slot rendered below the Input.
-   */
-  helperText?: Slot<'p'>;
 
   /**
    * The visible label text for the TextField component.
@@ -60,11 +50,6 @@ export type InputWrapperCommons = {
    * @defaultValue medium
    */
   size?: 'small' | 'medium' | 'large';
-
-  /**
-   * The ID used for the helperText element.
-   */
-  helperTextId?: string;
 
   /**
    * The ID used for the label element.

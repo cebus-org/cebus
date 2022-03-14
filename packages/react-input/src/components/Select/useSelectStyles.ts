@@ -2,6 +2,7 @@ import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { SelectState } from './Select.types';
 import { tokens } from '@pongo-ui/react-theme';
 import { inputLabelClassName, inputLegendClassName } from '../../index';
+import { inputLineHeight, inputWidth } from '../InputWrapper';
 
 const useSelectElementStyles = makeStyles({
   select: {
@@ -11,7 +12,8 @@ const useSelectElementStyles = makeStyles({
     ...shorthands.borderRadius(tokens.rounded),
     boxSizing: 'border-box',
     flexGrow: 1,
-    minWidth: 0,
+    minHeight: `var(${inputLineHeight})`,
+    minWidth: `var(${inputWidth})`,
     height: '100%',
     backgroundColor: 'transparent',
     ':focus-visible': {

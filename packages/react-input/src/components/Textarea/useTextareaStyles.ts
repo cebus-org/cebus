@@ -1,23 +1,27 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { TextareaState } from './Textarea.types';
 import { tokens } from '@pongo-ui/react-theme';
+import { inputLineHeight, inputWidth } from '../InputWrapper';
 
 const useTextAreaStyles = makeStyles({
   root: {
     position: 'relative',
     display: 'block',
     boxSizing: 'border-box',
-    minHeight: '100%',
-    minWidth: '100%',
+    minHeight: `var(${inputLineHeight})`,
+    minWidth: `var(${inputWidth})`,
     ...shorthands.borderStyle('none'),
     backgroundColor: 'transparent',
     ...shorthands.borderRadius(tokens.rounded),
-    fontFamily: tokens.baseFont,
-    // background: 'red',
+    fontFamily: tokens.fontFamilyBase,
     padding: '10px',
     ':focus-visible': {
       outlineStyle: 'none',
     },
+  },
+
+  labelLowerText: {
+    paddingTop: '20px',
   },
 
   small: {
@@ -37,7 +41,7 @@ const useTextAreaStyles = makeStyles({
   },
 
   autoAdjust: {
-    overflow: 'hidden',
+    overflowStyle: 'hidden',
   },
 });
 
@@ -49,6 +53,7 @@ export const useTextareaStyles = (state: TextareaState) => {
     state.autoAdjust && textAreaStyles.autoAdjust,
     textAreaStyles[state.size!],
     !state.resizable && textAreaStyles.disableResize,
+    state.label && (state.appearance === 'filled' || state.appearance === 'standard') && textAreaStyles.labelLowerText,
     state.textarea.className,
   );
   // state.input.className = mergeClasses(

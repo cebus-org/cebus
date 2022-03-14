@@ -1,16 +1,18 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { InputState } from './Input.types';
 import { tokens } from '@pongo-ui/react-theme';
+import { inputLineHeight, inputWidth } from '../InputWrapper';
 
 const useInputElementStyles = makeStyles({
   input: {
+    minHeight: `var(${inputLineHeight})`,
+    minWidth: `var(${inputWidth})`,
     ...shorthands.margin('0px'),
     ...shorthands.padding('0px', '10px'),
     ...shorthands.borderStyle('none'),
     ...shorthands.borderRadius(tokens.rounded),
     boxSizing: 'border-box',
     flexGrow: 1,
-    minWidth: 0,
     height: '100%',
     backgroundColor: 'transparent',
     ':focus-visible': {

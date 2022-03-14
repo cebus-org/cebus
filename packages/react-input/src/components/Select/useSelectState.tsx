@@ -14,7 +14,6 @@ export const useSelectState = (state: SelectState) => {
     disabled,
     size,
     label,
-    helperText,
     contentBefore,
     contentAfter,
     onCheckedValueChange,
@@ -89,12 +88,6 @@ export const useSelectState = (state: SelectState) => {
     state.root.label = label;
     state.root.labelId = labelId;
     state.select.id = labelId;
-  }
-
-  if (helperText) {
-    state.root.helperText = helperText;
-    // state.root.helperTextId = helperTextId;
-    // state.input['aria-describedby'] = helperTextId;
   }
 
   state.root.contentBefore = contentBefore;

@@ -17,7 +17,6 @@ export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): I
     danger,
     label,
     placeholder,
-    helperText,
   } = props;
 
   const nativeProps = getPartitionedNativeProps({
@@ -36,7 +35,6 @@ export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): I
     danger,
     contentBefore,
     contentAfter,
-    helperText,
     label,
     placeholder,
     components: {

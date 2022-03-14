@@ -62,11 +62,6 @@ type TextareaCommons = {
   contentAfter?: string | number | JSX.Element;
 
   /**
-   * The helper text to render below the Textarea.
-   */
-  helperText?: string;
-
-  /**
    * The label for the Textarea.
    */
   label?: string;

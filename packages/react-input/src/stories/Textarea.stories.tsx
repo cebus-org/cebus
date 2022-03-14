@@ -20,7 +20,9 @@ export const BasicTextareaExample = () => {
 
   return (
     <div className={styles.root}>
-      <Textarea label="test" resizable />
+      <Textarea label="test" resizable textarea={{ rows: 10 }} />
+      <Textarea appearance="standard" label="test" />
+      <Textarea appearance="filled" label="test" resizable />
     </div>
   );
 };

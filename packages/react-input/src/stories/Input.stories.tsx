@@ -9,6 +9,7 @@ const useStyles = makeStyles({
     display: 'flex',
     flexDirection: 'column',
     ...shorthands.gap('10px'),
+    // maxWidth: '200px',
   },
   row: {
     display: 'flex',

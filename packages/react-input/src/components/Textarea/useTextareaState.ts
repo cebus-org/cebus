@@ -10,7 +10,6 @@ export const useTextareaState = (state: TextareaState) => {
     value,
     size,
     danger,
-    helperText,
     contentBefore,
     contentAfter,
     autoAdjust,
@@ -22,7 +21,6 @@ export const useTextareaState = (state: TextareaState) => {
 
   const inputRef = useMergedRefs(state.textarea.ref);
   const labelId = label ? useId('textarea-label', id) : undefined;
-  const helperTextId = helperText ? useId('textarea-label', id) : undefined;
   const [currentValue, setCurrentValue] = useControllableState({
     defaultState: defaultValue,
     state: value,

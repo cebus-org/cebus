@@ -19,7 +19,6 @@ export const useTextarea = (props: TextareaProps, ref: React.Ref<HTMLTextAreaEle
     autoAdjust = true,
     resizable = false,
     placeholder,
-    helperText,
   } = props;
 
   const nativeProps = getPartitionedNativeProps({
@@ -40,7 +39,7 @@ export const useTextarea = (props: TextareaProps, ref: React.Ref<HTMLTextAreaEle
     resizable,
     autoAdjust,
     contentAfter,
-    helperText,
+
     label,
     placeholder,
     components: {
