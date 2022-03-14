@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { getSlots } from '@fluentui/react-utilities';
-import type { MultilineSlots, MultilineState } from './Multiline.types';
+import type { TextareaSlots, TextareaState } from './Textarea.types';
 
-export const renderMultiline = (state: MultilineState) => {
-  const { slots, slotProps } = getSlots<MultilineSlots>(state);
+export const renderTextarea = (state: TextareaState) => {
+  const { slots, slotProps } = getSlots<TextareaSlots>(state);
 
   return (
     <slots.root {...slotProps.root}>

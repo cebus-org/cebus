@@ -1,5 +1,5 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
-import type { MultilineState } from './Multiline.types';
+import type { TextareaState } from './Textarea.types';
 import { tokens } from '@pongo-ui/react-theme';
 
 const useTextAreaStyles = makeStyles({
@@ -41,7 +41,7 @@ const useTextAreaStyles = makeStyles({
   },
 });
 
-export const useMultilineStyles = (state: MultilineState) => {
+export const useTextareaStyles = (state: TextareaState) => {
   const textAreaStyles = useTextAreaStyles();
 
   state.textarea.className = mergeClasses(

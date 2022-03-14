@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { getPartitionedNativeProps, resolveShorthand } from '@fluentui/react-utilities';
-import { useMultilineState } from './useMultilineState';
-import type { MultilineProps, MultilineState } from './Multiline.types';
+import { useTextareaState } from './useTextareaState';
+import type { TextareaProps, TextareaState } from './Textarea.types';
 import { InputWrapper } from '../InputWrapper';
 
-export const useMultiline = (props: MultilineProps, ref: React.Ref<HTMLTextAreaElement>): MultilineState => {
+export const useTextarea = (props: TextareaProps, ref: React.Ref<HTMLTextAreaElement>): TextareaState => {
   const {
     value,
     defaultValue,
@@ -28,7 +28,7 @@ export const useMultiline = (props: MultilineProps, ref: React.Ref<HTMLTextAreaE
     excludedPropNames: ['size', 'onChange', 'value', 'defaultValue'],
   });
 
-  const state: MultilineState = {
+  const state: TextareaState = {
     value,
     defaultValue,
     onChange,
@@ -60,7 +60,7 @@ export const useMultiline = (props: MultilineProps, ref: React.Ref<HTMLTextAreaE
     }),
   };
 
-  useMultilineState(state);
+  useTextareaState(state);
 
   return state;
 };

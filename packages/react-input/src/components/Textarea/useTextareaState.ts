@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useControllableState, useEventCallback, useMergedRefs, useId } from '@fluentui/react-utilities';
-import type { MultilineState } from './Multiline.types';
+import type { TextareaState } from './Textarea.types';
 
-export const useMultilineState = (state: MultilineState) => {
+export const useTextareaState = (state: TextareaState) => {
   const {
     label,
     appearance,
@@ -21,8 +21,8 @@ export const useMultilineState = (state: MultilineState) => {
   const { id } = state.root;
 
   const inputRef = useMergedRefs(state.textarea.ref);
-  const labelId = label ? useId('multiline-label', id) : undefined;
-  const helperTextId = helperText ? useId('multiline-label', id) : undefined;
+  const labelId = label ? useId('textarea-label', id) : undefined;
+  const helperTextId = helperText ? useId('textarea-label', id) : undefined;
   const [currentValue, setCurrentValue] = useControllableState({
     defaultState: defaultValue,
     state: value,

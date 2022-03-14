@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Multiline } from '../index';
+import { Textarea } from '../index';
 import { makeStyles, shorthands } from '@griffel/react';
 
 const useStyles = makeStyles({
@@ -15,17 +15,17 @@ const useStyles = makeStyles({
   },
 });
 
-export const BasicMultilineExample = () => {
+export const BasicTextareaExample = () => {
   const styles = useStyles();
 
   return (
     <div className={styles.root}>
-      <Multiline label="test" resizable />
+      <Textarea label="test" resizable />
     </div>
   );
 };
 
 export default {
-  title: 'Components/Multiline',
-  component: Multiline,
+  title: 'Components/Textarea',
+  component: Textarea,
 };
