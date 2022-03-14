@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-input",
   "entries": [
     {
+      "date": "Mon, 14 Mar 2022 03:58:33 GMT",
+      "tag": "@pongo-ui/react-input_v0.1.11",
+      "version": "0.1.11",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-input",
+            "commit": "65b9508a5b943de3cade64f33833c2b23e3a0d14",
+            "comment": "Adding component package"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-input",
+            "comment": "Bump @pongo-ui/react-menu to v0.1.2",
+            "commit": "49fbe1c423dfddd8a68d068ab52d2f567263fb36"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 13 Mar 2022 21:01:25 GMT",
       "tag": "@pongo-ui/react-input_v0.1.10",
       "version": "0.1.10",

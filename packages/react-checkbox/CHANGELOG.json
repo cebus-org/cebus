@@ -1,0 +1,26 @@
+{
+  "name": "@pongo-ui/react-checkbox",
+  "entries": [
+    {
+      "date": "Mon, 14 Mar 2022 03:58:33 GMT",
+      "tag": "@pongo-ui/react-checkbox_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-checkbox",
+            "commit": "65b9508a5b943de3cade64f33833c2b23e3a0d14",
+            "comment": "Introducing package"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-checkbox",
+            "comment": "Bump @pongo-ui/react-icon to v0.1.5",
+            "commit": "49fbe1c423dfddd8a68d068ab52d2f567263fb36"
+          }
+        ]
+      }
+    }
+  ]
+}

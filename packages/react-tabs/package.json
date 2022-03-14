@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-tabs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A Tab component that assists in organizing groups of content.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

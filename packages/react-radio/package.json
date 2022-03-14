@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-radio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A radio button component that allows a user to select a single option from a set.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
