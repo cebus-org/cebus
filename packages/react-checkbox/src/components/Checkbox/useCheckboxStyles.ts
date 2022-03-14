@@ -76,6 +76,9 @@ const useIndicatorStyles = makeStyles({
     transitionProperty: 'background',
     transitionDuration: '.1s',
     transitionDelay: 'cubic-bezier(0.33, 0.0, 0.67, 1)',
+    '& svg': {
+      fill: 'white',
+    },
   },
 
   medium: {
@@ -135,7 +138,8 @@ export const useCheckboxStyles = (state: CheckboxState) => {
     state.indicator.className = mergeClasses(
       indicatorClassName,
       indicatorStyle.indicator,
-      state.input.disabled && (state.input.checked ? indicatorStyle.disabledChecked : indicatorStyle.disabledUnchecked),
+      !state.input.disabled &&
+        (state.input.checked ? indicatorStyle.disabledChecked : indicatorStyle.disabledUnchecked),
       indicatorStyle[size!],
       state.indicator.className,
     );

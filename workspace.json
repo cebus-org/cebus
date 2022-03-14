@@ -72,6 +72,10 @@
     "@pongo-ui/react-radio": {
       "root": "packages/react-radio",
       "projectType": "library"
+    },
+    "@pongo-ui/react-checkbox": {
+      "root": "packages/react-checkbox",
+      "projectType": "library"
     }
   }
 }

@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { useControllableState, useEventCallback } from '@fluentui/react-utilities';
-import { CheckmarkIcon } from './DefaultIcons';
+import { CheckmarkIcon } from '@pongo-ui/react-icon';
 import type { CheckboxState } from './Checkbox.types';
 
 export const useCheckboxState = (state: CheckboxState) => {
-  const { defaultChecked, checked, onChange, size } = state;
+  const { defaultChecked, checked, onChange } = state;
 
   const [internalValue, setInternalValue] = useControllableState({
     defaultState: defaultChecked,
@@ -27,7 +27,7 @@ export const useCheckboxState = (state: CheckboxState) => {
 
   // Indicator Props
   if (state.indicator) {
-    state.indicator.children = internalValue && <CheckmarkIcon size={size!} />;
+    state.indicator.children = internalValue && <CheckmarkIcon />;
   }
 
   // Input Props
