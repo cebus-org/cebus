@@ -1,8 +1,19 @@
 # Change Log - @pongo-ui/react-toolbar
 
-This log was last generated on Tue, 15 Mar 2022 21:02:59 GMT and should not be manually modified.
+This log was last generated on Tue, 15 Mar 2022 23:20:33 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.10
+
+Tue, 15 Mar 2022 23:20:33 GMT
+
+### Patches
+
+- Updating deps (czearing@outlook.com)
+- Bump @pongo-ui/react-avatar to v0.0.7
+- Bump @pongo-ui/react-text to v0.0.11
+- Bump @pongo-ui/react-menu to v0.1.4
 
 ## 0.0.9
 

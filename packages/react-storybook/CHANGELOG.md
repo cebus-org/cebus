@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-storybook
 
-This log was last generated on Tue, 15 Mar 2022 21:02:59 GMT and should not be manually modified.
+This log was last generated on Tue, 15 Mar 2022 23:20:33 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.12
+
+Tue, 15 Mar 2022 23:20:33 GMT
+
+### Patches
+
+- Bump @pongo-ui/react-provider to v0.0.2
 
 ## 0.0.11
 

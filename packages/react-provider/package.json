@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-provider",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The Pongo provider control that handles theme tokens for the web page.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

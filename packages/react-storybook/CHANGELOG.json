@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-storybook",
   "entries": [
     {
+      "date": "Tue, 15 Mar 2022 23:20:33 GMT",
+      "tag": "@pongo-ui/react-storybook_v0.0.12",
+      "version": "0.0.12",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-storybook",
+            "comment": "Bump @pongo-ui/react-provider to v0.0.2",
+            "commit": "bf5889a787033fc2d91d8d23b39edc138cc6732d"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 15 Mar 2022 21:02:59 GMT",
       "tag": "@pongo-ui/react-storybook_v0.0.11",
       "version": "0.0.11",

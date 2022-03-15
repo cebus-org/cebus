@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Updatings deps.",
-  "packageName": "@pongo-ui/react-avatar",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

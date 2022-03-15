@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-provider",
   "entries": [
     {
+      "date": "Tue, 15 Mar 2022 23:20:33 GMT",
+      "tag": "@pongo-ui/react-provider_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-provider",
+            "commit": "0cff2361c839026edf14c1c93d2ca113140fb0e0",
+            "comment": "Updating deps"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 15 Mar 2022 21:02:59 GMT",
       "tag": "@pongo-ui/react-provider_v0.0.1",
       "version": "0.0.1",

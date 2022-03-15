@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-avatar",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "An avatar component used to display a users icon.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
