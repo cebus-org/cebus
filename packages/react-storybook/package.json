@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@pongo-ui/react-theme": "^0.0.9",
-    "@fluentui/react-provider": "^9.0.0-rc.5",
+    "@pongo-ui/react-provider": "^0.0.0",
     "@storybook/react": "^6.4.15",
     "@storybook/addon-a11y": "^6.4.15",
     "@storybook/addon-actions": "^6.4.15",

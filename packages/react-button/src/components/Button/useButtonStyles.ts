@@ -21,7 +21,7 @@ const useRootStyles = makeStyles({
     transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1) 0m',
     fontFamily: tokens.fontFamilyBase,
     fontStyle: 'normal',
-    fontWeight: tokens.regular,
+    fontWeight: tokens.medium,
     outlineStyle: 'none',
   },
 

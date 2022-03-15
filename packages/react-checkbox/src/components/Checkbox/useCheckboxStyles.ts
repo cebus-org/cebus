@@ -74,8 +74,8 @@ const useIndicatorStyles = makeStyles({
     justifyContent: 'center',
     overflowStyle: 'hidden',
     transitionProperty: 'background',
-    transitionDuration: '.1s',
-    transitionDelay: 'cubic-bezier(0.33, 0.0, 0.67, 1)',
+    transitionDuration: tokens.transitionDuration,
+    transitionTimingFunction: tokens.transitionTimingFunction,
     '& svg': {
       fill: 'white',
     },

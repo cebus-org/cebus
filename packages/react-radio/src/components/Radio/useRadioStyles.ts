@@ -141,8 +141,8 @@ const useIndicatorStyles = makeStyles({
       width: '10px',
       fill: tokens.brand,
       transitionProperty: 'transform, opacity',
-      transitionDuration: '.2s',
-      transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1) 0m',
+      transitionDuration: tokens.transitionDuration,
+      transitionTimingFunction: tokens.transitionTimingFunction,
     },
   },
 });

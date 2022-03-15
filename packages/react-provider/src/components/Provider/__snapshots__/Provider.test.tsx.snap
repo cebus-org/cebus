@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Provider renders a basic provider 1`] = `
+<body>
+  <div>
+    <div
+      class="fui-FluentProvider4 ___107cmlg fc467gg f8qjfyk fk6fouc f1arxnym f1rd5vql"
+      dir="ltr"
+    >
+      Test
+    </div>
+  </div>
+</body>
+`;

@@ -33,16 +33,36 @@ yarn add @pongo-ui/react-button
 ## Use
 
 ```jsx
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Button } from '@pongo-ui/react-button'
+import { Provider } from '@pongo-ui/react-provider';
+import { webLightTheme } from '@pongo-ui/react-theme';
+import { Button } from '@pongo-ui/react-button';
 
 const MyApp = () => {
   return (
-    <FluentProvider theme={webLightTheme}>
+    <Provider theme={webLightTheme}>
       <Button>Hello World</Button>
-    <FluentProvider>
-  )
-}
+    </Provider>
+  );
+};
+```
+
+With the FluentProvider.
+
+```jsx
+import { FluentProvider } from '@fluentui/react-provider';
+import { webLightTheme as pongoWebLightTheme } from '@pongo-ui/react-theme';
+import { webLightTheme as fluentWebLightTheme } from '@fluentui/react-theme';
+import { Button as PongoButton } from '@pongo-ui/react-button';
+import { Button as FluentButton } from '@fluentui/react-button';
+
+const MyApp = () => {
+  return (
+    <FluentProvider theme={{ ...pongoWebLightTheme, ...fluentWebLightTheme }}>
+      <PongoButton>Hello World</PongoButton>
+      <FluentButton>Hello World</FluentButton>
+    </FluentProvider>
+  );
+};
 ```
 
 ## Licenses
