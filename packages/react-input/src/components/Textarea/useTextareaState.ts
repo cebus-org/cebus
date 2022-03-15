@@ -25,7 +25,7 @@ export const useTextareaState = (state: TextareaState) => {
 
   const { id } = state.root;
 
-  const inputRef = useMergedRefs(state.textarea.ref);
+  const textareaRef = useMergedRefs(state.textarea.ref);
   const labelId = label ? useId('textarea-label', id) : undefined;
   const [currentValue, setCurrentValue] = useControllableState({
     defaultState: defaultValue,
@@ -45,9 +45,9 @@ export const useTextareaState = (state: TextareaState) => {
    * Updates the textarea height to the current scroll height.
    */
   const updateTextareaHeight = React.useCallback(() => {
-    inputRef.current!.style.height = '';
-    inputRef.current!.style.height = inputRef.current!.scrollHeight + 'px';
-  }, [inputRef]);
+    textareaRef.current!.style.height = 'auto';
+    textareaRef.current!.style.height = textareaRef.current!.scrollHeight + 'px';
+  }, [textareaRef]);
 
   const onInputChange = React.useCallback(
     (ev: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -83,7 +83,7 @@ export const useTextareaState = (state: TextareaState) => {
   state.textarea.value = currentValue;
   state.textarea.onChange = onInputChange;
   state.textarea.disabled = disabled;
-  state.textarea.ref = inputRef;
+  state.textarea.ref = textareaRef;
 
   return state;
 };

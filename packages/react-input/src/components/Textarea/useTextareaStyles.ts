@@ -44,6 +44,8 @@ const useTextAreaStyles = makeStyles({
 
   autoAdjust: {
     overflowStyle: 'hidden',
+    overflowX: 'hidden',
+    overflowY: 'hidden',
   },
 });
 

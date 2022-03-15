@@ -69,13 +69,12 @@ export const DisabledTextareaExample = () => {
 
 export const ContentTextareaExample = () => {
   const styles = useStyles();
-  const quickFox = 'The quick brown fox jumps over the lazy dog';
 
   return (
     <div className={styles.root}>
-      <Textarea defaultValue={quickFox} contentBefore={<DateTimeIcon />} autoAdjust />
-      <Textarea defaultValue={quickFox} contentAfter={<DateTimeIcon />} autoAdjust />
-      <Textarea defaultValue={quickFox} contentAfter={<DateTimeIcon />} contentBefore={<DateTimeIcon />} autoAdjust />
+      <Textarea contentBefore={<DateTimeIcon />} autoAdjust />
+      <Textarea contentAfter={<DateTimeIcon />} autoAdjust />
+      <Textarea contentAfter={<DateTimeIcon />} contentBefore={<DateTimeIcon />} autoAdjust />
     </div>
   );
 };
