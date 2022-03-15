@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-components",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Suite package for Pongo components.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

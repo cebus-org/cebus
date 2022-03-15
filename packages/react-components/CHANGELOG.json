@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-components",
   "entries": [
     {
+      "date": "Tue, 15 Mar 2022 22:13:32 GMT",
+      "tag": "@pongo-ui/react-components_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-components",
+            "commit": "49a5ff322d1123f5dba8fc450df1e9a232c2ab3c",
+            "comment": "Updating exports"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 15 Mar 2022 21:02:59 GMT",
       "tag": "@pongo-ui/react-components_v0.0.3",
       "version": "0.0.3",

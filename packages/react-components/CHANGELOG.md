@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-components
 
-This log was last generated on Tue, 15 Mar 2022 21:02:59 GMT and should not be manually modified.
+This log was last generated on Tue, 15 Mar 2022 22:13:32 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.4
+
+Tue, 15 Mar 2022 22:13:32 GMT
+
+### Patches
+
+- Updating exports (czearing@outlook.com)
 
 ## 0.0.3
 
