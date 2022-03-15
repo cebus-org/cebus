@@ -134,27 +134,16 @@ const useRootStyles = makeStyles({
 
   // Size
   small: {
-    // minHeight: '35px',
-    // minWidth: '150px',
     fontSize: tokens.fontSize200,
     [labelFocusedSize]: tokens.fontSize100,
   },
 
   medium: {
-    // height: '45px',
-    // minWidth: '200px',
-    // width: 'max-content',
-    // minWidth: '150px',
-    // maxWidth: '350px',
-
     fontSize: tokens.fontSize300,
     [labelFocusedSize]: tokens.fontSize200,
   },
 
   large: {
-    // height: '50px',
-    // minWidth: '300px',
-
     fontSize: tokens.fontSize400,
     [labelFocusedSize]: tokens.fontSize300,
   },
@@ -222,9 +211,7 @@ const useLabelStyles = makeStyles({
     position: 'absolute',
     ...shorthands.margin('0px'),
     ...shorthands.padding('0px', '2px'),
-    // background: 'red',
     height: `var(${inputLineHeight})`,
-
     left: '8px',
     color: tokens.inherit,
     fontFamily: tokens.fontFamilyBase,

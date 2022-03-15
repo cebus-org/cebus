@@ -1,8 +1,7 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { SelectState } from './Select.types';
 import { tokens } from '@pongo-ui/react-theme';
-import { inputLabelClassName, inputLegendClassName } from '../../index';
-import { inputLineHeight, inputWidth } from '../InputWrapper';
+import { inputLineHeight } from '../InputWrapper';
 
 const useSelectElementStyles = makeStyles({
   select: {
@@ -13,7 +12,7 @@ const useSelectElementStyles = makeStyles({
     boxSizing: 'border-box',
     flexGrow: 1,
     minHeight: `var(${inputLineHeight})`,
-    minWidth: `var(${inputWidth})`,
+    minWidth: '80px',
     height: '100%',
     backgroundColor: 'transparent',
     ':focus-visible': {
@@ -87,28 +86,8 @@ const useSelectElementStyles = makeStyles({
   },
 });
 
-const useMenuStyles = makeStyles({
-  defaultFocus: {
-    backgroundColor: 'red',
-    color: 'red',
-    ':focus-within': {
-      ':before': {
-        ...shorthands.borderColor(tokens.brand),
-        ...shorthands.borderWidth('2px'),
-      },
-      [`& .${inputLabelClassName}`]: {
-        color: tokens.brand,
-      },
-      [`& .${inputLegendClassName}`]: {
-        width: 'auto',
-      },
-    },
-  },
-});
-
 export const useSelectStyles = (state: SelectState) => {
   const rootStyles = useSelectElementStyles();
-  const menuStyles = useMenuStyles();
 
   state.select.className = mergeClasses(
     rootStyles.select,
@@ -119,13 +98,6 @@ export const useSelectStyles = (state: SelectState) => {
     state.label && (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,
     rootStyles[state.size!],
     state.select.className,
-  );
-
-  state.menu.className = mergeClasses(
-    'helloWorld',
-    menuStyles.defaultFocus,
-    // !state.disabled && (state.danger ? menuStyles.dangerFocus : menuStyles.defaultFocus),
-    state.menu.className,
   );
 
   return state;

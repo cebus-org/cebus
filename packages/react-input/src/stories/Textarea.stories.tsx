@@ -24,13 +24,7 @@ export const BasicTextareaExample = () => {
 };
 
 export const RowsTextareaExample = () => {
-  const styles = useStyles();
-
-  return (
-    <div className={styles.root}>
-      <Textarea rows={10} label="Rows" />
-    </div>
-  );
+  return <Textarea rows={5} label="Rows" />;
 };
 
 export const AutoAdjustTextareaExample = () => {

@@ -11,8 +11,6 @@ const useTextAreaStyles = makeStyles({
     flexGrow: 1,
     minHeight: `var(${inputLineHeight})`,
     minWidth: `var(${inputWidth})`,
-    height: `var(${inputLineHeight})`,
-    width: `var(${inputWidth})`,
     fontFamily: tokens.fontFamilyBase,
     backgroundColor: 'transparent',
     ...shorthands.border('10px', 'solid', 'transparent'),
