@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-input
 
-This log was last generated on Mon, 14 Mar 2022 03:58:33 GMT and should not be manually modified.
+This log was last generated on Tue, 15 Mar 2022 04:15:25 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.2.0
+
+Tue, 15 Mar 2022 04:15:25 GMT
+
+### Minor changes
+
+- Introducing Textarea component. (czearing@outlook.com)
 
 ## 0.1.11
 

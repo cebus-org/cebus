@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-input",
-  "version": "0.1.11",
+  "version": "0.2.0",
   "description": "A set of components that enable users to input and edit given values.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

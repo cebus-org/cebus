@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-components",
   "entries": [
     {
+      "date": "Tue, 15 Mar 2022 04:15:25 GMT",
+      "tag": "@pongo-ui/react-components_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-input to v0.2.0",
+            "commit": "a17fefe8edf9f330564d900d2207587b228b8702"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 14 Mar 2022 03:58:33 GMT",
       "tag": "@pongo-ui/react-components_v0.0.1",
       "version": "0.0.1",
