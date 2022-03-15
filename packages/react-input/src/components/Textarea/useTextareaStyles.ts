@@ -3,22 +3,16 @@ import type { TextareaState } from './Textarea.types';
 import { tokens } from '@pongo-ui/react-theme';
 import { inputLineHeight, inputWidth } from '../InputWrapper';
 
-const useRootStyles = makeStyles({
-  root: {
-    position: 'relative',
-    display: 'inline-flex',
-    boxSizing: 'border-box',
-    // ...shorthands.padding('10px'),
-  },
-});
-
 const useTextAreaStyles = makeStyles({
   textarea: {
     position: 'relative',
     display: 'inline-flex',
     boxSizing: 'border-box',
+    flexGrow: 1,
     minHeight: `var(${inputLineHeight})`,
     minWidth: `var(${inputWidth})`,
+    height: `var(${inputLineHeight})`,
+    width: `var(${inputWidth})`,
     fontFamily: tokens.fontFamilyBase,
     backgroundColor: 'transparent',
     ...shorthands.border('10px', 'solid', 'transparent'),
@@ -29,8 +23,7 @@ const useTextAreaStyles = makeStyles({
   },
 
   labelLowerText: {
-    // paddingTop: '20px',
-    //borderTop: '10px solid transparent',
+    ...shorthands.borderTop('20px', 'solid', 'transparent'),
   },
 
   small: {
@@ -55,10 +48,7 @@ const useTextAreaStyles = makeStyles({
 });
 
 export const useTextareaStyles = (state: TextareaState) => {
-  const rootStyles = useRootStyles();
   const textAreaStyles = useTextAreaStyles();
-
-  state.root.className = mergeClasses(rootStyles.root, state.root.className);
 
   state.textarea.className = mergeClasses(
     textAreaStyles.textarea,
@@ -68,17 +58,6 @@ export const useTextareaStyles = (state: TextareaState) => {
     state.label && (state.appearance === 'filled' || state.appearance === 'standard') && textAreaStyles.labelLowerText,
     state.textarea.className,
   );
-  // state.input.className = mergeClasses(
-  //   rootStyles.input,
-  //   state.disabled ? rootStyles.disabled : rootStyles.enabled,
-  //   !state.disabled && state.danger && rootStyles.danger,
-
-  //   state.disabled && state.danger && rootStyles.dangerDisabled,
-  //   state.label && state.placeholder && !state.root.contentBefore && rootStyles.labelPlaceholderFocus,
-  //   state.label && (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,
-  //   rootStyles[state.size!],
-  //   state.input.className,
-  // );
 
   return state;
 };

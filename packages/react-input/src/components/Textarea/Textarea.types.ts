@@ -72,6 +72,11 @@ type TextareaCommons = {
   placeholder?: string;
 };
 
-export type TextareaProps = ComponentProps<Partial<TextareaSlots>> & TextareaCommons & InputWrapperCommons;
+export type TextareaProps = Omit<
+  ComponentProps<Partial<TextareaSlots>, 'textarea'>,
+  'children' | 'defaultValue' | 'onChange' | 'size' | 'type' | 'value'
+> &
+  TextareaCommons &
+  InputWrapperCommons;
 
 export type TextareaState = ComponentState<TextareaSlots> & TextareaCommons & InputWrapperCommons;

@@ -6,13 +6,12 @@ import type { InputProps } from '../index';
 
 const useStyles = makeStyles({
   root: {
-    display: 'flex',
+    display: 'inline-flex',
     flexDirection: 'column',
     ...shorthands.gap('10px'),
-    // maxWidth: '200px',
   },
   row: {
-    display: 'flex',
+    display: 'inline-flex',
     flexDirection: 'row',
     ...shorthands.gap('10px'),
   },
@@ -136,19 +135,19 @@ export const InputSizeExample = () => {
   return (
     <div className={styles.root}>
       <div className={styles.row}>
-        <Input size="small" placeholder="Enter your name" appearance="outline" helperText="Enter your full name" />
-        <Input size="small" placeholder="Enter your name" appearance="standard" helperText="Enter your full name" />
-        <Input size="small" placeholder="Enter your name" appearance="filled" helperText="Enter your full name" />
+        <Input size="small" placeholder="Enter your name" appearance="outline" />
+        <Input size="small" placeholder="Enter your name" appearance="standard" />
+        <Input size="small" placeholder="Enter your name" appearance="filled" />
       </div>
       <div className={styles.row}>
-        <Input size="medium" placeholder="Enter your name" appearance="outline" helperText="Enter your full name" />
-        <Input size="medium" placeholder="Enter your name" appearance="standard" helperText="Enter your full name" />
-        <Input size="medium" placeholder="Enter your name" appearance="filled" helperText="Enter your full name" />
+        <Input size="medium" placeholder="Enter your name" appearance="outline" />
+        <Input size="medium" placeholder="Enter your name" appearance="standard" />
+        <Input size="medium" placeholder="Enter your name" appearance="filled" />
       </div>
       <div className={styles.row}>
-        <Input size="large" placeholder="Enter your name" appearance="outline" helperText="Enter your full name" />
-        <Input size="large" placeholder="Enter your name" appearance="standard" helperText="Enter your full name" />
-        <Input size="large" placeholder="Enter your name" appearance="filled" helperText="Enter your full name" />
+        <Input size="large" placeholder="Enter your name" appearance="outline" />
+        <Input size="large" placeholder="Enter your name" appearance="standard" />
+        <Input size="large" placeholder="Enter your name" appearance="filled" />
       </div>
     </div>
   );
@@ -175,19 +174,6 @@ export const InputDisabledExample = () => {
       <Input defaultValue="hello" disabled />
       <Input defaultValue="hello" appearance="filled" disabled />
       <Input defaultValue="hello" appearance="standard" disabled />
-    </div>
-  );
-};
-
-export const InputHelperTextExample = () => {
-  const styles = useStyles();
-
-  return (
-    <div className={styles.root}>
-      <Input label="Standard" helperText="This is an input with helper text" />
-      <Input label="Disabled" helperText="This is an input with helper text" disabled />
-      <Input label="Danger" helperText="This is an input with helper text" danger />
-      <Input label="Danger Disabled" helperText="This is an input with helper text" danger disabled />
     </div>
   );
 };

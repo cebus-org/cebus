@@ -16,7 +16,7 @@ export const useTextarea = (props: TextareaProps, ref: React.Ref<HTMLTextAreaEle
     disabled,
     danger,
     label,
-    autoAdjust = true,
+    autoAdjust = false,
     resizable = false,
     placeholder,
   } = props;
@@ -39,7 +39,6 @@ export const useTextarea = (props: TextareaProps, ref: React.Ref<HTMLTextAreaEle
     resizable,
     autoAdjust,
     contentAfter,
-
     label,
     placeholder,
     components: {

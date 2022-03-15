@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { useControllableState, useEventCallback, useMergedRefs, useId } from '@fluentui/react-utilities';
+import {
+  useControllableState,
+  useEventCallback,
+  useMergedRefs,
+  useId,
+  useIsomorphicLayoutEffect,
+} from '@fluentui/react-utilities';
 import type { TextareaState } from './Textarea.types';
 
 export const useTextareaState = (state: TextareaState) => {
@@ -46,14 +52,14 @@ export const useTextareaState = (state: TextareaState) => {
   const onInputChange = React.useCallback(
     (ev: React.ChangeEvent<HTMLTextAreaElement>) => {
       updateValue(ev.target.value, ev);
-      // if (autoAdjust) {
-      //   updateTextareaHeight();
-      // }
+      if (autoAdjust) {
+        updateTextareaHeight();
+      }
     },
     [autoAdjust, updateTextareaHeight, updateValue],
   );
 
-  React.useEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     if (autoAdjust) {
       updateTextareaHeight();
     }
@@ -75,7 +81,6 @@ export const useTextareaState = (state: TextareaState) => {
   }
 
   state.textarea.value = currentValue;
-  // state.textarea.style = textareaStyles;
   state.textarea.onChange = onInputChange;
   state.textarea.disabled = disabled;
   state.textarea.ref = inputRef;
