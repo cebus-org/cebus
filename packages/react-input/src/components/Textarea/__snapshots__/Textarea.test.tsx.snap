@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input renders a basic input 1`] = `
+exports[`Textarea renders a basic Textarea 1`] = `
 <body>
   <div>
     <span
@@ -8,17 +8,15 @@ exports[`Input renders a basic input 1`] = `
       data-tabster="{\\"groupper\\":{\\"tabbability\\":2}}"
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
     >
-      <input
-        class="___19ah7w0 f1klrjes fsyuiy0 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1l02sjl f3rmtva f2hkw1w f113hnb5 fc467gg f1vw2ftv f13ta7ih f1arxnym"
-        type="text"
-        value=""
+      <textarea
+        class="___titpdk0 f10pi13n ftuwxu6 f1ewtqcl fqerorx f1klrjes fsyuiy0 fk6fouc f3rmtva fi8361m f19krssl fet4of2 f1c8chgj fzkkow9 fcdblym fg706s2 fjik90z f1p3nwhy f11589ue f1q5o8ev f1pdflbu f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f2hkw1w f1arxnym f1o1s39h"
       />
     </span>
   </div>
 </body>
 `;
 
-exports[`Input renders a danger input 1`] = `
+exports[`Textarea renders a danger Textarea 1`] = `
 <body>
   <div>
     <span
@@ -26,18 +24,15 @@ exports[`Input renders a danger input 1`] = `
       data-tabster="{\\"groupper\\":{\\"tabbability\\":2}}"
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
     >
-      <input
-        aria-invalid="true"
-        class="___a90x680 f1klrjes fsyuiy0 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1l02sjl f3rmtva f2hkw1w f113hnb5 fc467gg f1lxi41g f13ta7ih f1arxnym"
-        type="text"
-        value=""
+      <textarea
+        class="___titpdk0 f10pi13n ftuwxu6 f1ewtqcl fqerorx f1klrjes fsyuiy0 fk6fouc f3rmtva fi8361m f19krssl fet4of2 f1c8chgj fzkkow9 fcdblym fg706s2 fjik90z f1p3nwhy f11589ue f1q5o8ev f1pdflbu f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f2hkw1w f1arxnym f1o1s39h"
       />
     </span>
   </div>
 </body>
 `;
 
-exports[`Input renders a disabled input 1`] = `
+exports[`Textarea renders a disabled Textarea 1`] = `
 <body>
   <div>
     <span
@@ -45,18 +40,16 @@ exports[`Input renders a disabled input 1`] = `
       data-tabster="{\\"groupper\\":{\\"tabbability\\":2}}"
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
     >
-      <input
-        class="___ll66jt0 f1klrjes fsyuiy0 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1l02sjl f3rmtva f2hkw1w fdrzuqr favx1wl fgbidd3 f13ta7ih f1arxnym"
+      <textarea
+        class="___titpdk0 f10pi13n ftuwxu6 f1ewtqcl fqerorx f1klrjes fsyuiy0 fk6fouc f3rmtva fi8361m f19krssl fet4of2 f1c8chgj fzkkow9 fcdblym fg706s2 fjik90z f1p3nwhy f11589ue f1q5o8ev f1pdflbu f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f2hkw1w f1arxnym f1o1s39h"
         disabled=""
-        type="text"
-        value=""
       />
     </span>
   </div>
 </body>
 `;
 
-exports[`Input renders a label Input 1`] = `
+exports[`Textarea renders a label Textarea 1`] = `
 <body>
   <div>
     <span
@@ -66,15 +59,13 @@ exports[`Input renders a label Input 1`] = `
     >
       <label
         class="pongo-input-label ___14aky1n f1euv43f f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f12huiiw f1ov4xf1 f161knb0 fpnytvn f9j3dip f1ysjbbf fk6fouc fz5stix f1q148li f1cmbuwj f1sdsnyy f1aehjj5 f1xqy1su ftuwxu6 fi64zpg fc7pyfw f122n59 fvz7k9s frurm3d fpa1rl3 fuzzvh5 fxf9f1y ff0gctb f8g0ba1 fsa65no f5uakvk frcipv9 fsm07gi f1qo5dib fb322o2"
-        for="input-label1"
+        for="textarea-label1"
       >
         test
       </label>
-      <input
-        class="___19ah7w0 f1klrjes fsyuiy0 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1l02sjl f3rmtva f2hkw1w f113hnb5 fc467gg f1vw2ftv f13ta7ih f1arxnym"
-        id="input-label1"
-        type="text"
-        value=""
+      <textarea
+        class="___titpdk0 f10pi13n ftuwxu6 f1ewtqcl fqerorx f1klrjes fsyuiy0 fk6fouc f3rmtva fi8361m f19krssl fet4of2 f1c8chgj fzkkow9 fcdblym fg706s2 fjik90z f1p3nwhy f11589ue f1q5o8ev f1pdflbu f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f2hkw1w f1arxnym f1o1s39h"
+        id="textarea-label1"
       />
     </span>
   </div>

@@ -61,4 +61,14 @@ describe('Select', () => {
 
     expect(renderedComponent.baseElement).toMatchSnapshot();
   });
+
+  it('renders a label Select', () => {
+    const renderedComponent = render(
+      <Select label="hello">
+        <Option value="test">Test</Option>
+      </Select>,
+    );
+
+    expect(renderedComponent.baseElement).toMatchSnapshot();
+  });
 });

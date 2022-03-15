@@ -23,6 +23,9 @@ export const inputLabelClassName = "pongo-input-label";
 // @public (undocumented)
 export const inputLegendClassName = "pongo-input-legend";
 
+// @public (undocumented)
+export const inputLineHeight = "--pongo-input-line-height";
+
 // Warning: (ae-forgotten-export) The symbol "InputCommons" needs to be exported by the entry point index.d.ts
 //
 // @public (undocumented)
@@ -40,6 +43,9 @@ export type InputSlots = {
 // @public (undocumented)
 export type InputState = ComponentState<InputSlots> & InputCommons & InputWrapperCommons;
 
+// @public (undocumented)
+export const inputWidth = "--pongo-input-width";
+
 // @public
 export const InputWrapper: ForwardRefComponent<InputWrapperProps>;
 
@@ -49,7 +55,6 @@ export type InputWrapperCommons = {
     danger?: boolean;
     appearance?: 'outline' | 'standard' | 'filled';
     size?: 'small' | 'medium' | 'large';
-    helperTextId?: string;
     labelId?: string;
     currentValue?: string;
 };
@@ -60,10 +65,8 @@ export type InputWrapperProps = ComponentProps<Partial<InputWrapperSlots>> & Inp
 // @public (undocumented)
 export type InputWrapperSlots = {
     root: Slot<'span'>;
-    border: NonNullable<Slot<'span'>>;
     contentBefore?: Slot<'span'>;
     contentAfter?: Slot<'span'>;
-    helperText?: Slot<'p'>;
     label?: Slot<'label'>;
 };
 
@@ -100,6 +103,9 @@ export const renderInputWrapper: (state: InputWrapperState) => JSX.Element;
 // @public (undocumented)
 export const renderSelect: (state: SelectState) => JSX.Element;
 
+// @public (undocumented)
+export const renderTextarea: (state: TextareaState) => JSX.Element;
+
 // @public
 export const Select: ForwardRefComponent<SelectProps>;
 
@@ -121,6 +127,23 @@ export type SelectSlots = {
 // @public (undocumented)
 export type SelectState = ComponentState<SelectSlots> & SelectCommons & InputWrapperCommons;
 
+// @public
+export const Textarea: ForwardRefComponent<TextareaProps>;
+
+// Warning: (ae-forgotten-export) The symbol "TextareaCommons" needs to be exported by the entry point index.d.ts
+//
+// @public (undocumented)
+export type TextareaProps = Omit<ComponentProps<Partial<TextareaSlots>, 'textarea'>, 'children' | 'defaultValue' | 'onChange' | 'size' | 'type' | 'value'> & TextareaCommons & InputWrapperCommons;
+
+// @public (undocumented)
+export type TextareaSlots = {
+    root: NonNullable<Slot<typeof InputWrapper>>;
+    textarea: NonNullable<Slot<'textarea'>>;
+};
+
+// @public (undocumented)
+export type TextareaState = ComponentState<TextareaSlots> & TextareaCommons & InputWrapperCommons;
+
 // @public (undocumented)
 export const useInput: (props: InputProps, ref: React_2.Ref<HTMLInputElement>) => InputState;
 
@@ -141,6 +164,15 @@ export const useSelect: (props: SelectProps, ref: React_2.Ref<HTMLInputElement>)
 
 // @public (undocumented)
 export const useSelectStyles: (state: SelectState) => SelectState;
+
+// @public (undocumented)
+export const useTextarea: (props: TextareaProps, ref: React_2.Ref<HTMLTextAreaElement>) => TextareaState;
+
+// @public (undocumented)
+export const useTextareaState: (state: TextareaState) => TextareaState;
+
+// @public (undocumented)
+export const useTextareaStyles: (state: TextareaState) => TextareaState;
 
 // (No @packageDocumentation comment for this package)
 

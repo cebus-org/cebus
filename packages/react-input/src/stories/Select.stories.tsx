@@ -6,7 +6,7 @@ import type { SelectProps } from '../index';
 
 const useStyles = makeStyles({
   root: {
-    display: 'flex',
+    display: 'inline-flex',
     flexDirection: 'column',
     ...shorthands.gap('10px'),
   },
@@ -59,7 +59,7 @@ export const SelectContentExample = () => {
       <Select
         value={checkedValues}
         label="test"
-        size="large"
+        size="small"
         onCheckedValueChange={onCheckedValueChange}
         contentBefore={<DateTimeIcon />}
       >

@@ -6,14 +6,27 @@ export const inputRootClassName = 'pongo-input-wrapper';
 export const inputLabelClassName = 'pongo-input-label';
 export const inputLegendClassName = 'pongo-input-legend';
 
-const labelFocusedSize = '--focused-label-font-size';
+export const inputLineHeight = '--pongo-input-line-height';
+export const inputWidth = '--pongo-input-width';
+const labelFocusedSize = '--pongo-focused-label-font-size';
+
+// These variables represent the size of each line of text.
+const inputLineHeightSmall = '35px';
+const inputLineHeightMedium = '45px';
+const inputLineHeightLarge = '50px';
+
+const inputWidthSmall = '150px';
+const inputWidthMedium = '200px';
+const inputWidthLarge = '300px';
 
 const useRootStyles = makeStyles({
   root: {
     position: 'relative',
     boxSizing: 'border-box',
-    display: 'flex',
-    alignItems: 'center',
+    display: 'inline-flex',
+    flexGrow: 2,
+    lineHeight: '1',
+    verticalAlign: 'center',
     flexWrap: 'nowrap',
     color: tokens.textColor,
     backgroundColor: tokens.canvasColor,
@@ -121,22 +134,16 @@ const useRootStyles = makeStyles({
 
   // Size
   small: {
-    height: '35px',
-    width: '150px',
     fontSize: tokens.fontSize200,
     [labelFocusedSize]: tokens.fontSize100,
   },
 
   medium: {
-    height: '45px',
-    width: '200px',
     fontSize: tokens.fontSize300,
     [labelFocusedSize]: tokens.fontSize200,
   },
 
   large: {
-    height: '50px',
-    width: '300px',
     fontSize: tokens.fontSize400,
     [labelFocusedSize]: tokens.fontSize300,
   },
@@ -149,18 +156,11 @@ const useRootStyles = makeStyles({
   },
 });
 
-const useHelperTextStyles = makeStyles({
-  helperText: {
-    ...shorthands.padding('5px', '10px'),
-    ...shorthands.margin('0px'),
-    fontFamily: tokens.fontFamilyBase,
-    fontSize: tokens.fontSize200,
-    textAlign: 'left',
-  },
-});
-
 const useContentStyles = makeStyles({
   base: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
     boxSizing: 'border-box',
     '> svg': { display: 'block' },
   },
@@ -211,6 +211,7 @@ const useLabelStyles = makeStyles({
     position: 'absolute',
     ...shorthands.margin('0px'),
     ...shorthands.padding('0px', '2px'),
+    height: `var(${inputLineHeight})`,
     left: '8px',
     color: tokens.inherit,
     fontFamily: tokens.fontFamilyBase,
@@ -227,14 +228,12 @@ const useLabelStyles = makeStyles({
     transitionProperty: 'transform, font-size, top',
     transitionDuration: '.1s',
     transitionDelay: 'cubic-bezier(0.33, 0.0, 0.67, 1)',
-
     ':before': {
       content: '""',
       position: 'absolute',
       right: '0px',
-      top: '5px',
       left: '0px',
-      height: '5px',
+      height: '6px',
       userSelect: 'none',
       pointerEvents: 'none',
       zIndex: -1,
@@ -244,7 +243,7 @@ const useLabelStyles = makeStyles({
   standardActive: {
     ':focus-within': {
       [`& .${inputLabelClassName}`]: {
-        transform: 'translateY(-100%)',
+        transform: 'translateY(-30%)',
         fontSize: `var(${labelFocusedSize})`,
       },
     },
@@ -253,7 +252,7 @@ const useLabelStyles = makeStyles({
   outlineActive: {
     ':focus-within': {
       [`& .${inputLabelClassName}`]: {
-        transform: 'translateY(-150%)',
+        transform: 'translateY(-50%)',
         fontSize: `var(${labelFocusedSize})`,
       },
     },
@@ -262,24 +261,24 @@ const useLabelStyles = makeStyles({
   filledActive: {
     ':focus-within': {
       [`& .${inputLabelClassName}`]: {
-        transform: 'translateY(-100%)',
+        transform: 'translateY(-30%)',
         fontSize: `var(${labelFocusedSize})`,
       },
     },
   },
 
   standard: {
-    transform: 'translateY(-100%)',
+    transform: 'translateY(-30%)',
     fontSize: `var(${labelFocusedSize})`,
   },
 
   outline: {
-    transform: 'translateY(-150%)',
+    transform: 'translateY(-50%)',
     fontSize: `var(${labelFocusedSize})`,
   },
 
   filled: {
-    transform: 'translateY(-100%)',
+    transform: 'translateY(-30%)',
     fontSize: `var(${labelFocusedSize})`,
   },
 
@@ -294,9 +293,8 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
   const rootStyles = useRootStyles();
   const contentStyles = useContentStyles();
   const labelStyles = useLabelStyles();
-  const helperTextStyles = useHelperTextStyles();
 
-  state.border.className = mergeClasses(
+  state.root.className = mergeClasses(
     inputRootClassName,
     rootStyles.root,
     rootStyles[state.size!],
@@ -307,18 +305,8 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
     !state.disabled &&
       labelStyles[(state.appearance! + 'Active') as 'standardActive' | 'outlineActive' | 'filledActive'],
     state.disabled && state.danger && rootStyles.disabledDanger,
-    state.border.className,
+    state.root.className,
   );
-
-  if (state.helperText) {
-    state.helperText.className = mergeClasses(
-      helperTextStyles.helperText,
-      state.disabled ? contentStyles.disabled : contentStyles.enabled,
-      state.danger && contentStyles.danger,
-      state.disabled && state.danger && contentStyles.disabledDanger,
-      state.helperText.className,
-    );
-  }
 
   const contentClasses = [
     contentStyles.base,
@@ -353,6 +341,34 @@ export const useInputWrapperStyles = (state: InputWrapperState) => {
       state.label.className,
     );
   }
+
+  let lineHeight;
+  let width;
+
+  switch (state.size) {
+    case 'small':
+      lineHeight = inputLineHeightSmall;
+      width = inputWidthSmall;
+      break;
+    case 'medium':
+      lineHeight = inputLineHeightMedium;
+      width = inputWidthMedium;
+      break;
+    case 'large':
+      lineHeight = inputLineHeightLarge;
+      width = inputWidthLarge;
+      break;
+  }
+
+  const CSSVariables = {
+    [inputLineHeight]: lineHeight,
+    [inputWidth]: width,
+  };
+
+  state.root.style = {
+    ...CSSVariables,
+    ...state.root.style,
+  };
 
   return state;
 };

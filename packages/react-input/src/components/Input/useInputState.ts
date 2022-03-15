@@ -3,23 +3,11 @@ import { useControllableState, useEventCallback, useId } from '@fluentui/react-u
 import type { InputState } from './Input.types';
 
 export const useInputState = (state: InputState) => {
-  const {
-    label,
-    appearance,
-    defaultValue,
-    value,
-    size,
-    danger,
-    helperText,
-    contentBefore,
-    contentAfter,
-    disabled,
-    onChange,
-  } = state;
+  const { label, appearance, defaultValue, value, size, danger, contentBefore, contentAfter, disabled, onChange } =
+    state;
 
   const { id } = state.input;
   const labelId = label ? useId('input-label', id) : undefined;
-  const helperTextId = helperText ? useId('input-helper-text-', id) : undefined;
 
   const [currentValue, setCurrentValue] = useControllableState({
     defaultState: defaultValue,
@@ -44,12 +32,6 @@ export const useInputState = (state: InputState) => {
   state.root.contentBefore = contentBefore;
   state.root.contentAfter = contentAfter;
   state.root.currentValue = currentValue;
-
-  if (helperText) {
-    state.root.helperText = helperText;
-    state.root.helperTextId = helperTextId;
-    state.input['aria-describedby'] = helperTextId;
-  }
 
   if (label) {
     state.root.label = label;

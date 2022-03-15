@@ -7,13 +7,10 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
   const {
     disabled,
     size = 'medium',
-    helperText,
     contentAfter,
     contentBefore,
-    border,
     appearance = 'outline',
     danger,
-    helperTextId,
     labelId,
     label,
     currentValue,
@@ -28,13 +25,10 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
     danger,
     labelId,
     currentValue,
-    helperTextId,
     components: {
       root: 'span',
       contentBefore: 'span',
       contentAfter: 'span',
-      border: 'span',
-      helperText: 'p',
       label: 'label',
     },
     root: getNativeElementProps('div', {
@@ -42,16 +36,10 @@ export const useInputWrapper = (props: InputWrapperProps, ref: React.Ref<HTMLEle
       ...groupFocusAttributes,
       ...props,
     }),
-    border: resolveShorthand(border, { required: true }),
-    helperText: resolveShorthand(helperText),
     contentAfter: resolveShorthand(contentAfter),
     contentBefore: resolveShorthand(contentBefore),
     label: resolveShorthand(label),
   };
-
-  if (state.helperText) {
-    state.helperText.id = helperTextId;
-  }
 
   if (state.label) {
     state.label.htmlFor = labelId;

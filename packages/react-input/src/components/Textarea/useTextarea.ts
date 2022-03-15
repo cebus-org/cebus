@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { getPartitionedNativeProps, resolveShorthand } from '@fluentui/react-utilities';
-import { useInputState } from './useInputState';
-import type { InputProps, InputState } from './Input.types';
+import { useTextareaState } from './useTextareaState';
+import type { TextareaProps, TextareaState } from './Textarea.types';
 import { InputWrapper } from '../InputWrapper';
 
-export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): InputState => {
+export const useTextarea = (props: TextareaProps, ref: React.Ref<HTMLTextAreaElement>): TextareaState => {
   const {
     value,
     defaultValue,
@@ -16,16 +16,18 @@ export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): I
     disabled,
     danger,
     label,
+    autoAdjust = false,
+    resizable = false,
     placeholder,
   } = props;
 
   const nativeProps = getPartitionedNativeProps({
     props,
-    primarySlotTagName: 'input',
+    primarySlotTagName: 'textarea',
     excludedPropNames: ['size', 'onChange', 'value', 'defaultValue'],
   });
 
-  const state: InputState = {
+  const state: TextareaState = {
     value,
     defaultValue,
     onChange,
@@ -34,28 +36,29 @@ export const useInput = (props: InputProps, ref: React.Ref<HTMLInputElement>): I
     disabled,
     danger,
     contentBefore,
+    resizable,
+    autoAdjust,
     contentAfter,
     label,
     placeholder,
     components: {
       root: InputWrapper,
-      input: 'input',
+      textarea: 'textarea',
     },
     root: resolveShorthand(props.root, {
       required: true,
       defaultProps: nativeProps.root,
     }),
-    input: resolveShorthand(props.input, {
+    textarea: resolveShorthand(props.textarea, {
       required: true,
       defaultProps: {
-        type: 'text',
         ref,
         ...nativeProps.primary,
       },
     }),
   };
 
-  useInputState(state);
+  useTextareaState(state);
 
   return state;
 };

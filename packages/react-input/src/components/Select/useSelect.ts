@@ -23,7 +23,6 @@ export const useSelect = (props: SelectProps, ref: React.Ref<HTMLInputElement>):
     menuTrigger,
     menuPopover,
     menuList,
-    helperText,
     select,
   } = props;
 
@@ -39,7 +38,6 @@ export const useSelect = (props: SelectProps, ref: React.Ref<HTMLInputElement>):
     danger,
     contentBefore,
     contentAfter,
-    helperText,
     label,
     placeholder,
     components: {

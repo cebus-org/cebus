@@ -28,4 +28,10 @@ describe('InputWrapper', () => {
 
     expect(renderedComponent.baseElement).toMatchSnapshot();
   });
+
+  it('renders a label InputWrapper', () => {
+    const renderedComponent = render(<InputWrapper label="test" />);
+
+    expect(renderedComponent.baseElement).toMatchSnapshot();
+  });
 });
