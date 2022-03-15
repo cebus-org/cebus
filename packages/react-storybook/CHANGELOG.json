@@ -2,6 +2,33 @@
   "name": "@pongo-ui/react-storybook",
   "entries": [
     {
+      "date": "Tue, 15 Mar 2022 21:02:59 GMT",
+      "tag": "@pongo-ui/react-storybook_v0.0.11",
+      "version": "0.0.11",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-storybook",
+            "commit": "e6486cb2b8d06007bebacfe2298e66fb69187757",
+            "comment": "Updating provider"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-storybook",
+            "comment": "Bump @pongo-ui/react-theme to v0.0.10",
+            "commit": "dcd74abdae6e2245f4a9a0cf8a824115ae49ccf5"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-storybook",
+            "comment": "Bump @pongo-ui/react-provider to v0.0.1",
+            "commit": "dcd74abdae6e2245f4a9a0cf8a824115ae49ccf5"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 13 Mar 2022 22:45:27 GMT",
       "tag": "@pongo-ui/react-storybook_v0.0.10",
       "version": "0.0.10",

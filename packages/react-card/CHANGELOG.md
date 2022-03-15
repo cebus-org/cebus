@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-card
 
-This log was last generated on Sat, 12 Mar 2022 22:33:39 GMT and should not be manually modified.
+This log was last generated on Tue, 15 Mar 2022 21:02:59 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.12
+
+Tue, 15 Mar 2022 21:02:59 GMT
+
+### Patches
+
+- Updating tokens (czearing@outlook.com)
 
 ## 0.0.9
 

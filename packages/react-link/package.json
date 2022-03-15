@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-link",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "A customizable link that helps with site navigation.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

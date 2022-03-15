@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-link",
   "entries": [
     {
+      "date": "Tue, 15 Mar 2022 21:02:59 GMT",
+      "tag": "@pongo-ui/react-link_v0.1.9",
+      "version": "0.1.9",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-link",
+            "commit": "e6486cb2b8d06007bebacfe2298e66fb69187757",
+            "comment": "Updating tokens"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 13 Mar 2022 21:01:24 GMT",
       "tag": "@pongo-ui/react-link_v0.1.8",
       "version": "0.1.8",

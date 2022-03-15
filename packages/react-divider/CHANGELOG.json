@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-divider",
   "entries": [
     {
+      "date": "Tue, 15 Mar 2022 21:02:59 GMT",
+      "tag": "@pongo-ui/react-divider_v0.0.6",
+      "version": "0.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-divider",
+            "commit": "e6486cb2b8d06007bebacfe2298e66fb69187757",
+            "comment": "Updating tokens"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-divider",
+            "comment": "Bump @pongo-ui/react-text to v0.0.10",
+            "commit": "dcd74abdae6e2245f4a9a0cf8a824115ae49ccf5"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 13 Mar 2022 21:01:25 GMT",
       "tag": "@pongo-ui/react-divider_v0.0.5",
       "version": "0.0.5",

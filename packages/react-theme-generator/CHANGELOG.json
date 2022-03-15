@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-theme-generator",
   "entries": [
     {
+      "date": "Tue, 15 Mar 2022 21:02:59 GMT",
+      "tag": "@pongo-ui/react-theme-generator_v0.1.2",
+      "version": "0.1.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-theme-generator",
+            "commit": "e6486cb2b8d06007bebacfe2298e66fb69187757",
+            "comment": "Updating tokens"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 08 Mar 2022 23:39:41 GMT",
       "tag": "@pongo-ui/react-theme-generator_v0.1.1",
       "version": "0.1.1",

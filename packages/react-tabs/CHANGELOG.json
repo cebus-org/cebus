@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-tabs",
   "entries": [
     {
+      "date": "Tue, 15 Mar 2022 21:02:59 GMT",
+      "tag": "@pongo-ui/react-tabs_v0.0.7",
+      "version": "0.0.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-tabs",
+            "commit": "e6486cb2b8d06007bebacfe2298e66fb69187757",
+            "comment": "Updating tokens"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 14 Mar 2022 03:58:33 GMT",
       "tag": "@pongo-ui/react-tabs_v0.0.6",
       "version": "0.0.6",

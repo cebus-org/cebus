@@ -1,8 +1,34 @@
 # Change Log - @pongo-ui/react-components
 
-This log was last generated on Tue, 15 Mar 2022 04:15:25 GMT and should not be manually modified.
+This log was last generated on Tue, 15 Mar 2022 21:02:59 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.3
+
+Tue, 15 Mar 2022 21:02:59 GMT
+
+### Patches
+
+- Updating tokens (czearing@outlook.com)
+- Bump @pongo-ui/react-theme to v0.0.10
+- Bump @pongo-ui/react-theme-generator to v0.1.2
+- Bump @pongo-ui/react-avatar to v0.0.6
+- Bump @pongo-ui/react-button to v1.1.22
+- Bump @pongo-ui/react-card to v0.0.12
+- Bump @pongo-ui/react-divider to v0.0.6
+- Bump @pongo-ui/react-icon to v0.1.6
+- Bump @pongo-ui/react-input to v0.2.1
+- Bump @pongo-ui/react-label to v0.0.5
+- Bump @pongo-ui/react-link to v0.1.9
+- Bump @pongo-ui/react-menu to v0.1.3
+- Bump @pongo-ui/react-radio to v0.0.3
+- Bump @pongo-ui/react-switch to v0.0.5
+- Bump @pongo-ui/react-tabs to v0.0.7
+- Bump @pongo-ui/react-text to v0.0.10
+- Bump @pongo-ui/react-toolbar to v0.0.9
+- Bump @pongo-ui/react-checkbox to v0.0.2
+- Bump @pongo-ui/react-provider to v0.0.1
 
 ## 0.0.2
 
