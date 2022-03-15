@@ -76,8 +76,8 @@ export const useSelectState = (state: SelectState) => {
   state.menu.open = open;
   state.menu.onOpenChange = onOpenChange;
 
-  state.menuList.onCheckedValueChange = onChange;
-  state.menuList.checkedValues = currentValue;
+  state.menu.onCheckedValueChange = onChange;
+  state.menu.checkedValues = currentValue;
 
   state.select.value = currentValue.select[0];
   state.select.onChange = onSelectChange;

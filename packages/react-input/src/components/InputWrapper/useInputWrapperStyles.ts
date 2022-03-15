@@ -142,6 +142,10 @@ const useRootStyles = makeStyles({
   medium: {
     // height: '45px',
     // minWidth: '200px',
+    // width: 'max-content',
+    // minWidth: '150px',
+    // maxWidth: '350px',
+
     fontSize: tokens.fontSize300,
     [labelFocusedSize]: tokens.fontSize200,
   },
@@ -149,6 +153,7 @@ const useRootStyles = makeStyles({
   large: {
     // height: '50px',
     // minWidth: '300px',
+
     fontSize: tokens.fontSize400,
     [labelFocusedSize]: tokens.fontSize300,
   },

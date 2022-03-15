@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Textarea } from '../index';
+import { Textarea, Input } from '../index';
 import { makeStyles, shorthands } from '@griffel/react';
 
 const useStyles = makeStyles({
@@ -10,7 +10,7 @@ const useStyles = makeStyles({
   },
   row: {
     display: 'inline-flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
     ...shorthands.gap('10px'),
   },
 });
@@ -21,7 +21,13 @@ export const BasicTextareaExample = () => {
   return (
     <div className={styles.root}>
       <Textarea label="test" resizable textarea={{ rows: 10 }} />
-      <Textarea appearance="standard" label="test" />
+      <div className={styles.row}>
+        <Textarea label="test" resizable />
+        <div>
+          <Input label="test" />
+        </div>
+      </div>
+
       <Textarea appearance="filled" label="test" resizable />
     </div>
   );

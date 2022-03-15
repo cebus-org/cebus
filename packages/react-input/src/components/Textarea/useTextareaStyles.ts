@@ -3,25 +3,34 @@ import type { TextareaState } from './Textarea.types';
 import { tokens } from '@pongo-ui/react-theme';
 import { inputLineHeight, inputWidth } from '../InputWrapper';
 
-const useTextAreaStyles = makeStyles({
+const useRootStyles = makeStyles({
   root: {
     position: 'relative',
-    display: 'block',
+    display: 'inline-flex',
+    boxSizing: 'border-box',
+    // ...shorthands.padding('10px'),
+  },
+});
+
+const useTextAreaStyles = makeStyles({
+  textarea: {
+    position: 'relative',
+    display: 'inline-flex',
     boxSizing: 'border-box',
     minHeight: `var(${inputLineHeight})`,
     minWidth: `var(${inputWidth})`,
-    ...shorthands.borderStyle('none'),
-    backgroundColor: 'transparent',
-    ...shorthands.borderRadius(tokens.rounded),
     fontFamily: tokens.fontFamilyBase,
-    padding: '10px',
+    backgroundColor: 'transparent',
+    ...shorthands.border('10px', 'solid', 'transparent'),
+    ...shorthands.borderRadius(tokens.rounded),
     ':focus-visible': {
       outlineStyle: 'none',
     },
   },
 
   labelLowerText: {
-    paddingTop: '20px',
+    // paddingTop: '20px',
+    //borderTop: '10px solid transparent',
   },
 
   small: {
@@ -46,10 +55,13 @@ const useTextAreaStyles = makeStyles({
 });
 
 export const useTextareaStyles = (state: TextareaState) => {
+  const rootStyles = useRootStyles();
   const textAreaStyles = useTextAreaStyles();
 
+  state.root.className = mergeClasses(rootStyles.root, state.root.className);
+
   state.textarea.className = mergeClasses(
-    textAreaStyles.root,
+    textAreaStyles.textarea,
     state.autoAdjust && textAreaStyles.autoAdjust,
     textAreaStyles[state.size!],
     !state.resizable && textAreaStyles.disableResize,

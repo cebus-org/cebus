@@ -46,9 +46,9 @@ export const useTextareaState = (state: TextareaState) => {
   const onInputChange = React.useCallback(
     (ev: React.ChangeEvent<HTMLTextAreaElement>) => {
       updateValue(ev.target.value, ev);
-      if (autoAdjust) {
-        updateTextareaHeight();
-      }
+      // if (autoAdjust) {
+      //   updateTextareaHeight();
+      // }
     },
     [autoAdjust, updateTextareaHeight, updateValue],
   );
