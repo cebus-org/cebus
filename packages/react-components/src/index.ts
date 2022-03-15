@@ -15,3 +15,4 @@ export * from '@pongo-ui/react-theme';
 export * from '@pongo-ui/react-theme-generator';
 export * from '@pongo-ui/react-toolbar';
 export * from '@pongo-ui/react-checkbox';
+export * from '@pongo-ui/react-provider';

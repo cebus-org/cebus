@@ -114,8 +114,8 @@ const useRootStyles = makeStyles({
   enabled: {
     ':before': {
       transitionProperty: 'border-width',
-      transitionDuration: '.1s',
-      transitionDelay: 'cubic-bezier(0.33, 0.0, 0.67, 1)',
+      transitionDuration: tokens.transitionDuration,
+      transitionTimingFunction: tokens.transitionTimingFunction,
       boxSizing: 'border-box',
     },
   },
@@ -226,8 +226,8 @@ const useLabelStyles = makeStyles({
     justifyContent: 'left',
     alignItems: 'center',
     transitionProperty: 'transform, font-size, top',
-    transitionDuration: '.1s',
-    transitionDelay: 'cubic-bezier(0.33, 0.0, 0.67, 1)',
+    transitionDuration: tokens.transitionDuration,
+    transitionTimingFunction: tokens.transitionTimingFunction,
     ':before': {
       content: '""',
       position: 'absolute',

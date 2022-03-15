@@ -21,13 +21,13 @@ yarn add @pongo-ui/react-components
 2. Set up the provider in your app:
 
 ```jsx
-import { FluentProvider } from '@fluentui/react-provider'
+import { Provider } from '@pongo-ui/react-provider'
 import { webLightTheme } from '@pongo-ui/react-components'
 
 const MyApp = () => {
   return (
-    <FluentProvider theme={webLightTheme}>
-    <FluentProvider>
+    <Provider theme={webLightTheme}>
+    <Provider>
   )
 }
 ```
@@ -35,14 +35,14 @@ const MyApp = () => {
 4. Integrate your components.
 
 ```jsx
-import { FluentProvider } from '@fluentui/react-provider'
+import { Provider } from '@pongo-ui/react-provider'
 import { webLightTheme, Button } from '@pongo-ui/react-components'
 
 const MyApp = () => {
   return (
-    <FluentProvider theme={webLightTheme}>
+    <Provider theme={webLightTheme}>
       <Button>Hello World</Button>
-    <FluentProvider>
+    <Provider>
   )
 }
 ```

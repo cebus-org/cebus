@@ -8,9 +8,9 @@ const useRootStyles = makeStyles({
     position: 'relative',
     display: 'flex',
     ':after': {
-      transitionProperty: 'transform',
-      transitionDuration: '.2s',
-      transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1) 0m',
+      transitionProperty: 'transform, width',
+      transitionDuration: tokens.transitionDuration,
+      transitionTimingFunction: tokens.transitionTimingFunction,
     },
   },
 

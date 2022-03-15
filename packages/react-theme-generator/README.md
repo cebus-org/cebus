@@ -37,7 +37,7 @@ const hcTheme = themeGenerator({
 4. Integrate your theme in your provider and components
 
 ```jsx
-import { FluentProvider } from '@fluentui/react-provider'
+import { Provider } from '@pongo-ui/react-provider'
 import { webLightTheme } from '@pongo-ui/react-theme'
 import { Button } from '@pongo-ui/react-button'
 
@@ -52,9 +52,9 @@ const hcTheme = themeGenerator({
 
 const MyApp = () => {
   return (
-    <FluentProvider theme={hcTheme}>
+    <Provider theme={hcTheme}>
       <Button>Hello World</Button>
-    <FluentProvider>
+    <Provider>
   )
 }
 ```

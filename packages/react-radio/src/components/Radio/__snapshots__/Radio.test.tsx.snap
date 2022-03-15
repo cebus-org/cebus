@@ -13,7 +13,7 @@ exports[`Radio renders correctly 1`] = `
     />
     <div
       aria-hidden="true"
-      class="pongo-radio-indicator ___3pdip00 f22iagw fjw5fx7 fd461yt f1ewtqcl fi64zpg f122n59 f4d9j23 f1aehjj5 f1p9o1ba f1sil6mw ftac7j7 f1w0yd9v fdwcyh7 f1h0xgbp fzkkow9 fcdblym fg706s2 fjik90z fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f19qt5od f1fajnbs ffz4t7b f1m319iu fbwjavv"
+      class="pongo-radio-indicator ___1pabbn4 f22iagw fjw5fx7 fd461yt f1ewtqcl fi64zpg f122n59 f4d9j23 f1aehjj5 f1p9o1ba f1sil6mw ftac7j7 f1w0yd9v fdwcyh7 f1h0xgbp fzkkow9 fcdblym fg706s2 fjik90z fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f19qt5od f1fajnbs ffz4t7b f1wac4k f1t8un4"
     >
       <svg
         aria-hidden="true"

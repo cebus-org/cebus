@@ -5,7 +5,7 @@ export const BasicTabExample = () => {
   return (
     <div>
       <TabList defaultSelectedValue="1">
-        <Tab value="1">Test 1</Tab>
+        <Tab value="1">Test 1 asdasdasd</Tab>
         <Tab value="2">Test 2</Tab>
         <Tab value="3">Test 3</Tab>
       </TabList>

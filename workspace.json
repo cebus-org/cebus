@@ -76,6 +76,10 @@
     "@pongo-ui/react-checkbox": {
       "root": "packages/react-checkbox",
       "projectType": "library"
+    },
+    "@pongo-ui/react-provider": {
+      "root": "packages/react-provider",
+      "projectType": "library"
     }
   }
 }
