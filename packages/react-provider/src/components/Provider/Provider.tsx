@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { useProviderStyles } from './useProviderStyles';
 import {
   useFluentProviderContextValues_unstable,
   useFluentProvider_unstable,
   renderFluentProvider_unstable,
 } from '@fluentui/react-provider';
+import { useProviderStyles } from './useProviderStyles';
 import type { ProviderProps } from './Provider.types';
 
 /**
