@@ -7,7 +7,7 @@ import { render } from '@testing-library/react';
 describe('Textarea', () => {
   isConformant({
     Component: Textarea as React.FunctionComponent<TextareaProps>,
-    displayName: 'Input',
+    displayName: 'Textarea',
     disabledTests: ['component-has-root-ref', 'make-styles-overrides-win'],
   });
 
@@ -25,6 +25,12 @@ describe('Textarea', () => {
 
   it('renders a disabled Textarea', () => {
     const renderedComponent = render(<Textarea disabled />);
+
+    expect(renderedComponent.baseElement).toMatchSnapshot();
+  });
+
+  it('renders a label Textarea', () => {
+    const renderedComponent = render(<Textarea label="test" />);
 
     expect(renderedComponent.baseElement).toMatchSnapshot();
   });

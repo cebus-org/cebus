@@ -29,4 +29,10 @@ describe('Input', () => {
 
     expect(renderedComponent.baseElement).toMatchSnapshot();
   });
+
+  it('renders a label Input', () => {
+    const renderedComponent = render(<Input label="test" />);
+
+    expect(renderedComponent.baseElement).toMatchSnapshot();
+  });
 });
