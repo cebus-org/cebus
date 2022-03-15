@@ -15,6 +15,7 @@ export * from "@pongo-ui/react-input";
 export * from "@pongo-ui/react-label";
 export * from "@pongo-ui/react-link";
 export * from "@pongo-ui/react-menu";
+export * from "@pongo-ui/react-provider";
 export * from "@pongo-ui/react-radio";
 export * from "@pongo-ui/react-switch";
 export * from "@pongo-ui/react-tabs";
