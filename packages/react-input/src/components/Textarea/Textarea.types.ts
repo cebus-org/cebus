@@ -40,14 +40,14 @@ type TextareaCommons = {
   /**
    * Whether the Textarea should be able to resize.
    *
-   * @default false
+   * @defaultValue false
    */
   resizable?: boolean;
 
   /**
    * Whether Textarea should automatically adjust its height based off its content,
    *
-   * @default true
+   * @defaultValue false
    */
   autoAdjust?: boolean;
 
