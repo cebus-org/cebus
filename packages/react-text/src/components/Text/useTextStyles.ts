@@ -18,22 +18,22 @@ const useRootStyles = makeStyles({
     fontFamily: tokens.monospaceFont,
   },
   thin: {
-    fontWeight: tokens.thin as any,
+    fontWeight: tokens.thin,
   },
   light: {
-    fontWeight: tokens.light as any,
+    fontWeight: tokens.light,
   },
   regular: {
-    fontWeight: tokens.regular as any,
+    fontWeight: tokens.regular,
   },
   medium: {
-    fontWeight: tokens.medium as any,
+    fontWeight: tokens.medium,
   },
   bold: {
-    fontWeight: tokens.bold as any,
+    fontWeight: tokens.bold,
   },
   black: {
-    fontWeight: tokens.black as any,
+    fontWeight: tokens.black,
   },
   italic: {
     fontStyle: 'italic',
