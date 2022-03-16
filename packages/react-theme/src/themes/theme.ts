@@ -1,6 +1,7 @@
 import { webLightTokens, webDarkTokens } from './web';
 import { fonts } from './font';
 import { borderRadiusTokens } from './borderRadius';
+import { layoutTokens } from './layout';
 import { motion } from './motion';
 
 export const webLightTheme = {
@@ -8,6 +9,7 @@ export const webLightTheme = {
   ...fonts,
   ...borderRadiusTokens,
   ...motion,
+  ...layoutTokens,
 };
 
 export const webDarkTheme = {
@@ -15,4 +17,5 @@ export const webDarkTheme = {
   ...fonts,
   ...borderRadiusTokens,
   ...motion,
+  ...layoutTokens,
 };

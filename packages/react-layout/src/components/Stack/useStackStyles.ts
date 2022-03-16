@@ -1,12 +1,14 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { StackState } from './Stack.types';
+import { tokens } from '@pongo-ui/react-theme';
 
 const useStyles = makeStyles({
-  root: {},
-
   grow: {
     width: '100%',
     height: '100%',
+    ['> *' as any]: {
+      flexGrow: 1,
+    },
   },
 
   inline: {
@@ -54,11 +56,11 @@ const useStyles = makeStyles({
   },
 
   focused: {
-    ...shorthands.gap('15px'),
+    ...shorthands.gap(tokens.focusedGap),
   },
 
   relaxed: {
-    ...shorthands.gap('30px'),
+    ...shorthands.gap(tokens.relaxedGap),
   },
 });
 
@@ -66,7 +68,6 @@ export const useStackStyles = (state: StackState) => {
   const styles = useStyles();
 
   state.root.className = mergeClasses(
-    styles.root,
     state.vertical ? styles.vertical : styles.horizontal,
     state.inline ? styles.inline : styles.flex,
     state.wrap && styles.wrap,

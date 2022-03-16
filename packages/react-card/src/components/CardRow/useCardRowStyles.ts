@@ -1,5 +1,6 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { CardRowState } from './CardRow.types';
+import { tokens } from '@pongo-ui/react-theme';
 
 const useStyles = makeStyles({
   root: {
@@ -7,7 +8,7 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     alignItems: 'center',
     flexShrink: 0,
-    ...shorthands.gap('14px'),
+    ...shorthands.gap(tokens.relaxedGap),
   },
 });
 

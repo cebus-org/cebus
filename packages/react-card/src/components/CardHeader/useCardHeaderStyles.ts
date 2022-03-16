@@ -1,5 +1,6 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { CardHeaderState } from './CardHeader.types';
+import { tokens } from '@pongo-ui/react-theme';
 
 const useStyles = makeStyles({
   root: {
@@ -8,7 +9,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: 0,
-    ...shorthands.gap('14px'),
+    ...shorthands.gap(tokens.relaxedGap),
   },
 
   avatar: {

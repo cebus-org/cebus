@@ -1,5 +1,6 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { ContainerState } from './Container.types';
+import { tokens } from '@pongo-ui/react-theme';
 
 const useStyles = makeStyles({
   root: {
@@ -37,13 +38,13 @@ const useStyles = makeStyles({
   },
 
   focused: {
-    ...shorthands.padding('15px', '15px'),
-    ...shorthands.gap('15px'),
+    ...shorthands.padding(tokens.focusedPadding),
+    ...shorthands.gap(tokens.focusedGap),
   },
 
   relaxed: {
-    ...shorthands.padding('50px', '50px'),
-    ...shorthands.gap('30px'),
+    ...shorthands.padding(tokens.relaxedPadding),
+    ...shorthands.gap(tokens.relaxedGap),
   },
 });
 

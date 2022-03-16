@@ -1,21 +1,21 @@
-# Link
+# Layout
 
-The Link component allows you to create a standardized anchor elements
+The Layout component help your develop a standardized application layout.
 
 ## Use
 
-1. Install the @pongo-ui/react-link component.
+1. Install the @pongo-ui/react-layout package.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-link
+npm install @pongo-ui/react-layout
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-link
+yarn add @pongo-ui/react-layout
 ```
 
 2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
@@ -34,17 +34,21 @@ const MyApp = () => {
 }
 ```
 
-4. Integrate the Link component.
+4. Integrate the Layout components.
 
 ```jsx
 import { Provider } from '@pongo-ui/react-provider'
 import { webLightTheme } from '@pongo-ui/react-theme'
-import { Link } from '@pongo-ui/react-link'
+import { Container, Stack } from '@pongo-ui/react-layout'
 
 const MyApp = () => {
   return (
     <Provider theme={webLightTheme}>
-      <Link>Hello World</Link>
+      <Container>
+        <Stack>
+        ...
+        </Stack>
+      </Container>
     <Provider>
   )
 }
@@ -52,4 +56,4 @@ const MyApp = () => {
 
 ## API
 
-The Link API extends off of the FluentUI Link.
+To learn more about the Layout API take a look at the [Container](src/components/Container/Container.types.ts) and [Stack Interface](src/components/Stack/Stack.types.ts) files.

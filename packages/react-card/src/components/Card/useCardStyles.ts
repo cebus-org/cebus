@@ -6,9 +6,9 @@ const useStyles = makeStyles({
   root: {
     flexDirection: 'column',
     backgroundColor: tokens.canvasColor,
-    ...shorthands.padding('14px'),
+    ...shorthands.padding(tokens.relaxedPadding),
     flexShrink: 0,
-    ...shorthands.gap('14px'),
+    ...shorthands.gap(tokens.relaxedGap),
   },
 
   inline: {

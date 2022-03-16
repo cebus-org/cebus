@@ -29,7 +29,8 @@
     "@fluentui/react-label": "^9.0.0-beta.9"
   },
   "devDependencies": {
-    "@pongo-ui/react-text": "^0.0.11"
+    "@pongo-ui/react-text": "^0.0.11",
+    "@pongo-ui/react-layout": "^0.0.0"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

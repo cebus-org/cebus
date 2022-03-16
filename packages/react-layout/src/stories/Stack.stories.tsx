@@ -10,7 +10,6 @@ const useStyles = makeStyles({
     backgroundColor: tokens.brand,
     width: '10px',
     height: '10px',
-    flexGrow: 1,
   },
   containerBorder: {
     ...shorthands.border('1px', 'solid', tokens.inherit),
