@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-accordion",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A component used to show and hide nested information.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

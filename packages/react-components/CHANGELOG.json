@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-components",
   "entries": [
     {
+      "date": "Wed, 16 Mar 2022 04:40:30 GMT",
+      "tag": "@pongo-ui/react-components_v0.0.6",
+      "version": "0.0.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-components",
+            "commit": "81d12d357a0bc8732417012877b9923f78c1290d",
+            "comment": "Adding accordion."
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-accordion to v0.0.1",
+            "commit": "cb0405ecbda534d57deba0829f083a5d013bbcd0"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 15 Mar 2022 23:20:33 GMT",
       "tag": "@pongo-ui/react-components_v0.0.5",
       "version": "0.0.5",

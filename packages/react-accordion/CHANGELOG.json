@@ -1,0 +1,20 @@
+{
+  "name": "@pongo-ui/react-accordion",
+  "entries": [
+    {
+      "date": "Wed, 16 Mar 2022 04:40:30 GMT",
+      "tag": "@pongo-ui/react-accordion_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-accordion",
+            "commit": "ba2d44c7e6f85e2885573f27457a332360e60a5a",
+            "comment": "Introducing package"
+          }
+        ]
+      }
+    }
+  ]
+}
