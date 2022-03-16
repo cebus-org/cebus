@@ -40,7 +40,8 @@
     "@pongo-ui/react-text": "^0.0.11",
     "@pongo-ui/react-toolbar": "^0.0.10",
     "@pongo-ui/react-checkbox": "^0.0.3",
-    "@pongo-ui/react-provider": "^0.0.2"
+    "@pongo-ui/react-provider": "^0.0.2",
+    "@pongo-ui/react-accordion": "^0.0.0"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
