@@ -18,6 +18,7 @@ export interface ContainerCommons {
     appearance?: 'focused' | 'relaxed';
     horizontalAlignment?: 'start' | 'center' | 'end';
     verticalAlignment?: 'start' | 'center' | 'end';
+    wrap?: boolean;
 }
 
 // @public (undocumented)
@@ -37,8 +38,13 @@ export const Stack: ForwardRefComponent<StackProps>;
 // @public (undocumented)
 export interface StackCommons {
     appearance?: 'focused' | 'relaxed';
+    divider?: React_2.ReactNode;
+    grow?: boolean;
     horizontalAlignment?: 'start' | 'center' | 'end';
+    inline?: boolean;
+    vertical?: boolean;
     verticalAlignment?: 'start' | 'center' | 'end';
+    wrap?: boolean;
 }
 
 // @public (undocumented)

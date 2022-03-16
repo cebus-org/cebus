@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Correctly applies horizontal/vertical alignment to Stack (horizontal) 1`] = `
+<body>
+  <div>
+    <div
+      class="___1n9dra4 f1063pyq f22iagw fni485r f1lv1r8n f16r77es f4d9j23 f122n59"
+    />
+  </div>
+</body>
+`;
+
+exports[`Input Correctly applies horizontal/vertical alignment to Stack (vertical) 1`] = `
+<body>
+  <div>
+    <div
+      class="___jef2o20 f1vx9l62 f22iagw fni485r f1lv1r8n f16r77es f122n59 f4d9j23"
+    />
+  </div>
+</body>
+`;
+
+exports[`Input renders a basic Stack 1`] = `
+<body>
+  <div>
+    <div
+      class="___1n9dra4 f1063pyq f22iagw fni485r f1lv1r8n f16r77es f4d9j23 f122n59"
+    />
+  </div>
+</body>
+`;
+
+exports[`Input renders a divider Stack 1`] = `
+<body>
+  <div>
+    <div
+      class="___1n9dra4 f1063pyq f22iagw fni485r f1lv1r8n f16r77es f4d9j23 f122n59"
+    >
+      <p>
+        Hello
+      </p>
+       - 
+      <p>
+        Hello
+      </p>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Input renders a divider Stack with once child 1`] = `
+<body>
+  <div>
+    <div
+      class="___1n9dra4 f1063pyq f22iagw fni485r f1lv1r8n f16r77es f4d9j23 f122n59"
+    />
+  </div>
+</body>
+`;
+
+exports[`Input renders a vertical Stack 1`] = `
+<body>
+  <div>
+    <div
+      class="___jef2o20 f1vx9l62 f22iagw fni485r f1lv1r8n f16r77es f122n59 f4d9j23"
+    />
+  </div>
+</body>
+`;
