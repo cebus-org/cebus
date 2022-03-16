@@ -31,7 +31,8 @@
   },
   "devDependencies": {
     "@pongo-ui/react-text": "*",
-    "@pongo-ui/react-button": "*"
+    "@pongo-ui/react-button": "*",
+    "@pongo-ui/react-label": "*"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
