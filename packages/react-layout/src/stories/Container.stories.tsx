@@ -11,6 +11,7 @@ const useStyles = makeStyles({
   },
   box: {
     display: 'flex',
+    flexGrow: 1,
     backgroundColor: tokens.brand,
     width: '10px',
     height: '10px',
@@ -21,6 +22,15 @@ const useStyles = makeStyles({
   verticalExample: {
     height: '500px',
     ...shorthands.border('1px', 'solid', tokens.inherit),
+  },
+  smallBorderExample: {
+    ...shorthands.border('1px', 'solid', tokens.inherit),
+    height: '100px',
+  },
+  largeBox: {
+    backgroundColor: tokens.brand,
+    width: '100px',
+    height: '100px',
   },
 });
 
@@ -42,6 +52,17 @@ export const RelaxedContainerExample = () => {
     <Container className={styles.containerBorder} appearance="relaxed">
       <div className={styles.box} />
       <div className={styles.box} />
+    </Container>
+  );
+};
+
+export const WrapContainerExample = () => {
+  const styles = useStyles();
+
+  return (
+    <Container className={styles.smallBorderExample} wrap appearance="relaxed">
+      <div className={styles.largeBox} />
+      <div className={styles.largeBox} />
     </Container>
   );
 };

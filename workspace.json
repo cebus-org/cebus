@@ -80,6 +80,10 @@
     "@pongo-ui/react-provider": {
       "root": "packages/react-provider",
       "projectType": "library"
+    },
+    "@pongo-ui/react-layout": {
+      "root": "packages/react-layout",
+      "projectType": "library"
     }
   }
 }

@@ -4,9 +4,12 @@ import type { ContainerState } from './Container.types';
 const useStyles = makeStyles({
   root: {
     display: 'flex',
-    flexWrap: 'wrap',
     flexDirection: 'column',
-    justifyContent: 'center',
+    flexGrow: 1,
+  },
+
+  wrap: {
+    flexWrap: 'wrap',
   },
 
   centerHorizontal: {
@@ -50,6 +53,7 @@ export const useContainerStyles = (state: ContainerState) => {
   state.root.className = mergeClasses(
     styles.root,
     styles[state.appearance!],
+    state.wrap && styles.wrap,
     styles[(state.horizontalAlignment! + 'Horizontal') as 'endHorizontal' | 'startHorizontal' | 'centerHorizontal'],
     styles[(state.verticalAlignment! + 'Vertical') as 'endVertical' | 'startVertical' | 'centerVertical'],
     state.root.className,

@@ -7,7 +7,7 @@ export type ContainerSlots = {
   root: Slot<'div'>;
 };
 
-interface ContainerCommons {
+export interface ContainerCommons {
   /**
    * The appearance of the Container.
    * Focused has a lower padding and gap size then relaxed.
@@ -26,6 +26,11 @@ interface ContainerCommons {
    * How the content should be aligned vertically.
    */
   verticalAlignment?: 'start' | 'center' | 'end';
+
+  /**
+   * Whether the Container should wrap children content if it's fixed size is reached.
+   */
+  wrap?: boolean;
 }
 
 export type ContainerProps = ComponentProps<ContainerSlots> & ContainerCommons;
