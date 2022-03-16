@@ -17,6 +17,7 @@ const testedComponentPackages = [
   'react-radio',
   'react-checkbox',
   'react-layout',
+  'react-accordion',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(

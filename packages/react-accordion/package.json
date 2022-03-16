@@ -1,7 +1,7 @@
 {
-  "name": "@pongo-ui/react-checkbox",
-  "version": "0.0.3",
-  "description": "The Checkbox allows users to toggle a value between an on and off state.",
+  "name": "@pongo-ui/react-accordion",
+  "version": "0.0.1",
+  "description": "A component used to show and hide nested information.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -25,16 +25,10 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@pongo-ui/react-theme": "^0.0.10",
-    "@pongo-ui/react-icon": "^0.1.7"
+    "@fluentui/react-accordion": "^9.0.0-rc.5"
   },
-  "devDependencies": {
-    "@pongo-ui/react-text": "^0.0.11",
-    "@pongo-ui/react-button": "^1.1.23",
-    "@pongo-ui/react-icon": "^0.1.7",
-    "@pongo-ui/react-label": "^0.0.6"
-  },
+  "devDependencies": {},
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
     "@types/react-dom": ">=16.8.0 <18.0.0",

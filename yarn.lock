@@ -1405,6 +1405,20 @@
   dependencies:
     tslib "^2.1.0"
 
+"@fluentui/react-accordion@^9.0.0-rc.5":
+  version "9.0.0-rc.5"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-accordion/-/react-accordion-9.0.0-rc.5.tgz#3c292a1b404b6135ca65d83333d12132ed3a79a9"
+  integrity sha512-uR6G+z/lCvzOKhm33mvTJSFK00ALnKPaeSUDR5UBGDI/f6A8p68KJLXELd3IHD2D863FdQe0QTvKCiiZh8y+Ww==
+  dependencies:
+    "@fluentui/react-aria" "9.0.0-rc.5"
+    "@fluentui/react-context-selector" "9.0.0-rc.5"
+    "@fluentui/react-icons" "^2.0.159-beta.10"
+    "@fluentui/react-tabster" "9.0.0-rc.5"
+    "@fluentui/react-theme" "9.0.0-rc.4"
+    "@fluentui/react-utilities" "9.0.0-rc.5"
+    "@griffel/react" "1.0.0"
+    tslib "^2.1.0"
+
 "@fluentui/react-aria@9.0.0-rc.5", "@fluentui/react-aria@^9.0.0-rc.5":
   version "9.0.0-rc.5"
   resolved "https://registry.yarnpkg.com/@fluentui/react-aria/-/react-aria-9.0.0-rc.5.tgz#cea88f6a3ffce32b679c750aceffe4160331bcf7"

@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-checkbox",
   "entries": [
     {
+      "date": "Wed, 16 Mar 2022 04:40:30 GMT",
+      "tag": "@pongo-ui/react-checkbox_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "none": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-checkbox",
+            "commit": "af626823cf14ba8f8470cfb16c4fd4cc3411190b",
+            "comment": "Updating stories."
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 15 Mar 2022 23:20:33 GMT",
       "tag": "@pongo-ui/react-checkbox_v0.0.3",
       "version": "0.0.3",

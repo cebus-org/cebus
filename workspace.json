@@ -84,6 +84,10 @@
     "@pongo-ui/react-layout": {
       "root": "packages/react-layout",
       "projectType": "library"
+    },
+    "@pongo-ui/react-accordion": {
+      "root": "packages/react-accordion",
+      "projectType": "library"
     }
   }
 }
