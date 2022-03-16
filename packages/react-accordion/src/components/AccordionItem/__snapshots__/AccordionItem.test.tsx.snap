@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccordionItem Snapshot tests renders a basic AccordionItem 1`] = `
+<body>
+  <div>
+    <div
+      class="fui-AccordionItem"
+    />
+  </div>
+</body>
+`;

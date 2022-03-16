@@ -7,6 +7,7 @@ describe('AccordionPanel', () => {
   isConformant({
     Component: AccordionPanel,
     displayName: 'AccordionPanel',
+    disabledTests: ['component-handles-classname', 'component-handles-ref', 'component-has-root-ref'],
   });
 
   describe('Snapshot tests', () => {

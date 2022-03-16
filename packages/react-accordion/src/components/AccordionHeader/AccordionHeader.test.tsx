@@ -2,11 +2,13 @@ import * as React from 'react';
 import { AccordionHeader } from './AccordionHeader';
 import { isConformant } from '../../common/isConformant';
 import { render } from '@testing-library/react';
+import { AccordionHeaderProps } from './AccordionHeader.types';
 
 describe('AccordionHeader', () => {
   isConformant({
-    Component: AccordionHeader,
+    Component: AccordionHeader as React.FunctionComponent<AccordionHeaderProps>,
     displayName: 'AccordionHeader',
+    disabledTests: ['component-handles-classname'],
   });
 
   describe('Snapshot tests', () => {

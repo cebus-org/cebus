@@ -1,17 +1,18 @@
 import * as React from 'react';
-import { AccordionItem } from './AccordionItem';
+import { Accordion } from './Accordion';
 import { isConformant } from '../../common/isConformant';
 import { render } from '@testing-library/react';
 
-describe('AccordionItem', () => {
+describe('Accordion', () => {
   isConformant({
-    Component: AccordionItem,
-    displayName: 'AccordionItem',
+    Component: Accordion,
+    displayName: 'Accordion',
+    disabledTests: ['consistent-callback-args', 'make-styles-overrides-win'],
   });
 
   describe('Snapshot tests', () => {
-    it('renders a basic AccordionItem', () => {
-      const result = render(<AccordionItem />);
+    it('renders a basic Accordion', () => {
+      const result = render(<Accordion />);
 
       expect(result.baseElement).toMatchSnapshot();
     });
