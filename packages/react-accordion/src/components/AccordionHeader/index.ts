@@ -1,2 +1,3 @@
-export * from './AccordionItem';
-export * from './AccordionItem.types';
+export * from './AccordionHeader';
+export * from './AccordionHeader.types';
+export * from './useAccordionHeaderStyles';
