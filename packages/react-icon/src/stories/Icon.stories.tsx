@@ -1,42 +1,28 @@
 import * as React from 'react';
 import { LogoIcon } from '../index';
-import { makeStyles, shorthands } from '@griffel/react';
-
-const useStyles = makeStyles({
-  root: {
-    display: 'inline-flex',
-    flexDirection: 'column',
-    ...shorthands.gap('5px'),
-  },
-});
+import { Stack } from '@pongo-ui/react-layout';
 
 export const BasicIconExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack>
       <LogoIcon />
-    </div>
+    </Stack>
   );
 };
 
 export const SizeIconExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack>
       <LogoIcon size="small" />
       <LogoIcon size="medium" />
       <LogoIcon size="large" />
-    </div>
+    </Stack>
   );
 };
 
 export const ColorIconExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack>
       <LogoIcon />
       <LogoIcon color="inherit" />
       <LogoIcon color="brand" />
@@ -46,15 +32,13 @@ export const ColorIconExample = () => {
       <LogoIcon color="social" />
       <LogoIcon color="warning" />
       <LogoIcon color="info" />
-    </div>
+    </Stack>
   );
 };
 
 export const DisabledIconExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack>
       <LogoIcon disabled />
       <LogoIcon color="inherit" disabled />
       <LogoIcon color="brand" disabled />
@@ -64,7 +48,7 @@ export const DisabledIconExample = () => {
       <LogoIcon color="social" disabled />
       <LogoIcon color="warning" disabled />
       <LogoIcon color="info" disabled />
-    </div>
+    </Stack>
   );
 };
 

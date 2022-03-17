@@ -1,6 +1,6 @@
 import type { ColorSet } from '@pongo-ui/react-theme-generator';
 
-export type Theme = ColorTokens & Fonts & MotionTokens & BorderRadiusTokens;
+export type Theme = ColorTokens & Fonts & MotionTokens & BorderRadiusTokens & LayoutTokens;
 
 /**
  * Color theme tokens.
@@ -17,6 +17,16 @@ export type Fonts = FontFamilyTokens & FontOpacityTokens & FontSizeTokens & Font
 export type FontFamilyTokens = {
   fontFamilyBase: string;
   monospaceFont: string;
+};
+
+/**
+ * Layout tokens.
+ */
+export type LayoutTokens = {
+  focusedGap: string;
+  relaxedGap: string;
+  focusedPadding: string;
+  relaxedPadding: string;
 };
 
 /**

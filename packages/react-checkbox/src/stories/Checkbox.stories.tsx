@@ -1,119 +1,101 @@
 import * as React from 'react';
 import { Label } from '@pongo-ui/react-label';
 import { Checkbox } from '../index';
-import { makeStyles, shorthands } from '@griffel/react';
-
-const useStyles = makeStyles({
-  root: {
-    display: 'inline-flex',
-    flexDirection: 'column',
-    ...shorthands.gap('10px'),
-  },
-  row: {
-    display: 'inline-flex',
-    flexDirection: 'row',
-    ...shorthands.gap('10px'),
-  },
-});
+import { Stack } from '@pongo-ui/react-layout';
 
 export const BasicCheckboxExample = () => {
   return (
-    <>
+    <Stack>
       <Checkbox />
       <Checkbox defaultChecked />
       <Checkbox disabled />
       <Checkbox defaultChecked disabled />
-    </>
+    </Stack>
   );
 };
 
 export const CheckboxSizeExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Label htmlFor="medium">Medium</Label>
       <Checkbox size="medium" id="medium" />
       <Label htmlFor="large">Large</Label>
       <Checkbox size="large" id="large" />
-    </div>
+    </Stack>
   );
 };
 
 export const ControlledExample = () => {
   const [checked, setChecked] = React.useState(false);
-  const styles = useStyles();
 
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Label htmlFor="controlled">Controlled</Label>
       <Checkbox checked={checked} onChange={ev => setChecked(ev.currentTarget.checked)} id="controlled" />
-    </div>
+    </Stack>
   );
 };
 
 export const CheckboxColorExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Label htmlFor="brand">Brand</Label>
-      <div className={styles.row}>
+      <Stack>
         <Checkbox color="brand" id="brand" defaultChecked />
         <Checkbox color="brand" id="brand" />
         <Checkbox color="brand" id="brand" disabled />
         <Checkbox color="brand" id="brand" disabled defaultChecked />
-      </div>
+      </Stack>
       <Label htmlFor="inherit">Inherit</Label>
-      <div className={styles.row}>
+      <Stack>
         <Checkbox color="inherit" id="inherit" defaultChecked />
         <Checkbox color="inherit" id="inherit" />
         <Checkbox color="inherit" id="inherit" disabled />
         <Checkbox color="inherit" id="inherit" disabled defaultChecked />
-      </div>
+      </Stack>
       <Label htmlFor="secondary">Secondary</Label>
-      <div className={styles.row}>
+      <Stack>
         <Checkbox color="secondary" id="secondary" defaultChecked />
         <Checkbox color="secondary" id="secondary" />
         <Checkbox color="secondary" id="secondary" disabled />
         <Checkbox color="secondary" id="secondary" disabled defaultChecked />
-      </div>
+      </Stack>
       <Label htmlFor="success">Success</Label>
-      <div className={styles.row}>
+      <Stack>
         <Checkbox color="success" id="success" defaultChecked />
         <Checkbox color="success" id="success" />
         <Checkbox color="success" id="success" disabled />
         <Checkbox color="success" id="success" disabled defaultChecked />
-      </div>
+      </Stack>
       <Label htmlFor="danger">Danger</Label>
-      <div className={styles.row}>
+      <Stack>
         <Checkbox color="danger" id="danger" defaultChecked />
         <Checkbox color="danger" id="danger" />
         <Checkbox color="danger" id="danger" disabled />
         <Checkbox color="danger" id="danger" disabled defaultChecked />
-      </div>
+      </Stack>
       <Label htmlFor="warning">Warning</Label>
-      <div className={styles.row}>
+      <Stack>
         <Checkbox color="warning" id="warning" defaultChecked />
         <Checkbox color="warning" id="warning" />
         <Checkbox color="warning" id="warning" disabled />
         <Checkbox color="warning" id="warning" disabled defaultChecked />
-      </div>
+      </Stack>
       <Label htmlFor="info">Info</Label>
-      <div className={styles.row}>
+      <Stack>
         <Checkbox color="info" id="info" defaultChecked />
         <Checkbox color="info" id="info" />
         <Checkbox color="info" id="info" disabled />
         <Checkbox color="info" id="info" disabled defaultChecked />
-      </div>
+      </Stack>
       <Label htmlFor="social">Social</Label>
-      <div className={styles.row}>
+      <Stack>
         <Checkbox color="social" id="social" defaultChecked />
         <Checkbox color="social" id="social" />
         <Checkbox color="social" id="social" disabled />
         <Checkbox color="social" id="social" disabled defaultChecked />
-      </div>
-    </div>
+      </Stack>
+    </Stack>
   );
 };
 

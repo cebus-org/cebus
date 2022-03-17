@@ -30,7 +30,8 @@
     "@pongo-ui/react-icon": "^0.1.7"
   },
   "devDependencies": {
-    "@pongo-ui/react-button": "^1.1.23"
+    "@pongo-ui/react-button": "^1.1.23",
+    "@pongo-ui/react-layout": "^0.0.0"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

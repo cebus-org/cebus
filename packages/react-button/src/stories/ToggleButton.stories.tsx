@@ -1,28 +1,11 @@
 import * as React from 'react';
 import { ToggleButton } from '../index';
-// import { Header2 } from '@pongoai/react-text';
-import { makeStyles, shorthands } from '@griffel/react';
-
-const useStyles = makeStyles({
-  root: {
-    display: 'inline-flex',
-    flexDirection: 'column',
-    ...shorthands.gap('10px'),
-  },
-  row: {
-    display: 'inline-flex',
-    flexDirection: 'row',
-    ...shorthands.gap('10px'),
-  },
-});
+import { Stack } from '@pongo-ui/react-layout';
 
 export const BasicToggleButtonExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
-      {/* <Header2>Rate your order</Header2> */}
-      <div className={styles.row}>
+    <Stack vertical>
+      <Stack>
         <ToggleButton shape="circular">Fits well</ToggleButton>
         <ToggleButton shape="circular">Great color</ToggleButton>
         <ToggleButton shape="circular">Awesome </ToggleButton>
@@ -30,17 +13,15 @@ export const BasicToggleButtonExample = () => {
         <ToggleButton shape="circular" disabled>
           Disabled Button
         </ToggleButton>
-      </div>
-    </div>
+      </Stack>
+    </Stack>
   );
 };
 
 export const ColorToggleButtonExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
-      <div className={styles.row}>
+    <Stack vertical>
+      <Stack>
         <ToggleButton color="inherit" shape="circular">
           Inherit
         </ToggleButton>
@@ -53,8 +34,8 @@ export const ColorToggleButtonExample = () => {
         <ToggleButton defaultChecked disabled color="inherit" shape="circular">
           Inherit
         </ToggleButton>
-      </div>
-      <div className={styles.row}>
+      </Stack>
+      <Stack>
         <ToggleButton color="brand" shape="circular">
           Brand
         </ToggleButton>
@@ -67,8 +48,8 @@ export const ColorToggleButtonExample = () => {
         <ToggleButton defaultChecked disabled color="brand" shape="circular">
           Brand
         </ToggleButton>
-      </div>
-      <div className={styles.row}>
+      </Stack>
+      <Stack>
         <ToggleButton color="secondary" shape="circular">
           Secondary
         </ToggleButton>
@@ -81,8 +62,8 @@ export const ColorToggleButtonExample = () => {
         <ToggleButton defaultChecked disabled color="secondary" shape="circular">
           Secondary
         </ToggleButton>
-      </div>
-      <div className={styles.row}>
+      </Stack>
+      <Stack>
         <ToggleButton color="success" shape="circular">
           Success
         </ToggleButton>
@@ -95,8 +76,8 @@ export const ColorToggleButtonExample = () => {
         <ToggleButton defaultChecked disabled color="success" shape="circular">
           Success
         </ToggleButton>
-      </div>
-      <div className={styles.row}>
+      </Stack>
+      <Stack>
         <ToggleButton color="danger" shape="circular">
           Danger
         </ToggleButton>
@@ -109,8 +90,8 @@ export const ColorToggleButtonExample = () => {
         <ToggleButton defaultChecked disabled color="danger" shape="circular">
           Danger
         </ToggleButton>
-      </div>
-      <div className={styles.row}>
+      </Stack>
+      <Stack>
         <ToggleButton color="warning" shape="circular">
           Warning
         </ToggleButton>
@@ -123,8 +104,8 @@ export const ColorToggleButtonExample = () => {
         <ToggleButton defaultChecked disabled color="warning" shape="circular">
           Warning
         </ToggleButton>
-      </div>
-      <div className={styles.row}>
+      </Stack>
+      <Stack>
         <ToggleButton color="info" shape="circular">
           Info
         </ToggleButton>
@@ -137,8 +118,8 @@ export const ColorToggleButtonExample = () => {
         <ToggleButton defaultChecked disabled color="info" shape="circular">
           Info
         </ToggleButton>
-      </div>
-    </div>
+      </Stack>
+    </Stack>
   );
 };
 

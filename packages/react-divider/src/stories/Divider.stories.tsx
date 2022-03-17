@@ -1,37 +1,28 @@
 import * as React from 'react';
 import { Header3 } from '@pongo-ui/react-text';
 import { Divider } from '../index';
-
-const boxStyles: React.CSSProperties = { width: '600px' };
-
-const verticalBoxStyles: React.CSSProperties = {
-  display: 'flex',
-  flexDirection: 'row',
-  width: '600px',
-};
-
-const wrapperStyles: React.CSSProperties = { display: 'flex', flexDirection: 'column', gap: '10px' };
+import { Stack } from '@pongo-ui/react-layout';
 
 export const BasicDividerExample = () => {
   return (
-    <div style={wrapperStyles}>
+    <Stack vertical>
       <Header3>Color Example</Header3>
-      <div style={boxStyles}>
+      <Stack grow>
         <Divider color="brand">Brand</Divider>
         <Divider>Inherit</Divider>
-      </div>
+      </Stack>
       <Header3>Inset Example</Header3>
-      <div style={boxStyles}>
+      <Stack grow>
         <Divider inset>Inset</Divider>
-      </div>
+      </Stack>
       <Header3>Alignment Example</Header3>
-      <div style={boxStyles}>
+      <Stack grow>
         <Divider alignContent="start">start</Divider>
         <Divider alignContent="center">center</Divider>
         <Divider alignContent="end">end</Divider>
-      </div>
+      </Stack>
       <Header3>Vertical Example</Header3>
-      <div style={verticalBoxStyles}>
+      <Stack grow>
         <Divider alignContent="start" vertical>
           start
         </Divider>
@@ -41,8 +32,8 @@ export const BasicDividerExample = () => {
         <Divider alignContent="end" vertical>
           end
         </Divider>
-      </div>
-    </div>
+      </Stack>
+    </Stack>
   );
 };
 

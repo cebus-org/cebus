@@ -30,7 +30,9 @@
     "@fluentui/react-shared-contexts": "^9.0.0-rc.4",
     "@pongo-ui/react-theme-generator": "^0.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@pongo-ui/react-layout": "^0.0.0"
+  },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
     "@types/react-dom": ">=16.8.0 <18.0.0",

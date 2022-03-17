@@ -1,31 +1,18 @@
 import * as React from 'react';
 import { Text, Body, Caption, Display, Header1, Header2, Header3, SubHeadline, Title } from '../index';
-import { makeStyles } from '@griffel/react';
-
-const useStyles = makeStyles({
-  root: {
-    display: 'inline-flex',
-    flexDirection: 'column',
-  },
-  row: {
-    display: 'inline-flex',
-    flexDirection: 'row',
-  },
-});
+import { Stack } from '@pongo-ui/react-layout';
 
 export const BasicTextExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Text size={1000}>Header</Text>
-      <div className={styles.row}>
+      <Stack>
         <Text>Basic</Text>
         <Text italic>Italic</Text>
         <Text weight="bold">Weight</Text>
         <Text font="monospace">monospace</Text>
-      </div>
-      <div className={styles.row}>
+      </Stack>
+      <Stack>
         <Text strikethrough>Strikethrough</Text>
         <Text underline strikethrough>
           Underline
@@ -33,7 +20,7 @@ export const BasicTextExample = () => {
         <Text underline strikethrough>
           Underline Strikethrough
         </Text>
-      </div>
+      </Stack>
       <Display>Display: The quick brown fox jumps over the lazy dog</Display>
       <Title>Title: The quick brown fox jumps over the lazy dog</Title>
       <Header1>Header1: The quick brown fox jumps over the lazy dog</Header1>
@@ -42,15 +29,13 @@ export const BasicTextExample = () => {
       <SubHeadline>SubHeadline: The quick brown fox jumps over the lazy dog</SubHeadline>
       <Body>Body: The quick brown fox jumps over the lazy dog</Body>
       <Caption>Caption: The quick brown fox jumps over the lazy dog</Caption>
-    </div>
+    </Stack>
   );
 };
 
 export const ColorTextExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Header1 color="base">base: The quick brown fox jumps over the lazy dog</Header1>
       <Header1 color="inherit">inherit: The quick brown fox jumps over the lazy dog</Header1>
       <Header1 color="brand">brand: The quick brown fox jumps over the lazy dog</Header1>
@@ -60,7 +45,7 @@ export const ColorTextExample = () => {
       <Header1 color="social">social: The quick brown fox jumps over the lazy dog</Header1>
       <Header1 color="warning">warning: The quick brown fox jumps over the lazy dog</Header1>
       <Header1 color="info">info: The quick brown fox jumps over the lazy dog</Header1>
-    </div>
+    </Stack>
   );
 };
 

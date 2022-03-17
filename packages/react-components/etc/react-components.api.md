@@ -13,6 +13,7 @@ export * from "@pongo-ui/react-divider";
 export * from "@pongo-ui/react-icon";
 export * from "@pongo-ui/react-input";
 export * from "@pongo-ui/react-label";
+export * from "@pongo-ui/react-layout";
 export * from "@pongo-ui/react-link";
 export * from "@pongo-ui/react-menu";
 export * from "@pongo-ui/react-provider";

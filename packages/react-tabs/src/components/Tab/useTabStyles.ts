@@ -39,36 +39,24 @@ const useRootStyles = makeStyles({
 
   transparent: {},
 
-  sunken: {
-    boxShadow: `inset 0px 0px 3px 0px ${tokens.inheritBackground}`,
-    '&:hover': {
-      color: tokens.inheritHover,
-      backgroundColor: tokens.inheritForegroundHover,
-    },
-    '&:active': {
-      color: tokens.inheritPressed,
-      backgroundColor: tokens.inheritForegroundPressed,
-    },
-  },
-
   // Size
   small: {
-    ...shorthands.gap('2px'),
-    ...shorthands.padding('6px'),
+    ...shorthands.gap(`calc(${tokens.focusedPadding}/2)`),
+    ...shorthands.padding(`calc(${tokens.focusedPadding}/2)`),
   },
 
   medium: {
-    ...shorthands.gap('10px'),
-    ...shorthands.padding('10px'),
+    ...shorthands.gap(tokens.focusedGap),
+    ...shorthands.padding(tokens.focusedPadding),
   },
 });
 
 const useContentStyles = makeStyles({
   small: {
-    ...shorthands.padding('6px'),
+    ...shorthands.padding(`calc(${tokens.focusedPadding}/2)`),
   },
   medium: {
-    ...shorthands.padding('10px'),
+    ...shorthands.padding(tokens.focusedPadding),
   },
 });
 

@@ -29,7 +29,10 @@
     "@fluentui/react-aria": "9.0.0-rc.5",
     "@pongo-ui/react-theme": "^0.0.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@pongo-ui/react-layout": "^0.0.0",
+    "@pongo-ui/react-icon": "^0.1.7"
+  },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
     "@types/react-dom": ">=16.8.0 <18.0.0",

@@ -1,11 +1,12 @@
 import { mergeClasses, makeStyles, shorthands } from '@griffel/react';
 import type { RadioGroupState } from './RadioGroup.types';
+import { tokens } from '@pongo-ui/react-theme';
 
 const useStyles = makeStyles({
   root: {
     display: 'flex',
     alignItems: 'flex-start',
-    ...shorthands.gap('10px'),
+    ...shorthands.gap(tokens.focusedGap),
   },
 
   vertical: {
