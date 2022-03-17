@@ -2,19 +2,10 @@ import * as React from 'react';
 import { Card, CardRow, CardHeader, CardMedia } from '../index';
 import { Body, Header1 } from '@pongo-ui/react-text';
 import { Button } from '@pongo-ui/react-button';
-import { makeStyles, shorthands } from '@griffel/react';
+import { makeStyles } from '@griffel/react';
+import { Stack } from '@pongo-ui/react-layout';
 
 const useStyles = makeStyles({
-  root: {
-    display: 'inline-flex',
-    flexDirection: 'column',
-    ...shorthands.gap('10px'),
-  },
-  row: {
-    display: 'inline-flex',
-    flexDirection: 'row',
-    ...shorthands.gap('10px'),
-  },
   card: {
     maxWidth: '300px',
   },
@@ -24,7 +15,7 @@ export const BasicCardExample = () => {
   const styles = useStyles();
 
   return (
-    <div className={styles.root}>
+    <Stack vertical inline>
       <Header1>Elevate</Header1>
       <Card className={styles.card}>
         <CardHeader
@@ -71,7 +62,7 @@ export const BasicCardExample = () => {
           </Button>
         </CardRow>
       </Card>
-    </div>
+    </Stack>
   );
 };
 
@@ -81,7 +72,7 @@ export const InteractiveCardExample = () => {
   const onCardClick = () => console.log('test');
 
   return (
-    <div className={styles.root}>
+    <Stack vertical inline>
       <Card className={styles.card} onClick={onCardClick}>
         <CardHeader header={<Body weight="bold">Press me</Body>} />
         <Body>
@@ -96,7 +87,7 @@ export const InteractiveCardExample = () => {
           magna aliqua.
         </Body>
       </Card>
-    </div>
+    </Stack>
   );
 };
 export default {

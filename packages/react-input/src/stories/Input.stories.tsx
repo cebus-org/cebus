@@ -1,54 +1,36 @@
 import * as React from 'react';
 import { Input } from '../index';
-import { makeStyles, shorthands } from '@griffel/react';
 import { CalendarIcon } from '@pongo-ui/react-icon';
+import { Stack } from '@pongo-ui/react-layout';
 import type { InputProps } from '../index';
 
-const useStyles = makeStyles({
-  root: {
-    display: 'inline-flex',
-    flexDirection: 'column',
-    ...shorthands.gap('10px'),
-  },
-  row: {
-    display: 'inline-flex',
-    flexDirection: 'row',
-    ...shorthands.gap('10px'),
-  },
-});
-
 export const BasicInputExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Input label="Name" placeholder="Enter your name" appearance="outline" />
       <Input label="User Name" placeholder="Enter your user name" appearance="standard" />
       <Input label="Password" placeholder="Enter your password" appearance="filled" />
-    </div>
+    </Stack>
   );
 };
 
 export const ControlledInputExample = () => {
   const [value, setValue] = React.useState('hello');
-  const styles = useStyles();
 
   const onChange: InputProps['onChange'] = (ev, data) => {
     setValue(data.value);
   };
 
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Input value={value} onChange={onChange} />
-    </div>
+    </Stack>
   );
 };
 
 export const InputContentExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Input
         label="After"
         placeholder="Enter your name"
@@ -82,16 +64,14 @@ export const InputContentExample = () => {
         contentBefore={<CalendarIcon size="small" />}
         disabled
       />
-    </div>
+    </Stack>
   );
 };
 
 export const InputDangerExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
-      <div className={styles.row}>
+    <Stack vertical>
+      <Stack>
         <Input label="Name" placeholder="Enter your name" appearance="outline" danger />
         <Input label="Name" placeholder="Enter your name" appearance="outline" danger disabled />
         <Input
@@ -102,8 +82,8 @@ export const InputDangerExample = () => {
           disabled
           contentBefore={<CalendarIcon size="small" />}
         />
-      </div>
-      <div className={styles.row}>
+      </Stack>
+      <Stack>
         <Input label="Name" placeholder="Enter your name" appearance="standard" danger />
         <Input placeholder="Enter your name" appearance="standard" danger disabled />
         <Input
@@ -113,8 +93,8 @@ export const InputDangerExample = () => {
           disabled
           contentBefore={<CalendarIcon size="small" />}
         />
-      </div>
-      <div className={styles.row}>
+      </Stack>
+      <Stack>
         <Input placeholder="Enter your name" appearance="filled" danger />
         <Input placeholder="Enter your name" appearance="filled" danger disabled />
         <Input
@@ -124,57 +104,51 @@ export const InputDangerExample = () => {
           disabled
           contentBefore={<CalendarIcon size="small" />}
         />
-      </div>
-    </div>
+      </Stack>
+    </Stack>
   );
 };
 
 export const InputSizeExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
-      <div className={styles.row}>
+    <Stack vertical>
+      <Stack>
         <Input size="small" placeholder="Enter your name" appearance="outline" />
         <Input size="small" placeholder="Enter your name" appearance="standard" />
         <Input size="small" placeholder="Enter your name" appearance="filled" />
-      </div>
-      <div className={styles.row}>
+      </Stack>
+      <Stack>
         <Input size="medium" placeholder="Enter your name" appearance="outline" />
         <Input size="medium" placeholder="Enter your name" appearance="standard" />
         <Input size="medium" placeholder="Enter your name" appearance="filled" />
-      </div>
-      <div className={styles.row}>
+      </Stack>
+      <Stack>
         <Input size="large" placeholder="Enter your name" appearance="outline" />
         <Input size="large" placeholder="Enter your name" appearance="standard" />
         <Input size="large" placeholder="Enter your name" appearance="filled" />
-      </div>
-    </div>
+      </Stack>
+    </Stack>
   );
 };
 
 export const InputTypeExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack>
       <Input type="number" />
       <Input type="time" />
       <Input type="month" />
       <Input type="password" />
-    </div>
+    </Stack>
   );
 };
 
 export const InputDisabledExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack>
       <Input defaultValue="hello" disabled />
       <Input defaultValue="hello" appearance="filled" disabled />
       <Input defaultValue="hello" appearance="standard" disabled />
-    </div>
+    </Stack>
   );
 };
 

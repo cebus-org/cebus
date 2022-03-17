@@ -1,25 +1,15 @@
 import * as React from 'react';
 import { Textarea } from '../index';
-import { makeStyles, shorthands } from '@griffel/react';
+import { Stack } from '@pongo-ui/react-layout';
 import { DateTimeIcon } from '@pongo-ui/react-icon';
 
-const useStyles = makeStyles({
-  root: {
-    display: 'inline-flex',
-    flexDirection: 'column',
-    ...shorthands.gap('10px'),
-  },
-});
-
 export const BasicTextareaExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Textarea label="Outline" />
       <Textarea appearance="standard" label="Standard" />
       <Textarea appearance="filled" label="Filled" />
-    </div>
+    </Stack>
   );
 };
 
