@@ -4,7 +4,7 @@ exports[`Input Correctly applies horizontal/vertical alignment to Stack (horizon
 <body>
   <div>
     <div
-      class="___1n9dra4 f1063pyq f22iagw fni485r f1lv1r8n f16r77es f4d9j23 f122n59"
+      class="___xcshgu0 f1063pyq f22iagw fni485r f1aaj51y ft97ctm f4d9j23 f122n59"
     />
   </div>
 </body>
@@ -14,7 +14,7 @@ exports[`Input Correctly applies horizontal/vertical alignment to Stack (vertica
 <body>
   <div>
     <div
-      class="___jef2o20 f1vx9l62 f22iagw fni485r f1lv1r8n f16r77es f122n59 f4d9j23"
+      class="___qilspy0 f1vx9l62 f22iagw fni485r f1aaj51y ft97ctm f122n59 f4d9j23"
     />
   </div>
 </body>
@@ -24,7 +24,7 @@ exports[`Input renders a basic Stack 1`] = `
 <body>
   <div>
     <div
-      class="___1n9dra4 f1063pyq f22iagw fni485r f1lv1r8n f16r77es f4d9j23 f122n59"
+      class="___llbrur0 f1063pyq f22iagw fni485r f1aaj51y ft97ctm f1s9ku6b f1s2louj"
     />
   </div>
 </body>
@@ -34,7 +34,7 @@ exports[`Input renders a divider Stack 1`] = `
 <body>
   <div>
     <div
-      class="___1n9dra4 f1063pyq f22iagw fni485r f1lv1r8n f16r77es f4d9j23 f122n59"
+      class="___llbrur0 f1063pyq f22iagw fni485r f1aaj51y ft97ctm f1s9ku6b f1s2louj"
     >
       <p>
         Hello
@@ -52,7 +52,7 @@ exports[`Input renders a divider Stack with once child 1`] = `
 <body>
   <div>
     <div
-      class="___1n9dra4 f1063pyq f22iagw fni485r f1lv1r8n f16r77es f4d9j23 f122n59"
+      class="___llbrur0 f1063pyq f22iagw fni485r f1aaj51y ft97ctm f1s9ku6b f1s2louj"
     />
   </div>
 </body>
@@ -62,7 +62,7 @@ exports[`Input renders a vertical Stack 1`] = `
 <body>
   <div>
     <div
-      class="___jef2o20 f1vx9l62 f22iagw fni485r f1lv1r8n f16r77es f122n59 f4d9j23"
+      class="___1qd5x31 f1vx9l62 f22iagw fni485r f1aaj51y ft97ctm f1s2louj f1s9ku6b"
     />
   </div>
 </body>
