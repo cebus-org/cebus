@@ -9,7 +9,7 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     flexShrink: 0,
-    ...shorthands.gap(tokens.relaxedGap),
+    ...shorthands.gap(tokens.focusedGap),
   },
 
   avatar: {

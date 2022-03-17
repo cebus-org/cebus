@@ -18,48 +18,40 @@ export const RowsTextareaExample = () => {
 };
 
 export const AutoAdjustTextareaExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Textarea autoAdjust label="Auto Adjust" />
-    </div>
+    </Stack>
   );
 };
 
 export const SizeTextareaExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Textarea size="small" label="small" />
       <Textarea size="medium" label="medium" />
       <Textarea size="large" label="large" />
-    </div>
+    </Stack>
   );
 };
 
 export const DisabledTextareaExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Textarea label="Outline" disabled />
       <Textarea appearance="standard" label="Standard" disabled />
       <Textarea appearance="filled" label="Filled" disabled />
-    </div>
+    </Stack>
   );
 };
 
 export const ContentTextareaExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Textarea contentBefore={<DateTimeIcon />} autoAdjust />
       <Textarea contentAfter={<DateTimeIcon />} autoAdjust />
       <Textarea contentAfter={<DateTimeIcon />} contentBefore={<DateTimeIcon />} autoAdjust />
-    </div>
+    </Stack>
   );
 };
 
