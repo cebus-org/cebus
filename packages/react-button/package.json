@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-button",
-  "version": "1.1.23",
+  "version": "1.1.24",
   "description": "A Button control that allows users to make an action through a press.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -27,11 +27,11 @@
     "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
     "@fluentui/react-aria": "9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.10"
+    "@pongo-ui/react-theme": "^0.0.11"
   },
   "devDependencies": {
-    "@pongo-ui/react-layout": "^0.0.0",
-    "@pongo-ui/react-icon": "^0.1.7"
+    "@pongo-ui/react-layout": "^0.0.1",
+    "@pongo-ui/react-icon": "^0.1.8"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

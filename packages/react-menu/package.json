@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-menu",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A collection of menu related components used to display information over a given element.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -26,12 +26,12 @@
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
     "@fluentui/react-menu": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.10",
-    "@pongo-ui/react-icon": "^0.1.7"
+    "@pongo-ui/react-theme": "^0.0.11",
+    "@pongo-ui/react-icon": "^0.1.8"
   },
   "devDependencies": {
-    "@pongo-ui/react-button": "^1.1.23",
-    "@pongo-ui/react-layout": "^0.0.0"
+    "@pongo-ui/react-button": "^1.1.24",
+    "@pongo-ui/react-layout": "^0.0.1"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

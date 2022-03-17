@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-theme
 
-This log was last generated on Tue, 15 Mar 2022 21:02:59 GMT and should not be manually modified.
+This log was last generated on Thu, 17 Mar 2022 01:11:50 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.11
+
+Thu, 17 Mar 2022 01:11:50 GMT
+
+### Patches
+
+- Updating tokens (czearing@outlook.com)
 
 ## 0.0.10
 

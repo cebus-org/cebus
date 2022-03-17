@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-avatar",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "An avatar component used to display a users icon.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -25,13 +25,13 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.10",
+    "@pongo-ui/react-theme": "^0.0.11",
     "@fluentui/react-avatar": "^9.0.0-rc.5",
     "@fluentui/react-shared-contexts": "^9.0.0-rc.4",
     "@pongo-ui/react-theme-generator": "^0.1.2"
   },
   "devDependencies": {
-    "@pongo-ui/react-layout": "^0.0.0"
+    "@pongo-ui/react-layout": "^0.0.1"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
