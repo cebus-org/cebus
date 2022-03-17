@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Stack, Container } from '../index';
-import { Divider } from '@pongo-ui/react-divider';
 import { makeStyles, shorthands } from '@griffel/react';
 import { tokens } from '@pongo-ui/react-theme';
 
@@ -64,14 +63,14 @@ export const StackDividerExample = () => {
 
   return (
     <>
-      <Stack vertical divider={<Divider />} inline>
+      <Stack vertical divider={<div className={styles.box} />} inline>
         <div className={styles.box} />
         <div className={styles.box} />
         <div className={styles.box} />
         <div className={styles.box} />
         <div className={styles.box} />
       </Stack>
-      <Stack divider={<Divider vertical />} inline>
+      <Stack divider={<div className={styles.box} />} inline>
         <div className={styles.box} />
         <div className={styles.box} />
         <div className={styles.box} />
