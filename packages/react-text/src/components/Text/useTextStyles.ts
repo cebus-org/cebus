@@ -8,8 +8,6 @@ const useRootStyles = makeStyles({
     whiteSpace: 'normal',
     ...shorthands.overflow('visible'),
     ...shorthands.margin('0px'),
-    ...shorthands.overflow('hidden'),
-    textOverflow: 'ellipsis',
   },
   base: {
     fontFamily: tokens.fontFamilyBase,
@@ -131,6 +129,10 @@ const useRootStyles = makeStyles({
   },
   nowrap: {
     whiteSpace: 'nowrap',
+    ...shorthands.overflow('hidden'),
+  },
+  truncate: {
+    textOverflow: 'ellipsis',
   },
 });
 
@@ -144,6 +146,7 @@ export const useTextStyles = (state: TextState): TextState => {
     styles[state.size!],
     styles[state.align!],
     state.italic && styles.italic,
+    state.truncate && styles.truncate,
     state.nowrap && styles.nowrap,
     state.underline && styles.underline,
     state.strikethrough && styles.strikethrough,

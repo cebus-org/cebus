@@ -53,6 +53,7 @@ export type TextCommons = {
     strikethrough?: boolean;
     align?: 'start' | 'center' | 'end' | 'justify';
     nowrap?: boolean;
+    truncate?: boolean;
 };
 
 // @public (undocumented)
