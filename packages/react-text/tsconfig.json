@@ -1,6 +1,6 @@
 {
   "extends": "@pongo-ui/scripts/tsconfig.base.json",
-  "include": ["./src", "lib-commonjs"],
+  "include": ["./src"],
   "compilerOptions": {
     "outDir": "lib"
   }

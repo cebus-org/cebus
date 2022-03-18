@@ -11,7 +11,7 @@ const useStyles = makeStyles({
 });
 
 export const SubHeadline: FunctionComponent<TextWrapperProps> = createText(
-  { as: 'p', font: 'base', size: 400, weight: 'bold' },
+  { as: 'p', font: 'base', size: 500, weight: 'medium' },
   useStyles,
   'SubHeadline',
 );

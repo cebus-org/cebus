@@ -22,6 +22,7 @@ const useRootStyles = makeStyles({
     ...shorthands.gap('6px'),
     ...shorthands.padding('0', '10px'),
     ...shorthands.borderStyle('none'),
+    textDecorationLine: 'none',
   },
 
   focusIndicator: createCustomFocusIndicatorStyle(

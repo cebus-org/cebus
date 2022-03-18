@@ -41,22 +41,22 @@ const useRootStyles = makeStyles({
 
   // Size
   small: {
-    ...shorthands.gap(`calc(${tokens.focusedPadding}/2)`),
-    ...shorthands.padding(`calc(${tokens.focusedPadding}/2)`),
+    ...shorthands.gap(`calc(${tokens.focusedLayout}/2)`),
+    ...shorthands.padding(`calc(${tokens.focusedLayout}/2)`),
   },
 
   medium: {
-    ...shorthands.gap(tokens.focusedGap),
-    ...shorthands.padding(tokens.focusedPadding),
+    ...shorthands.gap(tokens.focusedLayout),
+    ...shorthands.padding(tokens.focusedLayout),
   },
 });
 
 const useContentStyles = makeStyles({
   small: {
-    ...shorthands.padding(`calc(${tokens.focusedPadding}/2)`),
+    ...shorthands.padding(`calc(${tokens.focusedLayout}/2)`),
   },
   medium: {
-    ...shorthands.padding(tokens.focusedPadding),
+    ...shorthands.padding(tokens.focusedLayout),
   },
 });
 

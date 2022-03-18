@@ -4,12 +4,10 @@ import { tokens } from '@pongo-ui/react-theme';
 
 const useRootStyles = makeStyles({
   root: {
-    textAlign: 'start',
     display: 'inline',
     whiteSpace: 'normal',
     ...shorthands.overflow('visible'),
     ...shorthands.margin('0px'),
-    textOverflow: 'clip',
   },
   base: {
     fontFamily: tokens.fontFamilyBase,
@@ -117,6 +115,25 @@ const useRootStyles = makeStyles({
   infoColor: {
     color: tokens.info,
   },
+  center: {
+    textAlign: 'center',
+  },
+  end: {
+    textAlign: 'end',
+  },
+  start: {
+    textAlign: 'start',
+  },
+  justify: {
+    textAlign: 'justify',
+  },
+  nowrap: {
+    whiteSpace: 'nowrap',
+    ...shorthands.overflow('hidden'),
+  },
+  truncate: {
+    textOverflow: 'ellipsis',
+  },
 });
 
 export const useTextStyles = (state: TextState): TextState => {
@@ -127,7 +144,10 @@ export const useTextStyles = (state: TextState): TextState => {
     styles[state.font!],
     styles[state.weight!],
     styles[state.size!],
+    styles[state.align!],
     state.italic && styles.italic,
+    state.truncate && styles.truncate,
+    state.nowrap && styles.nowrap,
     state.underline && styles.underline,
     state.strikethrough && styles.strikethrough,
     state.underline && state.strikethrough && styles.strikethroughUnderline,

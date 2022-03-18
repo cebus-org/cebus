@@ -102,10 +102,8 @@ export const fontWeightTokens: FontWeightTokens;
 
 // @public
 export type LayoutTokens = {
-    focusedGap: string;
-    relaxedGap: string;
-    focusedPadding: string;
-    relaxedPadding: string;
+    relaxedLayout: string;
+    focusedLayout: string;
 };
 
 // @public (undocumented)
@@ -121,14 +119,12 @@ export type MotionTokens = {
 export type Theme = ColorTokens & Fonts & MotionTokens & BorderRadiusTokens & LayoutTokens;
 
 // @public (undocumented)
-export const tokens: Record<"elevate" | "hoverShadow" | "inherit" | "brand" | "secondary" | "success" | "danger" | "social" | "warning" | "info" | "inheritHover" | "brandHover" | "secondaryHover" | "successHover" | "dangerHover" | "socialHover" | "warningHover" | "infoHover" | "inheritPressed" | "brandPressed" | "secondaryPressed" | "successPressed" | "dangerPressed" | "socialPressed" | "warningPressed" | "infoPressed" | "inheritDisabled" | "brandDisabled" | "secondaryDisabled" | "successDisabled" | "dangerDisabled" | "socialDisabled" | "warningDisabled" | "infoDisabled" | "inheritForegroundHover" | "brandForegroundHover" | "secondaryForegroundHover" | "successForegroundHover" | "dangerForegroundHover" | "socialForegroundHover" | "warningForegroundHover" | "infoForegroundHover" | "inheritForegroundPressed" | "brandForegroundPressed" | "secondaryForegroundPressed" | "successForegroundPressed" | "dangerForegroundPressed" | "socialForegroundPressed" | "warningForegroundPressed" | "infoForegroundPressed" | "inheritBackground" | "brandBackground" | "secondaryBackground" | "successBackground" | "dangerBackground" | "socialBackground" | "warningBackground" | "infoBackground" | "inheritBackgroundDisabled" | "brandBackgroundDisabled" | "secondaryBackgroundDisabled" | "successBackgroundDisabled" | "dangerBackgroundDisabled" | "socialBackgroundDisabled" | "warningBackgroundDisabled" | "infoBackgroundDisabled" | "textColor" | "canvasColor" | "focusedGap" | "relaxedGap" | "focusedPadding" | "relaxedPadding" | "transitionDuration" | "transitionTimingFunction" | "square" | "rounded" | "circular" | "circle" | "fontFamilyBase" | "monospaceFont" | "display" | "subHeadline" | "body" | "caption" | "title" | "header1" | "header2" | "header3" | "fontSize100" | "fontSize200" | "fontSize300" | "fontSize400" | "fontSize500" | "fontSize600" | "fontSize700" | "fontSize800" | "fontSize900" | "fontSize1000" | "lineHeight100" | "lineHeight200" | "lineHeight300" | "lineHeight400" | "lineHeight500" | "lineHeight600" | "lineHeight700" | "lineHeight800" | "lineHeight900" | "lineHeight1000" | "thin" | "light" | "regular" | "medium" | "bold" | "black", string>;
+export const tokens: Record<"elevate" | "hoverShadow" | "inherit" | "brand" | "secondary" | "success" | "danger" | "social" | "warning" | "info" | "inheritHover" | "brandHover" | "secondaryHover" | "successHover" | "dangerHover" | "socialHover" | "warningHover" | "infoHover" | "inheritPressed" | "brandPressed" | "secondaryPressed" | "successPressed" | "dangerPressed" | "socialPressed" | "warningPressed" | "infoPressed" | "inheritDisabled" | "brandDisabled" | "secondaryDisabled" | "successDisabled" | "dangerDisabled" | "socialDisabled" | "warningDisabled" | "infoDisabled" | "inheritForegroundHover" | "brandForegroundHover" | "secondaryForegroundHover" | "successForegroundHover" | "dangerForegroundHover" | "socialForegroundHover" | "warningForegroundHover" | "infoForegroundHover" | "inheritForegroundPressed" | "brandForegroundPressed" | "secondaryForegroundPressed" | "successForegroundPressed" | "dangerForegroundPressed" | "socialForegroundPressed" | "warningForegroundPressed" | "infoForegroundPressed" | "inheritBackground" | "brandBackground" | "secondaryBackground" | "successBackground" | "dangerBackground" | "socialBackground" | "warningBackground" | "infoBackground" | "inheritBackgroundDisabled" | "brandBackgroundDisabled" | "secondaryBackgroundDisabled" | "successBackgroundDisabled" | "dangerBackgroundDisabled" | "socialBackgroundDisabled" | "warningBackgroundDisabled" | "infoBackgroundDisabled" | "textColor" | "canvasColor" | "relaxedLayout" | "focusedLayout" | "transitionDuration" | "transitionTimingFunction" | "square" | "rounded" | "circular" | "circle" | "fontFamilyBase" | "monospaceFont" | "display" | "subHeadline" | "body" | "caption" | "title" | "header1" | "header2" | "header3" | "fontSize100" | "fontSize200" | "fontSize300" | "fontSize400" | "fontSize500" | "fontSize600" | "fontSize700" | "fontSize800" | "fontSize900" | "fontSize1000" | "lineHeight100" | "lineHeight200" | "lineHeight300" | "lineHeight400" | "lineHeight500" | "lineHeight600" | "lineHeight700" | "lineHeight800" | "lineHeight900" | "lineHeight1000" | "thin" | "light" | "regular" | "medium" | "bold" | "black", string>;
 
 // @public (undocumented)
 export const webDarkTheme: {
-    focusedGap: string;
-    relaxedGap: string;
-    focusedPadding: string;
-    relaxedPadding: string;
+    relaxedLayout: string;
+    focusedLayout: string;
     transitionDuration: string;
     transitionTimingFunction: string;
     square: string;
@@ -246,10 +242,8 @@ export const webDarkTokens: ColorTokens;
 
 // @public (undocumented)
 export const webLightTheme: {
-    focusedGap: string;
-    relaxedGap: string;
-    focusedPadding: string;
-    relaxedPadding: string;
+    relaxedLayout: string;
+    focusedLayout: string;
     transitionDuration: string;
     transitionTimingFunction: string;
     square: string;

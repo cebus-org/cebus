@@ -10,18 +10,24 @@ export const useText = (props: TextProps, ref: React.Ref<HTMLElement>): TextStat
     weight = 'regular',
     italic = false,
     underline = false,
+    truncate = false,
     strikethrough = false,
+    nowrap = false,
     color = 'base',
+    align = 'start',
   } = props;
 
   const state: TextState = {
     size: size,
     font,
     weight,
+    truncate,
     italic,
     underline,
     strikethrough,
+    nowrap,
     color,
+    align,
     components: {
       root: 'span',
     },

@@ -38,13 +38,13 @@ const useStyles = makeStyles({
   },
 
   focused: {
-    ...shorthands.padding(tokens.focusedPadding),
-    ...shorthands.gap(tokens.focusedGap),
+    ...shorthands.padding(tokens.focusedLayout),
+    ...shorthands.gap(tokens.focusedLayout),
   },
 
   relaxed: {
-    ...shorthands.padding(tokens.relaxedPadding),
-    ...shorthands.gap(tokens.relaxedGap),
+    ...shorthands.padding(tokens.relaxedLayout),
+    ...shorthands.gap(tokens.relaxedLayout),
   },
 });
 

@@ -6,7 +6,7 @@ const useStyles = makeStyles({
   root: {
     display: 'flex',
     alignItems: 'flex-start',
-    ...shorthands.gap(tokens.focusedGap),
+    ...shorthands.gap(tokens.focusedLayout),
   },
 
   vertical: {

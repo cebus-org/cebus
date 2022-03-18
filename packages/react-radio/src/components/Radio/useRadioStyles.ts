@@ -10,14 +10,14 @@ const useRootStyles = makeStyles({
   root: {
     display: 'inline-flex',
     position: 'relative',
-    columnGap: tokens.focusedGap,
+    columnGap: tokens.focusedLayout,
     alignItems: 'center',
   },
 
   vertical: {
     flexDirection: 'column',
     alignItems: 'center',
-    rowGap: tokens.focusedGap,
+    rowGap: tokens.focusedLayout,
   },
 
   focusIndicator: createCustomFocusIndicatorStyle(
