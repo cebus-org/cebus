@@ -24,6 +24,11 @@ const useRootStyles = makeStyles({
     width: '32px',
     height: '32px',
   },
+
+  display: {
+    width: '128px',
+    height: '128px',
+  },
 });
 
 export const useIconStyles = (state: IconState) => {

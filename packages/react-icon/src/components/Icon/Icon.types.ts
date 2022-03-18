@@ -11,7 +11,7 @@ export type IconCommons = {
   /**
    * The color type for the Icon.
    */
-  color?: 'inherit' | 'brand' | 'secondary' | 'success' | 'danger' | 'social' | 'warning' | 'info';
+  color?: 'white' | 'inherit' | 'brand' | 'secondary' | 'success' | 'danger' | 'social' | 'warning' | 'info';
 
   /**
    * Whether the Icon should render using a disabled color type.
@@ -24,10 +24,11 @@ export type IconCommons = {
    * * Small - `16px`
    * * Medium - `24px`
    * * Large - `32px`
+   * * Display - '128px'
    *
    * @defaultValue medium
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: 'small' | 'medium' | 'large' | 'display';
 
   /**
    * The viewBox size of the SVG.
