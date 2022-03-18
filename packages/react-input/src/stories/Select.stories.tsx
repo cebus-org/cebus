@@ -1,24 +1,10 @@
 import * as React from 'react';
 import { Select, Option } from '../index';
-import { makeStyles, shorthands } from '@griffel/react';
+import { Stack } from '@pongo-ui/react-layout';
 import { DateTimeIcon } from '@pongo-ui/react-icon';
 import type { SelectProps } from '../index';
 
-const useStyles = makeStyles({
-  root: {
-    display: 'inline-flex',
-    flexDirection: 'column',
-    ...shorthands.gap('10px'),
-  },
-  row: {
-    display: 'flex',
-    flexDirection: 'row',
-    ...shorthands.gap('10px'),
-  },
-});
-
 export const BasicSelectExample = () => {
-  const styles = useStyles();
   const [checkedValues, setCheckedValues] = React.useState(['segoe']);
 
   const onCheckedValueChange: SelectProps['onCheckedValueChange'] = (ev, { checkedItems }) => {
@@ -26,7 +12,7 @@ export const BasicSelectExample = () => {
   };
 
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Select value={checkedValues} label="test" onCheckedValueChange={onCheckedValueChange}>
         <Option value="segoe">Segoe</Option>
         <Option value="calibri">Calibri</Option>
@@ -42,12 +28,11 @@ export const BasicSelectExample = () => {
         <Option value="calibri">Calibri</Option>
         <Option value="arial">Arial</Option>
       </Select>
-    </div>
+    </Stack>
   );
 };
 
 export const SelectContentExample = () => {
-  const styles = useStyles();
   const [checkedValues, setCheckedValues] = React.useState(['segoe']);
 
   const onCheckedValueChange: SelectProps['onCheckedValueChange'] = (ev, { checkedItems }) => {
@@ -55,7 +40,7 @@ export const SelectContentExample = () => {
   };
 
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Select
         value={checkedValues}
         label="test"
@@ -91,7 +76,7 @@ export const SelectContentExample = () => {
         <Option value="calibri">Calibri</Option>
         <Option value="arial">Arial</Option>
       </Select>
-    </div>
+    </Stack>
   );
 };
 

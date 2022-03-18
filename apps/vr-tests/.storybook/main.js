@@ -16,6 +16,7 @@ const testedComponentPackages = [
   'react-switch',
   'react-radio',
   'react-checkbox',
+  'react-layout',
   'react-accordion',
 ];
 

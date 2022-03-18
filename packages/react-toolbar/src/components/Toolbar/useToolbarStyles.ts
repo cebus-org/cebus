@@ -4,7 +4,7 @@ import { tokens } from '@pongo-ui/react-theme';
 
 const useRootStyles = makeStyles({
   root: {
-    position: 'fixed',
+    top: '0px',
     height: '48px',
     width: '100%',
     display: 'flex',
@@ -22,6 +22,14 @@ const useRootStyles = makeStyles({
     },
   },
 
+  relative: {
+    position: 'relative',
+  },
+
+  sticky: {
+    position: 'sticky',
+  },
+
   contentPadding: {
     ...shorthands.padding('0px', '20px'),
   },
@@ -33,6 +41,7 @@ export const useToolbarStyles = (state: ToolbarState) => {
 
   state.root.className = mergeClasses(
     rootStyles.root,
+    rootStyles[state.position!],
     contentPadding && rootStyles.contentPadding,
     state.root.className,
   );

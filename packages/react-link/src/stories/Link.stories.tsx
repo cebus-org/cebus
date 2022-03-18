@@ -1,23 +1,13 @@
 import * as React from 'react';
 import { Link } from '../index';
-import { makeStyles, shorthands } from '@griffel/react';
-
-const useStyles = makeStyles({
-  root: {
-    display: 'inline-flex',
-    flexDirection: 'column',
-    ...shorthands.gap('10px'),
-  },
-});
+import { Stack } from '@pongo-ui/react-layout';
 
 export const BasicLinkExample = () => {
-  const styles = useStyles();
-
   return (
-    <div className={styles.root}>
+    <Stack vertical>
       <Link>Basic</Link>
       <Link disabled>Basic</Link>
-    </div>
+    </Stack>
   );
 };
 

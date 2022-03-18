@@ -2,6 +2,51 @@
   "name": "@pongo-ui/react-checkbox",
   "entries": [
     {
+      "date": "Thu, 17 Mar 2022 01:11:50 GMT",
+      "tag": "@pongo-ui/react-checkbox_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-checkbox",
+            "commit": "1554ff602168fdc4b1bbf275a96d6251ff87cab8",
+            "comment": "Updating tokens"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-checkbox",
+            "comment": "Bump @pongo-ui/react-theme to v0.0.11",
+            "commit": "a15b32fd934c26a52277276fd55d56958ff08de0"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-checkbox",
+            "comment": "Bump @pongo-ui/react-icon to v0.1.8",
+            "commit": "a15b32fd934c26a52277276fd55d56958ff08de0"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-checkbox",
+            "comment": "Bump @pongo-ui/react-text to v0.0.12",
+            "commit": "a15b32fd934c26a52277276fd55d56958ff08de0"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-checkbox",
+            "comment": "Bump @pongo-ui/react-button to v1.1.24",
+            "commit": "a15b32fd934c26a52277276fd55d56958ff08de0"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-checkbox",
+            "comment": "Bump @pongo-ui/react-label to v0.0.7",
+            "commit": "a15b32fd934c26a52277276fd55d56958ff08de0"
+          }
+        ]
+      }
+    },
+    {
       "date": "Wed, 16 Mar 2022 04:40:30 GMT",
       "tag": "@pongo-ui/react-checkbox_v0.0.3",
       "version": "0.0.3",

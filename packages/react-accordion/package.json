@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-accordion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A component used to show and hide nested information.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -25,7 +25,7 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.10",
+    "@pongo-ui/react-theme": "^0.0.11",
     "@fluentui/react-accordion": "^9.0.0-rc.5"
   },
   "devDependencies": {},
