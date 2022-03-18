@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-avatar",
   "entries": [
     {
+      "date": "Fri, 18 Mar 2022 20:43:02 GMT",
+      "tag": "@pongo-ui/react-avatar_v0.0.9",
+      "version": "0.0.9",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-avatar",
+            "comment": "Bump @pongo-ui/react-theme to v0.0.12",
+            "commit": "f112dfd68bd00f91d968eb69d4f304cb06d300d8"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-avatar",
+            "comment": "Bump @pongo-ui/react-layout to v0.0.2",
+            "commit": "f112dfd68bd00f91d968eb69d4f304cb06d300d8"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 17 Mar 2022 01:11:50 GMT",
       "tag": "@pongo-ui/react-avatar_v0.0.8",
       "version": "0.0.8",
