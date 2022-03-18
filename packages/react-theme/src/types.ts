@@ -23,10 +23,8 @@ export type FontFamilyTokens = {
  * Layout tokens.
  */
 export type LayoutTokens = {
-  focusedGap: string;
-  relaxedGap: string;
-  focusedPadding: string;
-  relaxedPadding: string;
+  relaxedLayout: string;
+  focusedLayout: string;
 };
 
 /**

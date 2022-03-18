@@ -8,7 +8,7 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     alignItems: 'center',
     flexShrink: 0,
-    ...shorthands.gap(tokens.focusedGap),
+    ...shorthands.gap(tokens.focusedLayout),
   },
 });
 

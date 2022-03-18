@@ -56,11 +56,11 @@ const useStyles = makeStyles({
   },
 
   focused: {
-    ...shorthands.gap(tokens.focusedGap),
+    ...shorthands.gap(tokens.focusedLayout),
   },
 
   relaxed: {
-    ...shorthands.gap(tokens.relaxedGap),
+    ...shorthands.gap(tokens.relaxedLayout),
   },
 });
 
