@@ -56,6 +56,18 @@ export type TextCommons = {
    * @defaultValue false
    */
   strikethrough?: boolean;
+
+  /**
+   * How to align the text.
+   *
+   * @defaultValue start
+   */
+  align?: 'start' | 'center' | 'end' | 'justify';
+
+  /**
+   * Whether the text should truncate if it exceeds its containers size.
+   */
+  nowrap?: boolean;
 };
 
 export type TextProps = ComponentProps<TextSlots> & TextCommons;

@@ -51,6 +51,8 @@ export type TextCommons = {
     italic?: boolean;
     underline?: boolean;
     strikethrough?: boolean;
+    align?: 'start' | 'center' | 'end' | 'justify';
+    nowrap?: boolean;
 };
 
 // @public (undocumented)
