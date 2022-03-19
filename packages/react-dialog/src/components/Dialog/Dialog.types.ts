@@ -17,6 +17,9 @@ export type OpenDialogEvents =
 export type OnOpenChangeData = { open: boolean };
 
 export type DialogSlots = {
+  /**
+   * The root of the Dialog.
+   */
   root: Slot<'div'>;
 
   /**
@@ -37,20 +40,10 @@ type DialogCommons = Pick<PortalProps, 'mountNode'> & {
   open: boolean;
 
   /**
-   * Uncontrolled value to handle the opening of the Dialog.
-   */
-  defaultOpen?: boolean;
-
-  /**
    * Call back when the component requests to change value
    * The `open` value is used as a hint when directly controlling the component
    */
-  onOpenChange?: (e: OpenDialogEvents, data: OnOpenChangeData) => void;
-
-  /**
-   * Should trap focus
-   */
-  trapFocus?: boolean;
+  onOpenChange?: (ev: OpenDialogEvents, data: OnOpenChangeData) => void;
 };
 
 export type DialogProps = ComponentProps<DialogSlots> & DialogCommons;

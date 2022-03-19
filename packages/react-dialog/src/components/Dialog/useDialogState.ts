@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { useControllableState, useEventCallback, useMergedRefs } from '@fluentui/react-utilities';
-import type { DialogState, OpenDialogEvents } from './Dialog.types';
+import { useEventCallback, useMergedRefs } from '@fluentui/react-utilities';
+import type { DialogState, OpenDialogEvents, OnOpenChangeData } from './Dialog.types';
 
 export const useDialogState = (state: DialogState) => {
-  const { open, defaultOpen, onOpenChange } = state;
+  const { open, onOpenChange } = state;
   const {
     onMouseEnter: onMouseEnterOriginal,
     onMouseLeave: onMouseLeaveOriginal,
@@ -13,15 +13,8 @@ export const useDialogState = (state: DialogState) => {
   const dialogBoxRef = React.useRef(null);
   const contentRef = useMergedRefs(dialogBoxRef, state?.dialogBox?.ref);
 
-  const [currentValue, setCurrentValue] = useControllableState({
-    defaultState: open,
-    state: defaultOpen,
-    initialState: false,
-  });
-
-  const onDialogOpenChange = useEventCallback((ev: OpenDialogEvents, value: boolean) => {
-    onOpenChange?.(ev, { open: value });
-    setCurrentValue(!currentValue);
+  const onDialogOpenChange = useEventCallback((ev: OpenDialogEvents, data: OnOpenChangeData) => {
+    onOpenChange?.(ev, { open: data.open });
   });
 
   state.root.onMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -30,22 +23,24 @@ export const useDialogState = (state: DialogState) => {
   };
 
   state.root.onPointerDown = (ev: React.MouseEvent<HTMLDivElement>) => {
-    console.log('test');
+    onOpenChange?.(ev, { open: false });
   };
 
-  state.root.onMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
-    onMouseLeaveOriginal?.(e);
+  state.root.onMouseLeave = (ev: React.MouseEvent<HTMLDivElement>) => {
+    onOpenChange?.(ev, { open: false });
   };
 
   state.root.onKeyDown = (ev: React.KeyboardEvent<HTMLDivElement>) => {
     console.log('key down');
 
     if (ev.key === 'Escape' && contentRef.current?.contains(ev.target as HTMLDivElement)) {
-      onDialogOpenChange(ev, false);
+      onOpenChange?.(ev, false);
     }
 
     onKeyDownOriginal?.(ev);
   };
+
+  // state.onOpenChange = onDialogOpenChange;
 
   return state;
 };

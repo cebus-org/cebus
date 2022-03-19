@@ -10,11 +10,22 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     inset: '0px',
     backgroundColor: 'rgba(0, 0, 0, .5)',
-
     '-webkit-tap-highlight-color': 'transparent',
+    transitionProperty: 'opacity',
+    transitionDuration: tokens.transitionDuration,
+    transitionTimingFunction: tokens.transitionTimingFunction,
+  },
+
+  open: {
+    opacity: '1',
+  },
+
+  closed: {
+    opacity: '0',
   },
 
   dialogBox: {
+    cursor: 'auto',
     display: 'inline-flex',
     backgroundColor: tokens.canvasColor,
     ...shorthands.padding(tokens.focusedLayout),
@@ -29,7 +40,7 @@ const useStyles = makeStyles({
 export const useDialogStyles = (state: DialogState): DialogState => {
   const styles = useStyles();
 
-  state.root.className = mergeClasses(styles.root, state.root.className);
+  state.root.className = mergeClasses(styles.root, state.open ? styles.open : styles.closed, state.root.className);
 
   if (state.dialogBox) {
     state.dialogBox.className = mergeClasses(styles.dialogBox, state.dialogBox.className);
