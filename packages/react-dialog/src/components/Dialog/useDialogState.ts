@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { useEventCallback, useMergedRefs } from '@fluentui/react-utilities';
+import { useMergedRefs } from '@fluentui/react-utilities';
 import { useFocusFinders } from '@fluentui/react-tabster';
-import type { DialogState, OpenDialogEvents, OnOpenChangeData } from './Dialog.types';
+import type { DialogState } from './Dialog.types';
 
 export const useDialogState = (state: DialogState) => {
   const { findFirstFocusable } = useFocusFinders();
-  const { open, onOpenChange } = state;
+  const { open, onOpenChange, label } = state;
   const { onPointerDown: onPointerDownOriginal, onKeyDown: onKeyDownOriginal } = state.root;
 
   const dialogBoxRef = React.useRef(null);
@@ -50,6 +50,9 @@ export const useDialogState = (state: DialogState) => {
   if (state.dialogBox) {
     state.dialogBox.ref = contentRef;
   }
+
+  // Aria Label
+  state.root['aria-label'] = label;
 
   return state;
 };

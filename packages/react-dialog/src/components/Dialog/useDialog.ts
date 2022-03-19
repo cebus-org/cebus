@@ -5,12 +5,13 @@ import type { DialogProps, DialogState } from './Dialog.types';
 import { useDialogState } from './useDialogState';
 
 export const useDialog = (props: DialogProps, ref: React.Ref<HTMLDivElement>): DialogState => {
-  const { open = true, dialogBox, onOpenChange } = props;
+  const { open = true, dialogBox, onOpenChange, label } = props;
 
   const { modalAttributes } = useModalAttributes({ trapFocus: true });
 
   const state: DialogState = {
     open,
+    label,
     onOpenChange,
     components: {
       root: 'div',

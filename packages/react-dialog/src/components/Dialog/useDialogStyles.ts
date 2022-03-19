@@ -9,11 +9,19 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     inset: '0px',
-    backgroundColor: 'rgba(0, 0, 0, .5)',
     '-webkit-tap-highlight-color': 'transparent',
     transitionProperty: 'opacity',
     transitionDuration: tokens.transitionDuration,
     transitionTimingFunction: tokens.transitionTimingFunction,
+    ':before': {
+      content: "''",
+      position: 'fixed',
+      display: 'flex',
+      inset: '0px',
+      backgroundColor: tokens.textColor,
+      opacity: '.5',
+      '-webkit-tap-highlight-color': 'transparent',
+    },
   },
 
   open: {

@@ -35,6 +35,11 @@ type DialogCommons = Pick<PortalProps, 'mountNode'> & {
   open: boolean;
 
   /**
+   * The label describing the Dialog. This is what is read by the screen reader.
+   */
+  label: string;
+
+  /**
    * Call back for when the Dialog is opened or closed.
    */
   onOpenChange?: (ev: OpenDialogEvents, data: OnOpenChangeData) => void;
