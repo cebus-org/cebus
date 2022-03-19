@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-accordion",
   "entries": [
     {
+      "date": "Fri, 18 Mar 2022 20:43:02 GMT",
+      "tag": "@pongo-ui/react-accordion_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-accordion",
+            "comment": "Bump @pongo-ui/react-theme to v0.0.12",
+            "commit": "f112dfd68bd00f91d968eb69d4f304cb06d300d8"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 17 Mar 2022 01:11:51 GMT",
       "tag": "@pongo-ui/react-accordion_v0.0.2",
       "version": "0.0.2",

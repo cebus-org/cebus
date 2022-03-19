@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-input",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "A set of components that enable users to input and edit given values.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -27,11 +27,11 @@
     "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
     "@fluentui/react-aria": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.11",
-    "@pongo-ui/react-menu": "^0.1.5"
+    "@pongo-ui/react-theme": "^0.0.12",
+    "@pongo-ui/react-menu": "^0.1.6"
   },
   "devDependencies": {
-    "@pongo-ui/react-layout": "^0.0.1"
+    "@pongo-ui/react-layout": "^0.0.2"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

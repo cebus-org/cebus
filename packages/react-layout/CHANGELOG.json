@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-layout",
   "entries": [
     {
+      "date": "Fri, 18 Mar 2022 20:43:02 GMT",
+      "tag": "@pongo-ui/react-layout_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-layout",
+            "commit": "468500609330962df6ccce59d6b7186bef8a098c",
+            "comment": "Updating tokens"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-layout",
+            "comment": "Bump @pongo-ui/react-theme to v0.0.12",
+            "commit": "f112dfd68bd00f91d968eb69d4f304cb06d300d8"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 17 Mar 2022 01:11:50 GMT",
       "tag": "@pongo-ui/react-layout_v0.0.1",
       "version": "0.0.1",

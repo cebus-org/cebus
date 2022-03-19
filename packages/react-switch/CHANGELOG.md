@@ -1,8 +1,17 @@
 # Change Log - @pongo-ui/react-switch
 
-This log was last generated on Thu, 17 Mar 2022 01:11:50 GMT and should not be manually modified.
+This log was last generated on Fri, 18 Mar 2022 20:43:02 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.8
+
+Fri, 18 Mar 2022 20:43:02 GMT
+
+### Patches
+
+- Bump @pongo-ui/react-theme to v0.0.12
+- Bump @pongo-ui/react-layout to v0.0.2
 
 ## 0.0.7
 
