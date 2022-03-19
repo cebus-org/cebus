@@ -17,3 +17,4 @@ export * from '@pongo-ui/react-toolbar';
 export * from '@pongo-ui/react-checkbox';
 export * from '@pongo-ui/react-provider';
 export * from '@pongo-ui/react-layout';
+export * from '@pongo-ui/react-dialog';

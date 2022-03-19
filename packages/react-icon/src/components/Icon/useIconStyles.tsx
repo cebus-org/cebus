@@ -10,6 +10,10 @@ const useRootStyles = makeStyles({
     fill: `var(${fillCSSVariable})`,
   },
 
+  white: {
+    fill: 'white',
+  },
+
   small: {
     width: '16px',
     height: '16px',
@@ -34,7 +38,12 @@ const useRootStyles = makeStyles({
 export const useIconStyles = (state: IconState) => {
   const rootStyles = useRootStyles();
 
-  state.root.className = mergeClasses(rootStyles.root, rootStyles[state.size!], state.root.className);
+  state.root.className = mergeClasses(
+    rootStyles.root,
+    rootStyles[state.size!],
+    state.color === 'white' && rootStyles.white,
+    state.root.className,
+  );
 
   return state;
 };

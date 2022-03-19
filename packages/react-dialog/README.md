@@ -1,21 +1,21 @@
-# Text
+# Dialog
 
-The Text control standardizes font styling across a webpage.
+The Dialog component presents a surface that users can either complete tasks or obtain information from.
 
 ## Use
 
-1. Install the @pongo-ui/react-text component.
+1. Install the @pongo-ui/react-dialog component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-text
+npm install @pongo-ui/react-dialog
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-text
+yarn add @pongo-ui/react-dialog
 ```
 
 2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
@@ -34,17 +34,17 @@ const MyApp = () => {
 }
 ```
 
-4. Integrate the Link component.
+4. Integrate the Dialog component.
 
 ```jsx
 import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Text } from '@pongo-ui/react-link'
+import { web1ghtTheme } from '@pongo-ui/react-theme'
+import { Dialog } from '@pongo-ui/react-dialog'
 
 const MyApp = () => {
   return (
     <Provider theme={webLightTheme}>
-      <Text>Hello World</Text>
+      <Dialog>...</Dialog>
     <Provider>
   )
 }
@@ -52,4 +52,4 @@ const MyApp = () => {
 
 ## API
 
-To learn more about the Text API take a look at the [Text Interface](src/components/Text/Text.types.ts) file.
+To learn more about the Dialog API take a look at the [Dialog Interface](src/components/Dialog/Dialog.types.ts) file.

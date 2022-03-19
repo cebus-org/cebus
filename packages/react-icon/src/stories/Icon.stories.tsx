@@ -16,6 +16,7 @@ export const SizeIconExample = () => {
       <LogoIcon size="small" />
       <LogoIcon size="medium" />
       <LogoIcon size="large" />
+      <LogoIcon size="display" />
     </Stack>
   );
 };
@@ -32,6 +33,9 @@ export const ColorIconExample = () => {
       <LogoIcon color="social" />
       <LogoIcon color="warning" />
       <LogoIcon color="info" />
+      <div style={{ backgroundColor: 'black' }}>
+        <LogoIcon color="white" />
+      </div>
     </Stack>
   );
 };
@@ -48,6 +52,9 @@ export const DisabledIconExample = () => {
       <LogoIcon color="social" disabled />
       <LogoIcon color="warning" disabled />
       <LogoIcon color="info" disabled />
+      <div style={{ backgroundColor: 'black' }}>
+        <LogoIcon color="white" disabled />
+      </div>
     </Stack>
   );
 };

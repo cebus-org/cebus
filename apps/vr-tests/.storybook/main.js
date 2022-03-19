@@ -18,6 +18,7 @@ const testedComponentPackages = [
   'react-checkbox',
   'react-layout',
   'react-accordion',
+  'react-dialog',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(

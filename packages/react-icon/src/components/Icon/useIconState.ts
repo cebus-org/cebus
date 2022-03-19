@@ -5,13 +5,13 @@ import { tokens } from '@pongo-ui/react-theme';
 export const useIconState = (state: IconState): IconState => {
   const { color, disabled, viewBox } = state;
 
-  const CSSVariables = {
-    [fillCSSVariable]: color
-      ? (tokens as any)[color + (disabled ? 'Disabled' : '')]
-      : disabled
-      ? tokens.inheritDisabled
-      : tokens.textColor,
-  };
+  let CSSVariables = {};
+
+  if (color) {
+    CSSVariables = { [fillCSSVariable]: (tokens as any)[color + (disabled ? 'Disabled' : '')] };
+  } else {
+    CSSVariables = { [fillCSSVariable]: disabled ? tokens.inheritDisabled : tokens.textColor };
+  }
 
   state.root.xmlns = 'http://www.w3.org/2000/svg';
   state.root.viewBox = viewBox;
