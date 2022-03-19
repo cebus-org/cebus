@@ -7,21 +7,21 @@ import { useDialogState } from './useDialogState';
 export const useDialog = (props: DialogProps, ref: React.Ref<HTMLDivElement>): DialogState => {
   const { open = true, dialogBox, onOpenChange } = props;
 
-  // const { modalAttributes } = useModalAttributes({ trapFocus });
+  const { modalAttributes } = useModalAttributes({ trapFocus: true });
 
   const state: DialogState = {
     open,
     onOpenChange,
     components: {
       root: 'div',
-      background: 'div',
       dialogBox: 'div',
     },
     root: getNativeElementProps('div', {
       ref,
       role: 'dialog',
       'aria-modal': true,
-      // ...modalAttributes,
+      'aria-label': 'Hello world',
+      ...modalAttributes,
       ...props,
     }),
     dialogBox: resolveShorthand(dialogBox, {

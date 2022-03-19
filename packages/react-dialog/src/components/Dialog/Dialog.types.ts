@@ -26,11 +26,6 @@ export type DialogSlots = {
    * The dialogBox that the content is rendered within.
    */
   dialogBox?: Slot<'div'>;
-
-  /**
-   * The background color behind the Dialog card.
-   */
-  background?: Slot<'div'>;
 };
 
 type DialogCommons = Pick<PortalProps, 'mountNode'> & {
@@ -40,8 +35,7 @@ type DialogCommons = Pick<PortalProps, 'mountNode'> & {
   open: boolean;
 
   /**
-   * Call back when the component requests to change value
-   * The `open` value is used as a hint when directly controlling the component
+   * Call back for when the Dialog is opened or closed.
    */
   onOpenChange?: (ev: OpenDialogEvents, data: OnOpenChangeData) => void;
 };

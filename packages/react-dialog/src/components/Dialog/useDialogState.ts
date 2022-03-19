@@ -1,46 +1,55 @@
 import * as React from 'react';
 import { useEventCallback, useMergedRefs } from '@fluentui/react-utilities';
+import { useFocusFinders } from '@fluentui/react-tabster';
 import type { DialogState, OpenDialogEvents, OnOpenChangeData } from './Dialog.types';
 
 export const useDialogState = (state: DialogState) => {
+  const { findFirstFocusable } = useFocusFinders();
   const { open, onOpenChange } = state;
-  const {
-    onMouseEnter: onMouseEnterOriginal,
-    onMouseLeave: onMouseLeaveOriginal,
-    onKeyDown: onKeyDownOriginal,
-  } = state.root;
+  const { onPointerDown: onPointerDownOriginal, onKeyDown: onKeyDownOriginal } = state.root;
 
   const dialogBoxRef = React.useRef(null);
   const contentRef = useMergedRefs(dialogBoxRef, state?.dialogBox?.ref);
 
-  const onDialogOpenChange = useEventCallback((ev: OpenDialogEvents, data: OnOpenChangeData) => {
-    onOpenChange?.(ev, { open: data.open });
-  });
+  state.root.onPointerDown = (ev: React.PointerEvent<HTMLDivElement>) => {
+    // If the Dialog Card is pressed, do not lose focus
+    if (!contentRef.current?.contains(ev.target as HTMLDivElement)) {
+      onOpenChange?.(ev, { open: false });
+    }
 
-  state.root.onMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
-    console.log('test');
-    onMouseEnterOriginal?.(e);
-  };
-
-  state.root.onPointerDown = (ev: React.MouseEvent<HTMLDivElement>) => {
-    onOpenChange?.(ev, { open: false });
-  };
-
-  state.root.onMouseLeave = (ev: React.MouseEvent<HTMLDivElement>) => {
-    onOpenChange?.(ev, { open: false });
+    onPointerDownOriginal?.(ev);
   };
 
   state.root.onKeyDown = (ev: React.KeyboardEvent<HTMLDivElement>) => {
-    console.log('key down');
-
     if (ev.key === 'Escape' && contentRef.current?.contains(ev.target as HTMLDivElement)) {
-      onOpenChange?.(ev, false);
+      onOpenChange?.(ev, { open: false });
     }
 
     onKeyDownOriginal?.(ev);
   };
 
-  // state.onOpenChange = onDialogOpenChange;
+  React.useEffect(() => {
+    if (open && contentRef.current) {
+      // Save the previous active element
+      const previousActiveElement: any = document.activeElement;
+      const firstFocusable = findFirstFocusable(contentRef.current);
+
+      // Focus the first available item, otherwise the dialog card.
+      if (firstFocusable) {
+        firstFocusable?.focus();
+      } else {
+        contentRef.current.tabIndex = 0;
+        contentRef.current.focus();
+      }
+
+      // If a previous element was active before the Dialog was opened, focus it.
+      return () => previousActiveElement && previousActiveElement.focus();
+    }
+  }, [contentRef, findFirstFocusable, open]);
+
+  if (state.dialogBox) {
+    state.dialogBox.ref = contentRef;
+  }
 
   return state;
 };

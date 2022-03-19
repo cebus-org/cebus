@@ -34,6 +34,7 @@ const useStyles = makeStyles({
     ...shorthands.gap(tokens.focusedLayout),
     filter: tokens.elevate,
     ...shorthands.borderRadius(tokens.rounded),
+    outlineStyle: 'none',
   },
 });
 
