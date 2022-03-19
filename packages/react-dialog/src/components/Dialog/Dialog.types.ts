@@ -1,5 +1,4 @@
-import * as React from 'react';
-import type { PopperVirtualElement, usePopperMouseTarget } from '@fluentui/react-positioning';
+import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utilities';
 import type { PortalProps } from '@fluentui/react-portal';
 
 /**
@@ -16,6 +15,20 @@ export type OpenDialogEvents =
  * Data attached to open/close events
  */
 export type OnOpenChangeData = { open: boolean };
+
+export type DialogSlots = {
+  root: Slot<'div'>;
+
+  /**
+   * The dialogBox that the content is rendered within.
+   */
+  dialogBox?: Slot<'div'>;
+
+  /**
+   * The background color behind the Dialog card.
+   */
+  background?: Slot<'div'>;
+};
 
 type DialogCommons = Pick<PortalProps, 'mountNode'> & {
   /**
@@ -40,43 +53,6 @@ type DialogCommons = Pick<PortalProps, 'mountNode'> & {
   trapFocus?: boolean;
 };
 
-export type DialogProps = Partial<DialogCommons> & {
-  children: [JSX.Element, JSX.Element] | JSX.Element;
-};
+export type DialogProps = ComponentProps<DialogSlots> & DialogCommons;
 
-export type DialogState = DialogCommons &
-  Pick<DialogProps, 'children'> & {
-    /**
-     * Callback to open/close the Dialog
-     */
-    setOpen: (e: OpenDialogEvents, open: boolean) => void;
-
-    /**
-     * Callback to toggle the open state of the Dialog
-     */
-    toggleOpen: (e: OpenDialogEvents) => void;
-
-    /**
-     * Ref of the DialogTrigger
-     */
-    triggerRef: React.MutableRefObject<HTMLElement | null>;
-
-    /**
-     * Ref of the DialogSurface
-     */
-    contentRef: React.MutableRefObject<HTMLElement | null>;
-
-    /**
-     * Anchors the popper to the mouse click for context events
-     */
-    contextTarget: PopperVirtualElement | undefined;
-
-    /**
-     * A callback to set the target of the popper to the mouse click for context events
-     */
-    setContextTarget: ReturnType<typeof usePopperMouseTarget>[1];
-
-    dialogTrigger?: React.ReactElement;
-
-    dialogSurface?: React.ReactElement;
-  };
+export type DialogState = ComponentState<DialogSlots> & DialogCommons;
