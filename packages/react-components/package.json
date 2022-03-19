@@ -25,7 +25,7 @@
   "dependencies": {
     "@pongo-ui/react-theme": "^0.0.12",
     "@pongo-ui/react-theme-generator": "^0.1.2",
-    "@pongo-ui/react-dialog": "^0.0.0"
+    "@pongo-ui/react-dialog": "^0.0.0",
     "@pongo-ui/react-avatar": "^0.0.9",
     "@pongo-ui/react-button": "^1.1.25",
     "@pongo-ui/react-card": "^0.0.15",

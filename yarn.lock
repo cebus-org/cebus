@@ -2451,10 +2451,19 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@pongo-ui/react-theme@^0.0.12":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-theme/-/react-theme-0.0.12.tgz#28b662a0eeac418d85e226c17d3aabd750e7b524"
-  integrity sha512-rnWeF+XQg5ptk67BB5jva4YVsyuY0Bgl7thgO8UCouXK+2UkWWU5yZw21umepD6rxNgXrasPwkqrp9KgYqOowg==
+"@pongo-ui/react-layout@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-layout/-/react-layout-0.0.1.tgz#439da069e5e4e45f1b3d254a84b81e3e2b2c8c1c"
+  integrity sha512-sTrql9dFobN/ZpAoClLbcydGrt1wQlq8Vf6q502UUlsubU3aXfmlSpkotroKD7oeOs7r9uePRPdaWMqUXDmMtA==
+  dependencies:
+    "@fluentui/react-utilities" "^9.0.0-rc.5"
+    "@griffel/react" "^1.0.0"
+    "@pongo-ui/react-theme" "^0.0.11"
+
+"@pongo-ui/react-theme@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@pongo-ui/react-theme/-/react-theme-0.0.11.tgz#3a43caf7e6087e9487c7a666464266dbd0cd8808"
+  integrity sha512-c14qm17gc0+GK4YOa+Q1Z/sz/jfctcCToFneejd/oABNQ1mIlryTjWirjPvthEiiUF3+KtX/TgFCEhPhRElWmA==
   dependencies:
     "@pongo-ui/react-theme-generator" "^0.1.2"
 
