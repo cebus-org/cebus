@@ -1471,7 +1471,7 @@
     react-is "^16.6.3"
     tslib "^2.1.0"
 
-"@fluentui/react-context-selector@9.0.0-rc.5", "@fluentui/react-context-selector@^9.0.0-rc.5":
+"@fluentui/react-context-selector@9.0.0-rc.5":
   version "9.0.0-rc.5"
   resolved "https://registry.yarnpkg.com/@fluentui/react-context-selector/-/react-context-selector-9.0.0-rc.5.tgz#84e1c4b93cc4e046c8be5571d616a2905243ef0a"
   integrity sha512-27oAq+2G/c1mkdQH0f/R+NALZKBDye3hzaU/DLiZ04gQ1LdSVFgpoaem370i4naaTh5iu6v17NI91PgsaXESZA==

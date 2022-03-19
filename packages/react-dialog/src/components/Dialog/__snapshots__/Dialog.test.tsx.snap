@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dialog renders a basic Dialog 1`] = `
+<body>
+  <div>
+    <div>
+      Test
+      <span
+        hidden=""
+      />
+    </div>
+  </div>
+  <div
+    class=""
+    dir="ltr"
+  >
+    <div
+      aria-label="This is a label"
+      aria-modal="true"
+      class="___118frzz f19dog8a f22iagw f122n59 f4d9j23 f11qr6pd fmk5vbo f13u1uyl fkfijr0 fsxfru3 f99sooz f1k2v3fw fkmkm9e fu8n1pp fst2pvl f18r32vf f1g93lot f5p0z4x"
+      data-tabster="{\\"deloser\\":{},\\"modalizer\\":{\\"id\\":\\"modal-3\\",\\"isOthersAccessible\\":false}}"
+      role="dialog"
+    >
+      <div
+        class="___zl8a6a0 f1ohdurq ftuwxu6 f8qjfyk fk7qxxv f10sqwl7 f1eg49sl fne32i3 f1vx9l62 fi64zpg fnmxc1e fynvm4a fl4n2cu f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1s6fcnf"
+        tabindex="0"
+      >
+        Dialog content
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Dialog renders a closed Dialog 1`] = `
+<body>
+  <div>
+    <div>
+      Test
+      <span
+        hidden=""
+      />
+    </div>
+  </div>
+  <div
+    class=""
+    dir="ltr"
+  />
+</body>
+`;
