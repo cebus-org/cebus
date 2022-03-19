@@ -2,6 +2,87 @@
   "name": "@pongo-ui/react-components",
   "entries": [
     {
+      "date": "Sat, 19 Mar 2022 22:22:54 GMT",
+      "tag": "@pongo-ui/react-components_v0.0.9",
+      "version": "0.0.9",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-components",
+            "commit": "efd884683d41cfef94d3a67fc2e4109b51d2da1d",
+            "comment": "Adding Dialog"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-dialog to v0.0.1",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-button to v1.1.26",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-card to v0.0.16",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-divider to v0.0.10",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-icon to v0.1.10",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-input to v0.2.5",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-label to v0.0.9",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-menu to v0.1.7",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-text to v0.0.14",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-toolbar to v0.0.13",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-checkbox to v0.0.6",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 18 Mar 2022 20:43:02 GMT",
       "tag": "@pongo-ui/react-components_v0.0.8",
       "version": "0.0.8",

@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-menu",
   "entries": [
     {
+      "date": "Sat, 19 Mar 2022 22:22:54 GMT",
+      "tag": "@pongo-ui/react-menu_v0.1.7",
+      "version": "0.1.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-menu",
+            "comment": "Bump @pongo-ui/react-icon to v0.1.10",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-menu",
+            "comment": "Bump @pongo-ui/react-button to v1.1.26",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 18 Mar 2022 20:43:02 GMT",
       "tag": "@pongo-ui/react-menu_v0.1.6",
       "version": "0.1.6",

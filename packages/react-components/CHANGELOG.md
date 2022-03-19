@@ -1,8 +1,27 @@
 # Change Log - @pongo-ui/react-components
 
-This log was last generated on Fri, 18 Mar 2022 20:43:02 GMT and should not be manually modified.
+This log was last generated on Sat, 19 Mar 2022 22:22:54 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.9
+
+Sat, 19 Mar 2022 22:22:54 GMT
+
+### Patches
+
+- Adding Dialog (czearing@outlook.com)
+- Bump @pongo-ui/react-dialog to v0.0.1
+- Bump @pongo-ui/react-button to v1.1.26
+- Bump @pongo-ui/react-card to v0.0.16
+- Bump @pongo-ui/react-divider to v0.0.10
+- Bump @pongo-ui/react-icon to v0.1.10
+- Bump @pongo-ui/react-input to v0.2.5
+- Bump @pongo-ui/react-label to v0.0.9
+- Bump @pongo-ui/react-menu to v0.1.7
+- Bump @pongo-ui/react-text to v0.0.14
+- Bump @pongo-ui/react-toolbar to v0.0.13
+- Bump @pongo-ui/react-checkbox to v0.0.6
 
 ## 0.0.8
 

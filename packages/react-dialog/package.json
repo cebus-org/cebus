@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-dialog",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Dialog component that presents a surface that users can either complete tasks or obtain information from.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

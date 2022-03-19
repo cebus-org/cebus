@@ -1,8 +1,17 @@
 # Change Log - @pongo-ui/react-card
 
-This log was last generated on Fri, 18 Mar 2022 20:43:02 GMT and should not be manually modified.
+This log was last generated on Sat, 19 Mar 2022 22:22:54 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.16
+
+Sat, 19 Mar 2022 22:22:54 GMT
+
+### Patches
+
+- Bump @pongo-ui/react-text to v0.0.14
+- Bump @pongo-ui/react-button to v1.1.26
 
 ## 0.0.15
 

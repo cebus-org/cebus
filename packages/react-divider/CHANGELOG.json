@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-divider",
   "entries": [
     {
+      "date": "Sat, 19 Mar 2022 22:22:54 GMT",
+      "tag": "@pongo-ui/react-divider_v0.0.10",
+      "version": "0.0.10",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-divider",
+            "comment": "Bump @pongo-ui/react-text to v0.0.14",
+            "commit": "a1ab69fb38697cd5963674582c1bdce2e839cfc2"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 18 Mar 2022 20:43:02 GMT",
       "tag": "@pongo-ui/react-divider_v0.0.9",
       "version": "0.0.9",
