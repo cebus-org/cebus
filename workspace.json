@@ -88,6 +88,9 @@
     "@pongo-ui/react-accordion": {
       "root": "packages/react-accordion",
       "projectType": "library"
+    },
+    "@pongo-ui/react-dialog": {
+      "projectType": "library"
     }
   }
 }

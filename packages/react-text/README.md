@@ -52,4 +52,4 @@ const MyApp = () => {
 
 ## API
 
-To learn more about the Link API take a look at the [Text Interface](src/components/Text/Text.types.ts) file.
+To learn more about the Text API take a look at the [Text Interface](src/components/Text/Text.types.ts) file.

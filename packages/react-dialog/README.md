@@ -1,21 +1,21 @@
-# Link
+# Dialog
 
-The Link component allows you to create a standardized anchor elements
+The Dialog component presents a surface that users can either complete tasks or obtain information from.
 
 ## Use
 
-1. Install the @pongo-ui/react-link component.
+1. Install the @pongo-ui/react-dialog component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-link
+npm install @pongo-ui/react-dialog
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-link
+yarn add @pongo-ui/react-dialog
 ```
 
 2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
@@ -34,17 +34,17 @@ const MyApp = () => {
 }
 ```
 
-4. Integrate the Link component.
+4. Integrate the Dialog component.
 
 ```jsx
 import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Link } from '@pongo-ui/react-link'
+import { web1ghtTheme } from '@pongo-ui/react-theme'
+import { Dialog } from '@pongo-ui/react-dialog'
 
 const MyApp = () => {
   return (
     <Provider theme={webLightTheme}>
-      <Link>Hello World</Link>
+      <Dialog>...</Dialog>
     <Provider>
   )
 }
@@ -52,4 +52,4 @@ const MyApp = () => {
 
 ## API
 
-The Link API extends off of the FluentUI Link.
+To learn more about the Dialog API take a look at the [Dialog Interface](src/components/Dialog/Dialog.types.ts) file.
