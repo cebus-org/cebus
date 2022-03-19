@@ -9,6 +9,7 @@ export * from "@pongo-ui/react-avatar";
 export * from "@pongo-ui/react-button";
 export * from "@pongo-ui/react-card";
 export * from "@pongo-ui/react-checkbox";
+export * from "@pongo-ui/react-dialog";
 export * from "@pongo-ui/react-divider";
 export * from "@pongo-ui/react-icon";
 export * from "@pongo-ui/react-input";
