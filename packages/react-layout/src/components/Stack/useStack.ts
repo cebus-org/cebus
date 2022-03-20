@@ -36,7 +36,7 @@ export const useStack = (props: StackProps, ref: React.Ref<HTMLElement>): StackS
     const oldChildren: any = state.root.children;
     const newChildren = [];
 
-    if (oldChildren && oldChildren?.length > 1) {
+    if (oldChildren && oldChildren.length > 1) {
       for (let i = 0; i < oldChildren.length - 1; i++) {
         newChildren.push(oldChildren[i]);
         newChildren.push(divider);

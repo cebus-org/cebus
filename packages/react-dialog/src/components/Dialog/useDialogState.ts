@@ -12,13 +12,15 @@ export const useDialogState = (state: DialogState) => {
   const contentRef = useMergedRefs(dialogBoxRef, state?.dialogBox?.ref);
 
   state.root.onPointerDown = (ev: React.PointerEvent<HTMLDivElement>) => {
-    // If the Dialog Card is pressed, do not lose focus
-    if (!contentRef.current?.contains(ev.target as HTMLDivElement)) {
-      onOpenChange?.(ev, { open: false });
-    }
-
+    onOpenChange?.(ev, { open: false });
     onPointerDownOriginal?.(ev);
   };
+
+  if (state.dialogBox) {
+    state.dialogBox.onPointerDown = (ev: React.PointerEvent<HTMLDivElement>) => {
+      ev.stopPropagation();
+    };
+  }
 
   state.root.onKeyDown = (ev: React.KeyboardEvent<HTMLDivElement>) => {
     if (ev.key === 'Escape' && contentRef.current?.contains(ev.target as HTMLDivElement)) {

@@ -30,7 +30,7 @@
     "@fluentui/react-tabster": "^9.0.0-rc.5"
   },
   "devDependencies": {
-    "@pongo-ui/react-layout": "^0.0.1"
+    "@pongo-ui/react-layout": "^0.0.2"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
