@@ -12,7 +12,7 @@ const useSelectElementStyles = makeStyles({
     boxSizing: 'border-box',
     flexGrow: 1,
     minHeight: `var(${inputLineHeight})`,
-    minWidth: '80px',
+    minWidth: '100px',
     height: '100%',
     backgroundColor: 'transparent',
     ':focus-visible': {
