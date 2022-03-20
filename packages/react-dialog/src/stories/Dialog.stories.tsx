@@ -12,12 +12,10 @@ export const BasicDialogExample = () => {
     <Stack vertical>
       <button onClick={ev => handleOpenChange(ev, { open: true })}>Press me</button>
       <button>Test</button> <button>Test</button>
-      {open.toString()}
       <Dialog label="Test Dialog" open={open} onOpenChange={handleOpenChange}>
-        This is a test asjdhgashjdg
-        <button>Test</button>
-        <button>Test</button>
-        <button>Test</button>
+        <button>Test 1</button>
+        <button>Test 2</button>
+        <button>Test 3</button>
       </Dialog>
     </Stack>
   );

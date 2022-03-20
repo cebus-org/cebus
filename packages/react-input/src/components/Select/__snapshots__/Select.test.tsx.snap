@@ -16,7 +16,7 @@ exports[`Select renders a Select contentBefore and contentAfter 1`] = `
         hello
       </span>
       <select
-        class="___d3s0d50 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes f1f9t5xu f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 f1k6fduh fc467gg f1vw2ftv f13ta7ih f1arxnym"
+        class="___15cc62f f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes fwvotg f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 f1k6fduh fc467gg f1vw2ftv f13ta7ih f1arxnym"
       >
         <option
           disabled=""
@@ -55,7 +55,7 @@ exports[`Select renders a basic Select 1`] = `
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
     >
       <select
-        class="___d3s0d50 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes f1f9t5xu f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 f1k6fduh fc467gg f1vw2ftv f13ta7ih f1arxnym"
+        class="___15cc62f f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes fwvotg f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 f1k6fduh fc467gg f1vw2ftv f13ta7ih f1arxnym"
       >
         <option
           disabled=""
@@ -110,7 +110,7 @@ exports[`Select renders a basic Select with an option 1`] = `
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
     >
       <select
-        class="___d3s0d50 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes f1f9t5xu f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 f1k6fduh fc467gg f1vw2ftv f13ta7ih f1arxnym"
+        class="___15cc62f f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes fwvotg f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 f1k6fduh fc467gg f1vw2ftv f13ta7ih f1arxnym"
       >
         <option
           disabled=""
@@ -165,7 +165,7 @@ exports[`Select renders a basic Select with an option and Header 1`] = `
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
     >
       <select
-        class="___d3s0d50 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes f1f9t5xu f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 f1k6fduh fc467gg f1vw2ftv f13ta7ih f1arxnym"
+        class="___15cc62f f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes fwvotg f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 f1k6fduh fc467gg f1vw2ftv f13ta7ih f1arxnym"
       >
         <option
           disabled=""
@@ -236,7 +236,7 @@ exports[`Select renders a disabled Select and applies prop to native select elem
         hello
       </span>
       <select
-        class="___1d81o3i f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes f1f9t5xu f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 fdrzuqr favx1wl fgbidd3 f13ta7ih f1arxnym"
+        class="___1ozil9r f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes fwvotg f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 fdrzuqr favx1wl fgbidd3 f13ta7ih f1arxnym"
       >
         <option
           disabled=""
@@ -281,7 +281,7 @@ exports[`Select renders a label Select 1`] = `
         hello
       </label>
       <select
-        class="___d3s0d50 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes f1f9t5xu f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 f1k6fduh fc467gg f1vw2ftv f13ta7ih f1arxnym"
+        class="___15cc62f f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp f81rol6 f1ov4xf1 frdkuqy f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1ewtqcl fqerorx f1klrjes fwvotg f1l02sjl f3rmtva f2hkw1w fakqst0 fdm5f4k f1fr6u07 f1k6fduh fc467gg f1vw2ftv f13ta7ih f1arxnym"
         id="select-label12"
       >
         <option

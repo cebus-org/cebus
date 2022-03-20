@@ -17,12 +17,12 @@ exports[`Dialog renders a basic Dialog 1`] = `
     <div
       aria-label="This is a label"
       aria-modal="true"
-      class="___118frzz f19dog8a f22iagw f122n59 f4d9j23 f11qr6pd fmk5vbo f13u1uyl fkfijr0 fsxfru3 f99sooz f1k2v3fw fkmkm9e fu8n1pp fst2pvl f18r32vf f1g93lot f5p0z4x"
+      class="___wtku0o0 f19dog8a f22iagw f122n59 f4d9j23 fni485r f11qr6pd fmk5vbo f13u1uyl fkfijr0 fsxfru3 fk7qxxv f10sqwl7 f1eg49sl fne32i3 f99sooz f1k2v3fw fkmkm9e fu8n1pp fst2pvl f18r32vf f1g93lot f5p0z4x"
       data-tabster="{\\"deloser\\":{},\\"modalizer\\":{\\"id\\":\\"modal-3\\",\\"isOthersAccessible\\":false}}"
       role="dialog"
     >
       <div
-        class="___zl8a6a0 f1ohdurq ftuwxu6 f8qjfyk fk7qxxv f10sqwl7 f1eg49sl fne32i3 f1vx9l62 fi64zpg fnmxc1e fynvm4a fl4n2cu f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1s6fcnf"
+        class="___15cdpdd f22iagw f1vx9l62 fnmxc1e fynvm4a fni485r f8qjfyk fk7qxxv f10sqwl7 f1eg49sl fne32i3 fl4n2cu f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1s6fcnf"
         tabindex="0"
       >
         Dialog content

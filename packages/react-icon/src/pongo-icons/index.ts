@@ -10,3 +10,4 @@ export * from './FilterIcon';
 export * from './SearchIcon';
 export * from './SettingsIcon';
 export * from './Social';
+export * from './CartIcon';
