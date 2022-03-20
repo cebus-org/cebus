@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-text",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A Text control that standardizes font styling across a webpage.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -28,7 +28,7 @@
     "@pongo-ui/react-theme": "^0.0.12"
   },
   "devDependencies": {
-    "@pongo-ui/react-layout": "^0.0.2"
+    "@pongo-ui/react-layout": "^0.0.3"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

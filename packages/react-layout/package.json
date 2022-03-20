@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-layout",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The layout package provides components to help position content in your site.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

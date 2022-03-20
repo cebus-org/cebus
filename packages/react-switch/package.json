@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-switch",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "The Switch allows users to toggle a value between an on and off state.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -28,7 +28,7 @@
     "@pongo-ui/react-theme": "^0.0.12"
   },
   "devDependencies": {
-    "@pongo-ui/react-layout": "^0.0.2"
+    "@pongo-ui/react-layout": "^0.0.3"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

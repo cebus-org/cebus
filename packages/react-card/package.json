@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-card",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "The Card component displays content and presents actions to the user.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -29,9 +29,9 @@
     "@pongo-ui/react-theme": "^0.0.12"
   },
   "devDependencies": {
-    "@pongo-ui/react-text": "^0.0.14",
-    "@pongo-ui/react-button": "^1.1.26",
-    "@pongo-ui/react-layout": "^0.0.2"
+    "@pongo-ui/react-text": "^0.0.15",
+    "@pongo-ui/react-button": "^1.1.27",
+    "@pongo-ui/react-layout": "^0.0.3"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

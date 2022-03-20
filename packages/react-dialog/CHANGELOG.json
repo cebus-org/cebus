@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-dialog",
   "entries": [
     {
+      "date": "Sun, 20 Mar 2022 02:42:23 GMT",
+      "tag": "@pongo-ui/react-dialog_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-dialog",
+            "commit": "ec0803864c63e7bb906dbe0c9ed2e061e2ade91f",
+            "comment": "Fixing onPointerDown bug"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-dialog",
+            "comment": "Bump @pongo-ui/react-layout to v0.0.3",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sat, 19 Mar 2022 22:22:54 GMT",
       "tag": "@pongo-ui/react-dialog_v0.0.1",
       "version": "0.0.1",

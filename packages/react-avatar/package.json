@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-avatar",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "An avatar component used to display a users icon.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -31,7 +31,7 @@
     "@pongo-ui/react-theme-generator": "^0.1.2"
   },
   "devDependencies": {
-    "@pongo-ui/react-layout": "^0.0.2"
+    "@pongo-ui/react-layout": "^0.0.3"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

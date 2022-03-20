@@ -2,6 +2,105 @@
   "name": "@pongo-ui/react-components",
   "entries": [
     {
+      "date": "Sun, 20 Mar 2022 02:42:23 GMT",
+      "tag": "@pongo-ui/react-components_v0.0.10",
+      "version": "0.0.10",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-dialog to v0.0.2",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-avatar to v0.0.10",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-button to v1.1.27",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-card to v0.0.17",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-divider to v0.0.11",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-icon to v0.1.11",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-input to v0.2.6",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-label to v0.0.10",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-link to v0.1.13",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-menu to v0.1.8",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-switch to v0.0.9",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-text to v0.0.15",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-toolbar to v0.0.14",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-checkbox to v0.0.7",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-layout to v0.0.3",
+            "commit": "e6fcae3f839664d0f032f04b20e400e90a12fdb6"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sat, 19 Mar 2022 22:22:54 GMT",
       "tag": "@pongo-ui/react-components_v0.0.9",
       "version": "0.0.9",
