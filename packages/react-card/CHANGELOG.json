@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-card",
   "entries": [
     {
+      "date": "Sun, 20 Mar 2022 04:48:50 GMT",
+      "tag": "@pongo-ui/react-card_v0.0.18",
+      "version": "0.0.18",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-card",
+            "comment": "Bump @pongo-ui/react-text to v0.0.16",
+            "commit": "fc55fc2a27bd6aa3b858957a3b6ca60ddc95ad2b"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 20 Mar 2022 02:42:23 GMT",
       "tag": "@pongo-ui/react-card_v0.0.17",
       "version": "0.0.17",

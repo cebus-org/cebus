@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Updating Display font weight to bold.",
-  "packageName": "@pongo-ui/react-text",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}
