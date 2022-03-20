@@ -11,7 +11,7 @@ const useStyles = makeStyles({
 });
 
 export const Display: FunctionComponent<TextWrapperProps> = createText(
-  { as: 'h1', font: 'base', size: 1000, weight: 'black' },
+  { as: 'h1', font: 'base', size: 1000, weight: 'bold' },
   useStyles,
   'Display',
 );
