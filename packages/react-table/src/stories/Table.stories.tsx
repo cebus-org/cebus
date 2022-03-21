@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Table, TableHeader, TableRow, TableCell, TableBody } from '../index';
+import { Table, TableHeader, TableRow, TableCell, TableFooter, TableBody } from '../index';
 import { Card } from '@pongo-ui/react-card';
 
 export const BasicTableExample = () => {
@@ -8,36 +8,29 @@ export const BasicTableExample = () => {
       <Table label="Basic table example">
         <TableHeader>
           <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell>Calories</TableCell>
-            <TableCell>Fat&nbsp;(g)</TableCell>
-            <TableCell>Carbs&nbsp;(g)</TableCell>
-            <TableCell>Protein&nbsp;(g)</TableCell>
+            <TableCell>Product Name</TableCell>
+            <TableCell>Price</TableCell>
+            <TableCell>Quantity</TableCell>
           </TableRow>
         </TableHeader>
         <TableBody>
           <TableRow>
-            <TableCell>Frozen yoghurt</TableCell>
-            <TableCell>20</TableCell>
-            <TableCell>30</TableCell>
-            <TableCell>40</TableCell>
-            <TableCell>50</TableCell>
+            <TableCell>T shirt</TableCell>
+            <TableCell>$20.00</TableCell>
+            <TableCell>3</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell>Frozen yoghurt</TableCell>
-            <TableCell>20</TableCell>
-            <TableCell>30</TableCell>
-            <TableCell>40</TableCell>
-            <TableCell>50</TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell>Frozen yoghurt</TableCell>
-            <TableCell>20</TableCell>
-            <TableCell>30</TableCell>
-            <TableCell>40</TableCell>
-            <TableCell>50</TableCell>
+            <TableCell>Jeans</TableCell>
+            <TableCell>$30.00</TableCell>
+            <TableCell>2</TableCell>
           </TableRow>
         </TableBody>
+        <TableFooter>
+          <TableRow>
+            <TableCell>Total</TableCell>
+            <TableCell>$120.00</TableCell>
+          </TableRow>
+        </TableFooter>
       </Table>
     </Card>
   );

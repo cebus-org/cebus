@@ -46,6 +46,22 @@ export type TableCellSlots = {
 export type TableCellState = ComponentState<TableCellSlots> & TableCellCommons;
 
 // @public
+export const TableFooter: ForwardRefComponent<TableFooterProps>;
+
+// Warning: (ae-forgotten-export) The symbol "TableFooterCommons" needs to be exported by the entry point index.d.ts
+//
+// @public (undocumented)
+export type TableFooterProps = ComponentProps<TableFooterSlots> & TableFooterCommons;
+
+// @public (undocumented)
+export type TableFooterSlots = {
+    root: Slot<'tfoot'>;
+};
+
+// @public (undocumented)
+export type TableFooterState = ComponentState<TableFooterSlots> & TableFooterCommons;
+
+// @public
 export const TableHeader: ForwardRefComponent<TableHeaderProps>;
 
 // Warning: (ae-forgotten-export) The symbol "TableHeaderCommons" needs to be exported by the entry point index.d.ts
@@ -104,6 +120,12 @@ export const useTableCell: (props: TableCellProps, ref: React_2.Ref<HTMLElement>
 
 // @public (undocumented)
 export const useTableCellStyles: (state: TableCellState) => TableCellState;
+
+// @public (undocumented)
+export const useTableFooter: (props: TableFooterProps, ref: React_2.Ref<HTMLElement>) => TableFooterState;
+
+// @public (undocumented)
+export const useTableFooterStyles: (state: TableFooterState) => TableFooterState;
 
 // @public (undocumented)
 export const useTableHeader: (props: TableHeaderProps, ref: React_2.Ref<HTMLElement>) => TableHeaderState;
