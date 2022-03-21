@@ -117,7 +117,7 @@
       "implicitDependencies": []
     },
     "@pongo-ui/react-table": {
-      "root": "packages/react-dialog",
+      "root": "packages/react-table",
       "projectType": "library",
       "implicitDependencies": []
     }
