@@ -4,7 +4,7 @@ import { Card } from '@pongo-ui/react-card';
 
 export const BasicTableExample = () => {
   return (
-    <Card>
+    <Card style={{ minWidth: '400px' }}>
       <Table label="Basic table example">
         <TableHeader>
           <TableRow>
