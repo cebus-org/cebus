@@ -10,9 +10,9 @@ export type SelectSlots = {
   root: NonNullable<Slot<typeof InputWrapper>>;
 
   /**
-   * Select that displays the active value of the Select component and handles accessability.
+   * Displays the current select value for the Select component.
    */
-  select: NonNullable<Slot<'select'>>;
+  selectValue: NonNullable<Slot<'div'>>;
 
   /**
    * The wrapper component that manages state for a popup MenuList and MenuTrigger

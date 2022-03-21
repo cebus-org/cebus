@@ -9,11 +9,13 @@ const useSelectElementStyles = makeStyles({
     ...shorthands.padding('0px', '10px'),
     ...shorthands.borderStyle('none'),
     ...shorthands.borderRadius(tokens.rounded),
+    display: 'flex',
     boxSizing: 'border-box',
     flexGrow: 1,
     minHeight: `var(${inputLineHeight})`,
     minWidth: '100px',
     height: '100%',
+    alignItems: 'center',
     backgroundColor: 'transparent',
     ':focus-visible': {
       outlineStyle: 'none',
@@ -89,7 +91,7 @@ const useSelectElementStyles = makeStyles({
 export const useSelectStyles = (state: SelectState) => {
   const rootStyles = useSelectElementStyles();
 
-  state.select.className = mergeClasses(
+  state.selectValue.className = mergeClasses(
     rootStyles.select,
     state.disabled ? rootStyles.disabled : rootStyles.enabled,
     !state.disabled && state.danger && rootStyles.danger,
@@ -97,8 +99,10 @@ export const useSelectStyles = (state: SelectState) => {
     state.label && state.placeholder && !state.root.contentBefore && rootStyles.labelPlaceholderFocus,
     state.label && (state.appearance === 'filled' || state.appearance === 'standard') && rootStyles.labelLowerText,
     rootStyles[state.size!],
-    state.select.className,
+    state.selectValue.className,
   );
+
+  state.root.className = mergeClasses(state.disabled ? rootStyles.disabled : rootStyles.enabled, state.root.className);
 
   return state;
 };

@@ -7,7 +7,8 @@
 import type { ComponentProps } from '@fluentui/react-utilities';
 import type { ComponentState } from '@fluentui/react-utilities';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
-import * as React_2 from 'react';
+import { default as React_2 } from 'react';
+import * as React_3 from 'react';
 import type { Slot } from '@fluentui/react-utilities';
 
 // @public
@@ -19,6 +20,7 @@ export type CardCommons = {
     shape?: 'rounded' | 'circular' | 'circle' | 'square';
     disabled?: boolean;
     inline?: boolean;
+    onClick?: (ev: React_2.MouseEvent | React_2.KeyboardEvent) => void;
 };
 
 // @public
@@ -57,7 +59,7 @@ export type CardMediaSlots = {
 export type CardMediaState = ComponentState<CardMediaSlots>;
 
 // @public (undocumented)
-export interface CardProps extends ComponentProps<CardSlots>, CardCommons {
+export interface CardProps extends Omit<ComponentProps<CardSlots>, 'onClick'>, CardCommons {
 }
 
 // @public
@@ -77,7 +79,7 @@ export type CardRowState = ComponentState<CardRowSlots>;
 
 // @public (undocumented)
 export type CardSlots = {
-    root: Slot<'div'>;
+    root: Slot<'div', 'button'>;
 };
 
 // @public (undocumented)
@@ -96,16 +98,16 @@ export const renderCardMedia: (state: CardMediaState) => JSX.Element;
 export const renderCardRow: (state: CardRowState) => JSX.Element;
 
 // @public (undocumented)
-export const useCard: (props: CardProps, ref: React_2.Ref<HTMLElement>) => CardState;
+export const useCard: (props: CardProps, ref: React_3.Ref<HTMLElement>) => CardState;
 
 // @public (undocumented)
-export const useCardHeader: (props: CardHeaderProps, ref: React_2.Ref<HTMLElement>) => CardHeaderState;
+export const useCardHeader: (props: CardHeaderProps, ref: React_3.Ref<HTMLElement>) => CardHeaderState;
 
 // @public (undocumented)
-export const useCardMedia: (props: CardMediaProps, ref: React_2.Ref<HTMLElement>) => CardMediaState;
+export const useCardMedia: (props: CardMediaProps, ref: React_3.Ref<HTMLElement>) => CardMediaState;
 
 // @public (undocumented)
-export const useCardRow: (props: CardRowProps, ref: React_2.Ref<HTMLElement>) => CardRowState;
+export const useCardRow: (props: CardRowProps, ref: React_3.Ref<HTMLElement>) => CardRowState;
 
 // (No @packageDocumentation comment for this package)
 

@@ -69,18 +69,18 @@ export const BasicCardExample = () => {
 export const InteractiveCardExample = () => {
   const styles = useStyles();
 
-  const onCardClick = () => console.log('test');
+  const onClick = () => console.log('test');
 
   return (
     <Stack vertical inline>
-      <Card className={styles.card} onClick={onCardClick}>
+      <Card className={styles.card} onClick={onClick}>
         <CardHeader header={<Body weight="bold">Press me</Body>} />
         <Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua.
         </Body>
       </Card>
-      <Card className={styles.card} onClick={onCardClick} disabled>
+      <Card className={styles.card} onClick={onClick} disabled>
         <CardHeader header={<Body weight="bold">Press me</Body>} />
         <Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore

@@ -18,6 +18,12 @@ export const BasicSelectExample = () => {
         <Option value="calibri">Calibri</Option>
         <Option value="arial">Arial</Option>
       </Select>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
       <Select value={checkedValues} onCheckedValueChange={onCheckedValueChange} label="test" appearance="standard">
         <Option value="segoe">Segoe</Option>
         <Option value="calibri">Calibri</Option>
@@ -52,6 +58,7 @@ export const SelectContentExample = () => {
         <Option value="calibri">Calibri</Option>
         <Option value="arial">Arial</Option>
       </Select>
+
       <Select
         value={checkedValues}
         onCheckedValueChange={onCheckedValueChange}

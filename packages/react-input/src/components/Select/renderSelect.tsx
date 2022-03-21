@@ -9,7 +9,7 @@ export const renderSelect = (state: SelectState) => {
     <slots.menu {...(slotProps as any).menu}>
       <slots.menuTrigger {...(slotProps as any).menuTrigger}>
         <slots.root {...slotProps.root}>
-          <slots.select {...slotProps.select} />
+          <slots.selectValue {...slotProps.selectValue} />
         </slots.root>
       </slots.menuTrigger>
       <slots.menuPopover {...slotProps.menuPopover}>

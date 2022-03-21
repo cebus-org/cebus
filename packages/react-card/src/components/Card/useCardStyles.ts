@@ -1,6 +1,7 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { CardState } from './Card.types';
 import { tokens } from '@pongo-ui/react-theme';
+import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 
 const useStyles = makeStyles({
   root: {
@@ -9,7 +10,25 @@ const useStyles = makeStyles({
     ...shorthands.padding(tokens.focusedLayout),
     flexShrink: 0,
     ...shorthands.gap(tokens.focusedLayout),
+    ...shorthands.borderStyle('none'),
   },
+
+  focusIndicator: createCustomFocusIndicatorStyle(
+    {
+      ':after': {
+        content: "''",
+        position: 'absolute',
+        top: '0px',
+        right: '0px',
+        bottom: '0px',
+        left: '0x',
+        boxSizing: 'border-box',
+        ...shorthands.border('2px', 'solid', tokens.textColor),
+        ...shorthands.borderRadius(tokens.rounded),
+      },
+    },
+    { selector: 'focus-within' },
+  ),
 
   inline: {
     display: 'inline-flex',
@@ -35,10 +54,10 @@ const useStyles = makeStyles({
    */
   intractable: {
     cursor: 'pointer',
-
     ':hover': {
       backgroundColor: tokens.inheritForegroundHover,
     },
+
     ':active': {
       backgroundColor: tokens.inheritForegroundPressed,
     },
@@ -73,18 +92,10 @@ export const useCardStyles = (state: CardState) => {
 
   state.root.className = mergeClasses(
     styles.root,
+    !state.disabled && state.root.onClick && styles.focusIndicator && styles.intractable,
     styles[state.appearance!],
     styles[state.shape!],
     state.inline ? styles.inline : styles.flex,
-    !state.disabled &&
-      (state.root.onClick ||
-        state.root.onMouseUp ||
-        state.root.onMouseDown ||
-        state.root.onPointerUp ||
-        state.root.onPointerDown ||
-        state.root.onTouchStart ||
-        state.root.onTouchEnd) &&
-      styles.intractable,
     state.disabled && styles.disabled,
     state.root.className,
   );

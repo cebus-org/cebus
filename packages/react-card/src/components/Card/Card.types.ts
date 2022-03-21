@@ -1,10 +1,11 @@
 import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utilities';
+import React from 'react';
 
 export type CardSlots = {
   /**
    * The root of the Card.
    */
-  root: Slot<'div'>;
+  root: Slot<'div', 'button'>;
 };
 
 export type CardCommons = {
@@ -38,8 +39,14 @@ export type CardCommons = {
    * @defaultValue false
    */
   inline?: boolean;
+
+  /**
+   * Change event to call when the user interacts with the card (press or keyboard).
+   * This is used for intractable Card content.
+   */
+  onClick?: (ev: React.MouseEvent | React.KeyboardEvent) => void;
 };
 
-export interface CardProps extends ComponentProps<CardSlots>, CardCommons {}
+export interface CardProps extends Omit<ComponentProps<CardSlots>, 'onClick'>, CardCommons {}
 
 export type CardState = ComponentState<CardSlots> & CardCommons;

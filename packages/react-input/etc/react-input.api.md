@@ -117,7 +117,7 @@ export type SelectProps = ComponentProps<Partial<SelectSlots>> & SelectCommons &
 // @public (undocumented)
 export type SelectSlots = {
     root: NonNullable<Slot<typeof InputWrapper>>;
-    select: NonNullable<Slot<'select'>>;
+    selectValue: NonNullable<Slot<'div'>>;
     menu: any;
     menuTrigger: any;
     menuPopover: NonNullable<Slot<typeof MenuPopover>>;
