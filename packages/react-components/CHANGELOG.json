@@ -2,6 +2,51 @@
   "name": "@pongo-ui/react-components",
   "entries": [
     {
+      "date": "Mon, 21 Mar 2022 23:49:17 GMT",
+      "tag": "@pongo-ui/react-components_v0.0.12",
+      "version": "0.0.12",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-components",
+            "commit": "2fd380c4395f530b59ae7a5f81ddf66b5fd2293d",
+            "comment": "Adding Table component"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-dialog to v0.0.3",
+            "commit": "5870017d564de717825c471d811904a6c722bc14"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-card to v0.0.19",
+            "commit": "5870017d564de717825c471d811904a6c722bc14"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-input to v0.2.7",
+            "commit": "5870017d564de717825c471d811904a6c722bc14"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-switch to v0.0.10",
+            "commit": "5870017d564de717825c471d811904a6c722bc14"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-table to v0.0.1",
+            "commit": "5870017d564de717825c471d811904a6c722bc14"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 20 Mar 2022 04:48:50 GMT",
       "tag": "@pongo-ui/react-components_v0.0.11",
       "version": "0.0.11",

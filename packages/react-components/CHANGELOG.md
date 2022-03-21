@@ -1,8 +1,21 @@
 # Change Log - @pongo-ui/react-components
 
-This log was last generated on Sun, 20 Mar 2022 04:48:50 GMT and should not be manually modified.
+This log was last generated on Mon, 21 Mar 2022 23:49:17 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.12
+
+Mon, 21 Mar 2022 23:49:17 GMT
+
+### Patches
+
+- Adding Table component (czearing@outlook.com)
+- Bump @pongo-ui/react-dialog to v0.0.3
+- Bump @pongo-ui/react-card to v0.0.19
+- Bump @pongo-ui/react-input to v0.2.7
+- Bump @pongo-ui/react-switch to v0.0.10
+- Bump @pongo-ui/react-table to v0.0.1
 
 ## 0.0.11
 

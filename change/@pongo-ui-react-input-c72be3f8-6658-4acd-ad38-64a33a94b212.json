@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Cleaning up Select implementation",
-  "packageName": "@pongo-ui/react-input",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

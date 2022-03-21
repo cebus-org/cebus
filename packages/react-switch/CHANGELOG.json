@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-switch",
   "entries": [
     {
+      "date": "Mon, 21 Mar 2022 23:49:17 GMT",
+      "tag": "@pongo-ui/react-switch_v0.0.10",
+      "version": "0.0.10",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-switch",
+            "commit": "2fd380c4395f530b59ae7a5f81ddf66b5fd2293d",
+            "comment": "Updating types"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 20 Mar 2022 02:42:23 GMT",
       "tag": "@pongo-ui/react-switch_v0.0.9",
       "version": "0.0.9",

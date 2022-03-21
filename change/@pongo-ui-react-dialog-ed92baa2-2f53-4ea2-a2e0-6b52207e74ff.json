@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Updating deps",
-  "packageName": "@pongo-ui/react-dialog",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

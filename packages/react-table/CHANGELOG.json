@@ -1,0 +1,26 @@
+{
+  "name": "@pongo-ui/react-table",
+  "entries": [
+    {
+      "date": "Mon, 21 Mar 2022 23:49:17 GMT",
+      "tag": "@pongo-ui/react-table_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-table",
+            "commit": "2fd380c4395f530b59ae7a5f81ddf66b5fd2293d",
+            "comment": "Adding package"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-table",
+            "comment": "Bump @pongo-ui/react-card to v0.0.19",
+            "commit": "5870017d564de717825c471d811904a6c722bc14"
+          }
+        ]
+      }
+    }
+  ]
+}
