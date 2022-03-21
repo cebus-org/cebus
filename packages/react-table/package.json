@@ -28,7 +28,7 @@
     "@pongo-ui/react-theme": "^0.0.12"
   },
   "devDependencies": {
-    "@pongo-ui/react-layout": "^0.0.3"
+    "@pongo-ui/react-card": "^0.0.18"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

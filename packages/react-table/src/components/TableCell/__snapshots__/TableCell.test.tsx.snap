@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableCell renders a basic Table 1`] = `
+<body>
+  <div>
+    <th
+      class="___1tslpfj f15pt5es fk6fouc fvc3tfl fc467gg ff5ikls f1o700av f1f09k3d fg706s2 f18idrzn fk7qxxv f10sqwl7 f1eg49sl fne32i3"
+    />
+  </div>
+</body>
+`;

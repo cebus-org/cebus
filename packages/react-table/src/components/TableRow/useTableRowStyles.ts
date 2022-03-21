@@ -1,19 +1,15 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
-import type { TableState } from './Table.types';
+import type { TableRowState } from './TableRow.types';
 
 const useRootStyles = makeStyles({
   root: {
-    display: 'table',
-    borderCollapse: 'separate',
-    boxSizing: 'border-box',
-    textIndent: 'initial',
-    width: '100%',
+    display: 'table-row',
+    verticalAlign: 'inherit',
     ...shorthands.borderColor('inherit'),
-    borderSpacing: '0',
   },
 });
 
-export const useTableStyles = (state: TableState) => {
+export const useTableRowStyles = (state: TableRowState) => {
   const rootStyles = useRootStyles();
 
   state.root.className = mergeClasses(rootStyles.root, state.root.className);

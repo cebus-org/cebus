@@ -4,7 +4,7 @@ import type { CardProps, CardState } from './Card.types';
 import { useFocusableGroup } from '@fluentui/react-tabster';
 
 export const useCard = (props: CardProps, ref: React.Ref<HTMLElement>): CardState => {
-  const { appearance = 'elevate', inline = true, shape = 'rounded', disabled = false, onClick } = props;
+  const { appearance = 'elevate', inline = false, shape = 'rounded', disabled = false, onClick } = props;
   const groupFocusAttributes = useFocusableGroup({ tabBehavior: 'limitedTrapFocus' });
 
   const state: CardState = {

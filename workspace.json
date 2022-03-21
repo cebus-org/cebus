@@ -92,6 +92,10 @@
     "@pongo-ui/react-dialog": {
       "root": "packages/react-dialog",
       "projectType": "library"
+    },
+    "@pongo-ui/react-table": {
+      "root": "packages/react-dialog",
+      "projectType": "library"
     }
   }
 }

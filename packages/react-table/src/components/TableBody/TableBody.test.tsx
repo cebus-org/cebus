@@ -1,16 +1,16 @@
 import * as React from 'react';
-import { Table } from './Table';
+import { TableBody } from './TableBody';
 import { render } from '@testing-library/react';
 import { isConformant } from '../../common/isConformant';
 
-describe('Table', () => {
+describe('TableBody', () => {
   isConformant({
-    Component: Table,
-    displayName: 'Table',
+    Component: TableBody,
+    displayName: 'TableBody',
   });
 
   it('renders a basic Table', () => {
-    const renderedComponent = render(<Table label="test" />);
+    const renderedComponent = render(<TableBody />);
 
     expect(renderedComponent.baseElement).toMatchSnapshot();
   });

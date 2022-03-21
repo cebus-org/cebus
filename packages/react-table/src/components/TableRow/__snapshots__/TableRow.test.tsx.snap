@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableRow renders a basic Table 1`] = `
+<body>
+  <div>
+    <tr
+      class="___5s2gsu0 f1u0rzck fvc3tfl fetgrfm fwsgm2r f1kc6foo f13jenf0"
+    />
+  </div>
+</body>
+`;

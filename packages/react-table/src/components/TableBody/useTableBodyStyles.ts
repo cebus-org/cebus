@@ -1,19 +1,17 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
-import type { TableState } from './Table.types';
+import type { TableBodyState } from './TableBody.types';
+import { tokens } from '@pongo-ui/react-theme';
 
 const useRootStyles = makeStyles({
   root: {
-    display: 'table',
-    borderCollapse: 'separate',
-    boxSizing: 'border-box',
-    textIndent: 'initial',
-    width: '100%',
+    display: 'table-row-group',
+    verticalAlign: 'middle',
     ...shorthands.borderColor('inherit'),
-    borderSpacing: '0',
+    fontWeight: tokens.regular,
   },
 });
 
-export const useTableStyles = (state: TableState) => {
+export const useTableBodyStyles = (state: TableBodyState) => {
   const rootStyles = useRootStyles();
 
   state.root.className = mergeClasses(rootStyles.root, state.root.className);

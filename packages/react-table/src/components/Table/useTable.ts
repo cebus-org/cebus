@@ -1,17 +1,22 @@
 import * as React from 'react';
-import { getNativeElementProps, resolveShorthand, useId } from '@fluentui/react-utilities';
+import { getNativeElementProps } from '@fluentui/react-utilities';
 import type { TableProps, TableState } from './Table.types';
 
 export const useTable = (props: TableProps, ref: React.Ref<HTMLElement>): TableState => {
+  const { label } = props;
+
   const state: TableState = {
+    label,
     components: {
-      root: 'div',
+      root: 'table',
     },
-    root: getNativeElementProps('div', {
+    root: getNativeElementProps('table', {
       ref,
       ...props,
     }),
   };
+
+  state.root['aria-label'] = label;
 
   return state;
 };

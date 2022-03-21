@@ -1,15 +1,19 @@
-import * as React from 'react';
 import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utilities';
 
 export type TableSlots = {
   /**
    * The root of the Table.
    */
-  root: Slot<'div'>;
+  root: Slot<'table'>;
 };
 
-interface TableCommons {}
+type TableCommons = {
+  /**
+   * The label to be read by the screen reader.
+   */
+  label: string;
+};
 
-export interface TableProps extends ComponentProps<TableSlots>, TableCommons {}
+export type TableProps = ComponentProps<TableSlots> & TableCommons;
 
-export interface TableState extends ComponentState<TableSlots>, TableCommons {}
+export type TableState = ComponentState<TableSlots> & TableCommons;
