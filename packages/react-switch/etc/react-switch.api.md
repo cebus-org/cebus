@@ -16,8 +16,7 @@ export const Switch: ForwardRefComponent<SwitchProps>;
 // Warning: (ae-forgotten-export) The symbol "SwitchCommons" needs to be exported by the entry point index.d.ts
 //
 // @public (undocumented)
-export interface SwitchProps extends Omit<ComponentProps<Partial<SwitchSlots>>, 'onChange'>, SwitchCommons {
-}
+export type SwitchProps = Omit<ComponentProps<Partial<SwitchSlots>>, 'onChange'> & SwitchCommons;
 
 // @public (undocumented)
 export type SwitchSlots = {
@@ -30,8 +29,7 @@ export type SwitchSlots = {
 };
 
 // @public (undocumented)
-export interface SwitchState extends ComponentState<SwitchSlots>, SwitchCommons {
-}
+export type SwitchState = ComponentState<SwitchSlots> & SwitchCommons;
 
 // @public (undocumented)
 export const useSwitch: (props: SwitchProps, ref: React_2.Ref<HTMLElement>) => SwitchState;

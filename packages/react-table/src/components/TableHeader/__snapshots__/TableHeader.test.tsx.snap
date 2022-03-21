@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableHeader renders a basic Table 1`] = `
+<body>
+  <div>
+    <thead
+      class="___p8zssc0 f1mldhui fmrv4ls f1wug5y4"
+    />
+  </div>
+</body>
+`;

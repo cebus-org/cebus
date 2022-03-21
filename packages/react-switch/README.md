@@ -52,4 +52,4 @@ const MyApp = () => {
 
 ## API
 
-The Tab API extends off of FluentUI.
+To learn more about the Switch API take a look at the [Switch Interface](src/components/Switch/Switch.types.ts) file.

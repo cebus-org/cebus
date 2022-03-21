@@ -7,6 +7,7 @@ describe('Card', () => {
   isConformant({
     Component: Card,
     displayName: 'Card',
+    disabledTests: ['consistent-callback-args'],
   });
 
   it('renders a basic Card', () => {

@@ -4,7 +4,6 @@ import { useSelectState } from './useSelectState';
 import type { SelectProps, SelectState } from './Select.types';
 import { InputWrapper } from '../InputWrapper';
 import { Menu, MenuPopover, MenuTrigger, MenuList } from '@pongo-ui/react-menu';
-import { useFocusableGroup } from '@fluentui/react-tabster';
 
 export const useSelect = (props: SelectProps, ref: React.Ref<HTMLInputElement>): SelectState => {
   const {
@@ -23,10 +22,8 @@ export const useSelect = (props: SelectProps, ref: React.Ref<HTMLInputElement>):
     menuTrigger,
     menuPopover,
     menuList,
-    select,
+    selectValue,
   } = props;
-
-  const groupFocusAttributes = useFocusableGroup({ tabBehavior: 'limitedTrapFocus' });
 
   const state: SelectState = {
     value,
@@ -42,22 +39,27 @@ export const useSelect = (props: SelectProps, ref: React.Ref<HTMLInputElement>):
     placeholder,
     components: {
       root: InputWrapper,
-      select: 'select',
       menu: Menu,
       menuTrigger: MenuTrigger,
       menuPopover: MenuPopover,
       menuList: MenuList,
+      selectValue: 'div',
     },
     root: getNativeElementProps('div', {
       ref,
-      ...groupFocusAttributes,
       ...props,
     }),
-    select: resolveShorthand(select, { required: true }),
     menu: resolveShorthand(menu, { required: true }),
     menuTrigger: resolveShorthand(menuTrigger, { required: true }),
     menuPopover: resolveShorthand(menuPopover, { required: true }),
     menuList: resolveShorthand(menuList, { required: true }),
+    selectValue: resolveShorthand(selectValue, {
+      required: true,
+      defaultProps: {
+        role: 'button',
+        'aria-haspopup': 'menu',
+      },
+    }),
   };
 
   useSelectState(state);

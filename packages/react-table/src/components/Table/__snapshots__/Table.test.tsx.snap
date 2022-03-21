@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table renders a basic Table 1`] = `
+<body>
+  <div>
+    <table
+      aria-label="test"
+      class="___ffvmmi0 f1w4nmp0 f1ddd56o f1ewtqcl f1wwrg80 fly5x3f fetgrfm fwsgm2r f1kc6foo f13jenf0 f16vktn6"
+    />
+  </div>
+</body>
+`;

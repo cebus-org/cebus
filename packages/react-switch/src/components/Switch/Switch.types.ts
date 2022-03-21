@@ -33,7 +33,7 @@ export type SwitchSlots = {
   activeRail: NonNullable<Slot<'div'>>;
 };
 
-interface SwitchCommons {
+type SwitchCommons = {
   /**
    * The starting value for a uncontrolled Switch. If `true` then the Switch will be enabled.
    * Mutually exclusive with `checked` prop.
@@ -64,8 +64,8 @@ interface SwitchCommons {
       checked: boolean;
     },
   ) => void;
-}
+};
 
-export interface SwitchProps extends Omit<ComponentProps<Partial<SwitchSlots>>, 'onChange'>, SwitchCommons {}
+export type SwitchProps = Omit<ComponentProps<Partial<SwitchSlots>>, 'onChange'> & SwitchCommons;
 
-export interface SwitchState extends ComponentState<SwitchSlots>, SwitchCommons {}
+export type SwitchState = ComponentState<SwitchSlots> & SwitchCommons;

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableFooter renders a basic Table 1`] = `
+<body>
+  <div>
+    <tfoot
+      class="___1hw3nzh f15gr2l fmrv4ls"
+    />
+  </div>
+</body>
+`;

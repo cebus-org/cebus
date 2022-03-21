@@ -4,7 +4,7 @@ import type { CardProps, CardState } from './Card.types';
 import { useFocusableGroup } from '@fluentui/react-tabster';
 
 export const useCard = (props: CardProps, ref: React.Ref<HTMLElement>): CardState => {
-  const { appearance = 'elevate', inline = true, shape = 'rounded', disabled = false } = props;
+  const { appearance = 'elevate', inline = false, shape = 'rounded', disabled = false, onClick } = props;
   const groupFocusAttributes = useFocusableGroup({ tabBehavior: 'limitedTrapFocus' });
 
   const state: CardState = {
@@ -12,16 +12,24 @@ export const useCard = (props: CardProps, ref: React.Ref<HTMLElement>): CardStat
     shape,
     disabled,
     inline,
-    root: getNativeElementProps(props.as || 'div', {
+    root: getNativeElementProps(props.as || onClick ? 'button' : 'div', {
       ref,
       role: 'group',
+      type: onClick && 'button',
       ...groupFocusAttributes,
       ...props,
     }),
     components: {
-      root: 'div',
+      root: onClick ? 'button' : 'div',
     },
   };
+
+  // If the card can be interacted with, forward the callback to the events.
+  if (!disabled && onClick) {
+    state.root.onClick = (ev: React.MouseEvent<HTMLElement> | React.KeyboardEvent<HTMLElement>) => {
+      onClick?.(ev);
+    };
+  }
 
   return state;
 };

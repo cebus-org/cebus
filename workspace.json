@@ -3,95 +3,123 @@
   "projects": {
     "@pongo-ui/react-button": {
       "root": "packages/react-button",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-components": {
       "root": "packages/react-components",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-link": {
       "root": "packages/react-link",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-storybook": {
       "root": "packages/react-storybook",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-theme-generator": {
       "root": "packages/react-theme-generator",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-theme": {
       "root": "packages/react-theme",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-text": {
       "root": "packages/react-text",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-card": {
       "root": "packages/react-card",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-menu": {
       "root": "packages/react-menu",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-divider": {
       "root": "packages/react-divider",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-avatar": {
       "root": "packages/react-avatar",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-input": {
       "root": "packages/react-input",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-toolbar": {
       "root": "packages/react-toolbar",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-icon": {
       "root": "packages/react-icon",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-tabs": {
       "root": "packages/react-tabs",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-label": {
       "root": "packages/react-label",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-switch": {
       "root": "packages/react-switch",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-radio": {
       "root": "packages/react-radio",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-checkbox": {
       "root": "packages/react-checkbox",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-provider": {
       "root": "packages/react-provider",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-layout": {
       "root": "packages/react-layout",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-accordion": {
       "root": "packages/react-accordion",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
     },
     "@pongo-ui/react-dialog": {
       "root": "packages/react-dialog",
-      "projectType": "library"
+      "projectType": "library",
+      "implicitDependencies": []
+    },
+    "@pongo-ui/react-table": {
+      "root": "packages/react-table",
+      "projectType": "library",
+      "implicitDependencies": []
     }
   }
 }

@@ -20,6 +20,7 @@ export * from "@pongo-ui/react-menu";
 export * from "@pongo-ui/react-provider";
 export * from "@pongo-ui/react-radio";
 export * from "@pongo-ui/react-switch";
+export * from "@pongo-ui/react-table";
 export * from "@pongo-ui/react-tabs";
 export * from "@pongo-ui/react-text";
 export * from "@pongo-ui/react-theme";

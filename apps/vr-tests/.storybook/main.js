@@ -19,6 +19,7 @@ const testedComponentPackages = [
   'react-layout',
   'react-accordion',
   'react-dialog',
+  'react-table',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(
