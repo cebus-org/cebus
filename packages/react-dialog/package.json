@@ -29,9 +29,6 @@
     "@fluentui/react-portal": "^9.0.0-rc.5",
     "@fluentui/react-tabster": "^9.0.0-rc.5"
   },
-  "devDependencies": {
-    "@pongo-ui/react-layout": "^0.0.3"
-  },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
     "@types/react-dom": ">=16.8.0 <18.0.0",
