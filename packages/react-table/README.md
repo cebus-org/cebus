@@ -1,21 +1,21 @@
-# Switch
+# Table
 
-The Switch allows users to toggle a value between an on and off state.
+The Table component displays sets of data.
 
 ## Use
 
-1. Install the @pongo-ui/react-switch component.
+1. Install the @pongo-ui/react-table component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-switch
+npm install @pongo-ui/react-table
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-switch
+yarn add @pongo-ui/react-table
 ```
 
 2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
@@ -34,17 +34,19 @@ const MyApp = () => {
 }
 ```
 
-4. Integrate the Switch component.
+4. Integrate the Table component.
 
 ```jsx
 import { Provider } from '@pongo-ui/react-provider'
 import { webLightTheme } from '@pongo-ui/react-theme'
-import { Switch } from '@pongo-ui/react-switch'
+import { Table, ... } from '@pongo-ui/react-table'
 
 const MyApp = () => {
   return (
     <Provider theme={webLightTheme}>
-      <Switch/>
+      <Table>
+        ...
+      </Table>
     <Provider>
   )
 }
@@ -52,4 +54,4 @@ const MyApp = () => {
 
 ## API
 
-To learn more about the Switch API take a look at the [Switch Interface](src/components/Switch/Switch.types.ts) file.
+To learn more about the Table API take a look at the [Table Interface](src/components/Table/Table.types.ts) file.
