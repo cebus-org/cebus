@@ -16,9 +16,6 @@ import type { Slot } from '@fluentui/react-utilities';
 // @public
 export const Carousel: ForwardRefComponent<CarouselProps>;
 
-// @public
-export function stringToColor(string: string): string;
-
 // Warning: (ae-forgotten-export) The symbol "CarouselState" needs to be exported by the entry point index.d.ts
 //
 // @public (undocumented)

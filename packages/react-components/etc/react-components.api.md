@@ -8,6 +8,7 @@
 export * from "@pongo-ui/react-avatar";
 export * from "@pongo-ui/react-button";
 export * from "@pongo-ui/react-card";
+export * from "@pongo-ui/react-carousel";
 export * from "@pongo-ui/react-checkbox";
 export * from "@pongo-ui/react-dialog";
 export * from "@pongo-ui/react-divider";
