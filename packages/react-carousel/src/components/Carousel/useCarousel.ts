@@ -36,9 +36,6 @@ export const useCarousel = (props: CarouselProps, ref: React.Ref<HTMLElement>): 
     }),
     tabpanel: resolveShorthand(tabpanel, {
       required: true,
-      defaultProps: {
-        role: 'tabpanel',
-      },
     }),
     radioIndicator: resolveShorthand(radioIndicator, {
       required: true,

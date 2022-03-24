@@ -79,7 +79,7 @@ export const useCarouselState = (state: CarouselState): CarouselState => {
 
   state.root.children = createImages;
 
-  const createRadioButtons = React.useMemo(() => {
+  const createRadioButtons = () => {
     const buttons = [];
 
     for (let i = 0; i < content.length; i++) {
@@ -89,7 +89,7 @@ export const useCarouselState = (state: CarouselState): CarouselState => {
     }
 
     return buttons;
-  }, [content, currentValue]);
+  };
 
   if (appearance === 'minimal' && state.backArrow) {
     state.backArrow.children = <BackArrowIcon />;
@@ -104,7 +104,7 @@ export const useCarouselState = (state: CarouselState): CarouselState => {
   if (appearance === 'minimal' && state.radioIndicator) {
     state.radioIndicator.value = currentValue.toString();
     state.radioIndicator.onChange = onRadioChange;
-    state.radioIndicator.children = createRadioButtons;
+    state.radioIndicator.children = createRadioButtons();
   }
 
   return state;
