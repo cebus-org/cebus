@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-icon",
   "entries": [
     {
+      "date": "Thu, 24 Mar 2022 01:12:01 GMT",
+      "tag": "@pongo-ui/react-icon_v0.1.12",
+      "version": "0.1.12",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-icon",
+            "commit": "3fd08e775dc7cab91b73d3fac5a8cdf0b062f815",
+            "comment": "Adding new icons"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 20 Mar 2022 02:42:23 GMT",
       "tag": "@pongo-ui/react-icon_v0.1.11",
       "version": "0.1.11",

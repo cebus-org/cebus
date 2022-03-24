@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Introducing carousel",
-  "packageName": "@pongo-ui/react-components",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

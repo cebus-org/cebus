@@ -1,0 +1,32 @@
+{
+  "name": "@pongo-ui/react-carousel",
+  "entries": [
+    {
+      "date": "Thu, 24 Mar 2022 01:12:01 GMT",
+      "tag": "@pongo-ui/react-carousel_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-carousel",
+            "commit": "3fd08e775dc7cab91b73d3fac5a8cdf0b062f815",
+            "comment": "Introducing component"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-carousel",
+            "comment": "Bump @pongo-ui/react-radio to v0.0.7",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-carousel",
+            "comment": "Bump @pongo-ui/react-icon to v0.1.12",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          }
+        ]
+      }
+    }
+  ]
+}

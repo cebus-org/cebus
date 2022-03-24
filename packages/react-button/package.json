@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-button",
-  "version": "1.1.27",
+  "version": "1.1.28",
   "description": "A Button control that allows users to make an action through a press.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@pongo-ui/react-layout": "^0.0.3",
-    "@pongo-ui/react-icon": "^0.1.11"
+    "@pongo-ui/react-icon": "^0.1.12"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

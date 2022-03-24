@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-card",
   "entries": [
     {
+      "date": "Thu, 24 Mar 2022 01:12:01 GMT",
+      "tag": "@pongo-ui/react-card_v0.0.20",
+      "version": "0.0.20",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-card",
+            "comment": "Bump @pongo-ui/react-text to v0.0.17",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-card",
+            "comment": "Bump @pongo-ui/react-button to v1.1.28",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 21 Mar 2022 23:49:17 GMT",
       "tag": "@pongo-ui/react-card_v0.0.19",
       "version": "0.0.19",

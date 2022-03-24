@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-text",
   "entries": [
     {
+      "date": "Thu, 24 Mar 2022 01:12:01 GMT",
+      "tag": "@pongo-ui/react-text_v0.0.17",
+      "version": "0.0.17",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-text",
+            "commit": "3fd08e775dc7cab91b73d3fac5a8cdf0b062f815",
+            "comment": "Updating styles"
+          }
+        ]
+      }
+    },
+    {
       "date": "Sun, 20 Mar 2022 04:48:50 GMT",
       "tag": "@pongo-ui/react-text_v0.0.16",
       "version": "0.0.16",

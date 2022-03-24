@@ -1,8 +1,29 @@
 # Change Log - @pongo-ui/react-components
 
-This log was last generated on Mon, 21 Mar 2022 23:49:17 GMT and should not be manually modified.
+This log was last generated on Thu, 24 Mar 2022 01:12:01 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.13
+
+Thu, 24 Mar 2022 01:12:01 GMT
+
+### Patches
+
+- Introducing carousel (czearing@outlook.com)
+- Bump @pongo-ui/react-button to v1.1.28
+- Bump @pongo-ui/react-card to v0.0.20
+- Bump @pongo-ui/react-divider to v0.0.13
+- Bump @pongo-ui/react-icon to v0.1.12
+- Bump @pongo-ui/react-input to v0.2.8
+- Bump @pongo-ui/react-label to v0.0.12
+- Bump @pongo-ui/react-menu to v0.1.9
+- Bump @pongo-ui/react-radio to v0.0.7
+- Bump @pongo-ui/react-text to v0.0.17
+- Bump @pongo-ui/react-toolbar to v0.0.16
+- Bump @pongo-ui/react-checkbox to v0.0.9
+- Bump @pongo-ui/react-table to v0.0.2
+- Bump @pongo-ui/react-carousel to v0.0.1
 
 ## 0.0.12
 

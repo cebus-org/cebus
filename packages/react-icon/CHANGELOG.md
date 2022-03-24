@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-icon
 
-This log was last generated on Sun, 20 Mar 2022 02:42:23 GMT and should not be manually modified.
+This log was last generated on Thu, 24 Mar 2022 01:12:01 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.1.12
+
+Thu, 24 Mar 2022 01:12:01 GMT
+
+### Patches
+
+- Adding new icons (czearing@outlook.com)
 
 ## 0.1.11
 

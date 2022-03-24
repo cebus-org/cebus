@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-divider
 
-This log was last generated on Sun, 20 Mar 2022 04:48:50 GMT and should not be manually modified.
+This log was last generated on Thu, 24 Mar 2022 01:12:01 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.13
+
+Thu, 24 Mar 2022 01:12:01 GMT
+
+### Patches
+
+- Bump @pongo-ui/react-text to v0.0.17
 
 ## 0.0.12
 

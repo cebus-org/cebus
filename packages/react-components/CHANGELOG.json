@@ -2,6 +2,99 @@
   "name": "@pongo-ui/react-components",
   "entries": [
     {
+      "date": "Thu, 24 Mar 2022 01:12:01 GMT",
+      "tag": "@pongo-ui/react-components_v0.0.13",
+      "version": "0.0.13",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-components",
+            "commit": "3fd08e775dc7cab91b73d3fac5a8cdf0b062f815",
+            "comment": "Introducing carousel"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-button to v1.1.28",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-card to v0.0.20",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-divider to v0.0.13",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-icon to v0.1.12",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-input to v0.2.8",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-label to v0.0.12",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-menu to v0.1.9",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-radio to v0.0.7",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-text to v0.0.17",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-toolbar to v0.0.16",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-checkbox to v0.0.9",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-table to v0.0.2",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-carousel to v0.0.1",
+            "commit": "a7de7bd69db243c89257471403e6da8b59264d77"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 21 Mar 2022 23:49:17 GMT",
       "tag": "@pongo-ui/react-components_v0.0.12",
       "version": "0.0.12",

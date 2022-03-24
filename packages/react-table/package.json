@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-table",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The Table component displays sets of data.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -28,7 +28,7 @@
     "@pongo-ui/react-theme": "^0.0.12"
   },
   "devDependencies": {
-    "@pongo-ui/react-card": "^0.0.19"
+    "@pongo-ui/react-card": "^0.0.20"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
