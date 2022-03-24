@@ -120,6 +120,11 @@
       "root": "packages/react-table",
       "projectType": "library",
       "implicitDependencies": []
+    },
+    "@pongo-ui/react-carousel": {
+      "root": "packages/react-carousel",
+      "projectType": "library",
+      "implicitDependencies": []
     }
   }
 }

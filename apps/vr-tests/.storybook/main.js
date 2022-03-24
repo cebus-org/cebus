@@ -20,6 +20,7 @@ const testedComponentPackages = [
   'react-accordion',
   'react-dialog',
   'react-table',
+  'react-carousel',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(
