@@ -8,6 +8,9 @@ export const renderCarousel = (state: CarouselState) => {
   return (
     <slots.root {...slotProps.root}>
       <slots.tabpanel {...slotProps.tabpanel}>{state.root.children}</slots.tabpanel>
+      {slots.backArrow && state.appearance === 'minimal' && <slots.backArrow {...slotProps.backArrow} />}
+      {slots.forwardArrow && state.appearance === 'minimal' && <slots.forwardArrow {...slotProps.forwardArrow} />}
+      {slots.radioIndicator && state.appearance === 'minimal' && <slots.radioIndicator {...slotProps.radioIndicator} />}
     </slots.root>
   );
 };

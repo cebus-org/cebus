@@ -7,6 +7,8 @@
 import type { ComponentProps } from '@fluentui/react-utilities';
 import type { ComponentState } from '@fluentui/react-utilities';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
+import type { RadioGroup } from '@pongo-ui/react-radio';
+import { default as React_2 } from 'react';
 import type { Slot } from '@fluentui/react-utilities';
 
 // Warning: (ae-forgotten-export) The symbol "CarouselProps" needs to be exported by the entry point index.d.ts

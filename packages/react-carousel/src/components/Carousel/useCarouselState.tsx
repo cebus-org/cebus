@@ -1,9 +1,12 @@
 import * as React from 'react';
+import { Radio } from '@pongo-ui/react-radio';
+import { ForwardArrowIcon, BackArrowIcon } from '@pongo-ui/react-icon';
 import { useControllableState, useEventCallback } from '@fluentui/react-utilities';
 import { tokens } from '@pongo-ui/react-theme';
-import type { CarouselState } from './Carousel.types';
+import type { CarouselState, CarouselChange } from './Carousel.types';
+import type { RadioGroupProps } from '@pongo-ui/react-radio';
 
-const imageStyles = {
+const imageStyles: React.CSSProperties = {
   position: 'relative',
   width: '100%',
   height: '100%',
@@ -12,17 +15,20 @@ const imageStyles = {
 };
 
 export const useCarouselState = (state: CarouselState): CarouselState => {
-  const { defaultValue, value, onChange } = state;
-  const children = state.root.children;
+  const { content, appearance, defaultValue, value, onChange } = state;
+
   const [currentValue, setCurrentValue] = useControllableState({
     defaultState: defaultValue,
     state: value,
     initialState: 0,
   });
 
-  const onImageChange = useEventCallback((ev, incomingValue: number) => {
-    onChange?.(ev, { value: incomingValue });
-    setCurrentValue(incomingValue);
+  const onImageChange = useEventCallback((ev: CarouselChange, incomingValue: number) => {
+    // If we go past the first item
+    const clampedValue =
+      incomingValue < 0 ? content.length - 1 : incomingValue > content.length - 1 ? 0 : incomingValue;
+    onChange?.(ev, { value: clampedValue });
+    setCurrentValue(clampedValue);
   });
 
   const calculateTransform = () => currentValue * 100;
@@ -37,33 +43,69 @@ export const useCarouselState = (state: CarouselState): CarouselState => {
     transitionTimingFunction: tokens.transitionTimingFunction,
   };
 
-  const childrenWithProps = React.Children.map(children, child => {
-    if (React.isValidElement(child)) {
-      return (
-        <div style={imageWrapperStyles}>
-          {React.cloneElement(child, {
-            draggable: false,
-            style: imageStyles,
-          })}
-        </div>
-      );
-    }
-    return child;
+  // const childrenWithProps = React.Children.map(children, child => {
+  //   if (React.isValidElement(child)) {
+  //     return (
+  // <div style={imageWrapperStyles}>
+  //   {React.cloneElement(child, {
+  //     draggable: false,
+  //     style: imageStyles,
+  //   })}
+  // </div>
+  //     );
+  //   }
+  //   return child;
+  // });
+
+  const createImages = content.map(item => {
+    return (
+      <div key={content.indexOf(item)} style={imageWrapperStyles}>
+        <img src={item.src} alt={item.alt} draggable={false} style={imageStyles} />
+      </div>
+    );
   });
 
-  const onKeyDown = ev => {
-    if (ev.key === 'ArrowLeft') {
-      onImageChange(ev, currentValue - 1);
-    }
-    if (ev.key === 'ArrowRight') {
-      onImageChange(ev, currentValue + 1);
-    }
+  const onRadioChange: RadioGroupProps['onChange'] = (ev, data) => {
+    onImageChange(ev, Number.parseInt(data.value));
   };
 
-  state.root.children = childrenWithProps;
+  const onBackButtonClick = (ev: React.MouseEvent<HTMLElement>) => {
+    onImageChange(ev, currentValue - 1);
+  };
 
-  state.tabpanel.tabIndex = 0;
-  state.tabpanel.onKeyDown = onKeyDown;
+  const onForwardButtonClick = (ev: React.MouseEvent<HTMLElement>) => {
+    onImageChange(ev, currentValue + 1);
+  };
+
+  state.root.children = createImages;
+
+  const createRadioButtons = React.useMemo(() => {
+    const buttons = [];
+
+    for (let i = 0; i < content.length; i++) {
+      buttons.push(
+        <Radio key={i} role="carousel" value={i.toString()} aria-label={content[currentValue].alt} readOnly />,
+      );
+    }
+
+    return buttons;
+  }, [content, currentValue]);
+
+  if (appearance === 'minimal' && state.backArrow) {
+    state.backArrow.children = <BackArrowIcon />;
+    state.backArrow.onClick = onBackButtonClick;
+  }
+
+  if (appearance === 'minimal' && state.forwardArrow) {
+    state.forwardArrow.children = <ForwardArrowIcon />;
+    state.forwardArrow.onClick = onForwardButtonClick;
+  }
+
+  if (appearance === 'minimal' && state.radioIndicator) {
+    state.radioIndicator.value = currentValue.toString();
+    state.radioIndicator.onChange = onRadioChange;
+    state.radioIndicator.children = createRadioButtons;
+  }
 
   return state;
 };

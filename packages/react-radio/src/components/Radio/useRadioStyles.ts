@@ -12,6 +12,8 @@ const useRootStyles = makeStyles({
     position: 'relative',
     columnGap: tokens.focusedLayout,
     alignItems: 'center',
+    backgroundColor: tokens.canvasColor,
+    ...shorthands.borderRadius(tokens.circle),
   },
 
   vertical: {

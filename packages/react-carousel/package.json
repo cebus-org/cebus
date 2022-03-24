@@ -25,7 +25,9 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.12"
+    "@pongo-ui/react-theme": "^0.0.12",
+    "@pongo-ui/react-radio": "^0.0.6",
+    "@pongo-ui/react-icon": "^0.1.11"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

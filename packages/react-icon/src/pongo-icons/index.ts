@@ -11,3 +11,5 @@ export * from './SearchIcon';
 export * from './SettingsIcon';
 export * from './Social';
 export * from './CartIcon';
+export * from './BackArrowIcon';
+export * from './ForwardArrowIcon';
