@@ -2,7 +2,7 @@ import { createText } from '../../utils/index';
 import { tokens } from '@pongo-ui/react-theme';
 import { makeStyles } from '@griffel/react';
 import type { FunctionComponent } from 'react';
-import type { TextWrapperProps } from '../../utils/createText';
+import type { TextProps } from '../Text';
 
 const useStyles = makeStyles({
   root: {
@@ -10,7 +10,7 @@ const useStyles = makeStyles({
   },
 });
 
-export const Title: FunctionComponent<TextWrapperProps> = createText(
+export const Title: FunctionComponent<TextProps> = createText(
   { as: 'h1', font: 'base', size: 800, weight: 'bold' },
   useStyles,
   'Title',

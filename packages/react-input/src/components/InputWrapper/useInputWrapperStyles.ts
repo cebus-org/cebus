@@ -35,6 +35,7 @@ const useRootStyles = makeStyles({
     ...shorthands.margin('0px'),
     ...shorthands.padding('0px'),
     ...shorthands.borderStyle('none'),
+    ...shorthands.borderRadius(tokens.rounded),
   },
 
   // Appearance

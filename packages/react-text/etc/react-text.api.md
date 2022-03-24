@@ -11,32 +11,30 @@ import type { FunctionComponent } from 'react';
 import * as React_2 from 'react';
 import type { Slot } from '@fluentui/react-utilities';
 
-// Warning: (ae-forgotten-export) The symbol "TextWrapperProps" needs to be exported by the entry point index.d.ts
-//
 // @public (undocumented)
-const Body_2: FunctionComponent<TextWrapperProps>;
+const Body_2: FunctionComponent<TextProps>;
 export { Body_2 as Body }
 
 // @public (undocumented)
-export const Caption: FunctionComponent<TextWrapperProps>;
+export const Caption: FunctionComponent<TextProps>;
 
 // @public (undocumented)
-export const Display: FunctionComponent<TextWrapperProps>;
+export const Display: FunctionComponent<TextProps>;
 
 // @public (undocumented)
-export const Header1: FunctionComponent<TextWrapperProps>;
+export const Header1: FunctionComponent<TextProps>;
 
 // @public (undocumented)
-export const Header2: FunctionComponent<TextWrapperProps>;
+export const Header2: FunctionComponent<TextProps>;
 
 // @public (undocumented)
-export const Header3: FunctionComponent<TextWrapperProps>;
+export const Header3: FunctionComponent<TextProps>;
 
 // @public (undocumented)
 export const renderText: (state: TextState) => JSX.Element;
 
 // @public (undocumented)
-export const SubHeadline: FunctionComponent<TextWrapperProps>;
+export const SubHeadline: FunctionComponent<TextProps>;
 
 // @public
 const Text_2: ForwardRefComponent<TextProps>;
@@ -68,7 +66,7 @@ export type TextSlots = {
 export type TextState = ComponentState<TextSlots> & TextCommons;
 
 // @public (undocumented)
-export const Title: FunctionComponent<TextWrapperProps>;
+export const Title: FunctionComponent<TextProps>;
 
 // @public (undocumented)
 export const useText: (props: TextProps, ref: React_2.Ref<HTMLElement>) => TextState;

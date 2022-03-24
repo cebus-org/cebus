@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel Snapshot tests renders a basic Avatar 1`] = `
+<body>
+  <div>
+    <div
+      class="___abcusc0 f10pi13n ftuwxu6 f5ogflp f1hqa2wf f1f09k3d finvdd3 fzkkow9 fcdblym fg706s2 fjik90z f17iqts3 f1uoix4j f18idrzn f8q3d83 f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1063pyq"
+    >
+      <div
+        class="___btqw720 f10pi13n ftuwxu6 f122n59 f1p9o1ba f1sil6mw f1s6fcnf"
+        role="tabpanel"
+      >
+        <div
+          style="width: 100%; height: 100%; flex-shrink: 0; transform: translateX(-0%); transition-property: transform; transition-duration: var(--transitionDuration); transition-timing-function: var(--transitionTimingFunction);"
+        >
+          <img
+            alt="A white t shirt"
+            draggable="false"
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tshirts-1613587154.jpg"
+            style="position: relative; width: 100%; height: 100%; object-fit: contain; user-select: none;"
+          />
+        </div>
+        <div
+          style="width: 100%; height: 100%; flex-shrink: 0; transform: translateX(-0%); transition-property: transform; transition-duration: var(--transitionDuration); transition-timing-function: var(--transitionTimingFunction);"
+        >
+          <img
+            alt="A green t shirt"
+            draggable="false"
+            src="https://imgprd19.hobbylobby.com/2/4f/57/24f57e245a879cb2543edd1df4e090bfebf24a45/700Wx700H-1013689-0320.jpg"
+            style="position: relative; width: 100%; height: 100%; object-fit: contain; user-select: none;"
+          />
+        </div>
+      </div>
+      <button
+        class="___3hn4950 f1euv43f f5mk7bh fbsu25e fi64zpg f1jhi6b8 f1ern45e f1n71otn f1h8hb77 f1deefiw fb1ohyo fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f22iagw f122n59 f4d9j23 fl4n2cu f8qjfyk f1k6fduh f1s6fcnf f1btex71 fr1s5rp f3lqehk fcm09hb f1i1t8d1 f1liqzi9 f1p7xwk3 f1xynx9j"
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          class="___16pu995 f14t3ns0 fmrv4ls fuaaxji fq4mcun frvgh55"
+          focusable="false"
+          style="--pongo-icon-fill: var(--textColor);"
+          viewBox="0 0 2048 2048"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="160"
+            rx="80"
+            transform="rotate(43.1013 692.688 932.496)"
+            width="1058.19"
+            x="692.688"
+            y="932.496"
+          />
+          <rect
+            height="160"
+            rx="80"
+            transform="rotate(133.101 1423.18 384.326)"
+            width="1058.63"
+            x="1423.18"
+            y="384.326"
+          />
+        </svg>
+      </button>
+      <button
+        class="___1l6nr4d f1euv43f f5mk7bh fbsu25e fi64zpg f1jhi6b8 f1ern45e f1n71otn f1h8hb77 f1deefiw fb1ohyo fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f22iagw f122n59 f4d9j23 fl4n2cu f8qjfyk f1k6fduh f1s6fcnf f1btex71 fr1s5rp f3lqehk fcm09hb f1i1t8d1 f1liqzi9 f1p7xwk3 f10k790i"
+        tabindex="-1"
+        type="button"
+      >
+        <svg
+          class="___16pu995 f14t3ns0 fmrv4ls fuaaxji fq4mcun frvgh55"
+          focusable="false"
+          style="--pongo-icon-fill: var(--textColor);"
+          viewBox="0 0 2048 2048"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="160"
+            rx="80"
+            transform="rotate(-132.67 1359.52 1129.17)"
+            width="1058.19"
+            x="1359.52"
+            y="1129.17"
+          />
+          <rect
+            height="160"
+            rx="80"
+            transform="rotate(-42.6701 590.599 1621.98)"
+            width="1058.63"
+            x="590.599"
+            y="1621.98"
+          />
+        </svg>
+      </button>
+      <div
+        class="___oo1c720 f22iagw f122n59 fnmxc1e fynvm4a f1euv43f fni485r f1ewtqcl fk7qxxv f10sqwl7 f1eg49sl fne32i3 f4d9j23 f5gq2j6 f8qjfyk f12qha5f fly5x3f"
+        role="radiogroup"
+      >
+        <span
+          class="___61ec9d0 ftuwxu6 f10pi13n fnmxc1e f122n59 f8qjfyk fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f2hkw1w fdxsi5y f1i4q40k fz5pyj9 fuitljl f1lxa25c f1dexcea fvk4ntw f1bkt4b4 f16hf5f2 fyyqeim f1qhqcal f1kbdjx9 fw1d893 f14hlsw1 fpuz8dn fgm4zzz f1o1s7a4 f1w999bl fr2bnm2 f1jjwxw3 fijdmwi f11pcu7g f1ddvjn"
+        >
+          <input
+            aria-label="A white t shirt"
+            checked=""
+            class="___1btn5n3 f1euv43f f1vgc2s3 f15twtuk fly5x3f f1l02sjl f1ewtqcl fk73vx1 f1hu3pq6 f11qmguv f19f4twv f1tyq0we fjpxvos f1xl0qwy f1k6fduh fkavele fg1nono fexw84i f1y6vlxy feznpzr f1ym48ab fxyywaq fc390eo f1julexz f1qlwis7 f13bd10 fiepdt6 f1fxl38v f1vmirnt f16aqadv fgoi767 f1qzxoeo f1rwhajm fxia3e6 fdxoyg9 ftb0ayp f1wkbyjn f7ombvi f49rsrr fpucs8 fsri65q f1ur2ra4 f1mu7ado f1o3leve f1s168r8 fdjrdmx"
+            id="radio-14"
+            name="radiogroup-13"
+            readonly=""
+            role="carousel"
+            type="radio"
+            value="0"
+          />
+          <div
+            aria-hidden="true"
+            class="pongo-radio-indicator ___1pabbn4 f22iagw fjw5fx7 fd461yt f1ewtqcl fi64zpg f122n59 f4d9j23 f1aehjj5 f1p9o1ba f1sil6mw ftac7j7 f1w0yd9v fdwcyh7 f1h0xgbp fzkkow9 fcdblym fg706s2 fjik90z fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f19qt5od f1fajnbs ffz4t7b f1wac4k f1t8un4"
+          >
+            <svg
+              aria-hidden="true"
+              class="___1yjlmar f1w7gpdv fez10in f1kxrtqx"
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 20 20"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2a8 8 0 100 16 8 8 0 000-16z"
+              />
+            </svg>
+          </div>
+        </span>
+        <span
+          class="___61ec9d0 ftuwxu6 f10pi13n fnmxc1e f122n59 f8qjfyk fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f2hkw1w fdxsi5y f1i4q40k fz5pyj9 fuitljl f1lxa25c f1dexcea fvk4ntw f1bkt4b4 f16hf5f2 fyyqeim f1qhqcal f1kbdjx9 fw1d893 f14hlsw1 fpuz8dn fgm4zzz f1o1s7a4 f1w999bl fr2bnm2 f1jjwxw3 fijdmwi f11pcu7g f1ddvjn"
+        >
+          <input
+            aria-label="A white t shirt"
+            class="___1btn5n3 f1euv43f f1vgc2s3 f15twtuk fly5x3f f1l02sjl f1ewtqcl fk73vx1 f1hu3pq6 f11qmguv f19f4twv f1tyq0we fjpxvos f1xl0qwy f1k6fduh fkavele fg1nono fexw84i f1y6vlxy feznpzr f1ym48ab fxyywaq fc390eo f1julexz f1qlwis7 f13bd10 fiepdt6 f1fxl38v f1vmirnt f16aqadv fgoi767 f1qzxoeo f1rwhajm fxia3e6 fdxoyg9 ftb0ayp f1wkbyjn f7ombvi f49rsrr fpucs8 fsri65q f1ur2ra4 f1mu7ado f1o3leve f1s168r8 fdjrdmx"
+            id="radio-15"
+            name="radiogroup-13"
+            readonly=""
+            role="carousel"
+            type="radio"
+            value="1"
+          />
+          <div
+            aria-hidden="true"
+            class="pongo-radio-indicator ___1pabbn4 f22iagw fjw5fx7 fd461yt f1ewtqcl fi64zpg f122n59 f4d9j23 f1aehjj5 f1p9o1ba f1sil6mw ftac7j7 f1w0yd9v fdwcyh7 f1h0xgbp fzkkow9 fcdblym fg706s2 fjik90z fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f19qt5od f1fajnbs ffz4t7b f1wac4k f1t8un4"
+          >
+            <svg
+              aria-hidden="true"
+              class="___1yjlmar f1w7gpdv fez10in f1kxrtqx"
+              fill="currentColor"
+              height="1em"
+              viewBox="0 0 20 20"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2a8 8 0 100 16 8 8 0 000-16z"
+              />
+            </svg>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
