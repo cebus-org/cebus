@@ -70,6 +70,11 @@ export type TextCommons = {
   nowrap?: boolean;
 
   /**
+   * Whether the Text should be rendered in a disabled appearance.
+   */
+  disabled?: boolean;
+
+  /**
    * Whether the text should truncate if it exceeds its containers size.
    */
   truncate?: boolean;

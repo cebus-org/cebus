@@ -10,5 +10,5 @@ export const fontLineHeightTokens: FontLineHeightTokens = {
   lineHeight700: '36px',
   lineHeight800: '40px',
   lineHeight900: '52px',
-  lineHeight1000: '92px',
+  lineHeight1000: 'min(9vw, 92px)',
 };

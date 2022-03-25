@@ -10,5 +10,5 @@ export const fontSizeTokens: FontSizeTokens = {
   fontSize700: '28px',
   fontSize800: '32px',
   fontSize900: '40px',
-  fontSize1000: '68px',
+  fontSize1000: 'min(7vw, 68px)',
 };

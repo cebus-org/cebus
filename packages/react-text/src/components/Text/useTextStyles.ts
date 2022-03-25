@@ -2,6 +2,8 @@ import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { TextState } from './Text.types';
 import { tokens } from '@pongo-ui/react-theme';
 
+const textColor = `--pongo-text-color`;
+
 const useRootStyles = makeStyles({
   root: {
     display: 'inline',
@@ -88,32 +90,8 @@ const useRootStyles = makeStyles({
   whiteColor: {
     color: 'white',
   },
-  inheritColor: {
-    color: tokens.inherit,
-  },
-  baseColor: {
-    color: tokens.textColor,
-  },
-  brandColor: {
-    color: tokens.brand,
-  },
-  secondaryColor: {
-    color: tokens.secondary,
-  },
-  successColor: {
-    color: tokens.success,
-  },
-  dangerColor: {
-    color: tokens.danger,
-  },
-  socialColor: {
-    color: tokens.social,
-  },
-  warningColor: {
-    color: tokens.warning,
-  },
-  infoColor: {
-    color: tokens.info,
+  semanticColor: {
+    color: `var(${textColor})`,
   },
   center: {
     textAlign: 'center',
@@ -151,8 +129,18 @@ export const useTextStyles = (state: TextState): TextState => {
     state.underline && styles.underline,
     state.strikethrough && styles.strikethrough,
     state.underline && state.strikethrough && styles.strikethroughUnderline,
-    styles[(state.color! + 'Color') as 'baseColor'],
+    state.color === 'white' ? styles.whiteColor : state.color !== 'base' ? styles.semanticColor : styles.base,
     state.root.className,
   );
+
+  const CSSVariables = {
+    [textColor]: (tokens as any)[state.color + (state.disabled ? 'Disabled' : '')],
+  };
+
+  state.root.style = {
+    ...CSSVariables,
+    ...state.root.style,
+  };
+
   return state;
 };

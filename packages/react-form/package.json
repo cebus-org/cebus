@@ -1,0 +1,44 @@
+{
+  "name": "@pongo-ui/react-form",
+  "version": "0.0.0",
+  "description": "A Form control that helps easily set up an accessible form.",
+  "main": "lib-commonjs/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PongoAI/pongo-ui"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn storybook",
+    "build": "just-scripts build",
+    "bundle-size": "bundle-size measure",
+    "test": "just-scripts test",
+    "test-fix": "just-scripts test-fix",
+    "coverage": "just-scripts test --coverage",
+    "lint": "eslint ./src",
+    "storybook": "start-storybook",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@griffel/react": "^1.0.0",
+    "@fluentui/react-utilities": "^9.0.0-rc.5",
+    "@pongo-ui/react-theme": "^0.0.12",
+    "@pongo-ui/react-label": "^0.0.12",
+    "@pongo-ui/react-text": "^0.0.17"
+  },
+  "devDependencies": {
+    "@pongo-ui/react-switch": "^0.0.10",
+    "@pongo-ui/react-button": "^1.1.28",
+    "@pongo-ui/react-checkbox": "^0.0.9",
+    "@pongo-ui/react-input": "^0.2.8"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8.0 <18.0.0",
+    "@types/react-dom": ">=16.8.0 <18.0.0",
+    "react": ">=16.8.0 <18.0.0",
+    "react-dom": ">=16.8.0 <18.0.0"
+  }
+}

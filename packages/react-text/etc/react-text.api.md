@@ -51,6 +51,7 @@ export type TextCommons = {
     strikethrough?: boolean;
     align?: 'start' | 'center' | 'end' | 'justify';
     nowrap?: boolean;
+    disabled?: boolean;
     truncate?: boolean;
 };
 

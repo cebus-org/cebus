@@ -13,6 +13,7 @@ export const useText = (props: TextProps, ref: React.Ref<HTMLElement>): TextStat
     truncate = false,
     strikethrough = false,
     nowrap = false,
+    disabled,
     color = 'base',
     align = 'start',
   } = props;
@@ -23,6 +24,7 @@ export const useText = (props: TextProps, ref: React.Ref<HTMLElement>): TextStat
     weight,
     truncate,
     italic,
+    disabled,
     underline,
     strikethrough,
     nowrap,

@@ -151,6 +151,7 @@ const useRootStyles = makeStyles({
 
   // Danger
   danger: {
+    backgroundColor: tokens.dangerForegroundHover,
     ':before': {
       ...shorthands.borderColor(tokens.danger),
     },

@@ -49,6 +49,37 @@ export const ColorTextExample = () => {
   );
 };
 
+export const DisabledColorTextExample = () => {
+  return (
+    <Stack vertical>
+      <Header1 color="inherit" disabled>
+        inherit: The quick brown fox jumps over the lazy dog
+      </Header1>
+      <Header1 color="brand" disabled>
+        brand: The quick brown fox jumps over the lazy dog
+      </Header1>
+      <Header1 color="secondary" disabled>
+        secondary: The quick brown fox jumps over the lazy dog
+      </Header1>
+      <Header1 color="success" disabled>
+        success: The quick brown fox jumps over the lazy dog
+      </Header1>
+      <Header1 color="danger" disabled>
+        danger: The quick brown fox jumps over the lazy dog
+      </Header1>
+      <Header1 color="social" disabled>
+        social: The quick brown fox jumps over the lazy dog
+      </Header1>
+      <Header1 color="warning" disabled>
+        warning: The quick brown fox jumps over the lazy dog
+      </Header1>
+      <Header1 color="info" disabled>
+        info: The quick brown fox jumps over the lazy dog
+      </Header1>
+    </Stack>
+  );
+};
+
 export default {
   title: 'Components/Text',
   component: Text,

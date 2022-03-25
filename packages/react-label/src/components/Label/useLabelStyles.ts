@@ -9,9 +9,11 @@ const useRootStyles = makeStyles({
 
   disabled: {
     color: tokens.inheritDisabled,
+    cursor: 'not-allowed',
   },
 
   enabled: {
+    cursor: 'pointer',
     color: tokens.textColor,
   },
 

@@ -130,7 +130,7 @@ export const useCheckboxStyles = (state: CheckboxState) => {
   state.root.className = mergeClasses(
     rootStyles.root,
     state.input.disabled && (state.input.checked ? rootStyles.checked : rootStyles.unchecked),
-    state.input.disabled && rootStyles.focusIndicator,
+    !state.input.disabled && rootStyles.focusIndicator,
     state.root.className,
   );
 

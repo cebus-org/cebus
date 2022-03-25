@@ -21,6 +21,7 @@ const testedComponentPackages = [
   'react-dialog',
   'react-table',
   'react-carousel',
+  'react-form',
 ];
 
 const componentStoryPaths = testedComponentPackages.map(
