@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-divider",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "The divider helps separate content in a site.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -25,12 +25,12 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.12",
+    "@pongo-ui/react-theme": "^0.0.13",
     "@fluentui/react-divider": "^9.0.0-rc.5"
   },
   "devDependencies": {
-    "@pongo-ui/react-text": "^0.0.17",
-    "@pongo-ui/react-layout": "^0.0.3"
+    "@pongo-ui/react-text": "^0.0.18",
+    "@pongo-ui/react-layout": "^0.0.4"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

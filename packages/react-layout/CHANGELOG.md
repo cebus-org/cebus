@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-layout
 
-This log was last generated on Sun, 20 Mar 2022 02:42:23 GMT and should not be manually modified.
+This log was last generated on Fri, 25 Mar 2022 21:31:30 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.4
+
+Fri, 25 Mar 2022 21:31:30 GMT
+
+### Patches
+
+- Bump @pongo-ui/react-theme to v0.0.13
 
 ## 0.0.3
 

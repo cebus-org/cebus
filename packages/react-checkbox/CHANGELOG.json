@@ -2,6 +2,51 @@
   "name": "@pongo-ui/react-checkbox",
   "entries": [
     {
+      "date": "Fri, 25 Mar 2022 21:31:30 GMT",
+      "tag": "@pongo-ui/react-checkbox_v0.0.10",
+      "version": "0.0.10",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-checkbox",
+            "commit": "da2d1993b84297007396bae43c4647dd985934c6",
+            "comment": "Updating focus rule"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-checkbox",
+            "comment": "Bump @pongo-ui/react-theme to v0.0.13",
+            "commit": "51b52c59ee772f670add522fb76ec8a5633da989"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-checkbox",
+            "comment": "Bump @pongo-ui/react-icon to v0.1.13",
+            "commit": "51b52c59ee772f670add522fb76ec8a5633da989"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-checkbox",
+            "comment": "Bump @pongo-ui/react-text to v0.0.18",
+            "commit": "51b52c59ee772f670add522fb76ec8a5633da989"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-checkbox",
+            "comment": "Bump @pongo-ui/react-button to v1.1.29",
+            "commit": "51b52c59ee772f670add522fb76ec8a5633da989"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-checkbox",
+            "comment": "Bump @pongo-ui/react-label to v0.0.13",
+            "commit": "51b52c59ee772f670add522fb76ec8a5633da989"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 24 Mar 2022 01:12:01 GMT",
       "tag": "@pongo-ui/react-checkbox_v0.0.9",
       "version": "0.0.9",

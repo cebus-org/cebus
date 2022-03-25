@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-storybook",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Storybook addon used within Pongo UI components.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -15,8 +15,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@pongo-ui/react-theme": "^0.0.12",
-    "@pongo-ui/react-provider": "^0.0.4",
+    "@pongo-ui/react-theme": "^0.0.13",
+    "@pongo-ui/react-provider": "^0.0.5",
     "@storybook/react": "^6.4.15",
     "@storybook/addon-a11y": "^6.4.15",
     "@storybook/addon-actions": "^6.4.15",

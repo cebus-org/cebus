@@ -2,6 +2,39 @@
   "name": "@pongo-ui/react-input",
   "entries": [
     {
+      "date": "Fri, 25 Mar 2022 21:31:29 GMT",
+      "tag": "@pongo-ui/react-input_v0.2.9",
+      "version": "0.2.9",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-input",
+            "commit": "da2d1993b84297007396bae43c4647dd985934c6",
+            "comment": "Updating danger styles"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-input",
+            "comment": "Bump @pongo-ui/react-theme to v0.0.13",
+            "commit": "51b52c59ee772f670add522fb76ec8a5633da989"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-input",
+            "comment": "Bump @pongo-ui/react-menu to v0.1.10",
+            "commit": "51b52c59ee772f670add522fb76ec8a5633da989"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-input",
+            "comment": "Bump @pongo-ui/react-layout to v0.0.4",
+            "commit": "51b52c59ee772f670add522fb76ec8a5633da989"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 24 Mar 2022 01:12:01 GMT",
       "tag": "@pongo-ui/react-input_v0.2.8",
       "version": "0.2.8",

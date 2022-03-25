@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-theme",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "A set of theme tokens used by Pongo.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

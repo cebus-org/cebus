@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-theme",
   "entries": [
     {
+      "date": "Fri, 25 Mar 2022 21:31:30 GMT",
+      "tag": "@pongo-ui/react-theme_v0.0.13",
+      "version": "0.0.13",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-theme",
+            "commit": "da2d1993b84297007396bae43c4647dd985934c6",
+            "comment": "Updating display theme"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 18 Mar 2022 20:43:02 GMT",
       "tag": "@pongo-ui/react-theme_v0.0.12",
       "version": "0.0.12",

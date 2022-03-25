@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-radio",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A radio button component that allows a user to select a single option from a set.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -25,7 +25,7 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.12",
+    "@pongo-ui/react-theme": "^0.0.13",
     "@fluentui/react-radio": "^9.0.0-beta.2"
   },
   "devDependencies": {},

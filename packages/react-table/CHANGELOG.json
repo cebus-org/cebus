@@ -2,6 +2,27 @@
   "name": "@pongo-ui/react-table",
   "entries": [
     {
+      "date": "Fri, 25 Mar 2022 21:31:30 GMT",
+      "tag": "@pongo-ui/react-table_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-table",
+            "comment": "Bump @pongo-ui/react-theme to v0.0.13",
+            "commit": "51b52c59ee772f670add522fb76ec8a5633da989"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-table",
+            "comment": "Bump @pongo-ui/react-card to v0.0.21",
+            "commit": "51b52c59ee772f670add522fb76ec8a5633da989"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 24 Mar 2022 01:12:01 GMT",
       "tag": "@pongo-ui/react-table_v0.0.2",
       "version": "0.0.2",

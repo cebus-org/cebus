@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-toolbar",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "A toolbar component that displays important information and actions for an application.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -26,14 +26,14 @@
     "@griffel/react": "^1.0.0",
     "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.12",
+    "@pongo-ui/react-theme": "^0.0.13",
     "@fluentui/react-aria": "^9.0.0-rc.5"
   },
   "devDependencies": {
-    "@pongo-ui/react-avatar": "^0.0.10",
-    "@pongo-ui/react-text": "^0.0.17",
-    "@pongo-ui/react-menu": "^0.1.9",
-    "@pongo-ui/react-layout": "^0.0.3"
+    "@pongo-ui/react-avatar": "^0.0.11",
+    "@pongo-ui/react-text": "^0.0.18",
+    "@pongo-ui/react-menu": "^0.1.10",
+    "@pongo-ui/react-layout": "^0.0.4"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",
