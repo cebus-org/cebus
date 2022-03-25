@@ -125,6 +125,11 @@
       "root": "packages/react-carousel",
       "projectType": "library",
       "implicitDependencies": []
+    },
+    "@pongo-ui/react-form": {
+      "root": "packages/react-form",
+      "projectType": "library",
+      "implicitDependencies": []
     }
   }
 }

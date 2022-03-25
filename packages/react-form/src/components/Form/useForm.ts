@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { getNativeElementProps } from '@fluentui/react-utilities';
-import { useFormState } from './useFormState';
+
 import type { FormProps, FormState } from './Form.types';
 
 export const useForm = (props: FormProps, ref: React.Ref<HTMLElement>): FormState => {
-  const {} = props;
+  const { appearance = 'focused' } = props;
 
   const state: FormState = {
+    appearance,
     components: {
       root: 'form',
     },
@@ -15,8 +16,6 @@ export const useForm = (props: FormProps, ref: React.Ref<HTMLElement>): FormStat
       ...props,
     }),
   };
-
-  useFormState(state);
 
   return state;
 };

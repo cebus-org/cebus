@@ -8,15 +8,27 @@ const useRootStyles = makeStyles({
     display: 'flex',
     alignItems: 'start',
     flexDirection: 'column',
-    ...shorthands.gap(tokens.focusedLayout),
+
     flexWrap: 'wrap',
+  },
+
+  focused: {
+    ...shorthands.gap(tokens.focusedLayout),
+  },
+
+  relaxed: {
+    ...shorthands.gap(tokens.relaxedLayout),
   },
 });
 
 export const useFormStyles = (state: FormState) => {
   const rootStyles = useRootStyles();
 
-  state.root.className = mergeClasses(rootStyles.root, state.root.className);
+  state.root.className = mergeClasses(
+    rootStyles.root,
+    state.appearance === 'focused' ? rootStyles.focused : rootStyles.relaxed,
+    state.root.className,
+  );
 
   return state;
 };

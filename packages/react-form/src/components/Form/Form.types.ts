@@ -7,7 +7,12 @@ export type FormSlots = {
   root: Slot<'form'>;
 };
 
-type FormCommons = {};
+type FormCommons = {
+  /**
+   * The appearance of the form
+   */
+  appearance?: 'focused' | 'relaxed';
+};
 
 export type FormProps = ComponentProps<FormSlots> & FormCommons;
 
