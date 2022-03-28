@@ -27,7 +27,8 @@
     "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
     "@pongo-ui/react-theme": "^0.0.13",
-    "@fluentui/react-aria": "^9.0.0-rc.5"
+    "@fluentui/react-aria": "^9.0.0-rc.5",
+    "@fluentui/react-context-selector": "^9.0.0-rc.5"
   },
   "devDependencies": {
     "@pongo-ui/react-avatar": "^0.0.11",
