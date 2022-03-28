@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-radio
 
-This log was last generated on Fri, 25 Mar 2022 21:31:30 GMT and should not be manually modified.
+This log was last generated on Mon, 28 Mar 2022 20:07:12 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.9
+
+Mon, 28 Mar 2022 20:07:12 GMT
+
+### Patches
+
+- Fixing a styling bug (czearing@outlook.com)
 
 ## 0.0.8
 
