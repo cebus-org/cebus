@@ -1,8 +1,16 @@
 # Change Log - @pongo-ui/react-carousel
 
-This log was last generated on Mon, 28 Mar 2022 20:07:12 GMT and should not be manually modified.
+This log was last generated on Mon, 28 Mar 2022 20:31:38 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.4
+
+Mon, 28 Mar 2022 20:31:38 GMT
+
+### Patches
+
+- Bump @pongo-ui/react-radio to v0.0.10
 
 ## 0.0.3
 

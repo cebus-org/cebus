@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-radio",
   "entries": [
     {
+      "date": "Mon, 28 Mar 2022 20:31:38 GMT",
+      "tag": "@pongo-ui/react-radio_v0.0.10",
+      "version": "0.0.10",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-radio",
+            "commit": "f00fd96098ebbbd5a76bb402920d7ce410241fc7",
+            "comment": "Updating styles"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 28 Mar 2022 20:07:12 GMT",
       "tag": "@pongo-ui/react-radio_v0.0.9",
       "version": "0.0.9",

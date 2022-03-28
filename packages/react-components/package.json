@@ -1,6 +1,6 @@
 {
   "name": "@pongo-ui/react-components",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "Suite package for Pongo components.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -35,17 +35,17 @@
     "@pongo-ui/react-label": "^0.0.13",
     "@pongo-ui/react-link": "^0.1.14",
     "@pongo-ui/react-menu": "^0.1.10",
-    "@pongo-ui/react-radio": "^0.0.9",
+    "@pongo-ui/react-radio": "^0.0.10",
     "@pongo-ui/react-switch": "^0.0.11",
     "@pongo-ui/react-tabs": "^0.0.11",
     "@pongo-ui/react-text": "^0.0.18",
-    "@pongo-ui/react-toolbar": "^0.0.18",
+    "@pongo-ui/react-toolbar": "^0.0.19",
     "@pongo-ui/react-checkbox": "^0.0.10",
     "@pongo-ui/react-provider": "^0.0.5",
     "@pongo-ui/react-layout": "^0.0.4",
     "@pongo-ui/react-accordion": "^0.0.4",
     "@pongo-ui/react-table": "^0.0.3",
-    "@pongo-ui/react-carousel": "^0.0.3"
+    "@pongo-ui/react-carousel": "^0.0.4"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

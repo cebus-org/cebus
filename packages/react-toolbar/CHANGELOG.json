@@ -2,6 +2,21 @@
   "name": "@pongo-ui/react-toolbar",
   "entries": [
     {
+      "date": "Mon, 28 Mar 2022 20:31:38 GMT",
+      "tag": "@pongo-ui/react-toolbar_v0.0.19",
+      "version": "0.0.19",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@pongo-ui/react-toolbar",
+            "commit": "f00fd96098ebbbd5a76bb402920d7ce410241fc7",
+            "comment": "Updating deps"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 28 Mar 2022 20:07:12 GMT",
       "tag": "@pongo-ui/react-toolbar_v0.0.18",
       "version": "0.0.18",

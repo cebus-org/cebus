@@ -2,6 +2,33 @@
   "name": "@pongo-ui/react-components",
   "entries": [
     {
+      "date": "Mon, 28 Mar 2022 20:31:38 GMT",
+      "tag": "@pongo-ui/react-components_v0.0.16",
+      "version": "0.0.16",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-radio to v0.0.10",
+            "commit": "b112ff4ad5c30e67d340601c1abad30e5adb4a04"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-toolbar to v0.0.19",
+            "commit": "b112ff4ad5c30e67d340601c1abad30e5adb4a04"
+          },
+          {
+            "author": "beachball",
+            "package": "@pongo-ui/react-components",
+            "comment": "Bump @pongo-ui/react-carousel to v0.0.4",
+            "commit": "b112ff4ad5c30e67d340601c1abad30e5adb4a04"
+          }
+        ]
+      }
+    },
+    {
       "date": "Mon, 28 Mar 2022 20:07:12 GMT",
       "tag": "@pongo-ui/react-components_v0.0.15",
       "version": "0.0.15",
