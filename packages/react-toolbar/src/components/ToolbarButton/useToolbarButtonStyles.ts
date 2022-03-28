@@ -16,11 +16,13 @@ const useRootStyles = makeStyles({
     fontFamily: tokens.fontFamilyBase,
     fontStyle: 'normal',
     fontWeight: tokens.regular,
+    fontSize: tokens.fontSize300,
+    color: tokens.textColor,
     outlineStyle: 'none',
     backgroundColor: 'transparent',
     height: '100%',
     ...shorthands.gap('6px'),
-    ...shorthands.padding('0', '10px'),
+    ...shorthands.padding('0', tokens.focusedLayout),
     ...shorthands.borderStyle('none'),
     textDecorationLine: 'none',
   },
@@ -41,8 +43,7 @@ const useRootStyles = makeStyles({
     { selector: 'focus-within' },
   ),
 
-  enabled: {
-    cursor: 'pointer',
+  primary: {
     '&:hover': {
       backgroundColor: tokens.brandHover,
     },
@@ -53,6 +54,19 @@ const useRootStyles = makeStyles({
       color: 'white !important',
       fill: 'white !important',
     },
+  },
+
+  subtle: {
+    '&:hover': {
+      backgroundColor: tokens.inheritForegroundHover,
+    },
+    '&:active': {
+      backgroundColor: tokens.inheritForegroundPressed,
+    },
+  },
+
+  enabled: {
+    cursor: 'pointer',
   },
 
   disabled: {
@@ -67,6 +81,7 @@ export const useToolbarButtonStyles = (state: ToolbarButtonState) => {
   state.root.className = mergeClasses(
     rootStyles.root,
     rootStyles.focusIndicator,
+    rootStyles[state.appearance!],
     disabled ? rootStyles.disabled : rootStyles.enabled,
     state.root.className,
   );

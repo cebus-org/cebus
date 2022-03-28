@@ -17,6 +17,23 @@ export const BasicToolbarExample = () => {
   );
 };
 
+export const AppearanceToolbarExample = () => {
+  return (
+    <Toolbar appearance="subtle">
+      <Text size={500} weight={'bold'}>
+        Pongo
+      </Text>
+      <Stack grow />
+      <ToolbarButton>Save</ToolbarButton>
+      <ToolbarButton>Wiki</ToolbarButton>
+      <ToolbarButton>Contact</ToolbarButton>
+      <ToolbarButton>
+        <Avatar name="Caleb Zearing" />
+      </ToolbarButton>
+    </Toolbar>
+  );
+};
+
 export const ToolbarMenuExample = () => {
   return (
     <Toolbar>
