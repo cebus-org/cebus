@@ -13,6 +13,14 @@ type ToolbarButtonCommons = {
    * Whether the button is enabled or disabled.
    */
   disabled?: boolean;
+
+  /**
+   * The appearance of the Toolbar.
+   *
+   * * subtle - background matches the canvas color
+   * * primary - background matches the brand color
+   */
+  appearance?: 'subtle' | 'primary';
 };
 
 export type ToolbarButtonProps = ComponentProps<ToolbarButtonSlots> & ToolbarButtonCommons;

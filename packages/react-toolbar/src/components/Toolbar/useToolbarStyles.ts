@@ -12,14 +12,21 @@ const useRootStyles = makeStyles({
     alignItems: 'center',
     boxSizing: 'border-box',
     flexShrink: 0,
-    backgroundColor: tokens.brand,
     filter: tokens.elevate,
     zIndex: 10000,
+  },
+
+  primary: {
+    backgroundColor: tokens.brand,
 
     '>*': {
       color: 'white !important',
       fill: 'white !important',
     },
+  },
+
+  subtle: {
+    backgroundColor: tokens.canvasColor,
   },
 
   relative: {
@@ -30,8 +37,12 @@ const useRootStyles = makeStyles({
     position: 'sticky',
   },
 
+  fixed: {
+    position: 'fixed',
+  },
+
   contentPadding: {
-    ...shorthands.padding('0px', '20px'),
+    ...shorthands.padding('0px', tokens.focusedLayout),
   },
 });
 
@@ -42,6 +53,7 @@ export const useToolbarStyles = (state: ToolbarState) => {
   state.root.className = mergeClasses(
     rootStyles.root,
     rootStyles[state.position!],
+    rootStyles[state.appearance!],
     contentPadding && rootStyles.contentPadding,
     state.root.className,
   );

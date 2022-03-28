@@ -12,6 +12,7 @@ const useRootStyles = makeStyles({
     position: 'relative',
     columnGap: tokens.focusedLayout,
     alignItems: 'center',
+    boxSizing: 'border-box',
     backgroundColor: tokens.canvasColor,
     ...shorthands.borderRadius(tokens.circle),
   },
@@ -45,14 +46,15 @@ const useInputStyles = makeStyles({
     position: 'absolute',
     left: 0,
     top: 0,
+    right: 0,
+    bottom: 0,
     width: '100%',
     height: '100%',
     boxSizing: 'border-box',
     opacity: 0,
     ...shorthands.margin(0),
-
     [`:not(:checked) ~ .${indicatorClassName} > *`]: {
-      transform: 'scale(0%)',
+      transform: 'scale(0)',
       opacity: 0,
     },
   },
@@ -140,6 +142,7 @@ const useIndicatorStyles = makeStyles({
 
     '& svg': {
       width: '10px',
+      height: '10px',
       fill: tokens.brand,
       transitionProperty: 'transform, opacity',
       transitionDuration: tokens.transitionDuration,
