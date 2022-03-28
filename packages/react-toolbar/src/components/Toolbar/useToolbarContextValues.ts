@@ -1,7 +1,7 @@
 import type { ToolbarContextValues, ToolbarState } from './Toolbar.types';
 
 export function useToolbarContextValues(state: ToolbarState): ToolbarContextValues {
-  const { appearance } = state;
+  const { appearance = 'primary' } = state;
 
   const toolbar = {
     appearance,
