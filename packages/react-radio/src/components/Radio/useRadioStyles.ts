@@ -13,8 +13,8 @@ const useRootStyles = makeStyles({
     columnGap: tokens.focusedLayout,
     alignItems: 'center',
     boxSizing: 'border-box',
-    backgroundColor: tokens.canvasColor,
     ...shorthands.borderRadius(tokens.circle),
+    backgroundColor: tokens.canvasColor,
   },
 
   vertical: {
@@ -135,11 +135,9 @@ const useIndicatorStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     pointerEvents: 'none',
-
     ...shorthands.overflow('hidden'),
     ...shorthands.border('2px', 'solid'),
     ...shorthands.borderRadius(tokens.circle),
-
     '& svg': {
       width: '10px',
       height: '10px',

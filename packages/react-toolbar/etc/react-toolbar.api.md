@@ -12,7 +12,7 @@ import * as React_2 from 'react';
 import type { Slot } from '@fluentui/react-utilities';
 
 // @public (undocumented)
-export const renderToolbar: (state: ToolbarState) => JSX.Element;
+export const renderToolbar: (state: ToolbarState, contextValues: ToolbarContextValues) => JSX.Element;
 
 // @public (undocumented)
 export const renderToolbarButton: (state: ToolbarButtonState) => JSX.Element;
@@ -35,6 +35,11 @@ export type ToolbarButtonSlots = {
 
 // @public (undocumented)
 export type ToolbarButtonState = ComponentState<ToolbarButtonSlots> & ToolbarButtonCommons;
+
+// @public (undocumented)
+export type ToolbarContextValues = {
+    toolbar: ToolbarContextValue;
+};
 
 // Warning: (ae-forgotten-export) The symbol "ToolbarCommons" needs to be exported by the entry point index.d.ts
 //
@@ -60,6 +65,10 @@ export const useToolbarButtonStyles: (state: ToolbarButtonState) => ToolbarButto
 
 // @public (undocumented)
 export const useToolbarStyles: (state: ToolbarState) => ToolbarState;
+
+// Warnings were encountered during analysis:
+//
+// lib/components/Toolbar/Toolbar.types.d.ts:27:5 - (ae-forgotten-export) The symbol "ToolbarContextValue" needs to be exported by the entry point index.d.ts
 
 // (No @packageDocumentation comment for this package)
 

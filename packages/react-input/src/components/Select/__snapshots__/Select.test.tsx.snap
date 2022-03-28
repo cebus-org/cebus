@@ -5,7 +5,7 @@ exports[`Select renders a Select contentBefore and contentAfter 1`] = `
   <div>
     <span
       aria-haspopup="menu"
-      class="pongo-input-wrapper ___a5mgx60 f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh fc467gg f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo fmw406p f12c27rx f17thq47 f12kdog7 f5qrn4q f1kndqco f1kc1xys f1d7l9b4 f16n8puj fkcy365 f5le7dr f170vdtw fg4eyww f1cngt4b f17x5ctf fbk6y72 f1uajmgh f11t0hz4 f2v3se5 f18saz9o f80sxui f19q3xa0 fzmdvw2 fbh30h8 f1k6fduh f1vw2ftv f13ta7ih"
+      class="pongo-input-wrapper ___cj3ly10 f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh fc467gg f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo fmw406p f12c27rx f17thq47 f12kdog7 f5qrn4q f1kndqco f1kc1xys f1d7l9b4 f16n8puj fkcy365 f5le7dr f170vdtw fg4eyww f1cngt4b f17x5ctf fbk6y72 f1uajmgh f11t0hz4 f2v3se5 f18saz9o f80sxui f19q3xa0 fzmdvw2 fbh30h8 f1k6fduh f1vw2ftv f13ta7ih"
       data-tabster="{\\"groupper\\":{\\"tabbability\\":2}}"
       id="menu10"
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
@@ -37,7 +37,7 @@ exports[`Select renders a basic Select 1`] = `
   <div>
     <span
       aria-haspopup="menu"
-      class="pongo-input-wrapper ___a5mgx60 f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh fc467gg f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo fmw406p f12c27rx f17thq47 f12kdog7 f5qrn4q f1kndqco f1kc1xys f1d7l9b4 f16n8puj fkcy365 f5le7dr f170vdtw fg4eyww f1cngt4b f17x5ctf fbk6y72 f1uajmgh f11t0hz4 f2v3se5 f18saz9o f80sxui f19q3xa0 fzmdvw2 fbh30h8 f1k6fduh f1vw2ftv f13ta7ih"
+      class="pongo-input-wrapper ___cj3ly10 f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh fc467gg f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo fmw406p f12c27rx f17thq47 f12kdog7 f5qrn4q f1kndqco f1kc1xys f1d7l9b4 f16n8puj fkcy365 f5le7dr f170vdtw fg4eyww f1cngt4b f17x5ctf fbk6y72 f1uajmgh f11t0hz4 f2v3se5 f18saz9o f80sxui f19q3xa0 fzmdvw2 fbh30h8 f1k6fduh f1vw2ftv f13ta7ih"
       data-tabster="{\\"groupper\\":{\\"tabbability\\":2}}"
       id="menu7"
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
@@ -91,7 +91,7 @@ exports[`Select renders a basic Select with an option 1`] = `
   <div>
     <span
       aria-haspopup="menu"
-      class="pongo-input-wrapper ___a5mgx60 f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh fc467gg f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo fmw406p f12c27rx f17thq47 f12kdog7 f5qrn4q f1kndqco f1kc1xys f1d7l9b4 f16n8puj fkcy365 f5le7dr f170vdtw fg4eyww f1cngt4b f17x5ctf fbk6y72 f1uajmgh f11t0hz4 f2v3se5 f18saz9o f80sxui f19q3xa0 fzmdvw2 fbh30h8 f1k6fduh f1vw2ftv f13ta7ih"
+      class="pongo-input-wrapper ___cj3ly10 f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh fc467gg f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo fmw406p f12c27rx f17thq47 f12kdog7 f5qrn4q f1kndqco f1kc1xys f1d7l9b4 f16n8puj fkcy365 f5le7dr f170vdtw fg4eyww f1cngt4b f17x5ctf fbk6y72 f1uajmgh f11t0hz4 f2v3se5 f18saz9o f80sxui f19q3xa0 fzmdvw2 fbh30h8 f1k6fduh f1vw2ftv f13ta7ih"
       data-tabster="{\\"groupper\\":{\\"tabbability\\":2}}"
       id="menu8"
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
@@ -145,7 +145,7 @@ exports[`Select renders a basic Select with an option and Header 1`] = `
   <div>
     <span
       aria-haspopup="menu"
-      class="pongo-input-wrapper ___a5mgx60 f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh fc467gg f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo fmw406p f12c27rx f17thq47 f12kdog7 f5qrn4q f1kndqco f1kc1xys f1d7l9b4 f16n8puj fkcy365 f5le7dr f170vdtw fg4eyww f1cngt4b f17x5ctf fbk6y72 f1uajmgh f11t0hz4 f2v3se5 f18saz9o f80sxui f19q3xa0 fzmdvw2 fbh30h8 f1k6fduh f1vw2ftv f13ta7ih"
+      class="pongo-input-wrapper ___cj3ly10 f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh fc467gg f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo fmw406p f12c27rx f17thq47 f12kdog7 f5qrn4q f1kndqco f1kc1xys f1d7l9b4 f16n8puj fkcy365 f5le7dr f170vdtw fg4eyww f1cngt4b f17x5ctf fbk6y72 f1uajmgh f11t0hz4 f2v3se5 f18saz9o f80sxui f19q3xa0 fzmdvw2 fbh30h8 f1k6fduh f1vw2ftv f13ta7ih"
       data-tabster="{\\"groupper\\":{\\"tabbability\\":2}}"
       id="menu9"
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
@@ -199,7 +199,7 @@ exports[`Select renders a disabled Select and applies prop to native select elem
   <div>
     <span
       aria-haspopup="menu"
-      class="pongo-input-wrapper ___1f33bqy f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh favx1wl f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo flm3n1z f1pltsua f15x2d8x fhngjcl f5qrn4q f1kndqco f1kc1xys f1d7l9b4 fdrzuqr fgbidd3 f13ta7ih"
+      class="pongo-input-wrapper ___1uo3af2 f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh favx1wl f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo flm3n1z f1pltsua f15x2d8x fhngjcl f5qrn4q f1kndqco f1kc1xys f1d7l9b4 fdrzuqr fgbidd3 f13ta7ih"
       data-tabster="{\\"groupper\\":{\\"tabbability\\":2}}"
       id="menu11"
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
@@ -231,7 +231,7 @@ exports[`Select renders a label Select 1`] = `
   <div>
     <span
       aria-haspopup="menu"
-      class="pongo-input-wrapper ___a5mgx60 f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh fc467gg f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo fmw406p f12c27rx f17thq47 f12kdog7 f5qrn4q f1kndqco f1kc1xys f1d7l9b4 f16n8puj fkcy365 f5le7dr f170vdtw fg4eyww f1cngt4b f17x5ctf fbk6y72 f1uajmgh f11t0hz4 f2v3se5 f18saz9o f80sxui f19q3xa0 fzmdvw2 fbh30h8 f1k6fduh f1vw2ftv f13ta7ih"
+      class="pongo-input-wrapper ___cj3ly10 f10pi13n f1ewtqcl ftuwxu6 fv68sux fp6vxd fa4t5tb flvyvdh fc467gg f8qjfyk fk6fouc f4d9j23 f1lmfglv fibjyge f1abmfm4 f9yszdx f1nbblvp fifp7yv f1ov4xf1 f1asdtw4 f1ern45e f1n71otn f1h8hb77 f1deefiw f1rbvai9 f13ju9t4 f1lh17z1 f1dlw1sp f1arxnym fqzc6w8 fuzzvh5 fxf9f1y frdto5n ff0gctb f3zr33r f8g0ba1 f5uakvk frcipv9 f199l62q f1pa2qi2 fyqop9u f1ooiv2t f1bwkb58 fiio4mc f1m5ya7j fc8z0qo fmw406p f12c27rx f17thq47 f12kdog7 f5qrn4q f1kndqco f1kc1xys f1d7l9b4 f16n8puj fkcy365 f5le7dr f170vdtw fg4eyww f1cngt4b f17x5ctf fbk6y72 f1uajmgh f11t0hz4 f2v3se5 f18saz9o f80sxui f19q3xa0 fzmdvw2 fbh30h8 f1k6fduh f1vw2ftv f13ta7ih"
       data-tabster="{\\"groupper\\":{\\"tabbability\\":2}}"
       id="menu13"
       style="--pongo-input-line-height: 45px; --pongo-input-width: 200px;"
