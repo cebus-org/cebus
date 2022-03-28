@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Adding fixed position prop value and apperances.",
+  "packageName": "@pongo-ui/react-toolbar",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "patch"
+}
