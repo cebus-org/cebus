@@ -1,4 +1,4 @@
-import { themeGenerator } from '@pongo-ui/react-theme-generator';
+import { themeGenerator } from '@cebus/react-theme-generator';
 import type { ColorTokens } from '../../types';
 
 export const webDarkTokens: ColorTokens = themeGenerator({

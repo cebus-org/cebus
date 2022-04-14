@@ -1,6 +1,6 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { InputState } from './Input.types';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 import { inputLineHeight, inputWidth } from '../InputWrapper';
 
 const useInputElementStyles = makeStyles({

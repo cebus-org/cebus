@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useControllableState, useEventCallback } from '@fluentui/react-utilities';
-import { CheckmarkIcon } from '@pongo-ui/react-icon';
+import { CheckmarkIcon } from '@cebus/react-icon';
 import type { CheckboxState } from './Checkbox.types';
 
 export const useCheckboxState = (state: CheckboxState) => {

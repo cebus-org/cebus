@@ -1,9 +1,9 @@
 import { mergeClasses, makeStyles, shorthands } from '@griffel/react';
 import type { MenuItemState } from '@fluentui/react-menu';
 import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
-export const menuFocusRectColor = `--pongo-menu-item-focus-color`;
+export const menuFocusRectColor = `--cebus-menu-item-focus-color`;
 
 const useStyles = makeStyles({
   root: {

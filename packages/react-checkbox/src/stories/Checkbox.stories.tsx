@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Label } from '@pongo-ui/react-label';
+import { Label } from '@cebus/react-label';
 import { Checkbox } from '../index';
-import { Stack } from '@pongo-ui/react-layout';
+import { Stack } from '@cebus/react-layout';
 
 export const BasicCheckboxExample = () => {
   return (

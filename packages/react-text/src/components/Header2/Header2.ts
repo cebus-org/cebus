@@ -1,5 +1,5 @@
 import { createText } from '../../utils/index';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 import { makeStyles } from '@griffel/react';
 import type { FunctionComponent } from 'react';
 import type { TextProps } from '../Text';

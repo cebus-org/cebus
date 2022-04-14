@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Provider } from '../index';
-import { webLightTheme } from '@pongo-ui/react-theme';
+import { webLightTheme } from '@cebus/react-theme';
 
 export const BasicProviderExample = () => {
   return <Provider theme={webLightTheme} />;

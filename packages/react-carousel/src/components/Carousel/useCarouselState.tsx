@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Radio } from '@pongo-ui/react-radio';
-import { ForwardArrowIcon, BackArrowIcon } from '@pongo-ui/react-icon';
+import { Radio } from '@cebus/react-radio';
+import { ForwardArrowIcon, BackArrowIcon } from '@cebus/react-icon';
 import { useControllableState, useEventCallback } from '@fluentui/react-utilities';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 import type { CarouselState, CarouselChange } from './Carousel.types';
-import type { RadioGroupProps } from '@pongo-ui/react-radio';
+import type { RadioGroupProps } from '@cebus/react-radio';
 
 const imageStyles: React.CSSProperties = {
   position: 'relative',

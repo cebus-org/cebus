@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { makeDecorator } from '@storybook/addons';
-import { Provider } from '@pongo-ui/react-provider';
-import { tokens } from '@pongo-ui/react-theme';
+import { Provider } from '@cebus/react-provider';
+import { tokens } from '@cebus/react-theme';
 import { useTheme, useDirection } from '../knobs/index';
 
 const canvasColorStyles = { background: tokens.canvasColor };

@@ -1,14 +1,14 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { InputWrapperState } from './InputWrapper.types';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
-export const inputRootClassName = 'pongo-input-wrapper';
-export const inputLabelClassName = 'pongo-input-label';
-export const inputLegendClassName = 'pongo-input-legend';
+export const inputRootClassName = 'cebus-input-wrapper';
+export const inputLabelClassName = 'cebus-input-label';
+export const inputLegendClassName = 'cebus-input-legend';
 
-export const inputLineHeight = '--pongo-input-line-height';
-export const inputWidth = '--pongo-input-width';
-const labelFocusedSize = '--pongo-focused-label-font-size';
+export const inputLineHeight = '--cebus-input-line-height';
+export const inputWidth = '--cebus-input-width';
+const labelFocusedSize = '--cebus-focused-label-font-size';
 
 // These variables represent the size of each line of text.
 const inputLineHeightSmall = '35px';

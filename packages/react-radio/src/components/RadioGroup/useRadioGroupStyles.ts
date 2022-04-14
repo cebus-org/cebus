@@ -1,6 +1,6 @@
 import { mergeClasses, makeStyles, shorthands } from '@griffel/react';
 import type { RadioGroupState } from './RadioGroup.types';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
 const useStyles = makeStyles({
   root: {

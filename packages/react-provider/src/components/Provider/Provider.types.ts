@@ -1,5 +1,5 @@
 import type { FluentProviderProps, FluentProviderState, FluentProviderSlots } from '@fluentui/react-provider';
-import { Theme } from '@pongo-ui/react-theme';
+import { Theme } from '@cebus/react-theme';
 
 export type ProviderSlots = FluentProviderSlots;
 

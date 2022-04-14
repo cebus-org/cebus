@@ -1,6 +1,6 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { TextareaState } from './Textarea.types';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 import { inputLineHeight, inputWidth } from '../InputWrapper';
 
 const useTextAreaStyles = makeStyles({

@@ -1,6 +1,6 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { SelectState } from './Select.types';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 import { inputLineHeight } from '../InputWrapper';
 
 const useSelectElementStyles = makeStyles({

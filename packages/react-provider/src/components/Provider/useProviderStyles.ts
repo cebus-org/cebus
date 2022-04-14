@@ -1,5 +1,5 @@
 import { makeStyles, mergeClasses } from '@griffel/react';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 import type { ProviderState } from './Provider.types';
 
 // Apps that are wrapped in the provider will all have these default styles applied.

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Stack, Container } from '../index';
 import { makeStyles, shorthands } from '@griffel/react';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
 const useStyles = makeStyles({
   box: {

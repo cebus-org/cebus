@@ -1,7 +1,7 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import type { ToolbarButtonState } from './ToolbarButton.types';
 import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
 const useRootStyles = makeStyles({
   root: {

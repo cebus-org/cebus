@@ -1,6 +1,6 @@
 import { makeStyles, mergeClasses } from '@griffel/react';
 import type { TableHeaderState } from './TableHeader.types';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
 const useRootStyles = makeStyles({
   root: {
