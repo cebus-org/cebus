@@ -46,7 +46,7 @@ const useRootStyles = makeStyles({
     },
   },
 
-  focusIndicator: createCustomFocusIndicatorStyle(
+  focusIndicator: (createCustomFocusIndicatorStyle as any)(
     {
       ':after': {
         content: "''",

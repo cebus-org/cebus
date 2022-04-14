@@ -4,7 +4,7 @@ import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 import { tokens } from '@cebus/react-theme';
 
 const useRootStyles = makeStyles({
-  focusIndicator: createCustomFocusIndicatorStyle({
+  focusIndicator: (createCustomFocusIndicatorStyle as any)({
     textDecorationLine: 'underline',
     textDecorationStyle: 'double',
   }),

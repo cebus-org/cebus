@@ -25,7 +25,7 @@ const useRootStyles = makeStyles({
     verticalAlign: 'bottom',
   },
 
-  focusIndicator: createCustomFocusIndicatorStyle(
+  focusIndicator: (createCustomFocusIndicatorStyle as any)(
     {
       ':after': {
         content: "''",

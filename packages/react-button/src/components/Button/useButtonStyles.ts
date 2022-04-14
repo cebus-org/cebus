@@ -25,7 +25,7 @@ const useRootStyles = makeStyles({
     outlineStyle: 'none',
   },
 
-  focusIndicator: createCustomFocusIndicatorStyle(
+  focusIndicator: (createCustomFocusIndicatorStyle as any)(
     {
       ':after': {
         content: "''",

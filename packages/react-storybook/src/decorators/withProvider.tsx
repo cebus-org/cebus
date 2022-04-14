@@ -6,7 +6,7 @@ import { useTheme, useDirection } from '../knobs/index';
 
 const canvasColorStyles = { background: tokens.canvasColor };
 
-const ProviderWrapper: React.FunctionComponent = props => {
+const ProviderWrapper: any = (props: any) => {
   const { theme } = useTheme();
   const { dir } = useDirection();
 

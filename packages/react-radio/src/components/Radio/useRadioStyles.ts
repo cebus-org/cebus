@@ -23,7 +23,7 @@ const useRootStyles = makeStyles({
     rowGap: tokens.focusedLayout,
   },
 
-  focusIndicator: createCustomFocusIndicatorStyle(
+  focusIndicator: (createCustomFocusIndicatorStyle as any)(
     {
       ':after': {
         content: "''",

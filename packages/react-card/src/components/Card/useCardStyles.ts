@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     ...shorthands.borderStyle('none'),
   },
 
-  focusIndicator: createCustomFocusIndicatorStyle(
+  focusIndicator: (createCustomFocusIndicatorStyle as any)(
     {
       ':after': {
         content: "''",
