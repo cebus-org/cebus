@@ -1,4 +1,4 @@
-import { Link } from '@pongo-ui/react-link';
+import { Link } from '@cebus/react-link';
 
 console.log(Link);
 

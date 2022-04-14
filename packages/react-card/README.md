@@ -4,27 +4,27 @@ The Card component displays content and presents actions to the user.
 
 ## Use
 
-1. Install the @pongo-ui/react-card component.
+1. Install the @cebus/react-card component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-card
+npm install @cebus/react-card
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-card
+yarn add @cebus/react-card
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Card component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Card } from '@pongo-ui/react-card'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Card } from '@cebus/react-card'
 
 const MyApp = () => {
   return (

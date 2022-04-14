@@ -4,27 +4,27 @@ The Switch allows users to toggle a value between an on and off state.
 
 ## Use
 
-1. Install the @pongo-ui/react-switch component.
+1. Install the @cebus/react-switch component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-switch
+npm install @cebus/react-switch
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-switch
+yarn add @cebus/react-switch
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Switch component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Switch } from '@pongo-ui/react-switch'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Switch } from '@cebus/react-switch'
 
 const MyApp = () => {
   return (

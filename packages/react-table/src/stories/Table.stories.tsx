@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Table, TableHeader, TableRow, TableCell, TableFooter, TableBody } from '../index';
-import { Card } from '@pongo-ui/react-card';
+import { Card } from '@cebus/react-card';
 
 export const BasicTableExample = () => {
   return (

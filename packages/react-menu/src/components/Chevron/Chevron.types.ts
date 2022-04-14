@@ -1,5 +1,5 @@
 import type { ComponentProps, ComponentState } from '@fluentui/react-utilities';
-import { IconCommons, IconSlots } from '@pongo-ui/react-icon';
+import { IconCommons, IconSlots } from '@cebus/react-icon';
 
 export type ChevronSlots = IconSlots;
 

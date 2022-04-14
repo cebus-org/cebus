@@ -1,4 +1,4 @@
-import { Tab } from '@pongo-ui/react-tabs';
+import { Tab } from '@cebus/react-tabs';
 
 console.log(Tab);
 

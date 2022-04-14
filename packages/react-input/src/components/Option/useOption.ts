@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { getNativeElementProps } from '@fluentui/react-utilities';
 import type { OptionProps, OptionState } from './Option.types';
-import { MenuItemRadio } from '@pongo-ui/react-menu';
+import { MenuItemRadio } from '@cebus/react-menu';
 
 export const useOption = (props: OptionProps, ref: React.Ref<HTMLElement>): OptionState => {
   const { value, secondaryContent, icon, checkmark, disabled } = props;

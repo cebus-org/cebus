@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Chevron, Menu, MenuTrigger, MenuList, MenuPopover, MenuItem, MenuItemRadio, MenuItemCheckbox } from '../index';
 import type { MenuProps } from '../index';
-import { Button } from '@pongo-ui/react-button';
+import { Button } from '@cebus/react-button';
 
 export const BasicMenuExample = () => {
   const [open, setOpen] = React.useState(false);

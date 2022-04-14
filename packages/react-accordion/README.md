@@ -4,27 +4,27 @@ The Accordion component is used to show and hide nested information.
 
 ## Use
 
-1. Install the @pongo-ui/react-accordion component.
+1. Install the @cebus/react-accordion component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-accordion
+npm install @cebus/react-accordion
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-accordion
+yarn add @cebus/react-accordion
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Accordion component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Accordion, ... } from '@pongo-ui/react-accordion'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Accordion, ... } from '@cebus/react-accordion'
 
 const MyApp = () => {
   return (

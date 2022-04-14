@@ -1,4 +1,4 @@
-import { Checkbox } from '@pongo-ui/react-checkbox';
+import { Checkbox } from '@cebus/react-checkbox';
 
 console.log(Checkbox);
 

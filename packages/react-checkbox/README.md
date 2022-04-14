@@ -1,28 +1,28 @@
 # Components
 
-This the entire suite package of Pongo components.
+This the entire suite package of Cebus components.
 
 ## Use
 
-1. Install the @pongo-ui/react-components package.
+1. Install the @cebus/react-components package.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-components
+npm install @cebus/react-components
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-components
+yarn add @cebus/react-components
 ```
 
 2. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-components'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-components'
 
 const MyApp = () => {
   return (
@@ -35,8 +35,8 @@ const MyApp = () => {
 4. Integrate your components.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme, Button } from '@pongo-ui/react-components'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme, Button } from '@cebus/react-components'
 
 const MyApp = () => {
   return (

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useChevron } from './useChevron';
-import { renderIcon, useIconStyles } from '@pongo-ui/react-icon';
+import { renderIcon, useIconStyles } from '@cebus/react-icon';
 import type { ChevronProps } from './Chevron.types';
 import type { ForwardRefComponent } from '@fluentui/react-utilities';
 

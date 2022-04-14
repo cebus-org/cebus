@@ -1,4 +1,4 @@
-import { Form } from '@pongo-ui/react-form';
+import { Form } from '@cebus/react-form';
 
 console.log(Form);
 

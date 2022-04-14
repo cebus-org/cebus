@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Textarea } from '../index';
-import { Stack } from '@pongo-ui/react-layout';
-import { DateTimeIcon } from '@pongo-ui/react-icon';
+import { Stack } from '@cebus/react-layout';
+import { DateTimeIcon } from '@cebus/react-icon';
 
 export const BasicTextareaExample = () => {
   return (

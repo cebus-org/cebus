@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Text, Body, Caption, Display, Header1, Header2, Header3, SubHeadline, Title } from '../index';
-import { Stack } from '@pongo-ui/react-layout';
+import { Stack } from '@cebus/react-layout';
 
 export const BasicTextExample = () => {
   return (

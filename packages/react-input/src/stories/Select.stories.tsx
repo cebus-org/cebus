@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Select, Option } from '../index';
-import { Stack } from '@pongo-ui/react-layout';
-import { DateTimeIcon } from '@pongo-ui/react-icon';
+import { Stack } from '@cebus/react-layout';
+import { DateTimeIcon } from '@cebus/react-icon';
 import type { SelectProps } from '../index';
 
 export const BasicSelectExample = () => {

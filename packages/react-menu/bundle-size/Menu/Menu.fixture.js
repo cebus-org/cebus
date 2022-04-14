@@ -1,4 +1,4 @@
-import { Menu } from '@pongo-ui/react-menu';
+import { Menu } from '@cebus/react-menu';
 
 console.log(Menu);
 

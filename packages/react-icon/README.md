@@ -4,27 +4,27 @@ Icons help provide user's clarity on an action. They are especially helpful in B
 
 ## Use
 
-1. Install the @pongo-ui/react-icon component.
+1. Install the @cebus/react-icon component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-icon
+npm install @cebus/react-icon
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-icon
+yarn add @cebus/react-icon
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate a Icon component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Icon } from '@pongo-ui/react-icon'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Icon } from '@cebus/react-icon'
 
 const MyApp = () => {
   return (

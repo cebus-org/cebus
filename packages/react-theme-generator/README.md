@@ -4,18 +4,18 @@ The theme generator package is a tool used to easily and quickly create themes.
 
 ## Use
 
-1. Install the @pongo-ui/react-theme-generator package.
+1. Install the @cebus/react-theme-generator package.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-theme-generator
+npm install @cebus/react-theme-generator
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-theme-generator
+yarn add @cebus/react-theme-generator
 ```
 
 2. Set up the themeGenerator in your app:
@@ -37,9 +37,9 @@ const hcTheme = themeGenerator({
 4. Integrate your theme in your provider and components
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Button } from '@pongo-ui/react-button'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Button } from '@cebus/react-button'
 
 const hcTheme = themeGenerator({
   canvasColor: '#000000',

@@ -2458,47 +2458,6 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
-"@pongo-ui/react-icon@^0.1.13":
-  version "0.1.13"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-icon/-/react-icon-0.1.13.tgz#d8c71f6372c960f3c4e915e5bdc24a686c9657be"
-  integrity sha512-tjsyVBrLxirGXQZ2f8lu9CUYkHw12XDoVWTqgxqfNvUvMl8wW17jJFV9FUEIh1SzxtQ6Bp+yfBHRJBqA3tEfJg==
-  dependencies:
-    "@fluentui/react-tabster" "^9.0.0-rc.5"
-    "@fluentui/react-utilities" "^9.0.0-rc.5"
-    "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.13"
-
-"@pongo-ui/react-layout@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-layout/-/react-layout-0.0.4.tgz#661fc76b952826bdb5ee7cf98f3b3adf14e489a0"
-  integrity sha512-pv4Sz+2VMVZ+G1kzOwDNPv4dokZWIkFD4nj3zhcJpu+PIJVHLBWpa5MsdVIZ+4jy9DH6d+3VEIFj/pOh+BUjEw==
-  dependencies:
-    "@fluentui/react-utilities" "^9.0.0-rc.5"
-    "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.13"
-
-"@pongo-ui/react-provider@^0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-provider/-/react-provider-0.0.5.tgz#3b40c13859e7bd8ee88e836d2ecf46e6107c604b"
-  integrity sha512-Vyo102wbePRTj2kHp1LJAkpGlKdtCVOmMWMS5jlW1Y3tfagUdWZbc3VAyI36Re0VabOPduRA371EKUhHYXn85w==
-  dependencies:
-    "@fluentui/react-provider" "^9.0.0-rc.5"
-    "@fluentui/react-utilities" "^9.0.0-rc.5"
-    "@griffel/react" "^1.0.0"
-    "@pongo-ui/react-theme" "^0.0.13"
-
-"@pongo-ui/react-theme-generator@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-theme-generator/-/react-theme-generator-0.1.2.tgz#d7320ef75f181d1e9089c20f3d86095c13898e59"
-  integrity sha512-dfyG48CWLTvaDWuwBNNFxtrqicsTHFixjoqkFGwdPy9Z+AipfPJq0RuqGmCO7LFrO4myBjv6C5gnrERxGa4DhA==
-
-"@pongo-ui/react-theme@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@pongo-ui/react-theme/-/react-theme-0.0.13.tgz#f2d492e29de59101cd3bdcdc5a6021b3938c385b"
-  integrity sha512-qkOI0soody/LkVblYG/nkGTs9D96T0Ji72dyu7nIkroTsFVNDXdusXqiu+in7D/lscQlwEBqrOUYVAUe7QANWw==
-  dependencies:
-    "@pongo-ui/react-theme-generator" "^0.1.2"
-
 "@popperjs/core@^2.5.4", "@popperjs/core@^2.6.0":
   version "2.11.5"
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"

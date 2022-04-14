@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { resolveShorthand, getNativeElementProps, useId } from '@fluentui/react-utilities';
-import { Label } from '@pongo-ui/react-label';
-import { Body } from '@pongo-ui/react-text';
+import { Label } from '@cebus/react-label';
+import { Body } from '@cebus/react-text';
 import type { FormControlProps, FormControlState } from './FormControl.types';
 
 export const useFormControl = (props: FormControlProps, ref: React.Ref<HTMLElement>): FormControlState => {
@@ -51,7 +51,7 @@ export const useFormControl = (props: FormControlProps, ref: React.Ref<HTMLEleme
 
   const { id } = state.root;
 
-  const helperTextId = helperText ? useId('pongo-helper-text-', id) : undefined;
+  const helperTextId = helperText ? useId('cebus-helper-text-', id) : undefined;
 
   if (state.helperTextComponent && state.helperText) {
     state.helperTextComponent.children = state.helperText;

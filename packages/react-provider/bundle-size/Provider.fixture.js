@@ -1,4 +1,4 @@
-import { Provider } from '@pongo-ui/react-provider';
+import { Provider } from '@cebus/react-provider';
 
 console.log(Provider);
 

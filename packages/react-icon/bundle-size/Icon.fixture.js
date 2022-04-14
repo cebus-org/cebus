@@ -1,4 +1,4 @@
-import { Icon } from '@pongo-ui/react-icon';
+import { Icon } from '@cebus/react-icon';
 
 console.log(Icon);
 

@@ -1,5 +1,5 @@
 import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utilities';
-import type { RadioGroup } from '@pongo-ui/react-radio';
+import type { RadioGroup } from '@cebus/react-radio';
 import React from 'react';
 
 export type CarouselImage = React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>;

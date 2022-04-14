@@ -4,27 +4,27 @@ The Provider control is what applies theme tokens to the web page.
 
 ## Use
 
-1. Install the @pongo-ui/react-provider component.
+1. Install the @cebus/react-provider component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-provider
+npm install @cebus/react-provider
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-provider
+yarn add @cebus/react-provider
 ```
 
-2. Install a component @pongo-ui/react-button and our theme tokens from @pongo-ui/react-theme.
+2. Install a component @cebus/react-button and our theme tokens from @cebus/react-theme.
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Button component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Button } from '@pongo-ui/react-button'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Button } from '@cebus/react-button'
 
 const MyApp = () => {
   return (

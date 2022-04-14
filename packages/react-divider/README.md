@@ -4,27 +4,27 @@ The Divider helps separate content in a site.
 
 ## Use
 
-1. Install the @pongo-ui/react-divider component.
+1. Install the @cebus/react-divider component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-divider
+npm install @cebus/react-divider
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-divider
+yarn add @cebus/react-divider
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Button component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Divider } from '@pongo-ui/react-divider'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Divider } from '@cebus/react-divider'
 
 const MyApp = () => {
   return (

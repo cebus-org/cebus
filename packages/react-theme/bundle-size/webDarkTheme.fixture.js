@@ -1,4 +1,4 @@
-import { webDarkTheme } from '@pongo-ui/react-theme';
+import { webDarkTheme } from '@cebus/react-theme';
 
 console.log(webDarkTheme);
 

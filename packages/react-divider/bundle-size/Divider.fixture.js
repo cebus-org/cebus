@@ -1,4 +1,4 @@
-import { Divider } from '@pongo-ui/react-divider';
+import { Divider } from '@cebus/react-divider';
 
 console.log(Divider);
 

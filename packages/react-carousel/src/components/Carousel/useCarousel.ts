@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { getNativeElementProps, resolveShorthand } from '@fluentui/react-utilities';
 import { useCarouselState } from './useCarouselState';
-import { RadioGroup } from '@pongo-ui/react-radio';
+import { RadioGroup } from '@cebus/react-radio';
 import type { CarouselProps, CarouselState } from './Carousel.types';
 
 export const useCarousel = (props: CarouselProps, ref: React.Ref<HTMLElement>): CarouselState => {

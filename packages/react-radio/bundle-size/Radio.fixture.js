@@ -1,4 +1,4 @@
-import { Radio } from '@pongo-ui/react-radio';
+import { Radio } from '@cebus/react-radio';
 
 console.log(Radio);
 
