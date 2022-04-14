@@ -3,7 +3,7 @@ import { Provider } from './Provider';
 import { ProviderProps } from './Provider.types';
 import { isConformant } from '../../common/isConformant';
 import { render } from '@testing-library/react';
-import { webLightTheme } from '@pongo-ui/react-theme';
+import { webLightTheme } from '@cebus/react-theme';
 
 describe('Provider', () => {
   isConformant({

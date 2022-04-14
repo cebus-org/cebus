@@ -1,6 +1,6 @@
 {
-  "name": "@pongo-ui/react-carousel",
-  "version": "0.0.4",
+  "name": "@cebus/react-carousel",
+  "version": "0.0.0",
   "description": "An carousel component used to display a collection of images.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -8,7 +8,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/PongoAI/pongo-ui"
+    "url": "https://github.com/cebus-org/cebus"
   },
   "license": "MIT",
   "scripts": {
@@ -25,9 +25,9 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.13",
-    "@pongo-ui/react-radio": "^0.0.10",
-    "@pongo-ui/react-icon": "^0.1.13"
+    "@cebus/react-theme": "^0.0.0",
+    "@cebus/react-radio": "^0.0.0",
+    "@cebus/react-icon": "^0.0.0"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

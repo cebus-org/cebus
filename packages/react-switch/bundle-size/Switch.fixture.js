@@ -1,4 +1,4 @@
-import { Switch } from '@pongo-ui/react-switch';
+import { Switch } from '@cebus/react-switch';
 
 console.log(Switch);
 

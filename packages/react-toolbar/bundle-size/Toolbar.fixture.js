@@ -1,4 +1,4 @@
-import { Toolbar } from '@pongo-ui/react-toolbar';
+import { Toolbar } from '@cebus/react-toolbar';
 
 console.log(Toolbar);
 

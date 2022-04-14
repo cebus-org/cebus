@@ -1,6 +1,6 @@
 {
-  "name": "@pongo-ui/react-switch",
-  "version": "0.0.11",
+  "name": "@cebus/react-switch",
+  "version": "0.0.0",
   "description": "The Switch allows users to toggle a value between an on and off state.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -8,7 +8,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/PongoAI/pongo-ui"
+    "url": "https://github.com/cebus-org/cebus"
   },
   "license": "MIT",
   "scripts": {
@@ -25,10 +25,10 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.13"
+    "@cebus/react-theme": "^0.0.0"
   },
   "devDependencies": {
-    "@pongo-ui/react-layout": "^0.0.4"
+    "@cebus/react-layout": "^0.0.0"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

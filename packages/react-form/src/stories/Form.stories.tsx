@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Form, FormControl } from '../index';
-import { Input, Textarea } from '@pongo-ui/react-input';
-import { Checkbox } from '@pongo-ui/react-checkbox';
-import { Button } from '@pongo-ui/react-button';
-import { Switch } from '@pongo-ui/react-switch';
+import { Input, Textarea } from '@cebus/react-input';
+import { Checkbox } from '@cebus/react-checkbox';
+import { Button } from '@cebus/react-button';
+import { Switch } from '@cebus/react-switch';
 
 export const BasicFormExample = () => {
   return (

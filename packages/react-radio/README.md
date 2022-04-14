@@ -4,27 +4,27 @@ The RadioButton component allows a user to select a single option from a set.
 
 ## Use
 
-1. Install the @pongo-ui/react-radio component.
+1. Install the @cebus/react-radio component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-radio
+npm install @cebus/react-radio
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-radio
+yarn add @cebus/react-radio
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Radio component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { RadioRadioGroupList, Radio } from '@pongo-ui/react-radio'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { RadioRadioGroupList, Radio } from '@cebus/react-radio'
 
 const MyApp = () => {
   return (

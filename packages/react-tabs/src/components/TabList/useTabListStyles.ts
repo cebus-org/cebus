@@ -1,7 +1,7 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { TabListState } from './TabList.types';
 import { indicatorLengthVar, indicatorOffsetVar } from '@fluentui/react-tabs';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
 const useRootStyles = makeStyles({
   root: {

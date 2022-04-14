@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Rename",
+  "packageName": "@cebus/react-accordion",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "patch"
+}

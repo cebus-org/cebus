@@ -1,6 +1,6 @@
 {
-  "name": "@pongo-ui/react-link",
-  "version": "0.1.14",
+  "name": "@cebus/react-link",
+  "version": "0.0.0",
   "description": "A customizable link that helps with site navigation.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -8,7 +8,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/PongoAI/pongo-ui"
+    "url": "https://github.com/cebus-org/cebus"
   },
   "license": "MIT",
   "scripts": {
@@ -26,10 +26,10 @@
     "@griffel/react": "^1.0.0",
     "@fluentui/react-link": "^9.0.0-rc.5",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.13"
+    "@cebus/react-theme": "^0.0.0"
   },
   "devDependencies": {
-    "@pongo-ui/react-layout": "^0.0.4"
+    "@cebus/react-layout": "^0.0.0"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

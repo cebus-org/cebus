@@ -1,5 +1,5 @@
 import { mergeClasses, makeStyles } from '@griffel/react';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 import type { MenuPopoverState } from '@fluentui/react-menu';
 
 const useStyles = makeStyles({

@@ -1,7 +1,7 @@
 import { makeStyles, mergeClasses } from '@griffel/react';
 import { IconState } from './Icon.types';
 
-export const fillCSSVariable = `--pongo-icon-fill`;
+export const fillCSSVariable = `--cebus-icon-fill`;
 
 const useRootStyles = makeStyles({
   root: {

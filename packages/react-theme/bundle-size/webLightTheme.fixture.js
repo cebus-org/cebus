@@ -1,4 +1,4 @@
-import { webLightTheme } from '@pongo-ui/react-theme';
+import { webLightTheme } from '@cebus/react-theme';
 
 console.log(webLightTheme);
 

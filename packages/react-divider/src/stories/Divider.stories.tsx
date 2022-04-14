@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Header3 } from '@pongo-ui/react-text';
+import { Header3 } from '@cebus/react-text';
 import { Divider } from '../index';
-import { Stack } from '@pongo-ui/react-layout';
+import { Stack } from '@cebus/react-layout';
 
 export const BasicDividerExample = () => {
   return (

@@ -1,4 +1,4 @@
-import { Dialog } from '@pongo-ui/react-dialog';
+import { Dialog } from '@cebus/react-dialog';
 
 console.log(Dialog);
 

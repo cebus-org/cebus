@@ -1,10 +1,10 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { LinkState } from '@fluentui/react-link';
 import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
 const useRootStyles = makeStyles({
-  focusIndicator: createCustomFocusIndicatorStyle({
+  focusIndicator: (createCustomFocusIndicatorStyle as any)({
     textDecorationLine: 'underline',
     textDecorationStyle: 'double',
   }),

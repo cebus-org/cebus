@@ -1,7 +1,7 @@
 {
-  "name": "@pongo-ui/eslint-plugin",
-  "version": "0.0.2",
-  "description": "Eslint configuration for the pongo-ui package.",
+  "name": "@cebus/eslint-plugin",
+  "version": "0.0.0",
+  "description": "Eslint configuration for the cebus package.",
   "main": "src/index.js",
   "exports": {
     ".": {
@@ -14,7 +14,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/PongoAI/pongo-ui"
+    "url": "https://github.com/cebus-org/cebus"
   },
   "license": "MIT",
   "scripts": {

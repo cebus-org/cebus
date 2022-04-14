@@ -1,4 +1,4 @@
-import type { ColorSet } from '@pongo-ui/react-theme-generator';
+import type { ColorSet } from '@cebus/react-theme-generator';
 
 export type Theme = ColorTokens & Fonts & MotionTokens & BorderRadiusTokens & LayoutTokens;
 

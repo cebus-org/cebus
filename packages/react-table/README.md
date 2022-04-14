@@ -4,27 +4,27 @@ The Table component displays sets of data.
 
 ## Use
 
-1. Install the @pongo-ui/react-table component.
+1. Install the @cebus/react-table component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-table
+npm install @cebus/react-table
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-table
+yarn add @cebus/react-table
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Table component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Table, ... } from '@pongo-ui/react-table'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Table, ... } from '@cebus/react-table'
 
 const MyApp = () => {
   return (

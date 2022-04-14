@@ -1,13 +1,13 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 import type { CheckboxState } from './Checkbox.types';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
-const indicatorClassName = 'pongo-Checkbox-indicator';
+const indicatorClassName = 'cebus-Checkbox-indicator';
 
-const checkboxBackground = `--pongo-checkbox-background-color`;
-const checkboxHover = `--pongo-checkbox-hover-color`;
-const checkboxPressed = `--pongo-checkbox-pressed-color`;
+const checkboxBackground = `--cebus-checkbox-background-color`;
+const checkboxHover = `--cebus-checkbox-hover-color`;
+const checkboxPressed = `--cebus-checkbox-pressed-color`;
 
 const useRootStyles = makeStyles({
   root: {
@@ -25,10 +25,10 @@ const useRootStyles = makeStyles({
     [`& .${indicatorClassName}`]: {
       backgroundColor: `var(${checkboxBackground})`,
     },
-    ':hover .pongo-Checkbox-indicator': {
+    ':hover .cebus-Checkbox-indicator': {
       backgroundColor: `var(${checkboxHover})`,
     },
-    ':active .pongo-Checkbox-indicator': {
+    ':active .cebus-Checkbox-indicator': {
       backgroundColor: `var(${checkboxPressed})`,
     },
   },
@@ -37,16 +37,16 @@ const useRootStyles = makeStyles({
     [`& .${indicatorClassName}`]: {
       ...shorthands.border('2px', 'solid', `var(${checkboxBackground})`),
     },
-    ':hover .pongo-Checkbox-indicator': {
+    ':hover .cebus-Checkbox-indicator': {
       ...shorthands.borderColor(`var(${checkboxHover})`),
     },
 
-    ':active .pongo-Checkbox-indicator': {
+    ':active .cebus-Checkbox-indicator': {
       ...shorthands.borderColor(`var(${checkboxPressed})`),
     },
   },
 
-  focusIndicator: createCustomFocusIndicatorStyle(
+  focusIndicator: (createCustomFocusIndicatorStyle as any)(
     {
       ':after': {
         content: "''",

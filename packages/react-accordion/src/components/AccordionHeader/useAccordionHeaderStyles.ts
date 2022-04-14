@@ -1,5 +1,5 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 import type { AccordionHeaderState } from './AccordionHeader.types';
 
 const useStyles = makeStyles({

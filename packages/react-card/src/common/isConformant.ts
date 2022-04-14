@@ -7,12 +7,13 @@ export function isConformant<TProps = {}>(
 ) {
   const defaultOptions: Partial<IsConformantOptions<TProps>> = {
     asPropHandlesRef: true,
-    componentPath: module!.parent!.filename.replace('.test', ''),
+    componentPath: require!.main!.filename.replace('.test', ''),
     disabledTests: [
       'has-docblock',
       'kebab-aria-attributes',
       'component-has-static-classname',
       'component-has-static-classname-exported',
+      'make-styles-overrides-win',
     ],
     extraTests: griffelTests as TestObject<TProps>,
     skipAsPropTests: true,

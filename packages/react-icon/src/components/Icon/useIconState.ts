@@ -1,6 +1,6 @@
 import type { IconState } from './Icon.types';
 import { fillCSSVariable } from './useIconStyles';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
 export const useIconState = (state: IconState): IconState => {
   const { color, disabled, viewBox } = state;

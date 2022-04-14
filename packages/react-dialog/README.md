@@ -4,27 +4,27 @@ The Dialog component presents a surface that users can either complete tasks or 
 
 ## Use
 
-1. Install the @pongo-ui/react-dialog component.
+1. Install the @cebus/react-dialog component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-dialog
+npm install @cebus/react-dialog
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-dialog
+yarn add @cebus/react-dialog
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Dialog component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { web1ghtTheme } from '@pongo-ui/react-theme'
-import { Dialog } from '@pongo-ui/react-dialog'
+import { Provider } from '@cebus/react-provider'
+import { web1ghtTheme } from '@cebus/react-theme'
+import { Dialog } from '@cebus/react-dialog'
 
 const MyApp = () => {
   return (

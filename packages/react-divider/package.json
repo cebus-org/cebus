@@ -1,6 +1,6 @@
 {
-  "name": "@pongo-ui/react-divider",
-  "version": "0.0.14",
+  "name": "@cebus/react-divider",
+  "version": "0.0.0",
   "description": "The divider helps separate content in a site.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -8,7 +8,7 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/PongoAI/pongo-ui"
+    "url": "https://github.com/cebus-org/cebus"
   },
   "license": "MIT",
   "scripts": {
@@ -25,12 +25,12 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@pongo-ui/react-theme": "^0.0.13",
+    "@cebus/react-theme": "^0.0.0",
     "@fluentui/react-divider": "^9.0.0-rc.5"
   },
   "devDependencies": {
-    "@pongo-ui/react-text": "^0.0.18",
-    "@pongo-ui/react-layout": "^0.0.4"
+    "@cebus/react-text": "^0.0.0",
+    "@cebus/react-layout": "^0.0.0"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

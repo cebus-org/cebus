@@ -1,4 +1,4 @@
-import { Accordion } from '@pongo-ui/react-accordion';
+import { Accordion } from '@cebus/react-accordion';
 
 console.log(Accordion);
 

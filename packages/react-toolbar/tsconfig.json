@@ -1,5 +1,5 @@
 {
-  "extends": "@pongo-ui/scripts/tsconfig.base.json",
+  "extends": "@cebus/scripts/tsconfig.base.json",
   "include": ["./src"],
   "compilerOptions": {
     "outDir": "lib"

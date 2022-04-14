@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Label } from '../index';
-import { Header2 } from '@pongo-ui/react-text';
+import { Header2 } from '@cebus/react-text';
 import { makeStyles, shorthands } from '@griffel/react';
 
 const useStyles = makeStyles({

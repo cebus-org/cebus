@@ -1,6 +1,6 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { TableCellState } from './TableCell.types';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
 const useRootStyles = makeStyles({
   root: {

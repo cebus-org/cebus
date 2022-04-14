@@ -4,27 +4,27 @@ The Menu related components allow you to display information over a given elemen
 
 ## Use
 
-1. Install the @pongo-ui/react-menu component.
+1. Install the @cebus/react-menu component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-menu
+npm install @cebus/react-menu
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-menu
+yarn add @cebus/react-menu
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Menu components.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Menu } from '@pongo-ui/react-menu'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Menu } from '@cebus/react-menu'
 
 const MyApp = () => {
   return (

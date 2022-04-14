@@ -1,4 +1,4 @@
-import { Text } from '@pongo-ui/react-text';
+import { Text } from '@cebus/react-text';
 
 console.log(Text);
 

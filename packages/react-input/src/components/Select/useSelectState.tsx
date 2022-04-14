@@ -1,8 +1,8 @@
 import * as React from 'react';
 import type { SelectState } from './Select.types';
 import { useControllableState, useMergedRefs, useId } from '@fluentui/react-utilities';
-import type { MenuProps } from '@pongo-ui/react-menu';
-import { Chevron } from '@pongo-ui/react-menu';
+import type { MenuProps } from '@cebus/react-menu';
+import { Chevron } from '@cebus/react-menu';
 
 export const useSelectState = (state: SelectState) => {
   const {

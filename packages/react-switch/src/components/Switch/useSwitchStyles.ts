@@ -1,12 +1,12 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { SwitchState } from './Switch.types';
 import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
-const rootClassName = 'pongo-Switch-root';
-const trackClassName = 'pongo-Switch-track';
-const thumbClassName = 'pongo-Switch-thumb';
-const inputClassName = 'pongo-Switch-input';
+const rootClassName = 'cebus-Switch-root';
+const trackClassName = 'cebus-Switch-track';
+const thumbClassName = 'cebus-Switch-thumb';
+const inputClassName = 'cebus-Switch-input';
 
 const useRootStyles = makeStyles({
   root: {
@@ -25,7 +25,7 @@ const useRootStyles = makeStyles({
     verticalAlign: 'bottom',
   },
 
-  focusIndicator: createCustomFocusIndicatorStyle(
+  focusIndicator: (createCustomFocusIndicatorStyle as any)(
     {
       ':after': {
         content: "''",

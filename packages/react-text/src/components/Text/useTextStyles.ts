@@ -1,8 +1,8 @@
 import { makeStyles, mergeClasses, shorthands } from '@griffel/react';
 import type { TextState } from './Text.types';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
-const textColor = `--pongo-text-color`;
+const textColor = `--cebus-text-color`;
 
 const useRootStyles = makeStyles({
   root: {

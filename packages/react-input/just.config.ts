@@ -1,3 +1,3 @@
-import { preset } from '@pongo-ui/scripts';
+import { preset } from '@cebus/scripts';
 
 preset();

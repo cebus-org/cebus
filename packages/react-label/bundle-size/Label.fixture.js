@@ -1,4 +1,4 @@
-import { Label } from '@pongo-ui/react-label';
+import { Label } from '@cebus/react-label';
 
 console.log(Label);
 

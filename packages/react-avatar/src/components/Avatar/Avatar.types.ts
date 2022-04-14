@@ -1,5 +1,5 @@
 import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utilities';
-import type { ColorTokens } from '@pongo-ui/react-theme';
+import type { ColorTokens } from '@cebus/react-theme';
 
 export type AvatarSlots = {
   /**

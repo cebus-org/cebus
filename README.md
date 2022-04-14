@@ -1,8 +1,8 @@
-<h1 align="center">pongo-ui</h1>
+<h1 align="center">Cebus UI</h1>
 
 <div align="center">
 
-Pongo UI is a simple collection of fast, clean, and accessible components ready to be used and customized on [React](https://reactjs.org/) based applications. Our components are built using utilities from [FluentUI](https://github.com/microsoft/fluentui) and work hand in hand.
+Cebus UI is a simple collection of fast, clean, and accessible components ready to be used and customized on [React](https://reactjs.org/) based applications. Our components are built using utilities from [FluentUI](https://github.com/microsoft/fluentui) and work hand in hand.
 
 [![Build Status](https://img.shields.io/azure-devops/build/czearing/pongoai-frontend/4/master?style=flat-square)](https://dev.azure.com/czearing/pongoai-frontend/_build/latest?definitionId=4&branchName=master)
 [![License](https://img.shields.io/badge/License-MIT-%232060cf?style=flat-square)](https://github.com/PongoAI/pongo-ui/blob/HEAD/LICENSE)
@@ -21,21 +21,21 @@ Pongo UI is a simple collection of fast, clean, and accessible components ready 
 Using NPM
 
 ```
-npm install @pongo-ui/react-button
+npm install @cebus/react-button
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-button
+yarn add @cebus/react-button
 ```
 
 ## Use
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider';
-import { webLightTheme } from '@pongo-ui/react-theme';
-import { Button } from '@pongo-ui/react-button';
+import { Provider } from '@cebus/react-provider';
+import { webLightTheme } from '@cebus/react-theme';
+import { Button } from '@cebus/react-button';
 
 const MyApp = () => {
   return (
@@ -50,15 +50,15 @@ With the FluentProvider.
 
 ```jsx
 import { FluentProvider } from '@fluentui/react-provider';
-import { webLightTheme as pongoWebLightTheme } from '@pongo-ui/react-theme';
+import { webLightTheme as cebusWebLightTheme } from '@cebus/react-theme';
 import { webLightTheme as fluentWebLightTheme } from '@fluentui/react-theme';
-import { Button as PongoButton } from '@pongo-ui/react-button';
+import { Button as CebusButton } from '@cebus/react-button';
 import { Button as FluentButton } from '@fluentui/react-button';
 
 const MyApp = () => {
   return (
-    <FluentProvider theme={{ ...pongoWebLightTheme, ...fluentWebLightTheme }}>
-      <PongoButton>Hello World</PongoButton>
+    <FluentProvider theme={{ ...cebusWebLightTheme, ...fluentWebLightTheme }}>
+      <CebusButton>Hello World</CebusButton>
       <FluentButton>Hello World</FluentButton>
     </FluentProvider>
   );

@@ -1,4 +1,4 @@
-import { Avatar } from '@pongo-ui/react-avatar';
+import { Avatar } from '@cebus/react-avatar';
 
 console.log(Avatar);
 

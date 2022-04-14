@@ -1,11 +1,11 @@
 {
-  "name": "pongo-ui",
+  "name": "cebus",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PongoAI/pongo-ui"
+    "url": "https://github.com/cebus-org/cebus"
   },
   "scripts": {
     "build": "nx run-many --target=build --all",
@@ -13,8 +13,8 @@
     "coverage": "nx run-many --target=coverage --all",
     "test": "nx run-many --target=test --all",
     "lint": "nx run-many --target=lint --all",
-    "change": "beachball change --scope \"!packages/pongo-ui/*\"",
-    "checkchange": "beachball check  --scope \"!packages/pongo-ui/*\" --changehint \"Run 'yarn change' to generate a change file\"",
+    "change": "beachball change",
+    "checkchange": "beachball check --changehint \"Run 'yarn change' to generate a change file\"",
     "publish:beachball": "beachball publish -b origin/master --access public -y",
     "format": "prettier --write ./",
     "check-format": "prettier --check ./",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "beachball": "^2.21.0",
-    "chromatic": "^6.5.1",
+    "chromatic": "^6.5.4",
     "prettier": "^2.4.1",
     "husky": "^7.0.0",
     "@nrwl/cli": "^13.8.2",
@@ -33,8 +33,8 @@
     "@nrwl/tao": "^13.8.2",
     "@nrwl/workspace": "^13.8.2",
     "@fluentui/bundle-size": "^1.1.4",
-    "@pongo-ui/scripts": "^0.0.1",
-    "@pongo-ui/eslint-plugin": "*",
+    "@cebus/scripts": "^0.0.0",
+    "@cebus/eslint-plugin": "*",
     "@fluentui/react-conformance": "^0.10.1",
     "webpack": "^5.70.0",
     "@fluentui/react-conformance-griffel": "^9.0.0-beta.3"

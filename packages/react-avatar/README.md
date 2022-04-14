@@ -4,27 +4,27 @@ The Avatar provides a recognizable icon for a user.
 
 ## Use
 
-1. Install the @pongo-ui/react-avatar component.
+1. Install the @cebus/react-avatar component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-avatar
+npm install @cebus/react-avatar
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-avatar
+yarn add @cebus/react-avatar
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Avatar component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Avatar } from '@pongo-ui/react-avatar'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Avatar } from '@cebus/react-avatar'
 
 const MyApp = () => {
   return (

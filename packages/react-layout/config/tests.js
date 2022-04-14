@@ -1,5 +1,5 @@
 /** Jest test setup file. */
 
-const { enzymeConfig } = require('@pongo-ui/scripts');
+const { enzymeConfig } = require('@cebus/scripts');
 
 enzymeConfig();

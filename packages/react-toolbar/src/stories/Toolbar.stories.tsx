@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { Toolbar, ToolbarButton } from '../index';
-import { Text } from '@pongo-ui/react-text';
-import { Avatar } from '@pongo-ui/react-avatar';
-import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem } from '@pongo-ui/react-menu';
-import { Stack } from '@pongo-ui/react-layout';
+import { Text } from '@cebus/react-text';
+import { Avatar } from '@cebus/react-avatar';
+import { Menu, MenuTrigger, MenuList, MenuPopover, MenuItem } from '@cebus/react-menu';
+import { Stack } from '@cebus/react-layout';
 
 export const BasicToolbarExample = () => {
   return (
     <Toolbar>
       <Text size={500} weight={'bold'}>
-        Pongo
+        Cebus
       </Text>
       <Stack grow />
       <Avatar name="Caleb Zearing" />
@@ -21,7 +21,7 @@ export const AppearanceToolbarExample = () => {
   return (
     <Toolbar appearance="subtle">
       <Text size={500} weight={'bold'}>
-        Pongo
+        Cebus
       </Text>
       <Stack grow />
       <ToolbarButton>Save</ToolbarButton>
@@ -38,7 +38,7 @@ export const ToolbarMenuExample = () => {
   return (
     <Toolbar>
       <Text size={500} weight={'bold'}>
-        Pongo
+        Cebus
       </Text>
       <Stack grow />
       <ToolbarButton>Save</ToolbarButton>

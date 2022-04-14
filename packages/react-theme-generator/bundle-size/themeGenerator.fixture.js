@@ -1,4 +1,4 @@
-import { themeGenerator } from '@pongo-ui/react-theme-generator';
+import { themeGenerator } from '@cebus/react-theme-generator';
 
 console.log(themeGenerator);
 

@@ -1,4 +1,4 @@
-import { Table } from '@pongo-ui/react-table';
+import { Table } from '@cebus/react-table';
 
 console.log(Table);
 

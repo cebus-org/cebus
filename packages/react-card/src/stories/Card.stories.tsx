@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { Card, CardRow, CardHeader, CardMedia } from '../index';
-import { Body, Header1 } from '@pongo-ui/react-text';
-import { Button } from '@pongo-ui/react-button';
+import { Body, Header1 } from '@cebus/react-text';
+import { Button } from '@cebus/react-button';
 import { makeStyles } from '@griffel/react';
-import { Stack } from '@pongo-ui/react-layout';
+import { Stack } from '@cebus/react-layout';
 
 const useStyles = makeStyles({
   card: {

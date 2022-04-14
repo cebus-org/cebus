@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Button } from '../index';
-import { Stack } from '@pongo-ui/react-layout';
-import { FilterIcon } from '@pongo-ui/react-icon';
+import { Stack } from '@cebus/react-layout';
+import { FilterIcon } from '@cebus/react-icon';
 
 export const BasicButtonExample = () => {
   return (

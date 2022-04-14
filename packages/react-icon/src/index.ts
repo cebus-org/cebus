@@ -1,3 +1,3 @@
 export * from './Icon';
-export * from './pongo-icons';
+export * from './cebus-icons';
 export * from './utils';

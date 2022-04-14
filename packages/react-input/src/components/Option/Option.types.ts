@@ -1,5 +1,5 @@
 import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utilities';
-import { MenuItem, MenuItemRadio } from '@pongo-ui/react-menu';
+import { MenuItem, MenuItemRadio } from '@cebus/react-menu';
 
 export type OptionSlots = {
   /**

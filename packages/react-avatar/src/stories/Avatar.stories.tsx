@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Avatar } from '../index';
-import { Stack } from '@pongo-ui/react-layout';
+import { Stack } from '@cebus/react-layout';
 
 export const BasicAvatarExample = () => {
   return (

@@ -1,6 +1,6 @@
 import type { ComponentProps, ComponentState, Slot } from '@fluentui/react-utilities';
-import { Label } from '@pongo-ui/react-label';
-import { Body } from '@pongo-ui/react-text';
+import { Label } from '@cebus/react-label';
+import { Body } from '@cebus/react-text';
 
 export type FormControlSlots = {
   /**

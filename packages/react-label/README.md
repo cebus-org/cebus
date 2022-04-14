@@ -4,27 +4,27 @@ The Label component provides a title to a form component.
 
 ## Use
 
-1. Install the @pongo-ui/react-label component.
+1. Install the @cebus/react-label component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-label
+npm install @cebus/react-label
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-label
+yarn add @cebus/react-label
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Label component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Label } from '@pongo-ui/react-label'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Label } from '@cebus/react-label'
 
 const MyApp = () => {
   return (

@@ -3,7 +3,7 @@ import { resolveShorthand, getNativeElementProps } from '@fluentui/react-utiliti
 import { useSelectState } from './useSelectState';
 import type { SelectProps, SelectState } from './Select.types';
 import { InputWrapper } from '../InputWrapper';
-import { Menu, MenuPopover, MenuTrigger, MenuList } from '@pongo-ui/react-menu';
+import { Menu, MenuPopover, MenuTrigger, MenuList } from '@cebus/react-menu';
 
 export const useSelect = (props: SelectProps, ref: React.Ref<HTMLInputElement>): SelectState => {
   const {

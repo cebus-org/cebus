@@ -1,10 +1,10 @@
 import { mergeClasses, makeStyles, shorthands } from '@griffel/react';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 import type { RadioState } from './Radio.types';
 import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 
-const indicatorClassName = 'pongo-radio-indicator';
-const labelClassName = 'pongo-radio-label';
+const indicatorClassName = 'cebus-radio-indicator';
+const labelClassName = 'cebus-radio-label';
 
 const useRootStyles = makeStyles({
   root: {
@@ -23,7 +23,7 @@ const useRootStyles = makeStyles({
     rowGap: tokens.focusedLayout,
   },
 
-  focusIndicator: createCustomFocusIndicatorStyle(
+  focusIndicator: (createCustomFocusIndicatorStyle as any)(
     {
       ':after': {
         content: "''",

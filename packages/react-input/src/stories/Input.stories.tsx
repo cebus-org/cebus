@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Input } from '../index';
-import { CalendarIcon } from '@pongo-ui/react-icon';
-import { Stack } from '@pongo-ui/react-layout';
+import { CalendarIcon } from '@cebus/react-icon';
+import { Stack } from '@cebus/react-layout';
 import type { InputProps } from '../index';
 
 export const BasicInputExample = () => {

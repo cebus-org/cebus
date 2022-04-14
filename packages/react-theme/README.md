@@ -1,30 +1,30 @@
 # Theme
 
-The Theme package is a set of various theme tokens used by Pongo components.
+The Theme package is a set of various theme tokens used by Cebus components.
 
 ## Use
 
-1. Install the @pongo-ui/react-theme package.
+1. Install the @cebus/react-theme package.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-theme
+npm install @cebus/react-theme
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-theme
+yarn add @cebus/react-theme
 ```
 
-2. Install the @pongo-ui/react-provider and one of our components.
+2. Install the @cebus/react-provider and one of our components.
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Build your app.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Button } from '@pongo-ui/react-button'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Button } from '@cebus/react-button'
 
 const MyApp = () => {
   return (

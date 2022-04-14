@@ -1,6 +1,6 @@
 import * as React from 'react';
 import type { ChevronProps, ChevronState } from './Chevron.types';
-import { useIcon } from '@pongo-ui/react-icon';
+import { useIcon } from '@cebus/react-icon';
 import { useChevronState } from './useChevronState';
 
 export const useChevron = (props: ChevronProps, ref: React.Ref<SVGSVGElement>): ChevronState => {

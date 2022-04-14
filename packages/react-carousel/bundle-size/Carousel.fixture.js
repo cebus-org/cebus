@@ -1,4 +1,4 @@
-import { Carousel } from '@pongo-ui/react-carousel';
+import { Carousel } from '@cebus/react-carousel';
 
 console.log(Carousel);
 

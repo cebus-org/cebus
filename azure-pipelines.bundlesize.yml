@@ -1,42 +1,42 @@
-pr:
-  - master
+# pr:
+#   - master
 
-trigger:
-  - master
+# trigger:
+#   - master
 
-variables:
-  - group: 'Github and NPM secrets'
-  - template: .devops/templates/variables.yml
+# variables:
+#   - group: 'Github and NPM secrets'
+#   - template: .devops/templates/variables.yml
 
-pool: Default
+# pool: Default
 
-jobs:
-  - job: BundleSize
-    displayName: Compare Bundle Size 📦
-    workspace:
-      clean: all
-    steps:
-      - template: .devops/templates/tools.yml
+# jobs:
+#   - job: BundleSize
+#     displayName: Compare Bundle Size 📦
+#     workspace:
+#       clean: all
+#     steps:
+#       - template: .devops/templates/tools.yml
 
-      - script: |
-          yarn
-        displayName: yarn
+#       - script: |
+#           yarn
+#         displayName: yarn
 
-      - script: |
-          yarn bundle-size
-        displayName: bundle-size
+#       - script: |
+#           yarn bundle-size
+#         displayName: bundle-size
 
-      - script: |
-          yarn bundle-size compare-reports --branch=$(System.PullRequest.TargetBranch) --output=markdown --verbose
-        displayName: Compare bundle size
-        condition: eq(variables.isPR, true)
+#       - script: |
+#           yarn bundle-size compare-reports --branch=$(System.PullRequest.TargetBranch) --output=markdown --verbose
+#         displayName: Compare bundle size
+#         condition: eq(variables.isPR, true)
 
-      - task: GithubPRComment@0
-        displayName: Post results to Pull Request
-        condition: eq(variables.isPR, true)
-        inputs:
-          githubOwner: PongoAI
-          githubRepo: 'pongo-ui'
-          blobFilePath: 'packages/bundle-size/dist/bundle-size.md'
-          status: 'success'
-          uniqueId: 'bundleSizeComment9423'
+#       - task: GithubPRComment@0
+#         displayName: Post results to Pull Request
+#         condition: eq(variables.isPR, true)
+#         inputs:
+#           githubOwner: Cebus
+#           githubRepo: 'cebus'
+#           blobFilePath: 'packages/bundle-size/dist/bundle-size.md'
+#           status: 'success'
+#           uniqueId: 'bundleSizeComment9423'
