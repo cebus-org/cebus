@@ -5,11 +5,10 @@ orbs:
   codecov: codecov/codecov@3.2.2
 
 jobs:
-  install-packages:
+  build:
     docker:
       - image: cimg/node:16.14.2
     steps:
-      - checkout
       - restore_cache:
           name: Restore yarn package cache
           key: v1-cache-dependencies-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ arch }}
@@ -21,11 +20,6 @@ jobs:
           paths:
             - ~/.cache/yarn
           key: v1-cache-dependencies-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ arch }}
-  
-  build:
-    docker:
-      - image: cimg/node:16.14.2
-    steps:
       - run:
           name: Lint
           command: yarn lint
@@ -74,11 +68,9 @@ workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - install-packages
       - build
       - deploy:
           requires:
-            - install-packages
             - build
           filters:
             branches:
