@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.0.1
+  codecov: codecov/codecov@3.0.0
 
 jobs:
   build:
@@ -23,6 +24,17 @@ jobs:
       - run:
           name: Lint
           command: yarn lint
+          environment:
+            NX_BRANCH: $(pullRequestNumber)
       - run:
           name: Build
           command: yarn build
+          environment:
+            NX_BRANCH: $(pullRequestNumber)
+      - run:
+          name: Test
+          command: yarn test --coverage
+          environment:
+            NX_BRANCH: $(pullRequestNumber)
+      - codecov/upload:
+          validate_url: true 
