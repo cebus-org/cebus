@@ -9,6 +9,9 @@ jobs:
     docker:
       - image: cimg/node:16.14.2
     steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
       - restore_cache:
           name: Restore yarn package cache
           key: v1-cache-dependencies-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ arch }}
