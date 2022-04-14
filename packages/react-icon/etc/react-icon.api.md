@@ -102,7 +102,7 @@ export const DiscordIcon: React_2.MemoExoticComponent<React_2.ForwardRefExoticCo
 }, "ref"> & IconCommons & React_2.RefAttributes<SVGSVGElement>>>;
 
 // @public (undocumented)
-export const fillCSSVariable = "--pongo-icon-fill";
+export const fillCSSVariable = "--cebus-icon-fill";
 
 // @public (undocumented)
 export const FilterIcon: React_2.MemoExoticComponent<React_2.ForwardRefExoticComponent<Omit<IconSlots, "root"> & Omit<{

@@ -8,7 +8,7 @@ import { FluentProviderProps } from '@fluentui/react-provider';
 import type { FluentProviderSlots } from '@fluentui/react-provider';
 import type { FluentProviderState } from '@fluentui/react-provider';
 import * as React_2 from 'react';
-import { Theme } from '@pongo-ui/react-theme';
+import { Theme } from '@cebus/react-theme';
 
 // @public
 export const Provider: React_2.ForwardRefExoticComponent<Omit<FluentProviderProps, "theme"> & {

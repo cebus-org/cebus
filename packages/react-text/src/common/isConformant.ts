@@ -13,6 +13,7 @@ export function isConformant<TProps = {}>(
       'kebab-aria-attributes',
       'component-has-static-classname',
       'component-has-static-classname-exported',
+      'make-styles-overrides-win',
     ],
     extraTests: griffelTests as TestObject<TProps>,
     skipAsPropTests: true,

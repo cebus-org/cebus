@@ -23,7 +23,7 @@ export const useToggleButton = (
    * Callback for when the ToggleButton is pressed
    */
   const onClick = React.useCallback(
-    ev => {
+    (ev: React.MouseEvent<HTMLButtonElement> & React.MouseEvent<HTMLAnchorElement>) => {
       if (!disabled) {
         // The user's onClick callback should be called.
         onClickCallback?.(ev);
