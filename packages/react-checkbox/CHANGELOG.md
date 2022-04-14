@@ -1,8 +1,21 @@
-# Change Log - @pongo-ui/react-checkbox
+# Change Log - @cebus/react-checkbox
 
-This log was last generated on Fri, 25 Mar 2022 21:31:30 GMT and should not be manually modified.
+This log was last generated on Thu, 14 Apr 2022 04:54:35 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.1
+
+Thu, 14 Apr 2022 04:54:35 GMT
+
+### Patches
+
+- Rename (czearing@outlook.com)
+- Bump @cebus/react-theme to v0.0.1
+- Bump @cebus/react-icon to v0.0.1
+- Bump @cebus/react-text to v0.0.1
+- Bump @cebus/react-button to v0.0.1
+- Bump @cebus/react-label to v0.0.1
 
 ## 0.0.10
 

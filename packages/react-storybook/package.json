@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-storybook",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Storybook addon used within Cebus UI components.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -15,8 +15,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@cebus/react-theme": "^0.0.0",
-    "@cebus/react-provider": "^0.0.0",
+    "@cebus/react-theme": "^0.0.1",
+    "@cebus/react-provider": "^0.0.1",
     "@storybook/react": "^6.4.15",
     "@storybook/addon-a11y": "^6.4.15",
     "@storybook/addon-actions": "^6.4.15",

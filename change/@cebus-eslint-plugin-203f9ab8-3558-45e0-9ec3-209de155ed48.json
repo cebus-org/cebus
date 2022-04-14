@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Renaming icons",
-  "packageName": "@cebus/eslint-plugin",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

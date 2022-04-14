@@ -1,6 +1,21 @@
 {
-  "name": "@pongo-ui/eslint-plugin",
+  "name": "@cebus/eslint-plugin",
   "entries": [
+    {
+      "date": "Thu, 14 Apr 2022 04:54:35 GMT",
+      "tag": "@cebus/eslint-plugin_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@cebus/eslint-plugin",
+            "commit": "7b0cdfb11466cf87af6ee932c6ac57e7542fd427",
+            "comment": "Renaming icons"
+          }
+        ]
+      }
+    },
     {
       "date": "Tue, 08 Mar 2022 23:39:41 GMT",
       "tag": "@pongo-ui/eslint-plugin_v0.0.2",

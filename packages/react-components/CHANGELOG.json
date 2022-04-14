@@ -1,6 +1,159 @@
 {
-  "name": "@pongo-ui/react-components",
+  "name": "@cebus/react-components",
   "entries": [
+    {
+      "date": "Thu, 14 Apr 2022 04:54:35 GMT",
+      "tag": "@cebus/react-components_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@cebus/react-components",
+            "commit": "7b0cdfb11466cf87af6ee932c6ac57e7542fd427",
+            "comment": "Rename"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-theme to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-theme-generator to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-dialog to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-avatar to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-button to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-card to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-divider to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-icon to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-input to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-label to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-link to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-menu to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-radio to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-switch to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-tabs to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-text to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-toolbar to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-checkbox to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-provider to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-layout to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-accordion to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-table to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-carousel to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          }
+        ]
+      }
+    },
     {
       "date": "Mon, 28 Mar 2022 20:31:38 GMT",
       "tag": "@pongo-ui/react-components_v0.0.16",

@@ -1,8 +1,39 @@
-# Change Log - @pongo-ui/react-components
+# Change Log - @cebus/react-components
 
-This log was last generated on Mon, 28 Mar 2022 20:31:38 GMT and should not be manually modified.
+This log was last generated on Thu, 14 Apr 2022 04:54:35 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.1
+
+Thu, 14 Apr 2022 04:54:35 GMT
+
+### Patches
+
+- Rename (czearing@outlook.com)
+- Bump @cebus/react-theme to v0.0.1
+- Bump @cebus/react-theme-generator to v0.0.1
+- Bump @cebus/react-dialog to v0.0.1
+- Bump @cebus/react-avatar to v0.0.1
+- Bump @cebus/react-button to v0.0.1
+- Bump @cebus/react-card to v0.0.1
+- Bump @cebus/react-divider to v0.0.1
+- Bump @cebus/react-icon to v0.0.1
+- Bump @cebus/react-input to v0.0.1
+- Bump @cebus/react-label to v0.0.1
+- Bump @cebus/react-link to v0.0.1
+- Bump @cebus/react-menu to v0.0.1
+- Bump @cebus/react-radio to v0.0.1
+- Bump @cebus/react-switch to v0.0.1
+- Bump @cebus/react-tabs to v0.0.1
+- Bump @cebus/react-text to v0.0.1
+- Bump @cebus/react-toolbar to v0.0.1
+- Bump @cebus/react-checkbox to v0.0.1
+- Bump @cebus/react-provider to v0.0.1
+- Bump @cebus/react-layout to v0.0.1
+- Bump @cebus/react-accordion to v0.0.1
+- Bump @cebus/react-table to v0.0.1
+- Bump @cebus/react-carousel to v0.0.1
 
 ## 0.0.16
 

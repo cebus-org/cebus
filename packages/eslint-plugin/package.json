@@ -1,6 +1,6 @@
 {
   "name": "@cebus/eslint-plugin",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Eslint configuration for the cebus package.",
   "main": "src/index.js",
   "exports": {

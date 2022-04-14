@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Rename",
-  "packageName": "@cebus/react-theme",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

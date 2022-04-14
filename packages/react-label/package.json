@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-label",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A Label that provides a title to a form component.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -25,12 +25,12 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@cebus/react-theme": "^0.0.0",
+    "@cebus/react-theme": "^0.0.1",
     "@fluentui/react-label": "^9.0.0-beta.9"
   },
   "devDependencies": {
-    "@cebus/react-text": "^0.0.0",
-    "@cebus/react-layout": "^0.0.0"
+    "@cebus/react-text": "^0.0.1",
+    "@cebus/react-layout": "^0.0.1"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

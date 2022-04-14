@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-accordion",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A component used to show and hide nested information.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -25,7 +25,7 @@
   "dependencies": {
     "@griffel/react": "^1.0.0",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@cebus/react-theme": "^0.0.0",
+    "@cebus/react-theme": "^0.0.1",
     "@fluentui/react-accordion": "^9.0.0-rc.5"
   },
   "devDependencies": {},

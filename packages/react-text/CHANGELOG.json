@@ -1,6 +1,33 @@
 {
-  "name": "@pongo-ui/react-text",
+  "name": "@cebus/react-text",
   "entries": [
+    {
+      "date": "Thu, 14 Apr 2022 04:54:35 GMT",
+      "tag": "@cebus/react-text_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@cebus/react-text",
+            "commit": "7b0cdfb11466cf87af6ee932c6ac57e7542fd427",
+            "comment": "Rename"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-text",
+            "comment": "Bump @cebus/react-theme to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-text",
+            "comment": "Bump @cebus/react-layout to v0.0.1",
+            "commit": "711eabbc47c11f87ecf404aeefeff56260e382e0"
+          }
+        ]
+      }
+    },
     {
       "date": "Fri, 25 Mar 2022 21:31:29 GMT",
       "tag": "@pongo-ui/react-text_v0.0.18",

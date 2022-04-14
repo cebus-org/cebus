@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-toolbar",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A toolbar component that displays important information and actions for an application.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -26,15 +26,15 @@
     "@griffel/react": "^1.0.0",
     "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@fluentui/react-utilities": "^9.0.0-rc.5",
-    "@cebus/react-theme": "^0.0.0",
+    "@cebus/react-theme": "^0.0.1",
     "@fluentui/react-aria": "^9.0.0-rc.5",
     "@fluentui/react-context-selector": "^9.0.0-rc.5"
   },
   "devDependencies": {
-    "@cebus/react-avatar": "^0.0.0",
-    "@cebus/react-text": "^0.0.0",
-    "@cebus/react-menu": "^0.0.0",
-    "@cebus/react-layout": "^0.0.0"
+    "@cebus/react-avatar": "^0.0.1",
+    "@cebus/react-text": "^0.0.1",
+    "@cebus/react-menu": "^0.0.1",
+    "@cebus/react-layout": "^0.0.1"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

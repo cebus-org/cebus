@@ -1,8 +1,19 @@
-# Change Log - @pongo-ui/react-input
+# Change Log - @cebus/react-input
 
-This log was last generated on Fri, 25 Mar 2022 21:31:29 GMT and should not be manually modified.
+This log was last generated on Thu, 14 Apr 2022 04:54:35 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.1
+
+Thu, 14 Apr 2022 04:54:35 GMT
+
+### Patches
+
+- Rename (czearing@outlook.com)
+- Bump @cebus/react-theme to v0.0.1
+- Bump @cebus/react-menu to v0.0.1
+- Bump @cebus/react-layout to v0.0.1
 
 ## 0.2.9
 

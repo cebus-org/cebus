@@ -1,6 +1,21 @@
 {
-  "name": "@pongo-ui/react-theme-generator",
+  "name": "@cebus/react-theme-generator",
   "entries": [
+    {
+      "date": "Thu, 14 Apr 2022 04:54:35 GMT",
+      "tag": "@cebus/react-theme-generator_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@cebus/react-theme-generator",
+            "commit": "7b0cdfb11466cf87af6ee932c6ac57e7542fd427",
+            "comment": "Rename"
+          }
+        ]
+      }
+    },
     {
       "date": "Tue, 15 Mar 2022 21:02:59 GMT",
       "tag": "@pongo-ui/react-theme-generator_v0.1.2",
