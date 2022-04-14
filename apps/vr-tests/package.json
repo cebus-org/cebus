@@ -1,8 +1,8 @@
 {
-  "name": "@pongoai/vr-tests",
+  "name": "@cebus/vr-tests",
   "version": "0.0.0",
   "private": true,
-  "description": "Visual regression tests for Pongo UI components and packages",
+  "description": "Visual regression tests for Cebus UI components and packages",
   "scripts": {
     "start": "yarn storybook",
     "build": "tsc && tsc --module commonjs --outDir lib-commonjs",

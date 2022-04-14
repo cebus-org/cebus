@@ -1,6 +1,6 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import { useButtonStyles } from '../Button';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 import { ToggleButtonState } from './ToggleButton.types';
 import {
   backgroundCSSVariable,

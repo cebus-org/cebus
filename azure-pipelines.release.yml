@@ -1,35 +1,35 @@
-pr: none
-trigger: none
+# pr: none
+# trigger: none
 
-variables:
-  - group: 'Github and NPM secrets'
-  - template: .devops/templates/variables.yml
+# variables:
+#   - group: 'Github and NPM secrets'
+#   - template: .devops/templates/variables.yml
 
-pool: Default
+# pool: Default
 
-workspace:
-  clean: all
+# workspace:
+#   clean: all
 
-steps:
-  - template: .devops/templates/tools.yml
+# steps:
+#   - template: .devops/templates/tools.yml
 
-  - script: |
-      git config user.name "pongo-build"
-      git config user.email "pongoai-build@outlook.com"
-      git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongo-ui.git
-    displayName: Authenticate git for pushes
+#   - script: |
+#       git config user.name "pongo-build"
+#       git config user.email "pongoai-build@outlook.com"
+#       git remote set-url origin https://$(githubUser):$(githubPAT)@github.com/PongoAI/pongo-ui.git
+#     displayName: Authenticate git for pushes
 
-  - script: |
-      yarn
-    displayName: Install dependencies
+#   - script: |
+#       yarn
+#     displayName: Install dependencies
 
-  - script: |
-      yarn build
-    displayName: build
+#   - script: |
+#       yarn build
+#     displayName: build
 
-  - script: |
-      yarn publish:beachball -n $(npmToken)
-      git reset --hard origin/master
-    env:
-      GITHUB_PAT: $(githubPAT)
-    displayName: 🏖️⚽ Beachball Publish
+#   - script: |
+#       yarn publish:beachball -n $(npmToken)
+#       git reset --hard origin/master
+#     env:
+#       GITHUB_PAT: $(githubPAT)
+#     displayName: 🏖️⚽ Beachball Publish

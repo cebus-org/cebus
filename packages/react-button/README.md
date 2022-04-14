@@ -4,27 +4,27 @@ The Button controls allow users to make an action through a press.
 
 ## Use
 
-1. Install the @pongo-ui/react-button component.
+1. Install the @cebus/react-button component.
 
 Using NPM
 
 ```
-npm install @pongo-ui/react-button
+npm install @cebus/react-button
 ```
 
 Using Yarn
 
 ```
-yarn add @pongo-ui/react-button
+yarn add @cebus/react-button
 ```
 
-2. Install the @pongo-ui/react-provider and our theme tokens from @pongo-ui/react-theme
+2. Install the @cebus/react-provider and our theme tokens from @cebus/react-theme
 
 3. Set up the provider in your app:
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
 
 const MyApp = () => {
   return (
@@ -37,9 +37,9 @@ const MyApp = () => {
 4. Integrate the Button component.
 
 ```jsx
-import { Provider } from '@pongo-ui/react-provider'
-import { webLightTheme } from '@pongo-ui/react-theme'
-import { Button } from '@pongo-ui/react-button'
+import { Provider } from '@cebus/react-provider'
+import { webLightTheme } from '@cebus/react-theme'
+import { Button } from '@cebus/react-button'
 
 const MyApp = () => {
   return (

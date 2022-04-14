@@ -5,7 +5,7 @@ import {
   foregroundHoverCSSVariable,
   foregroundPressedCSSVariable,
 } from './useButtonStyles';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 import type { ButtonState } from './Button.types';
 
 export const useButtonState = (state: ButtonState): ButtonState => {

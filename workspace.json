@@ -1,132 +1,132 @@
 {
   "version": 2,
   "projects": {
-    "@pongo-ui/react-button": {
+    "@cebus/react-button": {
       "root": "packages/react-button",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-components": {
+    "@cebus/react-components": {
       "root": "packages/react-components",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-link": {
+    "@cebus/react-link": {
       "root": "packages/react-link",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-storybook": {
+    "@cebus/react-storybook": {
       "root": "packages/react-storybook",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-theme-generator": {
+    "@cebus/react-theme-generator": {
       "root": "packages/react-theme-generator",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-theme": {
+    "@cebus/react-theme": {
       "root": "packages/react-theme",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-text": {
+    "@cebus/react-text": {
       "root": "packages/react-text",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-card": {
+    "@cebus/react-card": {
       "root": "packages/react-card",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-menu": {
+    "@cebus/react-menu": {
       "root": "packages/react-menu",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-divider": {
+    "@cebus/react-divider": {
       "root": "packages/react-divider",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-avatar": {
+    "@cebus/react-avatar": {
       "root": "packages/react-avatar",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-input": {
+    "@cebus/react-input": {
       "root": "packages/react-input",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-toolbar": {
+    "@cebus/react-toolbar": {
       "root": "packages/react-toolbar",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-icon": {
+    "@cebus/react-icon": {
       "root": "packages/react-icon",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-tabs": {
+    "@cebus/react-tabs": {
       "root": "packages/react-tabs",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-label": {
+    "@cebus/react-label": {
       "root": "packages/react-label",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-switch": {
+    "@cebus/react-switch": {
       "root": "packages/react-switch",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-radio": {
+    "@cebus/react-radio": {
       "root": "packages/react-radio",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-checkbox": {
+    "@cebus/react-checkbox": {
       "root": "packages/react-checkbox",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-provider": {
+    "@cebus/react-provider": {
       "root": "packages/react-provider",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-layout": {
+    "@cebus/react-layout": {
       "root": "packages/react-layout",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-accordion": {
+    "@cebus/react-accordion": {
       "root": "packages/react-accordion",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-dialog": {
+    "@cebus/react-dialog": {
       "root": "packages/react-dialog",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-table": {
+    "@cebus/react-table": {
       "root": "packages/react-table",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-carousel": {
+    "@cebus/react-carousel": {
       "root": "packages/react-carousel",
       "projectType": "library",
       "implicitDependencies": []
     },
-    "@pongo-ui/react-form": {
+    "@cebus/react-form": {
       "root": "packages/react-form",
       "projectType": "library",
       "implicitDependencies": []

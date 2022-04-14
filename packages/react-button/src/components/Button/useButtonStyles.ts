@@ -1,13 +1,13 @@
 import { shorthands, makeStyles, mergeClasses } from '@griffel/react';
 import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 import type { ButtonState } from './Button.types';
-import { tokens } from '@pongo-ui/react-theme';
+import { tokens } from '@cebus/react-theme';
 
-export const backgroundCSSVariable = `--pongo-button-background-color`;
-export const hoverCSSVariable = `--pongo-button-hover-color`;
-export const pressedCSSVariable = `--pongo-button-pressed-color`;
-export const foregroundHoverCSSVariable = `--pongo-foreground-hover-color`;
-export const foregroundPressedCSSVariable = `--pongo-foreground-pressed-color`;
+export const backgroundCSSVariable = `--cebus-button-background-color`;
+export const hoverCSSVariable = `--cebus-button-hover-color`;
+export const pressedCSSVariable = `--cebus-button-pressed-color`;
+export const foregroundHoverCSSVariable = `--cebus-foreground-hover-color`;
+export const foregroundPressedCSSVariable = `--cebus-foreground-pressed-color`;
 
 const useRootStyles = makeStyles({
   root: {

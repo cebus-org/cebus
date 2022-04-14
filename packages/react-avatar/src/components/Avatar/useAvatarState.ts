@@ -4,8 +4,8 @@ import { useMergedEventCallbacks } from '@fluentui/react-utilities';
 import { getInitials } from '@fluentui/react-avatar';
 import { stringToColor } from '../../utils/index';
 import { useFluent } from '@fluentui/react-shared-contexts';
-import { tokens } from '@pongo-ui/react-theme';
-import { calculateTransparentColor } from '@pongo-ui/react-theme-generator';
+import { tokens } from '@cebus/react-theme';
+import { calculateTransparentColor } from '@cebus/react-theme-generator';
 
 export const useAvatarState = (state: AvatarState): AvatarState => {
   const [imageHidden, setImageHidden] = React.useState<true | undefined>(undefined);

@@ -1,4 +1,4 @@
-import { Button } from '@pongo-ui/react-button';
+import { Button } from '@cebus/react-button';
 
 console.log(Button);
 
