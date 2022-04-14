@@ -68,3 +68,6 @@ const MyApp = () => {
 
 All of our code is licensed under the terms of the
 [MIT license](/LICENSE).
+
+## Background
+Previously called pongo-ui (the scientific name of orangutan), cebus (scientific name of a capuchin monkeys) is a component library that introduces a simplistic themeing system and a huge amount of components for specfic use cases. It was built to help apps easily build unique visual experinces without having to construct their own components.
