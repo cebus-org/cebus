@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "beachball": "^2.21.0",
-    "chromatic": "^6.5.1",
+    "chromatic": "^6.5.4",
     "prettier": "^2.4.1",
     "husky": "^7.0.0",
     "@nrwl/cli": "^13.8.2",
