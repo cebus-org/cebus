@@ -33,7 +33,7 @@
     "@nrwl/tao": "^13.8.2",
     "@nrwl/workspace": "^13.8.2",
     "@fluentui/bundle-size": "^1.1.4",
-    "@cebus/scripts": "^0.0.1",
+    "@cebus/scripts": "^0.0.0",
     "@cebus/eslint-plugin": "*",
     "@fluentui/react-conformance": "^0.10.1",
     "webpack": "^5.70.0",

@@ -31,7 +31,7 @@
     "@cebus/react-theme-generator": "^0.0.0"
   },
   "devDependencies": {
-    "@cebus/react-layout": "^0.0.4"
+    "@cebus/react-layout": "^0.0.0"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

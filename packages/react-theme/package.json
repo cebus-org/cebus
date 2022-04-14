@@ -1,7 +1,7 @@
 {
-  "name": "@pongo-ui/react-theme",
-  "version": "0.0.13",
-  "description": "A set of theme tokens used by Pongo.",
+  "name": "@cebus/react-theme",
+  "version": "0.0.0",
+  "description": "A set of theme default tokens to use with Cebus UI components.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -23,7 +23,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@pongo-ui/react-theme-generator": "^0.1.2"
+    "@cebus/react-theme-generator": "^0.0.0"
   },
   "devDependencies": {},
   "peerDependencies": {

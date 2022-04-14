@@ -1,6 +1,6 @@
 {
-  "name": "@pongo-ui/scripts",
-  "version": "0.0.1",
+  "name": "@cebus/scripts",
+  "version": "0.0.0",
   "private": true,
   "devDependencies": {
     "@microsoft/api-extractor": "^7.19.4",

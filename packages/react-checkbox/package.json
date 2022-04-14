@@ -1,5 +1,5 @@
 {
-  "name": "@pongo-ui/react-checkbox",
+  "name": "@cebus/react-checkbox",
   "version": "0.0.0",
   "description": "The Checkbox allows users to toggle a value between an on and off state.",
   "main": "lib-commonjs/index.js",

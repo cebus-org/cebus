@@ -1,5 +1,5 @@
 {
-  "name": "@pongo-ui/react-accordion",
+  "name": "@cebus/react-accordion",
   "version": "0.0.0",
   "description": "A component used to show and hide nested information.",
   "main": "lib-commonjs/index.js",
