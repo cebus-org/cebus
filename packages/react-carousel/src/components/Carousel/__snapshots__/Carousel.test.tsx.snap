@@ -36,9 +36,9 @@ exports[`Carousel Snapshot tests renders a basic Avatar 1`] = `
         type="button"
       >
         <svg
-          class="___16pu995 f14t3ns0 fmrv4ls fuaaxji fq4mcun frvgh55"
+          class="___gj5ft00 f14t3ns0 fmrv4ls f6qemis fq4mcun frvgh55"
           focusable="false"
-          style="--pongo-icon-fill: var(--textColor);"
+          style="--cebus-icon-fill: var(--textColor);"
           viewBox="0 0 2048 2048"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -66,9 +66,9 @@ exports[`Carousel Snapshot tests renders a basic Avatar 1`] = `
         type="button"
       >
         <svg
-          class="___16pu995 f14t3ns0 fmrv4ls fuaaxji fq4mcun frvgh55"
+          class="___gj5ft00 f14t3ns0 fmrv4ls f6qemis fq4mcun frvgh55"
           focusable="false"
-          style="--pongo-icon-fill: var(--textColor);"
+          style="--cebus-icon-fill: var(--textColor);"
           viewBox="0 0 2048 2048"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -100,7 +100,7 @@ exports[`Carousel Snapshot tests renders a basic Avatar 1`] = `
           <input
             aria-label="A white t shirt"
             checked=""
-            class="___1k5a78d f1euv43f f1vgc2s3 f15twtuk f1e31b4d f1yab3r1 fly5x3f f1l02sjl f1ewtqcl fk73vx1 f1hu3pq6 f11qmguv f19f4twv f1tyq0we fowr46a f1xl0qwy f1k6fduh fkavele fg1nono fexw84i f1y6vlxy feznpzr f1ym48ab fxyywaq fc390eo f1julexz f1qlwis7 f13bd10 fiepdt6 f1fxl38v f1vmirnt f16aqadv fgoi767 f1qzxoeo f1rwhajm fxia3e6 fdxoyg9 ftb0ayp f1wkbyjn f7ombvi f49rsrr fpucs8 fsri65q f1ur2ra4 f1mu7ado f1o3leve f1s168r8 fdjrdmx"
+            class="___5a0q0l0 f1euv43f f1vgc2s3 f15twtuk f1e31b4d f1yab3r1 fly5x3f f1l02sjl f1ewtqcl fk73vx1 f1hu3pq6 f11qmguv f19f4twv f1tyq0we f9q6s5f f1bjzxfu f1k6fduh fbqqmqa f12q32tx fvhvjdh fsk3gdh fkx5us4 f4sr7pu fy8k3os f148sgik f1erntv0 flba4d6 f1yjaxmd fhnq91 f1az57 f18hx1k2 fiyrlox fc7evkt fdh8j9a f16pqu9g fv8ay8h fddmz4c f19ixr9n f1ktf4xn fojjxu7 fjyby1k f8z8274 fp62gv2 f4c4h6k fxkwkjs f27w35r f107t6ws f1umzgs4"
             id="radio-14"
             name="radiogroup-13"
             readonly=""
@@ -110,7 +110,7 @@ exports[`Carousel Snapshot tests renders a basic Avatar 1`] = `
           />
           <div
             aria-hidden="true"
-            class="pongo-radio-indicator ___n55l230 f22iagw fjw5fx7 fd461yt f1ewtqcl fi64zpg f122n59 f4d9j23 f1aehjj5 f1p9o1ba f1sil6mw ftac7j7 f1w0yd9v fdwcyh7 f1h0xgbp fzkkow9 fcdblym fg706s2 fjik90z fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f19qt5od ftovyd4 f1fajnbs ffz4t7b f1wac4k f1t8un4"
+            class="cebus-radio-indicator ___n55l230 f22iagw fjw5fx7 fd461yt f1ewtqcl fi64zpg f122n59 f4d9j23 f1aehjj5 f1p9o1ba f1sil6mw ftac7j7 f1w0yd9v fdwcyh7 f1h0xgbp fzkkow9 fcdblym fg706s2 fjik90z fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f19qt5od ftovyd4 f1fajnbs ffz4t7b f1wac4k f1t8un4"
           >
             <svg
               aria-hidden="true"
@@ -132,7 +132,7 @@ exports[`Carousel Snapshot tests renders a basic Avatar 1`] = `
         >
           <input
             aria-label="A white t shirt"
-            class="___1k5a78d f1euv43f f1vgc2s3 f15twtuk f1e31b4d f1yab3r1 fly5x3f f1l02sjl f1ewtqcl fk73vx1 f1hu3pq6 f11qmguv f19f4twv f1tyq0we fowr46a f1xl0qwy f1k6fduh fkavele fg1nono fexw84i f1y6vlxy feznpzr f1ym48ab fxyywaq fc390eo f1julexz f1qlwis7 f13bd10 fiepdt6 f1fxl38v f1vmirnt f16aqadv fgoi767 f1qzxoeo f1rwhajm fxia3e6 fdxoyg9 ftb0ayp f1wkbyjn f7ombvi f49rsrr fpucs8 fsri65q f1ur2ra4 f1mu7ado f1o3leve f1s168r8 fdjrdmx"
+            class="___5a0q0l0 f1euv43f f1vgc2s3 f15twtuk f1e31b4d f1yab3r1 fly5x3f f1l02sjl f1ewtqcl fk73vx1 f1hu3pq6 f11qmguv f19f4twv f1tyq0we f9q6s5f f1bjzxfu f1k6fduh fbqqmqa f12q32tx fvhvjdh fsk3gdh fkx5us4 f4sr7pu fy8k3os f148sgik f1erntv0 flba4d6 f1yjaxmd fhnq91 f1az57 f18hx1k2 fiyrlox fc7evkt fdh8j9a f16pqu9g fv8ay8h fddmz4c f19ixr9n f1ktf4xn fojjxu7 fjyby1k f8z8274 fp62gv2 f4c4h6k fxkwkjs f27w35r f107t6ws f1umzgs4"
             id="radio-15"
             name="radiogroup-13"
             readonly=""
@@ -142,7 +142,7 @@ exports[`Carousel Snapshot tests renders a basic Avatar 1`] = `
           />
           <div
             aria-hidden="true"
-            class="pongo-radio-indicator ___n55l230 f22iagw fjw5fx7 fd461yt f1ewtqcl fi64zpg f122n59 f4d9j23 f1aehjj5 f1p9o1ba f1sil6mw ftac7j7 f1w0yd9v fdwcyh7 f1h0xgbp fzkkow9 fcdblym fg706s2 fjik90z fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f19qt5od ftovyd4 f1fajnbs ffz4t7b f1wac4k f1t8un4"
+            class="cebus-radio-indicator ___n55l230 f22iagw fjw5fx7 fd461yt f1ewtqcl fi64zpg f122n59 f4d9j23 f1aehjj5 f1p9o1ba f1sil6mw ftac7j7 f1w0yd9v fdwcyh7 f1h0xgbp fzkkow9 fcdblym fg706s2 fjik90z fxvwsu1 f3ia6t0 f1e3jql2 f1gxgi0c f19qt5od ftovyd4 f1fajnbs ffz4t7b f1wac4k f1t8un4"
           >
             <svg
               aria-hidden="true"
