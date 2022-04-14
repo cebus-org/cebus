@@ -48,7 +48,6 @@ jobs:
       GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
       GITHUB_EMAIL: ${{ secrets.GITHUB_EMAIL }}
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - checkout
       - run:
@@ -75,6 +74,7 @@ workflows:
       - deploy:
           requires:
             - build
-          filters:
-            branches:
-              only: sequential-branch-filter
+          # filters:
+          #   branches:
+          #     only:
+          #     - master
