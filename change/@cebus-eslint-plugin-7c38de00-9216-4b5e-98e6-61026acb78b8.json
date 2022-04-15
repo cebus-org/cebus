@@ -1,0 +1,7 @@
+{
+  "type": "none",
+  "comment": "Removing unused lock file.",
+  "packageName": "@cebus/eslint-plugin",
+  "email": "czearing@outlook.com",
+  "dependentChangeType": "none"
+}
