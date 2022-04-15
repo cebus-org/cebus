@@ -50,6 +50,24 @@ jobs:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - restore_cache:
+          name: Restore yarn package cache
+          key: v1-cache-dependencies-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ arch }}
+      - run:
+          name: Install dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Save yarn package cache
+          paths:
+            - ~/.cache/yarn
+          key: v1-cache-dependencies-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ arch }}
+      - run:
+          name: Build
+          command: yarn build
+          environment:
+            NX_BRANCH: $(pullRequestNumber)
       - run:
           name: Login into git (username)
           command: git config user.name "${GITHUB_USERNAME}"   
