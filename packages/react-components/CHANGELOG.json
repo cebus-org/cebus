@@ -2,6 +2,57 @@
   "name": "@cebus/react-components",
   "entries": [
     {
+      "date": "Fri, 15 Apr 2022 03:21:03 GMT",
+      "tag": "@cebus/react-components_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-button to v0.0.2",
+            "commit": "c13ff9af63ee6617b269563c94e25f0aa1f5a398"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-card to v0.0.2",
+            "commit": "c13ff9af63ee6617b269563c94e25f0aa1f5a398"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-input to v0.0.2",
+            "commit": "c13ff9af63ee6617b269563c94e25f0aa1f5a398"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-menu to v0.0.2",
+            "commit": "c13ff9af63ee6617b269563c94e25f0aa1f5a398"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-toolbar to v0.0.2",
+            "commit": "c13ff9af63ee6617b269563c94e25f0aa1f5a398"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-checkbox to v0.0.2",
+            "commit": "c13ff9af63ee6617b269563c94e25f0aa1f5a398"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-table to v0.0.2",
+            "commit": "c13ff9af63ee6617b269563c94e25f0aa1f5a398"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 14 Apr 2022 04:54:35 GMT",
       "tag": "@cebus/react-components_v0.0.1",
       "version": "0.0.1",

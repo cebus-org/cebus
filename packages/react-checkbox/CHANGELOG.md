@@ -1,8 +1,16 @@
 # Change Log - @cebus/react-checkbox
 
-This log was last generated on Thu, 14 Apr 2022 04:54:35 GMT and should not be manually modified.
+This log was last generated on Fri, 15 Apr 2022 03:21:03 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.2
+
+Fri, 15 Apr 2022 03:21:03 GMT
+
+### Patches
+
+- Bump @cebus/react-button to v0.0.2
 
 ## 0.0.1
 
