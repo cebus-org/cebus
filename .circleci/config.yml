@@ -1,8 +1,8 @@
 version: 2.1
 
 orbs:
-  node: circleci/node@5.0.1
-  codecov: codecov/codecov@3.0.0
+  node: circleci/node@5.0.2
+  codecov: codecov/codecov@3.2.2
 
 jobs:
   build:
@@ -10,6 +10,8 @@ jobs:
       - image: cimg/node:16.14.2
     steps:
       - checkout
+      - node/install-packages:
+          pkg-manager: yarn
       - restore_cache:
           name: Restore yarn package cache
           key: v1-cache-dependencies-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ arch }}
@@ -36,5 +38,61 @@ jobs:
           command: yarn test --coverage
           environment:
             NX_BRANCH: $(pullRequestNumber)
-      - codecov/upload:
-          validate_url: true 
+      - codecov/upload
+
+  deploy:
+    docker:
+      - image: cimg/node:16.14.2
+    environment:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
+      GITHUB_EMAIL: ${{ secrets.GITHUB_EMAIL }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - restore_cache:
+          name: Restore yarn package cache
+          key: v1-cache-dependencies-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ arch }}
+      - run:
+          name: Install dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Save yarn package cache
+          paths:
+            - ~/.cache/yarn
+          key: v1-cache-dependencies-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ arch }}
+      - run:
+          name: Build
+          command: yarn build
+          environment:
+            NX_BRANCH: $(pullRequestNumber)
+      - run:
+          name: Login into git (username)
+          command: git config user.name "${GITHUB_USERNAME}"   
+      - run:
+          name: Login into git (email)
+          command: git config user.email "${GITHUB_EMAIL}"   
+      - run:
+          name: Login into git
+          command: git remote set-url origin https://$(GITHUB_USERNAME):$(GITHUB_TOKEN)@github.com/cebus-org/cebus.git
+      - run:
+          name: 🏖️⚽ Beachball Publish
+          command: yarn publish:beachball -n ${NPM_TOKEN}
+      - run:
+          name: Reset branch
+          command: git reset --hard origin/master
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+              - master
