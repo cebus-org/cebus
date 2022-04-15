@@ -68,18 +68,18 @@ jobs:
           command: yarn build
           environment:
             NX_BRANCH: $(pullRequestNumber)
-      - run:
-          name: Login into git (username)
-          command: git config user.name "${GITHUB_USERNAME}"   
-      - run:
-          name: Login into git (email)
-          command: git config user.email "${GITHUB_EMAIL}"   
-      - run:
-          name: Login into git
-          command: git remote set-url origin https://$(GITHUB_USERNAME):$(GITHUB_TOKEN)@github.com/cebus-org/cebus.git
+      # - run:
+      #     name: Login into git (username)
+      #     command: git config user.name "${GITHUB_USERNAME}"   
+      # - run:
+      #     name: Login into git (email)
+      #     command: git config user.email "${GITHUB_EMAIL}"   
+      # - run:
+      #     name: Login into git
+      #     command: git remote set-url origin https://$(GITHUB_USERNAME):$(GITHUB_TOKEN)@github.com/cebus-org/cebus.git
       - run:
           name: 🏖️⚽ Beachball Publish
-          command: yarn publish:beachball -n ${NPM_TOKEN}
+          command: yarn publish:beachball
       - run:
           name: Reset branch
           command: git reset --hard origin/master
@@ -88,11 +88,12 @@ workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build
-      - deploy:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-              - master
+      # - build
+      - deploy
+      # - deploy:
+      #     requires:
+      #       - build
+      #     filters:
+      #       branches:
+      #         only:
+      #         - master
