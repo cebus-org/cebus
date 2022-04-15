@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-input",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A set of components that enable users to input and edit given values.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -28,7 +28,7 @@
     "@fluentui/react-utilities": "^9.0.0-rc.5",
     "@fluentui/react-aria": "^9.0.0-rc.5",
     "@cebus/react-theme": "^0.0.1",
-    "@cebus/react-menu": "^0.0.1"
+    "@cebus/react-menu": "^0.0.2"
   },
   "devDependencies": {
     "@cebus/react-layout": "^0.0.1"
