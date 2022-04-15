@@ -48,9 +48,26 @@ jobs:
       GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
       GITHUB_EMAIL: ${{ secrets.GITHUB_EMAIL }}
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - restore_cache:
+          name: Restore yarn package cache
+          key: v1-cache-dependencies-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ arch }}
+      - run:
+          name: Install dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          name: Save yarn package cache
+          paths:
+            - ~/.cache/yarn
+          key: v1-cache-dependencies-{{ checksum "yarn.lock" }}-{{ checksum "package.json" }}-{{ arch }}
+      - run:
+          name: Build
+          command: yarn build
+          environment:
+            NX_BRANCH: $(pullRequestNumber)
       - run:
           name: Login into git (username)
           command: git config user.name "${GITHUB_USERNAME}"   
@@ -59,10 +76,10 @@ jobs:
           command: git config user.email "${GITHUB_EMAIL}"   
       - run:
           name: Login into git
-          command: git remote set-url origin https://$(GITHUB_USERNAME):$(GITHUB_TOKEN)@github.com/cebus-org/cebus.git    
+          command: git remote set-url origin https://$(GITHUB_USERNAME):$(GITHUB_TOKEN)@github.com/cebus-org/cebus.git
       - run:
           name: 🏖️⚽ Beachball Publish
-          command: yarn beachball:publish -n $(NPM_TOKEN)
+          command: yarn publish:beachball -n ${NPM_TOKEN}
       - run:
           name: Reset branch
           command: git reset --hard origin/master
@@ -77,4 +94,5 @@ workflows:
             - build
           filters:
             branches:
-              only: sequential-branch-filter
+              only:
+              - master
