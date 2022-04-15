@@ -3,10 +3,10 @@ import type { SwitchState } from './Switch.types';
 import { createCustomFocusIndicatorStyle } from '@fluentui/react-tabster';
 import { tokens } from '@cebus/react-theme';
 
-const rootClassName = 'cebus-Switch-root';
-const trackClassName = 'cebus-Switch-track';
-const thumbClassName = 'cebus-Switch-thumb';
-const inputClassName = 'cebus-Switch-input';
+const rootClassName = 'cebus-switch-root';
+const trackClassName = 'cebus-switch-track';
+const thumbClassName = 'cebus-switch-thumb';
+const inputClassName = 'cebus-switch-input';
 
 const useRootStyles = makeStyles({
   root: {
