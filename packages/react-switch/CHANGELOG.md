@@ -1,8 +1,16 @@
 # Change Log - @cebus/react-switch
 
-This log was last generated on Thu, 14 Apr 2022 04:54:35 GMT and should not be manually modified.
+This log was last generated on Fri, 15 Apr 2022 04:09:18 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.2
+
+Fri, 15 Apr 2022 04:09:18 GMT
+
+### Patches
+
+- Updating classname (czearing@outlook.com)
 
 ## 0.0.1
 

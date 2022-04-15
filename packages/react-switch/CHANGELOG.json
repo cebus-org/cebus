@@ -2,6 +2,21 @@
   "name": "@cebus/react-switch",
   "entries": [
     {
+      "date": "Fri, 15 Apr 2022 04:09:18 GMT",
+      "tag": "@cebus/react-switch_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@cebus/react-switch",
+            "commit": "de193c2201229f7827ba1b8609b87bf7ad563e70",
+            "comment": "Updating classname"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 14 Apr 2022 04:54:35 GMT",
       "tag": "@cebus/react-switch_v0.0.1",
       "version": "0.0.1",

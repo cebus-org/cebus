@@ -2,6 +2,21 @@
   "name": "@cebus/react-form",
   "entries": [
     {
+      "date": "Fri, 15 Apr 2022 04:09:18 GMT",
+      "tag": "@cebus/react-form_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@cebus/react-form",
+            "comment": "Bump @cebus/react-switch to v0.0.2",
+            "commit": "224a5f4fb3f254d9fcf157759aa916ef58f20372"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 15 Apr 2022 03:21:03 GMT",
       "tag": "@cebus/react-form_v0.0.2",
       "version": "0.0.2",

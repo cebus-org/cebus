@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-components",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Suite package for Cebus components.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -36,7 +36,7 @@
     "@cebus/react-link": "^0.0.1",
     "@cebus/react-menu": "^0.0.2",
     "@cebus/react-radio": "^0.0.1",
-    "@cebus/react-switch": "^0.0.1",
+    "@cebus/react-switch": "^0.0.2",
     "@cebus/react-tabs": "^0.0.1",
     "@cebus/react-text": "^0.0.1",
     "@cebus/react-toolbar": "^0.0.2",
