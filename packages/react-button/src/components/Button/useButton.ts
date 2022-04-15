@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { getNativeElementProps } from '@fluentui/react-utilities';
-import { useButtonState } from './useButtonState';
 import { useARIAButton } from '@fluentui/react-aria';
 import type { ARIAButtonSlotProps } from '@fluentui/react-aria';
 import type { ButtonProps, ButtonState } from './Button.types';
@@ -28,8 +27,6 @@ export const useButton = (props: ButtonProps, ref: React.Ref<HTMLElement>): Butt
       }),
     ),
   };
-
-  useButtonState(state);
 
   return state;
 };

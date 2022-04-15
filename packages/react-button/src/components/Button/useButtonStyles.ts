@@ -212,5 +212,18 @@ export const useButtonStyles = (state: ButtonState) => {
     state.root.className,
   );
 
+  const CSSVariables = {
+    [backgroundCSSVariable]: (tokens as any)[state.color + (state.disabled ? 'Disabled' : '')],
+    [hoverCSSVariable]: (tokens as any)[state.color + 'Hover'],
+    [pressedCSSVariable]: (tokens as any)[state.color + 'Pressed'],
+    [foregroundHoverCSSVariable]: (tokens as any)[state.color + 'ForegroundHover'],
+    [foregroundPressedCSSVariable]: (tokens as any)[state.color + 'ForegroundPressed'],
+  };
+
+  state.root.style = {
+    ...CSSVariables,
+    ...state.root.style,
+  };
+
   return state;
 };
