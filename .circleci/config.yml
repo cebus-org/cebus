@@ -71,7 +71,7 @@ jobs:
           command: git config user.email "${GITHUB_EMAIL}"   
       - run:
           name: Login into git
-          command: git remote set-url origin https://$(GITHUB_USERNAME):$(GITHUB_TOKEN)@github.com/cebus-org/cebus.git
+          command: git remote set-url origin https://${GITHUB_USERNAME}:${GITHUB_TOKEN}@github.com/cebus-org/cebus.git
       - run:
           name: 🏖️⚽ Beachball Publish
           command: yarn publish:beachball -n ${NPM_TOKEN}
