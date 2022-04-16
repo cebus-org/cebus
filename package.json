@@ -29,7 +29,7 @@
     "husky": "7.0.4",
     "@nrwl/cli": "13.10.2",
     "@nrwl/jest": "13.10.2",
-    "@nrwl/nx-cloud": "13.2.2",
+    "@nrwl/nx-cloud": "13.3.1",
     "@nrwl/tao": "13.10.2",
     "@nrwl/workspace": "13.10.2",
     "@fluentui/bundle-size": "1.1.4",
