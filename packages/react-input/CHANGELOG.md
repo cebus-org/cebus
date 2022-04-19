@@ -1,8 +1,16 @@
 # Change Log - @cebus/react-input
 
-This log was last generated on Fri, 15 Apr 2022 03:21:03 GMT and should not be manually modified.
+This log was last generated on Tue, 19 Apr 2022 20:41:21 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.3
+
+Tue, 19 Apr 2022 20:41:21 GMT
+
+### Patches
+
+- Bump @cebus/react-menu to v0.0.3
 
 ## 0.0.2
 

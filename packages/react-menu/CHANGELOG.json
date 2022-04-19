@@ -2,6 +2,21 @@
   "name": "@cebus/react-menu",
   "entries": [
     {
+      "date": "Tue, 19 Apr 2022 20:41:21 GMT",
+      "tag": "@cebus/react-menu_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@cebus/react-menu",
+            "commit": "0ed1645e7262f0cadaceb62fac3f004a65d1d66f",
+            "comment": "Updating MenuItem styles"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 15 Apr 2022 03:21:03 GMT",
       "tag": "@cebus/react-menu_v0.0.2",
       "version": "0.0.2",
