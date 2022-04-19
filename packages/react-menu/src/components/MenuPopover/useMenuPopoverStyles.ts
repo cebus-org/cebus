@@ -5,8 +5,8 @@ import type { MenuPopoverState } from '@fluentui/react-menu';
 const useStyles = makeStyles({
   root: {
     width: 'max-content',
-    minWidth: '150px',
-    maxWidth: '350px',
+    minWidth: '180px',
+    maxWidth: '450px',
     backgroundColor: tokens.canvasColor,
     filter: tokens.elevate,
   },

@@ -9,15 +9,15 @@ const useStyles = makeStyles({
   root: {
     position: 'relative',
     display: 'flex',
-    height: '32px',
-    ...shorthands.padding('0px', '10px'),
+    height: '45px',
+    ...shorthands.padding('0px', tokens.focusedLayout),
     backgroundColor: tokens.canvasColor,
     fontFamily: tokens.fontFamilyBase,
     fontSize: tokens.fontSize300,
     alignItems: 'center',
     userSelect: 'none',
     color: tokens.textColor,
-    ...shorthands.gap('4px'),
+    ...shorthands.gap(tokens.focusedLayout),
   },
 
   enabled: {
@@ -41,15 +41,15 @@ const useStyles = makeStyles({
   },
 
   content: {
-    paddingLeft: '2px',
-    paddingRight: '2px',
+    // paddingLeft: '2px',
+    // paddingRight: '2px',
     backgroundColor: 'transparent',
     flexGrow: 1,
   },
 
   description: {
-    paddingLeft: '2px',
-    paddingRight: '2px',
+    // paddingLeft: '2px',
+    // paddingRight: '2px',
 
     color: tokens.inherit,
     ':hover': {
@@ -77,10 +77,7 @@ const useStyles = makeStyles({
   ),
 
   icon: {
-    width: '20px',
-    height: '20px',
     lineHeight: '0',
-    fontSize: '20px',
   },
 });
 
