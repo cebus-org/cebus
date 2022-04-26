@@ -1,8 +1,24 @@
 # Change Log - @cebus/react-components
 
-This log was last generated on Tue, 26 Apr 2022 20:21:22 GMT and should not be manually modified.
+This log was last generated on Tue, 26 Apr 2022 23:09:31 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.6
+
+Tue, 26 Apr 2022 23:09:31 GMT
+
+### Patches
+
+- Bump @cebus/react-button to v0.0.3
+- Bump @cebus/react-card to v0.0.4
+- Bump @cebus/react-icon to v0.0.2
+- Bump @cebus/react-input to v0.0.4
+- Bump @cebus/react-menu to v0.0.4
+- Bump @cebus/react-toolbar to v0.0.4
+- Bump @cebus/react-checkbox to v0.0.3
+- Bump @cebus/react-table to v0.0.4
+- Bump @cebus/react-carousel to v0.0.2
 
 ## 0.0.5
 

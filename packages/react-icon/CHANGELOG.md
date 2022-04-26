@@ -1,8 +1,16 @@
 # Change Log - @cebus/react-icon
 
-This log was last generated on Thu, 14 Apr 2022 04:54:35 GMT and should not be manually modified.
+This log was last generated on Tue, 26 Apr 2022 23:09:31 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.2
+
+Tue, 26 Apr 2022 23:09:31 GMT
+
+### Patches
+
+- Adding more social icons. (czearing@outlook.com)
 
 ## 0.0.1
 

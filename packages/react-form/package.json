@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-form",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A Form control that helps easily set up an accessible form.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -31,9 +31,9 @@
   },
   "devDependencies": {
     "@cebus/react-switch": "^0.0.2",
-    "@cebus/react-button": "^0.0.2",
-    "@cebus/react-checkbox": "^0.0.2",
-    "@cebus/react-input": "^0.0.3"
+    "@cebus/react-button": "^0.0.3",
+    "@cebus/react-checkbox": "^0.0.3",
+    "@cebus/react-input": "^0.0.4"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

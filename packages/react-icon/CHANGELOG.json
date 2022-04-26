@@ -2,6 +2,21 @@
   "name": "@cebus/react-icon",
   "entries": [
     {
+      "date": "Tue, 26 Apr 2022 23:09:31 GMT",
+      "tag": "@cebus/react-icon_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@cebus/react-icon",
+            "commit": "9a288b3eb305f6e06855ae1bd78d0526ef5d44a1",
+            "comment": "Adding more social icons."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 14 Apr 2022 04:54:35 GMT",
       "tag": "@cebus/react-icon_v0.0.1",
       "version": "0.0.1",

@@ -1,8 +1,17 @@
 # Change Log - @cebus/react-menu
 
-This log was last generated on Tue, 19 Apr 2022 20:41:21 GMT and should not be manually modified.
+This log was last generated on Tue, 26 Apr 2022 23:09:31 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.4
+
+Tue, 26 Apr 2022 23:09:31 GMT
+
+### Patches
+
+- Bump @cebus/react-icon to v0.0.2
+- Bump @cebus/react-button to v0.0.3
 
 ## 0.0.3
 

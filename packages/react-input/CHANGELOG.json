@@ -2,6 +2,21 @@
   "name": "@cebus/react-input",
   "entries": [
     {
+      "date": "Tue, 26 Apr 2022 23:09:31 GMT",
+      "tag": "@cebus/react-input_v0.0.4",
+      "version": "0.0.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@cebus/react-input",
+            "comment": "Bump @cebus/react-menu to v0.0.4",
+            "commit": "8afcc469ef4e9199f56fa191d78de17da56093fa"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 19 Apr 2022 20:41:21 GMT",
       "tag": "@cebus/react-input_v0.0.3",
       "version": "0.0.3",

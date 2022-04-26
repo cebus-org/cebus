@@ -2,6 +2,21 @@
   "name": "@cebus/react-carousel",
   "entries": [
     {
+      "date": "Tue, 26 Apr 2022 23:09:31 GMT",
+      "tag": "@cebus/react-carousel_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@cebus/react-carousel",
+            "comment": "Bump @cebus/react-icon to v0.0.2",
+            "commit": "8afcc469ef4e9199f56fa191d78de17da56093fa"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 14 Apr 2022 04:54:35 GMT",
       "tag": "@cebus/react-carousel_v0.0.1",
       "version": "0.0.1",

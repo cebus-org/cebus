@@ -1,8 +1,18 @@
 # Change Log - @cebus/react-form
 
-This log was last generated on Tue, 19 Apr 2022 20:41:21 GMT and should not be manually modified.
+This log was last generated on Tue, 26 Apr 2022 23:09:31 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.5
+
+Tue, 26 Apr 2022 23:09:31 GMT
+
+### Patches
+
+- Bump @cebus/react-button to v0.0.3
+- Bump @cebus/react-checkbox to v0.0.3
+- Bump @cebus/react-input to v0.0.4
 
 ## 0.0.4
 

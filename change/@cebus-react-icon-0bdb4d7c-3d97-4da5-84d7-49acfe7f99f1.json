@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "Adding more social icons.",
-  "packageName": "@cebus/react-icon",
-  "email": "czearing@outlook.com",
-  "dependentChangeType": "patch"
-}

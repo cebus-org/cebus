@@ -2,6 +2,27 @@
   "name": "@cebus/react-checkbox",
   "entries": [
     {
+      "date": "Tue, 26 Apr 2022 23:09:31 GMT",
+      "tag": "@cebus/react-checkbox_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@cebus/react-checkbox",
+            "comment": "Bump @cebus/react-icon to v0.0.2",
+            "commit": "8afcc469ef4e9199f56fa191d78de17da56093fa"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-checkbox",
+            "comment": "Bump @cebus/react-button to v0.0.3",
+            "commit": "8afcc469ef4e9199f56fa191d78de17da56093fa"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 15 Apr 2022 03:21:03 GMT",
       "tag": "@cebus/react-checkbox_v0.0.2",
       "version": "0.0.2",
