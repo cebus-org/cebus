@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-card",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The Card component displays content and presents actions to the user.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",

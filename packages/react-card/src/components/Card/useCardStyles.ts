@@ -54,6 +54,7 @@ const useStyles = makeStyles({
    */
   intractable: {
     cursor: 'pointer',
+    color: 'inherit',
     ':hover': {
       backgroundColor: tokens.inheritForegroundHover,
     },

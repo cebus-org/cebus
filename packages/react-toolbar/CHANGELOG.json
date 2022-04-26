@@ -2,6 +2,21 @@
   "name": "@cebus/react-toolbar",
   "entries": [
     {
+      "date": "Tue, 19 Apr 2022 20:41:21 GMT",
+      "tag": "@cebus/react-toolbar_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@cebus/react-toolbar",
+            "comment": "Bump @cebus/react-menu to v0.0.3",
+            "commit": "c154687eafcb26cdef18579cfd243c81bd16f04b"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 15 Apr 2022 03:21:03 GMT",
       "tag": "@cebus/react-toolbar_v0.0.2",
       "version": "0.0.2",
