@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-components",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Suite package for Cebus components.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -28,7 +28,7 @@
     "@cebus/react-dialog": "^0.0.1",
     "@cebus/react-avatar": "^0.0.1",
     "@cebus/react-button": "^0.0.2",
-    "@cebus/react-card": "^0.0.2",
+    "@cebus/react-card": "^0.0.3",
     "@cebus/react-divider": "^0.0.1",
     "@cebus/react-icon": "^0.0.1",
     "@cebus/react-input": "^0.0.3",
@@ -44,7 +44,7 @@
     "@cebus/react-provider": "^0.0.1",
     "@cebus/react-layout": "^0.0.1",
     "@cebus/react-accordion": "^0.0.1",
-    "@cebus/react-table": "^0.0.2",
+    "@cebus/react-table": "^0.0.3",
     "@cebus/react-carousel": "^0.0.1"
   },
   "peerDependencies": {

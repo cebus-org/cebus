@@ -2,6 +2,27 @@
   "name": "@cebus/react-components",
   "entries": [
     {
+      "date": "Tue, 26 Apr 2022 20:21:22 GMT",
+      "tag": "@cebus/react-components_v0.0.5",
+      "version": "0.0.5",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-card to v0.0.3",
+            "commit": "60b4e44cbefba4e7fe1a903d9e7928efaeb4aac1"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-table to v0.0.3",
+            "commit": "60b4e44cbefba4e7fe1a903d9e7928efaeb4aac1"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 19 Apr 2022 20:41:21 GMT",
       "tag": "@cebus/react-components_v0.0.4",
       "version": "0.0.4",
