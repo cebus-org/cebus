@@ -13,3 +13,4 @@ export * from './Social';
 export * from './CartIcon';
 export * from './BackArrowIcon';
 export * from './ForwardArrowIcon';
+export * from './ColorIcon';
