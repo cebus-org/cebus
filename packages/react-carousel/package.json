@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-carousel",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An carousel component used to display a collection of images.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -27,7 +27,7 @@
     "@fluentui/react-utilities": "^9.0.0-rc.5",
     "@cebus/react-theme": "^0.0.1",
     "@cebus/react-radio": "^0.0.1",
-    "@cebus/react-icon": "^0.0.2"
+    "@cebus/react-icon": "^0.0.3"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

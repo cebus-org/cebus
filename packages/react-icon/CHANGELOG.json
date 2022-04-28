@@ -2,6 +2,27 @@
   "name": "@cebus/react-icon",
   "entries": [
     {
+      "date": "Thu, 28 Apr 2022 22:17:00 GMT",
+      "tag": "@cebus/react-icon_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@cebus/react-icon",
+            "commit": "1edfba5c6c698c6ff1eb51acf4bf210332777501",
+            "comment": "Updating icon api"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-icon",
+            "comment": "Bump @cebus/react-layout to v0.0.2",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 26 Apr 2022 23:09:31 GMT",
       "tag": "@cebus/react-icon_v0.0.2",
       "version": "0.0.2",

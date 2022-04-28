@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-icon",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of Icons to provide user's clarity on an action.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -29,7 +29,7 @@
     "@cebus/react-theme": "^0.0.1"
   },
   "devDependencies": {
-    "@cebus/react-layout": "^0.0.1"
+    "@cebus/react-layout": "^0.0.2"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

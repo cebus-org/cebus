@@ -1,8 +1,17 @@
 # Change Log - @cebus/react-divider
 
-This log was last generated on Thu, 14 Apr 2022 04:54:35 GMT and should not be manually modified.
+This log was last generated on Thu, 28 Apr 2022 22:17:00 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.2
+
+Thu, 28 Apr 2022 22:17:00 GMT
+
+### Patches
+
+- Bump @cebus/react-text to v0.0.2
+- Bump @cebus/react-layout to v0.0.2
 
 ## 0.0.1
 

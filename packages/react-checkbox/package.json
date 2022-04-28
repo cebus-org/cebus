@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-checkbox",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The Checkbox allows users to toggle a value between an on and off state.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -27,13 +27,13 @@
     "@fluentui/react-utilities": "^9.0.0-rc.5",
     "@fluentui/react-tabster": "^9.0.0-rc.5",
     "@cebus/react-theme": "^0.0.1",
-    "@cebus/react-icon": "^0.0.2"
+    "@cebus/react-icon": "^0.0.3"
   },
   "devDependencies": {
-    "@cebus/react-text": "^0.0.1",
-    "@cebus/react-button": "^0.0.3",
-    "@cebus/react-icon": "^0.0.2",
-    "@cebus/react-label": "^0.0.1"
+    "@cebus/react-text": "^0.0.2",
+    "@cebus/react-button": "^0.0.4",
+    "@cebus/react-icon": "^0.0.3",
+    "@cebus/react-label": "^0.0.2"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

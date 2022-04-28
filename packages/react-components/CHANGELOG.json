@@ -2,6 +2,111 @@
   "name": "@cebus/react-components",
   "entries": [
     {
+      "date": "Thu, 28 Apr 2022 22:17:00 GMT",
+      "tag": "@cebus/react-components_v0.0.7",
+      "version": "0.0.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-avatar to v0.0.2",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-button to v0.0.4",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-card to v0.0.5",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-divider to v0.0.2",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-icon to v0.0.3",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-input to v0.0.5",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-label to v0.0.2",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-link to v0.0.2",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-menu to v0.0.5",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-switch to v0.0.3",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-text to v0.0.2",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-toolbar to v0.0.5",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-checkbox to v0.0.4",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-layout to v0.0.2",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-table to v0.0.5",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-components",
+            "comment": "Bump @cebus/react-carousel to v0.0.3",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          }
+        ]
+      }
+    },
+    {
       "date": "Tue, 26 Apr 2022 23:09:31 GMT",
       "tag": "@cebus/react-components_v0.0.6",
       "version": "0.0.6",

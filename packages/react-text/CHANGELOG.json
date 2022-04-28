@@ -2,6 +2,27 @@
   "name": "@cebus/react-text",
   "entries": [
     {
+      "date": "Thu, 28 Apr 2022 22:17:00 GMT",
+      "tag": "@cebus/react-text_v0.0.2",
+      "version": "0.0.2",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@cebus/react-text",
+            "commit": "1edfba5c6c698c6ff1eb51acf4bf210332777501",
+            "comment": "Updating truncation prop to allow for multiline support."
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-text",
+            "comment": "Bump @cebus/react-layout to v0.0.2",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 14 Apr 2022 04:54:35 GMT",
       "tag": "@cebus/react-text_v0.0.1",
       "version": "0.0.1",

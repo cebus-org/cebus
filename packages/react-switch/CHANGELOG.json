@@ -2,6 +2,21 @@
   "name": "@cebus/react-switch",
   "entries": [
     {
+      "date": "Thu, 28 Apr 2022 22:17:00 GMT",
+      "tag": "@cebus/react-switch_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@cebus/react-switch",
+            "comment": "Bump @cebus/react-layout to v0.0.2",
+            "commit": "db5863ebab664589bef6115d229133caabf197a6"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 15 Apr 2022 04:09:18 GMT",
       "tag": "@cebus/react-switch_v0.0.2",
       "version": "0.0.2",

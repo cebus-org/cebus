@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-button",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Button control that allows users to make an action through a press.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -30,8 +30,8 @@
     "@cebus/react-theme": "^0.0.1"
   },
   "devDependencies": {
-    "@cebus/react-layout": "^0.0.1",
-    "@cebus/react-icon": "^0.0.2"
+    "@cebus/react-layout": "^0.0.2",
+    "@cebus/react-icon": "^0.0.3"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

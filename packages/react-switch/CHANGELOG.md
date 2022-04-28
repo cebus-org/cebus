@@ -1,8 +1,16 @@
 # Change Log - @cebus/react-switch
 
-This log was last generated on Fri, 15 Apr 2022 04:09:18 GMT and should not be manually modified.
+This log was last generated on Thu, 28 Apr 2022 22:17:00 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.3
+
+Thu, 28 Apr 2022 22:17:00 GMT
+
+### Patches
+
+- Bump @cebus/react-layout to v0.0.2
 
 ## 0.0.2
 
