@@ -77,7 +77,7 @@ export type TextCommons = {
   /**
    * The number of lines to render before the text truncates.
    */
-  truncate?: number;
+  truncate?: number | boolean;
 };
 
 export type TextProps = ComponentProps<TextSlots> & TextCommons;

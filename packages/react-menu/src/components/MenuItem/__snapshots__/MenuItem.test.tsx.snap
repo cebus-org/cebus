@@ -3,12 +3,12 @@
 exports[`MenuItem renders correctly 1`] = `
 <div>
   <div
-    class="___1n4bb1a f10pi13n f22iagw f1d2rq10 f1nbblvp f81rol6 f1ov4xf1 frdkuqy f8qjfyk fk6fouc f1arxnym f122n59 f1xqy1su fc467gg f1q8lukm f1ma2n7n f2hkw1w fdxsi5y f1i4q40k fa0joat f1yduw8h f1cwgisr f6dtr1x fvk4ntw f1bkt4b4 f16hf5f2 fyyqeim f1qhqcal f1kbdjx9 fw1d893 f14hlsw1 fpuz8dn fbw1f98 f8d6am2 f1gpnaou f11mktvj f1k6fduh fkcovh2 fc73jsq f8mbk1b f3c9x3h"
+    class="___1x7e2fi f10pi13n f22iagw fvfw249 f1nbblvp f10sqwl7 f1ov4xf1 fne32i3 f8qjfyk fk6fouc f1arxnym f122n59 f1xqy1su fc467gg fnmxc1e fynvm4a f2hkw1w fdxsi5y f1i4q40k fa0joat f1yduw8h f1cwgisr f6dtr1x fvk4ntw f1bkt4b4 f16hf5f2 fyyqeim f1qhqcal f1kbdjx9 fw1d893 f14hlsw1 fpuz8dn fbw1f98 f8d6am2 f1gpnaou f11mktvj f1k6fduh fkcovh2 fc73jsq f8mbk1b f3c9x3h"
     role="menuitem"
     tabindex="0"
   >
     <span
-      class="___7dw8ap0 f161knb0 f12huiiw f3rmtva fqerorx"
+      class="___n49lwn0 f3rmtva fqerorx"
     >
       Test Item
     </span>
@@ -20,12 +20,12 @@ exports[`MenuItem renders disabled correctly 1`] = `
 <div>
   <div
     aria-disabled="true"
-    class="___29dcth0 f10pi13n f22iagw f1d2rq10 f1nbblvp f81rol6 f1ov4xf1 frdkuqy f8qjfyk fk6fouc f1arxnym f122n59 f1xqy1su favx1wl f1q8lukm f1ma2n7n f2hkw1w fdxsi5y f1i4q40k fa0joat f1yduw8h f1cwgisr f6dtr1x fvk4ntw f1bkt4b4 f16hf5f2 fyyqeim f1qhqcal f1kbdjx9 fw1d893 f14hlsw1 fpuz8dn fbw1f98 f8d6am2 f1gpnaou f11mktvj fdrzuqr f1038xnb"
+    class="___t2c9jg0 f10pi13n f22iagw fvfw249 f1nbblvp f10sqwl7 f1ov4xf1 fne32i3 f8qjfyk fk6fouc f1arxnym f122n59 f1xqy1su favx1wl fnmxc1e fynvm4a f2hkw1w fdxsi5y f1i4q40k fa0joat f1yduw8h f1cwgisr f6dtr1x fvk4ntw f1bkt4b4 f16hf5f2 fyyqeim f1qhqcal f1kbdjx9 fw1d893 f14hlsw1 fpuz8dn fbw1f98 f8d6am2 f1gpnaou f11mktvj fdrzuqr f1038xnb"
     role="menuitem"
     tabindex="0"
   >
     <span
-      class="___7dw8ap0 f161knb0 f12huiiw f3rmtva fqerorx"
+      class="___n49lwn0 f3rmtva fqerorx"
     >
       Test Item
     </span>
@@ -36,17 +36,17 @@ exports[`MenuItem renders disabled correctly 1`] = `
 exports[`MenuItem renders secondaryContent correctly 1`] = `
 <div>
   <div
-    class="___1n4bb1a f10pi13n f22iagw f1d2rq10 f1nbblvp f81rol6 f1ov4xf1 frdkuqy f8qjfyk fk6fouc f1arxnym f122n59 f1xqy1su fc467gg f1q8lukm f1ma2n7n f2hkw1w fdxsi5y f1i4q40k fa0joat f1yduw8h f1cwgisr f6dtr1x fvk4ntw f1bkt4b4 f16hf5f2 fyyqeim f1qhqcal f1kbdjx9 fw1d893 f14hlsw1 fpuz8dn fbw1f98 f8d6am2 f1gpnaou f11mktvj f1k6fduh fkcovh2 fc73jsq f8mbk1b f3c9x3h"
+    class="___1x7e2fi f10pi13n f22iagw fvfw249 f1nbblvp f10sqwl7 f1ov4xf1 fne32i3 f8qjfyk fk6fouc f1arxnym f122n59 f1xqy1su fc467gg fnmxc1e fynvm4a f2hkw1w fdxsi5y f1i4q40k fa0joat f1yduw8h f1cwgisr f6dtr1x fvk4ntw f1bkt4b4 f16hf5f2 fyyqeim f1qhqcal f1kbdjx9 fw1d893 f14hlsw1 fpuz8dn fbw1f98 f8d6am2 f1gpnaou f11mktvj f1k6fduh fkcovh2 fc73jsq f8mbk1b f3c9x3h"
     role="menuitem"
     tabindex="0"
   >
     <span
-      class="___7dw8ap0 f161knb0 f12huiiw f3rmtva fqerorx"
+      class="___n49lwn0 f3rmtva fqerorx"
     >
       Test Item
     </span>
     <span
-      class="___4wkhrh0 f161knb0 f12huiiw f1ysjbbf f15s2vri f3krum3"
+      class="___omqrbh0 f1ysjbbf f15s2vri f3krum3"
     >
       test
     </span>
