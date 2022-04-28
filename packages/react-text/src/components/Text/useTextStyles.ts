@@ -3,6 +3,7 @@ import type { TextState } from './Text.types';
 import { tokens } from '@cebus/react-theme';
 
 const textColor = `--cebus-text-color`;
+const truncateLineClamp = `--cebus-text-truncate-line-clamp`;
 
 const useRootStyles = makeStyles({
   root: {
@@ -109,8 +110,16 @@ const useRootStyles = makeStyles({
     whiteSpace: 'nowrap',
     ...shorthands.overflow('hidden'),
   },
-  truncate: {
+  truncateFirstLine: {
     textOverflow: 'ellipsis',
+    whiteSpace: 'nowrap',
+    ...shorthands.overflow('hidden'),
+  },
+  truncateMultiline: {
+    ...shorthands.overflow('hidden'),
+    display: '-webkit-box',
+    ['-webkit-line-clamp' as any]: `var(${truncateLineClamp})`,
+    ['-webkit-box-orient' as any]: 'vertical',
   },
 });
 
@@ -124,7 +133,7 @@ export const useTextStyles = (state: TextState): TextState => {
     styles[state.size!],
     styles[state.align!],
     state.italic && styles.italic,
-    state.truncate && styles.truncate,
+    state.truncate && state.truncate > 1 ? styles.truncateMultiline : styles.truncateFirstLine,
     state.nowrap && styles.nowrap,
     state.underline && styles.underline,
     state.strikethrough && styles.strikethrough,
@@ -135,6 +144,7 @@ export const useTextStyles = (state: TextState): TextState => {
 
   const CSSVariables = {
     [textColor]: (tokens as any)[state.color + (state.disabled ? 'Disabled' : '')],
+    [truncateLineClamp]: state.truncate,
   };
 
   state.root.style = {

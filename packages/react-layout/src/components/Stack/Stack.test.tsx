@@ -3,7 +3,7 @@ import { Stack } from './Stack';
 import { isConformant } from '../../common/isConformant';
 import { render } from '@testing-library/react';
 
-describe('Input', () => {
+describe('Stack', () => {
   isConformant({
     Component: Stack,
     displayName: 'Stack',
