@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Input Correctly applies horizontal/vertical alignment to Stack (horizontal) 1`] = `
+exports[`Stack Correctly applies horizontal/vertical alignment to Stack (horizontal) 1`] = `
 <body>
   <div>
     <div
@@ -10,7 +10,7 @@ exports[`Input Correctly applies horizontal/vertical alignment to Stack (horizon
 </body>
 `;
 
-exports[`Input Correctly applies horizontal/vertical alignment to Stack (vertical) 1`] = `
+exports[`Stack Correctly applies horizontal/vertical alignment to Stack (vertical) 1`] = `
 <body>
   <div>
     <div
@@ -20,7 +20,7 @@ exports[`Input Correctly applies horizontal/vertical alignment to Stack (vertica
 </body>
 `;
 
-exports[`Input renders a basic Stack 1`] = `
+exports[`Stack renders a basic Stack 1`] = `
 <body>
   <div>
     <div
@@ -30,7 +30,7 @@ exports[`Input renders a basic Stack 1`] = `
 </body>
 `;
 
-exports[`Input renders a divider Stack 1`] = `
+exports[`Stack renders a divider Stack 1`] = `
 <body>
   <div>
     <div
@@ -48,7 +48,7 @@ exports[`Input renders a divider Stack 1`] = `
 </body>
 `;
 
-exports[`Input renders a divider Stack with once child 1`] = `
+exports[`Stack renders a divider Stack with once child 1`] = `
 <body>
   <div>
     <div
@@ -58,7 +58,7 @@ exports[`Input renders a divider Stack with once child 1`] = `
 </body>
 `;
 
-exports[`Input renders a vertical Stack 1`] = `
+exports[`Stack renders a vertical Stack 1`] = `
 <body>
   <div>
     <div

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Grid renders a basic Grid 1`] = `
+<body>
+  <div>
+    <div
+      class="___131c3ln f13qh94s f8s1hii fly5x3f fnigl43 f4d9j23 f122n59"
+      style="--cebus-grid-content-width: 0px;"
+    />
+  </div>
+</body>
+`;

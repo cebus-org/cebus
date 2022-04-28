@@ -33,6 +33,28 @@ export type ContainerSlots = {
 export type ContainerState = ComponentState<ContainerSlots> & ContainerCommons;
 
 // @public
+export const Grid: ForwardRefComponent<GridProps>;
+
+// @public (undocumented)
+export interface GridCommons {
+    appearance?: 'focused' | 'relaxed';
+    contentSize: string;
+    horizontalAlignment?: 'start' | 'center' | 'end';
+    verticalAlignment?: 'start' | 'center' | 'end';
+}
+
+// @public (undocumented)
+export type GridProps = ComponentProps<GridSlots> & GridCommons;
+
+// @public (undocumented)
+export type GridSlots = {
+    root: Slot<'div'>;
+};
+
+// @public (undocumented)
+export type GridState = ComponentState<GridSlots> & GridCommons;
+
+// @public
 export const Stack: ForwardRefComponent<StackProps>;
 
 // @public (undocumented)
@@ -63,6 +85,12 @@ export const useContainer: (props: ContainerProps, ref: React_2.Ref<HTMLElement>
 
 // @public (undocumented)
 export const useContainerStyles: (state: ContainerState) => ContainerState;
+
+// @public (undocumented)
+export const useGrid: (props: GridProps, ref: React_2.Ref<HTMLElement>) => GridState;
+
+// @public (undocumented)
+export const useGridStyles: (state: GridState) => GridState;
 
 // @public (undocumented)
 export const useStack: (props: StackProps, ref: React_2.Ref<HTMLElement>) => StackState;

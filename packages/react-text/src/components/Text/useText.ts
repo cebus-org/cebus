@@ -10,7 +10,7 @@ export const useText = (props: TextProps, ref: React.Ref<HTMLElement>): TextStat
     weight = 'regular',
     italic = false,
     underline = false,
-    truncate = false,
+    truncate,
     strikethrough = false,
     nowrap = false,
     disabled,

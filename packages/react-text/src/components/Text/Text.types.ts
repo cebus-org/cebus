@@ -75,9 +75,9 @@ export type TextCommons = {
   disabled?: boolean;
 
   /**
-   * Whether the text should truncate if it exceeds its containers size.
+   * The number of lines to render before the text truncates.
    */
-  truncate?: boolean;
+  truncate?: number | boolean;
 };
 
 export type TextProps = ComponentProps<TextSlots> & TextCommons;
