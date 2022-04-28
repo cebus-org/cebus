@@ -52,7 +52,7 @@ export type TextCommons = {
     align?: 'start' | 'center' | 'end' | 'justify';
     nowrap?: boolean;
     disabled?: boolean;
-    truncate?: number;
+    truncate?: number | boolean;
 };
 
 // @public (undocumented)
