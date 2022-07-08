@@ -133,7 +133,7 @@ export const useTextStyles = (state: TextState): TextState => {
     styles[state.size!],
     styles[state.align!],
     state.italic && styles.italic,
-    state.truncate && state.truncate > 1 ? styles.truncateMultiline : styles.truncateFirstLine,
+    state.truncate !== undefined && (state.truncate > 1 ? styles.truncateMultiline : styles.truncateFirstLine),
     state.nowrap && styles.nowrap,
     state.underline && styles.underline,
     state.strikethrough && styles.strikethrough,

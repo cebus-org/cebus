@@ -83,6 +83,7 @@ export const DisabledColorTextExample = () => {
 export const TruncateTextExample = () => {
   return (
     <Stack style={{ width: '100px' }}>
+      <Text>The quick brown fox jumped over the lazy dog</Text>
       <Text truncate={1}>The quick brown fox jumped over the lazy dog</Text>
       <Text truncate={3}>The quick brown fox jumped over the lazy dog</Text>
     </Stack>
