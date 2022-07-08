@@ -23,9 +23,9 @@
     "chromatic": "cd apps && cd vr-tests && yarn chromatic"
   },
   "devDependencies": {
-    "beachball": "2.21.0",
-    "chromatic": "6.5.4",
-    "prettier": "2.6.2",
+    "beachball": "2.24.0",
+    "chromatic": "6.7.0",
+    "prettier": "2.7.1",
     "husky": "7.0.4",
     "@nrwl/cli": "13.10.2",
     "@nrwl/jest": "13.10.2",

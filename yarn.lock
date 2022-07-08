@@ -3956,6 +3956,11 @@
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.16.3.tgz#b776327a73e561b71e7881d0cd6d34a1424db86a"
   integrity sha512-9gtOPPkfyNoEqCQgx4qJKkuNm/x0R2hKR7fdl7zvTJyHnIisuE/LfvXOsYWL0o3qq6uiBnKZNNNzi3l0y/X+xw==
 
+"@types/webpack-env@^1.17.0":
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.17.0.tgz#f99ce359f1bfd87da90cc4a57cab0a18f34a48d0"
+  integrity sha512-eHSaNYEyxRA5IAG0Ym/yCyf86niZUIF/TpWKofQI/CVfh5HsMEUyfE2kwFxha4ow0s5g0LfISQxpDKjbRDrizw==
+
 "@types/webpack-sources@*":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@types/webpack-sources/-/webpack-sources-3.2.0.tgz#16d759ba096c289034b26553d2df1bf45248d38b"
@@ -5373,10 +5378,10 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-beachball@2.21.0:
-  version "2.21.0"
-  resolved "https://registry.yarnpkg.com/beachball/-/beachball-2.21.0.tgz#8ba7f125080ad7395eb8ebb17d54fa6ab0fc17fd"
-  integrity sha512-MOUXS9vwAR5LziPHFvvyqvvFoFyBasTcjizATAcngdgAeNgfGfSrcelBTIVIPF+SgVwSSLhE5Ts60+wNa0RQgg==
+beachball@^2.24.0:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/beachball/-/beachball-2.24.0.tgz#e907fc95a9f315c5289e9b4c76e855407093202e"
+  integrity sha512-UMZWX7BfmXwEw3CW8gOWnErbR7I1JYO6msa4vQav1EiUbPF1TxEN5vvQiKBu1wDHXKbPIWi3/elXAUphqT90gQ==
   dependencies:
     cosmiconfig "^6.0.0"
     execa "^4.0.3"
@@ -5391,7 +5396,7 @@ beachball@2.21.0:
     semver "^6.1.1"
     toposort "^2.0.2"
     uuid "^8.3.1"
-    workspace-tools "^0.16.2"
+    workspace-tools "^0.21.0"
     yargs-parser "^20.2.4"
 
 better-opn@^2.1.1:
@@ -5943,10 +5948,12 @@ chownr@^2.0.0:
   resolved "https://registry.yarnpkg.com/chownr/-/chownr-2.0.0.tgz#15bfbe53d2eab4cf70f18a8cd68ebe5b3cb1dece"
   integrity sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==
 
-chromatic@6.5.4:
-  version "6.5.4"
-  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-6.5.4.tgz#2e1beb7a8f6b84e7575456fe484201a3b4327ee1"
-  integrity sha512-/yunI/+rdc56C6x0IhpPmdfK/DRMOvQ2hoNyAe6uuU9rdWRoAH72lYatr2NcpdsOdHGOcV5DKgIaKgVdPfUk1w==
+chromatic@^6.7.0:
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/chromatic/-/chromatic-6.7.0.tgz#1d56c56acea6762d18c6042774fbfb6b434c6d91"
+  integrity sha512-kLpvVBKHp1uh7v14N0gPoejILsepS2OI8a4cJgM4Na0Du5GbZ0Iq7Yq/QknCuNiztlalSpBYHuD9SuVdBxL9vg==
+  dependencies:
+    "@types/webpack-env" "^1.17.0"
 
 chrome-trace-event@^1.0.2:
   version "1.0.3"
@@ -15798,6 +15805,19 @@ workspace-tools@^0.16.2:
     find-up "^4.1.0"
     find-yarn-workspace-root "^1.2.1"
     fs-extra "^9.0.0"
+    git-url-parse "^11.1.2"
+    globby "^11.0.0"
+    jju "^1.4.0"
+    multimatch "^4.0.0"
+    read-yaml-file "^2.0.0"
+
+workspace-tools@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/workspace-tools/-/workspace-tools-0.21.0.tgz#eab13d4fac2cace36f6ecef1fe30ed6d912124cb"
+  integrity sha512-ZOGOr42brfDFJcKUz8AonRabORtq0UbuoF6chmcQUwRYmu+Qs85/ZhfflrrMSJLP3yRoqcBe/lvDjGzkWYViww==
+  dependencies:
+    "@yarnpkg/lockfile" "^1.1.0"
+    find-up "^4.1.0"
     git-url-parse "^11.1.2"
     globby "^11.0.0"
     jju "^1.4.0"
