@@ -1456,20 +1456,21 @@
     "@griffel/react" "1.0.0"
     tslib "^2.1.0"
 
-"@fluentui/react-conformance-griffel@9.0.0-beta.10":
-  version "9.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance-griffel/-/react-conformance-griffel-9.0.0-beta.10.tgz#34c5a7a4d02eb66b55941fc0e7db8864d5d4305f"
-  integrity sha512-+O7noSidPmFMpheMO4eRUedlCsTuj3ab+eZszk8GdWvrPH/+6VpODmZnIQD2JvNPtvKY1wHgA+top0O4coB2nQ==
+"@fluentui/react-conformance-griffel@9.0.0-beta.3":
+  version "9.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance-griffel/-/react-conformance-griffel-9.0.0-beta.3.tgz#24b18a4c86fff4111aeb38566406b39de42e6bd5"
+  integrity sha512-w5zBr1M7M4jEjspXvz3uIwUU1YSOgSQU5vNWHaHJSleL0Kiel51dmcDR0qlytZbRgCtNRYUMY9YR8R74YguDbw==
   dependencies:
-    "@griffel/react" "^1.2.0"
+    "@griffel/react" "1.0.0"
     tslib "^2.1.0"
 
-"@fluentui/react-conformance@0.14.0":
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance/-/react-conformance-0.14.0.tgz#de251a6962f87feee7d1ea6c868efec9cd59f83d"
-  integrity sha512-tBtYqR9gAq9P8fsnK4b3hzPN1tVrQYfisrI7y2rNB2HTzOcalvC321BqTO0qqs+J1u/e+kBdGtzU9w0PXMnFQA==
+"@fluentui/react-conformance@0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance/-/react-conformance-0.10.1.tgz#ff4996144d8ed1378b41dd760b4b9a84c4160007"
+  integrity sha512-M7LkkvkDXa+XAQ4qNB2/IHvIYKjxlfVrFkuKa9X8Kw4GooxVlzljH0KMHt98DRDW8f7rTehly0GtCGSELnSbWA==
   dependencies:
     chalk "^2.4.2"
+    doctrine "^3.0.0"
     lodash "^4.17.15"
     react-docgen-typescript "^2.1.0"
     react-is "^16.6.3"
@@ -1658,17 +1659,6 @@
     stylis "^4.0.13"
     tslib "^2.1.0"
 
-"@griffel/core@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@griffel/core/-/core-1.4.1.tgz#5ae960efd71897bfdb748ec4551da99d1eb8652c"
-  integrity sha512-PSVZiRJYIvKCt5V5PqkMuOEGyvq/L/lSArEmVVz9h8jkX0Zf7SRpjCDluHd43mRQZ6wFzYeK4aKa6DwIxomZIA==
-  dependencies:
-    "@emotion/hash" "^0.8.0"
-    csstype "^3.0.10"
-    rtl-css-js "^1.15.0"
-    stylis "^4.0.13"
-    tslib "^2.1.0"
-
 "@griffel/react@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@griffel/react/-/react-1.0.0.tgz#797f50bb4e3b2fb6aa211d26d285daad5c255f34"
@@ -1682,14 +1672,6 @@
   integrity sha512-RfQ1O4A9+kWx2pStmTPdl1YuWYC0XHgLYvSiGoMIur7yibmM3Ki/YktUBJKQm0A09KIPYLYFCgE8Z9BjVvKrJg==
   dependencies:
     "@griffel/core" "^1.2.0"
-    tslib "^2.1.0"
-
-"@griffel/react@^1.2.0":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@griffel/react/-/react-1.2.1.tgz#8150d6582dafad14815a3d7831839d98bf30c85e"
-  integrity sha512-A5fFXl9GvwEETCrT2hapTaoRAmY8JzZXpO6WnfCPHat6R74GP9i3PyJft6OT+XGEi+/vW/Owyp2IpX+PKiY7CQ==
-  dependencies:
-    "@griffel/core" "^1.4.1"
     tslib "^2.1.0"
 
 "@humanwhocodes/config-array@^0.5.0":
