@@ -1464,13 +1464,12 @@
     "@griffel/react" "1.0.0"
     tslib "^2.1.0"
 
-"@fluentui/react-conformance@0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance/-/react-conformance-0.10.1.tgz#ff4996144d8ed1378b41dd760b4b9a84c4160007"
-  integrity sha512-M7LkkvkDXa+XAQ4qNB2/IHvIYKjxlfVrFkuKa9X8Kw4GooxVlzljH0KMHt98DRDW8f7rTehly0GtCGSELnSbWA==
+"@fluentui/react-conformance@0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance/-/react-conformance-0.14.0.tgz#de251a6962f87feee7d1ea6c868efec9cd59f83d"
+  integrity sha512-tBtYqR9gAq9P8fsnK4b3hzPN1tVrQYfisrI7y2rNB2HTzOcalvC321BqTO0qqs+J1u/e+kBdGtzU9w0PXMnFQA==
   dependencies:
     chalk "^2.4.2"
-    doctrine "^3.0.0"
     lodash "^4.17.15"
     react-docgen-typescript "^2.1.0"
     react-is "^16.6.3"
