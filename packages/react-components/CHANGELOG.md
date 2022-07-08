@@ -1,8 +1,22 @@
 # Change Log - @cebus/react-components
 
-This log was last generated on Thu, 28 Apr 2022 22:17:00 GMT and should not be manually modified.
+This log was last generated on Fri, 08 Jul 2022 19:49:03 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.0.8
+
+Fri, 08 Jul 2022 19:49:03 GMT
+
+### Patches
+
+- Bump @cebus/react-card to v0.0.6
+- Bump @cebus/react-divider to v0.0.3
+- Bump @cebus/react-label to v0.0.3
+- Bump @cebus/react-text to v0.0.3
+- Bump @cebus/react-toolbar to v0.0.6
+- Bump @cebus/react-checkbox to v0.0.5
+- Bump @cebus/react-table to v0.0.6
 
 ## 0.0.7
 

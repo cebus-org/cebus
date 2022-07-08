@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-toolbar",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A toolbar component that displays important information and actions for an application.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@cebus/react-avatar": "^0.0.2",
-    "@cebus/react-text": "^0.0.2",
+    "@cebus/react-text": "^0.0.3",
     "@cebus/react-menu": "^0.0.5",
     "@cebus/react-layout": "^0.0.2"
   },

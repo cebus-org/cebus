@@ -2,6 +2,33 @@
   "name": "@cebus/react-form",
   "entries": [
     {
+      "date": "Fri, 08 Jul 2022 19:49:03 GMT",
+      "tag": "@cebus/react-form_v0.0.7",
+      "version": "0.0.7",
+      "comments": {
+        "patch": [
+          {
+            "author": "beachball",
+            "package": "@cebus/react-form",
+            "comment": "Bump @cebus/react-label to v0.0.3",
+            "commit": "dccbe1f7759a7741f007174baa7582e16d317cb2"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-form",
+            "comment": "Bump @cebus/react-text to v0.0.3",
+            "commit": "dccbe1f7759a7741f007174baa7582e16d317cb2"
+          },
+          {
+            "author": "beachball",
+            "package": "@cebus/react-form",
+            "comment": "Bump @cebus/react-checkbox to v0.0.5",
+            "commit": "dccbe1f7759a7741f007174baa7582e16d317cb2"
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 28 Apr 2022 22:17:00 GMT",
       "tag": "@cebus/react-form_v0.0.6",
       "version": "0.0.6",

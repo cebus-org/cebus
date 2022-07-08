@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-table",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "The Table component displays sets of data.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -28,7 +28,7 @@
     "@cebus/react-theme": "^0.0.1"
   },
   "devDependencies": {
-    "@cebus/react-card": "^0.0.5"
+    "@cebus/react-card": "^0.0.6"
   },
   "peerDependencies": {
     "@types/react": ">=16.8.0 <18.0.0",

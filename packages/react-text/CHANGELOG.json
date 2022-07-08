@@ -2,6 +2,21 @@
   "name": "@cebus/react-text",
   "entries": [
     {
+      "date": "Fri, 08 Jul 2022 19:49:03 GMT",
+      "tag": "@cebus/react-text_v0.0.3",
+      "version": "0.0.3",
+      "comments": {
+        "patch": [
+          {
+            "author": "czearing@outlook.com",
+            "package": "@cebus/react-text",
+            "commit": "7ab1e7ef98624fef8ff864f8ffe98db8e9250b53",
+            "comment": "Fixing a bug in the logic for text wrapping."
+          }
+        ]
+      }
+    },
+    {
       "date": "Thu, 28 Apr 2022 22:17:00 GMT",
       "tag": "@cebus/react-text_v0.0.2",
       "version": "0.0.2",

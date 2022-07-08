@@ -1,6 +1,6 @@
 {
   "name": "@cebus/react-divider",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The divider helps separate content in a site.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
@@ -29,7 +29,7 @@
     "@fluentui/react-divider": "^9.0.0-rc.5"
   },
   "devDependencies": {
-    "@cebus/react-text": "^0.0.2",
+    "@cebus/react-text": "^0.0.3",
     "@cebus/react-layout": "^0.0.2"
   },
   "peerDependencies": {
