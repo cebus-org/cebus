@@ -2,12 +2,12 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.0.2
-  codecov: codecov/codecov@3.2.2
+  codecov: codecov/codecov@3.2.5
 
 jobs:
   build:
     docker:
-      - image: cimg/node:17.9.1
+      - image: cimg/node:17.9.0
     steps:
       - checkout
       - node/install-packages:
@@ -42,7 +42,7 @@ jobs:
 
   deploy:
     docker:
-      - image: cimg/node:17.9.1
+      - image: cimg/node:17.9.0
     steps:
       - checkout
       - node/install-packages:
