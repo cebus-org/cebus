@@ -1284,6 +1284,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==
 
+"@emotion/hash@^0.9.0":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@emotion/hash/-/hash-0.9.1.tgz#4ffb0055f7ef676ebc3a5a91fb621393294e2f43"
+  integrity sha512-gJB6HLm5rYwSLI6PQa+X1t5CFGrv1J1TWG+sOyMCeKz2ojaj6Fnl/rZEspogG+cvqbt4AE/2eIyD2QfLKTBNlQ==
+
 "@emotion/is-prop-valid@0.8.8", "@emotion/is-prop-valid@^0.8.6":
   version "0.8.8"
   resolved "https://registry.yarnpkg.com/@emotion/is-prop-valid/-/is-prop-valid-0.8.8.tgz#db28b1c4368a259b60a97311d6a952d4fd01ac1a"
@@ -1456,13 +1461,13 @@
     "@griffel/react" "1.0.0"
     tslib "^2.1.0"
 
-"@fluentui/react-conformance-griffel@9.0.0-beta.3":
-  version "9.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance-griffel/-/react-conformance-griffel-9.0.0-beta.3.tgz#24b18a4c86fff4111aeb38566406b39de42e6bd5"
-  integrity sha512-w5zBr1M7M4jEjspXvz3uIwUU1YSOgSQU5vNWHaHJSleL0Kiel51dmcDR0qlytZbRgCtNRYUMY9YR8R74YguDbw==
+"@fluentui/react-conformance-griffel@9.0.9":
+  version "9.0.9"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance-griffel/-/react-conformance-griffel-9.0.9.tgz#4179058f22a15dc1db086cfb407231d52b891678"
+  integrity sha512-nZzebVQ8eQ20ec+5cFpZODbeAcF43zWYjP+g4PBLMmN/KbbfLIUj2pBQHcSZXO575VJ44H8vKifvwacgYuL3MQ==
   dependencies:
-    "@griffel/react" "1.0.0"
-    tslib "^2.1.0"
+    "@griffel/react" "^1.5.14"
+    "@swc/helpers" "^0.5.1"
 
 "@fluentui/react-conformance@0.10.1":
   version "0.10.1"
@@ -1648,6 +1653,18 @@
     rtl-css-js "^1.15.0"
     stylis "^4.0.13"
 
+"@griffel/core@^1.15.2":
+  version "1.15.2"
+  resolved "https://registry.yarnpkg.com/@griffel/core/-/core-1.15.2.tgz#8f0383aaed591980d327d38444b9631a63f7d499"
+  integrity sha512-RlsIXoSS3gaYykUgxFpwKAs/DV9cRUKp3CW1kt3iPAtsDTWn/o+8bT1jvBws/tMM2GBu/Uc0EkaIzUPqD7uA+Q==
+  dependencies:
+    "@emotion/hash" "^0.9.0"
+    "@griffel/style-types" "^1.0.3"
+    csstype "^3.1.3"
+    rtl-css-js "^1.16.1"
+    stylis "^4.2.0"
+    tslib "^2.1.0"
+
 "@griffel/core@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@griffel/core/-/core-1.2.0.tgz#79373bbbbf1db9471affe56aabcfdbef975b7d28"
@@ -1673,6 +1690,21 @@
   dependencies:
     "@griffel/core" "^1.2.0"
     tslib "^2.1.0"
+
+"@griffel/react@^1.5.14":
+  version "1.5.20"
+  resolved "https://registry.yarnpkg.com/@griffel/react/-/react-1.5.20.tgz#5adcf6e159b4455b01ad5bdca4e74204449ac496"
+  integrity sha512-1P2yaPctENFSCwyPIYXBmgpNH68c0lc/jwSzPij1QATHDK1AASKuSeq6hW108I67RKjhRyHCcALshdZ3GcQXSg==
+  dependencies:
+    "@griffel/core" "^1.15.2"
+    tslib "^2.1.0"
+
+"@griffel/style-types@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@griffel/style-types/-/style-types-1.0.3.tgz#e8aa0ec162a04ed33fcc947021fe592d0f4e185d"
+  integrity sha512-AzbbYV/EobNIBtfMtyu2edFin895gjVxtu1nsRhTETUAIb0/LCZoue3Jd/kFLuPwe95rv5WRUBiQpVwJsrrFcw==
+  dependencies:
+    csstype "^3.1.3"
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
@@ -3426,6 +3458,13 @@
     resolve-from "^5.0.0"
     store2 "^2.12.0"
 
+"@swc/helpers@^0.5.1":
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.6.tgz#d16d8566b7aea2bef90d059757e2d77f48224160"
+  integrity sha512-aYX01Ke9hunpoCexYAgQucEpARGQ5w/cqHFrIR+e9gdKb1QWTsVJuTJ2ozQzIAxLyRQe/m+2RqzkyOOGiMKRQA==
+  dependencies:
+    tslib "^2.4.0"
+
 "@testing-library/dom@^8.0.0":
   version "8.13.0"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.13.0.tgz#bc00bdd64c7d8b40841e27a70211399ad3af46f5"
@@ -4405,11 +4444,6 @@ acorn@^8.2.4, acorn@^8.4.1, acorn@^8.5.0, acorn@^8.7.0:
   version "8.7.0"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.7.0.tgz#90951fde0f8f09df93549481e5fc141445b791cf"
   integrity sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==
-
-acorn@^8.7.1:
-  version "8.8.2"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.2.tgz#1b2f25db02af965399b9776b0c2c391276d37c4a"
-  integrity sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==
 
 address@^1.0.1:
   version "1.1.2"
@@ -6388,6 +6422,11 @@ csstype@^3.0.10, csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.11.tgz#d66700c5eacfac1940deb4e3ee5642792d85cd33"
   integrity sha512-sa6P2wJ+CAbgyy4KFssIb/JNMLxFvKF1pCYCSXS8ZMuqZnMsrxqI2E5sPyoTpxoPU/gVZMzr2zjOfg8GIZOMsw==
 
+csstype@^3.1.3:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.3.tgz#d80ff294d114fb0e6ac500fbf85b60137d7eff81"
+  integrity sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==
+
 cyclist@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
@@ -6887,18 +6926,18 @@ enhanced-resolve@^4.5.0:
     memory-fs "^0.5.0"
     tapable "^1.0.0"
 
-enhanced-resolve@^5.10.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.12.0.tgz#300e1c90228f5b570c4d35babf263f6da7155634"
-  integrity sha512-QHTXI/sZQmko1cbDoNAa3mJ5qhWUUNAq3vR0/YiD379fWQrcfuoX1+HW2S0MTt7XmoPLapdaDKUtelUSPic7hQ==
-  dependencies:
-    graceful-fs "^4.2.4"
-    tapable "^2.2.0"
-
 enhanced-resolve@^5.9.2:
   version "5.9.3"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.9.3.tgz#44a342c012cbc473254af5cc6ae20ebd0aae5d88"
   integrity sha512-Bq9VSor+kjvW3f9/MiiR4eE3XYgOl7/rS8lnSxbRbF3kS0B2r+Y9w5krBWxZgDxASVZbdYrn5wT4j/Wb0J9qow==
+  dependencies:
+    graceful-fs "^4.2.4"
+    tapable "^2.2.0"
+
+enhanced-resolve@^5.9.3:
+  version "5.15.0"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.15.0.tgz#1af946c7d93603eb88e9896cee4904dc012e9c35"
+  integrity sha512-LXYT42KJ7lpIKECr2mAXIaMldcNCh/7E0KBKOu4KSfkHmP+mZmSs+8V5gBAqisWBy0OO4W5Oyys0GO1Y8KtdKg==
   dependencies:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
@@ -13554,6 +13593,13 @@ rtl-css-js@^1.15.0:
   dependencies:
     "@babel/runtime" "^7.1.2"
 
+rtl-css-js@^1.16.1:
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/rtl-css-js/-/rtl-css-js-1.16.1.tgz#4b48b4354b0ff917a30488d95100fbf7219a3e80"
+  integrity sha512-lRQgou1mu19e+Ya0LsTvKrVJ5TYUbqCVPAiImX3UfLTenarvPUl1QFdvu5Z3PYmHT9RCcwIfbjRQBntExyj3Zg==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+
 run-parallel-limit@^1.0.6:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/run-parallel-limit/-/run-parallel-limit-1.1.0.tgz#be80e936f5768623a38a963262d6bef8ff11e7ba"
@@ -14343,6 +14389,11 @@ stylis@^4.0.13:
   resolved "https://registry.yarnpkg.com/stylis/-/stylis-4.1.0.tgz#e3c7b24ff96d8af35efd161b6991a81c46e51933"
   integrity sha512-SrSDzNasOCBTo7C2N9geFwydg/2bmdkWXd4gJirtq82m5JBYtR2+Ialck8czmfBLIdPxCOotlgJESPa8C1RqvA==
 
+stylis@^4.2.0:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/stylis/-/stylis-4.3.1.tgz#ed8a9ebf9f76fe1e12d462f5cc3c4c980b23a7eb"
+  integrity sha512-EQepAV+wMsIaGVGX1RECzgrcqRRU/0sYOHkeLsZ3fzHaHXZy4DaOOX0vOlGQdlsjkh3mFHAIlVimpwAs4dslyQ==
+
 supports-color@^5.3.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
@@ -14776,6 +14827,11 @@ tslib@^2.0.0, tslib@^2.0.1, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.2.0, tslib@^2.3
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
+
+tslib@^2.4.0:
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
+  integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
 
 tsutils@^3.21.0:
   version "3.21.0"
@@ -15311,14 +15367,6 @@ watchpack@^2.2.0, watchpack@^2.3.1:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
 
-watchpack@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-2.4.0.tgz#fa33032374962c78113f93c7f2fb4c54c9862a5d"
-  integrity sha512-Lcvm7MGST/4fup+ifyKi2hjyIAwcdI4HRgtvTpIUxBRhB+RFtUh8XtDOxUfctVCnhVi+QQj49i91OyvzkJl6cg==
-  dependencies:
-    glob-to-regexp "^0.4.1"
-    graceful-fs "^4.1.2"
-
 web-namespaces@^1.0.0:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/web-namespaces/-/web-namespaces-1.1.4.tgz#bc98a3de60dadd7faefc403d1076d529f5e030ec"
@@ -15452,21 +15500,21 @@ webpack@4:
     watchpack "^1.7.4"
     webpack-sources "^1.4.1"
 
-webpack@5.76.0:
-  version "5.76.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.76.0.tgz#f9fb9fb8c4a7dbdcd0d56a98e56b8a942ee2692c"
-  integrity sha512-l5sOdYBDunyf72HW8dF23rFtWq/7Zgvt/9ftMof71E/yUb1YLOBmTgA2K4vQthB3kotMrSj609txVE0dnr2fjA==
+webpack@5.73.0:
+  version "5.73.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.73.0.tgz#bbd17738f8a53ee5760ea2f59dce7f3431d35d38"
+  integrity sha512-svjudQRPPa0YiOYa2lM/Gacw0r6PvxptHj4FuEKQ2kX05ZLkjbVc5MnPs6its5j7IZljnIqSVo/OsY2X0IpHGA==
   dependencies:
     "@types/eslint-scope" "^3.7.3"
     "@types/estree" "^0.0.51"
     "@webassemblyjs/ast" "1.11.1"
     "@webassemblyjs/wasm-edit" "1.11.1"
     "@webassemblyjs/wasm-parser" "1.11.1"
-    acorn "^8.7.1"
+    acorn "^8.4.1"
     acorn-import-assertions "^1.7.6"
     browserslist "^4.14.5"
     chrome-trace-event "^1.0.2"
-    enhanced-resolve "^5.10.0"
+    enhanced-resolve "^5.9.3"
     es-module-lexer "^0.9.0"
     eslint-scope "5.1.1"
     events "^3.2.0"
@@ -15479,7 +15527,7 @@ webpack@5.76.0:
     schema-utils "^3.1.0"
     tapable "^2.1.1"
     terser-webpack-plugin "^5.1.3"
-    watchpack "^2.4.0"
+    watchpack "^2.3.1"
     webpack-sources "^3.2.3"
 
 webpack@^5.21.2, webpack@^5.9.0:
