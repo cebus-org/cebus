@@ -1464,17 +1464,16 @@
     "@griffel/react" "1.0.0"
     tslib "^2.1.0"
 
-"@fluentui/react-conformance@0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance/-/react-conformance-0.10.1.tgz#ff4996144d8ed1378b41dd760b4b9a84c4160007"
-  integrity sha512-M7LkkvkDXa+XAQ4qNB2/IHvIYKjxlfVrFkuKa9X8Kw4GooxVlzljH0KMHt98DRDW8f7rTehly0GtCGSELnSbWA==
+"@fluentui/react-conformance@0.20.1":
+  version "0.20.1"
+  resolved "https://registry.yarnpkg.com/@fluentui/react-conformance/-/react-conformance-0.20.1.tgz#c0819e0d48b563b0883e09ad758c0c1771ca87a1"
+  integrity sha512-oWG8T5hKBElxggpQmUnPVaP9K4GcWA7EmJeEP51bmheyZtjDaxjanfAoCNQxzn8jLFrifkx21b1nBEp80ZFirw==
   dependencies:
+    "@swc/helpers" "^0.5.1"
     chalk "^2.4.2"
-    doctrine "^3.0.0"
     lodash "^4.17.15"
     react-docgen-typescript "^2.1.0"
-    react-is "^16.6.3"
-    tslib "^2.1.0"
+    react-is "^17.0.2"
 
 "@fluentui/react-context-selector@9.0.0-rc.5", "@fluentui/react-context-selector@^9.0.0-rc.5":
   version "9.0.0-rc.5"
@@ -3425,6 +3424,13 @@
     regenerator-runtime "^0.13.7"
     resolve-from "^5.0.0"
     store2 "^2.12.0"
+
+"@swc/helpers@^0.5.1":
+  version "0.5.23"
+  resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.23.tgz#19287d0d86d962b111376039a50c792902c9a86a"
+  integrity sha512-5lSsMOTXURePglDfvuAQUqkGek9Hg2kksOYay2m0+XR++b2NWYL/4sWyuvVBIs8oKnJaxkdi9whaL/sqN13afw==
+  dependencies:
+    tslib "^2.8.0"
 
 "@testing-library/dom@^8.0.0":
   version "8.13.0"
@@ -12930,7 +12936,7 @@ react-is@17.0.2, react-is@^17.0.0, react-is@^17.0.1, react-is@^17.0.2:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.0.0.tgz#026f6c4a27dbe33bf4a35655b9e1327c4e55e3f5"
   integrity sha512-yUcBYdBBbo3QiPsgYDcfQcIkGZHfxOaoE6HLSnr1sPzMhdyxusbfKOSUbSd/ocGi32dxcj366PsTj+5oggeKKw==
 
-react-is@^16.13.1, react-is@^16.6.3, react-is@^16.7.0, react-is@^16.8.4, react-is@^16.8.6:
+react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.4, react-is@^16.8.6:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -14771,6 +14777,11 @@ tslib@^2.0.0, tslib@^2.0.1, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.2.0, tslib@^2.3
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
+
+tslib@^2.8.0:
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.8.1.tgz#612efe4ed235d567e8aba5f2a5fab70280ade83f"
+  integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
 
 tsutils@^3.21.0:
   version "3.21.0"
